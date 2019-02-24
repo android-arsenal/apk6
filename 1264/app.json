@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "com.telly.mrvector.demo",
+    "label" : "Mr. Vector Demo",
+    "icon" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "versionName" : "0.2.0",
+    "versionCode" : 2,
+    "installLocation" : null,
+    "minSdkVersion" : "7",
+    "targetSdkVersion" : "21",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "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"
+  },
+  "dexClasses" : 419,
+  "locales" : [ "", "sl", "mr_IN", "kk_KZ", "bg", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "my_MM", "ur_PK", "mn_MN", "fi", "lv", "et_EE", "sw", "pt_PT", "tl", "th", "uz_UZ", "pt", "ar", "ru", "eu_ES", "bn_BD", "fa", "sk", "kn_IN", "hi", "cs", "sv", "km_KH", "el", "nl", "hu", "af", "in", "vi", "fr_CA", "sr", "da", "si_LK", "ml_IN", "gl_ES", "es", "is_IS", "hy_AM", "tr", "ne_NP", "ro", "hr", "ms_MY", "am", "ka_GE", "lt", "pl", "zh_CN", "ta_IN", "fr", "ja", "lo_LA", "ky_KG", "iw", "de", "en_IN", "es_US", "mk_MK", "nb", "te_IN", "ca", "en_GB" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"2\" android:versionName=\"0.2.0\" package=\"com.telly.mrvector.demo\" platformBuildVersionCode=\"21\" platformBuildVersionName=\"5.0.1-1624448\">\n\t<uses-sdk android:minSdkVersion=\"7\" android:targetSdkVersion=\"21\" />\n\t<application android:theme=\"resourceId:0x7f0b0000\" android:label=\"Mr. Vector Demo\" android:icon=\"res/drawable-mdpi-v4/ic_launcher.png\">\n\t\t<activity android:label=\"Mr. Vector\" android:name=\"com.telly.mrvector.demo.BasicInflateActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t\t<activity android:label=\"Mr. Vector\" android:name=\"com.telly.mrvector.demo.InflateFromLayoutActivity\" />\n\t</application>\n</manifest>\n",
+  "fileSize" : 579726,
+  "crc32" : 2352112820,
+  "sha256" : "a2c15b504fd87e44eab9a95201c69def33df74de4c3418d71dce4f5796b363f9",
+  "buildTime" : 1526870278000
+}

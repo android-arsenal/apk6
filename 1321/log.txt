@@ -1,0 +1,457 @@
+2018-05-11 14:30:29,638 INFO  DownloadService - Downloading "https://github.com/mrmans0n/smart-location-lib/archive/master.zip", attempt 3
+2018-05-11 14:30:30,058 INFO  DownloadService - Downloaded https://github.com/mrmans0n/smart-location-lib/archive/master.zip, attempt 3
+2018-05-11 14:30:30,059 INFO  DownloadService - Size of file "/tmp/rdisk/1321/master.zip": 133 KB
+2018-05-11 14:30:30,059 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-05-11 14:30:30,059 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/1321/master.zip: true
+2018-05-11 14:30:30,059 DEBUG ZipUtil - Extracting '/tmp/rdisk/1321/master.zip' into '/tmp/rdisk/1321/src'.
+2018-05-11 14:30:30,074 INFO  FullProcessService - Size of directory with sources: 241 KB
+2018-05-11 14:30:30,075 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1321/src]
+2018-05-11 14:30:30,079 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1321/src/.git/
+
+2018-05-11 14:30:30,084 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1321/src/smart-location-lib-master/gradlew
+2018-05-11 14:30:30,088 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1321/src/smart-location-lib-master/library/build.gradle /tmp/rdisk/1321/src/smart-location-lib-master/rxjava/build.gradle /tmp/rdisk/1321/src/smart-location-lib-master/sample/build.gradle /tmp/rdisk/1321/src/smart-location-lib-master/build.gradle
+2018-05-11 14:30:30,091 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1321/src/smart-location-lib-master/settings.gradle /tmp/rdisk/1321/src/smart-location-lib-master/sample/build.gradle /tmp/rdisk/1321/src/smart-location-lib-master/rxjava/build.gradle /tmp/rdisk/1321/src/smart-location-lib-master/library/build.gradle /tmp/rdisk/1321/src/smart-location-lib-master/build.gradle
+2018-05-11 14:30:30,092 INFO  ProjectBuildService - Remote scripts: none
+2018-05-11 14:30:30,092 INFO  ProjectFixService - Fixing project...
+2018-05-11 14:30:30,100 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1321/src/smart-location-lib-master/library/local.properties
+2018-05-11 14:30:30,101 INFO  ProjectFixService - Build info for "/tmp/rdisk/1321/src/smart-location-lib-master/library/build.gradle": [buildToolsVersion=26.0.2,compileSdkVersion=26,minSdkVersion=14,targetSdkVersion=26]
+2018-05-11 14:30:30,101 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1321/src/smart-location-lib-master/rxjava/local.properties
+2018-05-11 14:30:30,102 INFO  ProjectFixService - Build info for "/tmp/rdisk/1321/src/smart-location-lib-master/rxjava/build.gradle": [buildToolsVersion=26.0.2,compileSdkVersion=26,minSdkVersion=14,targetSdkVersion=26]
+2018-05-11 14:30:30,102 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1321/src/smart-location-lib-master/sample/local.properties
+2018-05-11 14:30:30,102 INFO  ProjectFixService - Build info for "/tmp/rdisk/1321/src/smart-location-lib-master/sample/build.gradle": [buildToolsVersion=26.0.2,compileSdkVersion=26,minSdkVersion=14,targetSdkVersion=26]
+2018-05-11 14:30:30,103 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1321/src/smart-location-lib-master/local.properties
+2018-05-11 14:30:30,103 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-4.1-all.zip
+2018-05-11 14:30:30,103 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-4.1-bin.zip)
+2018-05-11 14:30:30,104 INFO  ProjectFixService - Build info for "/tmp/rdisk/1321/src/smart-location-lib-master/build.gradle": [buildToolsVersion=26.0.2,compileSdkVersion=26,minSdkVersion=14,targetSdkVersion=26]
+2018-05-11 14:30:30,104 INFO  ProjectFixService - Project was maybe fixed
+2018-05-11 14:30:30,105 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-11 14:30:30,105 INFO  SysUtils - Execute command: [/tmp/rdisk/1321/src/smart-location-lib-master/gradlew, -b, /tmp/rdisk/1321/src/smart-location-lib-master/library/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-11 14:30:40,657 INFO  ProjectTaskService - Detected possible tasks: 79
+2018-05-11 14:30:40,657 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-05-11 14:30:40,658 INFO  SysUtils - Execute command: [/tmp/rdisk/1321/src/smart-location-lib-master/gradlew, -b, /tmp/rdisk/1321/src/smart-location-lib-master/library/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-05-11 14:30:59,767 INFO  SysUtils - Configuration on demand is an incubating feature.
+Configuration 'compile' in project ':library' is deprecated. Use 'implementation' instead.
+Configuration 'testCompile' in project ':library' is deprecated. Use 'testImplementation' instead.
+:library:preBuild UP-TO-DATE
+:library:preDebugBuild UP-TO-DATE
+:library:compileDebugAidl
+:library:compileDebugNdk NO-SOURCE
+:library:compileDebugRenderscript
+:library:checkDebugManifest
+:library:generateDebugBuildConfig
+:library:prepareLintJar
+:library:generateDebugResValues
+:library:generateDebugResources
+:library:packageDebugResources
+:library:platformAttrExtractor
+:library:processDebugManifest
+:library:javaPreCompileDebug
+:library:mergeDebugShaders
+:library:processDebugResources
+:library:generateDebugSources
+:library:compileDebugJavaWithJavacNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: /tmp/rdisk/1321/src/smart-location-lib-master/library/src/main/java/io/nlopez/smartlocation/geocoding/providers/AndroidGeocodingProvider.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:library:extractDebugAnnotations
+:library:compileDebugShaders
+:library:generateDebugAssets
+:library:mergeDebugAssets
+:library:mergeDebugConsumerProguardFiles
+:library:packageDebugRenderscript NO-SOURCE
+:library:processDebugJavaRes NO-SOURCE
+:library:transformResourcesWithMergeJavaResForDebug
+:library:transformClassesAndResourcesWithSyncLibJarsForDebug
+:library:mergeDebugJniLibFolders
+:library:transformNativeLibsWithMergeJniLibsForDebug
+:library:transformNativeLibsWithStripDebugSymbolForDebug
+:library:transformNativeLibsWithSyncJniLibsForDebug
+:library:bundleDebug
+:library:compileDebugSources
+:library:assembleDebug
+:library:preDefaultConfigBuild UP-TO-DATE
+:library:compileDefaultConfigAidl
+:library:compileDefaultConfigNdk NO-SOURCE
+:library:compileDefaultConfigRenderscript
+:library:checkDefaultConfigManifest
+:library:generateDefaultConfigBuildConfig
+:library:generateDefaultConfigResValues
+:library:generateDefaultConfigResources
+:library:packageDefaultConfigResources
+:library:processDefaultConfigManifest
+:library:processDefaultConfigResources
+:library:generateDefaultConfigSources
+:library:javaPreCompileDefaultConfig
+:library:compileDefaultConfigJavaWithJavacNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: /tmp/rdisk/1321/src/smart-location-lib-master/library/src/main/java/io/nlopez/smartlocation/geocoding/providers/AndroidGeocodingProvider.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:library:extractDefaultConfigAnnotations
+:library:mergeDefaultConfigShaders
+:library:compileDefaultConfigShaders
+:library:generateDefaultConfigAssets
+:library:mergeDefaultConfigAssets
+:library:mergeDefaultConfigConsumerProguardFiles
+:library:packageDefaultConfigRenderscript NO-SOURCE
+:library:processDefaultConfigJavaRes NO-SOURCE
+:library:transformResourcesWithMergeJavaResForDefaultConfig
+:library:transformClassesAndResourcesWithSyncLibJarsForDefaultConfig
+:library:mergeDefaultConfigJniLibFolders
+:library:transformNativeLibsWithMergeJniLibsForDefaultConfig
+:library:transformNativeLibsWithStripDebugSymbolForDefaultConfig
+:library:transformNativeLibsWithSyncJniLibsForDefaultConfig
+:library:bundleDefaultConfig
+:library:compileDefaultConfigSources
+:library:mergeDefaultConfigResources
+:library:verifyDefaultConfigResources
+:library:assembleDefaultConfig
+:library:preReleaseBuild UP-TO-DATE
+:library:compileReleaseAidl
+:library:compileReleaseNdk NO-SOURCE
+:library:compileReleaseRenderscript
+:library:checkReleaseManifest
+:library:generateReleaseBuildConfig
+:library:generateReleaseResValues
+:library:generateReleaseResources
+:library:packageReleaseResources
+:library:processReleaseManifest
+:library:processReleaseResources
+:library:generateReleaseSources
+:library:javaPreCompileRelease
+:library:compileReleaseJavaWithJavacNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: /tmp/rdisk/1321/src/smart-location-lib-master/library/src/main/java/io/nlopez/smartlocation/geocoding/providers/AndroidGeocodingProvider.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:library:extractReleaseAnnotations
+:library:mergeReleaseShaders
+:library:compileReleaseShaders
+:library:generateReleaseAssets
+:library:mergeReleaseAssets
+:library:mergeReleaseConsumerProguardFiles
+:library:packageReleaseRenderscript NO-SOURCE
+:library:processReleaseJavaRes NO-SOURCE
+:library:transformResourcesWithMergeJavaResForRelease
+:library:transformClassesAndResourcesWithSyncLibJarsForRelease
+:library:mergeReleaseJniLibFolders
+:library:transformNativeLibsWithMergeJniLibsForRelease
+:library:transformNativeLibsWithStripDebugSymbolForRelease
+:library:transformNativeLibsWithSyncJniLibsForRelease
+:library:bundleRelease
+:library:compileReleaseSources
+:library:mergeReleaseResources
+:library:verifyReleaseResources
+:library:assembleRelease
+:library:signArchives SKIPPED
+:library:assemble
+:library:build
+
+BUILD SUCCESSFUL in 18s
+72 actionable tasks: 72 executed
+
+2018-05-11 14:30:59,813 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-11 14:30:59,813 INFO  SysUtils - Execute command: [/tmp/rdisk/1321/src/smart-location-lib-master/gradlew, -b, /tmp/rdisk/1321/src/smart-location-lib-master/rxjava/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-11 14:31:07,622 INFO  ProjectTaskService - Detected possible tasks: 79
+2018-05-11 14:31:07,623 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-05-11 14:31:07,623 INFO  SysUtils - Execute command: [/tmp/rdisk/1321/src/smart-location-lib-master/gradlew, -b, /tmp/rdisk/1321/src/smart-location-lib-master/rxjava/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-05-11 14:31:23,074 INFO  SysUtils - Configuration on demand is an incubating feature.
+Configuration 'compile' in project ':rxjava' is deprecated. Use 'implementation' instead.
+Configuration 'testCompile' in project ':rxjava' is deprecated. Use 'testImplementation' instead.
+Configuration 'compile' in project ':library' is deprecated. Use 'implementation' instead.
+Configuration 'testCompile' in project ':library' is deprecated. Use 'testImplementation' instead.
+:library:preBuild UP-TO-DATE
+:library:preDebugBuild UP-TO-DATE
+:library:compileDebugAidl UP-TO-DATE
+:rxjava:preBuild UP-TO-DATE
+:rxjava:preDebugBuild UP-TO-DATE
+:rxjava:compileDebugAidl
+:rxjava:compileDebugNdk NO-SOURCE
+:library:compileDebugRenderscript UP-TO-DATE
+:library:checkDebugManifest UP-TO-DATE
+:library:generateDebugBuildConfig UP-TO-DATE
+:library:prepareLintJar UP-TO-DATE
+:library:generateDebugResValues UP-TO-DATE
+:library:generateDebugResources UP-TO-DATE
+:library:packageDebugResources UP-TO-DATE
+:library:platformAttrExtractor UP-TO-DATE
+:library:processDebugManifest UP-TO-DATE
+:library:processDebugResources UP-TO-DATE
+:library:generateDebugSources UP-TO-DATE
+:library:javaPreCompileDebug UP-TO-DATE
+:library:compileDebugJavaWithJavac UP-TO-DATE
+:library:processDebugJavaRes NO-SOURCE
+:library:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug
+:library:packageDebugRenderscript NO-SOURCE
+:rxjava:compileDebugRenderscript
+:rxjava:checkDebugManifest
+:rxjava:generateDebugBuildConfig
+:rxjava:prepareLintJar
+:rxjava:generateDebugResValues
+:rxjava:generateDebugResources
+:rxjava:packageDebugResources
+:rxjava:platformAttrExtractor
+:rxjava:processDebugManifest
+:rxjava:javaPreCompileDebug
+:rxjava:mergeDebugShaders
+:rxjava:compileDebugShaders
+:rxjava:generateDebugAssets
+:rxjava:mergeDebugAssets
+:rxjava:mergeDebugConsumerProguardFiles
+:rxjava:packageDebugRenderscript NO-SOURCE
+:rxjava:processDebugJavaRes NO-SOURCE
+:rxjava:mergeDebugJniLibFolders
+:rxjava:transformNativeLibsWithMergeJniLibsForDebug
+:rxjava:transformNativeLibsWithStripDebugSymbolForDebug
+:rxjava:transformNativeLibsWithSyncJniLibsForDebug
+:library:preDefaultConfigBuild UP-TO-DATE
+:library:compileDefaultConfigAidl UP-TO-DATE
+:rxjava:preDefaultConfigBuild UP-TO-DATE
+:rxjava:compileDefaultConfigAidl
+:rxjava:compileDefaultConfigNdk NO-SOURCE
+:library:compileDefaultConfigRenderscript UP-TO-DATE
+:library:checkDefaultConfigManifest UP-TO-DATE
+:library:generateDefaultConfigBuildConfig UP-TO-DATE
+:library:generateDefaultConfigResValues UP-TO-DATE
+:library:generateDefaultConfigResources UP-TO-DATE
+:library:packageDefaultConfigResources UP-TO-DATE
+:library:processDefaultConfigManifest UP-TO-DATE
+:library:processDefaultConfigResources UP-TO-DATE
+:library:generateDefaultConfigSources UP-TO-DATE
+:library:javaPreCompileDefaultConfig UP-TO-DATE
+:library:compileDefaultConfigJavaWithJavac UP-TO-DATE
+:library:processDefaultConfigJavaRes NO-SOURCE
+:library:transformClassesAndResourcesWithPrepareIntermediateJarsForDefaultConfig
+:library:packageDefaultConfigRenderscript NO-SOURCE
+:rxjava:compileDefaultConfigRenderscript
+:rxjava:checkDefaultConfigManifest
+:rxjava:generateDefaultConfigBuildConfig
+:rxjava:generateDefaultConfigResValues
+:rxjava:generateDefaultConfigResources
+:rxjava:packageDefaultConfigResources
+:rxjava:processDefaultConfigManifest
+:rxjava:javaPreCompileDefaultConfig
+:rxjava:mergeDefaultConfigShaders
+:rxjava:compileDefaultConfigShaders
+:rxjava:generateDefaultConfigAssets
+:rxjava:mergeDefaultConfigAssets
+:rxjava:mergeDefaultConfigConsumerProguardFiles
+:rxjava:packageDefaultConfigRenderscript NO-SOURCE
+:rxjava:processDefaultConfigJavaRes NO-SOURCE
+:rxjava:mergeDefaultConfigJniLibFolders
+:rxjava:transformNativeLibsWithMergeJniLibsForDefaultConfig
+:rxjava:transformNativeLibsWithStripDebugSymbolForDefaultConfig
+:rxjava:transformNativeLibsWithSyncJniLibsForDefaultConfig
+:rxjava:mergeDefaultConfigResources
+:rxjava:verifyDefaultConfigResources
+:library:preReleaseBuild UP-TO-DATE
+:library:compileReleaseAidl UP-TO-DATE
+:rxjava:preReleaseBuild UP-TO-DATE
+:rxjava:compileReleaseAidl
+:rxjava:compileReleaseNdk NO-SOURCE
+:library:compileReleaseRenderscript UP-TO-DATE
+:library:checkReleaseManifest UP-TO-DATE
+:library:generateReleaseBuildConfig UP-TO-DATE
+:library:generateReleaseResValues UP-TO-DATE
+:library:generateReleaseResources UP-TO-DATE
+:library:packageReleaseResources UP-TO-DATE
+:library:processReleaseManifest UP-TO-DATE
+:library:processReleaseResources UP-TO-DATE
+:library:generateReleaseSources UP-TO-DATE
+:rxjava:processDebugResources
+:rxjava:generateDebugSources
+:rxjava:compileDebugJavaWithJavac
+:rxjava:extractDebugAnnotations
+:rxjava:transformResourcesWithMergeJavaResForDebug
+:rxjava:transformClassesAndResourcesWithSyncLibJarsForDebug
+:rxjava:bundleDebug
+:rxjava:compileDebugSources
+:rxjava:assembleDebug
+:rxjava:processDefaultConfigResources
+:rxjava:generateDefaultConfigSources
+:rxjava:compileDefaultConfigJavaWithJavac
+:rxjava:extractDefaultConfigAnnotations
+:rxjava:transformResourcesWithMergeJavaResForDefaultConfig
+:rxjava:transformClassesAndResourcesWithSyncLibJarsForDefaultConfig
+:rxjava:bundleDefaultConfig
+:rxjava:compileDefaultConfigSources
+:rxjava:assembleDefaultConfig
+:library:javaPreCompileRelease UP-TO-DATE
+:library:compileReleaseJavaWithJavac UP-TO-DATE
+:library:processReleaseJavaRes NO-SOURCE
+:library:transformClassesAndResourcesWithPrepareIntermediateJarsForRelease
+:library:packageReleaseRenderscript NO-SOURCE
+:rxjava:compileReleaseRenderscript
+:rxjava:checkReleaseManifest
+:rxjava:generateReleaseBuildConfig
+:rxjava:generateReleaseResValues
+:rxjava:generateReleaseResources
+:rxjava:packageReleaseResources
+:rxjava:processReleaseManifest
+:rxjava:processReleaseResources
+:rxjava:generateReleaseSources
+:rxjava:javaPreCompileRelease
+:rxjava:compileReleaseJavaWithJavac
+:rxjava:extractReleaseAnnotations
+:rxjava:mergeReleaseShaders
+:rxjava:compileReleaseShaders
+:rxjava:generateReleaseAssets
+:rxjava:mergeReleaseAssets
+:rxjava:mergeReleaseConsumerProguardFiles
+:rxjava:packageReleaseRenderscript NO-SOURCE
+:rxjava:processReleaseJavaRes NO-SOURCE
+:rxjava:transformResourcesWithMergeJavaResForRelease
+:rxjava:transformClassesAndResourcesWithSyncLibJarsForRelease
+:rxjava:mergeReleaseJniLibFolders
+:rxjava:transformNativeLibsWithMergeJniLibsForRelease
+:rxjava:transformNativeLibsWithStripDebugSymbolForRelease
+:rxjava:transformNativeLibsWithSyncJniLibsForRelease
+:rxjava:bundleRelease
+:rxjava:compileReleaseSources
+:rxjava:mergeReleaseResources
+:rxjava:verifyReleaseResources
+:rxjava:assembleRelease
+:rxjava:signArchives SKIPPED
+:rxjava:assemble
+:rxjava:build
+
+BUILD SUCCESSFUL in 14s
+107 actionable tasks: 75 executed, 32 up-to-date
+
+2018-05-11 14:31:23,155 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-11 14:31:23,156 INFO  SysUtils - Execute command: [/tmp/rdisk/1321/src/smart-location-lib-master/gradlew, -b, /tmp/rdisk/1321/src/smart-location-lib-master/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-11 14:31:30,537 INFO  ProjectTaskService - Detected possible tasks: 66
+2018-05-11 14:31:30,538 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-05-11 14:31:30,538 INFO  SysUtils - Execute command: [/tmp/rdisk/1321/src/smart-location-lib-master/gradlew, -b, /tmp/rdisk/1321/src/smart-location-lib-master/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-05-11 14:32:02,148 INFO  SysUtils - Configuration on demand is an incubating feature.
+Configuration 'compile' in project ':sample' is deprecated. Use 'implementation' instead.
+Configuration 'debugCompile' in project ':sample' is deprecated. Use 'debugImplementation' instead.
+Configuration 'releaseCompile' in project ':sample' is deprecated. Use 'releaseImplementation' instead.
+Configuration 'compile' in project ':library' is deprecated. Use 'implementation' instead.
+Configuration 'testCompile' in project ':library' is deprecated. Use 'testImplementation' instead.
+:library:preBuild UP-TO-DATE
+:library:preDebugBuild UP-TO-DATE
+:library:compileDebugAidl UP-TO-DATE
+:library:compileDebugRenderscript UP-TO-DATE
+:library:checkDebugManifest UP-TO-DATE
+:library:generateDebugBuildConfig UP-TO-DATE
+:library:prepareLintJar UP-TO-DATE
+:library:generateDebugResValues UP-TO-DATE
+:library:generateDebugResources UP-TO-DATE
+:library:packageDebugResources UP-TO-DATE
+:library:platformAttrExtractor UP-TO-DATE
+:library:processDebugManifest UP-TO-DATE
+:library:processDebugResources UP-TO-DATE
+:library:generateDebugSources UP-TO-DATE
+:library:javaPreCompileDebug UP-TO-DATE
+:library:compileDebugJavaWithJavac UP-TO-DATE
+:library:processDebugJavaRes NO-SOURCE
+:library:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug UP-TO-DATE
+:sample:preBuild UP-TO-DATE
+:sample:preDebugBuild
+:sample:compileDebugAidl
+:library:packageDebugRenderscript NO-SOURCE
+:sample:compileDebugRenderscript
+:sample:checkDebugManifest
+:sample:generateDebugBuildConfig
+:sample:prepareLintJar
+:sample:generateDebugResValues
+:sample:generateDebugResources
+:sample:mergeDebugResources
+:sample:createDebugCompatibleScreenManifests
+:sample:processDebugManifest
+:sample:splitsDiscoveryTaskDebug
+:sample:processDebugResources
+:sample:generateDebugSources
+:sample:javaPreCompileDebug
+:sample:compileDebugJavaWithJavac
+:sample:compileDebugNdk NO-SOURCE
+:sample:compileDebugSources
+:library:mergeDebugShaders UP-TO-DATE
+:library:compileDebugShaders UP-TO-DATE
+:library:generateDebugAssets UP-TO-DATE
+:library:mergeDebugAssets UP-TO-DATE
+:sample:mergeDebugShaders
+:sample:compileDebugShaders
+:sample:generateDebugAssets
+:sample:mergeDebugAssets
+:sample:transformClassesWithDexBuilderForDebug
+:sample:transformDexArchiveWithExternalLibsDexMergerForDebug
+:sample:transformDexArchiveWithDexMergerForDebug
+:library:compileDebugNdk NO-SOURCE
+:library:mergeDebugJniLibFolders UP-TO-DATE
+:library:transformNativeLibsWithMergeJniLibsForDebug UP-TO-DATE
+:library:transformNativeLibsWithStripDebugSymbolForDebug UP-TO-DATE
+:library:transformNativeLibsWithIntermediateJniLibsForDebug
+:sample:mergeDebugJniLibFolders
+:sample:transformNativeLibsWithMergeJniLibsForDebug
+:sample:transformNativeLibsWithStripDebugSymbolForDebug
+:sample:processDebugJavaRes NO-SOURCE
+:sample:transformResourcesWithMergeJavaResForDebug
+:sample:validateSigningDebug
+:sample:packageDebug
+:sample:assembleDebug
+:library:preReleaseBuild UP-TO-DATE
+:library:compileReleaseAidl UP-TO-DATE
+:library:compileReleaseRenderscript UP-TO-DATE
+:library:checkReleaseManifest UP-TO-DATE
+:library:generateReleaseBuildConfig UP-TO-DATE
+:library:generateReleaseResValues UP-TO-DATE
+:library:generateReleaseResources UP-TO-DATE
+:library:packageReleaseResources UP-TO-DATE
+:library:processReleaseManifest UP-TO-DATE
+:library:processReleaseResources UP-TO-DATE
+:library:generateReleaseSources UP-TO-DATE
+:library:javaPreCompileRelease UP-TO-DATE
+:library:compileReleaseJavaWithJavac UP-TO-DATE
+:library:processReleaseJavaRes NO-SOURCE
+:library:transformClassesAndResourcesWithPrepareIntermediateJarsForRelease UP-TO-DATE
+:sample:preReleaseBuild
+:sample:compileReleaseAidl
+:library:packageReleaseRenderscript NO-SOURCE
+:sample:compileReleaseRenderscript
+:sample:checkReleaseManifest
+:sample:generateReleaseBuildConfig
+:sample:generateReleaseResValues
+:sample:generateReleaseResources
+:sample:mergeReleaseResources
+:sample:createReleaseCompatibleScreenManifests
+:sample:processReleaseManifest
+:sample:splitsDiscoveryTaskRelease
+:sample:processReleaseResources
+:sample:generateReleaseSources
+:sample:javaPreCompileRelease
+:sample:compileReleaseJavaWithJavac
+:sample:compileReleaseNdk NO-SOURCE
+:sample:compileReleaseSources
+:library:mergeReleaseShaders UP-TO-DATE
+:library:compileReleaseShaders UP-TO-DATE
+:library:generateReleaseAssets UP-TO-DATE
+:library:mergeReleaseAssets UP-TO-DATE
+:sample:mergeReleaseShaders
+:sample:compileReleaseShaders
+:sample:generateReleaseAssets
+:sample:mergeReleaseAssets
+:sample:transformClassesWithPreDexForRelease
+:sample:transformDexWithDexForRelease
+:library:compileReleaseNdk NO-SOURCE
+:library:mergeReleaseJniLibFolders UP-TO-DATE
+:library:transformNativeLibsWithMergeJniLibsForRelease UP-TO-DATE
+:library:transformNativeLibsWithStripDebugSymbolForRelease UP-TO-DATE
+:library:transformNativeLibsWithIntermediateJniLibsForRelease
+:sample:mergeReleaseJniLibFolders
+:sample:transformNativeLibsWithMergeJniLibsForRelease
+:sample:transformNativeLibsWithStripDebugSymbolForRelease
+:sample:processReleaseJavaRes NO-SOURCE
+:sample:transformResourcesWithMergeJavaResForRelease
+:sample:packageRelease
+:sample:lintVitalRelease
+:sample:assembleRelease
+:sample:assemble
+:sample:build
+
+BUILD SUCCESSFUL in 31s
+88 actionable tasks: 52 executed, 36 up-to-date
+
+2018-05-11 14:32:02,260 INFO  FullProcessService - Found APK file: /tmp/rdisk/1321/src/smart-location-lib-master/sample/build/outputs/apk/release/sample-release-unsigned.apk

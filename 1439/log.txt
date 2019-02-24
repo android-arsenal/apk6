@@ -1,0 +1,8 @@
+2016-07-16 05:03:48,064 INFO  c.g.v.a.s.n.DownloadService - Downloading "https://github.com/JetBrains/kotlin/archive/master.zip", attempt 3
+2016-07-16 05:03:51,319 INFO  c.g.v.a.s.n.DownloadService - Downloaded https://github.com/JetBrains/kotlin/archive/master.zip, attempt 3
+2016-07-16 05:03:59,225 DEBUG o.z.z.ZipUtil - Extracting '/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468623827500-0/master.zip' into '/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468623827500-0/src'.
+2016-07-16 05:04:15,766 INFO  c.g.v.a.s.FullProcessService - Size of directory with sources: 59 MB
+2016-07-16 05:04:15,767 ERROR c.g.v.a.s.FullProcessService - Source directory should be less than 40 MB
+2016-07-16 05:04:15,767 ERROR c.g.v.a.s.FullProcessService - Project will not be processed
+2016-07-16 05:04:15,767 ERROR c.g.v.a.s.FullProcessService - Project build has not produced APK file
+2016-07-16 05:04:17,030 ERROR c.g.v.a.s.FullProcessService - Could not find generated or existed APK file

@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "com.meg7.soas",
+    "label" : "soas (Sample of all samples)",
+    "icon" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "versionName" : "1.2",
+    "versionCode" : 3,
+    "installLocation" : null,
+    "minSdkVersion" : "14",
+    "targetSdkVersion" : "21",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ "android.permission.INTERNET", "android.permission.ACCESS_NETWORK_STATE", "android.permission.WRITE_EXTERNAL_STORAGE", "android.permission.READ_EXTERNAL_STORAGE" ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAB+FBMVEUAAAD////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////JfA+bAAAAqHRSTlMACzBtmbC7t6qRb0gfCgxhyPr/8oc7ByjB/PbSbgE87P3cgz8bDhYvZKvt5yzgi7P+GQS5iZzxKVLMCLj4tnsi61AS6FN+NxjblEp3RYRPyw0CRPsu83HkHXwa9CPqozmhx03DSQZfEIjl1zU9FFm8JCGK6bGWQkfhIFx6NpB/gRXefaKnBcQmCd1dqFoXphHmaHDA41jwr2UTK2a9Vsr3QdH5njO6xcnIa33cAAACGklEQVRIx2NgGAqAkYmZhZWNnYOTi5uHl7ByPn4BQSEYEBYQERXDr15cQlIIBUhJy8jiUS8nLySkoKikrKKqpq6hqQXWos2IW72OrpCQpJ4anKtvANQgb4hTvZExUN7ECMlDpkAdZuY4NVgA1VuqIotYWQsJ2cjh1GAL1GCHKmTvIGTgiEu9k7OQkIELqpisq5AQMy4NblJADRZogu4eQp64NHgpAJ3kjS7qw+6LKyL8QKHuH4AuHBiIy4agYJAOu0CiU11IKEiDTZgV0ck0HJwUgjUjiNVhCk1woZFRssS5KRqWRnXtYojRIutrAE/WsXHxRPjeKgGhQ8ggMYmRcH4zDUbKPAbJKQRtSU2LRclvLOkELXHKyERyl1BWNmGfRER6IGlxziEiuHLz8hFlgW4BUXFSWFQM01EiRly8x5RKQTQIlhGZUozK5SE6TIlPvxVgDeHYZdMrjTDEqiDxiF1DaWwpZlrxwKOhWkiwBkeKx1EGCAnVYgjWgdRLYtdgLihUoYIuWI/H0w2NQkJN6NmmGaShBbuG1jYhIa12VLGOTpCGLhyh3g2UM0atpHpAwarbi0ODCSjP9PUjidRMAJUiE3HF6yRwEE5Wh/mjNWUKSKAbZ9qbCskF06bPcFNRnTlrNhs48c1xwplyAufOmy+EBqaJ4C0IOhZ4LlyEpDxz8RKCCVR1VpdI39JlyxOtEyLL3YkvmAcQAAAR42fuJcsi0AAAAABJRU5ErkJggg=="
+  },
+  "dexClasses" : 1855,
+  "locales" : [ "", "sl", "mr_IN", "kk_KZ", "bg", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "my_MM", "ur_PK", "mn_MN", "fi", "lv", "et_EE", "sw", "pt_PT", "tl", "th", "uz_UZ", "pt", "ar", "ru", "eu_ES", "bn_BD", "fa", "sk", "kn_IN", "hi", "cs", "sv", "km_KH", "el", "nl", "hu", "af", "in", "vi", "fr_CA", "sr", "da", "si_LK", "ml_IN", "gl_ES", "es", "is_IS", "hy_AM", "tr", "ne_NP", "ro", "hr", "ms_MY", "am", "ka_GE", "lt", "pl", "zh_CN", "ta_IN", "fr", "ja", "lo_LA", "ky_KG", "iw", "de", "en_IN", "es_US", "mk_MK", "nb", "te_IN", "ca", "en_GB" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"3\" android:versionName=\"1.2\" package=\"com.meg7.soas\" platformBuildVersionCode=\"21\" platformBuildVersionName=\"5.0.1-1624448\">\n\t<uses-sdk android:minSdkVersion=\"14\" android:targetSdkVersion=\"21\" />\n\t<uses-permission android:name=\"android.permission.INTERNET\" />\n\t<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />\n\t<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />\n\t<android:uses-permission android:name=\"android.permission.READ_EXTERNAL_STORAGE\" android:maxSdkVersion=\"18\" />\n\t<application android:theme=\"resourceId:0x7f0b0000\" android:label=\"soas (Sample of all samples)\" android:icon=\"res/drawable-mdpi-v4/ic_launcher.png\" android:name=\"com.meg7.soas.SoasApplication\" android:debuggable=\"true\" android:allowBackup=\"true\">\n\t\t<activity android:theme=\"resourceId:0x7f0b0001\" android:label=\"soas (Sample of all samples)\" android:name=\"com.meg7.soas.ui.PhotosListActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t\t<activity android:label=\"Photo Detail\" android:name=\"com.meg7.soas.ui.PhotoDetailActivity\" android:parentActivityName=\"com.meg7.soas.ui.PhotosListActivity\">\n\t\t\t<meta-data android:name=\"android.support.PARENT_ACTIVITY\" android:value=\".ui.PhotosListActivity\" />\n\t\t</activity>\n\t\t<provider android:name=\"com.meg7.soas.database.provider.OfflineNotesProvider\" android:exported=\"false\" android:authorities=\"com.meg7.soas.provider.offlineNotes\" />\n\t\t<activity android:label=\"RecyclerViewTestActivity\" android:name=\"android.support.v7.widget.TestActivity\" />\n\t</application>\n</manifest>\n",
+  "fileSize" : 1243799,
+  "crc32" : 2598675370,
+  "sha256" : "c7f289da7d1d5783d0c8079b54fa19de6952244ad2e7d6930e5fe21cd4632259",
+  "buildTime" : 1526863183000
+}

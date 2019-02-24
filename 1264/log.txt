@@ -1,0 +1,137 @@
+2018-05-21 02:37:23,941 INFO  DownloadService - Downloading "https://github.com/telly/MrVector/archive/master.zip", attempt 3
+2018-05-21 02:37:24,357 INFO  DownloadService - Downloaded https://github.com/telly/MrVector/archive/master.zip, attempt 3
+2018-05-21 02:37:24,357 INFO  DownloadService - Size of file "/tmp/rdisk/1264/master.zip": 167 KB
+2018-05-21 02:37:24,357 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-05-21 02:37:24,357 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/1264/master.zip: true
+2018-05-21 02:37:24,357 DEBUG ZipUtil - Extracting '/tmp/rdisk/1264/master.zip' into '/tmp/rdisk/1264/src'.
+2018-05-21 02:37:24,367 INFO  FullProcessService - Size of directory with sources: 312 KB
+2018-05-21 02:37:24,367 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1264/src]
+2018-05-21 02:37:24,372 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1264/src/.git/
+
+2018-05-21 02:37:24,375 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1264/src/MrVector-master/gradlew
+2018-05-21 02:37:24,383 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1264/src/MrVector-master/demo/build.gradle /tmp/rdisk/1264/src/MrVector-master/library/build.gradle /tmp/rdisk/1264/src/MrVector-master/build.gradle
+2018-05-21 02:37:24,386 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1264/src/MrVector-master/settings.gradle /tmp/rdisk/1264/src/MrVector-master/library/gradle-mvn-push.gradle /tmp/rdisk/1264/src/MrVector-master/library/build.gradle /tmp/rdisk/1264/src/MrVector-master/demo/build.gradle /tmp/rdisk/1264/src/MrVector-master/build.gradle
+2018-05-21 02:37:24,386 INFO  ProjectBuildService - Remote scripts: none
+2018-05-21 02:37:24,386 INFO  ProjectFixService - Fixing project...
+2018-05-21 02:37:24,394 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1264/src/MrVector-master/demo/local.properties
+2018-05-21 02:37:24,396 INFO  ProjectFixService - Build info for "/tmp/rdisk/1264/src/MrVector-master/demo/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-05-21 02:37:24,396 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1264/src/MrVector-master/demo/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-05-21 02:37:24,397 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1264/src/MrVector-master/library/local.properties
+2018-05-21 02:37:24,400 INFO  ProjectFixService - Build info for "/tmp/rdisk/1264/src/MrVector-master/library/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-05-21 02:37:24,400 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1264/src/MrVector-master/library/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-05-21 02:37:24,400 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1264/src/MrVector-master/local.properties
+2018-05-21 02:37:24,401 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-05-21 02:37:24,401 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-05-21 02:37:24,403 INFO  ProjectFixService - Build info for "/tmp/rdisk/1264/src/MrVector-master/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-05-21 02:37:24,404 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1264/src/MrVector-master/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-05-21 02:37:24,404 INFO  ProjectFixService - Project was maybe fixed
+2018-05-21 02:37:24,404 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-21 02:37:24,404 INFO  SysUtils - Execute command: [/tmp/rdisk/1264/src/MrVector-master/gradlew, -b, /tmp/rdisk/1264/src/MrVector-master/demo/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-21 02:37:31,126 INFO  ProjectTaskService - Detected possible tasks: 53
+2018-05-21 02:37:31,126 INFO  ProjectTaskService - Excluded tasks (11): lintDebug deviceCheck lint uninstallRelease connectedCheck uninstallAll check connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-05-21 02:37:31,126 INFO  SysUtils - Execute command: [/tmp/rdisk/1264/src/MrVector-master/gradlew, -b, /tmp/rdisk/1264/src/MrVector-master/demo/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, connectedCheck, -x, uninstallAll, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-05-21 02:37:59,069 INFO  SysUtils - Configuration on demand is an incubating feature.
+:demo:preBuild
+:demo:compileDebugNdk
+:demo:preDebugBuild
+:demo:checkDebugManifest
+:demo:preReleaseBuild
+:library:compileLint
+:library:copyReleaseLint UP-TO-DATE
+:library:preBuild
+:library:preReleaseBuild
+:library:checkReleaseManifest
+:library:preDebugBuild
+:library:preDebugTestBuild
+:library:prepareComAndroidSupportSupportV42103Library
+:library:prepareReleaseDependencies
+:library:compileReleaseAidl
+:library:compileReleaseRenderscript
+:library:generateReleaseBuildConfig
+:library:generateReleaseAssets UP-TO-DATE
+:library:mergeReleaseAssets
+:library:generateReleaseResValues
+:library:generateReleaseResources
+:library:mergeReleaseResources
+:library:processReleaseManifest
+:library:processReleaseResources
+:library:generateReleaseSources
+:library:compileReleaseJava
+:library:extractReleaseAnnotations
+:library:mergeReleaseProguardFiles
+:library:processReleaseJavaRes UP-TO-DATE
+:library:packageReleaseJar
+:library:compileReleaseNdk
+:library:packageReleaseJniLibs UP-TO-DATE
+:library:packageReleaseLocalJar UP-TO-DATE
+:library:packageReleaseRenderscript UP-TO-DATE
+:library:packageReleaseResources
+:library:bundleRelease
+:demo:prepareComAndroidSupportAppcompatV72103Library
+:demo:prepareComAndroidSupportSupportV42103Library
+:demo:prepareComTellyLibrary020Library
+:demo:prepareDebugDependencies
+:demo:compileDebugAidl
+:demo:compileDebugRenderscript
+:demo:generateDebugBuildConfig
+:demo:generateDebugAssets UP-TO-DATE
+:demo:mergeDebugAssets
+:demo:generateDebugResValues
+:demo:generateDebugResources
+:demo:mergeDebugResources/tmp/rdisk/1264/src/MrVector-master/demo/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-xhdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/1264/src/MrVector-master/demo/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_spinner_mtrl_am_alpha.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/1264/src/MrVector-master/demo/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-mdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/1264/src/MrVector-master/demo/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_ab_share_pack_holo_light.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/1264/src/MrVector-master/demo/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/1264/src/MrVector-master/demo/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-xhdpi/abc_ab_share_pack_holo_light.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+:demo:processDebugManifest
+:demo:processDebugResources
+:demo:generateDebugSources
+:demo:compileDebugJavaNote: /tmp/rdisk/1264/src/MrVector-master/demo/src/main/java/com/telly/mrvector/demo/BaseActivity.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:demo:preDexDebug
+:demo:dexDebug
+:demo:processDebugJavaRes UP-TO-DATE
+:demo:validateDebugSigning
+:demo:packageDebug
+:demo:zipalignDebug
+:demo:assembleDebug
+:demo:checkReleaseManifest
+:demo:prepareReleaseDependencies
+:demo:compileReleaseAidl
+:demo:compileReleaseRenderscript
+:demo:generateReleaseBuildConfig
+:demo:generateReleaseAssets UP-TO-DATE
+:demo:mergeReleaseAssets
+:demo:generateReleaseResValues
+:demo:generateReleaseResources
+:demo:mergeReleaseResources/tmp/rdisk/1264/src/MrVector-master/demo/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-xhdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/1264/src/MrVector-master/demo/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_spinner_mtrl_am_alpha.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/1264/src/MrVector-master/demo/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-mdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/1264/src/MrVector-master/demo/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_ab_share_pack_holo_light.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/1264/src/MrVector-master/demo/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/1264/src/MrVector-master/demo/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-xhdpi/abc_ab_share_pack_holo_light.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+:demo:processReleaseManifest
+:demo:processReleaseResources
+:demo:generateReleaseSources
+:demo:compileReleaseJavaNote: /tmp/rdisk/1264/src/MrVector-master/demo/src/main/java/com/telly/mrvector/demo/BaseActivity.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:demo:lintVitalRelease
+:demo:compileReleaseNdk
+:demo:proguardRelease
+:demo:dexRelease
+:demo:processReleaseJavaRes UP-TO-DATE
+:demo:packageRelease
+:demo:assembleRelease
+:demo:assemble
+:demo:build
+
+BUILD SUCCESSFUL
+
+Total time: 27.492 secs
+
+2018-05-21 02:37:59,108 INFO  FullProcessService - Found APK file: /tmp/rdisk/1264/src/MrVector-master/demo/build/outputs/apk/demo-release-unsigned.apk

@@ -1,0 +1,237 @@
+2018-05-11 14:05:04,118 INFO  DownloadService - Downloading "https://github.com/h6ah4i/android-advancedrecyclerview/archive/master.zip", attempt 3
+2018-05-11 14:05:05,086 INFO  DownloadService - Downloaded https://github.com/h6ah4i/android-advancedrecyclerview/archive/master.zip, attempt 3
+2018-05-11 14:05:05,087 INFO  DownloadService - Size of file "/tmp/rdisk/1432/master.zip": 2 MB
+2018-05-11 14:05:05,087 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-05-11 14:05:05,088 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/1432/master.zip: true
+2018-05-11 14:05:05,088 DEBUG ZipUtil - Extracting '/tmp/rdisk/1432/master.zip' into '/tmp/rdisk/1432/src'.
+2018-05-11 14:05:05,169 INFO  FullProcessService - Size of directory with sources: 3 MB
+2018-05-11 14:05:05,169 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1432/src]
+2018-05-11 14:05:05,176 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1432/src/.git/
+
+2018-05-11 14:05:05,187 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1432/src/android-advancedrecyclerview-master/gradlew
+2018-05-11 14:05:05,197 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1432/src/android-advancedrecyclerview-master/example/build.gradle /tmp/rdisk/1432/src/android-advancedrecyclerview-master/library/build.gradle /tmp/rdisk/1432/src/android-advancedrecyclerview-master/methodscount/build.gradle /tmp/rdisk/1432/src/android-advancedrecyclerview-master/build.gradle
+2018-05-11 14:05:05,208 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1432/src/android-advancedrecyclerview-master/settings.gradle /tmp/rdisk/1432/src/android-advancedrecyclerview-master/methodscount/build.gradle /tmp/rdisk/1432/src/android-advancedrecyclerview-master/library/build.gradle /tmp/rdisk/1432/src/android-advancedrecyclerview-master/example/build.gradle /tmp/rdisk/1432/src/android-advancedrecyclerview-master/common/android-signing-utils.gradle /tmp/rdisk/1432/src/android-advancedrecyclerview-master/common/android-set-common-properties.gradle /tmp/rdisk/1432/src/android-advancedrecyclerview-master/common/android-maven-publish.gradle /tmp/rdisk/1432/src/android-advancedrecyclerview-master/build.gradle
+2018-05-11 14:05:05,209 INFO  ProjectBuildService - Remote scripts: none
+2018-05-11 14:05:05,209 INFO  ProjectFixService - Fixing project...
+2018-05-11 14:05:05,233 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1432/src/android-advancedrecyclerview-master/example/local.properties
+2018-05-11 14:05:05,235 INFO  ProjectFixService - Build info for "/tmp/rdisk/1432/src/android-advancedrecyclerview-master/example/build.gradle": [buildToolsVersion=27.0.0,compileSdkVersion=27,minSdkVersion=14,targetSdkVersion=27]
+2018-05-11 14:05:05,235 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1432/src/android-advancedrecyclerview-master/library/local.properties
+2018-05-11 14:05:05,237 INFO  ProjectFixService - Build info for "/tmp/rdisk/1432/src/android-advancedrecyclerview-master/library/build.gradle": [buildToolsVersion=27.0.0,compileSdkVersion=27,minSdkVersion=14,targetSdkVersion=27]
+2018-05-11 14:05:05,237 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1432/src/android-advancedrecyclerview-master/methodscount/local.properties
+2018-05-11 14:05:05,239 INFO  ProjectFixService - Build info for "/tmp/rdisk/1432/src/android-advancedrecyclerview-master/methodscount/build.gradle": [buildToolsVersion=27.0.0,compileSdkVersion=27,minSdkVersion=9,targetSdkVersion=25]
+2018-05-11 14:05:05,239 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1432/src/android-advancedrecyclerview-master/local.properties
+2018-05-11 14:05:05,239 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-4.1-bin.zip
+2018-05-11 14:05:05,242 INFO  ProjectFixService - Build info for "/tmp/rdisk/1432/src/android-advancedrecyclerview-master/build.gradle": [buildToolsVersion=27.0.0,compileSdkVersion=27,minSdkVersion=9,targetSdkVersion=25]
+2018-05-11 14:05:05,242 INFO  ProjectFixService - Project was maybe fixed
+2018-05-11 14:05:05,242 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-11 14:05:05,242 INFO  SysUtils - Execute command: [/tmp/rdisk/1432/src/android-advancedrecyclerview-master/gradlew, -b, /tmp/rdisk/1432/src/android-advancedrecyclerview-master/example/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-11 14:05:13,867 INFO  ProjectTaskService - Detected possible tasks: 83
+2018-05-11 14:05:13,868 INFO  ProjectTaskService - Excluded tasks (9): mockableAndroidJar deviceCheck lint deviceAndroidTest connectedCheck uninstallAll test check connectedAndroidTest
+2018-05-11 14:05:13,868 INFO  SysUtils - Execute command: [/tmp/rdisk/1432/src/android-advancedrecyclerview-master/gradlew, -b, /tmp/rdisk/1432/src/android-advancedrecyclerview-master/example/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, deviceAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, test, -x, check, -x, connectedAndroidTest, build]
+2018-05-11 14:06:26,318 INFO  SysUtils - Configuration on demand is an incubating feature.
+:example:preBuild UP-TO-DATE
+:library:preBuild UP-TO-DATE
+:library:preDebugBuild UP-TO-DATE
+:library:checkDebugManifest
+:library:processDebugManifest
+:example:preIcsDebugBuild
+:library:compileDebugAidl
+:example:compileIcsDebugAidl
+:library:packageDebugRenderscript NO-SOURCE
+:example:compileIcsDebugRenderscript
+:example:checkIcsDebugManifest
+:example:generateIcsDebugBuildConfig
+:example:prepareLintJar
+:example:generateIcsDebugResValues
+:example:generateIcsDebugResources
+:library:compileDebugRenderscript
+:library:generateDebugResValues
+:library:generateDebugResources
+:library:packageDebugResources
+:example:mergeIcsDebugResources
+:example:createIcsDebugCompatibleScreenManifests
+:example:processIcsDebugManifest
+:example:splitsDiscoveryTaskIcsDebug
+:library:platformAttrExtractor
+:library:generateDebugBuildConfig
+:library:prepareLintJar
+:library:javaPreCompileDebug
+:library:processDebugJavaRes NO-SOURCE
+:example:compileIcsDebugNdk NO-SOURCE
+:example:mergeIcsDebugShaders
+:example:compileIcsDebugShaders
+:example:generateIcsDebugAssets
+:library:mergeDebugShaders
+:library:compileDebugShaders
+:library:generateDebugAssets
+:library:mergeDebugAssets
+:example:mergeIcsDebugAssets
+:example:mergeIcsDebugJniLibFolders
+:library:compileDebugNdk NO-SOURCE
+:library:mergeDebugJniLibFolders
+:library:transformNativeLibsWithMergeJniLibsForDebug
+:library:transformNativeLibsWithStripDebugSymbolForDebug
+:library:transformNativeLibsWithIntermediateJniLibsForDebug
+:example:processIcsDebugJavaRes NO-SOURCE
+:example:validateSigningIcsDebug
+:example:preLollipopDebugBuild
+:example:compileLollipopDebugAidl
+:example:compileLollipopDebugRenderscript
+:example:checkLollipopDebugManifest
+:example:generateLollipopDebugBuildConfig
+:example:generateLollipopDebugResValues
+:example:generateLollipopDebugResources
+:example:mergeLollipopDebugResources
+:example:createLollipopDebugCompatibleScreenManifests
+:example:processLollipopDebugManifest
+:example:splitsDiscoveryTaskLollipopDebug
+:example:compileLollipopDebugNdk NO-SOURCE
+:example:mergeLollipopDebugShaders
+:example:compileLollipopDebugShaders
+:example:generateLollipopDebugAssets
+:example:mergeLollipopDebugAssets
+:example:mergeLollipopDebugJniLibFolders
+:example:processLollipopDebugJavaRes NO-SOURCE
+:example:validateSigningLollipopDebug
+:library:preReleaseBuild UP-TO-DATE
+:library:checkReleaseManifest
+:library:processReleaseManifest
+:example:preIcsReleaseBuild
+:library:compileReleaseAidl
+:example:compileIcsReleaseAidl
+:library:packageReleaseRenderscript NO-SOURCE
+:example:compileIcsReleaseRenderscript
+:example:checkIcsReleaseManifest
+:example:generateIcsReleaseBuildConfig
+:example:generateIcsReleaseResValues
+:example:generateIcsReleaseResources
+:library:compileReleaseRenderscript
+:library:generateReleaseResValues
+:library:generateReleaseResources
+:library:packageReleaseResources
+:example:mergeIcsReleaseResources
+:example:createIcsReleaseCompatibleScreenManifests
+:example:processIcsReleaseManifest
+:example:splitsDiscoveryTaskIcsRelease
+:library:generateReleaseBuildConfig
+:library:javaPreCompileRelease
+:library:processReleaseJavaRes NO-SOURCE
+:example:compileIcsReleaseNdk NO-SOURCE
+:example:mergeIcsReleaseShaders
+:example:compileIcsReleaseShaders
+:example:generateIcsReleaseAssets
+:library:mergeReleaseShaders
+:library:compileReleaseShaders
+:library:generateReleaseAssets
+:library:mergeReleaseAssets
+:example:mergeIcsReleaseAssets
+:example:mergeIcsReleaseJniLibFolders
+:library:processDebugResources
+:example:processIcsDebugResources
+:example:generateIcsDebugSources
+:library:generateDebugSources
+:library:compileDebugJavaWithJavac
+:library:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug
+:example:javaPreCompileIcsDebug
+:example:compileIcsDebugJavaWithJavacNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:example:compileIcsDebugSources
+:example:transformClassesWithDexBuilderForIcsDebug
+:example:transformDexArchiveWithExternalLibsDexMergerForIcsDebug
+:example:transformDexArchiveWithDexMergerForIcsDebug
+:example:transformNativeLibsWithMergeJniLibsForIcsDebug
+:example:transformNativeLibsWithStripDebugSymbolForIcsDebug
+:example:transformResourcesWithMergeJavaResForIcsDebug
+:example:packageIcsDebug
+:example:assembleIcsDebug
+:example:processLollipopDebugResources
+:example:generateLollipopDebugSources
+:example:javaPreCompileLollipopDebug
+:example:compileLollipopDebugJavaWithJavacNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:example:compileLollipopDebugSources
+:example:transformClassesWithDexBuilderForLollipopDebug
+:example:transformDexArchiveWithExternalLibsDexMergerForLollipopDebug
+:example:transformDexArchiveWithDexMergerForLollipopDebug
+:example:transformNativeLibsWithMergeJniLibsForLollipopDebug
+:example:transformNativeLibsWithStripDebugSymbolForLollipopDebug
+:example:transformResourcesWithMergeJavaResForLollipopDebug
+:example:packageLollipopDebug
+:example:assembleLollipopDebug
+:example:assembleDebug
+:library:processReleaseResources
+:example:processIcsReleaseResources
+:example:generateIcsReleaseSources
+:library:generateReleaseSources
+:library:compileReleaseJavaWithJavac
+:library:transformClassesAndResourcesWithPrepareIntermediateJarsForRelease
+:example:javaPreCompileIcsRelease
+:example:compileIcsReleaseJavaWithJavacNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:example:compileIcsReleaseSources
+:example:transformClassesWithPreDexForIcsRelease
+:example:transformDexWithDexForIcsRelease
+:library:compileReleaseNdk NO-SOURCE
+:library:mergeReleaseJniLibFolders
+:library:transformNativeLibsWithMergeJniLibsForRelease
+:library:transformNativeLibsWithStripDebugSymbolForRelease
+:library:transformNativeLibsWithIntermediateJniLibsForRelease
+:example:transformNativeLibsWithMergeJniLibsForIcsRelease
+:example:transformNativeLibsWithStripDebugSymbolForIcsRelease
+:example:processIcsReleaseJavaRes NO-SOURCE
+:example:transformResourcesWithMergeJavaResForIcsRelease
+:example:packageIcsRelease
+:example:lintVitalIcsRelease
+:example:assembleIcsRelease
+:example:preLollipopReleaseBuild
+:example:compileLollipopReleaseAidl
+:example:compileLollipopReleaseRenderscript
+:example:checkLollipopReleaseManifest
+:example:generateLollipopReleaseBuildConfig
+:example:generateLollipopReleaseResValues
+:example:generateLollipopReleaseResources
+:example:mergeLollipopReleaseResources
+:example:createLollipopReleaseCompatibleScreenManifests
+:example:processLollipopReleaseManifest
+:example:splitsDiscoveryTaskLollipopRelease
+:example:processLollipopReleaseResources
+:example:generateLollipopReleaseSources
+:example:javaPreCompileLollipopRelease
+:example:compileLollipopReleaseJavaWithJavacNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:example:compileLollipopReleaseNdk NO-SOURCE
+:example:compileLollipopReleaseSources
+:example:mergeLollipopReleaseShaders
+:example:compileLollipopReleaseShaders
+:example:generateLollipopReleaseAssets
+:example:mergeLollipopReleaseAssets
+:example:transformClassesWithPreDexForLollipopRelease
+:example:transformDexWithDexForLollipopRelease
+:example:mergeLollipopReleaseJniLibFolders
+:example:transformNativeLibsWithMergeJniLibsForLollipopRelease
+:example:transformNativeLibsWithStripDebugSymbolForLollipopRelease
+:example:processLollipopReleaseJavaRes NO-SOURCE
+:example:transformResourcesWithMergeJavaResForLollipopRelease
+:example:packageLollipopRelease
+:example:lintVitalLollipopRelease
+:example:assembleLollipopRelease
+:example:assembleRelease
+:example:assemble
+:example:build
+
+BUILD SUCCESSFUL in 1m 11s
+137 actionable tasks: 137 executed
+
+2018-05-11 14:06:26,477 INFO  FullProcessService - Found APK file: /tmp/rdisk/1432/src/android-advancedrecyclerview-master/example/build/outputs/apk/lollipop/release/example-lollipop-release-unsigned.apk

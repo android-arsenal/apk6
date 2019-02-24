@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "cbedoy.easterlist",
+    "label" : "EasterList",
+    "icon" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "versionName" : "0.1",
+    "versionCode" : 1,
+    "installLocation" : null,
+    "minSdkVersion" : "16",
+    "targetSdkVersion" : "21",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAABy1BMVEUAAAACfHIAe2wAemwAeGsAemwBe20MjHICe3IAems/v78CfW8AemwAemsAe2wEf20fX18Ae20AeWsAeWoAemwAe2wAemwAeWsAemsDf2sBem8AeWsAe20AeGoAemsAeWsAe2wAemwAeWsAeWoAe2wAemkJiHZ/f38Ce28AeWwAemsKil8Aem4AemoCe2sDf3AAeWsAe2oBfXEAeWkHh3cAemo/vz8AeWwAeWkAem0AemoAem0AemkAeW0AeWoEe3IAeGwAemgfn58AeWsAemkAe20AemoPj28Aem0AeWkIf24GhXkBemgAeGsAemkPj48AeWsCfGsEiH8BemgPr68AeWwBfGkVlGoAe24AeGoAe2sJf38AeGoAe2kBeWgBfnABe2kAeW0AemkFem8Be2cAem0AemkBfHABfGkAemwFf2kEdmwBf2sBeWwHeGofn18AeWwBe2kZf38CfXMAemsAeGsCf2kBeGkDfG8Ae2sFf2sAeWwAeWoHf38AeWwAemoAe2wAem0AemsAeGoCfWgBeWYCfHIAeWsAeWwAemwAemsBemoqf38BfG0Ae2sAe20BemwHh2cOf38BfW0Bem0AemsAeWwAe2wBfWsJd2X4AAAAmXRSTlMAMpDF0LRoCjmZAjiMv4kdBJL987ut2P/aJ3j7w/7coI6o8+6alQ4BP9feDJfFPyP1mkKUEIACs87JvLDtzqse+IAE7qHjkwjD3Q8UdPaECLEsG28I+XAGhfyJDfqJaFxszNoYXKfrY26KFxtNdxIEwnMFNMv0L0cojRnO5xHA5qidzec8QjDdmJ/kawNX1tp0EAlxY9LQpkbHidaDAAABJElEQVRIx2NgGAWjYBRQDTAyMbOwsrEDWRycXNw8vCy8fPx4lAsICgmLiIqJS0gyMEhJy8jKySsoKilL4tagIq6qxsCgrqGppc2gI66rpw4U0zcwxKneSNYYwjAxNWMwtzCDcCytcGqwttFGcGztILS9gyMu9U7OLkg8Vzcw5e7h6YVLg7e4D4Kj7usHovwDfANxuihIPBjBCQkNA1HhEZFR6rg0RMfEIlknFAdhxAsl4LQiMckMzk6WTYGyUtPCcWlIF8+AMMIzs7LFc6CiueJ5uDTkF8QUFgHp4pLSsmzx8orKKiCHvbomH6ebauvE6xsam2SbW4BOam1rj6nr6OyS7caTmHp6Rfv6eSdMZGCYNLmKwX2K+dRp02eMZslRMAqoBQCRYzUBJF4Q/AAAAABJRU5ErkJggg=="
+  },
+  "dexClasses" : 1132,
+  "locales" : [ "", "sl", "mr_IN", "kk_KZ", "bg", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "my_MM", "ur_PK", "mn_MN", "fi", "lv", "et_EE", "sw", "pt_PT", "tl", "th", "uz_UZ", "pt", "ar", "ru", "eu_ES", "bn_BD", "fa", "sk", "kn_IN", "hi", "cs", "sv", "km_KH", "el", "nl", "hu", "af", "in", "vi", "fr_CA", "sr", "da", "si_LK", "ml_IN", "gl_ES", "es", "is_IS", "hy_AM", "tr", "ne_NP", "ro", "hr", "ms_MY", "am", "ka_GE", "lt", "pl", "zh_CN", "ta_IN", "fr", "ja", "lo_LA", "ky_KG", "iw", "de", "en_IN", "es_US", "mk_MK", "nb", "te_IN", "ca", "en_GB" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"1\" android:versionName=\"0.1\" package=\"cbedoy.easterlist\" platformBuildVersionCode=\"21\" platformBuildVersionName=\"5.0.1-1624448\">\n\t<uses-sdk android:minSdkVersion=\"16\" android:targetSdkVersion=\"21\" />\n\t<application android:theme=\"resourceId:0x7f0b0000\" android:label=\"EasterList\" android:icon=\"res/drawable-mdpi-v4/ic_launcher.png\" android:name=\"cbedoy.easterlist.aplication.ApplicationLoader\" android:debuggable=\"true\" android:allowBackup=\"true\">\n\t\t<activity android:label=\"EasterList\" android:name=\"cbedoy.easterlist.activity.MainActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t</application>\n</manifest>\n",
+  "fileSize" : 943154,
+  "crc32" : 3031738141,
+  "sha256" : "e68e3c1302fab58548178c74addae0c3ee87a763809f50e5b422612dd9c6e485",
+  "buildTime" : 1523039565000
+}

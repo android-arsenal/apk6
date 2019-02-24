@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "com.qachee.sample",
+    "label" : "Qachee Demo",
+    "icon" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "versionName" : "1.0",
+    "versionCode" : 1,
+    "installLocation" : null,
+    "minSdkVersion" : "8",
+    "targetSdkVersion" : "21",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAACQFBMVEUAAAAA/wCBpzSHrTqLsj6Ms0GNs0CLsj+JsD2FqzdtkiRAgACGrTmBqixxoBNomgRmmQBnmgNung57pySGrTlmiCIAAACApDN1oxplmABwnxGEqzVEZhFcfCR3pR9ReQA4VABGaQBfjwBhkQBAYABTfABOdQBFaABvnxBvjysAAABkgyRnmQJGaAAoPQApPgA3VQBbiABdjQAxSwBIbABBYgA2VABxmSAAAAAAAABfghhNbw0AAAAAAAAAAABCXRBdiQQAAABfjAM2Sw0AAABQcQxKZw8AAAA+Wg5plw4AAAAAAABYfhFScxEAAAAAAAAAAABJZBZfigcAAAAAAABgjgRCWhVUdRBPbRMAAABKZBdklQQAAABXfA5ScxFKZRcAAABEXBZUdRFQbhNLZRhilAIAAABhkwJZfxMAAABTcRphjwdjkgRJZxdcgBJZehVUcBtwmhl+ozOEqjaBpjRzniZpmQl8oDNomQZ3nSuDqTVumxhxmx11nCdwoBJ+qSh2oxtpmwV5piFyoRV2pBxjjRB0mS1vnxN1miyBqy52lSuCqjBrjyiDqzJpmwZ7oi9olg5hkANhkgJfjANgkAJUfgNWfwFDYgRDZQI3TwhUfgBVgAA2TwYMEwAzTABUfwAzTAARHAAaJQAwSABCYwBXgwBikwBklwBllwBYhABDZQAxSQAcKgAAAAAAAAAFCgAvRwAuRgArQAApPgApPgAuRgAwRwAJDgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABpRq0eAAAAwHRSTlMAAV3B8f3+9dKCBwSq/v///////8geAZH////LD0D4/////////////4gDnP/MhYSx7fGg0MSuzgYHv7QgGx6D5iPtXxy8qB9/7goJx7IMBAh95RAR7FW6pAt49Q3IsXwOU7mjd/UC9qwFdeTrTbWdcMh3cnWo7nnylHPOv6X/////////wlruTPVB6znr/87u7/bw9uvx1dqe//+lKd7/4S5F3v/////////hSQ8SM6zo+/7/6bA2EyExOj0+MiJsezsDAAAB3klEQVRIx2NgGNyAkYmZhZUNE7BzcHJhU8/Nw8vHL4AFCAoJi4hiqhcTlxAQkJSUFACTkjASIiQlLYOhQVZOQEBeQUFBUVIJSCooS6oASVVJNSCpLiCgoSmGpl5LW0dAQFdPX99A0hBI6hlJGgNJE0lTIMcMaIe5BZoGSyug9dY2tnb2kg6OtraOTpLOLrY2rpJu7rZ2HkANnl5oGrx9gBp8/fwDAiWDgv39Q0Ilwyz8/cIlIyL9A6KAGqJj0DR4xQI1xAUw+MdLBgHlEkIlE7UYvJMkky0Z/FOAGlITCGtIQ9aQPkAaMgIYMrMEskEaciRzgX7Ik8wHaigQwKWhsKi4pFSgrLy4uLxCoLKquKhaoAYoVItTQ119fX2DQCOQrOcXaAKSGgLNQLIFpwY8YCA0tJKmQaytnTQNHZ2NJGno6hYUIEVDT2+fACkatPoJqkfV4DVBgDQNMRNJ1JAwqmH4apiEomEyYQ1TUDRMJaxhGkrimy5JSL3kDOTi3mvmLEI6Zs9BrlAs5s5TxatDcv6ChchVlljCosVLli5bvgI7WLZy1eo1a1EqRa116zds3LR5C3awaeu27Tu00OrQhJ27du/ZixXs2b1v/1otjGrdIjJhLQ6QEGkhRnZ7BAACpxwfjWOfXgAAAABJRU5ErkJggg=="
+  },
+  "dexClasses" : 1137,
+  "locales" : [ "", "sl", "mr_IN", "kk_KZ", "bg", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "my_MM", "ur_PK", "mn_MN", "fi", "lv", "et_EE", "sw", "pt_PT", "tl", "th", "uz_UZ", "pt", "ar", "ru", "eu_ES", "bn_BD", "fa", "sk", "kn_IN", "hi", "cs", "sv", "km_KH", "el", "nl", "hu", "af", "in", "vi", "fr_CA", "sr", "da", "si_LK", "ml_IN", "gl_ES", "es", "is_IS", "hy_AM", "tr", "ne_NP", "ro", "hr", "ms_MY", "am", "ka_GE", "lt", "pl", "zh_CN", "ta_IN", "fr", "ja", "lo_LA", "ky_KG", "iw", "de", "en_IN", "es_US", "mk_MK", "nb", "te_IN", "ca", "en_GB" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"1\" android:versionName=\"1.0\" package=\"com.qachee.sample\" platformBuildVersionCode=\"21\" platformBuildVersionName=\"5.0.1-1624448\">\n\t<uses-sdk android:minSdkVersion=\"8\" android:targetSdkVersion=\"21\" />\n\t<application android:theme=\"resourceId:0x7f0c0000\" android:label=\"Qachee Demo\" android:icon=\"res/drawable-mdpi-v4/ic_launcher.png\" android:allowBackup=\"true\">\n\t\t<activity android:label=\"Qachee Demo\" android:name=\"com.qachee.sample.MainActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t</application>\n</manifest>\n",
+  "fileSize" : 1092795,
+  "crc32" : 3371409942,
+  "sha256" : "27813fe0a955938a070aa716a63605d77ba45da7a00f19f8b786685fc2868a65",
+  "buildTime" : 1526869865000
+}

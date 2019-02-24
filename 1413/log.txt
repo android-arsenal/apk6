@@ -1,0 +1,185 @@
+2018-05-11 14:22:06,470 INFO  DownloadService - Downloading "https://github.com/orhanobut/dialogplus/archive/master.zip", attempt 3
+2018-05-11 14:22:09,043 INFO  DownloadService - Downloaded https://github.com/orhanobut/dialogplus/archive/master.zip, attempt 3
+2018-05-11 14:22:09,044 INFO  DownloadService - Size of file "/tmp/rdisk/1413/master.zip": 4 MB
+2018-05-11 14:22:09,044 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-05-11 14:22:09,044 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/1413/master.zip: true
+2018-05-11 14:22:09,044 DEBUG ZipUtil - Extracting '/tmp/rdisk/1413/master.zip' into '/tmp/rdisk/1413/src'.
+2018-05-11 14:22:09,095 INFO  FullProcessService - Size of directory with sources: 4 MB
+2018-05-11 14:22:09,096 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1413/src]
+2018-05-11 14:22:09,108 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1413/src/.git/
+
+2018-05-11 14:22:09,111 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1413/src/dialogplus-master/gradlew
+2018-05-11 14:22:09,115 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1413/src/dialogplus-master/app/build.gradle /tmp/rdisk/1413/src/dialogplus-master/dialogplus/build.gradle /tmp/rdisk/1413/src/dialogplus-master/build.gradle
+2018-05-11 14:22:09,118 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1413/src/dialogplus-master/settings.gradle /tmp/rdisk/1413/src/dialogplus-master/gradle/maven_push.gradle /tmp/rdisk/1413/src/dialogplus-master/dialogplus/build.gradle /tmp/rdisk/1413/src/dialogplus-master/build.gradle /tmp/rdisk/1413/src/dialogplus-master/app/build.gradle
+2018-05-11 14:22:09,119 INFO  ProjectBuildService - Remote scripts: none
+2018-05-11 14:22:09,119 INFO  ProjectFixService - Fixing project...
+2018-05-11 14:22:09,129 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1413/src/dialogplus-master/app/local.properties
+2018-05-11 14:22:09,131 INFO  ProjectFixService - Build info for "/tmp/rdisk/1413/src/dialogplus-master/app/build.gradle": [buildToolsVersion=27.0.3,compileSdkVersion=27,minSdkVersion=15,targetSdkVersion=27]
+2018-05-11 14:22:09,131 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1413/src/dialogplus-master/dialogplus/local.properties
+2018-05-11 14:22:09,134 INFO  ProjectFixService - Build info for "/tmp/rdisk/1413/src/dialogplus-master/dialogplus/build.gradle": [buildToolsVersion=27.0.3,compileSdkVersion=27,minSdkVersion=15,targetSdkVersion=27]
+2018-05-11 14:22:09,134 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1413/src/dialogplus-master/local.properties
+2018-05-11 14:22:09,135 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-4.6-all.zip
+2018-05-11 14:22:09,135 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-4.6-bin.zip)
+2018-05-11 14:22:09,135 INFO  ProjectFixService - Build info for "/tmp/rdisk/1413/src/dialogplus-master/build.gradle": [buildToolsVersion=27.0.3,compileSdkVersion=27,minSdkVersion=15,targetSdkVersion=27]
+2018-05-11 14:22:09,136 INFO  ProjectFixService - Project was maybe fixed
+2018-05-11 14:22:09,136 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-11 14:22:09,136 INFO  SysUtils - Execute command: [/tmp/rdisk/1413/src/dialogplus-master/gradlew, -b, /tmp/rdisk/1413/src/dialogplus-master/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-11 14:22:20,079 INFO  ProjectTaskService - Detected possible tasks: 66
+2018-05-11 14:22:20,080 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-05-11 14:22:20,080 INFO  SysUtils - Execute command: [/tmp/rdisk/1413/src/dialogplus-master/gradlew, -b, /tmp/rdisk/1413/src/dialogplus-master/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-05-11 14:23:22,529 INFO  SysUtils - Configuration on demand is an incubating feature.
+RELEASE BUILD
+:app:preBuild UP-TO-DATE
+:dialogplus:preBuild UP-TO-DATE
+:dialogplus:preDebugBuild UP-TO-DATE
+:dialogplus:checkDebugManifest
+:dialogplus:processDebugManifest
+:app:preDebugBuild
+:dialogplus:compileDebugAidl
+:app:compileDebugAidl
+:dialogplus:packageDebugRenderscript NO-SOURCE
+:app:compileDebugRenderscript
+:app:checkDebugManifest
+:app:generateDebugBuildConfig
+:app:mainApkListPersistenceDebug
+:app:generateDebugResValues
+:app:generateDebugResources
+:dialogplus:compileDebugRenderscript
+:dialogplus:generateDebugResValues
+:dialogplus:generateDebugResources
+:dialogplus:packageDebugResources
+:app:mergeDebugResources
+:app:createDebugCompatibleScreenManifests
+:app:processDebugManifest
+:app:splitsDiscoveryTaskDebug
+:dialogplus:platformAttrExtractor
+:dialogplus:generateDebugBuildConfig
+:dialogplus:prepareLintJar
+:dialogplus:processDebugJavaRes NO-SOURCE
+:app:prepareLintJar
+:app:compileDebugNdk NO-SOURCE
+:app:mergeDebugShaders
+:app:compileDebugShaders
+:app:generateDebugAssets
+:dialogplus:mergeDebugShaders
+:dialogplus:generateDebugRFile
+:app:processDebugResources
+:dialogplus:compileDebugKotlin
+:dialogplus:generateDebugSources
+:dialogplus:javaPreCompileDebug
+:dialogplus:compileDebugJavaWithJavacNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:dialogplus:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug
+:app:compileDebugKotlin
+w: /tmp/rdisk/1413/src/dialogplus-master/app/src/main/java/com/orhanobut/android/dialogplussample/MainActivity.kt: (19, 68): Parameter 'v' is never used, could be renamed to _
+w: /tmp/rdisk/1413/src/dialogplus-master/app/src/main/java/com/orhanobut/android/dialogplussample/MainActivity.kt: (69, 28): Parameter 'dialog' is never used, could be renamed to _
+w: /tmp/rdisk/1413/src/dialogplus-master/app/src/main/java/com/orhanobut/android/dialogplussample/MainActivity.kt: (74, 32): Parameter 'dialog' is never used, could be renamed to _
+w: /tmp/rdisk/1413/src/dialogplus-master/app/src/main/java/com/orhanobut/android/dialogplussample/MainActivity.kt: (74, 40): Parameter 'item' is never used, could be renamed to _
+w: /tmp/rdisk/1413/src/dialogplus-master/app/src/main/java/com/orhanobut/android/dialogplussample/MainActivity.kt: (74, 52): Parameter 'position' is never used, could be renamed to _
+w: /tmp/rdisk/1413/src/dialogplus-master/app/src/main/java/com/orhanobut/android/dialogplussample/MainActivity.kt: (91, 29): Parameter 'dialog' is never used, could be renamed to _
+:app:generateDebugSources
+:app:javaPreCompileDebug
+:app:compileDebugJavaWithJavac
+:app:compileDebugSources
+:dialogplus:compileDebugShaders
+:dialogplus:generateDebugAssets
+:dialogplus:packageDebugAssets
+:app:mergeDebugAssets
+:app:extractTryWithResourcesSupportJarDebug
+:app:transformClassesWithStackFramesFixerForDebug
+:app:transformClassesWithDesugarForDebug
+:app:transformClassesWithDexBuilderForDebug
+:app:transformDexArchiveWithExternalLibsDexMergerForDebug
+:app:transformDexArchiveWithDexMergerForDebug
+:app:mergeDebugJniLibFolders
+:dialogplus:compileDebugNdk NO-SOURCE
+:dialogplus:mergeDebugJniLibFolders
+:dialogplus:transformNativeLibsWithMergeJniLibsForDebug
+:dialogplus:transformNativeLibsWithStripDebugSymbolForDebug
+:dialogplus:transformNativeLibsWithIntermediateJniLibsForDebug
+:app:transformNativeLibsWithMergeJniLibsForDebug
+:app:transformNativeLibsWithStripDebugSymbolForDebug
+:app:processDebugJavaRes NO-SOURCE
+:app:transformResourcesWithMergeJavaResForDebug
+:app:validateSigningDebug
+:app:packageDebug
+:app:assembleDebug
+:dialogplus:preReleaseBuild UP-TO-DATE
+:dialogplus:checkReleaseManifest
+:dialogplus:processReleaseManifest
+:app:preReleaseBuild
+:dialogplus:compileReleaseAidl
+:app:compileReleaseAidl
+:dialogplus:packageReleaseRenderscript NO-SOURCE
+:app:compileReleaseRenderscript
+:app:checkReleaseManifest
+:app:generateReleaseBuildConfig
+:app:mainApkListPersistenceRelease
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:dialogplus:compileReleaseRenderscript
+:dialogplus:generateReleaseResValues
+:dialogplus:generateReleaseResources
+:dialogplus:packageReleaseResources
+:app:mergeReleaseResources
+:app:createReleaseCompatibleScreenManifests
+:app:processReleaseManifest
+:app:splitsDiscoveryTaskRelease
+:dialogplus:generateReleaseRFile
+:app:processReleaseResources
+:dialogplus:generateReleaseBuildConfig
+:dialogplus:compileReleaseKotlin
+:dialogplus:generateReleaseSources
+:dialogplus:javaPreCompileRelease
+:dialogplus:compileReleaseJavaWithJavacNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:dialogplus:processReleaseJavaRes NO-SOURCE
+:dialogplus:transformClassesAndResourcesWithPrepareIntermediateJarsForRelease
+:app:compileReleaseKotlin
+w: /tmp/rdisk/1413/src/dialogplus-master/app/src/main/java/com/orhanobut/android/dialogplussample/MainActivity.kt: (19, 68): Parameter 'v' is never used, could be renamed to _
+w: /tmp/rdisk/1413/src/dialogplus-master/app/src/main/java/com/orhanobut/android/dialogplussample/MainActivity.kt: (69, 28): Parameter 'dialog' is never used, could be renamed to _
+w: /tmp/rdisk/1413/src/dialogplus-master/app/src/main/java/com/orhanobut/android/dialogplussample/MainActivity.kt: (74, 32): Parameter 'dialog' is never used, could be renamed to _
+w: /tmp/rdisk/1413/src/dialogplus-master/app/src/main/java/com/orhanobut/android/dialogplussample/MainActivity.kt: (74, 40): Parameter 'item' is never used, could be renamed to _
+w: /tmp/rdisk/1413/src/dialogplus-master/app/src/main/java/com/orhanobut/android/dialogplussample/MainActivity.kt: (74, 52): Parameter 'position' is never used, could be renamed to _
+w: /tmp/rdisk/1413/src/dialogplus-master/app/src/main/java/com/orhanobut/android/dialogplussample/MainActivity.kt: (91, 29): Parameter 'dialog' is never used, could be renamed to _
+:app:generateReleaseSources
+:app:javaPreCompileRelease
+:app:compileReleaseJavaWithJavac
+:app:compileReleaseNdk NO-SOURCE
+:app:compileReleaseSources
+:app:lintVitalRelease
+:app:mergeReleaseShaders
+:app:compileReleaseShaders
+:app:generateReleaseAssets
+:dialogplus:mergeReleaseShaders
+:dialogplus:compileReleaseShaders
+:dialogplus:generateReleaseAssets
+:dialogplus:packageReleaseAssets
+:app:mergeReleaseAssets
+:app:extractTryWithResourcesSupportJarRelease
+:app:transformClassesWithStackFramesFixerForRelease
+:app:transformClassesWithDesugarForRelease
+:app:transformClassesWithDexBuilderForRelease
+:app:transformDexArchiveWithExternalLibsDexMergerForRelease
+:app:transformDexArchiveWithDexMergerForRelease
+:app:mergeReleaseJniLibFolders
+:dialogplus:compileReleaseNdk NO-SOURCE
+:dialogplus:mergeReleaseJniLibFolders
+:dialogplus:transformNativeLibsWithMergeJniLibsForRelease
+:dialogplus:transformNativeLibsWithStripDebugSymbolForRelease
+:dialogplus:transformNativeLibsWithIntermediateJniLibsForRelease
+:app:transformNativeLibsWithMergeJniLibsForRelease
+:app:transformNativeLibsWithStripDebugSymbolForRelease
+:app:processReleaseJavaRes NO-SOURCE
+:app:transformResourcesWithMergeJavaResForRelease
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL in 1m 1s
+101 actionable tasks: 101 executed
+
+2018-05-11 14:23:22,609 INFO  FullProcessService - Found APK file: /tmp/rdisk/1413/src/dialogplus-master/app/build/outputs/apk/debug/app-debug.apk

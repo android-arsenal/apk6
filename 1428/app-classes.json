@@ -1,0 +1,11 @@
+{
+  "net.danlew.android.joda" : [ "a", "b", "c", "c$a", "c$b", "c$c", "d", "e", "f" ],
+  "net.danlew.android.joda.sample" : [ "JodaApplication", "JodaSampleActivity" ],
+  "org.a.a" : [ "a", "aa", "ab", "ac", "ad", "ae", "af", "ag", "ah", "ai", "b", "c", "d", "d$a", "e", "e$a", "e$b", "f", "f$a", "f$a$1", "g", "h", "i", "j", "j$a", "k", "l", "m", "n", "o", "p", "q", "r", "s", "s$a", "t", "u", "v", "w", "x", "y", "z" ],
+  "org.a.a.a" : [ "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "k$1", "l" ],
+  "org.a.a.b" : [ "a", "a$a", "b", "c", "c$a", "c$b", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "n$a", "n$b", "n$c", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "x$a", "x$b", "x$c", "y", "y$a", "y$b" ],
+  "org.a.a.c" : [ "a", "b", "c", "d", "e", "e$a", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s" ],
+  "org.a.a.d" : [ "a", "b", "c", "d", "e", "f", "g", "h", "i", "i$a", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u" ],
+  "org.a.a.e" : [ "a", "b", "c", "c$a", "c$b", "c$c", "c$d", "c$e", "c$f", "c$g", "c$h", "c$i", "c$j", "c$k", "c$l", "c$m", "c$n", "d", "e", "e$a", "e$b", "f", "g", "h", "i", "j", "j$a", "k", "l", "m", "n", "o", "p", "q", "q$a", "q$b", "q$c", "q$d", "q$e", "q$f", "q$g", "q$h", "r", "s" ],
+  "org.a.a.f" : [ "a", "a$a", "b", "b$a", "b$b", "b$c", "b$d", "c", "d", "e", "f", "g", "h", "h$1" ]
+}

@@ -1,0 +1,91 @@
+2018-04-06 17:09:37,251 INFO  DownloadService - Downloading "https://github.com/EverythingMe/plaxien/archive/master.zip", attempt 3
+2018-04-06 17:10:37,836 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-06 17:10:38,681 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-06 17:10:38,681 INFO  DownloadService - Downloading "https://github.com/EverythingMe/plaxien/archive/master.zip", attempt 3
+2018-04-06 17:11:39,880 DEBUG FullProcessService - Repository https://github.com/EverythingMe/plaxien available: true
+2018-04-06 17:11:39,880 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-06 17:11:39,881 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/EverythingMe/plaxien, /tmp/rdisk/1411/src]
+2018-04-06 17:11:41,543 INFO  SysUtils - 
+2018-04-06 17:11:41,555 INFO  GitService - Deleted "/tmp/rdisk/1411/src/.git": true
+2018-04-06 17:11:41,557 INFO  FullProcessService - Size of directory with sources: 341 KB
+2018-04-06 17:11:41,557 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1411/src]
+2018-04-06 17:11:41,562 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1411/src/.git/
+
+2018-04-06 17:11:41,564 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1411/src/gradlew
+2018-04-06 17:11:41,566 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1411/src/build.gradle
+2018-04-06 17:11:41,567 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1411/src/build.gradle
+2018-04-06 17:11:41,568 INFO  ProjectBuildService - Remote scripts: none
+2018-04-06 17:11:41,568 INFO  ProjectFixService - Fixing project...
+2018-04-06 17:11:41,571 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1411/src/local.properties
+2018-04-06 17:11:41,572 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-06 17:11:41,572 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-06 17:11:41,572 INFO  ProjectFixService - Build info for "/tmp/rdisk/1411/src/build.gradle": [buildToolsVersion=21.0.2,compileSdkVersion=21,minSdkVersion=14,targetSdkVersion=21]
+2018-04-06 17:11:41,573 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1411/src/build.gradle": [buildToolsVersion=21.1.1,compileSdkVersion=21,minSdkVersion=14,targetSdkVersion=21]
+2018-04-06 17:11:41,573 INFO  ProjectFixService - Project was maybe fixed
+2018-04-06 17:11:41,573 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-06 17:11:41,573 INFO  SysUtils - Execute command: [/tmp/rdisk/1411/src/gradlew, -b, /tmp/rdisk/1411/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-06 17:11:48,407 INFO  ProjectTaskService - Detected possible tasks: 54
+2018-04-06 17:11:48,407 INFO  ProjectTaskService - Excluded tasks (8): lintDebug deviceCheck lint connectedCheck uninstallAll check connectedAndroidTest lintRelease
+2018-04-06 17:11:48,407 INFO  SysUtils - Execute command: [/tmp/rdisk/1411/src/gradlew, -b, /tmp/rdisk/1411/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, deviceCheck, -x, lint, -x, connectedCheck, -x, uninstallAll, -x, check, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-06 17:11:55,472 INFO  SysUtils - Configuration on demand is an incubating feature.
+:compileLint
+:copyDebugLint UP-TO-DATE
+:mergeDebugProguardFiles
+:preBuild
+:preDebugBuild
+:checkDebugManifest
+:prepareDebugDependencies
+:compileDebugAidl
+:compileDebugRenderscript
+:generateDebugBuildConfig
+:generateDebugAssets UP-TO-DATE
+:mergeDebugAssets
+:generateDebugResValues
+:generateDebugResources
+:packageDebugResources
+:processDebugManifest
+:processDebugResources
+:generateDebugSources
+:compileDebugJava
+:processDebugJavaRes UP-TO-DATE
+:packageDebugJar
+:compileDebugNdk
+:packageDebugJniLibs UP-TO-DATE
+:packageDebugLocalJar UP-TO-DATE
+:packageDebugRenderscript UP-TO-DATE
+:bundleDebug
+:assembleDebug
+:copyReleaseLint UP-TO-DATE
+:mergeReleaseProguardFiles
+:preReleaseBuild
+:checkReleaseManifest
+:prepareReleaseDependencies
+:compileReleaseAidl
+:compileReleaseRenderscript
+:generateReleaseBuildConfig
+:generateReleaseAssets UP-TO-DATE
+:mergeReleaseAssets
+:generateReleaseResValues
+:generateReleaseResources
+:packageReleaseResources
+:processReleaseManifest
+:processReleaseResources
+:generateReleaseSources
+:compileReleaseJava
+:processReleaseJavaRes UP-TO-DATE
+:packageReleaseJar
+:compileReleaseNdk
+:packageReleaseJniLibs UP-TO-DATE
+:packageReleaseLocalJar UP-TO-DATE
+:packageReleaseRenderscript UP-TO-DATE
+:bundleRelease
+:assembleRelease
+:assemble
+:build
+
+BUILD SUCCESSFUL
+
+Total time: 6.593 secs
+
+2018-04-06 17:11:55,480 ERROR FullProcessService - Project build has not produced APK file
+2018-04-06 17:11:55,486 ERROR FullProcessService - Could not find generated or existed APK file

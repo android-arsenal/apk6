@@ -1,0 +1,90 @@
+2018-05-11 14:32:06,476 INFO  DownloadService - Downloading "https://github.com/flavienlaurent/discrollview/archive/master.zip", attempt 3
+2018-05-11 14:32:09,496 INFO  DownloadService - Downloaded https://github.com/flavienlaurent/discrollview/archive/master.zip, attempt 3
+2018-05-11 14:32:09,496 INFO  DownloadService - Size of file "/tmp/rdisk/1311/master.zip": 7 MB
+2018-05-11 14:32:09,496 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-05-11 14:32:09,496 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/1311/master.zip: true
+2018-05-11 14:32:09,497 DEBUG ZipUtil - Extracting '/tmp/rdisk/1311/master.zip' into '/tmp/rdisk/1311/src'.
+2018-05-11 14:32:09,560 INFO  FullProcessService - Size of directory with sources: 7 MB
+2018-05-11 14:32:09,560 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1311/src]
+2018-05-11 14:32:09,565 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1311/src/.git/
+
+2018-05-11 14:32:09,568 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1311/src/discrollview-master/gradlew
+2018-05-11 14:32:09,570 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1311/src/discrollview-master/lib/build.gradle /tmp/rdisk/1311/src/discrollview-master/sample/build.gradle /tmp/rdisk/1311/src/discrollview-master/build.gradle
+2018-05-11 14:32:09,572 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1311/src/discrollview-master/settings.gradle /tmp/rdisk/1311/src/discrollview-master/sample/build.gradle /tmp/rdisk/1311/src/discrollview-master/maven_push.gradle /tmp/rdisk/1311/src/discrollview-master/lib/build.gradle /tmp/rdisk/1311/src/discrollview-master/build.gradle
+2018-05-11 14:32:09,573 INFO  ProjectBuildService - Remote scripts: none
+2018-05-11 14:32:09,573 INFO  ProjectFixService - Fixing project...
+2018-05-11 14:32:09,580 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1311/src/discrollview-master/lib/local.properties
+2018-05-11 14:32:09,581 INFO  ProjectFixService - Build info for "/tmp/rdisk/1311/src/discrollview-master/lib/build.gradle": [buildToolsVersion=19.0.0,compileSdkVersion=19,minSdkVersion=14,targetSdkVersion=19]
+2018-05-11 14:32:09,581 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1311/src/discrollview-master/lib/build.gradle": [buildToolsVersion=19.1.0,compileSdkVersion=19,minSdkVersion=14,targetSdkVersion=19]
+2018-05-11 14:32:09,582 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1311/src/discrollview-master/sample/local.properties
+2018-05-11 14:32:09,582 INFO  ProjectFixService - Build info for "/tmp/rdisk/1311/src/discrollview-master/sample/build.gradle": [buildToolsVersion=19.0.0,compileSdkVersion=19,minSdkVersion=14,targetSdkVersion=19]
+2018-05-11 14:32:09,582 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1311/src/discrollview-master/sample/build.gradle": [buildToolsVersion=19.1.0,compileSdkVersion=19,minSdkVersion=14,targetSdkVersion=19]
+2018-05-11 14:32:09,583 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1311/src/discrollview-master/local.properties
+2018-05-11 14:32:09,583 INFO  WrapperPropertiesFixService - Gradle wrapper: http://services.gradle.org/distributions/gradle-1.9-all.zip
+2018-05-11 14:32:09,583 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (http://services.gradle.org/distributions/gradle-1.9-bin.zip)
+2018-05-11 14:32:09,584 INFO  ProjectFixService - Build info for "/tmp/rdisk/1311/src/discrollview-master/build.gradle": [buildToolsVersion=19.1.0,compileSdkVersion=19,minSdkVersion=14,targetSdkVersion=19]
+2018-05-11 14:32:09,585 INFO  ProjectFixService - Project was maybe fixed
+2018-05-11 14:32:09,585 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-11 14:32:09,585 INFO  SysUtils - Execute command: [/tmp/rdisk/1311/src/discrollview-master/gradlew, -b, /tmp/rdisk/1311/src/discrollview-master/lib/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-11 14:32:28,539 INFO  ProjectTaskService - Detected possible tasks: 51
+2018-05-11 14:32:28,539 INFO  ProjectTaskService - Excluded tasks (8): lintDebug androidJavadocs deviceCheck lint connectedCheck uninstallAll check lintRelease
+2018-05-11 14:32:28,539 INFO  SysUtils - Execute command: [/tmp/rdisk/1311/src/discrollview-master/gradlew, -b, /tmp/rdisk/1311/src/discrollview-master/lib/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, androidJavadocs, -x, deviceCheck, -x, lint, -x, connectedCheck, -x, uninstallAll, -x, check, -x, lintRelease, build]
+2018-05-11 14:32:37,308 INFO  SysUtils - Configuration on demand is an incubating feature.
+RELEASE BUILD
+:lib:androidJavadocsJar
+:lib:androidSourcesJar
+:lib:compileDebugNdk
+:lib:compileLint
+:lib:copyDebugLint UP-TO-DATE
+:lib:mergeDebugProguardFiles
+:lib:packageDebugAidl UP-TO-DATE
+:lib:preBuild UP-TO-DATE
+:lib:preDebugBuild UP-TO-DATE
+:lib:prepareDebugDependencies
+:lib:compileDebugAidl
+:lib:compileDebugRenderscript
+:lib:generateDebugBuildConfig
+:lib:mergeDebugAssets
+:lib:mergeDebugResources
+:lib:processDebugManifest
+:lib:processDebugResources
+:lib:generateDebugSources
+:lib:compileDebugJava
+:lib:processDebugJavaRes UP-TO-DATE
+:lib:packageDebugJar
+:lib:packageDebugLocalJar UP-TO-DATE
+:lib:packageDebugRenderscript UP-TO-DATE
+:lib:packageDebugResources
+:lib:bundleDebug
+:lib:assembleDebug
+:lib:compileReleaseNdk
+:lib:copyReleaseLint UP-TO-DATE
+:lib:mergeReleaseProguardFiles
+:lib:packageReleaseAidl UP-TO-DATE
+:lib:preReleaseBuild UP-TO-DATE
+:lib:prepareReleaseDependencies
+:lib:compileReleaseAidl
+:lib:compileReleaseRenderscript
+:lib:generateReleaseBuildConfig
+:lib:mergeReleaseAssets
+:lib:mergeReleaseResources
+:lib:processReleaseManifest
+:lib:processReleaseResources
+:lib:generateReleaseSources
+:lib:compileReleaseJava
+:lib:processReleaseJavaRes UP-TO-DATE
+:lib:packageReleaseJar
+:lib:packageReleaseLocalJar UP-TO-DATE
+:lib:packageReleaseRenderscript UP-TO-DATE
+:lib:packageReleaseResources
+:lib:bundleRelease
+:lib:assembleRelease
+:lib:signArchives SKIPPED
+:lib:assemble
+:lib:build
+
+BUILD SUCCESSFUL
+
+Total time: 8.313 secs
+
+2018-05-11 14:32:37,315 INFO  FullProcessService - Found APK file: /tmp/rdisk/1311/src/discrollview-master/sample.apk

@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "io.selendroid.testapp",
+    "label" : "selendroid-test-app",
+    "icon" : "res/drawable-ldpi/icon.png",
+    "versionName" : "0.4-SNAPSHOT",
+    "versionCode" : 1,
+    "installLocation" : null,
+    "minSdkVersion" : "10",
+    "targetSdkVersion" : null,
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ "android.permission.INTERNET", "android.permission.INJECT_EVENTS" ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/drawable-ldpi/icon.png",
+    "density" : 0,
+    "data" : "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"
+  },
+  "dexClasses" : 2479,
+  "locales" : [ "", "de", "es", "fr", "it" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"1\" android:versionName=\"0.4-SNAPSHOT\" package=\"io.selendroid.testapp\">\n\t<uses-sdk android:minSdkVersion=\"10\" />\n\t<uses-permission android:name=\"android.permission.INTERNET\" />\n\t<uses-permission android:name=\"android.permission.INJECT_EVENTS\" />\n\t<application android:label=\"selendroid-test-app\" android:icon=\"res/drawable-ldpi/icon.png\" android:debuggable=\"true\">\n\t\t<activity android:name=\".HomeScreenActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t\t<activity android:name=\".WebViewActivity\" />\n\t\t<activity android:name=\".RegisterUserActivity\" />\n\t\t<activity android:name=\".VerifyUserActivity\" />\n\t\t<activity android:name=\".SearchUsersActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.SEARCH\" />\n\t\t\t</intent-filter>\n\t\t\t<meta-data android:name=\"android.app.searchable\" android:resource=\"res/xml/searchable.xml\" />\n\t\t</activity>\n\t\t<meta-data android:name=\"android.app.default_searchable\" android:value=\".SearchUsersActivity\" />\n\t\t<service android:name=\".services.impl.UserServiceImpl\" />\n\t</application>\n</manifest>\n",
+  "fileSize" : 1230832,
+  "crc32" : 968669102,
+  "sha256" : "d42be5f88000db44f50f61ca43a1fe9ca8ad394ac76f08853eb22432bf0121f4",
+  "buildTime" : 1523000295000
+}

@@ -1,0 +1,4 @@
+{
+  "com.john.waveview" : [ "BuildConfig", "R", "R$attr", "R$id", "R$styleable", "Solid", "Wave", "Wave$1", "Wave$RefreshProgressRunnable", "WaveView", "WaveView$1", "WaveView$SavedState", "WaveView$SavedState$1" ],
+  "com.waveview.demo" : [ "BuildConfig", "MainActivity", "MainActivity$1", "R", "R$attr", "R$color", "R$drawable", "R$id", "R$layout", "R$string", "R$style", "R$styleable" ]
+}

@@ -1,0 +1,140 @@
+2018-04-06 18:27:21,121 INFO  DownloadService - Downloading "https://github.com/konmik/nucleus/archive/master.zip", attempt 3
+2018-04-06 18:28:21,588 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-06 18:28:22,273 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-06 18:28:22,273 INFO  DownloadService - Downloading "https://github.com/konmik/nucleus/archive/master.zip", attempt 3
+2018-04-06 18:29:23,518 DEBUG FullProcessService - Repository https://github.com/konmik/nucleus available: true
+2018-04-06 18:29:23,518 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-06 18:29:23,518 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/konmik/nucleus, /tmp/rdisk/1379/src]
+2018-04-06 18:29:25,001 INFO  SysUtils - 
+2018-04-06 18:29:25,008 INFO  GitService - Deleted "/tmp/rdisk/1379/src/.git": true
+2018-04-06 18:29:25,016 INFO  FullProcessService - Size of directory with sources: 352 KB
+2018-04-06 18:29:25,016 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1379/src]
+2018-04-06 18:29:25,022 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1379/src/.git/
+
+2018-04-06 18:29:25,028 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1379/src/gradlew
+2018-04-06 18:29:25,035 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1379/src/nucleus-example-real-life/build.gradle /tmp/rdisk/1379/src/nucleus-example-with-fragments/build.gradle /tmp/rdisk/1379/src/nucleus-example-with-tests/build.gradle /tmp/rdisk/1379/src/nucleus-example/build.gradle /tmp/rdisk/1379/src/nucleus-support-v4/build.gradle /tmp/rdisk/1379/src/nucleus-support-v7/build.gradle /tmp/rdisk/1379/src/nucleus-test-kit/build.gradle /tmp/rdisk/1379/src/nucleus/build.gradle /tmp/rdisk/1379/src/build.gradle
+2018-04-06 18:29:25,041 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1379/src/settings.gradle /tmp/rdisk/1379/src/nucleus/build.gradle /tmp/rdisk/1379/src/nucleus-test-kit/build.gradle /tmp/rdisk/1379/src/nucleus-support-v7/build.gradle /tmp/rdisk/1379/src/nucleus-support-v4/build.gradle /tmp/rdisk/1379/src/nucleus-example/build.gradle /tmp/rdisk/1379/src/nucleus-example-with-tests/build.gradle /tmp/rdisk/1379/src/nucleus-example-with-fragments/build.gradle /tmp/rdisk/1379/src/nucleus-example-real-life/build.gradle /tmp/rdisk/1379/src/gradle/gradle-mvn-push.gradle /tmp/rdisk/1379/src/build.gradle
+2018-04-06 18:29:25,041 INFO  ProjectBuildService - Remote scripts: none
+2018-04-06 18:29:25,041 INFO  ProjectFixService - Fixing project...
+2018-04-06 18:29:25,059 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1379/src/nucleus-example-real-life/local.properties
+2018-04-06 18:29:25,064 INFO  ProjectFixService - Build info for "/tmp/rdisk/1379/src/nucleus-example-real-life/build.gradle": [buildToolsVersion=26.0.0,compileSdkVersion=26,minSdkVersion=14,targetSdkVersion=26]
+2018-04-06 18:29:25,064 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1379/src/nucleus-example-with-fragments/local.properties
+2018-04-06 18:29:25,070 INFO  ProjectFixService - Build info for "/tmp/rdisk/1379/src/nucleus-example-with-fragments/build.gradle": [buildToolsVersion=26.0.0,compileSdkVersion=26,minSdkVersion=14,targetSdkVersion=26]
+2018-04-06 18:29:25,070 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1379/src/nucleus-example-with-tests/local.properties
+2018-04-06 18:29:25,075 INFO  ProjectFixService - Build info for "/tmp/rdisk/1379/src/nucleus-example-with-tests/build.gradle": [buildToolsVersion=26.0.0,compileSdkVersion=26,minSdkVersion=14,targetSdkVersion=26]
+2018-04-06 18:29:25,076 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1379/src/nucleus-example/local.properties
+2018-04-06 18:29:25,081 INFO  ProjectFixService - Build info for "/tmp/rdisk/1379/src/nucleus-example/build.gradle": [buildToolsVersion=26.0.0,compileSdkVersion=26,minSdkVersion=14,targetSdkVersion=26]
+2018-04-06 18:29:25,081 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1379/src/nucleus-support-v4/local.properties
+2018-04-06 18:29:25,086 INFO  ProjectFixService - Build info for "/tmp/rdisk/1379/src/nucleus-support-v4/build.gradle": [buildToolsVersion=26.0.0,compileSdkVersion=26,minSdkVersion=14,targetSdkVersion=26]
+2018-04-06 18:29:25,086 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1379/src/nucleus-support-v7/local.properties
+2018-04-06 18:29:25,091 INFO  ProjectFixService - Build info for "/tmp/rdisk/1379/src/nucleus-support-v7/build.gradle": [buildToolsVersion=26.0.0,compileSdkVersion=26,minSdkVersion=14,targetSdkVersion=26]
+2018-04-06 18:29:25,091 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1379/src/nucleus-test-kit/local.properties
+2018-04-06 18:29:25,097 INFO  ProjectFixService - Build info for "/tmp/rdisk/1379/src/nucleus-test-kit/build.gradle": [buildToolsVersion=26.0.0,compileSdkVersion=26,minSdkVersion=14,targetSdkVersion=26]
+2018-04-06 18:29:25,097 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1379/src/nucleus/local.properties
+2018-04-06 18:29:25,102 INFO  ProjectFixService - Build info for "/tmp/rdisk/1379/src/nucleus/build.gradle": [buildToolsVersion=26.0.0,compileSdkVersion=26,minSdkVersion=14,targetSdkVersion=26]
+2018-04-06 18:29:25,102 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1379/src/local.properties
+2018-04-06 18:29:25,103 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-3.3-all.zip
+2018-04-06 18:29:25,103 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-3.3-bin.zip)
+2018-04-06 18:29:25,103 INFO  ProjectFixService - Build info for "/tmp/rdisk/1379/src/build.gradle": [buildToolsVersion=26.0.0,compileSdkVersion=26,minSdkVersion=14,targetSdkVersion=26]
+2018-04-06 18:29:25,103 INFO  ProjectFixService - Project was maybe fixed
+2018-04-06 18:29:25,103 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-06 18:29:25,103 INFO  SysUtils - Execute command: [/tmp/rdisk/1379/src/gradlew, -b, /tmp/rdisk/1379/src/nucleus-example-real-life/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-06 18:29:33,858 INFO  ProjectTaskService - Detected possible tasks: 67
+2018-04-06 18:29:33,858 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-06 18:29:33,859 INFO  SysUtils - Execute command: [/tmp/rdisk/1379/src/gradlew, -b, /tmp/rdisk/1379/src/nucleus-example-real-life/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-06 18:30:10,291 INFO  SysUtils - Configuration on demand is an incubating feature.
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Jack is disabled, but one of the plugins you are using supports Java 8 language features.
+Jack is disabled, but one of the plugins you are using supports Java 8 language features.
+:nucleus-example-real-life:preBuild UP-TO-DATE
+:nucleus-example-real-life:preDebugBuild UP-TO-DATE
+:nucleus-example-real-life:checkDebugManifest
+:nucleus-example-real-life:preReleaseBuild UP-TO-DATE
+:nucleus-example-real-life:prepareComAndroidSupportAnimatedVectorDrawable2600Library
+:nucleus-example-real-life:prepareComAndroidSupportAppcompatV72600Library
+:nucleus-example-real-life:prepareComAndroidSupportRecyclerviewV72600Library
+:nucleus-example-real-life:prepareComAndroidSupportSupportCompat2600Library
+:nucleus-example-real-life:prepareComAndroidSupportSupportCoreUi2600Library
+:nucleus-example-real-life:prepareComAndroidSupportSupportCoreUtils2600Library
+:nucleus-example-real-life:prepareComAndroidSupportSupportFragment2600Library
+:nucleus-example-real-life:prepareComAndroidSupportSupportMediaCompat2600Library
+:nucleus-example-real-life:prepareComAndroidSupportSupportV42600Library
+:nucleus-example-real-life:prepareComAndroidSupportSupportVectorDrawable2600Library
+:nucleus-example-real-life:prepareInfoAndroid15NucleusNucleusSupportV4600Library
+:nucleus-example-real-life:prepareInfoAndroid15NucleusNucleusSupportV7600Library
+:nucleus-example-real-life:prepareDebugDependencies
+:nucleus-example-real-life:compileDebugAidl
+:nucleus-example-real-life:compileDebugRenderscript
+:nucleus-example-real-life:generateDebugBuildConfig
+:nucleus-example-real-life:generateDebugResValues
+:nucleus-example-real-life:generateDebugResources
+:nucleus-example-real-life:mergeDebugResources
+:nucleus-example-real-life:processDebugManifest
+:nucleus-example-real-life:processDebugResources
+:nucleus-example-real-life:generateDebugSources
+:nucleus-example-real-life:incrementalDebugJavaCompilationSafeguard
+:nucleus-example-real-life:javaPreCompileDebug
+:nucleus-example-real-life:compileDebugJavaWithJavacNote: /tmp/rdisk/1379/src/nucleus-example-real-life/src/main/java/nucleus/example/network/ServerAPI.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:nucleus-example-real-life:compileRetrolambdaDebug
+:nucleus-example-real-life:compileDebugNdk UP-TO-DATE
+:nucleus-example-real-life:compileDebugSources
+:nucleus-example-real-life:mergeDebugShaders
+:nucleus-example-real-life:compileDebugShaders
+:nucleus-example-real-life:generateDebugAssets
+:nucleus-example-real-life:mergeDebugAssets
+:nucleus-example-real-life:transformClassesWithDexForDebug
+:nucleus-example-real-life:mergeDebugJniLibFolders
+:nucleus-example-real-life:transformNativeLibsWithMergeJniLibsForDebug
+:nucleus-example-real-life:transformNativeLibsWithStripDebugSymbolForDebug
+:nucleus-example-real-life:processDebugJavaRes UP-TO-DATE
+:nucleus-example-real-life:transformResourcesWithMergeJavaResForDebug
+:nucleus-example-real-life:validateSigningDebug
+:nucleus-example-real-life:packageDebug
+:nucleus-example-real-life:assembleDebug
+:nucleus-example-real-life:checkReleaseManifest
+:nucleus-example-real-life:prepareReleaseDependencies
+:nucleus-example-real-life:compileReleaseAidl
+:nucleus-example-real-life:compileReleaseRenderscript
+:nucleus-example-real-life:generateReleaseBuildConfig
+:nucleus-example-real-life:generateReleaseResValues
+:nucleus-example-real-life:generateReleaseResources
+:nucleus-example-real-life:mergeReleaseResources
+:nucleus-example-real-life:processReleaseManifest
+:nucleus-example-real-life:processReleaseResources
+:nucleus-example-real-life:generateReleaseSources
+:nucleus-example-real-life:incrementalReleaseJavaCompilationSafeguard
+:nucleus-example-real-life:javaPreCompileRelease
+:nucleus-example-real-life:compileReleaseJavaWithJavacNote: /tmp/rdisk/1379/src/nucleus-example-real-life/src/main/java/nucleus/example/network/ServerAPI.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:nucleus-example-real-life:compileRetrolambdaRelease
+:nucleus-example-real-life:compileReleaseNdk UP-TO-DATE
+:nucleus-example-real-life:compileReleaseSources
+:nucleus-example-real-life:lintVitalRelease
+:nucleus-example-real-life:mergeReleaseShaders
+:nucleus-example-real-life:compileReleaseShaders
+:nucleus-example-real-life:generateReleaseAssets
+:nucleus-example-real-life:mergeReleaseAssets
+:nucleus-example-real-life:transformClassesWithDexForRelease
+:nucleus-example-real-life:mergeReleaseJniLibFolders
+:nucleus-example-real-life:transformNativeLibsWithMergeJniLibsForRelease
+:nucleus-example-real-life:transformNativeLibsWithStripDebugSymbolForRelease
+:nucleus-example-real-life:processReleaseJavaRes UP-TO-DATE
+:nucleus-example-real-life:transformResourcesWithMergeJavaResForRelease
+:nucleus-example-real-life:packageRelease
+:nucleus-example-real-life:assembleRelease
+:nucleus-example-real-life:assemble
+:nucleus-example-real-life:build
+
+BUILD SUCCESSFUL
+
+Total time: 36.169 secs
+
+2018-04-06 18:30:10,354 INFO  FullProcessService - Found APK file: /tmp/rdisk/1379/src/nucleus-example-real-life/build/outputs/apk/nucleus-example-real-life-release-unsigned.apk

@@ -1,0 +1,21 @@
+2018-05-21 01:01:43,373 INFO  DownloadService - Downloading "https://github.com/Raizlabs/Singleton/archive/master.zip", attempt 3
+2018-05-21 01:02:43,907 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-05-21 01:02:44,609 INFO  GithubDownloadService - Default branch of this repository: master
+2018-05-21 01:02:44,609 INFO  DownloadService - Downloading "https://github.com/Raizlabs/Singleton/archive/master.zip", attempt 3
+2018-05-21 01:03:46,102 DEBUG FullProcessService - Repository https://github.com/Raizlabs/Singleton available: true
+2018-05-21 01:03:46,102 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-05-21 01:03:46,102 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/Raizlabs/Singleton, /tmp/rdisk/1294/src]
+2018-05-21 01:03:47,410 INFO  SysUtils - 
+2018-05-21 01:03:47,413 INFO  GitService - Deleted "/tmp/rdisk/1294/src/.git": true
+2018-05-21 01:03:47,413 INFO  FullProcessService - Size of directory with sources: 566 bytes
+2018-05-21 01:03:47,413 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1294/src]
+2018-05-21 01:03:47,418 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1294/src/.git/
+
+2018-05-21 01:03:47,419 INFO  ProjectBuildService - Gradle wrapper(s): none
+2018-05-21 01:03:47,419 ERROR ProjectBuildService - Could not detect Gradle wrapper. Default Gradle installation will be used
+2018-05-21 01:03:47,419 INFO  ProjectBuildService - Build script(s): none
+2018-05-21 01:03:47,420 INFO  ProjectBuildService - All script(s): none
+2018-05-21 01:03:47,420 INFO  ProjectBuildService - Remote scripts: none
+2018-05-21 01:03:47,420 ERROR FullProcessService - Project is not correct Gradle project
+2018-05-21 01:03:47,420 ERROR FullProcessService - Project build has not produced APK file
+2018-05-21 01:03:47,421 ERROR FullProcessService - Could not find generated or existed APK file

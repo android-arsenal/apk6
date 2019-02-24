@@ -1,0 +1,422 @@
+2018-04-06 18:38:37,375 INFO  DownloadService - Downloading "https://github.com/akexorcist/Android-GoogleDirectionLibrary/archive/master.zip", attempt 3
+2018-04-06 18:39:37,969 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-06 18:39:38,979 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-06 18:39:38,979 INFO  DownloadService - Downloading "https://github.com/akexorcist/Android-GoogleDirectionLibrary/archive/master.zip", attempt 3
+2018-04-06 18:40:40,204 DEBUG FullProcessService - Repository https://github.com/akexorcist/Android-GoogleDirectionLibrary available: true
+2018-04-06 18:40:40,204 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-06 18:40:40,204 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/akexorcist/Android-GoogleDirectionLibrary, /tmp/rdisk/1374/src]
+2018-04-06 18:40:42,163 INFO  SysUtils - 
+2018-04-06 18:40:42,168 INFO  GitService - Deleted "/tmp/rdisk/1374/src/.git": true
+2018-04-06 18:40:42,172 INFO  FullProcessService - Size of directory with sources: 636 KB
+2018-04-06 18:40:42,172 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1374/src]
+2018-04-06 18:40:42,176 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1374/src/.git/
+
+2018-04-06 18:40:42,179 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1374/src/gradlew
+2018-04-06 18:40:42,183 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1374/src/app/build.gradle /tmp/rdisk/1374/src/googleDirectionLibrary/build.gradle /tmp/rdisk/1374/src/build.gradle
+2018-04-06 18:40:42,186 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1374/src/settings.gradle /tmp/rdisk/1374/src/maven_push.gradle /tmp/rdisk/1374/src/googleDirectionLibrary/build.gradle /tmp/rdisk/1374/src/build.gradle /tmp/rdisk/1374/src/app/build.gradle
+2018-04-06 18:40:42,186 INFO  ProjectBuildService - Remote scripts: none
+2018-04-06 18:40:42,186 INFO  ProjectFixService - Fixing project...
+2018-04-06 18:40:42,201 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1374/src/app/local.properties
+2018-04-06 18:40:42,204 INFO  ProjectFixService - Build info for "/tmp/rdisk/1374/src/app/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-06 18:40:42,204 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1374/src/app/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-06 18:40:42,205 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1374/src/googleDirectionLibrary/local.properties
+2018-04-06 18:40:42,207 INFO  ProjectFixService - Build info for "/tmp/rdisk/1374/src/googleDirectionLibrary/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-06 18:40:42,207 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1374/src/googleDirectionLibrary/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-06 18:40:42,209 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1374/src/local.properties
+2018-04-06 18:40:42,210 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-4.1-all.zip
+2018-04-06 18:40:42,210 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-4.1-bin.zip)
+2018-04-06 18:40:42,212 INFO  ProjectFixService - Build info for "/tmp/rdisk/1374/src/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-06 18:40:42,213 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1374/src/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-06 18:40:42,213 INFO  ProjectFixService - Project was maybe fixed
+2018-04-06 18:40:42,213 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-06 18:40:42,213 INFO  SysUtils - Execute command: [/tmp/rdisk/1374/src/gradlew, -b, /tmp/rdisk/1374/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-06 18:40:51,825 INFO  ProjectTaskService - Detected possible tasks: 68
+2018-04-06 18:40:51,825 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-06 18:40:51,825 INFO  SysUtils - Execute command: [/tmp/rdisk/1374/src/gradlew, -b, /tmp/rdisk/1374/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-06 18:41:45,170 INFO  SysUtils - Configuration on demand is an incubating feature.
+Configuration 'compile' in project ':app' is deprecated. Use 'implementation' instead.
+Configuration 'testCompile' in project ':app' is deprecated. Use 'testImplementation' instead.
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Configuration 'compile' in project ':googleDirectionLibrary' is deprecated. Use 'implementation' instead.
+Configuration 'testCompile' in project ':googleDirectionLibrary' is deprecated. Use 'testImplementation' instead.
+RELEASE BUILD
+:app:preBuild UP-TO-DATE
+:googleDirectionLibrary:preBuild UP-TO-DATE
+:googleDirectionLibrary:preDebugBuild UP-TO-DATE
+:googleDirectionLibrary:checkDebugManifest
+:googleDirectionLibrary:processDebugManifest
+:app:preDebugBuild
+:googleDirectionLibrary:compileDebugAidl
+:app:compileDebugAidl
+:googleDirectionLibrary:packageDebugRenderscript NO-SOURCE
+:app:compileDebugRenderscript
+:app:checkDebugManifest
+:app:generateDebugBuildConfig
+:app:prepareLintJar
+:app:generateDebugResValues
+:app:generateDebugResources
+:googleDirectionLibrary:compileDebugRenderscript
+:googleDirectionLibrary:generateDebugResValues
+:googleDirectionLibrary:generateDebugResources
+:googleDirectionLibrary:packageDebugResources
+:app:mergeDebugResources
+:app:createDebugCompatibleScreenManifests
+:app:processDebugManifest
+:app:splitsDiscoveryTaskDebug
+:googleDirectionLibrary:platformAttrExtractor
+:googleDirectionLibrary:generateDebugBuildConfig
+:googleDirectionLibrary:prepareLintJar
+:googleDirectionLibrary:javaPreCompileDebug
+:googleDirectionLibrary:processDebugJavaRes NO-SOURCE
+:app:compileDebugNdk NO-SOURCE
+:app:mergeDebugShaders
+:app:compileDebugShaders
+:app:generateDebugAssets
+:googleDirectionLibrary:mergeDebugShaders
+:googleDirectionLibrary:compileDebugShaders
+:googleDirectionLibrary:generateDebugAssets
+:googleDirectionLibrary:mergeDebugAssets
+:app:mergeDebugAssets
+:app:mergeDebugJniLibFolders
+:googleDirectionLibrary:compileDebugNdk NO-SOURCE
+:googleDirectionLibrary:mergeDebugJniLibFolders
+:googleDirectionLibrary:transformNativeLibsWithMergeJniLibsForDebug
+:googleDirectionLibrary:transformNativeLibsWithStripDebugSymbolForDebug
+:googleDirectionLibrary:transformNativeLibsWithIntermediateJniLibsForDebug
+:app:processDebugJavaRes NO-SOURCE
+:app:validateSigningDebug
+:app:extractProguardFiles
+:googleDirectionLibrary:preReleaseBuild UP-TO-DATE
+:googleDirectionLibrary:checkReleaseManifest
+:googleDirectionLibrary:processReleaseManifest
+:app:preReleaseBuild
+:googleDirectionLibrary:compileReleaseAidl
+:app:compileReleaseAidl
+:googleDirectionLibrary:packageReleaseRenderscript NO-SOURCE
+:app:compileReleaseRenderscript
+:app:checkReleaseManifest
+:app:generateReleaseBuildConfig
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:googleDirectionLibrary:compileReleaseRenderscript
+:googleDirectionLibrary:generateReleaseResValues
+:googleDirectionLibrary:generateReleaseResources
+:googleDirectionLibrary:packageReleaseResources
+:app:mergeReleaseResources
+:app:createReleaseCompatibleScreenManifests
+:app:processReleaseManifest
+:app:splitsDiscoveryTaskRelease
+:googleDirectionLibrary:generateReleaseBuildConfig
+:googleDirectionLibrary:javaPreCompileRelease
+:googleDirectionLibrary:processReleaseJavaRes NO-SOURCE
+:app:compileReleaseNdk NO-SOURCE
+:app:mergeReleaseShaders
+:app:compileReleaseShaders
+:app:generateReleaseAssets
+:googleDirectionLibrary:mergeReleaseShaders
+:googleDirectionLibrary:compileReleaseShaders
+:googleDirectionLibrary:generateReleaseAssets
+:googleDirectionLibrary:mergeReleaseAssets
+:app:mergeReleaseAssets
+:app:processReleaseJavaRes NO-SOURCE
+:googleDirectionLibrary:mergeReleaseConsumerProguardFiles
+:app:mergeReleaseJniLibFolders
+:googleDirectionLibrary:compileReleaseNdk NO-SOURCE
+:googleDirectionLibrary:mergeReleaseJniLibFolders
+:googleDirectionLibrary:transformNativeLibsWithMergeJniLibsForRelease
+:googleDirectionLibrary:transformNativeLibsWithStripDebugSymbolForRelease
+:googleDirectionLibrary:transformNativeLibsWithIntermediateJniLibsForRelease
+:googleDirectionLibrary:processDebugResources
+:app:processDebugResources
+:app:generateDebugSources
+:googleDirectionLibrary:generateDebugSources
+:googleDirectionLibrary:compileDebugJavaWithJavac
+:googleDirectionLibrary:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug
+:app:javaPreCompileDebug
+:app:compileDebugJavaWithJavac
+:app:compileDebugSources
+:app:transformClassesWithDexBuilderForDebug
+:app:transformDexArchiveWithExternalLibsDexMergerForDebug
+:app:transformDexArchiveWithDexMergerForDebug
+:app:transformNativeLibsWithMergeJniLibsForDebug
+:app:transformNativeLibsWithStripDebugSymbolForDebug
+:app:transformResourcesWithMergeJavaResForDebug
+:app:packageDebug
+:app:assembleDebug
+:googleDirectionLibrary:processReleaseResources
+:app:processReleaseResources
+:app:generateReleaseSources
+:googleDirectionLibrary:generateReleaseSources
+:googleDirectionLibrary:compileReleaseJavaWithJavac
+:googleDirectionLibrary:transformClassesAndResourcesWithPrepareIntermediateJarsForRelease
+:app:javaPreCompileRelease
+:app:compileReleaseJavaWithJavac
+:app:compileReleaseSources
+:app:transformResourcesWithMergeJavaResForRelease
+:app:transformClassesAndResourcesWithProguardForRelease
+ProGuard, version 5.3.3
+Reading input...
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/design-27.0.0.aar/8520429b6a36c44a36647959045ed1e6/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.0.aar/9f283457d9ceabfb6ed7b31e1194b674/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/play-services-maps-11.6.0.aar/472fa561bf4be1e54d59c39f19522dc3/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/retrofit/2.3.0/bcacde6a8ccedcc56c127403d26b76072fe6214d/retrofit-2.3.0.jar] (filtered)
+Reading program jar [/root/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/logging-interceptor/3.9.0/3bf7f8d6a20c90ffe9fc3f3c9118193c7720ecf1/logging-interceptor-3.9.0.jar] (filtered)
+Reading program jar [/root/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/converter-gson/2.3.0/9e09011e9767bb76b5e27c9b8223476b93b14631/converter-gson-2.3.0.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/android-maps-utils-0.5.aar/7d85ddd3345aae14740473fd6ccffcb8/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/play-services-base-11.6.0.aar/5f24e34209e63ef09532deec30bc2e5b/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/play-services-tasks-11.6.0.aar/8d5af510e760f5e2f4923fbc9944e288/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.6.0.aar/4afd9fb97a1bd0c5518dc507f8d14349/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/support-v4-27.0.0.aar/5151bd19e35091ab8248fddf3f7bf25e/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/support-fragment-27.0.0.aar/9333620822c7739e1913f6637967601d/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.0.0.aar/06da88a8b311ff694fa8bd3f3b75dceb/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.0.0.aar/c44adf09d5c4cc29ae7d60ef5d00476f/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.0.0.aar/10751f913bc18c824d7778c6ee3dad40/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.0.0.aar/0a21de102d526da14bf56e18d7c02c09/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/transition-27.0.0.aar/b519b740b12dfd1aac94f3aa1d17c5cb/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.0.0.aar/cdf4dd6432bf374b6da79673a283346e/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.0.aar/7f4f1fe12960865c5a526dcc6c87a69e/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.0.aar/994a101f243f54e2153b2585ae65b72d/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/27.0.0/a7782471b2a0de8fec071b8094a8aaf61c46ab70/support-annotations-27.0.0.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/play-services-maps-license-11.6.0.aar/1a43da7a2782d339a973c97958905ba3/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.9.0/1b6c10b5120995a7542c1a31b7828fb8593c8ba/okhttp-3.9.0.jar] (filtered)
+Reading program jar [/root/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.7/751f548c85fa49f330cecbb1875893f971b33c4e/gson-2.7.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/play-services-base-license-11.6.0.aar/2674a174c492fdb0875b8fe0091ce2a7/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/play-services-basement-license-11.6.0.aar/e403124fd83f0d5cc4d560896be27e67/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/09c12b3d93f70354459cfd521819a118/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/play-services-tasks-license-11.6.0.aar/783e5944d619535ff12ba822be88bde7/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/modules-2/files-2.1/android.arch.lifecycle/common/1.0.0/e414a4cb28434e25c4f6aa71426eb20cf4874ae9/common-1.0.0.jar] (filtered)
+Reading program jar [/root/.gradle/caches/modules-2/files-2.1/android.arch.core/common/1.0.0/a2d487452376193fc8c103dd2b9bd5f2b1b44563/common-1.0.0.jar] (filtered)
+Reading program jar [/root/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.13.0/a9283170b7305c8d92d25aff02a6ab7e45d06cbe/okio-1.13.0.jar] (filtered)
+Reading program jar [/tmp/rdisk/1374/src/googleDirectionLibrary/build/intermediates/intermediate-jars/release/classes.jar] (filtered)
+Reading program directory [/tmp/rdisk/1374/src/app/build/intermediates/classes/release] (filtered)
+Reading program jar [/tmp/rdisk/1374/src/app/build/intermediates/transforms/mergeJavaRes/release/0.jar] (filtered)
+Reading library jar [/root/Applications/android-sdk/platforms/android-27/android.jar]
+Reading library jar [/root/Applications/android-sdk/platforms/android-27/optional/org.apache.http.legacy.jar]
+Note: duplicate definition of library class [org.apache.http.params.HttpParams]
+Note: duplicate definition of library class [org.apache.http.params.HttpConnectionParams]
+Note: duplicate definition of library class [org.apache.http.params.CoreConnectionPNames]
+Note: duplicate definition of library class [org.apache.http.conn.ConnectTimeoutException]
+Note: duplicate definition of library class [org.apache.http.conn.scheme.LayeredSocketFactory]
+Note: duplicate definition of library class [org.apache.http.conn.scheme.HostNameResolver]
+Note: duplicate definition of library class [org.apache.http.conn.scheme.SocketFactory]
+Note: duplicate definition of library class [android.net.http.SslCertificate$DName]
+Note: duplicate definition of library class [android.net.http.SslError]
+Note: duplicate definition of library class [android.net.http.SslCertificate]
+Note: duplicate definition of library class [android.net.http.HttpResponseCache]
+Note: there were 11 duplicate class definitions.
+      (http://proguard.sourceforge.net/manual/troubleshooting.html#duplicateclass)
+Initializing...
+Note: the configuration refers to the unknown class 'com.google.android.gms.common.internal.safeparcel.SafeParcelable'
+Note: com.google.android.gms.internal.zzfeh: can't find dynamically referenced class com.google.protobuf.ExtensionRegistry
+Note: com.google.android.gms.internal.zzfei: can't find dynamically referenced class com.google.protobuf.Extension
+Note: com.google.android.gms.internal.zzfgr: can't find dynamically referenced class libcore.io.Memory
+Note: com.google.android.gms.internal.zzfgr: can't find dynamically referenced class org.robolectric.Robolectric
+Note: com.google.gson.internal.UnsafeAllocator: can't find dynamically referenced class sun.misc.Unsafe
+Note: okhttp3.internal.platform.AndroidPlatform: can't find dynamically referenced class com.android.org.conscrypt.SSLParametersImpl
+Note: okhttp3.internal.platform.AndroidPlatform: can't find dynamically referenced class org.apache.harmony.xnet.provider.jsse.SSLParametersImpl
+Note: okhttp3.internal.platform.AndroidPlatform$CloseGuard: can't find dynamically referenced class dalvik.system.CloseGuard
+Note: okhttp3.internal.platform.Platform: can't find dynamically referenced class sun.security.ssl.SSLContextImpl
+Note: the configuration keeps the entry point 'com.google.android.gms.common.api.internal.LifecycleCallback { com.google.android.gms.common.api.internal.zzci getChimeraLifecycleFragmentImpl(com.google.android.gms.common.api.internal.zzch); }', but not the descriptor class 'com.google.android.gms.common.api.internal.zzch'
+Note: the configuration keeps the entry point 'com.google.android.gms.dynamic.zza { void zza(android.os.Bundle,com.google.android.gms.dynamic.zzi); }', but not the descriptor class 'com.google.android.gms.dynamic.zzi'
+Note: the configuration keeps the entry point 'com.google.android.gms.dynamic.zza { void zza(com.google.android.gms.dynamic.zzo); }', but not the descriptor class 'com.google.android.gms.dynamic.zzo'
+Note: the configuration keeps the entry point 'com.google.android.gms.dynamic.zza { com.google.android.gms.dynamic.LifecycleDelegate zza(com.google.android.gms.dynamic.zza,com.google.android.gms.dynamic.LifecycleDelegate); }', but not the descriptor class 'com.google.android.gms.dynamic.zza'
+Note: the configuration keeps the entry point 'com.google.android.gms.dynamic.zza { com.google.android.gms.dynamic.LifecycleDelegate zza(com.google.android.gms.dynamic.zza,com.google.android.gms.dynamic.LifecycleDelegate); }', but not the descriptor class 'com.google.android.gms.dynamic.LifecycleDelegate'
+Note: the configuration keeps the entry point 'com.google.android.gms.dynamic.zza { java.util.LinkedList zza(com.google.android.gms.dynamic.zza); }', but not the descriptor class 'com.google.android.gms.dynamic.zza'
+Note: the configuration keeps the entry point 'com.google.android.gms.dynamic.zza { com.google.android.gms.dynamic.LifecycleDelegate zzb(com.google.android.gms.dynamic.zza); }', but not the descriptor class 'com.google.android.gms.dynamic.zza'
+Note: the configuration keeps the entry point 'com.google.android.gms.dynamic.zza { android.os.Bundle zza(com.google.android.gms.dynamic.zza,android.os.Bundle); }', but not the descriptor class 'com.google.android.gms.dynamic.zza'
+Note: the configuration keeps the entry point 'com.google.android.gms.flags.impl.FlagProviderImpl { void init(com.google.android.gms.dynamic.IObjectWrapper); }', but not the descriptor class 'com.google.android.gms.dynamic.IObjectWrapper'
+Note: the configuration keeps the entry point 'com.google.android.gms.maps.CameraUpdate { CameraUpdate(com.google.android.gms.dynamic.IObjectWrapper); }', but not the descriptor class 'com.google.android.gms.dynamic.IObjectWrapper'
+Note: the configuration keeps the entry point 'com.google.android.gms.maps.MapFragment$zzb { void zza(com.google.android.gms.dynamic.zzo); }', but not the descriptor class 'com.google.android.gms.dynamic.zzo'
+Note: the configuration keeps the entry point 'com.google.android.gms.maps.MapView$zzb { void zza(com.google.android.gms.dynamic.zzo); }', but not the descriptor class 'com.google.android.gms.dynamic.zzo'
+Note: the configuration keeps the entry point 'com.google.android.gms.maps.StreetViewPanoramaFragment$zzb { void zza(com.google.android.gms.dynamic.zzo); }', but not the descriptor class 'com.google.android.gms.dynamic.zzo'
+Note: the configuration keeps the entry point 'com.google.android.gms.maps.StreetViewPanoramaView$zzb { void zza(com.google.android.gms.dynamic.zzo); }', but not the descriptor class 'com.google.android.gms.dynamic.zzo'
+Note: the configuration keeps the entry point 'com.google.android.gms.maps.SupportMapFragment$zzb { void zza(com.google.android.gms.dynamic.zzo); }', but not the descriptor class 'com.google.android.gms.dynamic.zzo'
+Note: the configuration keeps the entry point 'com.google.android.gms.maps.SupportStreetViewPanoramaFragment$zzb { void zza(com.google.android.gms.dynamic.zzo); }', but not the descriptor class 'com.google.android.gms.dynamic.zzo'
+Note: the configuration keeps the entry point 'com.google.android.gms.maps.internal.IGoogleMapDelegate { void moveCamera(com.google.android.gms.dynamic.IObjectWrapper); }', but not the descriptor class 'com.google.android.gms.dynamic.IObjectWrapper'
+Note: the configuration keeps the entry point 'com.google.android.gms.maps.internal.IGoogleMapDelegate { void animateCamera(com.google.android.gms.dynamic.IObjectWrapper); }', but not the descriptor class 'com.google.android.gms.dynamic.IObjectWrapper'
+Note: the configuration keeps the entry point 'com.google.android.gms.maps.internal.IGoogleMapDelegate { void animateCameraWithCallback(com.google.android.gms.dynamic.IObjectWrapper,com.google.android.gms.maps.internal.zzc); }', but not the descriptor class 'com.google.android.gms.dynamic.IObjectWrapper'
+Note: the configuration keeps the entry point 'com.google.android.gms.maps.internal.IGoogleMapDelegate { void animateCameraWithDurationAndCallback(com.google.android.gms.dynamic.IObjectWrapper,int,com.google.android.gms.maps.internal.zzc); }', but not the descriptor class 'com.google.android.gms.dynamic.IObjectWrapper'
+Note: the configuration keeps the entry point 'com.google.android.gms.maps.internal.IGoogleMapDelegate { void snapshot(com.google.android.gms.maps.internal.zzbs,com.google.android.gms.dynamic.IObjectWrapper); }', but not the descriptor class 'com.google.android.gms.dynamic.IObjectWrapper'
+Note: the configuration keeps the entry point 'com.google.android.gms.maps.internal.IMapFragmentDelegate { void onInflate(com.google.android.gms.dynamic.IObjectWrapper,com.google.android.gms.maps.GoogleMapOptions,android.os.Bundle); }', but not the descriptor class 'com.google.android.gms.dynamic.IObjectWrapper'
+Note: the configuration keeps the entry point 'com.google.android.gms.maps.internal.IMapFragmentDelegate { com.google.android.gms.dynamic.IObjectWrapper onCreateView(com.google.android.gms.dynamic.IObjectWrapper,com.google.android.gms.dynamic.IObjectWrapper,android.os.Bundle); }', but not the descriptor class 'com.google.android.gms.dynamic.IObjectWrapper'
+Note: the configuration keeps the entry point 'com.google.android.gms.maps.internal.IMapFragmentDelegate { com.google.android.gms.dynamic.IObjectWrapper onCreateView(com.google.android.gms.dynamic.IObjectWrapper,com.google.android.gms.dynamic.IObjectWrapper,android.os.Bundle); }', but not the descriptor class 'com.google.android.gms.dynamic.IObjectWrapper'
+Note: the configuration keeps the entry point 'com.google.android.gms.maps.internal.IProjectionDelegate { com.google.android.gms.maps.model.LatLng fromScreenLocation(com.google.android.gms.dynamic.IObjectWrapper); }', but not the descriptor class 'com.google.android.gms.dynamic.IObjectWrapper'
+Note: the configuration keeps the entry point 'com.google.android.gms.maps.internal.IStreetViewPanoramaDelegate { com.google.android.gms.maps.model.StreetViewPanoramaOrientation pointToOrientation(com.google.android.gms.dynamic.IObjectWrapper); }', but not the descriptor class 'com.google.android.gms.dynamic.IObjectWrapper'
+Note: the configuration keeps the entry point 'com.google.android.gms.maps.internal.IStreetViewPanoramaFragmentDelegate { void onInflate(com.google.android.gms.dynamic.IObjectWrapper,com.google.android.gms.maps.StreetViewPanoramaOptions,android.os.Bundle); }', but not the descriptor class 'com.google.android.gms.dynamic.IObjectWrapper'
+Note: the configuration keeps the entry point 'com.google.android.gms.maps.internal.IStreetViewPanoramaFragmentDelegate { com.google.android.gms.dynamic.IObjectWrapper onCreateView(com.google.android.gms.dynamic.IObjectWrapper,com.google.android.gms.dynamic.IObjectWrapper,android.os.Bundle); }', but not the descriptor class 'com.google.android.gms.dynamic.IObjectWrapper'
+Note: the configuration keeps the entry point 'com.google.android.gms.maps.internal.IStreetViewPanoramaFragmentDelegate { com.google.android.gms.dynamic.IObjectWrapper onCreateView(com.google.android.gms.dynamic.IObjectWrapper,com.google.android.gms.dynamic.IObjectWrapper,android.os.Bundle); }', but not the descriptor class 'com.google.android.gms.dynamic.IObjectWrapper'
+Note: the configuration keeps the entry point 'com.google.android.gms.maps.internal.zzax { void zzy(com.google.android.gms.dynamic.IObjectWrapper); }', but not the descriptor class 'com.google.android.gms.dynamic.IObjectWrapper'
+Note: the configuration keeps the entry point 'com.google.android.gms.maps.internal.zzbr { com.google.android.gms.maps.model.LatLng fromScreenLocation(com.google.android.gms.dynamic.IObjectWrapper); }', but not the descriptor class 'com.google.android.gms.dynamic.IObjectWrapper'
+Note: the configuration keeps the entry point 'com.google.android.gms.maps.internal.zzbs { void zzz(com.google.android.gms.dynamic.IObjectWrapper); }', but not the descriptor class 'com.google.android.gms.dynamic.IObjectWrapper'
+Note: the configuration keeps the entry point 'com.google.android.gms.maps.internal.zzbu { com.google.android.gms.maps.model.StreetViewPanoramaOrientation pointToOrientation(com.google.android.gms.dynamic.IObjectWrapper); }', but not the descriptor class 'com.google.android.gms.dynamic.IObjectWrapper'
+Note: the configuration keeps the entry point 'com.google.android.gms.maps.internal.zzbv { void onInflate(com.google.android.gms.dynamic.IObjectWrapper,com.google.android.gms.maps.StreetViewPanoramaOptions,android.os.Bundle); }', but not the descriptor class 'com.google.android.gms.dynamic.IObjectWrapper'
+Note: the configuration keeps the entry point 'com.google.android.gms.maps.internal.zzbv { com.google.android.gms.dynamic.IObjectWrapper onCreateView(com.google.android.gms.dynamic.IObjectWrapper,com.google.android.gms.dynamic.IObjectWrapper,android.os.Bundle); }', but not the descriptor class 'com.google.android.gms.dynamic.IObjectWrapper'
+Note: the configuration keeps the entry point 'com.google.android.gms.maps.internal.zzbv { com.google.android.gms.dynamic.IObjectWrapper onCreateView(com.google.android.gms.dynamic.IObjectWrapper,com.google.android.gms.dynamic.IObjectWrapper,android.os.Bundle); }', but not the descriptor class 'com.google.android.gms.dynamic.IObjectWrapper'
+Note: the configuration keeps the entry point 'com.google.android.gms.maps.internal.zze { com.google.android.gms.maps.internal.IMapFragmentDelegate zzaa(com.google.android.gms.dynamic.IObjectWrapper); }', but not the descriptor class 'com.google.android.gms.dynamic.IObjectWrapper'
+Note: the configuration keeps the entry point 'com.google.android.gms.maps.internal.zze { com.google.android.gms.maps.internal.IMapViewDelegate zza(com.google.android.gms.dynamic.IObjectWrapper,com.google.android.gms.maps.GoogleMapOptions); }', but not the descriptor class 'com.google.android.gms.dynamic.IObjectWrapper'
+Note: the configuration keeps the entry point 'com.google.android.gms.maps.internal.zze { void zzi(com.google.android.gms.dynamic.IObjectWrapper,int); }', but not the descriptor class 'com.google.android.gms.dynamic.IObjectWrapper'
+Note: the configuration keeps the entry point 'com.google.android.gms.maps.internal.zze { com.google.android.gms.maps.internal.IStreetViewPanoramaViewDelegate zza(com.google.android.gms.dynamic.IObjectWrapper,com.google.android.gms.maps.StreetViewPanoramaOptions); }', but not the descriptor class 'com.google.android.gms.dynamic.IObjectWrapper'
+Note: the configuration keeps the entry point 'com.google.android.gms.maps.internal.zze { com.google.android.gms.maps.internal.IStreetViewPanoramaFragmentDelegate zzab(com.google.android.gms.dynamic.IObjectWrapper); }', but not the descriptor class 'com.google.android.gms.dynamic.IObjectWrapper'
+Note: the configuration keeps the entry point 'com.google.android.gms.maps.internal.zzf { com.google.android.gms.maps.internal.IMapFragmentDelegate zzaa(com.google.android.gms.dynamic.IObjectWrapper); }', but not the descriptor class 'com.google.android.gms.dynamic.IObjectWrapper'
+Note: the configuration keeps the entry point 'com.google.android.gms.maps.internal.zzf { com.google.android.gms.maps.internal.IMapViewDelegate zza(com.google.android.gms.dynamic.IObjectWrapper,com.google.android.gms.maps.GoogleMapOptions); }', but not the descriptor class 'com.google.android.gms.dynamic.IObjectWrapper'
+Note: the configuration keeps the entry point 'com.google.android.gms.maps.internal.zzf { void zzi(com.google.android.gms.dynamic.IObjectWrapper,int); }', but not the descriptor class 'com.google.android.gms.dynamic.IObjectWrapper'
+Note: the configuration keeps the entry point 'com.google.android.gms.maps.internal.zzf { com.google.android.gms.maps.internal.IStreetViewPanoramaViewDelegate zza(com.google.android.gms.dynamic.IObjectWrapper,com.google.android.gms.maps.StreetViewPanoramaOptions); }', but not the descriptor class 'com.google.android.gms.dynamic.IObjectWrapper'
+Note: the configuration keeps the entry point 'com.google.android.gms.maps.internal.zzf { com.google.android.gms.maps.internal.IStreetViewPanoramaFragmentDelegate zzab(com.google.android.gms.dynamic.IObjectWrapper); }', but not the descriptor class 'com.google.android.gms.dynamic.IObjectWrapper'
+Note: the configuration keeps the entry point 'com.google.android.gms.maps.internal.zzg { void moveCamera(com.google.android.gms.dynamic.IObjectWrapper); }', but not the descriptor class 'com.google.android.gms.dynamic.IObjectWrapper'
+Note: the configuration keeps the entry point 'com.google.android.gms.maps.internal.zzg { void animateCamera(com.google.android.gms.dynamic.IObjectWrapper); }', but not the descriptor class 'com.google.android.gms.dynamic.IObjectWrapper'
+Note: the configuration keeps the entry point 'com.google.android.gms.maps.internal.zzg { void animateCameraWithCallback(com.google.android.gms.dynamic.IObjectWrapper,com.google.android.gms.maps.internal.zzc); }', but not the descriptor class 'com.google.android.gms.dynamic.IObjectWrapper'
+Note: the configuration keeps the entry point 'com.google.android.gms.maps.internal.zzg { void animateCameraWithDurationAndCallback(com.google.android.gms.dynamic.IObjectWrapper,int,com.google.android.gms.maps.internal.zzc); }', but not the descriptor class 'com.google.android.gms.dynamic.IObjectWrapper'
+Note: the configuration keeps the entry point 'com.google.android.gms.maps.internal.zzg { void snapshot(com.google.android.gms.maps.internal.zzbs,com.google.android.gms.dynamic.IObjectWrapper); }', but not the descriptor class 'com.google.android.gms.dynamic.IObjectWrapper'
+Note: the configuration keeps the entry point 'com.google.android.gms.maps.internal.zzj { void onInflate(com.google.android.gms.dynamic.IObjectWrapper,com.google.android.gms.maps.GoogleMapOptions,android.os.Bundle); }', but not the descriptor class 'com.google.android.gms.dynamic.IObjectWrapper'
+Note: the configuration keeps the entry point 'com.google.android.gms.maps.internal.zzj { com.google.android.gms.dynamic.IObjectWrapper onCreateView(com.google.android.gms.dynamic.IObjectWrapper,com.google.android.gms.dynamic.IObjectWrapper,android.os.Bundle); }', but not the descriptor class 'com.google.android.gms.dynamic.IObjectWrapper'
+Note: the configuration keeps the entry point 'com.google.android.gms.maps.internal.zzj { com.google.android.gms.dynamic.IObjectWrapper onCreateView(com.google.android.gms.dynamic.IObjectWrapper,com.google.android.gms.dynamic.IObjectWrapper,android.os.Bundle); }', but not the descriptor class 'com.google.android.gms.dynamic.IObjectWrapper'
+Note: the configuration keeps the entry point 'com.google.android.gms.maps.model.BitmapDescriptor { BitmapDescriptor(com.google.android.gms.dynamic.IObjectWrapper); }', but not the descriptor class 'com.google.android.gms.dynamic.IObjectWrapper'
+Note: the configuration keeps the entry point 'com.google.android.gms.maps.model.internal.IPolylineDelegate { void setTag(com.google.android.gms.dynamic.IObjectWrapper); }', but not the descriptor class 'com.google.android.gms.dynamic.IObjectWrapper'
+Note: the configuration keeps the entry point 'com.google.android.gms.maps.model.internal.zzd { void setTag(com.google.android.gms.dynamic.IObjectWrapper); }', but not the descriptor class 'com.google.android.gms.dynamic.IObjectWrapper'
+Note: the configuration keeps the entry point 'com.google.android.gms.maps.model.internal.zzf { void setTag(com.google.android.gms.dynamic.IObjectWrapper); }', but not the descriptor class 'com.google.android.gms.dynamic.IObjectWrapper'
+Note: the configuration keeps the entry point 'com.google.android.gms.maps.model.internal.zzg { void zzac(com.google.android.gms.dynamic.IObjectWrapper); }', but not the descriptor class 'com.google.android.gms.dynamic.IObjectWrapper'
+Note: the configuration keeps the entry point 'com.google.android.gms.maps.model.internal.zzg { void setTag(com.google.android.gms.dynamic.IObjectWrapper); }', but not the descriptor class 'com.google.android.gms.dynamic.IObjectWrapper'
+Note: the configuration keeps the entry point 'com.google.android.gms.maps.model.internal.zzi { void zzac(com.google.android.gms.dynamic.IObjectWrapper); }', but not the descriptor class 'com.google.android.gms.dynamic.IObjectWrapper'
+Note: the configuration keeps the entry point 'com.google.android.gms.maps.model.internal.zzi { void setTag(com.google.android.gms.dynamic.IObjectWrapper); }', but not the descriptor class 'com.google.android.gms.dynamic.IObjectWrapper'
+Note: the configuration keeps the entry point 'com.google.android.gms.maps.model.internal.zzp { void zzad(com.google.android.gms.dynamic.IObjectWrapper); }', but not the descriptor class 'com.google.android.gms.dynamic.IObjectWrapper'
+Note: the configuration keeps the entry point 'com.google.android.gms.maps.model.internal.zzp { void setTag(com.google.android.gms.dynamic.IObjectWrapper); }', but not the descriptor class 'com.google.android.gms.dynamic.IObjectWrapper'
+Note: the configuration keeps the entry point 'com.google.android.gms.maps.model.internal.zzr { void zzad(com.google.android.gms.dynamic.IObjectWrapper); }', but not the descriptor class 'com.google.android.gms.dynamic.IObjectWrapper'
+Note: the configuration keeps the entry point 'com.google.android.gms.maps.model.internal.zzr { void setTag(com.google.android.gms.dynamic.IObjectWrapper); }', but not the descriptor class 'com.google.android.gms.dynamic.IObjectWrapper'
+Note: the configuration keeps the entry point 'com.google.android.gms.maps.model.internal.zzs { void setTag(com.google.android.gms.dynamic.IObjectWrapper); }', but not the descriptor class 'com.google.android.gms.dynamic.IObjectWrapper'
+Note: the configuration keeps the entry point 'com.google.android.gms.maps.model.internal.zzu { void setTag(com.google.android.gms.dynamic.IObjectWrapper); }', but not the descriptor class 'com.google.android.gms.dynamic.IObjectWrapper'
+Note: the configuration keeps the entry point 'com.google.android.gms.maps.model.internal.zzv { void setTag(com.google.android.gms.dynamic.IObjectWrapper); }', but not the descriptor class 'com.google.android.gms.dynamic.IObjectWrapper'
+Note: the configuration keeps the entry point 'com.google.android.gms.maps.zzh { void zzy(com.google.android.gms.dynamic.IObjectWrapper); }', but not the descriptor class 'com.google.android.gms.dynamic.IObjectWrapper'
+Note: the configuration keeps the entry point 'com.google.android.gms.maps.zzr { void zzz(com.google.android.gms.dynamic.IObjectWrapper); }', but not the descriptor class 'com.google.android.gms.dynamic.IObjectWrapper'
+Note: the configuration keeps the entry point 'okhttp3.RequestBody { void writeTo(okio.BufferedSink); }', but not the descriptor class 'okio.BufferedSink'
+Note: the configuration keeps the entry point 'okhttp3.RequestBody { okhttp3.RequestBody create(okhttp3.MediaType,java.lang.String); }', but not the descriptor class 'okhttp3.MediaType'
+Note: the configuration keeps the entry point 'okhttp3.RequestBody { okhttp3.RequestBody create(okhttp3.MediaType,okio.ByteString); }', but not the descriptor class 'okhttp3.MediaType'
+Note: the configuration keeps the entry point 'okhttp3.RequestBody { okhttp3.RequestBody create(okhttp3.MediaType,okio.ByteString); }', but not the descriptor class 'okio.ByteString'
+Note: the configuration keeps the entry point 'okhttp3.RequestBody { okhttp3.RequestBody create(okhttp3.MediaType,byte[]); }', but not the descriptor class 'okhttp3.MediaType'
+Note: the configuration keeps the entry point 'okhttp3.RequestBody { okhttp3.RequestBody create(okhttp3.MediaType,byte[],int,int); }', but not the descriptor class 'okhttp3.MediaType'
+Note: the configuration keeps the entry point 'okhttp3.RequestBody { okhttp3.RequestBody create(okhttp3.MediaType,java.io.File); }', but not the descriptor class 'okhttp3.MediaType'
+Note: the configuration keeps the entry point 'okhttp3.ResponseBody { okhttp3.ResponseBody create(okhttp3.MediaType,java.lang.String); }', but not the descriptor class 'okhttp3.MediaType'
+Note: the configuration keeps the entry point 'okhttp3.ResponseBody { okhttp3.ResponseBody create(okhttp3.MediaType,byte[]); }', but not the descriptor class 'okhttp3.MediaType'
+Note: the configuration keeps the entry point 'okhttp3.ResponseBody { okhttp3.ResponseBody create(okhttp3.MediaType,long,okio.BufferedSource); }', but not the descriptor class 'okhttp3.MediaType'
+Note: the configuration keeps the entry point 'okhttp3.ResponseBody { okhttp3.ResponseBody create(okhttp3.MediaType,long,okio.BufferedSource); }', but not the descriptor class 'okio.BufferedSource'
+Note: the configuration keeps the entry point 'okio.ForwardingSource { ForwardingSource(okio.Source); }', but not the descriptor class 'okio.Source'
+Note: the configuration keeps the entry point 'okio.ForwardingSource { long read(okio.Buffer,long); }', but not the descriptor class 'okio.Buffer'
+Note: the configuration keeps the entry point 'retrofit2.BuiltInConverters$BufferingResponseBodyConverter { okhttp3.ResponseBody convert(okhttp3.ResponseBody); }', but not the descriptor class 'okhttp3.ResponseBody'
+Note: the configuration keeps the entry point 'retrofit2.BuiltInConverters$RequestBodyConverter { okhttp3.RequestBody convert(okhttp3.RequestBody); }', but not the descriptor class 'okhttp3.RequestBody'
+Note: the configuration keeps the entry point 'retrofit2.BuiltInConverters$StreamingResponseBodyConverter { okhttp3.ResponseBody convert(okhttp3.ResponseBody); }', but not the descriptor class 'okhttp3.ResponseBody'
+Note: the configuration keeps the entry point 'retrofit2.BuiltInConverters$VoidResponseBodyConverter { java.lang.Void convert(okhttp3.ResponseBody); }', but not the descriptor class 'okhttp3.ResponseBody'
+Note: the configuration keeps the entry point 'retrofit2.OkHttpCall { retrofit2.Response parseResponse(okhttp3.Response); }', but not the descriptor class 'okhttp3.Response'
+Note: the configuration keeps the entry point 'retrofit2.OkHttpCall$1 { void onResponse(okhttp3.Call,okhttp3.Response); }', but not the descriptor class 'okhttp3.Call'
+Note: the configuration keeps the entry point 'retrofit2.OkHttpCall$1 { void onResponse(okhttp3.Call,okhttp3.Response); }', but not the descriptor class 'okhttp3.Response'
+Note: the configuration keeps the entry point 'retrofit2.OkHttpCall$1 { void onFailure(okhttp3.Call,java.io.IOException); }', but not the descriptor class 'okhttp3.Call'
+Note: the configuration keeps the entry point 'retrofit2.OkHttpCall$ExceptionCatchingRequestBody { OkHttpCall$ExceptionCatchingRequestBody(okhttp3.ResponseBody); }', but not the descriptor class 'okhttp3.ResponseBody'
+Note: the configuration keeps the entry point 'retrofit2.OkHttpCall$ExceptionCatchingRequestBody$1 { OkHttpCall$ExceptionCatchingRequestBody$1(retrofit2.OkHttpCall$ExceptionCatchingRequestBody,okio.Source); }', but not the descriptor class 'okio.Source'
+Note: the configuration keeps the entry point 'retrofit2.OkHttpCall$ExceptionCatchingRequestBody$1 { long read(okio.Buffer,long); }', but not the descriptor class 'okio.Buffer'
+Note: the configuration keeps the entry point 'retrofit2.OkHttpCall$NoContentResponseBody { OkHttpCall$NoContentResponseBody(okhttp3.MediaType,long); }', but not the descriptor class 'okhttp3.MediaType'
+Note: the configuration keeps the entry point 'retrofit2.ParameterHandler$Part { ParameterHandler$Part(okhttp3.Headers,retrofit2.Converter); }', but not the descriptor class 'okhttp3.Headers'
+Note: the configuration keeps the entry point 'retrofit2.ParameterHandler$RawPart { void apply(retrofit2.RequestBuilder,okhttp3.MultipartBody$Part); }', but not the descriptor class 'okhttp3.MultipartBody$Part'
+Note: the configuration keeps the entry point 'retrofit2.RequestBuilder { RequestBuilder(java.lang.String,okhttp3.HttpUrl,java.lang.String,okhttp3.Headers,okhttp3.MediaType,boolean,boolean,boolean); }', but not the descriptor class 'okhttp3.HttpUrl'
+Note: the configuration keeps the entry point 'retrofit2.RequestBuilder { RequestBuilder(java.lang.String,okhttp3.HttpUrl,java.lang.String,okhttp3.Headers,okhttp3.MediaType,boolean,boolean,boolean); }', but not the descriptor class 'okhttp3.Headers'
+Note: the configuration keeps the entry point 'retrofit2.RequestBuilder { RequestBuilder(java.lang.String,okhttp3.HttpUrl,java.lang.String,okhttp3.Headers,okhttp3.MediaType,boolean,boolean,boolean); }', but not the descriptor class 'okhttp3.MediaType'
+Note: the configuration keeps the entry point 'retrofit2.RequestBuilder { void canonicalizeForPath(okio.Buffer,java.lang.String,int,int,boolean); }', but not the descriptor class 'okio.Buffer'
+Note: the configuration keeps the entry point 'retrofit2.RequestBuilder { void addPart(okhttp3.Headers,okhttp3.RequestBody); }', but not the descriptor class 'okhttp3.Headers'
+Note: the configuration keeps the entry point 'retrofit2.RequestBuilder { void addPart(okhttp3.Headers,okhttp3.RequestBody); }', but not the descriptor class 'okhttp3.RequestBody'
+Note: the configuration keeps the entry point 'retrofit2.RequestBuilder { void addPart(okhttp3.MultipartBody$Part); }', but not the descriptor class 'okhttp3.MultipartBody$Part'
+Note: the configuration keeps the entry point 'retrofit2.RequestBuilder { void setBody(okhttp3.RequestBody); }', but not the descriptor class 'okhttp3.RequestBody'
+Note: the configuration keeps the entry point 'retrofit2.RequestBuilder$ContentTypeOverridingRequestBody { RequestBuilder$ContentTypeOverridingRequestBody(okhttp3.RequestBody,okhttp3.MediaType); }', but not the descriptor class 'okhttp3.RequestBody'
+Note: the configuration keeps the entry point 'retrofit2.RequestBuilder$ContentTypeOverridingRequestBody { RequestBuilder$ContentTypeOverridingRequestBody(okhttp3.RequestBody,okhttp3.MediaType); }', but not the descriptor class 'okhttp3.MediaType'
+Note: the configuration keeps the entry point 'retrofit2.RequestBuilder$ContentTypeOverridingRequestBody { void writeTo(okio.BufferedSink); }', but not the descriptor class 'okio.BufferedSink'
+Note: the configuration keeps the entry point 'retrofit2.Response { retrofit2.Response success(java.lang.Object,okhttp3.Headers); }', but not the descriptor class 'okhttp3.Headers'
+Note: the configuration keeps the entry point 'retrofit2.Response { retrofit2.Response success(java.lang.Object,okhttp3.Response); }', but not the descriptor class 'okhttp3.Response'
+Note: the configuration keeps the entry point 'retrofit2.Response { retrofit2.Response error(int,okhttp3.ResponseBody); }', but not the descriptor class 'okhttp3.ResponseBody'
+Note: the configuration keeps the entry point 'retrofit2.Response { retrofit2.Response error(okhttp3.ResponseBody,okhttp3.Response); }', but not the descriptor class 'okhttp3.ResponseBody'
+Note: the configuration keeps the entry point 'retrofit2.Response { retrofit2.Response error(okhttp3.ResponseBody,okhttp3.Response); }', but not the descriptor class 'okhttp3.Response'
+Note: the configuration keeps the entry point 'retrofit2.Response { Response(okhttp3.Response,java.lang.Object,okhttp3.ResponseBody); }', but not the descriptor class 'okhttp3.Response'
+Note: the configuration keeps the entry point 'retrofit2.Response { Response(okhttp3.Response,java.lang.Object,okhttp3.ResponseBody); }', but not the descriptor class 'okhttp3.ResponseBody'
+Note: the configuration keeps the entry point 'retrofit2.Retrofit { Retrofit(okhttp3.Call$Factory,okhttp3.HttpUrl,java.util.List,java.util.List,java.util.concurrent.Executor,boolean); }', but not the descriptor class 'okhttp3.Call$Factory'
+Note: the configuration keeps the entry point 'retrofit2.Retrofit { Retrofit(okhttp3.Call$Factory,okhttp3.HttpUrl,java.util.List,java.util.List,java.util.concurrent.Executor,boolean); }', but not the descriptor class 'okhttp3.HttpUrl'
+Note: the configuration keeps the entry point 'retrofit2.Retrofit$Builder { retrofit2.Retrofit$Builder client(okhttp3.OkHttpClient); }', but not the descriptor class 'okhttp3.OkHttpClient'
+Note: the configuration keeps the entry point 'retrofit2.Retrofit$Builder { retrofit2.Retrofit$Builder callFactory(okhttp3.Call$Factory); }', but not the descriptor class 'okhttp3.Call$Factory'
+Note: the configuration keeps the entry point 'retrofit2.Retrofit$Builder { retrofit2.Retrofit$Builder baseUrl(okhttp3.HttpUrl); }', but not the descriptor class 'okhttp3.HttpUrl'
+Note: the configuration keeps the entry point 'retrofit2.ServiceMethod { java.lang.Object toResponse(okhttp3.ResponseBody); }', but not the descriptor class 'okhttp3.ResponseBody'
+Note: the configuration keeps the entry point 'retrofit2.Utils { okhttp3.ResponseBody buffer(okhttp3.ResponseBody); }', but not the descriptor class 'okhttp3.ResponseBody'
+Note: the configuration keeps the entry point 'retrofit2.converter.gson.GsonConverterFactory { retrofit2.converter.gson.GsonConverterFactory create(com.google.gson.Gson); }', but not the descriptor class 'com.google.gson.Gson'
+Note: the configuration keeps the entry point 'retrofit2.converter.gson.GsonConverterFactory { GsonConverterFactory(com.google.gson.Gson); }', but not the descriptor class 'com.google.gson.Gson'
+Note: the configuration keeps the entry point 'retrofit2.converter.gson.GsonRequestBodyConverter { GsonRequestBodyConverter(com.google.gson.Gson,com.google.gson.TypeAdapter); }', but not the descriptor class 'com.google.gson.Gson'
+Note: the configuration keeps the entry point 'retrofit2.converter.gson.GsonRequestBodyConverter { GsonRequestBodyConverter(com.google.gson.Gson,com.google.gson.TypeAdapter); }', but not the descriptor class 'com.google.gson.TypeAdapter'
+Note: the configuration keeps the entry point 'retrofit2.converter.gson.GsonResponseBodyConverter { GsonResponseBodyConverter(com.google.gson.Gson,com.google.gson.TypeAdapter); }', but not the descriptor class 'com.google.gson.Gson'
+Note: the configuration keeps the entry point 'retrofit2.converter.gson.GsonResponseBodyConverter { GsonResponseBodyConverter(com.google.gson.Gson,com.google.gson.TypeAdapter); }', but not the descriptor class 'com.google.gson.TypeAdapter'
+Note: the configuration keeps the entry point 'retrofit2.converter.gson.GsonResponseBodyConverter { java.lang.Object convert(okhttp3.ResponseBody); }', but not the descriptor class 'okhttp3.ResponseBody'
+Note: there were 1 references to unknown classes.
+      You should check your configuration for typos.
+      (http://proguard.sourceforge.net/manual/troubleshooting.html#unknownclass)
+Note: there were 130 unkept descriptor classes in kept class members.
+      You should consider explicitly keeping the mentioned classes
+      (using '-keep').
+      (http://proguard.sourceforge.net/manual/troubleshooting.html#descriptorclass)
+Note: there were 9 unresolved dynamic references to classes or interfaces.
+      You should check if you need to specify additional program jars.
+      (http://proguard.sourceforge.net/manual/troubleshooting.html#dynamicalclass)
+Ignoring unused library classes...
+  Original number of library classes: 4610
+  Final number of library classes:    1360
+Printing kept classes, fields, and methods...
+Shrinking...
+Printing usage to [/tmp/rdisk/1374/src/app/build/outputs/mapping/release/usage.txt]...
+Removing unused program classes and class elements...
+  Original number of program classes: 3847
+  Final number of program classes:    2016
+Inlining subroutines...
+Obfuscating...
+Printing mapping to [/tmp/rdisk/1374/src/app/build/outputs/mapping/release/mapping.txt]...
+Preverifying...
+Writing output...
+Preparing output jar [/tmp/rdisk/1374/src/app/build/intermediates/transforms/proguard/release/0.jar]
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/design-27.0.0.aar/8520429b6a36c44a36647959045ed1e6/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.0.aar/9f283457d9ceabfb6ed7b31e1194b674/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/play-services-maps-11.6.0.aar/472fa561bf4be1e54d59c39f19522dc3/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/retrofit/2.3.0/bcacde6a8ccedcc56c127403d26b76072fe6214d/retrofit-2.3.0.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/logging-interceptor/3.9.0/3bf7f8d6a20c90ffe9fc3f3c9118193c7720ecf1/logging-interceptor-3.9.0.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/converter-gson/2.3.0/9e09011e9767bb76b5e27c9b8223476b93b14631/converter-gson-2.3.0.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/android-maps-utils-0.5.aar/7d85ddd3345aae14740473fd6ccffcb8/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/play-services-base-11.6.0.aar/5f24e34209e63ef09532deec30bc2e5b/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/play-services-tasks-11.6.0.aar/8d5af510e760f5e2f4923fbc9944e288/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.6.0.aar/4afd9fb97a1bd0c5518dc507f8d14349/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/support-v4-27.0.0.aar/5151bd19e35091ab8248fddf3f7bf25e/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/support-fragment-27.0.0.aar/9333620822c7739e1913f6637967601d/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.0.0.aar/06da88a8b311ff694fa8bd3f3b75dceb/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.0.0.aar/c44adf09d5c4cc29ae7d60ef5d00476f/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.0.0.aar/10751f913bc18c824d7778c6ee3dad40/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.0.0.aar/0a21de102d526da14bf56e18d7c02c09/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/transition-27.0.0.aar/b519b740b12dfd1aac94f3aa1d17c5cb/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.0.0.aar/cdf4dd6432bf374b6da79673a283346e/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.0.aar/7f4f1fe12960865c5a526dcc6c87a69e/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.0.aar/994a101f243f54e2153b2585ae65b72d/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/27.0.0/a7782471b2a0de8fec071b8094a8aaf61c46ab70/support-annotations-27.0.0.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/play-services-maps-license-11.6.0.aar/1a43da7a2782d339a973c97958905ba3/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.9.0/1b6c10b5120995a7542c1a31b7828fb8593c8ba/okhttp-3.9.0.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.7/751f548c85fa49f330cecbb1875893f971b33c4e/gson-2.7.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/play-services-base-license-11.6.0.aar/2674a174c492fdb0875b8fe0091ce2a7/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/play-services-basement-license-11.6.0.aar/e403124fd83f0d5cc4d560896be27e67/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/09c12b3d93f70354459cfd521819a118/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/play-services-tasks-license-11.6.0.aar/783e5944d619535ff12ba822be88bde7/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/modules-2/files-2.1/android.arch.lifecycle/common/1.0.0/e414a4cb28434e25c4f6aa71426eb20cf4874ae9/common-1.0.0.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/modules-2/files-2.1/android.arch.core/common/1.0.0/a2d487452376193fc8c103dd2b9bd5f2b1b44563/common-1.0.0.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.13.0/a9283170b7305c8d92d25aff02a6ab7e45d06cbe/okio-1.13.0.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/1374/src/googleDirectionLibrary/build/intermediates/intermediate-jars/release/classes.jar] (filtered)
+  Copying resources from program directory [/tmp/rdisk/1374/src/app/build/intermediates/classes/release] (filtered)
+  Copying resources from program jar [/tmp/rdisk/1374/src/app/build/intermediates/transforms/mergeJavaRes/release/0.jar] (filtered)
+Printing classes to [/tmp/rdisk/1374/src/app/build/outputs/mapping/release/dump.txt]...
+:app:transformClassesWithDexForRelease
+:app:transformNativeLibsWithMergeJniLibsForRelease
+:app:transformNativeLibsWithStripDebugSymbolForRelease
+:app:packageRelease
+:app:lintVitalRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL in 52s
+90 actionable tasks: 90 executed
+
+2018-04-06 18:41:45,232 INFO  FullProcessService - Found APK file: /tmp/rdisk/1374/src/app/build/outputs/apk/debug/app-debug.apk

@@ -1,0 +1,36 @@
+{
+  "meta" : {
+    "packageName" : "pl.tajchert.buswear.sample",
+    "label" : "BusWear Sample",
+    "icon" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "versionName" : "1.0",
+    "versionCode" : 1,
+    "installLocation" : null,
+    "minSdkVersion" : "20",
+    "targetSdkVersion" : "21",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ ],
+    "usesFeatures" : [ {
+      "name" : "android.hardware.type.watch",
+      "required" : false
+    } ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "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"
+  },
+  "dexClasses" : 2578,
+  "locales" : [ "", "sl", "bg", "mr", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "mn", "fi", "lv", "mk", "uz", "eu", "bs", "sw", "pt_PT", "tl", "th", "bn", "ar", "ru", "gl", "kn", "az", "fa", "sk", "ms", "ml", "gu", "kk", "et", "hi", "cs", "sv", "pa", "el", "lo", "nl", "hu", "af", "hy", "in", "vi", "fr_CA", "ky", "sr", "km", "pt_BR", "da", "be", "es", "tr", "ne", "ro", "hr", "am", "lt", "pl", "zh_CN", "my", "ka", "sq", "fr", "ur", "ja", "is", "si", "iw", "de", "es_US", "nb", "ca", "ta", "en_GB", "te" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"1\" android:versionName=\"1.0\" package=\"pl.tajchert.buswear.sample\" platformBuildVersionCode=\"23\" platformBuildVersionName=\"6.0-2704002\">\n\t<uses-sdk android:minSdkVersion=\"20\" android:targetSdkVersion=\"21\" />\n\t<uses-feature android:name=\"android.hardware.type.watch\" />\n\t<application android:theme=\"@android:style/Theme.DeviceDefault\" android:label=\"BusWear Sample\" android:icon=\"res/drawable-mdpi-v4/ic_launcher.png\" android:allowBackup=\"true\">\n\t\t<activity android:label=\"BusWear Sample\" android:name=\"pl.tajchert.buswear.sample.MainWearActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t\t<service android:name=\"pl.tajchert.buswear.wear.EventCatcher\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"com.google.android.gms.wearable.BIND_LISTENER\" />\n\t\t\t</intent-filter>\n\t\t</service>\n\t\t<activity android:theme=\"@android:style/Theme.Translucent.NoTitleBar\" android:name=\"com.google.android.gms.common.api.GoogleApiActivity\" android:exported=\"false\" />\n\t\t<meta-data android:name=\"com.google.android.gms.version\" android:value=\"9683000\" />\n\t\t<activity android:label=\"RecyclerViewTestActivity\" android:name=\"android.support.v7.widget.TestActivity\" />\n\t</application>\n</manifest>\n",
+  "fileSize" : 1830187,
+  "crc32" : 2181004971,
+  "sha256" : "665e89ecc01484069855e84a8140df07b87d66e2cff20e9c5805d56d0a844a03",
+  "buildTime" : 1509535095000
+}

@@ -1,0 +1,7 @@
+{
+  "de.greenrobot.essentials.testapp" : [ "BuildConfig" ],
+  "org.greenrobot.essentials" : [ "Base64", "Base64$1", "Base64$InputStream", "Base64$OutputStream", "DateUtils", "DateUtils$DefaultCalendarThreadLocal", "ObjectCache", "ObjectCache$CacheEntry", "ObjectCache$ReferenceType", "PrimitiveArrayUtils", "PrimitiveArrayUtils$1", "PrimitiveArrayUtils$SafeImpl", "PrimitiveArrayUtils$UnsafeImpl", "StringUtils" ],
+  "org.greenrobot.essentials.collections" : [ "AbstractMultimap", "LongHashMap", "LongHashMap$Entry", "LongHashMap$Synchronized", "LongHashSet", "LongHashSet$Entry", "LongHashSet$Synchronized", "Multimap", "Multimap$1", "Multimap$ListType", "MultimapSet", "MultimapSet$1", "MultimapSet$SetType" ],
+  "org.greenrobot.essentials.hash" : [ "Checksum128", "FNV32", "FNV64", "Murmur3A", "Murmur3F", "PrimitiveDataChecksum" ],
+  "org.greenrobot.essentials.io" : [ "CircularByteBuffer", "FileUtils", "IoUtils", "LimitedInputStream", "PipelineOutputStream", "PipelineOutputStream$PipelineInputStream", "RepeaterInputStream" ]
+}

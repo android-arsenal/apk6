@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "tr.xip.errorview.sample",
+    "label" : "ErrorView Sample",
+    "icon" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "versionName" : "3.0.0",
+    "versionCode" : 6,
+    "installLocation" : null,
+    "minSdkVersion" : "9",
+    "targetSdkVersion" : "25",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAIMklEQVRo3u2ZW2wU1xnHf+fMro3XpkDwhZuJMakc3EADhkIhhFuCqlRFQipp06QXhUqRSioVVVRV1T5Ulao2fYjUVkr6FoqiJqBCmxI1NYEaCKSYtNwKKU1sDLbBixsCtncXe2fO14eZnZ1d79pjQ+GhHGt213PmzPy/+/87A/fGvfH/PdRIk5u3Hqq7b3Jp3XhvLt6R+cj+9uYCJ0QC60Qyl1E9tfTMj7Y2fTQmAb7zw4NTRJXs6R+wVw0NOePWjoh3BFBL4FuyP3zA7pqsNBMmWJTHIgcVQxt/84u1H+c/I1JIKNtE98R7U6uMkVsyr4j4mpWAmiUPMAGN5wuQTNlcvz64qqambA+wJmtDd+j8h377e69O6+tP3zL4sBYKMxwj3LiRXrXhmd89MKoFuuOlC6wS566Dzh+JZJqe93/+n/zz+RZQiWQicju0H3QDuU3CnTx50h5NgJwH35ER8nlSRBf6jmELaZEcy4WQLXLbkKpsVi7mPhJINTKSWscwIrcCevWK6axZMZ262ol0dPZz9vzH7N3XSSJpF9ReeZnF5qcbWLqomvJYhHhvigPvXOaPb10kkXRGtUihoccboFuebeT5ZxupnFLCqX/GmVCieHJDPT/etohYmTVM2FiZxU++38TaR2Zw4nQP2187y5Wefp7aOJef/mAJRswdsoAIazzN72vp4MWX/gFKA8K6lbV8d8tinlg7k51/uggq61Kbn2qg/v5P8MIvW9l3sAsBduz8Fxs/P5ctmx/mC4/P4o3mLpS/hlAxM2YLCLBm+XTivQlefPkESlsorVFas/9wF6fP9rJ25UzSQ4M+lxARljZVc+RYN28f7kJphdYarS12v9lGz9UEn11cg50eyoErIaTQ47GAAFd7UyilUZYLXimNVpoz739ETVUMEUM6PejRCaE8FqH9Uh8ohdaWu9YTIt6b8u5tsNPpMRW7cafR6qoYaAUogp8LGisZSKQRXODpdBoQ4r1JFjRWodDu1drjkUoxrSrGQGLIY6jiWiLDm/4XAhw43EVNVYytzy30mZkIrFtVy/zGSt49fsU/5wKyeftQF5/+VCVf3dTgCQeCYtuWhdRUxzjSeiWHHNu2HSoIxh7ECg68c5k1j8zgsUdrqb9/En97r4f586Yyv3EqbReu8/L2MwjK+3OF2L33Q5Y11fDMpgd5fPVs4leT1NdNoqI8ylsHOmj+aydK65xaYts2ViQypoZGrf/iK09MnFS7t2gIGIMxgmNsvrShnmVNNcydM5n41QTNLRf5w5/bSaaM6+NK+ZzfGIMxhscencX61bMBGEgMcaT1Cs0tXWgvEYDKoeBaKbQVQQSaX//cRGBgzBbIyQZKgQKtLXa+cYFXf38ex7ZBKR90DnhPT+452H+o202jYjz9qRzwOdpU7rMd20ZbkXAulMkaI3EbN1dr0IpoSSlKa4xjXCFQueAlG6xaa0QEDYjRiOdorvDK7+BAgcqlI45x0FZMGSc5ShBLoBXMO3L6XO+hSmmi0VKsSHS45j3wktGtUm7KRaEty02nWvvgfa9WQZKkfO1FS6qt0el0kcZcgnMBiVxrKCKRqKvhIuBzWkiv2voCZ5aIykz54CXgWCJOuCwkIXl7fqG0IlGwcd2pGPg8d3Wt6BFaRU7ckLceGd5pRYpuJYTsP/LpsraiiKQxxnj7DqoI+GyQ+qkTE3CjoAuJ5wEmRBCHbJaGXSfCnNkTeejBKVSUR6irraA8FvHSZZr2i30MJNKcPneNto4bea7jSYMKmCvjQl6vIQokhAAUMYAUug5h6aJqli2qYllTtQ84k+M/bL8OwILG+1i+ZFpgLs3R4z0cPR7naGvcwy0+IclYJQNexDtPCBeSUVs+9wHrVs7gKxvrqa4sYyCR5sSZOEePXaat4wZtHX2uF3gRaYxLHebWTeKBOZNY/pnpLF9Sw/rVtcR7U/x213maW7oCXj8cvAvMCedCI7nOnNoKvvl0A/PnTaHnaoIXfvUeR1qvkEw6PmhtWTlFSVvujTs6B7hwqZ/mlk5isQgrlkznG1+ex7ZvPcz6VbW89Mo52jr6szGcAe/9Hy4LyQiRK4IxDnNml7P9tXPs2HXeyyJukcpU6WEVNeByGQ0lU8K+Q938paWTrz3ZwKYNn8QY47qPLmb5kGm0mAkEaL/Uz9ef309f/6BflDJCZJN4gdtkNKqCErlVeceuD9i99wLJmwa0W839fYLcPToZfx3IcBoUN4cgEi3BcRyvJdAFuFMxYdxK6zNVbSEGF7zKgg9mJBlLISuUr3Nl0CgEbbldmDFOAdJXGLyLy6vgkiUCSouf+zPgs2wiM6cQY4fb2MrnP/lEz4fptYRBAigSzO/54N0fKpPjg6yjKHj8Tq2kdJp1S2y0oFNpjSbiUuqA5iV/0yoD3hPSv04FX3AUAp+t5EODl53burWY0bBSuiBfF3LJUhC8IGMCr8K2lEGfDrMHKwFWqi0Lx7ELN3wSAOQXqUByGA182G2Vvmvt3Y7tFOwFhsVC/h6ot2WS08jk8XrJfycmYTSvMMahrGJ+yagCnHr3Zx2DN/tagyDzj0K9gu8mSqN1JKvhACkLBqUPPuNOI4AXEQYH+1tTA2eG8vFahbwi0d91bHLlQ4u1js7I3CD/MGIQU0BA/xyIcS1p8hVgsqY1OffMrkcEMa5L30xd+/sHp379XGqgOw44o72lVEAFMG1K9cKZNbNWNOSkjRGbnmLzUnCBjLQL7RWN5MDFrssX3vw30OPtSEiY98QKKAFKvW/F3RkC2EAKGCqktzDA7hb4cOzm3rjL47+veu7EaAWjJAAAAABJRU5ErkJggg=="
+  },
+  "dexClasses" : 1694,
+  "locales" : [ "", "az_AZ", "sl", "mr_IN", "kk_KZ", "bg", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "my_MM", "ur_PK", "mn_MN", "fi", "lv", "et_EE", "sw", "pt_PT", "tl", "th", "sq_AL", "uz_UZ", "pt", "ar", "ru", "eu_ES", "bs_BA", "bn_BD", "fa", "gu_IN", "sk", "kn_IN", "hi", "cs", "sv", "km_KH", "el", "nl", "hu", "pa_IN", "af", "en_AU", "in", "vi", "fr_CA", "sr", "pt_BR", "da", "si_LK", "ml_IN", "gl_ES", "es", "is_IS", "hy_AM", "tr", "ne_NP", "ro", "hr", "ms_MY", "am", "ka_GE", "lt", "pl", "zh_CN", "ta_IN", "fr", "ja", "lo_LA", "ky_KG", "iw", "de", "en_IN", "es_US", "mk_MK", "be_BY", "nb", "te_IN", "ca", "en_GB" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"6\" android:versionName=\"3.0.0\" package=\"tr.xip.errorview.sample\" platformBuildVersionCode=\"25\" platformBuildVersionName=\"7.1.1\">\n\t<uses-sdk android:minSdkVersion=\"9\" android:targetSdkVersion=\"25\" />\n\t<meta-data android:name=\"android.support.VERSION\" android:value=\"25.3.1\" />\n\t<application android:theme=\"resourceId:0x7f0800a3\" android:label=\"ErrorView Sample\" android:icon=\"res/mipmap-mdpi-v4/ic_launcher.png\" android:allowBackup=\"true\">\n\t\t<activity android:label=\"ErrorView Sample\" android:name=\"tr.xip.errorview.sample.MainActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t</application>\n</manifest>\n",
+  "fileSize" : 1652007,
+  "crc32" : 1776690260,
+  "sha256" : "7a6d8374af4910e442b8cc97f28cffdbb61b22f40bb51f6fc4af4549adfcfbb5",
+  "buildTime" : 1526865973000
+}

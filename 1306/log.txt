@@ -1,0 +1,55 @@
+05:20:01.858 [main] INFO  c.g.v.a.s.n.DownloadService - Downloading "https://github.com/chrisbanes/91ac8a20acfbdc410a68/archive/master.zip", attempt 3
+05:20:07.765 [main] INFO  c.g.v.a.s.n.DownloadService - Downloading "https://github.com/chrisbanes/91ac8a20acfbdc410a68/archive/master.zip", attempt 2
+05:20:13.709 [main] INFO  c.g.v.a.s.n.DownloadService - Downloading "https://github.com/chrisbanes/91ac8a20acfbdc410a68/archive/master.zip", attempt 1
+05:20:14.516 [main] INFO  c.g.v.a.s.g.GithubDownloadService - Could not find ZIP archive for master branch
+05:20:15.877 [main] ERROR c.g.v.a.s.g.GithubService - Can not fetch information about repository: [owner=chrisbanes,name=91ac8a20acfbdc410a68]
+05:20:15.881 [main] INFO  c.g.v.a.s.g.GithubDownloadService - Default branch of this repository: null
+05:20:15.881 [main] ERROR c.g.v.a.s.g.GithubDownloadService - Could not detect default branch for Github repository
+05:20:15.881 [main] INFO  c.g.v.a.s.FullProcessService - Could not download ZIP file from Github, lets clone it
+05:20:15.881 [main] INFO  c.g.v.a.u.SysUtils - Execute command: [git, clone, https://github.com/chrisbanes/91ac8a20acfbdc410a68, /Users/vbauer/Documents/workspace/java/apkmaster/temp/1306/src]
+05:20:18.361 [main] INFO  c.g.v.a.s.g.GitService - Cloning into '/Users/vbauer/Documents/workspace/java/apkmaster/temp/1306/src'...
+remote: Repository not found.
+fatal: repository 'https://github.com/chrisbanes/91ac8a20acfbdc410a68/' not found
+
+05:20:18.362 [main] ERROR c.g.v.a.s.FullProcessService - Error during build
+org.apache.commons.exec.ExecuteException: Process exited with an error: 128 (Exit value: 128)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:48)
+	at com.github.vbauer.apkmaster.service.git.GitService.clone(GitService.java:42)
+	at com.github.vbauer.apkmaster.service.git.GithubService.clone(GithubService.java:35)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:55)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:33)
+	at com.github.vbauer.apkmaster.service.FullProcessServiceTest.build(FullProcessServiceTest.java:78)
+	at com.github.vbauer.apkmaster.service.FullProcessServiceTest.test100(FullProcessServiceTest.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+05:20:18.363 [main] ERROR c.g.v.a.s.FullProcessService - Project build has not produced APK file
+05:20:18.366 [main] ERROR c.g.v.a.s.FullProcessService - Could not find generated or existed APK file

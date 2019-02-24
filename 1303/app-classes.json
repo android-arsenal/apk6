@@ -1,0 +1,5 @@
+{
+  "com.lge.qcircle.template" : [ "BuildConfig", "ButtonTheme", "QCircleBackButton", "QCircleBackButton$1", "QCircleDialog", "QCircleDialog$1", "QCircleDialog$2", "QCircleDialog$3", "QCircleDialog$4", "QCircleDialog$Builder", "QCircleDialog$DialogMode", "QCircleTemplate", "QCircleTemplate$1", "QCircleTemplate$2", "QCircleTemplate$IntentCreatorAsync", "QCircleTemplateElement", "QCircleTitle", "R", "R$color", "R$dimen", "R$drawable", "R$id", "R$layout", "R$string", "R$style", "TemplateTag", "TemplateType" ],
+  "com.lge.qcircle.template.sample.beanbirdInCircle" : [ "BuildConfig", "QCircleActivity", "QCircleActivity$1", "QCircleActivity$2", "R", "R$attr", "R$color", "R$dimen", "R$drawable", "R$id", "R$layout", "R$string", "R$style" ],
+  "com.lge.qcircle.utils" : [ "QCircleFeature" ]
+}

@@ -1,0 +1,6 @@
+{
+  "android.support.annotation" : [ "AnimRes", "AnimatorRes", "AnyRes", "AnyThread", "ArrayRes", "AttrRes", "BinderThread", "BoolRes", "CallSuper", "CheckResult", "ColorInt", "ColorRes", "DimenRes", "Dimension", "DrawableRes", "FloatRange", "FractionRes", "IdRes", "IntDef", "IntRange", "IntegerRes", "InterpolatorRes", "Keep", "LayoutRes", "MainThread", "MenuRes", "NonNull", "Nullable", "PluralsRes", "Px", "RawRes", "RequiresApi", "RequiresPermission", "RequiresPermission$Read", "RequiresPermission$Write", "RestrictTo", "RestrictTo$Scope", "Size", "StringDef", "StringRes", "StyleRes", "StyleableRes", "TransitionRes", "UiThread", "VisibleForTesting", "WorkerThread", "XmlRes" ],
+  "com.android.vending.billing" : [ "IInAppBillingService", "IInAppBillingService$Stub", "IInAppBillingService$Stub$Proxy" ],
+  "com.anjlab.android.iab.v3" : [ "BillingBase", "BillingCache", "BillingProcessor", "BillingProcessor$1", "BillingProcessor$HistoryInitializationTask", "BillingProcessor$IBillingHandler", "BuildConfig", "Constants", "PurchaseData", "PurchaseData$1", "PurchaseInfo", "PurchaseInfo$1", "PurchaseState", "R", "Security", "SkuDetails", "SkuDetails$1", "TransactionDetails", "TransactionDetails$1" ],
+  "com.anjlab.android.iab.v3.sample2" : [ "BuildConfig", "MainActivity", "MainActivity$1", "R", "R$attr", "R$drawable", "R$id", "R$layout", "R$string", "R$style" ]
+}

@@ -1,0 +1,4 @@
+{
+  "com.xperi.avataimageview" : [ "DSAvatarImageView", "R", "R$attr", "R$drawable", "R$string", "R$style", "R$styleable" ],
+  "com.xperi.dsavataimageviewsample" : [ "BuildConfig", "MainActivity", "R", "R$attr", "R$drawable", "R$layout", "R$string", "R$style", "R$styleable" ]
+}

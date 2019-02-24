@@ -1,0 +1,286 @@
+2018-04-06 02:57:53,239 INFO  DownloadService - Downloading "https://github.com/Drivemode/SpotifyApi/archive/master.zip", attempt 3
+2018-04-06 02:58:53,676 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-06 02:58:54,309 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-06 02:58:54,309 INFO  DownloadService - Downloading "https://github.com/Drivemode/SpotifyApi/archive/master.zip", attempt 3
+2018-04-06 02:59:55,668 DEBUG FullProcessService - Repository https://github.com/Drivemode/SpotifyApi available: true
+2018-04-06 02:59:55,668 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-06 02:59:55,668 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/Drivemode/SpotifyApi, /tmp/rdisk/1440/src]
+2018-04-06 02:59:57,304 INFO  SysUtils - 
+2018-04-06 02:59:57,309 INFO  GitService - Deleted "/tmp/rdisk/1440/src/.git": true
+2018-04-06 02:59:57,312 INFO  FullProcessService - Size of directory with sources: 228 KB
+2018-04-06 02:59:57,312 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1440/src]
+2018-04-06 02:59:57,316 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1440/src/.git/
+
+2018-04-06 02:59:57,319 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1440/src/gradlew
+2018-04-06 02:59:57,322 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1440/src/SpotifyApi/build.gradle /tmp/rdisk/1440/src/app/build.gradle /tmp/rdisk/1440/src/build.gradle
+2018-04-06 02:59:57,325 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1440/src/settings.gradle /tmp/rdisk/1440/src/build.gradle /tmp/rdisk/1440/src/app/build.gradle /tmp/rdisk/1440/src/SpotifyApi/build.gradle
+2018-04-06 02:59:57,325 INFO  DownloadService - Downloading "https://raw.github.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle", attempt 3
+2018-04-06 03:00:57,650 ERROR RemoteScriptService - Could not download content from "https://raw.github.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle"
+org.apache.http.conn.ConnectionPoolTimeoutException: Timeout waiting for connection from pool
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.leaseConnection(PoolingHttpClientConnectionManager.java:313)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager$1.get(PoolingHttpClientConnectionManager.java:279)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:191)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at com.github.vbauer.apkmaster.service.network.DownloadService.download(DownloadService.java:112)
+	at com.github.vbauer.apkmaster.service.network.DownloadService.downloadContent(DownloadService.java:91)
+	at com.github.vbauer.apkmaster.service.assembly.RemoteScriptService.fetchRemoteScript(RemoteScriptService.java:42)
+	at com.github.vbauer.apkmaster.service.assembly.RemoteScriptService.detect(RemoteScriptService.java:31)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectInfoService.getProjectInfo(ProjectInfoService.java:48)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:77)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-06 03:00:57,650 INFO  ProjectBuildService - Remote scripts: none
+2018-04-06 03:00:57,650 INFO  ProjectFixService - Fixing project...
+2018-04-06 03:00:57,658 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1440/src/SpotifyApi/local.properties
+2018-04-06 03:00:57,658 INFO  ProjectFixService - Build info for "/tmp/rdisk/1440/src/SpotifyApi/build.gradle": [buildToolsVersion=22.0.0,compileSdkVersion=22,minSdkVersion=15,targetSdkVersion=22]
+2018-04-06 03:00:57,659 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1440/src/app/local.properties
+2018-04-06 03:00:57,659 INFO  ProjectFixService - Build info for "/tmp/rdisk/1440/src/app/build.gradle": [buildToolsVersion=22.0.0,compileSdkVersion=22,minSdkVersion=15,targetSdkVersion=22]
+2018-04-06 03:00:57,659 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1440/src/local.properties
+2018-04-06 03:00:57,659 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-06 03:00:57,659 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-06 03:00:57,660 INFO  ProjectFixService - Build info for "/tmp/rdisk/1440/src/build.gradle": [buildToolsVersion=22.0.0,compileSdkVersion=22,minSdkVersion=15,targetSdkVersion=22]
+2018-04-06 03:00:57,660 INFO  ProjectFixService - Project was maybe fixed
+2018-04-06 03:00:57,660 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-06 03:00:57,661 INFO  SysUtils - Execute command: [/tmp/rdisk/1440/src/gradlew, -b, /tmp/rdisk/1440/src/SpotifyApi/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-06 03:01:09,673 INFO  ProjectTaskService - Detected possible tasks: 57
+2018-04-06 03:01:09,673 INFO  ProjectTaskService - Excluded tasks (8): lintDebug deviceCheck lint connectedCheck uninstallAll check connectedAndroidTest lintRelease
+2018-04-06 03:01:09,673 INFO  SysUtils - Execute command: [/tmp/rdisk/1440/src/gradlew, -b, /tmp/rdisk/1440/src/SpotifyApi/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, deviceCheck, -x, lint, -x, connectedCheck, -x, uninstallAll, -x, check, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-06 03:01:21,504 INFO  SysUtils - Configuration on demand is an incubating feature.
+:SpotifyApi:androidJavadocs/tmp/rdisk/1440/src/SpotifyApi/src/main/java/com/drivemode/spotify/Response.java:5: warning: no description for @param
+ * @param <D>
+   ^
+/tmp/rdisk/1440/src/SpotifyApi/src/main/java/com/drivemode/spotify/SpotifyApi.java:165: warning: no @param for listener
+    public void refreshTokenIfNeeded(final AuthenticationListener listener) {
+                ^
+/tmp/rdisk/1440/src/SpotifyApi/src/main/java/com/drivemode/spotify/SpotifyService.java:44: warning: no @param for callback
+    public void getMe(Callback<User> callback);
+                ^
+/tmp/rdisk/1440/src/SpotifyApi/src/main/java/com/drivemode/spotify/SpotifyService.java:60: warning: no @param for userId
+    public void getPlaylists(@Path("id") String userId, @Query("offset") int offset, @Query("limit") int limit, Callback<Pager<Playlist>> callback);
+                ^
+/tmp/rdisk/1440/src/SpotifyApi/src/main/java/com/drivemode/spotify/SpotifyService.java:60: warning: no @param for offset
+    public void getPlaylists(@Path("id") String userId, @Query("offset") int offset, @Query("limit") int limit, Callback<Pager<Playlist>> callback);
+                ^
+/tmp/rdisk/1440/src/SpotifyApi/src/main/java/com/drivemode/spotify/SpotifyService.java:60: warning: no @param for limit
+    public void getPlaylists(@Path("id") String userId, @Query("offset") int offset, @Query("limit") int limit, Callback<Pager<Playlist>> callback);
+                ^
+/tmp/rdisk/1440/src/SpotifyApi/src/main/java/com/drivemode/spotify/SpotifyService.java:60: warning: no @param for callback
+    public void getPlaylists(@Path("id") String userId, @Query("offset") int offset, @Query("limit") int limit, Callback<Pager<Playlist>> callback);
+                ^
+/tmp/rdisk/1440/src/SpotifyApi/src/main/java/com/drivemode/spotify/SpotifyService.java:155: warning: no @param for albumId
+    public void getAlbum(@Path("id") String albumId, Callback<Album> callback);
+                ^
+/tmp/rdisk/1440/src/SpotifyApi/src/main/java/com/drivemode/spotify/SpotifyService.java:155: warning: no @param for callback
+    public void getAlbum(@Path("id") String albumId, Callback<Album> callback);
+                ^
+/tmp/rdisk/1440/src/SpotifyApi/src/main/java/com/drivemode/spotify/SpotifyService.java:183: warning: no @param for artistId
+    public void getArtistAlbums(@Path("id") String artistId, Callback<Pager<Album>> callback, @Query("offset") int offset, @Query("limit") int limit);
+                ^
+/tmp/rdisk/1440/src/SpotifyApi/src/main/java/com/drivemode/spotify/SpotifyService.java:183: warning: no @param for callback
+    public void getArtistAlbums(@Path("id") String artistId, Callback<Pager<Album>> callback, @Query("offset") int offset, @Query("limit") int limit);
+                ^
+/tmp/rdisk/1440/src/SpotifyApi/src/main/java/com/drivemode/spotify/SpotifyService.java:183: warning: no @param for offset
+    public void getArtistAlbums(@Path("id") String artistId, Callback<Pager<Album>> callback, @Query("offset") int offset, @Query("limit") int limit);
+                ^
+/tmp/rdisk/1440/src/SpotifyApi/src/main/java/com/drivemode/spotify/SpotifyService.java:183: warning: no @param for limit
+    public void getArtistAlbums(@Path("id") String artistId, Callback<Pager<Album>> callback, @Query("offset") int offset, @Query("limit") int limit);
+                ^
+/tmp/rdisk/1440/src/SpotifyApi/src/main/java/com/drivemode/spotify/SpotifyService.java:235: warning: no @param for trackId
+    public void getTrack(@Path("id") String trackId, Callback<Track> callback);
+                ^
+/tmp/rdisk/1440/src/SpotifyApi/src/main/java/com/drivemode/spotify/SpotifyService.java:235: warning: no @param for callback
+    public void getTrack(@Path("id") String trackId, Callback<Track> callback);
+                ^
+/tmp/rdisk/1440/src/SpotifyApi/src/main/java/com/drivemode/spotify/SpotifyService.java:251: warning: no @param for callback
+    public void getFeaturedPlaylists(Callback<FeaturedPlaylists> callback);
+                ^
+/tmp/rdisk/1440/src/SpotifyApi/src/main/java/com/drivemode/spotify/SpotifyService.java:292: warning: no @param for callback
+    public void getMySavedTracks(Callback<Pager<SavedTrack>> callback);
+                ^
+/tmp/rdisk/1440/src/SpotifyApi/src/main/java/com/drivemode/spotify/SpotifyService.java:330: warning: no @param for q
+    public void searchTracks(@Query("q") String q, Callback<TracksPager> callback);
+                ^
+/tmp/rdisk/1440/src/SpotifyApi/src/main/java/com/drivemode/spotify/SpotifyService.java:330: warning: no @param for callback
+    public void searchTracks(@Query("q") String q, Callback<TracksPager> callback);
+                ^
+/tmp/rdisk/1440/src/SpotifyApi/src/main/java/com/drivemode/spotify/models/Pager.java:8: warning: no description for @param
+ * @param <T>
+   ^
+
+20 warnings
+:SpotifyApi:androidJavadocsJar
+:SpotifyApi:androidSourcesJar
+:SpotifyApi:compileLint
+:SpotifyApi:copyDebugLint UP-TO-DATE
+:SpotifyApi:preBuild
+:SpotifyApi:preDebugBuild
+:SpotifyApi:checkDebugManifest
+:SpotifyApi:prepareDebugDependencies
+:SpotifyApi:compileDebugAidl
+:SpotifyApi:compileDebugRenderscript
+:SpotifyApi:generateDebugBuildConfig
+:SpotifyApi:generateDebugAssets UP-TO-DATE
+:SpotifyApi:mergeDebugAssets
+:SpotifyApi:generateDebugResValues
+:SpotifyApi:generateDebugResources
+:SpotifyApi:packageDebugResources
+:SpotifyApi:processDebugManifest
+:SpotifyApi:processDebugResources
+:SpotifyApi:generateDebugSources
+:SpotifyApi:compileDebugJava
+:SpotifyApi:extractDebugAnnotations
+:SpotifyApi:mergeDebugProguardFiles
+:SpotifyApi:processDebugJavaRes UP-TO-DATE
+:SpotifyApi:packageDebugJar
+:SpotifyApi:compileDebugNdk
+:SpotifyApi:packageDebugJniLibs UP-TO-DATE
+:SpotifyApi:packageDebugLocalJar UP-TO-DATE
+:SpotifyApi:packageDebugRenderscript UP-TO-DATE
+:SpotifyApi:bundleDebug
+:SpotifyApi:assembleDebug
+:SpotifyApi:copyReleaseLint UP-TO-DATE
+:SpotifyApi:preReleaseBuild
+:SpotifyApi:checkReleaseManifest
+:SpotifyApi:prepareReleaseDependencies
+:SpotifyApi:compileReleaseAidl
+:SpotifyApi:compileReleaseRenderscript
+:SpotifyApi:generateReleaseBuildConfig
+:SpotifyApi:generateReleaseAssets UP-TO-DATE
+:SpotifyApi:mergeReleaseAssets
+:SpotifyApi:generateReleaseResValues
+:SpotifyApi:generateReleaseResources
+:SpotifyApi:packageReleaseResources
+:SpotifyApi:processReleaseManifest
+:SpotifyApi:processReleaseResources
+:SpotifyApi:generateReleaseSources
+:SpotifyApi:compileReleaseJava
+:SpotifyApi:extractReleaseAnnotations
+:SpotifyApi:mergeReleaseProguardFiles
+:SpotifyApi:processReleaseJavaRes UP-TO-DATE
+:SpotifyApi:packageReleaseJar
+:SpotifyApi:compileReleaseNdk
+:SpotifyApi:packageReleaseJniLibs UP-TO-DATE
+:SpotifyApi:packageReleaseLocalJar UP-TO-DATE
+:SpotifyApi:packageReleaseRenderscript UP-TO-DATE
+:SpotifyApi:bundleRelease
+:SpotifyApi:assembleRelease
+:SpotifyApi:signArchives SKIPPED
+:SpotifyApi:assemble
+:SpotifyApi:build
+
+BUILD SUCCESSFUL
+
+Total time: 11.372 secs
+
+2018-04-06 03:01:21,515 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-06 03:01:21,515 INFO  SysUtils - Execute command: [/tmp/rdisk/1440/src/gradlew, -b, /tmp/rdisk/1440/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-06 03:01:29,793 INFO  ProjectTaskService - Detected possible tasks: 53
+2018-04-06 03:01:29,793 INFO  ProjectTaskService - Excluded tasks (11): lintDebug deviceCheck lint uninstallRelease connectedCheck uninstallAll check connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-06 03:01:29,793 INFO  SysUtils - Execute command: [/tmp/rdisk/1440/src/gradlew, -b, /tmp/rdisk/1440/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, connectedCheck, -x, uninstallAll, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-06 03:02:00,205 INFO  SysUtils - Configuration on demand is an incubating feature.
+:app:preBuild
+:app:compileDebugNdk
+:SpotifyApi:compileLint
+:SpotifyApi:copyReleaseLint UP-TO-DATE
+:SpotifyApi:preBuild
+:SpotifyApi:preReleaseBuild
+:SpotifyApi:checkReleaseManifest
+:SpotifyApi:prepareReleaseDependencies
+:SpotifyApi:compileReleaseAidl UP-TO-DATE
+:SpotifyApi:compileReleaseRenderscript UP-TO-DATE
+:SpotifyApi:generateReleaseBuildConfig UP-TO-DATE
+:SpotifyApi:generateReleaseAssets UP-TO-DATE
+:SpotifyApi:mergeReleaseAssets UP-TO-DATE
+:SpotifyApi:generateReleaseResValues UP-TO-DATE
+:SpotifyApi:generateReleaseResources UP-TO-DATE
+:SpotifyApi:packageReleaseResources UP-TO-DATE
+:SpotifyApi:processReleaseManifest UP-TO-DATE
+:SpotifyApi:processReleaseResources UP-TO-DATE
+:SpotifyApi:generateReleaseSources UP-TO-DATE
+:SpotifyApi:compileReleaseJava UP-TO-DATE
+:SpotifyApi:extractReleaseAnnotations UP-TO-DATE
+:SpotifyApi:mergeReleaseProguardFiles UP-TO-DATE
+:SpotifyApi:processReleaseJavaRes UP-TO-DATE
+:SpotifyApi:packageReleaseJar UP-TO-DATE
+:SpotifyApi:compileReleaseNdk UP-TO-DATE
+:SpotifyApi:packageReleaseJniLibs UP-TO-DATE
+:SpotifyApi:packageReleaseLocalJar UP-TO-DATE
+:SpotifyApi:packageReleaseRenderscript UP-TO-DATE
+:SpotifyApi:bundleRelease UP-TO-DATE
+:app:preDebugBuild
+:app:checkDebugManifest
+:app:preReleaseBuild
+:app:prepareComAndroidSupportAppcompatV72200Library
+:app:prepareComAndroidSupportSupportV42200Library
+:app:prepareSrcSpotifyApiUnspecifiedLibrary
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources/tmp/rdisk/1440/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/drawable-hdpi-v4/abc_spinner_mtrl_am_alpha.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:compileDebugJava
+:app:preDexDebug
+:app:dexDebug
+:app:processDebugJavaRes UP-TO-DATE
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:generateReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources/tmp/rdisk/1440/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/drawable-hdpi-v4/abc_spinner_mtrl_am_alpha.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:compileReleaseJava
+:app:lintVitalRelease
+:app:compileReleaseNdk
+:app:preDexRelease
+:app:dexRelease
+:app:processReleaseJavaRes UP-TO-DATE
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 29.951 secs
+
+2018-04-06 03:02:00,244 INFO  FullProcessService - Found APK file: /tmp/rdisk/1440/src/app/build/outputs/apk/app-debug.apk

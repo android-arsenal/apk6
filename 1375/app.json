@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "com.akexorcist.roundcornerprogressbar",
+    "label" : "RoundCornerProgressBar",
+    "icon" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "versionName" : "2.0.3",
+    "versionCode" : 20003,
+    "installLocation" : null,
+    "minSdkVersion" : "11",
+    "targetSdkVersion" : "22",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "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"
+  },
+  "dexClasses" : 1297,
+  "locales" : [ "", "sl", "mr_IN", "kk_KZ", "bg", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "my_MM", "ur_PK", "mn_MN", "fi", "lv", "et_EE", "sw", "pt_PT", "tl", "th", "uz_UZ", "pt", "ar", "ru", "eu_ES", "bn_BD", "fa", "sk", "kn_IN", "hi", "cs", "sv", "km_KH", "el", "nl", "hu", "af", "in", "vi", "fr_CA", "sr", "da", "si_LK", "ml_IN", "gl_ES", "es", "is_IS", "hy_AM", "tr", "ne_NP", "ro", "hr", "ms_MY", "am", "ka_GE", "lt", "pl", "zh_CN", "ta_IN", "fr", "ja", "lo_LA", "ky_KG", "iw", "de", "en_IN", "es_US", "mk_MK", "nb", "te_IN", "ca", "en_GB" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"20003\" android:versionName=\"2.0.3\" package=\"com.akexorcist.roundcornerprogressbar\" platformBuildVersionCode=\"22\" platformBuildVersionName=\"5.1.1-1819727\">\n\t<uses-sdk android:minSdkVersion=\"11\" android:targetSdkVersion=\"22\" />\n\t<application android:theme=\"resourceId:0x7f080077\" android:label=\"RoundCornerProgressBar\" android:icon=\"res/mipmap-mdpi-v4/ic_launcher.png\" android:debuggable=\"true\" android:allowBackup=\"true\">\n\t\t<activity android:label=\"RoundCornerProgressBar\" android:name=\"com.akexorcist.roundcornerprogressbar.example.MainActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t</application>\n</manifest>\n",
+  "fileSize" : 1118246,
+  "crc32" : 3740044541,
+  "sha256" : "cc130bb7331d2deea8113e671caa4ec71a965f6e09207592162093bd79c4b6df",
+  "buildTime" : 1526048823000
+}

@@ -1,0 +1,29 @@
+{
+  "meta" : {
+    "packageName" : "com.sqisland.gce2retrofit",
+    "label" : "gce2retrofit",
+    "icon" : null,
+    "versionName" : "1.0.0",
+    "versionCode" : 1,
+    "installLocation" : null,
+    "minSdkVersion" : "10",
+    "targetSdkVersion" : "27",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ "android.permission.INTERNET" ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : null,
+  "dexClasses" : 520,
+  "locales" : [ "" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"1\" android:versionName=\"1.0.0\" package=\"com.sqisland.gce2retrofit\" platformBuildVersionCode=\"27\" platformBuildVersionName=\"8.1.0\">\n\t<uses-sdk android:minSdkVersion=\"10\" android:targetSdkVersion=\"27\" />\n\t<uses-permission android:name=\"android.permission.INTERNET\" />\n\t<application android:theme=\"resourceId:0x7f020001\" android:label=\"gce2retrofit\" android:allowBackup=\"true\">\n\t\t<activity android:label=\"gce2retrofit\" android:name=\"com.sqisland.android.gce2retrofit.MainActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t</application>\n</manifest>\n",
+  "fileSize" : 332818,
+  "crc32" : 3512205628,
+  "sha256" : "a2e8182320c235489cc3f84c813d4ac314596619e834d912b4ff2fa1d6821ad6",
+  "buildTime" : 1522978410000
+}

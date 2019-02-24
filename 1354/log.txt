@@ -1,0 +1,479 @@
+2018-04-06 19:25:31,711 INFO  DownloadService - Downloading "https://github.com/hnakagawa/proton/archive/master.zip", attempt 3
+2018-04-06 19:26:32,331 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-06 19:26:33,173 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-06 19:26:33,173 INFO  DownloadService - Downloading "https://github.com/hnakagawa/proton/archive/master.zip", attempt 3
+2018-04-06 19:27:34,532 DEBUG FullProcessService - Repository https://github.com/hnakagawa/proton available: true
+2018-04-06 19:27:34,532 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-06 19:27:34,532 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/hnakagawa/proton, /tmp/rdisk/1354/src]
+2018-04-06 19:27:36,274 INFO  SysUtils - 
+2018-04-06 19:27:36,280 INFO  GitService - Deleted "/tmp/rdisk/1354/src/.git": true
+2018-04-06 19:27:36,285 INFO  FullProcessService - Size of directory with sources: 513 KB
+2018-04-06 19:27:36,285 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1354/src]
+2018-04-06 19:27:36,289 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1354/src/.git/
+
+2018-04-06 19:27:36,293 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1354/src/gradlew
+2018-04-06 19:27:36,297 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1354/src/Proton/build.gradle /tmp/rdisk/1354/src/ProtonExample/build.gradle /tmp/rdisk/1354/src/build.gradle
+2018-04-06 19:27:36,301 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1354/src/settings.gradle /tmp/rdisk/1354/src/build.gradle /tmp/rdisk/1354/src/ProtonExample/build.gradle /tmp/rdisk/1354/src/Proton/build.gradle
+2018-04-06 19:27:36,301 INFO  ProjectBuildService - Remote scripts: none
+2018-04-06 19:27:36,301 INFO  ProjectFixService - Fixing project...
+2018-04-06 19:27:36,310 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1354/src/Proton/local.properties
+2018-04-06 19:27:36,310 INFO  ProjectFixService - Build info for "/tmp/rdisk/1354/src/Proton/build.gradle": [buildToolsVersion=19.0.0,compileSdkVersion=19,minSdkVersion=7,targetSdkVersion=19]
+2018-04-06 19:27:36,310 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1354/src/Proton/build.gradle": [buildToolsVersion=19.1.0,compileSdkVersion=19,minSdkVersion=7,targetSdkVersion=19]
+2018-04-06 19:27:36,311 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1354/src/ProtonExample/local.properties
+2018-04-06 19:27:36,311 INFO  ProjectFixService - Build info for "/tmp/rdisk/1354/src/ProtonExample/build.gradle": [buildToolsVersion=19.0.1,compileSdkVersion=19,minSdkVersion=8,targetSdkVersion=19]
+2018-04-06 19:27:36,311 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1354/src/ProtonExample/build.gradle": [buildToolsVersion=19.1.0,compileSdkVersion=19,minSdkVersion=8,targetSdkVersion=19]
+2018-04-06 19:27:36,312 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1354/src/local.properties
+2018-04-06 19:27:36,312 INFO  WrapperPropertiesFixService - Gradle wrapper: http://services.gradle.org/distributions/gradle-1.11-all.zip
+2018-04-06 19:27:36,312 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (http://services.gradle.org/distributions/gradle-1.11-bin.zip)
+2018-04-06 19:27:36,313 INFO  ProjectFixService - Build info for "/tmp/rdisk/1354/src/build.gradle": [buildToolsVersion=19.1.0,compileSdkVersion=19,minSdkVersion=8,targetSdkVersion=19]
+2018-04-06 19:27:36,313 INFO  ProjectFixService - Project was maybe fixed
+2018-04-06 19:27:36,313 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-06 19:27:36,313 INFO  SysUtils - Execute command: [/tmp/rdisk/1354/src/gradlew, -b, /tmp/rdisk/1354/src/Proton/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-06 19:27:47,665 INFO  ProjectTaskService - Detected possible tasks: 49
+2018-04-06 19:27:47,665 INFO  ProjectTaskService - Excluded tasks (8): lintDebug deviceCheck lint connectedCheck uninstallAll check connectedAndroidTest lintRelease
+2018-04-06 19:27:47,665 INFO  SysUtils - Execute command: [/tmp/rdisk/1354/src/gradlew, -b, /tmp/rdisk/1354/src/Proton/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, deviceCheck, -x, lint, -x, connectedCheck, -x, uninstallAll, -x, check, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-06 19:27:57,468 INFO  SysUtils - Configuration on demand is an incubating feature.
+Relying on packaging to define the extension of the main artifact has been deprecated and is scheduled to be removed in Gradle 2.0
+:Proton:compileLint
+:Proton:copyDebugLint UP-TO-DATE
+:Proton:mergeDebugProguardFiles
+:Proton:packageDebugAidl UP-TO-DATE
+:Proton:preBuild
+:Proton:preDebugBuild
+:Proton:checkDebugManifest
+:Proton:preDebugTestBuild
+:Proton:preReleaseBuild
+:Proton:prepareComAndroidSupportAppcompatV71901Library
+:Proton:prepareDebugDependencies
+:Proton:compileDebugAidl
+:Proton:compileDebugRenderscript
+:Proton:generateDebugBuildConfig
+:Proton:mergeDebugAssets
+:Proton:generateDebugResValues
+:Proton:generateDebugResources
+:Proton:mergeDebugResources
+:Proton:processDebugManifest
+:Proton:processDebugResources
+:Proton:generateDebugSources
+:Proton:compileDebugJavaNote: /tmp/rdisk/1354/src/Proton/src/main/java/proton/inject/widget/ProtonCursorAdapter.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:Proton:processDebugJavaRes UP-TO-DATE
+:Proton:packageDebugJar
+:Proton:compileDebugNdk
+:Proton:packageDebugJniLibs UP-TO-DATE
+:Proton:packageDebugLocalJar UP-TO-DATE
+:Proton:packageDebugRenderscript UP-TO-DATE
+:Proton:packageDebugResources
+:Proton:bundleDebug
+:Proton:assembleDebug
+:Proton:copyReleaseLint UP-TO-DATE
+:Proton:mergeReleaseProguardFiles
+:Proton:packageReleaseAidl UP-TO-DATE
+:Proton:checkReleaseManifest
+:Proton:prepareReleaseDependencies
+:Proton:compileReleaseAidl
+:Proton:compileReleaseRenderscript
+:Proton:generateReleaseBuildConfig
+:Proton:mergeReleaseAssets
+:Proton:generateReleaseResValues
+:Proton:generateReleaseResources
+:Proton:mergeReleaseResources
+:Proton:processReleaseManifest
+:Proton:processReleaseResources
+:Proton:generateReleaseSources
+:Proton:compileReleaseJavaNote: /tmp/rdisk/1354/src/Proton/src/main/java/proton/inject/widget/ProtonCursorAdapter.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:Proton:processReleaseJavaRes UP-TO-DATE
+:Proton:packageReleaseJar
+:Proton:compileReleaseNdk
+:Proton:packageReleaseJniLibs UP-TO-DATE
+:Proton:packageReleaseLocalJar UP-TO-DATE
+:Proton:packageReleaseRenderscript UP-TO-DATE
+:Proton:packageReleaseResources
+:Proton:bundleRelease
+:Proton:assembleRelease
+:Proton:assemble
+:Proton:build
+
+BUILD SUCCESSFUL
+
+Total time: 9.348 secs
+
+2018-04-06 19:27:57,498 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-06 19:27:57,498 INFO  SysUtils - Execute command: [/tmp/rdisk/1354/src/gradlew, -b, /tmp/rdisk/1354/src/ProtonExample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-06 19:28:06,720 INFO  ProjectTaskService - Detected possible tasks: 49
+2018-04-06 19:28:06,720 INFO  ProjectTaskService - Excluded tasks (11): lintDebug deviceCheck lint uninstallRelease connectedCheck uninstallAll check connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-06 19:28:06,720 INFO  SysUtils - Execute command: [/tmp/rdisk/1354/src/gradlew, -b, /tmp/rdisk/1354/src/ProtonExample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, connectedCheck, -x, uninstallAll, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-06 19:28:16,988 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-06 19:28:16,988 INFO  SysUtils - Configuration on demand is an incubating feature.
+Relying on packaging to define the extension of the main artifact has been deprecated and is scheduled to be removed in Gradle 2.0
+:ProtonExample:compileDebugNdk
+:Proton:compileLint
+:Proton:copyReleaseLint UP-TO-DATE
+:Proton:mergeReleaseProguardFiles UP-TO-DATE
+:Proton:packageReleaseAidl UP-TO-DATE
+:Proton:preBuild
+:Proton:preReleaseBuild
+:Proton:checkReleaseManifest
+:Proton:preDebugBuild
+:Proton:preDebugTestBuild
+:Proton:prepareComAndroidSupportAppcompatV71901Library UP-TO-DATE
+:Proton:prepareReleaseDependencies
+:Proton:compileReleaseAidl UP-TO-DATE
+:Proton:compileReleaseRenderscript UP-TO-DATE
+:Proton:generateReleaseBuildConfig UP-TO-DATE
+:Proton:mergeReleaseAssets UP-TO-DATE
+:Proton:generateReleaseResValues UP-TO-DATE
+:Proton:generateReleaseResources UP-TO-DATE
+:Proton:mergeReleaseResources UP-TO-DATE
+:Proton:processReleaseManifest UP-TO-DATE
+:Proton:processReleaseResources UP-TO-DATE
+:Proton:generateReleaseSources UP-TO-DATE
+:Proton:compileReleaseJava UP-TO-DATE
+:Proton:processReleaseJavaRes UP-TO-DATE
+:Proton:packageReleaseJar UP-TO-DATE
+:Proton:compileReleaseNdk UP-TO-DATE
+:Proton:packageReleaseJniLibs UP-TO-DATE
+:Proton:packageReleaseLocalJar UP-TO-DATE
+:Proton:packageReleaseRenderscript UP-TO-DATE
+:Proton:packageReleaseResources UP-TO-DATE
+:Proton:bundleRelease UP-TO-DATE
+:ProtonExample:preBuild
+:ProtonExample:preDebugBuild
+:ProtonExample:checkDebugManifest
+:ProtonExample:preReleaseBuild
+:ProtonExample:prepareComAndroidSupportAnimatedVectorDrawable2600Alpha1Library
+:ProtonExample:prepareComAndroidSupportAppcompatV72600Alpha1Library
+:ProtonExample:prepareComAndroidSupportSupportCompat2600Alpha1Library
+:ProtonExample:prepareComAndroidSupportSupportCoreUi2600Alpha1Library
+:ProtonExample:prepareComAndroidSupportSupportCoreUtils2600Alpha1Library
+:ProtonExample:prepareComAndroidSupportSupportFragment2600Alpha1Library
+:ProtonExample:prepareComAndroidSupportSupportMediaCompat2600Alpha1Library
+:ProtonExample:prepareComAndroidSupportSupportV42600Alpha1Library
+:ProtonExample:prepareComAndroidSupportSupportVectorDrawable2600Alpha1Library
+:ProtonExample:prepareSrcProtonUnspecifiedLibrary
+:ProtonExample:prepareDebugDependencies
+:ProtonExample:compileDebugAidl
+:ProtonExample:compileDebugRenderscript
+:ProtonExample:generateDebugBuildConfig
+:ProtonExample:mergeDebugAssets
+:ProtonExample:generateDebugResValues
+:ProtonExample:generateDebugResources
+:ProtonExample:mergeDebugResources
+:ProtonExample:processDebugManifest[/tmp/rdisk/1354/src/ProtonExample/build/exploded-aar/src/Proton/unspecified/AndroidManifest.xml:3, /tmp/manifestMerge8521876925663190545.xml:3] Main manifest has <uses-sdk android:minSdkVersion='7'> but library uses minSdkVersion='14'
+[/tmp/rdisk/1354/src/ProtonExample/build/exploded-aar/src/Proton/unspecified/AndroidManifest.xml:3, /tmp/manifestMerge1824632047393757129.xml:3] Main manifest has <uses-sdk android:minSdkVersion='7'> but library uses minSdkVersion='14'
+ FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':ProtonExample:processDebugManifest'.
+> Manifest merging failed. See console for more info.
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':ProtonExample:processDebugManifest'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:69)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:35)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:64)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:42)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.AbstractTask.executeWithoutThrowingTaskFailure(AbstractTask.java:289)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.executeTask(AbstractTaskPlanExecutor.java:79)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:63)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:51)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:23)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:86)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:29)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:61)
+	at org.gradle.execution.DefaultBuildExecuter.access$200(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$2.proceed(DefaultBuildExecuter.java:67)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:61)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:54)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:166)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:113)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:81)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:64)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:33)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:24)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:35)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:50)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:171)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:201)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:174)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:170)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:139)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:46)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.Main.main(Main.java:37)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:50)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:32)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:33)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:130)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:48)
+Caused by: java.lang.RuntimeException: Manifest merging failed. See console for more info.
+	at com.android.builder.AndroidBuilder.doMerge(AndroidBuilder.java:615)
+	at com.android.builder.AndroidBuilder.mergeLibraryManifests(AndroidBuilder.java:584)
+	at com.android.builder.AndroidBuilder.mergeLibraryManifests(AndroidBuilder.java:575)
+	at com.android.builder.AndroidBuilder.processManifest(AndroidBuilder.java:393)
+	at com.android.builder.AndroidBuilder$processManifest.call(Unknown Source)
+	at com.android.build.gradle.tasks.ProcessAppManifest.doFullTaskAction(ProcessAppManifest.groovy:83)
+	at com.android.build.gradle.internal.tasks.IncrementalTask.taskAction(IncrementalTask.groovy:64)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:63)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$IncrementalTaskAction.doExecute(AnnotationProcessingTaskFactory.java:236)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:212)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$IncrementalTaskAction.execute(AnnotationProcessingTaskFactory.java:223)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:201)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:533)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:516)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:80)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:61)
+	... 46 more
+
+
+BUILD FAILED
+
+Total time: 9.836 secs
+
+2018-04-06 19:28:17,039 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-06 19:28:17,039 INFO  SysUtils - Execute command: [/tmp/rdisk/1354/src/gradlew, -b, /tmp/rdisk/1354/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-06 19:28:24,389 INFO  ProjectTaskService - Detected possible tasks: 52
+2018-04-06 19:28:24,389 INFO  ProjectTaskService - Excluded tasks (11): lintDebug deviceCheck lint uninstallRelease connectedCheck uninstallAll check connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-06 19:28:24,389 INFO  SysUtils - Execute command: [/tmp/rdisk/1354/src/gradlew, -b, /tmp/rdisk/1354/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, connectedCheck, -x, uninstallAll, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-06 19:28:33,060 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-06 19:28:33,061 INFO  SysUtils - Configuration on demand is an incubating feature.
+Relying on packaging to define the extension of the main artifact has been deprecated and is scheduled to be removed in Gradle 2.0
+:Proton:compileLint
+:Proton:copyDebugLint UP-TO-DATE
+:Proton:mergeDebugProguardFiles UP-TO-DATE
+:Proton:packageDebugAidl UP-TO-DATE
+:Proton:preBuild
+:Proton:preDebugBuild
+:Proton:checkDebugManifest
+:Proton:preDebugTestBuild
+:Proton:preReleaseBuild
+:Proton:prepareComAndroidSupportAppcompatV71901Library UP-TO-DATE
+:Proton:prepareDebugDependencies
+:Proton:compileDebugAidl UP-TO-DATE
+:Proton:compileDebugRenderscript UP-TO-DATE
+:Proton:generateDebugBuildConfig UP-TO-DATE
+:Proton:mergeDebugAssets UP-TO-DATE
+:Proton:generateDebugResValues UP-TO-DATE
+:Proton:generateDebugResources UP-TO-DATE
+:Proton:mergeDebugResources UP-TO-DATE
+:Proton:processDebugManifest UP-TO-DATE
+:Proton:processDebugResources UP-TO-DATE
+:Proton:generateDebugSources UP-TO-DATE
+:Proton:compileDebugJava UP-TO-DATE
+:Proton:processDebugJavaRes UP-TO-DATE
+:Proton:packageDebugJar UP-TO-DATE
+:Proton:compileDebugNdk UP-TO-DATE
+:Proton:packageDebugJniLibs UP-TO-DATE
+:Proton:packageDebugLocalJar UP-TO-DATE
+:Proton:packageDebugRenderscript UP-TO-DATE
+:Proton:packageDebugResources UP-TO-DATE
+:Proton:bundleDebug
+:Proton:assembleDebug
+:Proton:copyReleaseLint UP-TO-DATE
+:Proton:mergeReleaseProguardFiles UP-TO-DATE
+:Proton:packageReleaseAidl UP-TO-DATE
+:Proton:checkReleaseManifest
+:Proton:prepareReleaseDependencies
+:Proton:compileReleaseAidl UP-TO-DATE
+:Proton:compileReleaseRenderscript UP-TO-DATE
+:Proton:generateReleaseBuildConfig UP-TO-DATE
+:Proton:mergeReleaseAssets UP-TO-DATE
+:Proton:generateReleaseResValues UP-TO-DATE
+:Proton:generateReleaseResources UP-TO-DATE
+:Proton:mergeReleaseResources UP-TO-DATE
+:Proton:processReleaseManifest UP-TO-DATE
+:Proton:processReleaseResources UP-TO-DATE
+:Proton:generateReleaseSources UP-TO-DATE
+:Proton:compileReleaseJava UP-TO-DATE
+:Proton:processReleaseJavaRes UP-TO-DATE
+:Proton:packageReleaseJar UP-TO-DATE
+:Proton:compileReleaseNdk UP-TO-DATE
+:Proton:packageReleaseJniLibs UP-TO-DATE
+:Proton:packageReleaseLocalJar UP-TO-DATE
+:Proton:packageReleaseRenderscript UP-TO-DATE
+:Proton:packageReleaseResources UP-TO-DATE
+:Proton:bundleRelease
+:Proton:assembleRelease
+:Proton:assemble
+:Proton:build
+:ProtonExample:compileDebugNdk UP-TO-DATE
+:ProtonExample:preBuild
+:ProtonExample:preDebugBuild
+:ProtonExample:checkDebugManifest
+:ProtonExample:preReleaseBuild
+:ProtonExample:prepareComAndroidSupportAnimatedVectorDrawable2600Alpha1Library UP-TO-DATE
+:ProtonExample:prepareComAndroidSupportAppcompatV72600Alpha1Library UP-TO-DATE
+:ProtonExample:prepareComAndroidSupportSupportCompat2600Alpha1Library UP-TO-DATE
+:ProtonExample:prepareComAndroidSupportSupportCoreUi2600Alpha1Library UP-TO-DATE
+:ProtonExample:prepareComAndroidSupportSupportCoreUtils2600Alpha1Library UP-TO-DATE
+:ProtonExample:prepareComAndroidSupportSupportFragment2600Alpha1Library UP-TO-DATE
+:ProtonExample:prepareComAndroidSupportSupportMediaCompat2600Alpha1Library UP-TO-DATE
+:ProtonExample:prepareComAndroidSupportSupportV42600Alpha1Library UP-TO-DATE
+:ProtonExample:prepareComAndroidSupportSupportVectorDrawable2600Alpha1Library UP-TO-DATE
+:ProtonExample:prepareSrcProtonUnspecifiedLibrary UP-TO-DATE
+:ProtonExample:prepareDebugDependencies
+:ProtonExample:compileDebugAidl UP-TO-DATE
+:ProtonExample:compileDebugRenderscript UP-TO-DATE
+:ProtonExample:generateDebugBuildConfig UP-TO-DATE
+:ProtonExample:mergeDebugAssets UP-TO-DATE
+:ProtonExample:generateDebugResValues UP-TO-DATE
+:ProtonExample:generateDebugResources UP-TO-DATE
+:ProtonExample:mergeDebugResources UP-TO-DATE
+:ProtonExample:processDebugManifest[/tmp/rdisk/1354/src/ProtonExample/build/exploded-aar/src/Proton/unspecified/AndroidManifest.xml:3, /tmp/manifestMerge7145096678499942137.xml:3] Main manifest has <uses-sdk android:minSdkVersion='7'> but library uses minSdkVersion='14'
+[/tmp/rdisk/1354/src/ProtonExample/build/exploded-aar/src/Proton/unspecified/AndroidManifest.xml:3, /tmp/manifestMerge4535675700876126936.xml:3] Main manifest has <uses-sdk android:minSdkVersion='7'> but library uses minSdkVersion='14'
+ FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':ProtonExample:processDebugManifest'.
+> Manifest merging failed. See console for more info.
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':ProtonExample:processDebugManifest'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:69)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:35)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:64)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:42)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.AbstractTask.executeWithoutThrowingTaskFailure(AbstractTask.java:289)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.executeTask(AbstractTaskPlanExecutor.java:79)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:63)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:51)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:23)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:86)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:29)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:61)
+	at org.gradle.execution.DefaultBuildExecuter.access$200(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$2.proceed(DefaultBuildExecuter.java:67)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:61)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:54)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:166)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:113)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:81)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:64)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:33)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:24)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:35)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:50)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:171)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:201)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:174)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:170)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:139)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:46)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.Main.main(Main.java:37)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:50)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:32)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:33)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:130)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:48)
+Caused by: java.lang.RuntimeException: Manifest merging failed. See console for more info.
+	at com.android.builder.AndroidBuilder.doMerge(AndroidBuilder.java:615)
+	at com.android.builder.AndroidBuilder.mergeLibraryManifests(AndroidBuilder.java:584)
+	at com.android.builder.AndroidBuilder.mergeLibraryManifests(AndroidBuilder.java:575)
+	at com.android.builder.AndroidBuilder.processManifest(AndroidBuilder.java:393)
+	at com.android.builder.AndroidBuilder$processManifest.call(Unknown Source)
+	at com.android.build.gradle.tasks.ProcessAppManifest.doFullTaskAction(ProcessAppManifest.groovy:83)
+	at com.android.build.gradle.internal.tasks.IncrementalTask.taskAction(IncrementalTask.groovy:64)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:63)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$IncrementalTaskAction.doExecute(AnnotationProcessingTaskFactory.java:236)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:212)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$IncrementalTaskAction.execute(AnnotationProcessingTaskFactory.java:223)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:201)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:533)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:516)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:80)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:61)
+	... 46 more
+
+
+BUILD FAILED
+
+Total time: 8.236 secs
+
+2018-04-06 19:28:33,112 ERROR FullProcessService - Project build has not produced APK file
+2018-04-06 19:28:33,164 ERROR FullProcessService - Could not find generated or existed APK file

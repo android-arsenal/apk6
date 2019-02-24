@@ -1,0 +1,47 @@
+2018-04-06 18:02:35,966 INFO  DownloadService - Downloading "https://github.com/pwittchen/kirai/archive/master.zip", attempt 3
+2018-04-06 18:03:36,621 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-06 18:03:37,451 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-06 18:03:37,451 INFO  DownloadService - Downloading "https://github.com/pwittchen/kirai/archive/master.zip", attempt 3
+2018-04-06 18:04:38,755 DEBUG FullProcessService - Repository https://github.com/pwittchen/kirai available: true
+2018-04-06 18:04:38,755 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-06 18:04:38,755 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/pwittchen/kirai, /tmp/rdisk/1391/src]
+2018-04-06 18:04:40,243 INFO  SysUtils - 
+2018-04-06 18:04:40,253 INFO  GitService - Deleted "/tmp/rdisk/1391/src/.git": true
+2018-04-06 18:04:40,255 INFO  FullProcessService - Size of directory with sources: 132 KB
+2018-04-06 18:04:40,255 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1391/src]
+2018-04-06 18:04:40,260 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1391/src/.git/
+
+2018-04-06 18:04:40,262 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1391/src/gradlew
+2018-04-06 18:04:40,263 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1391/src/build.gradle
+2018-04-06 18:04:40,265 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1391/src/settings.gradle /tmp/rdisk/1391/src/maven_push.gradle /tmp/rdisk/1391/src/build.gradle
+2018-04-06 18:04:40,265 INFO  ProjectBuildService - Remote scripts: none
+2018-04-06 18:04:40,265 INFO  ProjectFixService - Fixing project...
+2018-04-06 18:04:40,270 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1391/src/local.properties
+2018-04-06 18:04:40,270 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-4.2.1-all.zip
+2018-04-06 18:04:40,270 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-4.2.1-bin.zip)
+2018-04-06 18:04:40,272 INFO  ProjectFixService - Build info for "/tmp/rdisk/1391/src/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-06 18:04:40,272 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1391/src/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-06 18:04:40,272 INFO  ProjectFixService - Project was maybe fixed
+2018-04-06 18:04:40,272 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-06 18:04:40,273 INFO  SysUtils - Execute command: [/tmp/rdisk/1391/src/gradlew, -b, /tmp/rdisk/1391/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-06 18:04:47,132 INFO  ProjectTaskService - Detected possible tasks: 50
+2018-04-06 18:04:47,132 INFO  ProjectTaskService - Excluded tasks (3): javadoc test check
+2018-04-06 18:04:47,132 INFO  SysUtils - Execute command: [/tmp/rdisk/1391/src/gradlew, -b, /tmp/rdisk/1391/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, javadoc, -x, test, -x, check, build]
+2018-04-06 18:04:52,825 INFO  SysUtils - Configuration on demand is an incubating feature.
+:compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.7
+1 warning
+
+:processResources NO-SOURCE
+:classes
+:jar
+:javadocJar
+:sourceJar
+:signArchives SKIPPED
+:assemble
+:build
+
+BUILD SUCCESSFUL in 5s
+4 actionable tasks: 4 executed
+
+2018-04-06 18:04:52,828 ERROR FullProcessService - Project build has not produced APK file
+2018-04-06 18:04:52,830 ERROR FullProcessService - Could not find generated or existed APK file

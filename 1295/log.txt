@@ -1,0 +1,21 @@
+2018-05-21 00:59:38,326 INFO  DownloadService - Downloading "https://github.com/luboganev/goodintentions/archive/master.zip", attempt 3
+2018-05-21 01:00:38,834 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-05-21 01:00:39,585 INFO  GithubDownloadService - Default branch of this repository: master
+2018-05-21 01:00:39,585 INFO  DownloadService - Downloading "https://github.com/luboganev/goodintentions/archive/master.zip", attempt 3
+2018-05-21 01:01:41,027 DEBUG FullProcessService - Repository https://github.com/luboganev/goodintentions available: true
+2018-05-21 01:01:41,027 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-05-21 01:01:41,028 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/luboganev/goodintentions, /tmp/rdisk/1295/src]
+2018-05-21 01:01:43,309 INFO  SysUtils - 
+2018-05-21 01:01:43,316 INFO  GitService - Deleted "/tmp/rdisk/1295/src/.git": true
+2018-05-21 01:01:43,324 INFO  FullProcessService - Size of directory with sources: 2 MB
+2018-05-21 01:01:43,324 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1295/src]
+2018-05-21 01:01:43,328 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1295/src/.git/
+
+2018-05-21 01:01:43,333 INFO  ProjectBuildService - Gradle wrapper(s): none
+2018-05-21 01:01:43,333 ERROR ProjectBuildService - Could not detect Gradle wrapper. Default Gradle installation will be used
+2018-05-21 01:01:43,338 INFO  ProjectBuildService - Build script(s): none
+2018-05-21 01:01:43,342 INFO  ProjectBuildService - All script(s): none
+2018-05-21 01:01:43,342 INFO  ProjectBuildService - Remote scripts: none
+2018-05-21 01:01:43,342 ERROR FullProcessService - Project is not correct Gradle project
+2018-05-21 01:01:43,342 ERROR FullProcessService - Project build has not produced APK file
+2018-05-21 01:01:43,354 ERROR FullProcessService - Could not find generated or existed APK file

@@ -1,0 +1,10 @@
+2018-05-21 02:39:22,525 INFO  DownloadService - Downloading "https://github.com/pchab/AndroidRTC/archive/master.zip", attempt 3
+2018-05-21 02:39:25,499 INFO  DownloadService - Downloaded https://github.com/pchab/AndroidRTC/archive/master.zip, attempt 3
+2018-05-21 02:39:25,499 INFO  DownloadService - Size of file "/tmp/rdisk/1262/master.zip": 3 MB
+2018-05-21 02:39:25,499 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-05-21 02:39:25,499 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/1262/master.zip: false
+2018-05-21 02:39:25,499 INFO  FullProcessService - Archive with sources does not contain any build script
+2018-05-21 02:39:25,499 ERROR FullProcessService - Could not find directory with sources
+2018-05-21 02:39:25,499 ERROR FullProcessService - Project will not be processed
+2018-05-21 02:39:25,499 ERROR FullProcessService - Project build has not produced APK file
+2018-05-21 02:39:25,500 ERROR FullProcessService - Could not find generated or existed APK file

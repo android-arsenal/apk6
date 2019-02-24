@@ -1,0 +1,562 @@
+2018-04-16 14:20:03,573 INFO  DownloadService - Downloading "https://github.com/vincentbrison/dualcache/archive/master.zip", attempt 3
+2018-04-16 14:20:04,569 INFO  DownloadService - Downloaded https://github.com/vincentbrison/dualcache/archive/master.zip, attempt 3
+2018-04-16 14:20:04,569 INFO  DownloadService - Size of file "/tmp/rdisk/1377/master.zip": 337 KB
+2018-04-16 14:20:04,569 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-04-16 14:20:04,570 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/1377/master.zip: true
+2018-04-16 14:20:04,570 DEBUG ZipUtil - Extracting '/tmp/rdisk/1377/master.zip' into '/tmp/rdisk/1377/src'.
+2018-04-16 14:20:04,587 INFO  FullProcessService - Size of directory with sources: 431 KB
+2018-04-16 14:20:04,587 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1377/src]
+2018-04-16 14:20:04,592 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1377/src/.git/
+
+2018-04-16 14:20:04,596 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1377/src/dualcache-master/gradlew
+2018-04-16 14:20:04,600 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1377/src/dualcache-master/dualcache-demoapp/build.gradle /tmp/rdisk/1377/src/dualcache-master/dualcache-library/build.gradle /tmp/rdisk/1377/src/dualcache-master/build.gradle /tmp/rdisk/1377/src/dualcache-master/dualcache-jsonserializer/build.gradle /tmp/rdisk/1377/src/dualcache-master/dualcache-serializerinterface/build.gradle
+2018-04-16 14:20:04,604 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1377/src/dualcache-master/settings.gradle /tmp/rdisk/1377/src/dualcache-master/quality/quality.gradle /tmp/rdisk/1377/src/dualcache-master/maven_push_java.gradle /tmp/rdisk/1377/src/dualcache-master/maven_push.gradle /tmp/rdisk/1377/src/dualcache-master/dualcache-serializerinterface/build.gradle /tmp/rdisk/1377/src/dualcache-master/dualcache-library/build.gradle /tmp/rdisk/1377/src/dualcache-master/dualcache-jsonserializer/build.gradle /tmp/rdisk/1377/src/dualcache-master/dualcache-demoapp/build.gradle /tmp/rdisk/1377/src/dualcache-master/dependencies.gradle /tmp/rdisk/1377/src/dualcache-master/build.gradle
+2018-04-16 14:20:04,604 INFO  ProjectBuildService - Remote scripts: none
+2018-04-16 14:20:04,604 INFO  ProjectFixService - Fixing project...
+2018-04-16 14:20:04,616 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1377/src/dualcache-master/dualcache-demoapp/local.properties
+2018-04-16 14:20:04,622 INFO  ProjectFixService - Build info for "/tmp/rdisk/1377/src/dualcache-master/dualcache-demoapp/build.gradle": [buildToolsVersion=25.0.1,compileSdkVersion=25,minSdkVersion=12,targetSdkVersion=25]
+2018-04-16 14:20:04,622 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1377/src/dualcache-master/dualcache-library/local.properties
+2018-04-16 14:20:04,628 INFO  ProjectFixService - Build info for "/tmp/rdisk/1377/src/dualcache-master/dualcache-library/build.gradle": [buildToolsVersion=25.0.1,compileSdkVersion=25,minSdkVersion=12,targetSdkVersion=25]
+2018-04-16 14:20:04,628 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1377/src/dualcache-master/local.properties
+2018-04-16 14:20:04,628 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.14.1-all.zip
+2018-04-16 14:20:04,628 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.14.1-bin.zip)
+2018-04-16 14:20:04,634 INFO  ProjectFixService - Build info for "/tmp/rdisk/1377/src/dualcache-master/build.gradle": [buildToolsVersion=25.0.1,compileSdkVersion=25,minSdkVersion=12,targetSdkVersion=25]
+2018-04-16 14:20:04,634 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1377/src/dualcache-master/dualcache-jsonserializer/local.properties
+2018-04-16 14:20:04,639 INFO  ProjectFixService - Build info for "/tmp/rdisk/1377/src/dualcache-master/dualcache-jsonserializer/build.gradle": [buildToolsVersion=25.0.1,compileSdkVersion=25,minSdkVersion=12,targetSdkVersion=25]
+2018-04-16 14:20:04,640 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1377/src/dualcache-master/dualcache-serializerinterface/local.properties
+2018-04-16 14:20:04,645 INFO  ProjectFixService - Build info for "/tmp/rdisk/1377/src/dualcache-master/dualcache-serializerinterface/build.gradle": [buildToolsVersion=25.0.1,compileSdkVersion=25,minSdkVersion=12,targetSdkVersion=25]
+2018-04-16 14:20:04,645 INFO  ProjectFixService - Project was maybe fixed
+2018-04-16 14:20:04,645 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-16 14:20:04,645 INFO  SysUtils - Execute command: [/tmp/rdisk/1377/src/dualcache-master/gradlew, -b, /tmp/rdisk/1377/src/dualcache-master/dualcache-demoapp/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-16 14:20:15,759 INFO  ProjectTaskService - Detected possible tasks: 109
+2018-04-16 14:20:15,760 INFO  ProjectTaskService - Excluded tasks (9): mockableAndroidJar deviceCheck lint deviceAndroidTest connectedCheck uninstallAll test check connectedAndroidTest
+2018-04-16 14:20:15,760 INFO  SysUtils - Execute command: [/tmp/rdisk/1377/src/dualcache-master/gradlew, -b, /tmp/rdisk/1377/src/dualcache-master/dualcache-demoapp/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, deviceAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, test, -x, check, -x, connectedAndroidTest, build]
+2018-04-16 14:20:46,401 INFO  SysUtils - Configuration on demand is an incubating feature.
+current VERSION_NAME : 3.1.1
+RELEASE BUILD
+current VERSION_NAME : 3.1.1
+RELEASE BUILD
+current VERSION_NAME : 3.1.1
+RELEASE BUILD
+Incremental java compilation is an incubating feature.
+:dualcache-demoapp:preBuild UP-TO-DATE
+:dualcache-demoapp:preLocalDebugBuild UP-TO-DATE
+:dualcache-demoapp:checkLocalDebugManifest
+:dualcache-demoapp:extractProguardFiles
+:dualcache-demoapp:preLocalProguardBuild
+:dualcache-demoapp:preLocalReleaseBuild UP-TO-DATE
+:dualcache-demoapp:preRemoteDebugBuild UP-TO-DATE
+:dualcache-demoapp:preRemoteProguardBuild
+:dualcache-demoapp:preRemoteReleaseBuild UP-TO-DATE
+:dualcache-serializerinterface:compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.7
+1 warning
+
+:dualcache-serializerinterface:processResources UP-TO-DATE
+:dualcache-serializerinterface:classes
+:dualcache-serializerinterface:jar
+:dualcache-jsonserializer:compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.7
+1 warning
+
+:dualcache-jsonserializer:processResources UP-TO-DATE
+:dualcache-jsonserializer:classes
+:dualcache-jsonserializer:jar
+:dualcache-library:preBuild UP-TO-DATE
+:dualcache-library:preReleaseBuild UP-TO-DATE
+:dualcache-library:checkReleaseManifest
+:dualcache-library:prepareReleaseDependencies
+:dualcache-library:compileReleaseAidl
+:dualcache-library:compileReleaseNdk UP-TO-DATE
+:dualcache-library:compileLint
+:dualcache-library:copyReleaseLint UP-TO-DATE
+:dualcache-library:mergeReleaseShaders
+:dualcache-library:compileReleaseShaders
+:dualcache-library:generateReleaseAssets
+:dualcache-library:mergeReleaseAssets
+:dualcache-library:mergeReleaseProguardFiles
+:dualcache-library:packageReleaseRenderscript UP-TO-DATE
+:dualcache-library:compileReleaseRenderscript
+:dualcache-library:generateReleaseResValues
+:dualcache-library:generateReleaseResources
+:dualcache-library:packageReleaseResources
+:dualcache-library:processReleaseManifest
+:dualcache-library:generateReleaseBuildConfig
+:dualcache-library:processReleaseResources
+:dualcache-library:generateReleaseSources
+:dualcache-library:incrementalReleaseJavaCompilationSafeguard
+:dualcache-library:compileReleaseJavaWithJavac
+:dualcache-library:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+:dualcache-library:processReleaseJavaRes UP-TO-DATE
+:dualcache-library:transformResourcesWithMergeJavaResForRelease
+:dualcache-library:transformClassesAndResourcesWithSyncLibJarsForRelease
+:dualcache-library:mergeReleaseJniLibFolders
+:dualcache-library:transformNative_libsWithMergeJniLibsForRelease
+:dualcache-library:transformNative_libsWithSyncJniLibsForRelease
+:dualcache-library:bundleRelease
+:dualcache-demoapp:prepareComJakewhartonButterknife840Library
+:dualcache-demoapp:prepareComVincentbrisonOpenlibrariesAndroidDualcacheLibrary311Library
+:dualcache-demoapp:prepareLocalDebugDependencies
+:dualcache-demoapp:compileLocalDebugAidl
+:dualcache-demoapp:compileLocalDebugRenderscript
+:dualcache-demoapp:generateLocalDebugBuildConfig
+:dualcache-demoapp:generateLocalDebugResValues
+:dualcache-demoapp:generateLocalDebugResources
+:dualcache-demoapp:mergeLocalDebugResources
+:dualcache-demoapp:processLocalDebugManifest
+:dualcache-demoapp:processLocalDebugResources
+:dualcache-demoapp:generateLocalDebugSources
+:dualcache-demoapp:incrementalLocalDebugJavaCompilationSafeguard
+:dualcache-demoapp:compileLocalDebugJavaWithJavac
+:dualcache-demoapp:compileLocalDebugNdk UP-TO-DATE
+:dualcache-demoapp:compileLocalDebugSources
+:dualcache-demoapp:mergeLocalDebugShaders
+:dualcache-demoapp:compileLocalDebugShaders
+:dualcache-demoapp:generateLocalDebugAssets
+:dualcache-demoapp:mergeLocalDebugAssets
+:dualcache-demoapp:transformClassesWithDexForLocalDebug
+:dualcache-demoapp:mergeLocalDebugJniLibFolders
+:dualcache-demoapp:transformNative_libsWithMergeJniLibsForLocalDebug
+:dualcache-demoapp:processLocalDebugJavaRes UP-TO-DATE
+:dualcache-demoapp:transformResourcesWithMergeJavaResForLocalDebug
+:dualcache-demoapp:validateSigningLocalDebug
+:dualcache-demoapp:packageLocalDebug
+:dualcache-demoapp:assembleLocalDebug
+:dualcache-demoapp:checkRemoteDebugManifest
+:dualcache-demoapp:prepareRemoteDebugDependencies
+:dualcache-demoapp:compileRemoteDebugAidl
+:dualcache-demoapp:compileRemoteDebugRenderscript
+:dualcache-demoapp:generateRemoteDebugBuildConfig
+:dualcache-demoapp:generateRemoteDebugResValues
+:dualcache-demoapp:generateRemoteDebugResources
+:dualcache-demoapp:mergeRemoteDebugResources
+:dualcache-demoapp:processRemoteDebugManifest
+:dualcache-demoapp:processRemoteDebugResources
+:dualcache-demoapp:generateRemoteDebugSources
+:dualcache-demoapp:incrementalRemoteDebugJavaCompilationSafeguard
+:dualcache-demoapp:compileRemoteDebugJavaWithJavac
+:dualcache-demoapp:compileRemoteDebugNdk UP-TO-DATE
+:dualcache-demoapp:compileRemoteDebugSources
+:dualcache-demoapp:mergeRemoteDebugShaders
+:dualcache-demoapp:compileRemoteDebugShaders
+:dualcache-demoapp:generateRemoteDebugAssets
+:dualcache-demoapp:mergeRemoteDebugAssets
+:dualcache-demoapp:transformClassesWithDexForRemoteDebug
+:dualcache-demoapp:mergeRemoteDebugJniLibFolders
+:dualcache-demoapp:transformNative_libsWithMergeJniLibsForRemoteDebug
+:dualcache-demoapp:processRemoteDebugJavaRes UP-TO-DATE
+:dualcache-demoapp:transformResourcesWithMergeJavaResForRemoteDebug
+:dualcache-demoapp:validateSigningRemoteDebug
+:dualcache-demoapp:packageRemoteDebug
+:dualcache-demoapp:assembleRemoteDebug
+:dualcache-demoapp:assembleDebug
+:dualcache-demoapp:checkLocalProguardManifest
+:dualcache-demoapp:prepareLocalProguardDependencies
+:dualcache-demoapp:compileLocalProguardAidl
+:dualcache-demoapp:compileLocalProguardRenderscript
+:dualcache-demoapp:generateLocalProguardBuildConfig
+:dualcache-demoapp:generateLocalProguardResValues
+:dualcache-demoapp:generateLocalProguardResources
+:dualcache-demoapp:mergeLocalProguardResources
+:dualcache-demoapp:processLocalProguardManifest
+:dualcache-demoapp:processLocalProguardResources
+:dualcache-demoapp:generateLocalProguardSources
+:dualcache-demoapp:incrementalLocalProguardJavaCompilationSafeguard
+:dualcache-demoapp:compileLocalProguardJavaWithJavac
+:dualcache-demoapp:compileLocalProguardNdk UP-TO-DATE
+:dualcache-demoapp:compileLocalProguardSources
+:dualcache-demoapp:mergeLocalProguardShaders
+:dualcache-demoapp:compileLocalProguardShaders
+:dualcache-demoapp:generateLocalProguardAssets
+:dualcache-demoapp:mergeLocalProguardAssets
+:dualcache-demoapp:processLocalProguardJavaRes UP-TO-DATE
+:dualcache-demoapp:transformResourcesWithMergeJavaResForLocalProguard
+:dualcache-demoapp:transformClassesAndResourcesWithProguardForLocalProguard
+ProGuard, version 5.2.1
+Reading input...
+Reading program jar [/root/Applications/android-sdk/extras/android/m2repository/com/android/support/support-annotations/24.1.0/support-annotations-24.1.0.jar] (filtered)
+Reading program jar [/root/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.4.2/8e31266a272ad25ac4c089734d93e8d811652c1f/jackson-databind-2.4.2.jar] (filtered)
+Reading program jar [/root/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.4.0/d6a66c7a5f01cf500377bd669507a08cfeba882a/jackson-annotations-2.4.0.jar] (filtered)
+Reading program jar [/root/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife-annotations/8.4.0/ea392375cf9ff59234a82e7928a204215ccc98cd/butterknife-annotations-8.4.0.jar] (filtered)
+Reading program jar [/root/.gradle/caches/modules-2/files-2.1/com.jakewharton/disklrucache/2.0.2/93b399470e72c0bc8cb52379943b63c9aa586cd8/disklrucache-2.0.2.jar] (filtered)
+Reading program jar [/root/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.4.2/ceb72830d95c512b4b300a38f29febc85bdf6e4b/jackson-core-2.4.2.jar] (filtered)
+Reading program jar [/tmp/rdisk/1377/src/dualcache-master/dualcache-demoapp/build/intermediates/exploded-aar/com.jakewharton/butterknife/8.4.0/jars/classes.jar] (filtered)
+Reading program jar [/tmp/rdisk/1377/src/dualcache-master/dualcache-demoapp/build/intermediates/exploded-aar/com.vincentbrison.openlibraries.android/dualcache-library/3.1.1/jars/classes.jar] (filtered)
+Reading program jar [/tmp/rdisk/1377/src/dualcache-master/dualcache-serializerinterface/build/libs/dualcache-serializerinterface-3.1.1.jar] (filtered)
+Reading program jar [/tmp/rdisk/1377/src/dualcache-master/dualcache-jsonserializer/build/libs/dualcache-jsonserializer-3.1.1.jar] (filtered)
+Reading program directory [/tmp/rdisk/1377/src/dualcache-master/dualcache-demoapp/build/intermediates/transforms/mergeJavaRes/local/proguard/folders/2/1f/main] (filtered)
+Reading program directory [/tmp/rdisk/1377/src/dualcache-master/dualcache-demoapp/build/intermediates/classes/local/proguard] (filtered)
+Reading library jar [/root/Applications/android-sdk/platforms/android-25/android.jar]
+Reading library jar [/root/Applications/android-sdk/platforms/android-25/optional/org.apache.http.legacy.jar]
+Note: duplicate definition of library class [android.net.http.HttpResponseCache]
+Note: duplicate definition of library class [android.net.http.SslCertificate$DName]
+Note: duplicate definition of library class [android.net.http.SslError]
+Note: duplicate definition of library class [android.net.http.SslCertificate]
+Note: duplicate definition of library class [org.apache.http.params.CoreConnectionPNames]
+Note: duplicate definition of library class [org.apache.http.params.HttpConnectionParams]
+Note: duplicate definition of library class [org.apache.http.params.HttpParams]
+Note: duplicate definition of library class [org.apache.http.conn.scheme.SocketFactory]
+Note: duplicate definition of library class [org.apache.http.conn.scheme.LayeredSocketFactory]
+Note: duplicate definition of library class [org.apache.http.conn.scheme.HostNameResolver]
+Note: duplicate definition of library class [org.apache.http.conn.ConnectTimeoutException]
+Note: there were 11 duplicate class definitions.
+      (http://proguard.sourceforge.net/manual/troubleshooting.html#duplicateclass)
+Initializing...
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.core.ObjectCodec { java.lang.Object readValue(com.fasterxml.jackson.core.JsonParser,java.lang.Class); }', but not the descriptor class 'com.fasterxml.jackson.core.JsonParser'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.core.ObjectCodec { java.lang.Object readValue(com.fasterxml.jackson.core.JsonParser,com.fasterxml.jackson.core.type.TypeReference); }', but not the descriptor class 'com.fasterxml.jackson.core.JsonParser'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.core.ObjectCodec { java.lang.Object readValue(com.fasterxml.jackson.core.JsonParser,com.fasterxml.jackson.core.type.TypeReference); }', but not the descriptor class 'com.fasterxml.jackson.core.type.TypeReference'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.core.ObjectCodec { java.lang.Object readValue(com.fasterxml.jackson.core.JsonParser,com.fasterxml.jackson.core.type.ResolvedType); }', but not the descriptor class 'com.fasterxml.jackson.core.JsonParser'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.core.ObjectCodec { java.lang.Object readValue(com.fasterxml.jackson.core.JsonParser,com.fasterxml.jackson.core.type.ResolvedType); }', but not the descriptor class 'com.fasterxml.jackson.core.type.ResolvedType'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.core.ObjectCodec { java.util.Iterator readValues(com.fasterxml.jackson.core.JsonParser,java.lang.Class); }', but not the descriptor class 'com.fasterxml.jackson.core.JsonParser'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.core.ObjectCodec { java.util.Iterator readValues(com.fasterxml.jackson.core.JsonParser,com.fasterxml.jackson.core.type.TypeReference); }', but not the descriptor class 'com.fasterxml.jackson.core.JsonParser'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.core.ObjectCodec { java.util.Iterator readValues(com.fasterxml.jackson.core.JsonParser,com.fasterxml.jackson.core.type.TypeReference); }', but not the descriptor class 'com.fasterxml.jackson.core.type.TypeReference'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.core.ObjectCodec { java.util.Iterator readValues(com.fasterxml.jackson.core.JsonParser,com.fasterxml.jackson.core.type.ResolvedType); }', but not the descriptor class 'com.fasterxml.jackson.core.JsonParser'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.core.ObjectCodec { java.util.Iterator readValues(com.fasterxml.jackson.core.JsonParser,com.fasterxml.jackson.core.type.ResolvedType); }', but not the descriptor class 'com.fasterxml.jackson.core.type.ResolvedType'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.core.ObjectCodec { void writeValue(com.fasterxml.jackson.core.JsonGenerator,java.lang.Object); }', but not the descriptor class 'com.fasterxml.jackson.core.JsonGenerator'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.core.ObjectCodec { com.fasterxml.jackson.core.TreeNode readTree(com.fasterxml.jackson.core.JsonParser); }', but not the descriptor class 'com.fasterxml.jackson.core.JsonParser'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.core.ObjectCodec { void writeTree(com.fasterxml.jackson.core.JsonGenerator,com.fasterxml.jackson.core.TreeNode); }', but not the descriptor class 'com.fasterxml.jackson.core.JsonGenerator'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.core.ObjectCodec { void writeTree(com.fasterxml.jackson.core.JsonGenerator,com.fasterxml.jackson.core.TreeNode); }', but not the descriptor class 'com.fasterxml.jackson.core.TreeNode'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.core.ObjectCodec { com.fasterxml.jackson.core.JsonParser treeAsTokens(com.fasterxml.jackson.core.TreeNode); }', but not the descriptor class 'com.fasterxml.jackson.core.TreeNode'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.core.ObjectCodec { java.lang.Object treeToValue(com.fasterxml.jackson.core.TreeNode,java.lang.Class); }', but not the descriptor class 'com.fasterxml.jackson.core.TreeNode'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.core.TreeCodec { com.fasterxml.jackson.core.TreeNode readTree(com.fasterxml.jackson.core.JsonParser); }', but not the descriptor class 'com.fasterxml.jackson.core.JsonParser'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.core.TreeCodec { void writeTree(com.fasterxml.jackson.core.JsonGenerator,com.fasterxml.jackson.core.TreeNode); }', but not the descriptor class 'com.fasterxml.jackson.core.JsonGenerator'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.core.TreeCodec { void writeTree(com.fasterxml.jackson.core.JsonGenerator,com.fasterxml.jackson.core.TreeNode); }', but not the descriptor class 'com.fasterxml.jackson.core.TreeNode'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.core.TreeCodec { com.fasterxml.jackson.core.JsonParser treeAsTokens(com.fasterxml.jackson.core.TreeNode); }', but not the descriptor class 'com.fasterxml.jackson.core.TreeNode'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { ObjectMapper(com.fasterxml.jackson.core.JsonFactory); }', but not the descriptor class 'com.fasterxml.jackson.core.JsonFactory'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { ObjectMapper(com.fasterxml.jackson.core.JsonFactory,com.fasterxml.jackson.databind.ser.DefaultSerializerProvider,com.fasterxml.jackson.databind.deser.DefaultDeserializationContext); }', but not the descriptor class 'com.fasterxml.jackson.core.JsonFactory'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { ObjectMapper(com.fasterxml.jackson.core.JsonFactory,com.fasterxml.jackson.databind.ser.DefaultSerializerProvider,com.fasterxml.jackson.databind.deser.DefaultDeserializationContext); }', but not the descriptor class 'com.fasterxml.jackson.databind.ser.DefaultSerializerProvider'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { ObjectMapper(com.fasterxml.jackson.core.JsonFactory,com.fasterxml.jackson.databind.ser.DefaultSerializerProvider,com.fasterxml.jackson.databind.deser.DefaultDeserializationContext); }', but not the descriptor class 'com.fasterxml.jackson.databind.deser.DefaultDeserializationContext'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { com.fasterxml.jackson.databind.ObjectMapper registerModule(com.fasterxml.jackson.databind.Module); }', but not the descriptor class 'com.fasterxml.jackson.databind.Module'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { com.fasterxml.jackson.databind.ObjectMapper registerModules(com.fasterxml.jackson.databind.Module[]); }', but not the descriptor class 'com.fasterxml.jackson.databind.Module'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { com.fasterxml.jackson.databind.ObjectMapper setSerializerFactory(com.fasterxml.jackson.databind.ser.SerializerFactory); }', but not the descriptor class 'com.fasterxml.jackson.databind.ser.SerializerFactory'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { com.fasterxml.jackson.databind.ObjectMapper setSerializerProvider(com.fasterxml.jackson.databind.ser.DefaultSerializerProvider); }', but not the descriptor class 'com.fasterxml.jackson.databind.ser.DefaultSerializerProvider'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { void setVisibilityChecker(com.fasterxml.jackson.databind.introspect.VisibilityChecker); }', but not the descriptor class 'com.fasterxml.jackson.databind.introspect.VisibilityChecker'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { com.fasterxml.jackson.databind.ObjectMapper setSubtypeResolver(com.fasterxml.jackson.databind.jsontype.SubtypeResolver); }', but not the descriptor class 'com.fasterxml.jackson.databind.jsontype.SubtypeResolver'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { com.fasterxml.jackson.databind.ObjectMapper setAnnotationIntrospector(com.fasterxml.jackson.databind.AnnotationIntrospector); }', but not the descriptor class 'com.fasterxml.jackson.databind.AnnotationIntrospector'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { com.fasterxml.jackson.databind.ObjectMapper setAnnotationIntrospectors(com.fasterxml.jackson.databind.AnnotationIntrospector,com.fasterxml.jackson.databind.AnnotationIntrospector); }', but not the descriptor class 'com.fasterxml.jackson.databind.AnnotationIntrospector'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { com.fasterxml.jackson.databind.ObjectMapper setAnnotationIntrospectors(com.fasterxml.jackson.databind.AnnotationIntrospector,com.fasterxml.jackson.databind.AnnotationIntrospector); }', but not the descriptor class 'com.fasterxml.jackson.databind.AnnotationIntrospector'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { com.fasterxml.jackson.databind.ObjectMapper setPropertyNamingStrategy(com.fasterxml.jackson.databind.PropertyNamingStrategy); }', but not the descriptor class 'com.fasterxml.jackson.databind.PropertyNamingStrategy'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { com.fasterxml.jackson.databind.ObjectMapper enableDefaultTyping(com.fasterxml.jackson.databind.ObjectMapper$DefaultTyping); }', but not the descriptor class 'com.fasterxml.jackson.databind.ObjectMapper$DefaultTyping'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { com.fasterxml.jackson.databind.ObjectMapper enableDefaultTyping(com.fasterxml.jackson.databind.ObjectMapper$DefaultTyping,com.fasterxml.jackson.annotation.JsonTypeInfo$As); }', but not the descriptor class 'com.fasterxml.jackson.databind.ObjectMapper$DefaultTyping'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { com.fasterxml.jackson.databind.ObjectMapper enableDefaultTypingAsProperty(com.fasterxml.jackson.databind.ObjectMapper$DefaultTyping,java.lang.String); }', but not the descriptor class 'com.fasterxml.jackson.databind.ObjectMapper$DefaultTyping'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { com.fasterxml.jackson.databind.ObjectMapper setDefaultTyping(com.fasterxml.jackson.databind.jsontype.TypeResolverBuilder); }', but not the descriptor class 'com.fasterxml.jackson.databind.jsontype.TypeResolverBuilder'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { void registerSubtypes(com.fasterxml.jackson.databind.jsontype.NamedType[]); }', but not the descriptor class 'com.fasterxml.jackson.databind.jsontype.NamedType'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { com.fasterxml.jackson.databind.ObjectMapper setTypeFactory(com.fasterxml.jackson.databind.type.TypeFactory); }', but not the descriptor class 'com.fasterxml.jackson.databind.type.TypeFactory'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { com.fasterxml.jackson.databind.ObjectMapper setNodeFactory(com.fasterxml.jackson.databind.node.JsonNodeFactory); }', but not the descriptor class 'com.fasterxml.jackson.databind.node.JsonNodeFactory'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { com.fasterxml.jackson.databind.ObjectMapper addHandler(com.fasterxml.jackson.databind.deser.DeserializationProblemHandler); }', but not the descriptor class 'com.fasterxml.jackson.databind.deser.DeserializationProblemHandler'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { com.fasterxml.jackson.databind.ObjectMapper setConfig(com.fasterxml.jackson.databind.DeserializationConfig); }', but not the descriptor class 'com.fasterxml.jackson.databind.DeserializationConfig'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { void setFilters(com.fasterxml.jackson.databind.ser.FilterProvider); }', but not the descriptor class 'com.fasterxml.jackson.databind.ser.FilterProvider'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { com.fasterxml.jackson.databind.ObjectMapper setBase64Variant(com.fasterxml.jackson.core.Base64Variant); }', but not the descriptor class 'com.fasterxml.jackson.core.Base64Variant'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { com.fasterxml.jackson.databind.ObjectMapper setConfig(com.fasterxml.jackson.databind.SerializationConfig); }', but not the descriptor class 'com.fasterxml.jackson.databind.SerializationConfig'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { java.lang.Object setHandlerInstantiator(com.fasterxml.jackson.databind.cfg.HandlerInstantiator); }', but not the descriptor class 'com.fasterxml.jackson.databind.cfg.HandlerInstantiator'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { com.fasterxml.jackson.databind.ObjectMapper setInjectableValues(com.fasterxml.jackson.databind.InjectableValues); }', but not the descriptor class 'com.fasterxml.jackson.databind.InjectableValues'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { com.fasterxml.jackson.databind.ObjectMapper configure(com.fasterxml.jackson.databind.MapperFeature,boolean); }', but not the descriptor class 'com.fasterxml.jackson.databind.MapperFeature'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { com.fasterxml.jackson.databind.ObjectMapper configure(com.fasterxml.jackson.databind.SerializationFeature,boolean); }', but not the descriptor class 'com.fasterxml.jackson.databind.SerializationFeature'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { com.fasterxml.jackson.databind.ObjectMapper configure(com.fasterxml.jackson.databind.DeserializationFeature,boolean); }', but not the descriptor class 'com.fasterxml.jackson.databind.DeserializationFeature'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { com.fasterxml.jackson.databind.ObjectMapper configure(com.fasterxml.jackson.core.JsonParser$Feature,boolean); }', but not the descriptor class 'com.fasterxml.jackson.core.JsonParser$Feature'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { com.fasterxml.jackson.databind.ObjectMapper configure(com.fasterxml.jackson.core.JsonGenerator$Feature,boolean); }', but not the descriptor class 'com.fasterxml.jackson.core.JsonGenerator$Feature'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { com.fasterxml.jackson.databind.ObjectMapper enable(com.fasterxml.jackson.databind.MapperFeature[]); }', but not the descriptor class 'com.fasterxml.jackson.databind.MapperFeature'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { com.fasterxml.jackson.databind.ObjectMapper disable(com.fasterxml.jackson.databind.MapperFeature[]); }', but not the descriptor class 'com.fasterxml.jackson.databind.MapperFeature'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { com.fasterxml.jackson.databind.ObjectMapper enable(com.fasterxml.jackson.databind.DeserializationFeature); }', but not the descriptor class 'com.fasterxml.jackson.databind.DeserializationFeature'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { com.fasterxml.jackson.databind.ObjectMapper enable(com.fasterxml.jackson.databind.DeserializationFeature,com.fasterxml.jackson.databind.DeserializationFeature[]); }', but not the descriptor class 'com.fasterxml.jackson.databind.DeserializationFeature'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { com.fasterxml.jackson.databind.ObjectMapper enable(com.fasterxml.jackson.databind.DeserializationFeature,com.fasterxml.jackson.databind.DeserializationFeature[]); }', but not the descriptor class 'com.fasterxml.jackson.databind.DeserializationFeature'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { com.fasterxml.jackson.databind.ObjectMapper disable(com.fasterxml.jackson.databind.DeserializationFeature); }', but not the descriptor class 'com.fasterxml.jackson.databind.DeserializationFeature'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { com.fasterxml.jackson.databind.ObjectMapper disable(com.fasterxml.jackson.databind.DeserializationFeature,com.fasterxml.jackson.databind.DeserializationFeature[]); }', but not the descriptor class 'com.fasterxml.jackson.databind.DeserializationFeature'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { com.fasterxml.jackson.databind.ObjectMapper disable(com.fasterxml.jackson.databind.DeserializationFeature,com.fasterxml.jackson.databind.DeserializationFeature[]); }', but not the descriptor class 'com.fasterxml.jackson.databind.DeserializationFeature'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { com.fasterxml.jackson.databind.ObjectMapper enable(com.fasterxml.jackson.databind.SerializationFeature); }', but not the descriptor class 'com.fasterxml.jackson.databind.SerializationFeature'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { com.fasterxml.jackson.databind.ObjectMapper enable(com.fasterxml.jackson.databind.SerializationFeature,com.fasterxml.jackson.databind.SerializationFeature[]); }', but not the descriptor class 'com.fasterxml.jackson.databind.SerializationFeature'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { com.fasterxml.jackson.databind.ObjectMapper enable(com.fasterxml.jackson.databind.SerializationFeature,com.fasterxml.jackson.databind.SerializationFeature[]); }', but not the descriptor class 'com.fasterxml.jackson.databind.SerializationFeature'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { com.fasterxml.jackson.databind.ObjectMapper disable(com.fasterxml.jackson.databind.SerializationFeature); }', but not the descriptor class 'com.fasterxml.jackson.databind.SerializationFeature'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { com.fasterxml.jackson.databind.ObjectMapper disable(com.fasterxml.jackson.databind.SerializationFeature,com.fasterxml.jackson.databind.SerializationFeature[]); }', but not the descriptor class 'com.fasterxml.jackson.databind.SerializationFeature'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { com.fasterxml.jackson.databind.ObjectMapper disable(com.fasterxml.jackson.databind.SerializationFeature,com.fasterxml.jackson.databind.SerializationFeature[]); }', but not the descriptor class 'com.fasterxml.jackson.databind.SerializationFeature'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { boolean isEnabled(com.fasterxml.jackson.databind.MapperFeature); }', but not the descriptor class 'com.fasterxml.jackson.databind.MapperFeature'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { boolean isEnabled(com.fasterxml.jackson.databind.SerializationFeature); }', but not the descriptor class 'com.fasterxml.jackson.databind.SerializationFeature'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { boolean isEnabled(com.fasterxml.jackson.databind.DeserializationFeature); }', but not the descriptor class 'com.fasterxml.jackson.databind.DeserializationFeature'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { boolean isEnabled(com.fasterxml.jackson.core.JsonFactory$Feature); }', but not the descriptor class 'com.fasterxml.jackson.core.JsonFactory$Feature'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { boolean isEnabled(com.fasterxml.jackson.core.JsonParser$Feature); }', but not the descriptor class 'com.fasterxml.jackson.core.JsonParser$Feature'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { boolean isEnabled(com.fasterxml.jackson.core.JsonGenerator$Feature); }', but not the descriptor class 'com.fasterxml.jackson.core.JsonGenerator$Feature'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { java.lang.Object readValue(com.fasterxml.jackson.core.JsonParser,java.lang.Class); }', but not the descriptor class 'com.fasterxml.jackson.core.JsonParser'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { java.lang.Object readValue(com.fasterxml.jackson.core.JsonParser,com.fasterxml.jackson.core.type.TypeReference); }', but not the descriptor class 'com.fasterxml.jackson.core.JsonParser'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { java.lang.Object readValue(com.fasterxml.jackson.core.JsonParser,com.fasterxml.jackson.core.type.TypeReference); }', but not the descriptor class 'com.fasterxml.jackson.core.type.TypeReference'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { java.lang.Object readValue(com.fasterxml.jackson.core.JsonParser,com.fasterxml.jackson.core.type.ResolvedType); }', but not the descriptor class 'com.fasterxml.jackson.core.JsonParser'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { java.lang.Object readValue(com.fasterxml.jackson.core.JsonParser,com.fasterxml.jackson.core.type.ResolvedType); }', but not the descriptor class 'com.fasterxml.jackson.core.type.ResolvedType'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { java.lang.Object readValue(com.fasterxml.jackson.core.JsonParser,com.fasterxml.jackson.databind.JavaType); }', but not the descriptor class 'com.fasterxml.jackson.core.JsonParser'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { java.lang.Object readValue(com.fasterxml.jackson.core.JsonParser,com.fasterxml.jackson.databind.JavaType); }', but not the descriptor class 'com.fasterxml.jackson.databind.JavaType'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { com.fasterxml.jackson.core.TreeNode readTree(com.fasterxml.jackson.core.JsonParser); }', but not the descriptor class 'com.fasterxml.jackson.core.JsonParser'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { com.fasterxml.jackson.databind.MappingIterator readValues(com.fasterxml.jackson.core.JsonParser,com.fasterxml.jackson.core.type.ResolvedType); }', but not the descriptor class 'com.fasterxml.jackson.core.JsonParser'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { com.fasterxml.jackson.databind.MappingIterator readValues(com.fasterxml.jackson.core.JsonParser,com.fasterxml.jackson.core.type.ResolvedType); }', but not the descriptor class 'com.fasterxml.jackson.core.type.ResolvedType'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { com.fasterxml.jackson.databind.MappingIterator readValues(com.fasterxml.jackson.core.JsonParser,com.fasterxml.jackson.databind.JavaType); }', but not the descriptor class 'com.fasterxml.jackson.core.JsonParser'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { com.fasterxml.jackson.databind.MappingIterator readValues(com.fasterxml.jackson.core.JsonParser,com.fasterxml.jackson.databind.JavaType); }', but not the descriptor class 'com.fasterxml.jackson.databind.JavaType'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { com.fasterxml.jackson.databind.MappingIterator readValues(com.fasterxml.jackson.core.JsonParser,java.lang.Class); }', but not the descriptor class 'com.fasterxml.jackson.core.JsonParser'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { com.fasterxml.jackson.databind.MappingIterator readValues(com.fasterxml.jackson.core.JsonParser,com.fasterxml.jackson.core.type.TypeReference); }', but not the descriptor class 'com.fasterxml.jackson.core.JsonParser'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { com.fasterxml.jackson.databind.MappingIterator readValues(com.fasterxml.jackson.core.JsonParser,com.fasterxml.jackson.core.type.TypeReference); }', but not the descriptor class 'com.fasterxml.jackson.core.type.TypeReference'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { void writeValue(com.fasterxml.jackson.core.JsonGenerator,java.lang.Object); }', but not the descriptor class 'com.fasterxml.jackson.core.JsonGenerator'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { void writeTree(com.fasterxml.jackson.core.JsonGenerator,com.fasterxml.jackson.core.TreeNode); }', but not the descriptor class 'com.fasterxml.jackson.core.JsonGenerator'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { void writeTree(com.fasterxml.jackson.core.JsonGenerator,com.fasterxml.jackson.core.TreeNode); }', but not the descriptor class 'com.fasterxml.jackson.core.TreeNode'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { void writeTree(com.fasterxml.jackson.core.JsonGenerator,com.fasterxml.jackson.databind.JsonNode); }', but not the descriptor class 'com.fasterxml.jackson.core.JsonGenerator'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { void writeTree(com.fasterxml.jackson.core.JsonGenerator,com.fasterxml.jackson.databind.JsonNode); }', but not the descriptor class 'com.fasterxml.jackson.databind.JsonNode'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { com.fasterxml.jackson.core.JsonParser treeAsTokens(com.fasterxml.jackson.core.TreeNode); }', but not the descriptor class 'com.fasterxml.jackson.core.TreeNode'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { java.lang.Object treeToValue(com.fasterxml.jackson.core.TreeNode,java.lang.Class); }', but not the descriptor class 'com.fasterxml.jackson.core.TreeNode'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { boolean canDeserialize(com.fasterxml.jackson.databind.JavaType); }', but not the descriptor class 'com.fasterxml.jackson.databind.JavaType'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { boolean canDeserialize(com.fasterxml.jackson.databind.JavaType,java.util.concurrent.atomic.AtomicReference); }', but not the descriptor class 'com.fasterxml.jackson.databind.JavaType'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { java.lang.Object readValue(java.io.File,com.fasterxml.jackson.core.type.TypeReference); }', but not the descriptor class 'com.fasterxml.jackson.core.type.TypeReference'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { java.lang.Object readValue(java.io.File,com.fasterxml.jackson.databind.JavaType); }', but not the descriptor class 'com.fasterxml.jackson.databind.JavaType'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { java.lang.Object readValue(java.net.URL,com.fasterxml.jackson.core.type.TypeReference); }', but not the descriptor class 'com.fasterxml.jackson.core.type.TypeReference'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { java.lang.Object readValue(java.net.URL,com.fasterxml.jackson.databind.JavaType); }', but not the descriptor class 'com.fasterxml.jackson.databind.JavaType'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { java.lang.Object readValue(java.lang.String,com.fasterxml.jackson.core.type.TypeReference); }', but not the descriptor class 'com.fasterxml.jackson.core.type.TypeReference'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { java.lang.Object readValue(java.lang.String,com.fasterxml.jackson.databind.JavaType); }', but not the descriptor class 'com.fasterxml.jackson.databind.JavaType'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { java.lang.Object readValue(java.io.Reader,com.fasterxml.jackson.core.type.TypeReference); }', but not the descriptor class 'com.fasterxml.jackson.core.type.TypeReference'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { java.lang.Object readValue(java.io.Reader,com.fasterxml.jackson.databind.JavaType); }', but not the descriptor class 'com.fasterxml.jackson.databind.JavaType'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { java.lang.Object readValue(java.io.InputStream,com.fasterxml.jackson.core.type.TypeReference); }', but not the descriptor class 'com.fasterxml.jackson.core.type.TypeReference'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { java.lang.Object readValue(java.io.InputStream,com.fasterxml.jackson.databind.JavaType); }', but not the descriptor class 'com.fasterxml.jackson.databind.JavaType'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { java.lang.Object readValue(byte[],com.fasterxml.jackson.core.type.TypeReference); }', but not the descriptor class 'com.fasterxml.jackson.core.type.TypeReference'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { java.lang.Object readValue(byte[],int,int,com.fasterxml.jackson.core.type.TypeReference); }', but not the descriptor class 'com.fasterxml.jackson.core.type.TypeReference'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { java.lang.Object readValue(byte[],com.fasterxml.jackson.databind.JavaType); }', but not the descriptor class 'com.fasterxml.jackson.databind.JavaType'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { java.lang.Object readValue(byte[],int,int,com.fasterxml.jackson.databind.JavaType); }', but not the descriptor class 'com.fasterxml.jackson.databind.JavaType'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { com.fasterxml.jackson.databind.ObjectWriter writer(com.fasterxml.jackson.databind.SerializationFeature); }', but not the descriptor class 'com.fasterxml.jackson.databind.SerializationFeature'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { com.fasterxml.jackson.databind.ObjectWriter writer(com.fasterxml.jackson.databind.SerializationFeature,com.fasterxml.jackson.databind.SerializationFeature[]); }', but not the descriptor class 'com.fasterxml.jackson.databind.SerializationFeature'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { com.fasterxml.jackson.databind.ObjectWriter writer(com.fasterxml.jackson.databind.SerializationFeature,com.fasterxml.jackson.databind.SerializationFeature[]); }', but not the descriptor class 'com.fasterxml.jackson.databind.SerializationFeature'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { com.fasterxml.jackson.databind.ObjectWriter writerWithType(com.fasterxml.jackson.core.type.TypeReference); }', but not the descriptor class 'com.fasterxml.jackson.core.type.TypeReference'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { com.fasterxml.jackson.databind.ObjectWriter writerWithType(com.fasterxml.jackson.databind.JavaType); }', but not the descriptor class 'com.fasterxml.jackson.databind.JavaType'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { com.fasterxml.jackson.databind.ObjectWriter writer(com.fasterxml.jackson.core.PrettyPrinter); }', but not the descriptor class 'com.fasterxml.jackson.core.PrettyPrinter'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { com.fasterxml.jackson.databind.ObjectWriter writer(com.fasterxml.jackson.databind.ser.FilterProvider); }', but not the descriptor class 'com.fasterxml.jackson.databind.ser.FilterProvider'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { com.fasterxml.jackson.databind.ObjectWriter writer(com.fasterxml.jackson.core.FormatSchema); }', but not the descriptor class 'com.fasterxml.jackson.core.FormatSchema'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { com.fasterxml.jackson.databind.ObjectWriter writer(com.fasterxml.jackson.core.Base64Variant); }', but not the descriptor class 'com.fasterxml.jackson.core.Base64Variant'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { com.fasterxml.jackson.databind.ObjectWriter writer(com.fasterxml.jackson.core.io.CharacterEscapes); }', but not the descriptor class 'com.fasterxml.jackson.core.io.CharacterEscapes'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { com.fasterxml.jackson.databind.ObjectWriter writer(com.fasterxml.jackson.databind.cfg.ContextAttributes); }', but not the descriptor class 'com.fasterxml.jackson.databind.cfg.ContextAttributes'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { com.fasterxml.jackson.databind.ObjectReader reader(com.fasterxml.jackson.databind.DeserializationFeature); }', but not the descriptor class 'com.fasterxml.jackson.databind.DeserializationFeature'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { com.fasterxml.jackson.databind.ObjectReader reader(com.fasterxml.jackson.databind.DeserializationFeature,com.fasterxml.jackson.databind.DeserializationFeature[]); }', but not the descriptor class 'com.fasterxml.jackson.databind.DeserializationFeature'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { com.fasterxml.jackson.databind.ObjectReader reader(com.fasterxml.jackson.databind.DeserializationFeature,com.fasterxml.jackson.databind.DeserializationFeature[]); }', but not the descriptor class 'com.fasterxml.jackson.databind.DeserializationFeature'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { com.fasterxml.jackson.databind.ObjectReader reader(com.fasterxml.jackson.databind.JavaType); }', but not the descriptor class 'com.fasterxml.jackson.databind.JavaType'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { com.fasterxml.jackson.databind.ObjectReader reader(com.fasterxml.jackson.core.type.TypeReference); }', but not the descriptor class 'com.fasterxml.jackson.core.type.TypeReference'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { com.fasterxml.jackson.databind.ObjectReader reader(com.fasterxml.jackson.databind.node.JsonNodeFactory); }', but not the descriptor class 'com.fasterxml.jackson.databind.node.JsonNodeFactory'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { com.fasterxml.jackson.databind.ObjectReader reader(com.fasterxml.jackson.core.FormatSchema); }', but not the descriptor class 'com.fasterxml.jackson.core.FormatSchema'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { com.fasterxml.jackson.databind.ObjectReader reader(com.fasterxml.jackson.databind.InjectableValues); }', but not the descriptor class 'com.fasterxml.jackson.databind.InjectableValues'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { com.fasterxml.jackson.databind.ObjectReader reader(com.fasterxml.jackson.core.Base64Variant); }', but not the descriptor class 'com.fasterxml.jackson.core.Base64Variant'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { com.fasterxml.jackson.databind.ObjectReader reader(com.fasterxml.jackson.databind.cfg.ContextAttributes); }', but not the descriptor class 'com.fasterxml.jackson.databind.cfg.ContextAttributes'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { java.lang.Object convertValue(java.lang.Object,com.fasterxml.jackson.core.type.TypeReference); }', but not the descriptor class 'com.fasterxml.jackson.core.type.TypeReference'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { java.lang.Object convertValue(java.lang.Object,com.fasterxml.jackson.databind.JavaType); }', but not the descriptor class 'com.fasterxml.jackson.databind.JavaType'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { java.lang.Object _convert(java.lang.Object,com.fasterxml.jackson.databind.JavaType); }', but not the descriptor class 'com.fasterxml.jackson.databind.JavaType'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { void acceptJsonFormatVisitor(java.lang.Class,com.fasterxml.jackson.databind.jsonFormatVisitors.JsonFormatVisitorWrapper); }', but not the descriptor class 'com.fasterxml.jackson.databind.jsonFormatVisitors.JsonFormatVisitorWrapper'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { void acceptJsonFormatVisitor(com.fasterxml.jackson.databind.JavaType,com.fasterxml.jackson.databind.jsonFormatVisitors.JsonFormatVisitorWrapper); }', but not the descriptor class 'com.fasterxml.jackson.databind.JavaType'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { void acceptJsonFormatVisitor(com.fasterxml.jackson.databind.JavaType,com.fasterxml.jackson.databind.jsonFormatVisitors.JsonFormatVisitorWrapper); }', but not the descriptor class 'com.fasterxml.jackson.databind.jsonFormatVisitors.JsonFormatVisitorWrapper'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { com.fasterxml.jackson.databind.ser.DefaultSerializerProvider _serializerProvider(com.fasterxml.jackson.databind.SerializationConfig); }', but not the descriptor class 'com.fasterxml.jackson.databind.SerializationConfig'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { void _configAndWriteValue(com.fasterxml.jackson.core.JsonGenerator,java.lang.Object); }', but not the descriptor class 'com.fasterxml.jackson.core.JsonGenerator'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { void _configAndWriteValue(com.fasterxml.jackson.core.JsonGenerator,java.lang.Object,java.lang.Class); }', but not the descriptor class 'com.fasterxml.jackson.core.JsonGenerator'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { com.fasterxml.jackson.databind.deser.DefaultDeserializationContext createDeserializationContext(com.fasterxml.jackson.core.JsonParser,com.fasterxml.jackson.databind.DeserializationConfig); }', but not the descriptor class 'com.fasterxml.jackson.core.JsonParser'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { com.fasterxml.jackson.databind.deser.DefaultDeserializationContext createDeserializationContext(com.fasterxml.jackson.core.JsonParser,com.fasterxml.jackson.databind.DeserializationConfig); }', but not the descriptor class 'com.fasterxml.jackson.databind.DeserializationConfig'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { java.lang.Object _readValue(com.fasterxml.jackson.databind.DeserializationConfig,com.fasterxml.jackson.core.JsonParser,com.fasterxml.jackson.databind.JavaType); }', but not the descriptor class 'com.fasterxml.jackson.databind.DeserializationConfig'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { java.lang.Object _readValue(com.fasterxml.jackson.databind.DeserializationConfig,com.fasterxml.jackson.core.JsonParser,com.fasterxml.jackson.databind.JavaType); }', but not the descriptor class 'com.fasterxml.jackson.core.JsonParser'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { java.lang.Object _readValue(com.fasterxml.jackson.databind.DeserializationConfig,com.fasterxml.jackson.core.JsonParser,com.fasterxml.jackson.databind.JavaType); }', but not the descriptor class 'com.fasterxml.jackson.databind.JavaType'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { java.lang.Object _readMapAndClose(com.fasterxml.jackson.core.JsonParser,com.fasterxml.jackson.databind.JavaType); }', but not the descriptor class 'com.fasterxml.jackson.core.JsonParser'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { java.lang.Object _readMapAndClose(com.fasterxml.jackson.core.JsonParser,com.fasterxml.jackson.databind.JavaType); }', but not the descriptor class 'com.fasterxml.jackson.databind.JavaType'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { com.fasterxml.jackson.core.JsonToken _initForReading(com.fasterxml.jackson.core.JsonParser); }', but not the descriptor class 'com.fasterxml.jackson.core.JsonParser'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { java.lang.Object _unwrapAndDeserialize(com.fasterxml.jackson.core.JsonParser,com.fasterxml.jackson.databind.DeserializationContext,com.fasterxml.jackson.databind.DeserializationConfig,com.fasterxml.jackson.databind.JavaType,com.fasterxml.jackson.databind.JsonDeserializer); }', but not the descriptor class 'com.fasterxml.jackson.core.JsonParser'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { java.lang.Object _unwrapAndDeserialize(com.fasterxml.jackson.core.JsonParser,com.fasterxml.jackson.databind.DeserializationContext,com.fasterxml.jackson.databind.DeserializationConfig,com.fasterxml.jackson.databind.JavaType,com.fasterxml.jackson.databind.JsonDeserializer); }', but not the descriptor class 'com.fasterxml.jackson.databind.DeserializationContext'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { java.lang.Object _unwrapAndDeserialize(com.fasterxml.jackson.core.JsonParser,com.fasterxml.jackson.databind.DeserializationContext,com.fasterxml.jackson.databind.DeserializationConfig,com.fasterxml.jackson.databind.JavaType,com.fasterxml.jackson.databind.JsonDeserializer); }', but not the descriptor class 'com.fasterxml.jackson.databind.DeserializationConfig'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { java.lang.Object _unwrapAndDeserialize(com.fasterxml.jackson.core.JsonParser,com.fasterxml.jackson.databind.DeserializationContext,com.fasterxml.jackson.databind.DeserializationConfig,com.fasterxml.jackson.databind.JavaType,com.fasterxml.jackson.databind.JsonDeserializer); }', but not the descriptor class 'com.fasterxml.jackson.databind.JavaType'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { java.lang.Object _unwrapAndDeserialize(com.fasterxml.jackson.core.JsonParser,com.fasterxml.jackson.databind.DeserializationContext,com.fasterxml.jackson.databind.DeserializationConfig,com.fasterxml.jackson.databind.JavaType,com.fasterxml.jackson.databind.JsonDeserializer); }', but not the descriptor class 'com.fasterxml.jackson.databind.JsonDeserializer'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { com.fasterxml.jackson.databind.JsonDeserializer _findRootDeserializer(com.fasterxml.jackson.databind.DeserializationContext,com.fasterxml.jackson.databind.JavaType); }', but not the descriptor class 'com.fasterxml.jackson.databind.DeserializationContext'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { com.fasterxml.jackson.databind.JsonDeserializer _findRootDeserializer(com.fasterxml.jackson.databind.DeserializationContext,com.fasterxml.jackson.databind.JavaType); }', but not the descriptor class 'com.fasterxml.jackson.databind.JavaType'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { void _verifySchemaType(com.fasterxml.jackson.core.FormatSchema); }', but not the descriptor class 'com.fasterxml.jackson.core.FormatSchema'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { java.util.Iterator readValues(com.fasterxml.jackson.core.JsonParser,com.fasterxml.jackson.core.type.ResolvedType); }', but not the descriptor class 'com.fasterxml.jackson.core.JsonParser'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { java.util.Iterator readValues(com.fasterxml.jackson.core.JsonParser,com.fasterxml.jackson.core.type.ResolvedType); }', but not the descriptor class 'com.fasterxml.jackson.core.type.ResolvedType'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { java.util.Iterator readValues(com.fasterxml.jackson.core.JsonParser,com.fasterxml.jackson.core.type.TypeReference); }', but not the descriptor class 'com.fasterxml.jackson.core.JsonParser'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { java.util.Iterator readValues(com.fasterxml.jackson.core.JsonParser,com.fasterxml.jackson.core.type.TypeReference); }', but not the descriptor class 'com.fasterxml.jackson.core.type.TypeReference'
+Note: the configuration keeps the entry point 'com.fasterxml.jackson.databind.ObjectMapper { java.util.Iterator readValues(com.fasterxml.jackson.core.JsonParser,java.lang.Class); }', but not the descriptor class 'com.fasterxml.jackson.core.JsonParser'
+Note: there were 162 unkept descriptor classes in kept class members.
+      You should consider explicitly keeping the mentioned classes
+      (using '-keep').
+      (http://proguard.sourceforge.net/manual/troubleshooting.html#descriptorclass)
+Note: you're ignoring all warnings!
+Ignoring unused library classes...
+  Original number of library classes: 4237
+  Final number of library classes:    539
+Printing kept classes, fields, and methods...
+Shrinking...
+Printing usage to [/tmp/rdisk/1377/src/dualcache-master/dualcache-demoapp/build/outputs/mapping/local/proguard/usage.txt]...
+Removing unused program classes and class elements...
+  Original number of program classes: 823
+  Final number of program classes:    696
+Obfuscating...
+Printing mapping to [/tmp/rdisk/1377/src/dualcache-master/dualcache-demoapp/build/outputs/mapping/local/proguard/mapping.txt]...
+Writing output...
+Preparing output jar [/tmp/rdisk/1377/src/dualcache-master/dualcache-demoapp/build/intermediates/transforms/proguard/local/proguard/jars/3/1f/main.jar]
+  Copying resources from program jar [/root/Applications/android-sdk/extras/android/m2repository/com/android/support/support-annotations/24.1.0/support-annotations-24.1.0.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.4.2/8e31266a272ad25ac4c089734d93e8d811652c1f/jackson-databind-2.4.2.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.4.0/d6a66c7a5f01cf500377bd669507a08cfeba882a/jackson-annotations-2.4.0.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife-annotations/8.4.0/ea392375cf9ff59234a82e7928a204215ccc98cd/butterknife-annotations-8.4.0.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/modules-2/files-2.1/com.jakewharton/disklrucache/2.0.2/93b399470e72c0bc8cb52379943b63c9aa586cd8/disklrucache-2.0.2.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.4.2/ceb72830d95c512b4b300a38f29febc85bdf6e4b/jackson-core-2.4.2.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/1377/src/dualcache-master/dualcache-demoapp/build/intermediates/exploded-aar/com.jakewharton/butterknife/8.4.0/jars/classes.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/1377/src/dualcache-master/dualcache-demoapp/build/intermediates/exploded-aar/com.vincentbrison.openlibraries.android/dualcache-library/3.1.1/jars/classes.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/1377/src/dualcache-master/dualcache-serializerinterface/build/libs/dualcache-serializerinterface-3.1.1.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/1377/src/dualcache-master/dualcache-jsonserializer/build/libs/dualcache-jsonserializer-3.1.1.jar] (filtered)
+  Copying resources from program directory [/tmp/rdisk/1377/src/dualcache-master/dualcache-demoapp/build/intermediates/transforms/mergeJavaRes/local/proguard/folders/2/1f/main] (filtered)
+  Copying resources from program directory [/tmp/rdisk/1377/src/dualcache-master/dualcache-demoapp/build/intermediates/classes/local/proguard] (filtered)
+Printing classes to [/tmp/rdisk/1377/src/dualcache-master/dualcache-demoapp/build/outputs/mapping/local/proguard/dump.txt]...
+:dualcache-demoapp:transformClassesWithDexForLocalProguard
+:dualcache-demoapp:mergeLocalProguardJniLibFolders
+:dualcache-demoapp:transformNative_libsWithMergeJniLibsForLocalProguard
+:dualcache-demoapp:validateSigningLocalProguard
+:dualcache-demoapp:packageLocalProguard
+:dualcache-demoapp:assembleLocalProguard
+:dualcache-demoapp:checkRemoteProguardManifest
+:dualcache-demoapp:prepareRemoteProguardDependencies
+:dualcache-demoapp:compileRemoteProguardAidl
+:dualcache-demoapp:compileRemoteProguardRenderscript
+:dualcache-demoapp:generateRemoteProguardBuildConfig
+:dualcache-demoapp:generateRemoteProguardResValues
+:dualcache-demoapp:generateRemoteProguardResources
+:dualcache-demoapp:mergeRemoteProguardResources
+:dualcache-demoapp:processRemoteProguardManifest
+:dualcache-demoapp:processRemoteProguardResources
+:dualcache-demoapp:generateRemoteProguardSources
+:dualcache-demoapp:incrementalRemoteProguardJavaCompilationSafeguard
+:dualcache-demoapp:compileRemoteProguardJavaWithJavac
+:dualcache-demoapp:compileRemoteProguardNdk UP-TO-DATE
+:dualcache-demoapp:compileRemoteProguardSources
+:dualcache-demoapp:mergeRemoteProguardShaders
+:dualcache-demoapp:compileRemoteProguardShaders
+:dualcache-demoapp:generateRemoteProguardAssets
+:dualcache-demoapp:mergeRemoteProguardAssets
+:dualcache-demoapp:processRemoteProguardJavaRes UP-TO-DATE
+:dualcache-demoapp:transformResourcesWithMergeJavaResForRemoteProguard
+:dualcache-demoapp:transformClassesAndResourcesWithProguardForRemoteProguard
+ProGuard, version 5.2.1
+Reading input...
+Reading program jar [/root/.gradle/caches/modules-2/files-2.1/com.vincentbrison.openlibraries.android/dualcache-serializerinterface/3.1.1/b211427859ce339d3e56ff58df1aa122a51f0296/dualcache-serializerinterface-3.1.1.jar] (filtered)
+Reading program jar [/root/Applications/android-sdk/extras/android/m2repository/com/android/support/support-annotations/24.1.0/support-annotations-24.1.0.jar] (filtered)
+Reading program jar [/root/.gradle/caches/modules-2/files-2.1/com.vincentbrison.openlibraries.android/dualcache/3.1.1/8038489f7ece0f5879fa9d25c3c24099b87c9922/dualcache-3.1.1.jar] (filtered)
+Reading program jar [/root/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.4.2/8e31266a272ad25ac4c089734d93e8d811652c1f/jackson-databind-2.4.2.jar] (filtered)
+Reading program jar [/root/.gradle/caches/modules-2/files-2.1/com.vincentbrison.openlibraries.android/dualcache-jsonserializer/3.1.1/6fe9f6eabaaae0f524a2a8e0a636a1d854e2a496/dualcache-jsonserializer-3.1.1.jar] (filtered)
+Reading program jar [/root/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.4.0/d6a66c7a5f01cf500377bd669507a08cfeba882a/jackson-annotations-2.4.0.jar] (filtered)
+Reading program jar [/root/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife-annotations/8.4.0/ea392375cf9ff59234a82e7928a204215ccc98cd/butterknife-annotations-8.4.0.jar] (filtered)
+Reading program jar [/root/.gradle/caches/modules-2/files-2.1/com.jakewharton/disklrucache/2.0.2/93b399470e72c0bc8cb52379943b63c9aa586cd8/disklrucache-2.0.2.jar] (filtered)
+Reading program jar [/root/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.4.2/ceb72830d95c512b4b300a38f29febc85bdf6e4b/jackson-core-2.4.2.jar] (filtered)
+Reading program jar [/tmp/rdisk/1377/src/dualcache-master/dualcache-demoapp/build/intermediates/exploded-aar/com.jakewharton/butterknife/8.4.0/jars/classes.jar] (filtered)
+Reading program directory [/tmp/rdisk/1377/src/dualcache-master/dualcache-demoapp/build/intermediates/transforms/mergeJavaRes/remote/proguard/folders/2/1f/main] (filtered)
+Reading program directory [/tmp/rdisk/1377/src/dualcache-master/dualcache-demoapp/build/intermediates/classes/remote/proguard] (filtered)
+Reading library jar [/root/Applications/android-sdk/platforms/android-25/android.jar]
+Reading library jar [/root/Applications/android-sdk/platforms/android-25/optional/org.apache.http.legacy.jar]
+Note: duplicate definition of library class [android.net.http.HttpResponseCache]
+Note: duplicate definition of library class [android.net.http.SslCertificate$DName]
+Note: duplicate definition of library class [android.net.http.SslError]
+Note: duplicate definition of library class [android.net.http.SslCertificate]
+Note: duplicate definition of library class [org.apache.http.params.CoreConnectionPNames]
+Note: duplicate definition of library class [org.apache.http.params.HttpConnectionParams]
+Note: duplicate definition of library class [org.apache.http.params.HttpParams]
+Note: duplicate definition of library class [org.apache.http.conn.scheme.SocketFactory]
+Note: duplicate definition of library class [org.apache.http.conn.scheme.LayeredSocketFactory]
+Note: duplicate definition of library class [org.apache.http.conn.scheme.HostNameResolver]
+Note: duplicate definition of library class [org.apache.http.conn.ConnectTimeoutException]
+Note: there were 11 duplicate class definitions.
+      (http://proguard.sourceforge.net/manual/troubleshooting.html#duplicateclass)
+Initializing...
+Warning: com.fasterxml.jackson.databind.ext.DOMSerializer: can't find referenced class org.w3c.dom.bootstrap.DOMImplementationRegistry
+Warning: com.fasterxml.jackson.databind.ext.DOMSerializer: can't find referenced class org.w3c.dom.bootstrap.DOMImplementationRegistry
+Warning: com.fasterxml.jackson.databind.ext.DOMSerializer: can't find referenced class org.w3c.dom.bootstrap.DOMImplementationRegistry
+Warning: com.fasterxml.jackson.databind.ext.DOMSerializer: can't find referenced class org.w3c.dom.bootstrap.DOMImplementationRegistry
+Warning: com.fasterxml.jackson.databind.ext.DOMSerializer: can't find referenced class org.w3c.dom.bootstrap.DOMImplementationRegistry
+Warning: there were 5 unresolved references to classes or interfaces.
+         You may need to add missing library jars or update their versions.
+         If your code works fine without the missing classes, you can suppress
+         the warnings with '-dontwarn' options.
+         (http://proguard.sourceforge.net/manual/troubleshooting.html#unresolvedclass)
+Note: you're ignoring all warnings!
+Ignoring unused library classes...
+  Original number of library classes: 4237
+  Final number of library classes:    539
+Printing kept classes, fields, and methods...
+Shrinking...
+Printing usage to [/tmp/rdisk/1377/src/dualcache-master/dualcache-demoapp/build/outputs/mapping/remote/proguard/usage.txt]...
+Removing unused program classes and class elements...
+  Original number of program classes: 824
+  Final number of program classes:    631
+Obfuscating...
+Printing mapping to [/tmp/rdisk/1377/src/dualcache-master/dualcache-demoapp/build/outputs/mapping/remote/proguard/mapping.txt]...
+Writing output...
+Preparing output jar [/tmp/rdisk/1377/src/dualcache-master/dualcache-demoapp/build/intermediates/transforms/proguard/remote/proguard/jars/3/1f/main.jar]
+  Copying resources from program jar [/root/.gradle/caches/modules-2/files-2.1/com.vincentbrison.openlibraries.android/dualcache-serializerinterface/3.1.1/b211427859ce339d3e56ff58df1aa122a51f0296/dualcache-serializerinterface-3.1.1.jar] (filtered)
+  Copying resources from program jar [/root/Applications/android-sdk/extras/android/m2repository/com/android/support/support-annotations/24.1.0/support-annotations-24.1.0.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/modules-2/files-2.1/com.vincentbrison.openlibraries.android/dualcache/3.1.1/8038489f7ece0f5879fa9d25c3c24099b87c9922/dualcache-3.1.1.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.4.2/8e31266a272ad25ac4c089734d93e8d811652c1f/jackson-databind-2.4.2.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/modules-2/files-2.1/com.vincentbrison.openlibraries.android/dualcache-jsonserializer/3.1.1/6fe9f6eabaaae0f524a2a8e0a636a1d854e2a496/dualcache-jsonserializer-3.1.1.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.4.0/d6a66c7a5f01cf500377bd669507a08cfeba882a/jackson-annotations-2.4.0.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife-annotations/8.4.0/ea392375cf9ff59234a82e7928a204215ccc98cd/butterknife-annotations-8.4.0.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/modules-2/files-2.1/com.jakewharton/disklrucache/2.0.2/93b399470e72c0bc8cb52379943b63c9aa586cd8/disklrucache-2.0.2.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.4.2/ceb72830d95c512b4b300a38f29febc85bdf6e4b/jackson-core-2.4.2.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/1377/src/dualcache-master/dualcache-demoapp/build/intermediates/exploded-aar/com.jakewharton/butterknife/8.4.0/jars/classes.jar] (filtered)
+  Copying resources from program directory [/tmp/rdisk/1377/src/dualcache-master/dualcache-demoapp/build/intermediates/transforms/mergeJavaRes/remote/proguard/folders/2/1f/main] (filtered)
+  Copying resources from program directory [/tmp/rdisk/1377/src/dualcache-master/dualcache-demoapp/build/intermediates/classes/remote/proguard] (filtered)
+Printing classes to [/tmp/rdisk/1377/src/dualcache-master/dualcache-demoapp/build/outputs/mapping/remote/proguard/dump.txt]...
+:dualcache-demoapp:transformClassesWithDexForRemoteProguard
+:dualcache-demoapp:mergeRemoteProguardJniLibFolders
+:dualcache-demoapp:transformNative_libsWithMergeJniLibsForRemoteProguard
+:dualcache-demoapp:validateSigningRemoteProguard
+:dualcache-demoapp:packageRemoteProguard
+:dualcache-demoapp:assembleRemoteProguard
+:dualcache-demoapp:assembleProguard
+:dualcache-demoapp:checkLocalReleaseManifest
+:dualcache-demoapp:prepareLocalReleaseDependencies
+:dualcache-demoapp:compileLocalReleaseAidl
+:dualcache-demoapp:compileLocalReleaseRenderscript
+:dualcache-demoapp:generateLocalReleaseBuildConfig
+:dualcache-demoapp:generateLocalReleaseResValues
+:dualcache-demoapp:generateLocalReleaseResources
+:dualcache-demoapp:mergeLocalReleaseResources
+:dualcache-demoapp:processLocalReleaseManifest
+:dualcache-demoapp:processLocalReleaseResources
+:dualcache-demoapp:generateLocalReleaseSources
+:dualcache-demoapp:incrementalLocalReleaseJavaCompilationSafeguard
+:dualcache-demoapp:compileLocalReleaseJavaWithJavac
+:dualcache-demoapp:compileLocalReleaseNdk UP-TO-DATE
+:dualcache-demoapp:compileLocalReleaseSources
+:dualcache-demoapp:lintVitalLocalRelease
+:dualcache-demoapp:mergeLocalReleaseShaders
+:dualcache-demoapp:compileLocalReleaseShaders
+:dualcache-demoapp:generateLocalReleaseAssets
+:dualcache-demoapp:mergeLocalReleaseAssets
+:dualcache-demoapp:transformClassesWithDexForLocalRelease
+:dualcache-demoapp:mergeLocalReleaseJniLibFolders
+:dualcache-demoapp:transformNative_libsWithMergeJniLibsForLocalRelease
+:dualcache-demoapp:processLocalReleaseJavaRes UP-TO-DATE
+:dualcache-demoapp:transformResourcesWithMergeJavaResForLocalRelease
+:dualcache-demoapp:packageLocalRelease
+:dualcache-demoapp:assembleLocalRelease
+:dualcache-demoapp:checkRemoteReleaseManifest
+:dualcache-demoapp:prepareRemoteReleaseDependencies
+:dualcache-demoapp:compileRemoteReleaseAidl
+:dualcache-demoapp:compileRemoteReleaseRenderscript
+:dualcache-demoapp:generateRemoteReleaseBuildConfig
+:dualcache-demoapp:generateRemoteReleaseResValues
+:dualcache-demoapp:generateRemoteReleaseResources
+:dualcache-demoapp:mergeRemoteReleaseResources
+:dualcache-demoapp:processRemoteReleaseManifest
+:dualcache-demoapp:processRemoteReleaseResources
+:dualcache-demoapp:generateRemoteReleaseSources
+:dualcache-demoapp:incrementalRemoteReleaseJavaCompilationSafeguard
+:dualcache-demoapp:compileRemoteReleaseJavaWithJavac
+:dualcache-demoapp:compileRemoteReleaseNdk UP-TO-DATE
+:dualcache-demoapp:compileRemoteReleaseSources
+:dualcache-demoapp:lintVitalRemoteRelease
+:dualcache-demoapp:mergeRemoteReleaseShaders
+:dualcache-demoapp:compileRemoteReleaseShaders
+:dualcache-demoapp:generateRemoteReleaseAssets
+:dualcache-demoapp:mergeRemoteReleaseAssets
+:dualcache-demoapp:transformClassesWithDexForRemoteRelease
+:dualcache-demoapp:mergeRemoteReleaseJniLibFolders
+:dualcache-demoapp:transformNative_libsWithMergeJniLibsForRemoteRelease
+:dualcache-demoapp:processRemoteReleaseJavaRes UP-TO-DATE
+:dualcache-demoapp:transformResourcesWithMergeJavaResForRemoteRelease
+:dualcache-demoapp:packageRemoteRelease
+:dualcache-demoapp:assembleRemoteRelease
+:dualcache-demoapp:assembleRelease
+:dualcache-demoapp:assemble
+:dualcache-demoapp:build
+
+BUILD SUCCESSFUL
+
+Total time: 29.789 secs
+
+2018-04-16 14:20:46,441 INFO  FullProcessService - Found APK file: /tmp/rdisk/1377/src/dualcache-master/dualcache-demoapp/build/outputs/apk/dualcache-demoapp-remote-release-unsigned.apk

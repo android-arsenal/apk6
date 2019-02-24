@@ -1,0 +1,192 @@
+2018-04-06 18:04:52,845 INFO  DownloadService - Downloading "https://github.com/Yalantis/CameraModule/archive/master.zip", attempt 3
+2018-04-06 18:05:53,354 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-06 18:05:54,022 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-06 18:05:54,023 INFO  DownloadService - Downloading "https://github.com/Yalantis/CameraModule/archive/master.zip", attempt 3
+2018-04-06 18:06:55,294 DEBUG FullProcessService - Repository https://github.com/Yalantis/CameraModule available: true
+2018-04-06 18:06:55,294 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-06 18:06:55,294 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/Yalantis/CameraModule, /tmp/rdisk/1389/src]
+2018-04-06 18:06:56,976 INFO  SysUtils - 
+2018-04-06 18:06:56,981 INFO  GitService - Deleted "/tmp/rdisk/1389/src/.git": true
+2018-04-06 18:06:56,985 INFO  FullProcessService - Size of directory with sources: 379 KB
+2018-04-06 18:06:56,985 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1389/src]
+2018-04-06 18:06:56,994 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1389/src/.git/
+
+2018-04-06 18:06:56,997 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1389/src/gradlew
+2018-04-06 18:06:57,001 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1389/src/CameraModule/build.gradle /tmp/rdisk/1389/src/sample/build.gradle /tmp/rdisk/1389/src/build.gradle
+2018-04-06 18:06:57,004 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1389/src/settings.gradle /tmp/rdisk/1389/src/sample/build.gradle /tmp/rdisk/1389/src/build.gradle /tmp/rdisk/1389/src/CameraModule/build.gradle
+2018-04-06 18:06:57,004 INFO  ProjectBuildService - Remote scripts: none
+2018-04-06 18:06:57,004 INFO  ProjectFixService - Fixing project...
+2018-04-06 18:06:57,018 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1389/src/CameraModule/local.properties
+2018-04-06 18:06:57,018 INFO  ProjectFixService - Build info for "/tmp/rdisk/1389/src/CameraModule/build.gradle": [buildToolsVersion=19.1.0,compileSdkVersion=19,minSdkVersion=14,targetSdkVersion=19]
+2018-04-06 18:06:57,018 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1389/src/sample/local.properties
+2018-04-06 18:06:57,019 INFO  ProjectFixService - Build info for "/tmp/rdisk/1389/src/sample/build.gradle": [buildToolsVersion=19.1.0,compileSdkVersion=19,minSdkVersion=14,targetSdkVersion=19]
+2018-04-06 18:06:57,019 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1389/src/local.properties
+2018-04-06 18:06:57,019 INFO  WrapperPropertiesFixService - Gradle wrapper: http://services.gradle.org/distributions/gradle-2.1-all.zip
+2018-04-06 18:06:57,019 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (http://services.gradle.org/distributions/gradle-2.1-bin.zip)
+2018-04-06 18:06:57,020 INFO  ProjectFixService - Build info for "/tmp/rdisk/1389/src/build.gradle": [buildToolsVersion=19.1.0,compileSdkVersion=19,minSdkVersion=14,targetSdkVersion=19]
+2018-04-06 18:06:57,021 INFO  ProjectFixService - Project was maybe fixed
+2018-04-06 18:06:57,021 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-06 18:06:57,021 INFO  SysUtils - Execute command: [/tmp/rdisk/1389/src/gradlew, -b, /tmp/rdisk/1389/src/CameraModule/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-06 18:07:09,973 INFO  ProjectTaskService - Detected possible tasks: 52
+2018-04-06 18:07:09,973 INFO  ProjectTaskService - Excluded tasks (8): lintDebug deviceCheck lint connectedCheck uninstallAll check connectedAndroidTest lintRelease
+2018-04-06 18:07:09,974 INFO  SysUtils - Execute command: [/tmp/rdisk/1389/src/gradlew, -b, /tmp/rdisk/1389/src/CameraModule/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, deviceCheck, -x, lint, -x, connectedCheck, -x, uninstallAll, -x, check, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-06 18:07:18,857 INFO  SysUtils - Configuration on demand is an incubating feature.
+:CameraModule:compileLint
+:CameraModule:copyDebugLint UP-TO-DATE
+:CameraModule:mergeDebugProguardFiles
+:CameraModule:preBuild
+:CameraModule:preDebugBuild
+:CameraModule:checkDebugManifest
+:CameraModule:preDebugTestBuild
+:CameraModule:preReleaseBuild
+:CameraModule:prepareComEdmodoCropper101Library
+:CameraModule:prepareDebugDependencies
+:CameraModule:compileDebugAidl
+:CameraModule:compileDebugRenderscript
+:CameraModule:generateDebugBuildConfig
+:CameraModule:generateDebugAssets UP-TO-DATE
+:CameraModule:mergeDebugAssets
+:CameraModule:generateDebugResValues
+:CameraModule:generateDebugResources
+:CameraModule:mergeDebugResources
+:CameraModule:processDebugManifest
+:CameraModule:processDebugResources
+:CameraModule:generateDebugSources
+:CameraModule:compileDebugJavaNote: /tmp/rdisk/1389/src/CameraModule/src/main/java/com/yalantis/cameramodule/adapters/ObjectToStringAdapter.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:CameraModule:processDebugJavaRes UP-TO-DATE
+:CameraModule:packageDebugJar
+:CameraModule:compileDebugNdk
+:CameraModule:packageDebugJniLibs UP-TO-DATE
+:CameraModule:packageDebugLocalJar UP-TO-DATE
+:CameraModule:packageDebugRenderscript UP-TO-DATE
+:CameraModule:packageDebugResources
+:CameraModule:bundleDebug
+:CameraModule:assembleDebug
+:CameraModule:copyReleaseLint UP-TO-DATE
+:CameraModule:mergeReleaseProguardFiles
+:CameraModule:checkReleaseManifest
+:CameraModule:prepareReleaseDependencies
+:CameraModule:compileReleaseAidl
+:CameraModule:compileReleaseRenderscript
+:CameraModule:generateReleaseBuildConfig
+:CameraModule:generateReleaseAssets UP-TO-DATE
+:CameraModule:mergeReleaseAssets
+:CameraModule:generateReleaseResValues
+:CameraModule:generateReleaseResources
+:CameraModule:mergeReleaseResources
+:CameraModule:processReleaseManifest
+:CameraModule:processReleaseResources
+:CameraModule:generateReleaseSources
+:CameraModule:compileReleaseJavaNote: /tmp/rdisk/1389/src/CameraModule/src/main/java/com/yalantis/cameramodule/adapters/ObjectToStringAdapter.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:CameraModule:processReleaseJavaRes UP-TO-DATE
+:CameraModule:packageReleaseJar
+:CameraModule:compileReleaseNdk
+:CameraModule:packageReleaseJniLibs UP-TO-DATE
+:CameraModule:packageReleaseLocalJar UP-TO-DATE
+:CameraModule:packageReleaseRenderscript UP-TO-DATE
+:CameraModule:packageReleaseResources
+:CameraModule:bundleRelease
+:CameraModule:assembleRelease
+:CameraModule:assemble
+:CameraModule:build
+
+BUILD SUCCESSFUL
+
+Total time: 8.43 secs
+
+2018-04-06 18:07:18,869 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-06 18:07:18,870 INFO  SysUtils - Execute command: [/tmp/rdisk/1389/src/gradlew, -b, /tmp/rdisk/1389/src/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-06 18:07:25,305 INFO  ProjectTaskService - Detected possible tasks: 53
+2018-04-06 18:07:25,305 INFO  ProjectTaskService - Excluded tasks (11): lintDebug deviceCheck lint uninstallRelease connectedCheck uninstallAll check connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-06 18:07:25,305 INFO  SysUtils - Execute command: [/tmp/rdisk/1389/src/gradlew, -b, /tmp/rdisk/1389/src/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, connectedCheck, -x, uninstallAll, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-06 18:07:39,214 INFO  SysUtils - Configuration on demand is an incubating feature.
+:sample:preBuild
+:sample:compileDebugNdk
+:CameraModule:compileLint
+:CameraModule:copyReleaseLint UP-TO-DATE
+:CameraModule:mergeReleaseProguardFiles UP-TO-DATE
+:CameraModule:preBuild
+:CameraModule:preReleaseBuild
+:CameraModule:checkReleaseManifest
+:CameraModule:preDebugBuild
+:CameraModule:preDebugTestBuild
+:CameraModule:prepareComEdmodoCropper101Library UP-TO-DATE
+:CameraModule:prepareReleaseDependencies
+:CameraModule:compileReleaseAidl UP-TO-DATE
+:CameraModule:compileReleaseRenderscript UP-TO-DATE
+:CameraModule:generateReleaseBuildConfig UP-TO-DATE
+:CameraModule:generateReleaseAssets UP-TO-DATE
+:CameraModule:mergeReleaseAssets UP-TO-DATE
+:CameraModule:generateReleaseResValues UP-TO-DATE
+:CameraModule:generateReleaseResources UP-TO-DATE
+:CameraModule:mergeReleaseResources UP-TO-DATE
+:CameraModule:processReleaseManifest UP-TO-DATE
+:CameraModule:processReleaseResources UP-TO-DATE
+:CameraModule:generateReleaseSources UP-TO-DATE
+:CameraModule:compileReleaseJava UP-TO-DATE
+:CameraModule:processReleaseJavaRes UP-TO-DATE
+:CameraModule:packageReleaseJar UP-TO-DATE
+:CameraModule:compileReleaseNdk UP-TO-DATE
+:CameraModule:packageReleaseJniLibs UP-TO-DATE
+:CameraModule:packageReleaseLocalJar UP-TO-DATE
+:CameraModule:packageReleaseRenderscript UP-TO-DATE
+:CameraModule:packageReleaseResources UP-TO-DATE
+:CameraModule:bundleRelease UP-TO-DATE
+:sample:preDebugBuild
+:sample:checkDebugManifest
+:sample:preReleaseBuild
+:sample:prepareComEdmodoCropper101Library
+:sample:prepareSrcCameraModuleUnspecifiedLibrary
+:sample:prepareDebugDependencies
+:sample:compileDebugAidl
+:sample:compileDebugRenderscript
+:sample:generateDebugBuildConfig
+:sample:generateDebugAssets UP-TO-DATE
+:sample:mergeDebugAssets
+:sample:generateDebugResValues
+:sample:generateDebugResources
+:sample:mergeDebugResources
+:sample:processDebugManifest
+:sample:processDebugResources
+:sample:generateDebugSources
+:sample:compileDebugJava
+:sample:preDexDebug
+:sample:dexDebug
+:sample:processDebugJavaRes UP-TO-DATE
+:sample:validateDebugSigning
+:sample:packageDebug
+:sample:zipalignDebug
+:sample:assembleDebug
+:sample:checkReleaseManifest
+:sample:prepareReleaseDependencies
+:sample:compileReleaseAidl
+:sample:compileReleaseRenderscript
+:sample:generateReleaseBuildConfig
+:sample:generateReleaseAssets UP-TO-DATE
+:sample:mergeReleaseAssets
+:sample:generateReleaseResValues
+:sample:generateReleaseResources
+:sample:mergeReleaseResources
+:sample:processReleaseManifest
+:sample:processReleaseResources
+:sample:generateReleaseSources
+:sample:compileReleaseJava
+:sample:lintVitalRelease
+:sample:compileReleaseNdk
+:sample:preDexRelease
+:sample:dexRelease
+:sample:processReleaseJavaRes UP-TO-DATE
+:sample:packageRelease
+:sample:assembleRelease
+:sample:assemble
+:sample:build
+
+BUILD SUCCESSFUL
+
+Total time: 13.47 secs
+
+2018-04-06 18:07:39,234 INFO  FullProcessService - Found APK file: /tmp/rdisk/1389/src/sample/build/outputs/apk/sample-release-unsigned.apk

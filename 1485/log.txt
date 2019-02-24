@@ -1,0 +1,10 @@
+2017-12-17 11:18:47,314 INFO  DownloadService - Downloading "https://github.com/google/google-api-java-client/archive/master.zip", attempt 3
+2017-12-17 11:18:49,147 INFO  DownloadService - Downloaded https://github.com/google/google-api-java-client/archive/master.zip, attempt 3
+2017-12-17 11:18:49,147 INFO  DownloadService - Size of file "/tmp/rdisk/1485/master.zip": 603 KB
+2017-12-17 11:18:49,147 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2017-12-17 11:18:49,148 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/1485/master.zip: false
+2017-12-17 11:18:49,148 INFO  FullProcessService - Archive with sources does not contain any build script
+2017-12-17 11:18:49,148 ERROR FullProcessService - Could not find directory with sources
+2017-12-17 11:18:49,148 ERROR FullProcessService - Project will not be processed
+2017-12-17 11:18:49,148 ERROR FullProcessService - Project build has not produced APK file
+2017-12-17 11:18:49,149 ERROR FullProcessService - Could not find generated or existed APK file

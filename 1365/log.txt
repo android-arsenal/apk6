@@ -1,0 +1,140 @@
+2018-04-06 19:01:27,038 INFO  DownloadService - Downloading "https://github.com/joaocruz04/JSoap/archive/master.zip", attempt 3
+2018-04-06 19:02:27,640 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-06 19:02:28,436 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-06 19:02:28,436 INFO  DownloadService - Downloading "https://github.com/joaocruz04/JSoap/archive/master.zip", attempt 3
+2018-04-06 19:03:29,631 DEBUG FullProcessService - Repository https://github.com/joaocruz04/JSoap available: true
+2018-04-06 19:03:29,631 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-06 19:03:29,631 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/joaocruz04/JSoap, /tmp/rdisk/1365/src]
+2018-04-06 19:03:31,369 INFO  SysUtils - 
+2018-04-06 19:03:31,382 INFO  GitService - Deleted "/tmp/rdisk/1365/src/.git": true
+2018-04-06 19:03:31,384 INFO  FullProcessService - Size of directory with sources: 392 KB
+2018-04-06 19:03:31,385 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1365/src]
+2018-04-06 19:03:31,389 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1365/src/.git/
+
+2018-04-06 19:03:31,391 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1365/src/gradlew
+2018-04-06 19:03:31,400 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1365/src/app/build.gradle /tmp/rdisk/1365/src/lib/build.gradle /tmp/rdisk/1365/src/build.gradle
+2018-04-06 19:03:31,404 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1365/src/settings.gradle /tmp/rdisk/1365/src/lib/build.gradle /tmp/rdisk/1365/src/build.gradle /tmp/rdisk/1365/src/app/build.gradle
+2018-04-06 19:03:31,404 INFO  DownloadService - Downloading "https://raw.github.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle", attempt 3
+2018-04-06 19:04:31,592 ERROR RemoteScriptService - Could not download content from "https://raw.github.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle"
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at sun.security.ssl.InputRecord.readFully(InputRecord.java:465)
+	at sun.security.ssl.InputRecord.read(InputRecord.java:503)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:983)
+	at sun.security.ssl.SSLSocketImpl.readDataRecord(SSLSocketImpl.java:940)
+	at sun.security.ssl.AppInputStream.read(AppInputStream.java:105)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:282)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:165)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at com.github.vbauer.apkmaster.service.network.DownloadService.download(DownloadService.java:112)
+	at com.github.vbauer.apkmaster.service.network.DownloadService.downloadContent(DownloadService.java:91)
+	at com.github.vbauer.apkmaster.service.assembly.RemoteScriptService.fetchRemoteScript(RemoteScriptService.java:42)
+	at com.github.vbauer.apkmaster.service.assembly.RemoteScriptService.detect(RemoteScriptService.java:31)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectInfoService.getProjectInfo(ProjectInfoService.java:48)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:77)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-06 19:04:31,592 INFO  ProjectBuildService - Remote scripts: none
+2018-04-06 19:04:31,592 INFO  ProjectFixService - Fixing project...
+2018-04-06 19:04:31,598 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1365/src/app/local.properties
+2018-04-06 19:04:31,599 INFO  ProjectFixService - Build info for "/tmp/rdisk/1365/src/app/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=19,minSdkVersion=10,targetSdkVersion=19]
+2018-04-06 19:04:31,599 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1365/src/lib/local.properties
+2018-04-06 19:04:31,599 INFO  ProjectFixService - Build info for "/tmp/rdisk/1365/src/lib/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=19,minSdkVersion=10,targetSdkVersion=19]
+2018-04-06 19:04:31,599 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1365/src/local.properties
+2018-04-06 19:04:31,601 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-06 19:04:31,601 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-06 19:04:31,602 INFO  ProjectFixService - Build info for "/tmp/rdisk/1365/src/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=19,minSdkVersion=10,targetSdkVersion=19]
+2018-04-06 19:04:31,602 INFO  ProjectFixService - Project was maybe fixed
+2018-04-06 19:04:31,602 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-06 19:04:31,602 INFO  SysUtils - Execute command: [/tmp/rdisk/1365/src/gradlew, -b, /tmp/rdisk/1365/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-06 19:04:44,448 INFO  ProjectTaskService - Detected possible tasks: 54
+2018-04-06 19:04:44,448 INFO  ProjectTaskService - Excluded tasks (11): lintDebug deviceCheck lint uninstallRelease connectedCheck uninstallAll check connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-06 19:04:44,449 INFO  SysUtils - Execute command: [/tmp/rdisk/1365/src/gradlew, -b, /tmp/rdisk/1365/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, connectedCheck, -x, uninstallAll, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-06 19:04:56,194 INFO  SysUtils - Configuration on demand is an incubating feature.
+:app:preBuild
+:app:compileDebugNdk
+:app:preDebugBuild
+:app:checkDebugManifest
+:app:preReleaseBuild
+:app:prepareComGithubJoaocruz04Jsoap102Library
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:compileDebugJava
+:app:preDexDebug
+:app:dexDebug
+:app:processDebugJavaRes UP-TO-DATE
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:generateReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:compileReleaseJava
+:app:lintVitalRelease
+:app:compileReleaseNdk
+:app:preDexRelease
+:app:dexRelease
+:app:processReleaseJavaRes UP-TO-DATE
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 11.329 secs
+
+2018-04-06 19:04:56,202 INFO  FullProcessService - Found APK file: /tmp/rdisk/1365/src/app/build/outputs/apk/app-debug.apk

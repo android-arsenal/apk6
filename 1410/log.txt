@@ -1,0 +1,21 @@
+2018-04-06 17:11:55,511 INFO  DownloadService - Downloading "https://github.com/AndroidDeveloperLB/ChipsLibrary/archive/master.zip", attempt 3
+2018-04-06 17:12:55,937 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-06 17:12:56,850 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-06 17:12:56,850 INFO  DownloadService - Downloading "https://github.com/AndroidDeveloperLB/ChipsLibrary/archive/master.zip", attempt 3
+2018-04-06 17:13:58,219 DEBUG FullProcessService - Repository https://github.com/AndroidDeveloperLB/ChipsLibrary available: true
+2018-04-06 17:13:58,219 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-06 17:13:58,219 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/AndroidDeveloperLB/ChipsLibrary, /tmp/rdisk/1410/src]
+2018-04-06 17:14:00,147 INFO  SysUtils - 
+2018-04-06 17:14:00,156 INFO  GitService - Deleted "/tmp/rdisk/1410/src/.git": true
+2018-04-06 17:14:00,164 INFO  FullProcessService - Size of directory with sources: 1010 KB
+2018-04-06 17:14:00,164 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1410/src]
+2018-04-06 17:14:00,173 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1410/src/.git/
+
+2018-04-06 17:14:00,180 INFO  ProjectBuildService - Gradle wrapper(s): none
+2018-04-06 17:14:00,180 ERROR ProjectBuildService - Could not detect Gradle wrapper. Default Gradle installation will be used
+2018-04-06 17:14:00,186 INFO  ProjectBuildService - Build script(s): none
+2018-04-06 17:14:00,193 INFO  ProjectBuildService - All script(s): none
+2018-04-06 17:14:00,193 INFO  ProjectBuildService - Remote scripts: none
+2018-04-06 17:14:00,193 ERROR FullProcessService - Project is not correct Gradle project
+2018-04-06 17:14:00,193 ERROR FullProcessService - Project build has not produced APK file
+2018-04-06 17:14:00,199 ERROR FullProcessService - Could not find generated or existed APK file

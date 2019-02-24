@@ -1,0 +1,21 @@
+2018-05-21 01:31:48,038 INFO  DownloadService - Downloading "https://github.com/molikto/json-parser-generator/archive/master.zip", attempt 3
+2018-05-21 01:32:48,838 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-05-21 01:32:49,983 INFO  GithubDownloadService - Default branch of this repository: master
+2018-05-21 01:32:49,983 INFO  DownloadService - Downloading "https://github.com/molikto/json-parser-generator/archive/master.zip", attempt 3
+2018-05-21 01:33:51,957 DEBUG FullProcessService - Repository https://github.com/molikto/json-parser-generator available: true
+2018-05-21 01:33:51,957 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-05-21 01:33:51,957 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/molikto/json-parser-generator, /tmp/rdisk/1281/src]
+2018-05-21 01:33:53,251 INFO  SysUtils - 
+2018-05-21 01:33:53,255 INFO  GitService - Deleted "/tmp/rdisk/1281/src/.git": true
+2018-05-21 01:33:53,255 INFO  FullProcessService - Size of directory with sources: 31 KB
+2018-05-21 01:33:53,255 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1281/src]
+2018-05-21 01:33:53,265 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1281/src/.git/
+
+2018-05-21 01:33:53,265 INFO  ProjectBuildService - Gradle wrapper(s): none
+2018-05-21 01:33:53,265 ERROR ProjectBuildService - Could not detect Gradle wrapper. Default Gradle installation will be used
+2018-05-21 01:33:53,266 INFO  ProjectBuildService - Build script(s): none
+2018-05-21 01:33:53,266 INFO  ProjectBuildService - All script(s): none
+2018-05-21 01:33:53,266 INFO  ProjectBuildService - Remote scripts: none
+2018-05-21 01:33:53,266 ERROR FullProcessService - Project is not correct Gradle project
+2018-05-21 01:33:53,266 ERROR FullProcessService - Project build has not produced APK file
+2018-05-21 01:33:53,267 ERROR FullProcessService - Could not find generated or existed APK file

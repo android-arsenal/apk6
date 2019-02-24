@@ -1,0 +1,215 @@
+2018-04-06 17:56:33,479 INFO  DownloadService - Downloading "https://github.com/pwittchen/WeatherIconView/archive/master.zip", attempt 3
+2018-04-06 17:57:34,075 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-06 17:57:34,921 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-06 17:57:34,921 INFO  DownloadService - Downloading "https://github.com/pwittchen/WeatherIconView/archive/master.zip", attempt 3
+2018-04-06 17:58:36,237 DEBUG FullProcessService - Repository https://github.com/pwittchen/WeatherIconView available: true
+2018-04-06 17:58:36,237 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-06 17:58:36,237 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/pwittchen/WeatherIconView, /tmp/rdisk/1393/src]
+2018-04-06 17:58:37,926 INFO  SysUtils - 
+2018-04-06 17:58:37,938 INFO  GitService - Deleted "/tmp/rdisk/1393/src/.git": true
+2018-04-06 17:58:37,940 INFO  FullProcessService - Size of directory with sources: 311 KB
+2018-04-06 17:58:37,940 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1393/src]
+2018-04-06 17:58:37,944 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1393/src/.git/
+
+2018-04-06 17:58:37,946 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1393/src/gradlew
+2018-04-06 17:58:37,948 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1393/src/WeatherIconView-library/build.gradle /tmp/rdisk/1393/src/app/build.gradle /tmp/rdisk/1393/src/build.gradle
+2018-04-06 17:58:37,950 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1393/src/settings.gradle /tmp/rdisk/1393/src/maven_push.gradle /tmp/rdisk/1393/src/build.gradle /tmp/rdisk/1393/src/app/build.gradle /tmp/rdisk/1393/src/WeatherIconView-library/build.gradle
+2018-04-06 17:58:37,951 INFO  ProjectBuildService - Remote scripts: none
+2018-04-06 17:58:37,951 INFO  ProjectFixService - Fixing project...
+2018-04-06 17:58:37,957 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1393/src/WeatherIconView-library/local.properties
+2018-04-06 17:58:37,958 INFO  ProjectFixService - Build info for "/tmp/rdisk/1393/src/WeatherIconView-library/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=9,targetSdkVersion=22]
+2018-04-06 17:58:37,958 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1393/src/app/local.properties
+2018-04-06 17:58:37,958 INFO  ProjectFixService - Build info for "/tmp/rdisk/1393/src/app/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=9,targetSdkVersion=22]
+2018-04-06 17:58:37,959 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1393/src/local.properties
+2018-04-06 17:58:37,959 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.4-all.zip
+2018-04-06 17:58:37,959 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.4-bin.zip)
+2018-04-06 17:58:37,961 INFO  ProjectFixService - Build info for "/tmp/rdisk/1393/src/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=9,targetSdkVersion=22]
+2018-04-06 17:58:37,961 INFO  ProjectFixService - Project was maybe fixed
+2018-04-06 17:58:37,961 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-06 17:58:37,961 INFO  SysUtils - Execute command: [/tmp/rdisk/1393/src/gradlew, -b, /tmp/rdisk/1393/src/WeatherIconView-library/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-06 17:58:50,726 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-06 17:58:50,727 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-06 17:58:50,727 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-06 17:58:50,727 INFO  SysUtils - Execute command: [/tmp/rdisk/1393/src/gradlew, -b, /tmp/rdisk/1393/src/WeatherIconView-library/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-06 17:59:08,798 INFO  SysUtils - Configuration on demand is an incubating feature.
+:WeatherIconView-library:androidJavadocs/tmp/rdisk/1393/src/WeatherIconView-library/src/main/java/com/github/pwittchen/weathericonview/WeatherIconView.java:10: error: package com.github.pwittchen.weathericonview.library does not exist
+import com.github.pwittchen.weathericonview.library.R;
+                                                   ^
+
+1 warning
+:WeatherIconView-library:androidJavadocsJar
+:WeatherIconView-library:androidSourcesJar
+:WeatherIconView-library:compileLint
+:WeatherIconView-library:copyDebugLint UP-TO-DATE
+:WeatherIconView-library:mergeDebugProguardFiles
+:WeatherIconView-library:preBuild UP-TO-DATE
+:WeatherIconView-library:preDebugBuild UP-TO-DATE
+:WeatherIconView-library:checkDebugManifest
+:WeatherIconView-library:prepareDebugDependencies
+:WeatherIconView-library:compileDebugAidl
+:WeatherIconView-library:compileDebugRenderscript
+:WeatherIconView-library:generateDebugBuildConfig
+:WeatherIconView-library:generateDebugAssets UP-TO-DATE
+:WeatherIconView-library:mergeDebugAssets
+:WeatherIconView-library:generateDebugResValues
+:WeatherIconView-library:generateDebugResources
+:WeatherIconView-library:packageDebugResources
+:WeatherIconView-library:processDebugManifest
+:WeatherIconView-library:processDebugResources
+:WeatherIconView-library:generateDebugSources
+:WeatherIconView-library:processDebugJavaRes UP-TO-DATE
+:WeatherIconView-library:compileDebugJavaWithJavac
+:WeatherIconView-library:packageDebugJar
+:WeatherIconView-library:compileDebugNdk UP-TO-DATE
+:WeatherIconView-library:packageDebugJniLibs UP-TO-DATE
+:WeatherIconView-library:packageDebugLocalJar UP-TO-DATE
+:WeatherIconView-library:packageDebugRenderscript UP-TO-DATE
+:WeatherIconView-library:bundleDebug
+:WeatherIconView-library:compileDebugSources
+:WeatherIconView-library:assembleDebug
+:WeatherIconView-library:copyReleaseLint UP-TO-DATE
+:WeatherIconView-library:mergeReleaseProguardFiles
+:WeatherIconView-library:preReleaseBuild UP-TO-DATE
+:WeatherIconView-library:checkReleaseManifest
+:WeatherIconView-library:prepareReleaseDependencies
+:WeatherIconView-library:compileReleaseAidl
+:WeatherIconView-library:compileReleaseRenderscript
+:WeatherIconView-library:generateReleaseBuildConfig
+:WeatherIconView-library:generateReleaseAssets UP-TO-DATE
+:WeatherIconView-library:mergeReleaseAssets
+:WeatherIconView-library:generateReleaseResValues
+:WeatherIconView-library:generateReleaseResources
+:WeatherIconView-library:packageReleaseResources
+:WeatherIconView-library:processReleaseManifest
+:WeatherIconView-library:processReleaseResources
+:WeatherIconView-library:generateReleaseSources
+:WeatherIconView-library:processReleaseJavaRes UP-TO-DATE
+:WeatherIconView-library:compileReleaseJavaWithJavac
+:WeatherIconView-library:packageReleaseJar
+:WeatherIconView-library:compileReleaseNdk UP-TO-DATE
+:WeatherIconView-library:packageReleaseJniLibs UP-TO-DATE
+:WeatherIconView-library:packageReleaseLocalJar UP-TO-DATE
+:WeatherIconView-library:packageReleaseRenderscript UP-TO-DATE
+:WeatherIconView-library:bundleRelease
+:WeatherIconView-library:compileReleaseSources
+:WeatherIconView-library:assembleRelease
+:WeatherIconView-library:signArchives SKIPPED
+:WeatherIconView-library:assemble
+:WeatherIconView-library:lint
+Ran lint on variant debug: 597 issues found
+Ran lint on variant release: 597 issues found
+Wrote HTML report to file:/tmp/rdisk/1393/src/WeatherIconView-library/build/outputs/lint-results.html
+Wrote XML report to /tmp/rdisk/1393/src/WeatherIconView-library/build/outputs/lint-results.xml
+:WeatherIconView-library:preDebugUnitTestBuild UP-TO-DATE
+:WeatherIconView-library:prepareDebugUnitTestDependencies
+:WeatherIconView-library:processDebugUnitTestJavaRes UP-TO-DATE
+:WeatherIconView-library:compileDebugUnitTestJavaWithJavac UP-TO-DATE
+:WeatherIconView-library:compileDebugUnitTestSources UP-TO-DATE
+:WeatherIconView-library:mockableAndroidJar
+:WeatherIconView-library:assembleDebugUnitTest
+:WeatherIconView-library:testDebugUnitTest
+:WeatherIconView-library:preReleaseUnitTestBuild UP-TO-DATE
+:WeatherIconView-library:prepareReleaseUnitTestDependencies
+:WeatherIconView-library:processReleaseUnitTestJavaRes UP-TO-DATE
+:WeatherIconView-library:compileReleaseUnitTestJavaWithJavac UP-TO-DATE
+:WeatherIconView-library:compileReleaseUnitTestSources UP-TO-DATE
+:WeatherIconView-library:assembleReleaseUnitTest
+:WeatherIconView-library:testReleaseUnitTest
+:WeatherIconView-library:test
+:WeatherIconView-library:check
+:WeatherIconView-library:build
+
+BUILD SUCCESSFUL
+
+Total time: 17.636 secs
+
+2018-04-06 17:59:08,806 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-06 17:59:08,806 INFO  SysUtils - Execute command: [/tmp/rdisk/1393/src/gradlew, -b, /tmp/rdisk/1393/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-06 17:59:15,554 INFO  ProjectTaskService - Detected possible tasks: 66
+2018-04-06 17:59:15,554 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-06 17:59:15,555 INFO  SysUtils - Execute command: [/tmp/rdisk/1393/src/gradlew, -b, /tmp/rdisk/1393/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-06 17:59:36,241 INFO  SysUtils - Configuration on demand is an incubating feature.
+:WeatherIconView-library:compileLint
+:WeatherIconView-library:copyReleaseLint UP-TO-DATE
+:WeatherIconView-library:mergeReleaseProguardFiles UP-TO-DATE
+:WeatherIconView-library:preBuild UP-TO-DATE
+:WeatherIconView-library:preReleaseBuild UP-TO-DATE
+:WeatherIconView-library:checkReleaseManifest
+:WeatherIconView-library:prepareReleaseDependencies
+:WeatherIconView-library:compileReleaseAidl UP-TO-DATE
+:WeatherIconView-library:compileReleaseRenderscript UP-TO-DATE
+:WeatherIconView-library:generateReleaseBuildConfig UP-TO-DATE
+:WeatherIconView-library:generateReleaseAssets UP-TO-DATE
+:WeatherIconView-library:mergeReleaseAssets UP-TO-DATE
+:WeatherIconView-library:generateReleaseResValues UP-TO-DATE
+:WeatherIconView-library:generateReleaseResources UP-TO-DATE
+:WeatherIconView-library:packageReleaseResources UP-TO-DATE
+:WeatherIconView-library:processReleaseManifest UP-TO-DATE
+:WeatherIconView-library:processReleaseResources UP-TO-DATE
+:WeatherIconView-library:generateReleaseSources UP-TO-DATE
+:WeatherIconView-library:processReleaseJavaRes UP-TO-DATE
+:WeatherIconView-library:compileReleaseJavaWithJavac UP-TO-DATE
+:WeatherIconView-library:packageReleaseJar UP-TO-DATE
+:WeatherIconView-library:compileReleaseNdk UP-TO-DATE
+:WeatherIconView-library:packageReleaseJniLibs UP-TO-DATE
+:WeatherIconView-library:packageReleaseLocalJar UP-TO-DATE
+:WeatherIconView-library:packageReleaseRenderscript UP-TO-DATE
+:WeatherIconView-library:bundleRelease UP-TO-DATE
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:app:prepareComAndroidSupportAppcompatV72221Library
+:app:prepareComAndroidSupportSupportV42221Library
+:app:prepareSrcWeatherIconViewLibraryUnspecifiedLibrary
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:processDebugJavaRes UP-TO-DATE
+:app:compileDebugJavaWithJavac
+:app:compileDebugNdk UP-TO-DATE
+:app:compileDebugSources
+:app:preDexDebug
+:app:dexDebug
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:generateReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:processReleaseJavaRes UP-TO-DATE
+:app:compileReleaseJavaWithJavac
+:app:compileReleaseNdk UP-TO-DATE
+:app:compileReleaseSources
+:app:preDexRelease
+:app:dexRelease
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 20.224 secs
+
+2018-04-06 17:59:36,277 INFO  FullProcessService - Found APK file: /tmp/rdisk/1393/src/app/build/outputs/apk/app-debug.apk

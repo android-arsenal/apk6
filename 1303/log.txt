@@ -1,0 +1,138 @@
+2018-05-21 00:40:41,486 INFO  DownloadService - Downloading "https://github.com/LGDeveloper/QCircle-Design-Template/archive/master.zip", attempt 3
+2018-05-21 00:41:42,116 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-05-21 00:41:42,789 INFO  GithubDownloadService - Default branch of this repository: develop
+2018-05-21 00:41:42,789 INFO  DownloadService - Downloading "https://github.com/LGDeveloper/QCircle-Design-Template/archive/develop.zip", attempt 3
+2018-05-21 00:42:44,216 DEBUG FullProcessService - Repository https://github.com/LGDeveloper/QCircle-Design-Template available: true
+2018-05-21 00:42:44,216 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-05-21 00:42:44,216 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/LGDeveloper/QCircle-Design-Template, /tmp/rdisk/1303/src]
+2018-05-21 00:42:46,237 INFO  SysUtils - 
+2018-05-21 00:42:46,244 INFO  GitService - Deleted "/tmp/rdisk/1303/src/.git": true
+2018-05-21 00:42:46,249 INFO  FullProcessService - Size of directory with sources: 1 MB
+2018-05-21 00:42:46,249 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1303/src]
+2018-05-21 00:42:46,254 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1303/src/.git/
+
+2018-05-21 00:42:46,258 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1303/src/gradlew
+2018-05-21 00:42:46,263 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1303/src/Sample_BeanbirdInCircle/build.gradle /tmp/rdisk/1303/src/Sample_SimpleCircle/build.gradle /tmp/rdisk/1303/src/designTemplate/build.gradle /tmp/rdisk/1303/src/build.gradle
+2018-05-21 00:42:46,267 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1303/src/settings.gradle /tmp/rdisk/1303/src/designTemplate/build.gradle /tmp/rdisk/1303/src/build.gradle /tmp/rdisk/1303/src/Sample_SimpleCircle/build.gradle /tmp/rdisk/1303/src/Sample_BeanbirdInCircle/build.gradle
+2018-05-21 00:42:46,267 INFO  ProjectBuildService - Remote scripts: none
+2018-05-21 00:42:46,267 INFO  ProjectFixService - Fixing project...
+2018-05-21 00:42:46,277 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1303/src/Sample_BeanbirdInCircle/local.properties
+2018-05-21 00:42:46,277 INFO  ProjectFixService - Build info for "/tmp/rdisk/1303/src/Sample_BeanbirdInCircle/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=19,targetSdkVersion=21]
+2018-05-21 00:42:46,277 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1303/src/Sample_SimpleCircle/local.properties
+2018-05-21 00:42:46,277 INFO  ProjectFixService - Build info for "/tmp/rdisk/1303/src/Sample_SimpleCircle/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=19,targetSdkVersion=21]
+2018-05-21 00:42:46,278 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1303/src/designTemplate/local.properties
+2018-05-21 00:42:46,278 INFO  ProjectFixService - Build info for "/tmp/rdisk/1303/src/designTemplate/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=19,targetSdkVersion=21]
+2018-05-21 00:42:46,278 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1303/src/local.properties
+2018-05-21 00:42:46,278 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-05-21 00:42:46,278 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-05-21 00:42:46,279 INFO  ProjectFixService - Build info for "/tmp/rdisk/1303/src/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=19,targetSdkVersion=21]
+2018-05-21 00:42:46,279 INFO  ProjectFixService - Project was maybe fixed
+2018-05-21 00:42:46,279 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-21 00:42:46,279 INFO  SysUtils - Execute command: [/tmp/rdisk/1303/src/gradlew, -b, /tmp/rdisk/1303/src/Sample_BeanbirdInCircle/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-21 00:42:52,185 INFO  ProjectTaskService - Detected possible tasks: 53
+2018-05-21 00:42:52,185 INFO  ProjectTaskService - Excluded tasks (11): lintDebug deviceCheck lint uninstallRelease connectedCheck uninstallAll check connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-05-21 00:42:52,186 INFO  SysUtils - Execute command: [/tmp/rdisk/1303/src/gradlew, -b, /tmp/rdisk/1303/src/Sample_BeanbirdInCircle/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, connectedCheck, -x, uninstallAll, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-05-21 00:43:03,174 INFO  SysUtils - Configuration on demand is an incubating feature.
+:Sample_BeanbirdInCircle:preBuild
+:Sample_BeanbirdInCircle:compileDebugNdk
+:Sample_BeanbirdInCircle:preDebugBuild
+:Sample_BeanbirdInCircle:checkDebugManifest
+:Sample_BeanbirdInCircle:preReleaseBuild
+:designTemplate:compileLint
+:designTemplate:copyReleaseLint UP-TO-DATE
+:designTemplate:mergeReleaseProguardFiles
+:designTemplate:preBuild
+:designTemplate:preReleaseBuild
+:designTemplate:checkReleaseManifest
+:designTemplate:prepareReleaseDependencies
+:designTemplate:compileReleaseAidl
+:designTemplate:compileReleaseRenderscript
+:designTemplate:generateReleaseBuildConfig
+:designTemplate:generateReleaseAssets UP-TO-DATE
+:designTemplate:mergeReleaseAssets
+:designTemplate:generateReleaseResValues
+:designTemplate:generateReleaseResources
+:designTemplate:packageReleaseResources
+:designTemplate:processReleaseManifest
+:designTemplate:processReleaseResources
+:designTemplate:generateReleaseSources
+:designTemplate:compileReleaseJava
+:designTemplate:processReleaseJavaRes UP-TO-DATE
+:designTemplate:packageReleaseJar
+:designTemplate:compileReleaseNdk
+:designTemplate:packageReleaseJniLibs UP-TO-DATE
+:designTemplate:packageReleaseLocalJar UP-TO-DATE
+:designTemplate:packageReleaseRenderscript UP-TO-DATE
+:designTemplate:bundleRelease
+:Sample_BeanbirdInCircle:prepareSrcDesignTemplateUnspecifiedLibrary
+:Sample_BeanbirdInCircle:prepareDebugDependencies
+:Sample_BeanbirdInCircle:compileDebugAidl
+:Sample_BeanbirdInCircle:compileDebugRenderscript
+:Sample_BeanbirdInCircle:generateDebugBuildConfig
+:Sample_BeanbirdInCircle:generateDebugAssets UP-TO-DATE
+:Sample_BeanbirdInCircle:mergeDebugAssets
+:Sample_BeanbirdInCircle:generateDebugResValues
+:Sample_BeanbirdInCircle:generateDebugResources
+:Sample_BeanbirdInCircle:mergeDebugResources/tmp/rdisk/1303/src/Sample_BeanbirdInCircle/build/intermediates/exploded-aar/src/designTemplate/unspecified/res/drawable-xxxhdpi-v4/backover.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/1303/src/Sample_BeanbirdInCircle/build/intermediates/exploded-aar/src/designTemplate/unspecified/res/drawable-xhdpi-v4/backover.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/1303/src/Sample_BeanbirdInCircle/build/intermediates/exploded-aar/src/designTemplate/unspecified/res/drawable-xxhdpi-v4/backover.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+:Sample_BeanbirdInCircle:processDebugManifest
+Warning: /tmp/rdisk/1303/src/Sample_BeanbirdInCircle/src/main/AndroidManifest.xml:15:5 Warning:
+	application@android:theme was tagged at AndroidManifest.xml:15 to replace other declarations but no other declaration present
+Warning: /tmp/rdisk/1303/src/Sample_BeanbirdInCircle/src/main/AndroidManifest.xml:15:5 Warning:
+	application@android:label was tagged at AndroidManifest.xml:15 to replace other declarations but no other declaration present
+/tmp/rdisk/1303/src/Sample_BeanbirdInCircle/src/main/AndroidManifest.xml:15:5 Warning:
+	application@android:theme was tagged at AndroidManifest.xml:15 to replace other declarations but no other declaration present
+/tmp/rdisk/1303/src/Sample_BeanbirdInCircle/src/main/AndroidManifest.xml:15:5 Warning:
+	application@android:label was tagged at AndroidManifest.xml:15 to replace other declarations but no other declaration present
+:Sample_BeanbirdInCircle:processDebugResources
+:Sample_BeanbirdInCircle:generateDebugSources
+:Sample_BeanbirdInCircle:compileDebugJava
+:Sample_BeanbirdInCircle:preDexDebug
+:Sample_BeanbirdInCircle:dexDebug
+:Sample_BeanbirdInCircle:processDebugJavaRes UP-TO-DATE
+:Sample_BeanbirdInCircle:validateDebugSigning
+:Sample_BeanbirdInCircle:packageDebug
+:Sample_BeanbirdInCircle:zipalignDebug
+:Sample_BeanbirdInCircle:assembleDebug
+:Sample_BeanbirdInCircle:checkReleaseManifest
+:Sample_BeanbirdInCircle:prepareReleaseDependencies
+:Sample_BeanbirdInCircle:compileReleaseAidl
+:Sample_BeanbirdInCircle:compileReleaseRenderscript
+:Sample_BeanbirdInCircle:generateReleaseBuildConfig
+:Sample_BeanbirdInCircle:generateReleaseAssets UP-TO-DATE
+:Sample_BeanbirdInCircle:mergeReleaseAssets
+:Sample_BeanbirdInCircle:generateReleaseResValues
+:Sample_BeanbirdInCircle:generateReleaseResources
+:Sample_BeanbirdInCircle:mergeReleaseResources/tmp/rdisk/1303/src/Sample_BeanbirdInCircle/build/intermediates/exploded-aar/src/designTemplate/unspecified/res/drawable-xxxhdpi-v4/backover.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/1303/src/Sample_BeanbirdInCircle/build/intermediates/exploded-aar/src/designTemplate/unspecified/res/drawable-xhdpi-v4/backover.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/1303/src/Sample_BeanbirdInCircle/build/intermediates/exploded-aar/src/designTemplate/unspecified/res/drawable-xxhdpi-v4/backover.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+:Sample_BeanbirdInCircle:processReleaseManifest
+Warning: /tmp/rdisk/1303/src/Sample_BeanbirdInCircle/src/main/AndroidManifest.xml:15:5 Warning:
+	application@android:theme was tagged at AndroidManifest.xml:15 to replace other declarations but no other declaration present
+Warning: /tmp/rdisk/1303/src/Sample_BeanbirdInCircle/src/main/AndroidManifest.xml:15:5 Warning:
+	application@android:label was tagged at AndroidManifest.xml:15 to replace other declarations but no other declaration present
+/tmp/rdisk/1303/src/Sample_BeanbirdInCircle/src/main/AndroidManifest.xml:15:5 Warning:
+	application@android:theme was tagged at AndroidManifest.xml:15 to replace other declarations but no other declaration present
+/tmp/rdisk/1303/src/Sample_BeanbirdInCircle/src/main/AndroidManifest.xml:15:5 Warning:
+	application@android:label was tagged at AndroidManifest.xml:15 to replace other declarations but no other declaration present
+:Sample_BeanbirdInCircle:processReleaseResources
+:Sample_BeanbirdInCircle:generateReleaseSources
+:Sample_BeanbirdInCircle:compileReleaseJava
+:Sample_BeanbirdInCircle:lintVitalRelease
+:Sample_BeanbirdInCircle:compileReleaseNdk
+:Sample_BeanbirdInCircle:preDexRelease
+:Sample_BeanbirdInCircle:dexRelease
+:Sample_BeanbirdInCircle:processReleaseJavaRes UP-TO-DATE
+:Sample_BeanbirdInCircle:packageRelease
+:Sample_BeanbirdInCircle:assembleRelease
+:Sample_BeanbirdInCircle:assemble
+:Sample_BeanbirdInCircle:build
+
+BUILD SUCCESSFUL
+
+Total time: 10.568 secs
+
+2018-05-21 00:43:03,188 INFO  FullProcessService - Found APK file: /tmp/rdisk/1303/src/Sample_BeanbirdInCircle/build/outputs/apk/Sample_BeanbirdInCircle-release-unsigned.apk

@@ -1,0 +1,182 @@
+2018-05-21 00:37:38,312 INFO  DownloadService - Downloading "https://github.com/MostafaGazar/soas/archive/master.zip", attempt 3
+2018-05-21 00:38:38,827 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-05-21 00:38:39,644 INFO  GithubDownloadService - Default branch of this repository: master
+2018-05-21 00:38:39,644 INFO  DownloadService - Downloading "https://github.com/MostafaGazar/soas/archive/master.zip", attempt 3
+2018-05-21 00:39:41,011 DEBUG FullProcessService - Repository https://github.com/MostafaGazar/soas available: true
+2018-05-21 00:39:41,011 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-05-21 00:39:41,011 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/MostafaGazar/soas, /tmp/rdisk/1305/src]
+2018-05-21 00:39:43,325 INFO  SysUtils - 
+2018-05-21 00:39:43,330 INFO  GitService - Deleted "/tmp/rdisk/1305/src/.git": true
+2018-05-21 00:39:43,334 INFO  FullProcessService - Size of directory with sources: 2 MB
+2018-05-21 00:39:43,335 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1305/src]
+2018-05-21 00:39:43,339 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1305/src/.git/
+
+2018-05-21 00:39:43,342 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1305/src/gradlew
+2018-05-21 00:39:43,346 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1305/src/app/build.gradle /tmp/rdisk/1305/src/build.gradle
+2018-05-21 00:39:43,349 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1305/src/settings.gradle /tmp/rdisk/1305/src/build.gradle /tmp/rdisk/1305/src/app/build.gradle
+2018-05-21 00:39:43,350 INFO  ProjectBuildService - Remote scripts: none
+2018-05-21 00:39:43,350 INFO  ProjectFixService - Fixing project...
+2018-05-21 00:39:43,357 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1305/src/app/local.properties
+2018-05-21 00:39:43,358 INFO  ProjectFixService - Build info for "/tmp/rdisk/1305/src/app/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=14,targetSdkVersion=21]
+2018-05-21 00:39:43,358 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1305/src/local.properties
+2018-05-21 00:39:43,358 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-05-21 00:39:43,358 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-05-21 00:39:43,359 INFO  ProjectFixService - Build info for "/tmp/rdisk/1305/src/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=14,targetSdkVersion=21]
+2018-05-21 00:39:43,359 INFO  ProjectFixService - Project was maybe fixed
+2018-05-21 00:39:43,359 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-21 00:39:43,359 INFO  SysUtils - Execute command: [/tmp/rdisk/1305/src/gradlew, -b, /tmp/rdisk/1305/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-21 00:39:52,067 INFO  ProjectTaskService - Detected possible tasks: 75
+2018-05-21 00:39:52,067 INFO  ProjectTaskService - Excluded tasks (7): deviceCheck lint deviceAndroidTest connectedCheck uninstallAll check connectedAndroidTest
+2018-05-21 00:39:52,067 INFO  SysUtils - Execute command: [/tmp/rdisk/1305/src/gradlew, -b, /tmp/rdisk/1305/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, deviceCheck, -x, lint, -x, deviceAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, check, -x, connectedAndroidTest, build]
+2018-05-21 00:40:35,173 INFO  SysUtils - Configuration on demand is an incubating feature.
+WARNING: Dependency commons-logging:commons-logging:1.1.1 is ignored for demoDebug as it may be conflicting with the internal version provided by Android.
+         In case of problem, please repackage it with jarjar to change the class packages
+WARNING: Dependency commons-logging:commons-logging:1.1.1 is ignored for demoRelease as it may be conflicting with the internal version provided by Android.
+         In case of problem, please repackage it with jarjar to change the class packages
+WARNING: Dependency commons-logging:commons-logging:1.1.1 is ignored for fullDebug as it may be conflicting with the internal version provided by Android.
+         In case of problem, please repackage it with jarjar to change the class packages
+WARNING: Dependency commons-logging:commons-logging:1.1.1 is ignored for fullRelease as it may be conflicting with the internal version provided by Android.
+         In case of problem, please repackage it with jarjar to change the class packages
+:app:preBuild
+:app:compileDemoDebugNdk
+:app:preDemoDebugBuild
+:app:checkDemoDebugManifest
+:app:preDemoReleaseBuild
+:app:preFullDebugBuild
+:app:preFullReleaseBuild
+:app:prepareComAndroidSupportAppcompatV72103Library
+:app:prepareComAndroidSupportCardviewV72100Library
+:app:prepareComAndroidSupportPaletteV72100Library
+:app:prepareComAndroidSupportRecyclerviewV72100Library
+:app:prepareComAndroidSupportSupportV42103Library
+:app:preDemoDebugTestBuild
+:app:preFullDebugTestBuild
+:app:prepareComJakewhartonEspressoEspresso11R3Library
+:app:prepareComJakewhartonEspressoEspressoRunner11R3Library
+:app:prepareComJakewhartonEspressoEspressoRunnerRuntime11R3Library
+:app:prepareComJakewhartonEspressoEspressoSupportV411R3Library
+:app:prepareDemoDebugDependencies
+:app:compileDemoDebugAidl
+:app:compileDemoDebugRenderscript
+:app:generateDemoDebugBuildConfig
+:app:generateDemoDebugAssets UP-TO-DATE
+:app:mergeDemoDebugAssets
+:app:generateDemoDebugResValues
+:app:generateDemoDebugResources
+:app:mergeDemoDebugResources/tmp/rdisk/1305/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-xhdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/1305/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_spinner_mtrl_am_alpha.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/1305/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-mdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/1305/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_ab_share_pack_holo_light.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/1305/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/1305/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-xhdpi/abc_ab_share_pack_holo_light.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+:app:processDemoDebugManifest
+:app:processDemoDebugResources
+:app:generateDemoDebugSources
+:app:compileDemoDebugJavaNote: /tmp/rdisk/1305/src/app/src/main/java/com/meg7/soas/ui/fragment/SwipeRefreshListFragment.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:app:preDexDemoDebug
+:app:dexDemoDebug
+:app:processDemoDebugJavaRes UP-TO-DATE
+:app:validateDebugSigning
+:app:packageDemoDebug
+:app:zipalignDemoDebug
+:app:assembleDemoDebug
+:app:compileFullDebugNdk
+:app:checkFullDebugManifest
+:app:prepareFullDebugDependencies
+:app:compileFullDebugAidl
+:app:compileFullDebugRenderscript
+:app:generateFullDebugBuildConfig
+:app:generateFullDebugAssets UP-TO-DATE
+:app:mergeFullDebugAssets
+:app:generateFullDebugResValues
+:app:generateFullDebugResources
+:app:mergeFullDebugResources/tmp/rdisk/1305/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-xhdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/1305/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_spinner_mtrl_am_alpha.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/1305/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-mdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/1305/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_ab_share_pack_holo_light.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/1305/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/1305/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-xhdpi/abc_ab_share_pack_holo_light.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+:app:processFullDebugManifest
+:app:processFullDebugResources
+:app:generateFullDebugSources
+:app:compileFullDebugJavaNote: /tmp/rdisk/1305/src/app/src/main/java/com/meg7/soas/ui/fragment/SwipeRefreshListFragment.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:app:preDexFullDebug
+:app:dexFullDebug
+:app:processFullDebugJavaRes UP-TO-DATE
+:app:packageFullDebug
+:app:zipalignFullDebug
+:app:assembleFullDebug
+:app:assembleDebug
+:app:checkDemoReleaseManifest
+:app:prepareDemoReleaseDependencies
+:app:compileDemoReleaseAidl
+:app:compileDemoReleaseRenderscript
+:app:generateDemoReleaseBuildConfig
+:app:generateDemoReleaseAssets UP-TO-DATE
+:app:mergeDemoReleaseAssets
+:app:generateDemoReleaseResValues
+:app:generateDemoReleaseResources
+:app:mergeDemoReleaseResources/tmp/rdisk/1305/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-xhdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/1305/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_spinner_mtrl_am_alpha.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/1305/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-mdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/1305/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_ab_share_pack_holo_light.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/1305/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/1305/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-xhdpi/abc_ab_share_pack_holo_light.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+:app:processDemoReleaseManifest
+:app:processDemoReleaseResources
+:app:generateDemoReleaseSources
+:app:compileDemoReleaseJavaNote: /tmp/rdisk/1305/src/app/src/main/java/com/meg7/soas/ui/fragment/SwipeRefreshListFragment.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:app:lintVitalDemoRelease
+:app:compileDemoReleaseNdk
+:app:preDexDemoRelease
+:app:dexDemoRelease
+:app:processDemoReleaseJavaRes UP-TO-DATE
+:app:packageDemoRelease
+:app:assembleDemoRelease
+:app:checkFullReleaseManifest
+:app:prepareFullReleaseDependencies
+:app:compileFullReleaseAidl
+:app:compileFullReleaseRenderscript
+:app:generateFullReleaseBuildConfig
+:app:generateFullReleaseAssets UP-TO-DATE
+:app:mergeFullReleaseAssets
+:app:generateFullReleaseResValues
+:app:generateFullReleaseResources
+:app:mergeFullReleaseResources/tmp/rdisk/1305/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-xhdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/1305/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_spinner_mtrl_am_alpha.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/1305/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-mdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/1305/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_ab_share_pack_holo_light.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/1305/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/1305/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-xhdpi/abc_ab_share_pack_holo_light.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+:app:processFullReleaseManifest
+:app:processFullReleaseResources
+:app:generateFullReleaseSources
+:app:compileFullReleaseJavaNote: /tmp/rdisk/1305/src/app/src/main/java/com/meg7/soas/ui/fragment/SwipeRefreshListFragment.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:app:lintVitalFullRelease
+:app:compileFullReleaseNdk
+:app:preDexFullRelease
+:app:dexFullRelease
+:app:processFullReleaseJavaRes UP-TO-DATE
+:app:packageFullRelease
+:app:assembleFullRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 42.659 secs
+
+2018-05-21 00:40:35,231 INFO  FullProcessService - Found APK file: /tmp/rdisk/1305/src/debug/app_recent.apk

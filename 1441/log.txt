@@ -1,0 +1,117 @@
+2018-04-06 02:55:26,067 INFO  DownloadService - Downloading "https://github.com/orhanobut/bee/archive/master.zip", attempt 3
+2018-04-06 02:56:26,537 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-06 02:56:27,188 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-06 02:56:27,188 INFO  DownloadService - Downloading "https://github.com/orhanobut/bee/archive/master.zip", attempt 3
+2018-04-06 02:57:28,444 DEBUG FullProcessService - Repository https://github.com/orhanobut/bee available: true
+2018-04-06 02:57:28,444 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-06 02:57:28,444 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/orhanobut/bee, /tmp/rdisk/1441/src]
+2018-04-06 02:57:31,189 INFO  SysUtils - 
+2018-04-06 02:57:31,194 INFO  GitService - Deleted "/tmp/rdisk/1441/src/.git": true
+2018-04-06 02:57:31,198 INFO  FullProcessService - Size of directory with sources: 572 KB
+2018-04-06 02:57:31,198 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1441/src]
+2018-04-06 02:57:31,202 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1441/src/.git/
+
+2018-04-06 02:57:31,205 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1441/src/gradlew
+2018-04-06 02:57:31,208 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1441/src/app/build.gradle /tmp/rdisk/1441/src/bee/build.gradle /tmp/rdisk/1441/src/build.gradle
+2018-04-06 02:57:31,211 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1441/src/settings.gradle /tmp/rdisk/1441/src/maven_push.gradle /tmp/rdisk/1441/src/build.gradle /tmp/rdisk/1441/src/bee/build.gradle /tmp/rdisk/1441/src/app/build.gradle
+2018-04-06 02:57:31,211 INFO  ProjectBuildService - Remote scripts: none
+2018-04-06 02:57:31,211 INFO  ProjectFixService - Fixing project...
+2018-04-06 02:57:31,221 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1441/src/app/local.properties
+2018-04-06 02:57:31,221 INFO  ProjectFixService - Build info for "/tmp/rdisk/1441/src/app/build.gradle": [buildToolsVersion=21.1.1,compileSdkVersion=21,minSdkVersion=10,targetSdkVersion=21]
+2018-04-06 02:57:31,222 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1441/src/bee/local.properties
+2018-04-06 02:57:31,222 INFO  ProjectFixService - Build info for "/tmp/rdisk/1441/src/bee/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=10,targetSdkVersion=22]
+2018-04-06 02:57:31,222 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1441/src/local.properties
+2018-04-06 02:57:31,222 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-06 02:57:31,222 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-06 02:57:31,224 INFO  ProjectFixService - Build info for "/tmp/rdisk/1441/src/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=10,targetSdkVersion=22]
+2018-04-06 02:57:31,224 INFO  ProjectFixService - Project was maybe fixed
+2018-04-06 02:57:31,224 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-06 02:57:31,224 INFO  SysUtils - Execute command: [/tmp/rdisk/1441/src/gradlew, -b, /tmp/rdisk/1441/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-06 02:57:40,721 INFO  ProjectTaskService - Detected possible tasks: 65
+2018-04-06 02:57:40,721 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-06 02:57:40,721 INFO  SysUtils - Execute command: [/tmp/rdisk/1441/src/gradlew, -b, /tmp/rdisk/1441/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-06 02:57:51,749 INFO  SysUtils - Configuration on demand is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:bee:compileLint
+:bee:copyReleaseLint UP-TO-DATE
+:bee:mergeReleaseProguardFiles
+:bee:preBuild UP-TO-DATE
+:bee:preReleaseBuild UP-TO-DATE
+:bee:checkReleaseManifest
+:bee:prepareReleaseDependencies
+:bee:compileReleaseAidl
+:bee:compileReleaseRenderscript
+:bee:generateReleaseBuildConfig
+:bee:generateReleaseAssets UP-TO-DATE
+:bee:mergeReleaseAssets
+:bee:generateReleaseResValues
+:bee:generateReleaseResources
+:bee:packageReleaseResources
+:bee:processReleaseManifest
+:bee:processReleaseResources
+:bee:generateReleaseSources
+:bee:processReleaseJavaRes UP-TO-DATE
+:bee:compileReleaseJavaWithJavacNote: /tmp/rdisk/1441/src/bee/src/main/java/com/orhanobut/bee/UiHandler.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:bee:packageReleaseJar
+:bee:compileReleaseNdk UP-TO-DATE
+:bee:packageReleaseJniLibs UP-TO-DATE
+:bee:packageReleaseLocalJar UP-TO-DATE
+:bee:packageReleaseRenderscript UP-TO-DATE
+:bee:bundleRelease
+:app:prepareSrcBeeUnspecifiedLibrary
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:processDebugJavaRes UP-TO-DATE
+:app:compileDebugJavaWithJavac
+:app:compileDebugNdk UP-TO-DATE
+:app:compileDebugSources
+:app:preDexDebug
+:app:dexDebug
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:generateReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:processReleaseJavaRes UP-TO-DATE
+:app:compileReleaseJavaWithJavac
+:app:compileReleaseNdk UP-TO-DATE
+:app:compileReleaseSources
+:app:preDexRelease
+:app:dexRelease
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 10.592 secs
+
+2018-04-06 02:57:51,762 INFO  FullProcessService - Found APK file: /tmp/rdisk/1441/src/app/build/outputs/apk/app-debug.apk

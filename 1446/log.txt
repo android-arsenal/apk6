@@ -1,0 +1,191 @@
+2018-04-06 02:43:45,424 INFO  DownloadService - Downloading "https://github.com/CardinalNow/Android-CircleProgressIndicator/archive/master.zip", attempt 3
+2018-04-06 02:44:46,033 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-06 02:44:46,666 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-06 02:44:46,666 INFO  DownloadService - Downloading "https://github.com/CardinalNow/Android-CircleProgressIndicator/archive/master.zip", attempt 3
+2018-04-06 02:45:47,921 DEBUG FullProcessService - Repository https://github.com/CardinalNow/Android-CircleProgressIndicator available: true
+2018-04-06 02:45:47,921 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-06 02:45:47,921 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/CardinalNow/Android-CircleProgressIndicator, /tmp/rdisk/1446/src]
+2018-04-06 02:45:49,539 INFO  SysUtils - 
+2018-04-06 02:45:49,550 INFO  GitService - Deleted "/tmp/rdisk/1446/src/.git": true
+2018-04-06 02:45:49,552 INFO  FullProcessService - Size of directory with sources: 162 KB
+2018-04-06 02:45:49,552 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1446/src]
+2018-04-06 02:45:49,563 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1446/src/.git/
+
+2018-04-06 02:45:49,565 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1446/src/gradlew
+2018-04-06 02:45:49,566 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1446/src/app/build.gradle /tmp/rdisk/1446/src/build.gradle
+2018-04-06 02:45:49,568 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1446/src/settings.gradle /tmp/rdisk/1446/src/build.gradle /tmp/rdisk/1446/src/app/build.gradle
+2018-04-06 02:45:49,568 INFO  ProjectBuildService - Remote scripts: none
+2018-04-06 02:45:49,568 INFO  ProjectFixService - Fixing project...
+2018-04-06 02:45:49,572 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1446/src/app/local.properties
+2018-04-06 02:45:49,573 INFO  ProjectFixService - Build info for "/tmp/rdisk/1446/src/app/build.gradle": [buildToolsVersion=23.0.3,compileSdkVersion=23,minSdkVersion=16,targetSdkVersion=23]
+2018-04-06 02:45:49,573 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1446/src/local.properties
+2018-04-06 02:45:49,573 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.10-all.zip
+2018-04-06 02:45:49,573 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.10-bin.zip)
+2018-04-06 02:45:49,574 INFO  ProjectFixService - Build info for "/tmp/rdisk/1446/src/build.gradle": [buildToolsVersion=23.0.3,compileSdkVersion=23,minSdkVersion=16,targetSdkVersion=23]
+2018-04-06 02:45:49,574 INFO  ProjectFixService - Project was maybe fixed
+2018-04-06 02:45:49,574 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-06 02:45:49,574 INFO  SysUtils - Execute command: [/tmp/rdisk/1446/src/gradlew, -b, /tmp/rdisk/1446/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-06 02:45:57,010 INFO  ProjectTaskService - Detected possible tasks: 66
+2018-04-06 02:45:57,011 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-04-06 02:45:57,011 INFO  SysUtils - Execute command: [/tmp/rdisk/1446/src/gradlew, -b, /tmp/rdisk/1446/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-06 02:46:04,957 INFO  SysUtils - Configuration on demand is an incubating feature.
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Incremental java compilation is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:compileDebugNdk UP-TO-DATE
+:app:compileLint
+:app:copyDebugLint UP-TO-DATE
+:app:mergeDebugProguardFiles
+:app:packageDebugRenderscript UP-TO-DATE
+:app:checkDebugManifest
+:app:prepareDebugDependencies
+:app:compileDebugRenderscript
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:packageDebugResources
+:app:compileDebugAidl
+:app:generateDebugBuildConfig
+:app:mergeDebugShaders
+:app:compileDebugShaders
+:app:generateDebugAssets
+:app:mergeDebugAssets
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:incrementalDebugJavaCompilationSafeguard
+:app:compileDebugJavaWithJavac
+:app:compileDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+Note: /tmp/rdisk/1446/src/app/src/main/java/com/cardinalsolutions/progressindicator/CurvedTextView.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+:app:processDebugJavaRes UP-TO-DATE
+:app:transformResourcesWithMergeJavaResForDebug
+:app:transformClassesAndResourcesWithSyncLibJarsForDebug
+:app:mergeDebugJniLibFolders
+:app:transformNative_libsWithMergeJniLibsForDebug
+:app:transformNative_libsWithSyncJniLibsForDebug
+:app:bundleDebug
+:app:compileDebugSources
+:app:assembleDebug
+:app:preReleaseBuild UP-TO-DATE
+:app:compileReleaseNdk UP-TO-DATE
+:app:copyReleaseLint UP-TO-DATE
+:app:mergeReleaseProguardFiles
+:app:packageReleaseRenderscript UP-TO-DATE
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseRenderscript
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:packageReleaseResources
+:app:compileReleaseAidl
+:app:generateReleaseBuildConfig
+:app:mergeReleaseShaders
+:app:compileReleaseShaders
+:app:generateReleaseAssets
+:app:mergeReleaseAssets
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:incrementalReleaseJavaCompilationSafeguard
+:app:compileReleaseJavaWithJavac
+:app:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+Note: /tmp/rdisk/1446/src/app/src/main/java/com/cardinalsolutions/progressindicator/CurvedTextView.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+:app:processReleaseJavaRes UP-TO-DATE
+:app:transformResourcesWithMergeJavaResForRelease
+:app:transformClassesAndResourcesWithSyncLibJarsForRelease
+:app:mergeReleaseJniLibFolders
+:app:transformNative_libsWithMergeJniLibsForRelease
+:app:transformNative_libsWithSyncJniLibsForRelease
+:app:bundleRelease
+:app:compileReleaseSources
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 7.511 secs
+
+2018-04-06 02:46:04,964 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-06 02:46:04,964 INFO  SysUtils - Execute command: [/tmp/rdisk/1446/src/gradlew, -b, /tmp/rdisk/1446/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-06 02:46:11,206 INFO  ProjectTaskService - Detected possible tasks: 66
+2018-04-06 02:46:11,207 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-04-06 02:46:11,207 INFO  SysUtils - Execute command: [/tmp/rdisk/1446/src/gradlew, -b, /tmp/rdisk/1446/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-06 02:46:17,744 INFO  SysUtils - Configuration on demand is an incubating feature.
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Incremental java compilation is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:compileDebugNdk UP-TO-DATE
+:app:compileLint
+:app:copyDebugLint UP-TO-DATE
+:app:mergeDebugProguardFiles UP-TO-DATE
+:app:packageDebugRenderscript UP-TO-DATE
+:app:checkDebugManifest
+:app:prepareDebugDependencies
+:app:compileDebugRenderscript UP-TO-DATE
+:app:generateDebugResValues UP-TO-DATE
+:app:generateDebugResources UP-TO-DATE
+:app:packageDebugResources UP-TO-DATE
+:app:compileDebugAidl UP-TO-DATE
+:app:generateDebugBuildConfig UP-TO-DATE
+:app:mergeDebugShaders UP-TO-DATE
+:app:compileDebugShaders UP-TO-DATE
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets UP-TO-DATE
+:app:processDebugManifest UP-TO-DATE
+:app:processDebugResources UP-TO-DATE
+:app:generateDebugSources UP-TO-DATE
+:app:incrementalDebugJavaCompilationSafeguard UP-TO-DATE
+:app:compileDebugJavaWithJavac UP-TO-DATE
+:app:processDebugJavaRes UP-TO-DATE
+:app:transformResourcesWithMergeJavaResForDebug UP-TO-DATE
+:app:transformClassesAndResourcesWithSyncLibJarsForDebug UP-TO-DATE
+:app:mergeDebugJniLibFolders UP-TO-DATE
+:app:transformNative_libsWithMergeJniLibsForDebug UP-TO-DATE
+:app:transformNative_libsWithSyncJniLibsForDebug UP-TO-DATE
+:app:bundleDebug UP-TO-DATE
+:app:compileDebugSources UP-TO-DATE
+:app:assembleDebug UP-TO-DATE
+:app:preReleaseBuild UP-TO-DATE
+:app:compileReleaseNdk UP-TO-DATE
+:app:copyReleaseLint UP-TO-DATE
+:app:mergeReleaseProguardFiles UP-TO-DATE
+:app:packageReleaseRenderscript UP-TO-DATE
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseRenderscript UP-TO-DATE
+:app:generateReleaseResValues UP-TO-DATE
+:app:generateReleaseResources UP-TO-DATE
+:app:packageReleaseResources UP-TO-DATE
+:app:compileReleaseAidl UP-TO-DATE
+:app:generateReleaseBuildConfig UP-TO-DATE
+:app:mergeReleaseShaders UP-TO-DATE
+:app:compileReleaseShaders UP-TO-DATE
+:app:generateReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets UP-TO-DATE
+:app:processReleaseManifest UP-TO-DATE
+:app:processReleaseResources UP-TO-DATE
+:app:generateReleaseSources UP-TO-DATE
+:app:incrementalReleaseJavaCompilationSafeguard UP-TO-DATE
+:app:compileReleaseJavaWithJavac UP-TO-DATE
+:app:processReleaseJavaRes UP-TO-DATE
+:app:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:app:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:app:mergeReleaseJniLibFolders UP-TO-DATE
+:app:transformNative_libsWithMergeJniLibsForRelease UP-TO-DATE
+:app:transformNative_libsWithSyncJniLibsForRelease UP-TO-DATE
+:app:bundleRelease UP-TO-DATE
+:app:compileReleaseSources UP-TO-DATE
+:app:assembleRelease UP-TO-DATE
+:app:assemble UP-TO-DATE
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 6.093 secs
+
+2018-04-06 02:46:17,751 ERROR FullProcessService - Project build has not produced APK file
+2018-04-06 02:46:17,757 ERROR FullProcessService - Could not find generated or existed APK file

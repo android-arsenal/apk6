@@ -1,0 +1,114 @@
+2018-04-07 15:51:22,267 INFO  DownloadService - Downloading "https://github.com/jszczygiel/AndroidYoutubeOverlay/archive/master.zip", attempt 3
+2018-04-07 15:52:22,747 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-07 15:52:23,454 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-07 15:52:23,454 INFO  DownloadService - Downloading "https://github.com/jszczygiel/AndroidYoutubeOverlay/archive/master.zip", attempt 3
+2018-04-07 15:53:24,706 DEBUG FullProcessService - Repository https://github.com/jszczygiel/AndroidYoutubeOverlay available: true
+2018-04-07 15:53:24,706 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-07 15:53:24,706 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/jszczygiel/AndroidYoutubeOverlay, /tmp/rdisk/1324/src]
+2018-04-07 15:53:26,847 INFO  SysUtils - 
+2018-04-07 15:53:26,859 INFO  GitService - Deleted "/tmp/rdisk/1324/src/.git": true
+2018-04-07 15:53:26,861 INFO  FullProcessService - Size of directory with sources: 2 MB
+2018-04-07 15:53:26,861 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1324/src]
+2018-04-07 15:53:26,865 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1324/src/.git/
+
+2018-04-07 15:53:26,867 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1324/src/gradlew
+2018-04-07 15:53:26,870 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1324/src/sample/build.gradle /tmp/rdisk/1324/src/ytLib/build.gradle /tmp/rdisk/1324/src/build.gradle
+2018-04-07 15:53:26,871 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1324/src/ytLib/build.gradle /tmp/rdisk/1324/src/settings.gradle /tmp/rdisk/1324/src/sample/build.gradle /tmp/rdisk/1324/src/build.gradle
+2018-04-07 15:53:26,872 INFO  ProjectBuildService - Remote scripts: none
+2018-04-07 15:53:26,872 INFO  ProjectFixService - Fixing project...
+2018-04-07 15:53:26,877 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1324/src/sample/local.properties
+2018-04-07 15:53:26,877 INFO  ProjectFixService - Build info for "/tmp/rdisk/1324/src/sample/build.gradle": [buildToolsVersion=20.0.0,compileSdkVersion=21,minSdkVersion=17,targetSdkVersion=21]
+2018-04-07 15:53:26,877 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1324/src/ytLib/local.properties
+2018-04-07 15:53:26,878 INFO  ProjectFixService - Build info for "/tmp/rdisk/1324/src/ytLib/build.gradle": [buildToolsVersion=20.0.0,compileSdkVersion=21,minSdkVersion=17,targetSdkVersion=21]
+2018-04-07 15:53:26,878 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1324/src/local.properties
+2018-04-07 15:53:26,878 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-07 15:53:26,878 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-07 15:53:26,879 INFO  ProjectFixService - Build info for "/tmp/rdisk/1324/src/build.gradle": [buildToolsVersion=20.0.0,compileSdkVersion=21,minSdkVersion=17,targetSdkVersion=21]
+2018-04-07 15:53:26,879 INFO  ProjectFixService - Project was maybe fixed
+2018-04-07 15:53:26,879 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-07 15:53:26,879 INFO  SysUtils - Execute command: [/tmp/rdisk/1324/src/gradlew, -b, /tmp/rdisk/1324/src/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-07 15:53:38,176 INFO  ProjectTaskService - Detected possible tasks: 53
+2018-04-07 15:53:38,176 INFO  ProjectTaskService - Excluded tasks (11): lintDebug deviceCheck lint uninstallRelease connectedCheck uninstallAll check connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-07 15:53:38,177 INFO  SysUtils - Execute command: [/tmp/rdisk/1324/src/gradlew, -b, /tmp/rdisk/1324/src/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, connectedCheck, -x, uninstallAll, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-07 15:53:58,695 INFO  SysUtils - Configuration on demand is an incubating feature.
+:sample:preBuild
+:sample:compileDebugNdk
+:sample:preDebugBuild
+:sample:checkDebugManifest
+:sample:preReleaseBuild
+:ytLib:compileLint
+:ytLib:copyReleaseLint UP-TO-DATE
+:ytLib:mergeReleaseProguardFiles
+:ytLib:preBuild
+:ytLib:preReleaseBuild
+:ytLib:checkReleaseManifest
+:ytLib:prepareReleaseDependencies
+:ytLib:compileReleaseAidl
+:ytLib:compileReleaseRenderscript
+:ytLib:generateReleaseBuildConfig
+:ytLib:generateReleaseAssets UP-TO-DATE
+:ytLib:mergeReleaseAssets
+:ytLib:generateReleaseResValues
+:ytLib:generateReleaseResources
+:ytLib:packageReleaseResources
+:ytLib:processReleaseManifest
+:ytLib:processReleaseResources
+:ytLib:generateReleaseSources
+:ytLib:compileReleaseJava
+:ytLib:processReleaseJavaRes UP-TO-DATE
+:ytLib:packageReleaseJar
+:ytLib:compileReleaseNdk
+:ytLib:packageReleaseJniLibs UP-TO-DATE
+:ytLib:packageReleaseLocalJar
+:ytLib:packageReleaseRenderscript UP-TO-DATE
+:ytLib:bundleRelease
+:sample:prepareSrcYtLibUnspecifiedLibrary
+:sample:prepareDebugDependencies
+:sample:compileDebugAidl
+:sample:compileDebugRenderscript
+:sample:generateDebugBuildConfig
+:sample:generateDebugAssets UP-TO-DATE
+:sample:mergeDebugAssets
+:sample:generateDebugResValues
+:sample:generateDebugResources
+:sample:mergeDebugResources
+:sample:processDebugManifest
+:sample:processDebugResources
+:sample:generateDebugSources
+:sample:compileDebugJava
+:sample:preDexDebug
+:sample:dexDebug
+:sample:processDebugJavaRes UP-TO-DATE
+:sample:validateDebugSigning
+:sample:packageDebug
+:sample:zipalignDebug
+:sample:assembleDebug
+:sample:checkReleaseManifest
+:sample:prepareReleaseDependencies
+:sample:compileReleaseAidl
+:sample:compileReleaseRenderscript
+:sample:generateReleaseBuildConfig
+:sample:generateReleaseAssets UP-TO-DATE
+:sample:mergeReleaseAssets
+:sample:generateReleaseResValues
+:sample:generateReleaseResources
+:sample:mergeReleaseResources
+:sample:processReleaseManifest
+:sample:processReleaseResources
+:sample:generateReleaseSources
+:sample:compileReleaseJava
+:sample:lintVitalRelease
+:sample:compileReleaseNdk
+:sample:preDexRelease
+:sample:dexRelease
+:sample:processReleaseJavaRes UP-TO-DATE
+:sample:packageRelease
+:sample:assembleRelease
+:sample:assemble
+:sample:build
+
+BUILD SUCCESSFUL
+
+Total time: 20.062 secs
+
+2018-04-07 15:53:58,704 INFO  FullProcessService - Found APK file: /tmp/rdisk/1324/src/sample/build/outputs/apk/sample-release-unsigned.apk

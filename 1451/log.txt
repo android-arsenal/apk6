@@ -1,0 +1,21 @@
+2018-04-06 02:30:49,274 INFO  DownloadService - Downloading "https://github.com/gorefest/baracus-framework/archive/master.zip", attempt 3
+2018-04-06 02:31:49,766 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-06 02:31:50,402 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-06 02:31:50,402 INFO  DownloadService - Downloading "https://github.com/gorefest/baracus-framework/archive/master.zip", attempt 3
+2018-04-06 02:32:51,713 DEBUG FullProcessService - Repository https://github.com/gorefest/baracus-framework available: true
+2018-04-06 02:32:51,713 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-06 02:32:51,713 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/gorefest/baracus-framework, /tmp/rdisk/1451/src]
+2018-04-06 02:32:53,252 INFO  SysUtils - 
+2018-04-06 02:32:53,257 INFO  GitService - Deleted "/tmp/rdisk/1451/src/.git": true
+2018-04-06 02:32:53,259 INFO  FullProcessService - Size of directory with sources: 249 KB
+2018-04-06 02:32:53,260 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1451/src]
+2018-04-06 02:32:53,263 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1451/src/.git/
+
+2018-04-06 02:32:53,266 INFO  ProjectBuildService - Gradle wrapper(s): none
+2018-04-06 02:32:53,266 ERROR ProjectBuildService - Could not detect Gradle wrapper. Default Gradle installation will be used
+2018-04-06 02:32:53,268 INFO  ProjectBuildService - Build script(s): none
+2018-04-06 02:32:53,270 INFO  ProjectBuildService - All script(s): none
+2018-04-06 02:32:53,270 INFO  ProjectBuildService - Remote scripts: none
+2018-04-06 02:32:53,270 ERROR FullProcessService - Project is not correct Gradle project
+2018-04-06 02:32:53,270 ERROR FullProcessService - Project build has not produced APK file
+2018-04-06 02:32:53,273 ERROR FullProcessService - Could not find generated or existed APK file

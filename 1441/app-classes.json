@@ -1,0 +1,5 @@
+{
+  "com.orhanobut.android.beesample" : [ "AppBeeConfig", "BuildConfig", "MainActivity", "R", "R$attr", "R$color", "R$dimen", "R$drawable", "R$id", "R$layout", "R$string" ],
+  "com.orhanobut.bee" : [ "Bee", "Bee$BeeHandler", "BeeConfig", "BeeLog", "BuildConfig", "ConfigListener", "ContentAdapter", "ContentAdapter$Holder", "ContentHolder", "ContentItem", "LogHistory", "MethodInfo", "PrefHelper", "R", "R$color", "R$drawable", "R$id", "R$layout", "R$string", "Settings", "SettingsAdapter", "SettingsAdapter$1", "SettingsAdapter$2", "SettingsAdapter$3", "UiHandler", "UiHandler$1", "UiHandler$2", "UiHandler$BeeGestureListener" ],
+  "com.orhanobut.bee.widgets" : [ "Button", "CheckBox", "Spinner", "Title" ]
+}

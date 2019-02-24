@@ -1,0 +1,248 @@
+2018-04-07 16:03:41,421 INFO  DownloadService - Downloading "https://github.com/TonicArtos/SuperSLiM/archive/master.zip", attempt 3
+2018-04-07 16:04:41,926 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-07 16:04:42,590 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-07 16:04:42,590 INFO  DownloadService - Downloading "https://github.com/TonicArtos/SuperSLiM/archive/master.zip", attempt 3
+2018-04-07 16:05:43,856 DEBUG FullProcessService - Repository https://github.com/TonicArtos/SuperSLiM available: true
+2018-04-07 16:05:43,856 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-07 16:05:43,856 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/TonicArtos/SuperSLiM, /tmp/rdisk/1319/src]
+2018-04-07 16:05:45,612 INFO  SysUtils - 
+2018-04-07 16:05:45,618 INFO  GitService - Deleted "/tmp/rdisk/1319/src/.git": true
+2018-04-07 16:05:45,623 INFO  FullProcessService - Size of directory with sources: 509 KB
+2018-04-07 16:05:45,623 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1319/src]
+2018-04-07 16:05:45,628 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1319/src/.git/
+
+2018-04-07 16:05:45,631 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1319/src/gradlew
+2018-04-07 16:05:45,635 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1319/src/dbexample/build.gradle /tmp/rdisk/1319/src/library/build.gradle /tmp/rdisk/1319/src/build.gradle
+2018-04-07 16:05:45,638 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1319/src/settings.gradle /tmp/rdisk/1319/src/library/build.gradle /tmp/rdisk/1319/src/dbexample/build.gradle /tmp/rdisk/1319/src/build.gradle
+2018-04-07 16:05:45,639 INFO  ProjectBuildService - Remote scripts: none
+2018-04-07 16:05:45,639 INFO  ProjectFixService - Fixing project...
+2018-04-07 16:05:45,647 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1319/src/dbexample/local.properties
+2018-04-07 16:05:45,648 INFO  ProjectFixService - Build info for "/tmp/rdisk/1319/src/dbexample/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=11,targetSdkVersion=<null>]
+2018-04-07 16:05:45,649 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1319/src/dbexample/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=11,targetSdkVersion=27]
+2018-04-07 16:05:45,649 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1319/src/library/local.properties
+2018-04-07 16:05:45,651 INFO  ProjectFixService - Build info for "/tmp/rdisk/1319/src/library/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=9,targetSdkVersion=<null>]
+2018-04-07 16:05:45,651 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1319/src/library/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=9,targetSdkVersion=27]
+2018-04-07 16:05:45,652 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1319/src/local.properties
+2018-04-07 16:05:45,652 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-3.3-all.zip
+2018-04-07 16:05:45,652 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-3.3-bin.zip)
+2018-04-07 16:05:45,654 INFO  ProjectFixService - Build info for "/tmp/rdisk/1319/src/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=9,targetSdkVersion=<null>]
+2018-04-07 16:05:45,654 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1319/src/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=9,targetSdkVersion=27]
+2018-04-07 16:05:45,655 INFO  ProjectFixService - Project was maybe fixed
+2018-04-07 16:05:45,655 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-07 16:05:45,655 INFO  SysUtils - Execute command: [/tmp/rdisk/1319/src/gradlew, -b, /tmp/rdisk/1319/src/dbexample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-07 16:06:01,257 INFO  ProjectTaskService - Detected possible tasks: 69
+2018-04-07 16:06:01,257 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-07 16:06:01,257 INFO  SysUtils - Execute command: [/tmp/rdisk/1319/src/gradlew, -b, /tmp/rdisk/1319/src/dbexample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-07 16:06:50,073 INFO  SysUtils - Configuration on demand is an incubating feature.
+The Task.leftShift(Closure) method has been deprecated and is scheduled to be removed in Gradle 5.0. Please use Task.doLast(Action) instead.
+	at org.gradle.api.internal.AbstractTask.leftShift(AbstractTask.java:513)
+	at org.gradle.api.Task$leftShift.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at build_f1jul1277pu6g5vpwteq8dnm9.run(/tmp/rdisk/1319/src/build.gradle:30)
+	at org.gradle.groovy.scripts.internal.DefaultScriptRunnerFactory$ScriptRunnerImpl.run(DefaultScriptRunnerFactory.java:90)
+	at org.gradle.configuration.DefaultScriptPluginFactory$ScriptPluginImpl$2.run(DefaultScriptPluginFactory.java:176)
+	at org.gradle.configuration.ProjectScriptTarget.addConfiguration(ProjectScriptTarget.java:77)
+	at org.gradle.configuration.DefaultScriptPluginFactory$ScriptPluginImpl.apply(DefaultScriptPluginFactory.java:181)
+	at org.gradle.configuration.project.BuildScriptProcessor.execute(BuildScriptProcessor.java:39)
+	at org.gradle.configuration.project.BuildScriptProcessor.execute(BuildScriptProcessor.java:26)
+	at org.gradle.configuration.project.ConfigureActionsProjectEvaluator.evaluate(ConfigureActionsProjectEvaluator.java:34)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.doConfigure(LifecycleProjectEvaluator.java:70)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.access$000(LifecycleProjectEvaluator.java:33)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator$1.execute(LifecycleProjectEvaluator.java:53)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator$1.execute(LifecycleProjectEvaluator.java:50)
+	at org.gradle.internal.Transformers$4.transform(Transformers.java:169)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:106)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:61)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.evaluate(LifecycleProjectEvaluator.java:50)
+	at org.gradle.api.internal.project.DefaultProject.evaluate(DefaultProject.java:628)
+	at org.gradle.api.internal.project.DefaultProject.evaluate(DefaultProject.java:129)
+	at org.gradle.execution.TaskPathProjectEvaluator.configure(TaskPathProjectEvaluator.java:35)
+	at org.gradle.configuration.DefaultBuildConfigurer.configure(DefaultBuildConfigurer.java:36)
+	at org.gradle.initialization.DefaultGradleLauncher$1.execute(DefaultGradleLauncher.java:161)
+	at org.gradle.initialization.DefaultGradleLauncher$1.execute(DefaultGradleLauncher.java:158)
+	at org.gradle.internal.Transformers$4.transform(Transformers.java:169)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:106)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:56)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:158)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:119)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:102)
+	at org.gradle.launcher.exec.GradleBuildController.run(GradleBuildController.java:71)
+	at org.gradle.tooling.internal.provider.ExecuteBuildActionRunner.run(ExecuteBuildActionRunner.java:28)
+	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:41)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.tooling.internal.provider.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:75)
+	at org.gradle.tooling.internal.provider.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:49)
+	at org.gradle.tooling.internal.provider.ServicesSetupBuildActionExecuter.execute(ServicesSetupBuildActionExecuter.java:44)
+	at org.gradle.tooling.internal.provider.ServicesSetupBuildActionExecuter.execute(ServicesSetupBuildActionExecuter.java:29)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:51)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:173)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:244)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:217)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:33)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:174)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:60)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:37)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:33)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:130)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:48)
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Incremental java compilation is an incubating feature.
+:dbexample:preBuild UP-TO-DATE
+:dbexample:preDebugBuild UP-TO-DATE
+:dbexample:checkDebugManifest
+:dbexample:preReleaseBuild UP-TO-DATE
+:dbexample:prepareComAndroidSupportAnimatedVectorDrawable2530Library
+:dbexample:prepareComAndroidSupportAppcompatV72530Library
+:dbexample:prepareComAndroidSupportDesign2530Library
+:dbexample:prepareComAndroidSupportRecyclerviewV72530Library
+:dbexample:prepareComAndroidSupportSupportCompat2530Library
+:dbexample:prepareComAndroidSupportSupportCoreUi2530Library
+:dbexample:prepareComAndroidSupportSupportCoreUtils2530Library
+:dbexample:prepareComAndroidSupportSupportFragment2530Library
+:dbexample:prepareComAndroidSupportSupportMediaCompat2530Library
+:dbexample:prepareComAndroidSupportSupportV42530Library
+:dbexample:prepareComAndroidSupportSupportVectorDrawable2530Library
+:dbexample:prepareComAndroidSupportTransition2530Library
+:library:preBuild UP-TO-DATE
+:library:preReleaseBuild UP-TO-DATE
+:library:checkReleaseManifest
+:library:preDebugAndroidTestBuild UP-TO-DATE
+:library:preDebugBuild UP-TO-DATE
+:library:preDebugUnitTestBuild UP-TO-DATE
+:library:preReleaseUnitTestBuild UP-TO-DATE
+:library:preUnitTestBuild UP-TO-DATE
+:library:preUnitTestUnitTestBuild UP-TO-DATE
+:library:prepareComAndroidSupportAnimatedVectorDrawable2530Library
+:library:prepareComAndroidSupportAppcompatV72530Library
+:library:prepareComAndroidSupportRecyclerviewV72530Library
+:library:prepareComAndroidSupportSupportCompat2530Library
+:library:prepareComAndroidSupportSupportCoreUi2530Library
+:library:prepareComAndroidSupportSupportCoreUtils2530Library
+:library:prepareComAndroidSupportSupportFragment2530Library
+:library:prepareComAndroidSupportSupportMediaCompat2530Library
+:library:prepareComAndroidSupportSupportV42530Library
+:library:prepareComAndroidSupportSupportVectorDrawable2530Library
+:library:prepareReleaseDependencies
+:library:compileReleaseAidl
+:library:compileReleaseNdk UP-TO-DATE
+:library:compileLint
+:library:copyReleaseLint UP-TO-DATE
+:library:compileReleaseRenderscript
+:library:generateReleaseBuildConfig
+:library:generateReleaseResValues
+:library:generateReleaseResources
+:library:mergeReleaseResources
+:library:processReleaseManifest
+:library:processReleaseResources
+:library:generateReleaseSources
+:library:incrementalReleaseJavaCompilationSafeguard
+:library:javaPreCompileRelease
+:library:compileReleaseKotlin
+Using kotlin incremental compilation
+w: The '-d' option with a directory destination is ignored because '-module' is specified
+w: /tmp/rdisk/1319/src/library/src/main/kotlin/com/tonicartos/superslim/adapter/graph.kt: (189, 13): Variable 'footerCount' is never used
+:library:compileReleaseJavaWithJavac
+:library:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:library:copyReleaseKotlinClasses
+:library:extractReleaseAnnotations
+:library:mergeReleaseShaders
+:library:compileReleaseShaders
+:library:generateReleaseAssets
+:library:mergeReleaseAssets
+:library:mergeReleaseProguardFiles
+:library:packageReleaseRenderscript UP-TO-DATE
+:library:packageReleaseResources
+:library:processReleaseJavaRes UP-TO-DATE
+:library:transformResourcesWithMergeJavaResForRelease
+:library:transformClassesAndResourcesWithSyncLibJarsForRelease
+:library:mergeReleaseJniLibFolders
+:library:transformNativeLibsWithMergeJniLibsForRelease
+:library:transformNativeLibsWithStripDebugSymbolForRelease
+:library:transformNativeLibsWithSyncJniLibsForRelease
+:library:bundleRelease
+:dbexample:prepareDebugDependencies
+:dbexample:compileDebugAidl
+:dbexample:compileDebugRenderscript
+:dbexample:generateDebugBuildConfig
+:dbexample:generateDebugResValues
+:dbexample:generateDebugResources
+:dbexample:mergeDebugResources
+:dbexample:processDebugManifest
+:dbexample:processDebugResources
+:dbexample:generateDebugSources
+:dbexample:incrementalDebugJavaCompilationSafeguard
+:dbexample:javaPreCompileDebug
+:dbexample:compileDebugJavaWithJavac
+:dbexample:compileDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:dbexample:compileDebugNdk UP-TO-DATE
+:dbexample:compileDebugSources
+:dbexample:mergeDebugShaders
+:dbexample:compileDebugShaders
+:dbexample:generateDebugAssets
+:dbexample:mergeDebugAssets
+:dbexample:transformClassesWithDexForDebug
+:dbexample:mergeDebugJniLibFolders
+:dbexample:transformNativeLibsWithMergeJniLibsForDebug
+:dbexample:transformNativeLibsWithStripDebugSymbolForDebug
+:dbexample:processDebugJavaRes UP-TO-DATE
+:dbexample:transformResourcesWithMergeJavaResForDebug
+:dbexample:validateSigningDebug
+:dbexample:packageDebug
+:dbexample:assembleDebug
+:dbexample:checkReleaseManifest
+:dbexample:prepareReleaseDependencies
+:dbexample:compileReleaseAidl
+:dbexample:compileReleaseRenderscript
+:dbexample:generateReleaseBuildConfig
+:dbexample:generateReleaseResValues
+:dbexample:generateReleaseResources
+:dbexample:mergeReleaseResources
+:dbexample:processReleaseManifest
+:dbexample:processReleaseResources
+:dbexample:generateReleaseSources
+:dbexample:incrementalReleaseJavaCompilationSafeguard
+:dbexample:javaPreCompileRelease
+:dbexample:compileReleaseJavaWithJavac
+:dbexample:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:dbexample:compileReleaseNdk UP-TO-DATE
+:dbexample:compileReleaseSources
+:dbexample:lintVitalRelease
+:dbexample:mergeReleaseShaders
+:dbexample:compileReleaseShaders
+:dbexample:generateReleaseAssets
+:dbexample:mergeReleaseAssets
+:dbexample:transformClassesWithDexForRelease
+:dbexample:mergeReleaseJniLibFolders
+:dbexample:transformNativeLibsWithMergeJniLibsForRelease
+:dbexample:transformNativeLibsWithStripDebugSymbolForRelease
+:dbexample:processReleaseJavaRes UP-TO-DATE
+:dbexample:transformResourcesWithMergeJavaResForRelease
+:dbexample:packageRelease
+:dbexample:assembleRelease
+:dbexample:assemble
+:dbexample:build
+
+BUILD SUCCESSFUL
+
+Total time: 48.241 secs
+
+2018-04-07 16:06:50,151 INFO  FullProcessService - Found APK file: /tmp/rdisk/1319/src/dbexample/build/outputs/apk/dbexample-release-unsigned.apk

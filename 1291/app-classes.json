@@ -1,0 +1,4 @@
+{
+  "com.commonsware.cwac.sacklist" : [ "BuildConfig", "SackOfViewsAdapter" ],
+  "com.commonsware.cwac.sacklist.demo" : [ "BuildConfig", "R", "R$attr", "R$drawable", "R$layout", "R$string", "SackOfViewsDemo", "SackOfViewsDemo$SillyAdapter" ]
+}

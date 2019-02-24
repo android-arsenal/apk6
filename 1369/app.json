@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "com.laevatein.sample",
+    "label" : "Laevatein",
+    "icon" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "versionName" : "1.0",
+    "versionCode" : 1,
+    "installLocation" : null,
+    "minSdkVersion" : "14",
+    "targetSdkVersion" : "26",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ "android.permission.WRITE_EXTERNAL_STORAGE", "android.permission.READ_EXTERNAL_STORAGE" ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAEX0lEQVRo3u1ZT4gbVRj/vTexiZsG15Iq1UJrpYLYQ+ltTzkUetLD9iRe2mL1WC+VXoWC0JPgpWALVQ8t62X3oKIUkRUxKFKh0i1Fu7bd7LrNuh3dmswkzntfD+/NzJtkkkyymdKRfjBk5s2/7zfv9/2+73sBHttj25SxzoG5ublztm0fJyIwxmD+Rm40xnqd922UezvfDwCTk5Pnp6en3+oJoFqtXtjY2Dhqvtx3oHMszkynhjkXd20vH0ql0sdTU1PHum6qVCqcMmKVSoX7fgc7CwsLuazw3vQ1ANBut3lWAJi+8qyrEDeChGXFadPXzM9A4sD988vP4NT+AOMWwDmYZSmp4xYY52qMMYBxdaw0E9DySVICJJWcSqmOpQARgYTQYwIkJSZ2voAdr74+XgDNOzfx742rYFZOOW/lNBB9zHkAhnEeAAkcN52WEiQESHjKceEFxwqMGP8M+Lb7zZPYsq2sciAzciFjYVaMS1b+TBj7APkDIAL+s9ewePb9dCjkW778DPLbd6SjKBaPLT0SqZCUcoAK0VAP3oTCDLzG9DW5jD4E5306pSOjBEDK9BEQDfWxePKp1RKY8kQo1UoBgPoyEukjoNGCONGDU6YQGQkvBQrpDJry1weNSKHBKqRSfdpqRFIOpNBIKkQPgUJa5FMKYin7yqh95Qc4q7XNB7CulcZeSpCMp5DnNFCbOQ/75+9gFUvY8/YpbH3x5U3KqExDhWTXl7n/2zVcP/0O1qvfgISAd/8f/P7he7B/qY4OQIj08gAJEdREy7Of4saZd9Gqr+gyWG3CdbD40RnUv/08vp+119Far/dVoZEoNEiFSOo6nQASHpZnP9ENDVclNVFYRgtg6eJZtO+t4fnDR8EYQ3NpEXcvz+Lej/MAA5577Q08e+gw+BNbumZgEADT11y/VboogKgKkRDK+WAFTWoAYX+w+sUM3NUahNPExrUrkVpnaeYc1ua/wq4jJ/DUKwfCijdZDLDh+wGpOyadykh4AKnOC4yFW0dTY/80H9V1DYCI4NQWcf30CWybOog9x0+qU8IbikLD5wEKZTVsA81N9Nm6r4WUWP/+azTv3IwAHH9HRjII4iAmfMqYTXxMW9k1A75cakqFFShpqU4pD5gPJqEAxPK/HwAjDojM+p+0QKSUyCBDCjHGMLF7b7iC7DsfHPZenQ66Ln8mNABemFDjQ5YSyWXUoBCzctj/waWxl0HO8q1EpUSsjCapRiEF3PpKP1UbtgGOmHt3JVFH1isPJOqUfj11TK/AsYA6USr1XxeKUKczHkboyBID2Lp3n5FsmfHRWZfDfWMgAigaF6R/Sy/tSwwgeFM+n590XdfOwoJuoVB4utVq/d01A+12G1mzCADHcbINoNFoZBoAazabWfGb/W8oFCApFotF13V3SSl3AnhSn3tU/oLylwQdznmtUCjcbmi+BzNQLpdb9Xp9yfO8v7Tj7FH5448x5icNmcvlnHK53MpivMbaA0AP1qVJ0MVrAAAAAElFTkSuQmCC"
+  },
+  "dexClasses" : 2948,
+  "locales" : [ "", "sl", "bg", "mr", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "mn", "fi", "lv", "mk", "uz", "eu", "bs", "sw", "pt_PT", "tl", "th", "bn", "pt", "ar", "ru", "gl", "kn", "az", "fa", "sk", "ms", "ml", "gu", "kk", "et", "hi", "cs", "sv", "pa", "el", "lo", "nl", "hu", "af", "hy", "en_AU", "in", "vi", "fr_CA", "ky", "sr", "km", "pt_BR", "da", "be", "es", "tr", "ne", "ro", "hr", "am", "lt", "pl", "zh_CN", "my", "ka", "sq", "fr", "ur", "ja", "is", "si", "iw", "de", "en_IN", "es_US", "nb", "ca", "ta", "en_GB", "te" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"1\" android:versionName=\"1.0\" package=\"com.laevatein.sample\">\n\t<uses-sdk android:minSdkVersion=\"14\" android:targetSdkVersion=\"26\" />\n\t<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />\n\t<uses-permission android:name=\"android.permission.READ_EXTERNAL_STORAGE\" />\n\t<application android:theme=\"resourceId:0x7f0d0006\" android:label=\"Laevatein\" android:icon=\"res/drawable-mdpi-v4/ic_launcher.png\" android:allowBackup=\"true\">\n\t\t<activity android:name=\"com.laevatein.sample.LSampleActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t\t<activity android:name=\"com.laevatein.ui.PhotoSelectionActivity\" />\n\t\t<activity android:name=\"com.laevatein.ui.ImagePreviewActivity\" />\n\t\t<meta-data android:name=\"android.support.VERSION\" android:value=\"26.1.0\" />\n\t\t<meta-data android:name=\"android.arch.lifecycle.VERSION\" android:value=\"27.0.0-SNAPSHOT\" />\n\t</application>\n</manifest>\n",
+  "fileSize" : 2158877,
+  "crc32" : 3057025895,
+  "sha256" : "516181733871e2112f6eb5ba7a0547b545e6f3f1c0ad5f8982213b5eab2c892c",
+  "buildTime" : 1523040809000
+}

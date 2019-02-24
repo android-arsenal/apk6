@@ -1,0 +1,124 @@
+2018-05-21 02:36:17,393 INFO  DownloadService - Downloading "https://github.com/ongakuer/CircleIndicator/archive/master.zip", attempt 3
+2018-05-21 02:36:18,430 INFO  DownloadService - Downloaded https://github.com/ongakuer/CircleIndicator/archive/master.zip, attempt 3
+2018-05-21 02:36:18,430 INFO  DownloadService - Size of file "/tmp/rdisk/1268/master.zip": 1 MB
+2018-05-21 02:36:18,430 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-05-21 02:36:18,430 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/1268/master.zip: true
+2018-05-21 02:36:18,430 DEBUG ZipUtil - Extracting '/tmp/rdisk/1268/master.zip' into '/tmp/rdisk/1268/src'.
+2018-05-21 02:36:18,452 INFO  FullProcessService - Size of directory with sources: 1 MB
+2018-05-21 02:36:18,452 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1268/src]
+2018-05-21 02:36:18,464 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1268/src/.git/
+
+2018-05-21 02:36:18,467 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1268/src/CircleIndicator-master/gradlew
+2018-05-21 02:36:18,470 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1268/src/CircleIndicator-master/LoopingViewPager/build.gradle /tmp/rdisk/1268/src/CircleIndicator-master/circleindicator/build.gradle /tmp/rdisk/1268/src/CircleIndicator-master/sample/build.gradle /tmp/rdisk/1268/src/CircleIndicator-master/build.gradle
+2018-05-21 02:36:18,473 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1268/src/CircleIndicator-master/settings.gradle /tmp/rdisk/1268/src/CircleIndicator-master/sample/build.gradle /tmp/rdisk/1268/src/CircleIndicator-master/circleindicator/upload-maven.gradle /tmp/rdisk/1268/src/CircleIndicator-master/circleindicator/upload-jcenter.gradle /tmp/rdisk/1268/src/CircleIndicator-master/circleindicator/build.gradle /tmp/rdisk/1268/src/CircleIndicator-master/build.gradle /tmp/rdisk/1268/src/CircleIndicator-master/LoopingViewPager/build.gradle
+2018-05-21 02:36:18,474 INFO  ProjectBuildService - Remote scripts: none
+2018-05-21 02:36:18,474 INFO  ProjectFixService - Fixing project...
+2018-05-21 02:36:18,482 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1268/src/CircleIndicator-master/LoopingViewPager/local.properties
+2018-05-21 02:36:18,482 INFO  ProjectFixService - Build info for "/tmp/rdisk/1268/src/CircleIndicator-master/LoopingViewPager/build.gradle": [buildToolsVersion=24.0.3,compileSdkVersion=24,minSdkVersion=9,targetSdkVersion=24]
+2018-05-21 02:36:18,483 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1268/src/CircleIndicator-master/circleindicator/local.properties
+2018-05-21 02:36:18,483 INFO  ProjectFixService - Build info for "/tmp/rdisk/1268/src/CircleIndicator-master/circleindicator/build.gradle": [buildToolsVersion=24.0.3,compileSdkVersion=24,minSdkVersion=11,targetSdkVersion=24]
+2018-05-21 02:36:18,483 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1268/src/CircleIndicator-master/sample/local.properties
+2018-05-21 02:36:18,483 INFO  ProjectFixService - Build info for "/tmp/rdisk/1268/src/CircleIndicator-master/sample/build.gradle": [buildToolsVersion=24.0.3,compileSdkVersion=24,minSdkVersion=11,targetSdkVersion=24]
+2018-05-21 02:36:18,484 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1268/src/CircleIndicator-master/local.properties
+2018-05-21 02:36:18,484 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.14.1-all.zip
+2018-05-21 02:36:18,484 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.14.1-bin.zip)
+2018-05-21 02:36:18,485 INFO  ProjectFixService - Build info for "/tmp/rdisk/1268/src/CircleIndicator-master/build.gradle": [buildToolsVersion=24.0.3,compileSdkVersion=24,minSdkVersion=11,targetSdkVersion=24]
+2018-05-21 02:36:18,485 INFO  ProjectFixService - Project was maybe fixed
+2018-05-21 02:36:18,485 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-21 02:36:18,485 INFO  SysUtils - Execute command: [/tmp/rdisk/1268/src/CircleIndicator-master/gradlew, -b, /tmp/rdisk/1268/src/CircleIndicator-master/LoopingViewPager/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-21 02:36:26,861 INFO  ProjectTaskService - Detected possible tasks: 68
+2018-05-21 02:36:26,861 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-05-21 02:36:26,861 INFO  SysUtils - Execute command: [/tmp/rdisk/1268/src/CircleIndicator-master/gradlew, -b, /tmp/rdisk/1268/src/CircleIndicator-master/LoopingViewPager/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-05-21 02:36:36,334 INFO  SysUtils - Configuration on demand is an incubating feature.
+Incremental java compilation is an incubating feature.
+:LoopingViewPager:preBuild UP-TO-DATE
+:LoopingViewPager:preDebugBuild UP-TO-DATE
+:LoopingViewPager:checkDebugManifest
+:LoopingViewPager:preDebugAndroidTestBuild UP-TO-DATE
+:LoopingViewPager:preDebugUnitTestBuild UP-TO-DATE
+:LoopingViewPager:preReleaseBuild UP-TO-DATE
+:LoopingViewPager:preReleaseUnitTestBuild UP-TO-DATE
+:LoopingViewPager:prepareComAndroidSupportSupportCompat2421Library
+:LoopingViewPager:prepareComAndroidSupportSupportCoreUi2421Library
+:LoopingViewPager:prepareComAndroidSupportSupportCoreUtils2421Library
+:LoopingViewPager:prepareComAndroidSupportSupportFragment2421Library
+:LoopingViewPager:prepareComAndroidSupportSupportMediaCompat2421Library
+:LoopingViewPager:prepareComAndroidSupportSupportV42421Library
+:LoopingViewPager:prepareDebugDependencies
+:LoopingViewPager:compileDebugAidl
+:LoopingViewPager:compileDebugNdk UP-TO-DATE
+:LoopingViewPager:compileLint
+:LoopingViewPager:copyDebugLint UP-TO-DATE
+:LoopingViewPager:compileDebugRenderscript
+:LoopingViewPager:generateDebugBuildConfig
+:LoopingViewPager:generateDebugResValues
+:LoopingViewPager:generateDebugResources
+:LoopingViewPager:mergeDebugResources
+:LoopingViewPager:processDebugManifest
+:LoopingViewPager:processDebugResources
+:LoopingViewPager:generateDebugSources
+:LoopingViewPager:incrementalDebugJavaCompilationSafeguard
+:LoopingViewPager:compileDebugJavaWithJavac
+:LoopingViewPager:compileDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+Note: /tmp/rdisk/1268/src/CircleIndicator-master/LoopingViewPager/src/main/java/com/imbryk/viewPager/LoopViewPager.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+:LoopingViewPager:extractDebugAnnotations
+:LoopingViewPager:mergeDebugShaders
+:LoopingViewPager:compileDebugShaders
+:LoopingViewPager:generateDebugAssets
+:LoopingViewPager:mergeDebugAssets
+:LoopingViewPager:mergeDebugProguardFiles
+:LoopingViewPager:packageDebugRenderscript UP-TO-DATE
+:LoopingViewPager:packageDebugResources
+:LoopingViewPager:processDebugJavaRes UP-TO-DATE
+:LoopingViewPager:transformResourcesWithMergeJavaResForDebug
+:LoopingViewPager:transformClassesAndResourcesWithSyncLibJarsForDebug
+:LoopingViewPager:mergeDebugJniLibFolders
+:LoopingViewPager:transformNative_libsWithMergeJniLibsForDebug
+:LoopingViewPager:transformNative_libsWithSyncJniLibsForDebug
+:LoopingViewPager:bundleDebug
+:LoopingViewPager:compileDebugSources
+:LoopingViewPager:assembleDebug
+:LoopingViewPager:checkReleaseManifest
+:LoopingViewPager:prepareReleaseDependencies
+:LoopingViewPager:compileReleaseAidl
+:LoopingViewPager:compileReleaseNdk UP-TO-DATE
+:LoopingViewPager:copyReleaseLint UP-TO-DATE
+:LoopingViewPager:compileReleaseRenderscript
+:LoopingViewPager:generateReleaseBuildConfig
+:LoopingViewPager:generateReleaseResValues
+:LoopingViewPager:generateReleaseResources
+:LoopingViewPager:mergeReleaseResources
+:LoopingViewPager:processReleaseManifest
+:LoopingViewPager:processReleaseResources
+:LoopingViewPager:generateReleaseSources
+:LoopingViewPager:incrementalReleaseJavaCompilationSafeguard
+:LoopingViewPager:compileReleaseJavaWithJavac
+:LoopingViewPager:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+Note: /tmp/rdisk/1268/src/CircleIndicator-master/LoopingViewPager/src/main/java/com/imbryk/viewPager/LoopViewPager.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+:LoopingViewPager:extractReleaseAnnotations
+:LoopingViewPager:mergeReleaseShaders
+:LoopingViewPager:compileReleaseShaders
+:LoopingViewPager:generateReleaseAssets
+:LoopingViewPager:mergeReleaseAssets
+:LoopingViewPager:mergeReleaseProguardFiles
+:LoopingViewPager:packageReleaseRenderscript UP-TO-DATE
+:LoopingViewPager:packageReleaseResources
+:LoopingViewPager:processReleaseJavaRes UP-TO-DATE
+:LoopingViewPager:transformResourcesWithMergeJavaResForRelease
+:LoopingViewPager:transformClassesAndResourcesWithSyncLibJarsForRelease
+:LoopingViewPager:mergeReleaseJniLibFolders
+:LoopingViewPager:transformNative_libsWithMergeJniLibsForRelease
+:LoopingViewPager:transformNative_libsWithSyncJniLibsForRelease
+:LoopingViewPager:bundleRelease
+:LoopingViewPager:compileReleaseSources
+:LoopingViewPager:assembleRelease
+:LoopingViewPager:assemble
+:LoopingViewPager:build
+
+BUILD SUCCESSFUL
+
+Total time: 8.942 secs
+
+2018-05-21 02:36:36,346 INFO  FullProcessService - Found APK file: /tmp/rdisk/1268/src/CircleIndicator-master/apk/sample.apk

@@ -1,0 +1,21 @@
+2018-04-06 02:23:34,478 INFO  DownloadService - Downloading "https://github.com/hongyangAndroid/Android-CircleMenu/archive/master.zip", attempt 3
+2018-04-06 02:24:35,065 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-06 02:24:35,780 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-06 02:24:35,780 INFO  DownloadService - Downloading "https://github.com/hongyangAndroid/Android-CircleMenu/archive/master.zip", attempt 3
+2018-04-06 02:25:36,890 DEBUG FullProcessService - Repository https://github.com/hongyangAndroid/Android-CircleMenu available: true
+2018-04-06 02:25:36,890 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-06 02:25:36,891 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/hongyangAndroid/Android-CircleMenu, /tmp/rdisk/1454/src]
+2018-04-06 02:25:48,390 INFO  SysUtils - 
+2018-04-06 02:25:48,405 INFO  GitService - Deleted "/tmp/rdisk/1454/src/.git": true
+2018-04-06 02:25:48,407 INFO  FullProcessService - Size of directory with sources: 6 MB
+2018-04-06 02:25:48,408 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1454/src]
+2018-04-06 02:25:48,418 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1454/src/.git/
+
+2018-04-06 02:25:48,421 INFO  ProjectBuildService - Gradle wrapper(s): none
+2018-04-06 02:25:48,421 ERROR ProjectBuildService - Could not detect Gradle wrapper. Default Gradle installation will be used
+2018-04-06 02:25:48,423 INFO  ProjectBuildService - Build script(s): none
+2018-04-06 02:25:48,426 INFO  ProjectBuildService - All script(s): none
+2018-04-06 02:25:48,426 INFO  ProjectBuildService - Remote scripts: none
+2018-04-06 02:25:48,426 ERROR FullProcessService - Project is not correct Gradle project
+2018-04-06 02:25:48,426 ERROR FullProcessService - Project build has not produced APK file
+2018-04-06 02:25:48,428 ERROR FullProcessService - Could not find generated or existed APK file

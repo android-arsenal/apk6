@@ -1,0 +1,447 @@
+2018-04-10 17:17:13,146 INFO  DownloadService - Downloading "https://github.com/f2prateek/dart/archive/master.zip", attempt 3
+2018-04-10 17:17:13,723 INFO  DownloadService - Downloaded https://github.com/f2prateek/dart/archive/master.zip, attempt 3
+2018-04-10 17:17:13,723 INFO  DownloadService - Size of file "/tmp/rdisk/1444/master.zip": 453 KB
+2018-04-10 17:17:13,723 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-04-10 17:17:13,724 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/1444/master.zip: true
+2018-04-10 17:17:13,724 DEBUG ZipUtil - Extracting '/tmp/rdisk/1444/master.zip' into '/tmp/rdisk/1444/src'.
+2018-04-10 17:17:13,751 INFO  FullProcessService - Size of directory with sources: 812 KB
+2018-04-10 17:17:13,751 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1444/src]
+2018-04-10 17:17:13,756 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1444/src/.git/
+
+2018-04-10 17:17:13,763 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1444/src/dart-master/gradlew /tmp/rdisk/1444/src/dart-master/dart-sample/gradlew
+2018-04-10 17:17:13,770 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1444/src/dart-master/dart-sample/app-navigation/build.gradle /tmp/rdisk/1444/src/dart-master/dart-sample/app/build.gradle /tmp/rdisk/1444/src/dart-master/dart-sample/module1-navigation/build.gradle /tmp/rdisk/1444/src/dart-master/dart-sample/module1/build.gradle /tmp/rdisk/1444/src/dart-master/build.gradle /tmp/rdisk/1444/src/dart-master/dart-sample/build.gradle /tmp/rdisk/1444/src/dart-master/dart-annotations/build.gradle /tmp/rdisk/1444/src/dart-master/dart-common/build.gradle /tmp/rdisk/1444/src/dart-master/dart-processor/build.gradle /tmp/rdisk/1444/src/dart-master/dart/build.gradle /tmp/rdisk/1444/src/dart-master/henson-plugin/build.gradle /tmp/rdisk/1444/src/dart-master/henson-processor/build.gradle /tmp/rdisk/1444/src/dart-master/henson/build.gradle
+2018-04-10 17:17:13,776 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1444/src/dart-master/settings.gradle /tmp/rdisk/1444/src/dart-master/henson/build.gradle /tmp/rdisk/1444/src/dart-master/henson-processor/build.gradle /tmp/rdisk/1444/src/dart-master/henson-plugin/build.gradle /tmp/rdisk/1444/src/dart-master/gradle/gradle-mvn-push.gradle /tmp/rdisk/1444/src/dart-master/dart/build.gradle /tmp/rdisk/1444/src/dart-master/dart-sample/settings.gradle /tmp/rdisk/1444/src/dart-master/dart-sample/module1/build.gradle /tmp/rdisk/1444/src/dart-master/dart-sample/module1-navigation/build.gradle /tmp/rdisk/1444/src/dart-master/dart-sample/build.gradle /tmp/rdisk/1444/src/dart-master/dart-sample/app/build.gradle /tmp/rdisk/1444/src/dart-master/dart-sample/app-navigation/build.gradle /tmp/rdisk/1444/src/dart-master/dart-processor/build.gradle /tmp/rdisk/1444/src/dart-master/dart-common/build.gradle /tmp/rdisk/1444/src/dart-master/dart-annotations/build.gradle /tmp/rdisk/1444/src/dart-master/build.gradle
+2018-04-10 17:17:13,778 INFO  ProjectBuildService - Remote scripts: none
+2018-04-10 17:17:13,778 INFO  ProjectFixService - Fixing project...
+2018-04-10 17:17:13,815 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1444/src/dart-master/dart-sample/app-navigation/local.properties
+2018-04-10 17:17:13,827 INFO  ProjectFixService - Build info for "/tmp/rdisk/1444/src/dart-master/dart-sample/app-navigation/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-10 17:17:13,827 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1444/src/dart-master/dart-sample/app-navigation/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-10 17:17:13,828 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1444/src/dart-master/dart-sample/app/local.properties
+2018-04-10 17:17:13,838 INFO  ProjectFixService - Build info for "/tmp/rdisk/1444/src/dart-master/dart-sample/app/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-10 17:17:13,839 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1444/src/dart-master/dart-sample/app/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-10 17:17:13,839 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1444/src/dart-master/dart-sample/module1-navigation/local.properties
+2018-04-10 17:17:13,850 INFO  ProjectFixService - Build info for "/tmp/rdisk/1444/src/dart-master/dart-sample/module1-navigation/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-10 17:17:13,850 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1444/src/dart-master/dart-sample/module1-navigation/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-10 17:17:13,851 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1444/src/dart-master/dart-sample/module1/local.properties
+2018-04-10 17:17:13,861 INFO  ProjectFixService - Build info for "/tmp/rdisk/1444/src/dart-master/dart-sample/module1/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-10 17:17:13,862 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1444/src/dart-master/dart-sample/module1/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-10 17:17:13,862 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1444/src/dart-master/local.properties
+2018-04-10 17:17:13,863 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-4.5.1-all.zip
+2018-04-10 17:17:13,864 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-4.5.1-bin.zip)
+2018-04-10 17:17:13,874 INFO  ProjectFixService - Build info for "/tmp/rdisk/1444/src/dart-master/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-10 17:17:13,874 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1444/src/dart-master/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-10 17:17:13,875 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1444/src/dart-master/dart-sample/local.properties
+2018-04-10 17:17:13,876 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-4.4-all.zip
+2018-04-10 17:17:13,876 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-4.4-bin.zip)
+2018-04-10 17:17:13,886 INFO  ProjectFixService - Build info for "/tmp/rdisk/1444/src/dart-master/dart-sample/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-10 17:17:13,886 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1444/src/dart-master/dart-sample/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-10 17:17:13,888 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1444/src/dart-master/dart-annotations/local.properties
+2018-04-10 17:17:13,898 INFO  ProjectFixService - Build info for "/tmp/rdisk/1444/src/dart-master/dart-annotations/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-10 17:17:13,898 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1444/src/dart-master/dart-annotations/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-10 17:17:13,899 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1444/src/dart-master/dart-common/local.properties
+2018-04-10 17:17:13,909 INFO  ProjectFixService - Build info for "/tmp/rdisk/1444/src/dart-master/dart-common/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-10 17:17:13,909 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1444/src/dart-master/dart-common/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-10 17:17:13,910 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1444/src/dart-master/dart-processor/local.properties
+2018-04-10 17:17:13,920 INFO  ProjectFixService - Build info for "/tmp/rdisk/1444/src/dart-master/dart-processor/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-10 17:17:13,920 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1444/src/dart-master/dart-processor/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-10 17:17:13,921 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1444/src/dart-master/dart/local.properties
+2018-04-10 17:17:13,931 INFO  ProjectFixService - Build info for "/tmp/rdisk/1444/src/dart-master/dart/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-10 17:17:13,931 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1444/src/dart-master/dart/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-10 17:17:13,932 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1444/src/dart-master/henson-plugin/local.properties
+2018-04-10 17:17:13,944 INFO  ProjectFixService - Build info for "/tmp/rdisk/1444/src/dart-master/henson-plugin/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-10 17:17:13,944 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1444/src/dart-master/henson-plugin/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-10 17:17:13,945 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1444/src/dart-master/henson-processor/local.properties
+2018-04-10 17:17:13,955 INFO  ProjectFixService - Build info for "/tmp/rdisk/1444/src/dart-master/henson-processor/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-10 17:17:13,955 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1444/src/dart-master/henson-processor/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-10 17:17:13,956 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1444/src/dart-master/henson/local.properties
+2018-04-10 17:17:13,966 INFO  ProjectFixService - Build info for "/tmp/rdisk/1444/src/dart-master/henson/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-10 17:17:13,966 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1444/src/dart-master/henson/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-10 17:17:13,967 INFO  ProjectFixService - Project was maybe fixed
+2018-04-10 17:17:13,967 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-10 17:17:13,967 INFO  SysUtils - Execute command: [/tmp/rdisk/1444/src/dart-master/dart-sample/gradlew, -b, /tmp/rdisk/1444/src/dart-master/dart-sample/app-navigation/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-10 17:17:59,312 INFO  ProjectTaskService - Detected possible tasks: 70
+2018-04-10 17:17:59,312 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-04-10 17:17:59,313 INFO  SysUtils - Execute command: [/tmp/rdisk/1444/src/dart-master/dart-sample/gradlew, -b, /tmp/rdisk/1444/src/dart-master/dart-sample/app-navigation/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-10 17:18:21,632 INFO  SysUtils - Configuration on demand is an incubating feature.
+:dart-parent:henson-plugin:compileJava UP-TO-DATE
+:dart-parent:henson-plugin:compileGroovy UP-TO-DATE
+:dart-parent:henson-plugin:pluginDescriptors UP-TO-DATE
+:dart-parent:henson-plugin:processResources UP-TO-DATE
+:dart-parent:henson-plugin:classes UP-TO-DATE
+:dart-parent:henson-plugin:jar UP-TO-DATE
+:dart-parent:henson:compileJava
+:dart-parent:henson:processResources NO-SOURCE
+:dart-parent:henson:classes
+:dart-parent:henson:jar
+:app-navigation:preBuild
+:dart-parent:dart-annotations:compileJava
+:app-navigation:preBuild UP-TO-DATE
+:app-navigation:preDebugBuild UP-TO-DATE
+:module1-navigation:preBuild UP-TO-DATE
+:module1-navigation:preDebugBuild UP-TO-DATE
+:module1-navigation:compileDebugAidl
+:app-navigation:compileDebugAidl
+:dart-parent:dart-annotations:processResources
+:module1-navigation:packageDebugRenderscript
+:dart-parent:dart-annotations:processResources NO-SOURCE
+:module1-navigation:packageDebugRenderscript NO-SOURCE
+:dart-parent:dart-annotations:classes
+:dart-parent:dart-annotations:jar
+:app-navigation:compileDebugRenderscript
+:app-navigation:checkDebugManifest
+:app-navigation:generateDebugBuildConfig
+:dart-parent:dart-common:compileJava
+:app-navigation:generateDebugResValues
+:app-navigation:generateDebugResources
+:app-navigation:packageDebugResources
+:app-navigation:platformAttrExtractor
+:app-navigation:processDebugManifest
+:dart-parent:dart-common:processResources NO-SOURCE
+:dart-parent:dart-common:classes
+:dart-parent:dart-common:jar
+:dart-parent:dart:compileJava
+:module1-navigation:compileDebugRenderscript
+:module1-navigation:generateDebugResValues
+:module1-navigation:generateDebugResources
+:module1-navigation:packageDebugResources
+:module1-navigation:platformAttrExtractor
+:module1-navigation:checkDebugManifest
+:module1-navigation:processDebugManifest
+:app-navigation:prepareLintJar
+:module1-navigation:generateDebugBuildConfig
+:module1-navigation:prepareLintJar
+:module1-navigation:processDebugJavaRes NO-SOURCE
+:app-navigation:mergeDebugConsumerProguardFiles
+:app-navigation:mergeDebugShaders
+:app-navigation:compileDebugShaders
+:app-navigation:generateDebugAssets
+:app-navigation:packageDebugAssets
+:app-navigation:packageDebugRenderscript NO-SOURCE
+:app-navigation:processDebugJavaRes NO-SOURCE
+:app-navigation:compileDebugNdk NO-SOURCE
+:app-navigation:mergeDebugJniLibFolders
+:app-navigation:transformNativeLibsWithMergeJniLibsForDebug
+:dart-parent:dart:processResources NO-SOURCE
+:dart-parent:dart:classes
+:dart-parent:dart:jar
+:dart-parent:dart-processor:compileJava
+:module1-navigation:generateDebugRFile
+:app-navigation:generateDebugRFile
+:app-navigation:generateDebugSources
+:module1-navigation:generateDebugSources
+:app-navigation:transformNativeLibsWithStripDebugSymbolForDebug
+:app-navigation:transformNativeLibsWithSyncJniLibsForDebug
+:app-navigation:preReleaseBuild UP-TO-DATE
+:module1-navigation:preReleaseBuild UP-TO-DATE
+:module1-navigation:compileReleaseAidl
+:app-navigation:compileReleaseAidl
+:module1-navigation:packageReleaseRenderscript NO-SOURCE
+:app-navigation:compileReleaseRenderscript
+:app-navigation:checkReleaseManifest
+:app-navigation:generateReleaseBuildConfig
+:app-navigation:generateReleaseResValues
+:app-navigation:generateReleaseResources
+:app-navigation:packageReleaseResources
+:app-navigation:processReleaseManifest
+:module1-navigation:compileReleaseRenderscript
+:module1-navigation:generateReleaseResValues
+:module1-navigation:generateReleaseResources
+:module1-navigation:packageReleaseResources
+:module1-navigation:checkReleaseManifest
+:module1-navigation:processReleaseManifest
+:module1-navigation:generateReleaseRFile
+:app-navigation:generateReleaseRFile
+:app-navigation:generateReleaseSources
+:module1-navigation:generateReleaseBuildConfig
+:module1-navigation:generateReleaseSources
+:module1-navigation:processReleaseJavaRes NO-SOURCE
+:app-navigation:mergeReleaseConsumerProguardFiles
+:app-navigation:mergeReleaseShaders
+:app-navigation:compileReleaseShaders
+:app-navigation:generateReleaseAssets
+:app-navigation:packageReleaseAssets
+:app-navigation:packageReleaseRenderscript NO-SOURCE
+:app-navigation:processReleaseJavaRes NO-SOURCE
+:app-navigation:compileReleaseNdk NO-SOURCE
+:app-navigation:mergeReleaseJniLibFolders
+:app-navigation:transformNativeLibsWithMergeJniLibsForRelease
+:dart-parent:dart-processor:processResources
+:app-navigation:transformNativeLibsWithStripDebugSymbolForRelease
+:app-navigation:transformNativeLibsWithSyncJniLibsForRelease
+:app-navigation:mergeReleaseResources
+:dart-parent:dart-processor:classes
+:dart-parent:dart-processor:jar
+:app-navigation:verifyReleaseResources
+:dart-parent:henson:compileJava UP-TO-DATE
+:dart-parent:henson-processor:compileJava
+:dart-parent:henson-processor:processResources
+:dart-parent:henson-processor:classes
+:dart-parent:henson-processor:jar
+:module1-navigation:javaPreCompileDebug
+:module1-navigation:compileDebugJavaWithJavacNote: /tmp/rdisk/1444/src/dart-master/dart-sample/module1-navigation/build/generated/source/apt/debug/com/f2prateek/dart/Module1Activity__IntentBuilder.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:module1-navigation:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug
+:app-navigation:javaPreCompileDebug
+:app-navigation:compileDebugJavaWithJavacNote: /tmp/rdisk/1444/src/dart-master/dart-sample/app-navigation/build/generated/source/apt/debug/com/f2prateek/dart/example/SampleActivity__IntentBuilder.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:app-navigation:extractDebugAnnotations
+:app-navigation:transformResourcesWithMergeJavaResForDebug
+:app-navigation:transformClassesAndResourcesWithSyncLibJarsForDebug
+:app-navigation:bundleDebug
+:app-navigation:compileDebugSources
+:app-navigation:assembleDebug
+:module1-navigation:javaPreCompileRelease
+:module1-navigation:compileReleaseJavaWithJavacNote: /tmp/rdisk/1444/src/dart-master/dart-sample/module1-navigation/build/generated/source/apt/release/com/f2prateek/dart/Module1Activity__IntentBuilder.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:module1-navigation:transformClassesAndResourcesWithPrepareIntermediateJarsForRelease
+:app-navigation:javaPreCompileRelease
+:app-navigation:compileReleaseJavaWithJavacNote: /tmp/rdisk/1444/src/dart-master/dart-sample/app-navigation/build/generated/source/apt/release/com/f2prateek/dart/example/SampleActivity__IntentBuilder.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:app-navigation:extractReleaseAnnotations
+:app-navigation:transformResourcesWithMergeJavaResForRelease
+:app-navigation:transformClassesAndResourcesWithSyncLibJarsForRelease
+:app-navigation:bundleRelease
+:app-navigation:compileReleaseSources
+:app-navigation:assembleRelease
+:app-navigation:assemble
+:app-navigation:build
+
+BUILD SUCCESSFUL in 22s
+72 actionable tasks: 72 executed
+
+2018-04-10 17:18:21,657 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-10 17:18:21,657 INFO  SysUtils - Execute command: [/tmp/rdisk/1444/src/dart-master/dart-sample/gradlew, -b, /tmp/rdisk/1444/src/dart-master/dart-sample/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-10 17:18:32,544 INFO  ProjectTaskService - Detected possible tasks: 72
+2018-04-10 17:18:32,545 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-10 17:18:32,545 INFO  SysUtils - Execute command: [/tmp/rdisk/1444/src/dart-master/dart-sample/gradlew, -b, /tmp/rdisk/1444/src/dart-master/dart-sample/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-10 17:19:09,308 INFO  SysUtils - Configuration on demand is an incubating feature.
+:dart-parent:henson-plugin:compileJava UP-TO-DATE
+:dart-parent:henson-plugin:compileGroovy UP-TO-DATE
+:dart-parent:henson-plugin:pluginDescriptors UP-TO-DATE
+:dart-parent:henson-plugin:processResources UP-TO-DATE
+:dart-parent:henson-plugin:classes UP-TO-DATE
+:dart-parent:henson-plugin:jar UP-TO-DATE
+:dart-parent:dart-annotations:compileJava UP-TO-DATE
+:dart-parent:dart-common:compileJava UP-TO-DATE
+:dart-parent:dart:compileJava UP-TO-DATE
+:dart-parent:dart:processResources NO-SOURCE
+:dart-parent:dart:classes UP-TO-DATE
+:dart-parent:dart:jar UP-TO-DATE
+:dart-parent:dart-annotations:compileJava UP-TO-DATE
+:dart-parent:dart-annotations:processResources NO-SOURCE
+:dart-parent:dart-annotations:classes UP-TO-DATE
+:dart-parent:dart-annotations:jar UP-TO-DATE
+:dart-parent:henson:compileJava UP-TO-DATE
+:dart-parent:henson:processResources NO-SOURCE
+:dart-parent:henson:classes UP-TO-DATE
+:dart-parent:henson:jar UP-TO-DATE
+:dart-parent:dart-common:compileJava UP-TO-DATE
+:dart-parent:dart-common:processResources NO-SOURCE
+:dart-parent:dart-common:classes UP-TO-DATE
+:dart-parent:dart-common:jar UP-TO-DATE
+:dart-parent:dart:compileJava UP-TO-DATE
+:dart-parent:dart-processor:compileJava UP-TO-DATE
+:dart-parent:dart-processor:processResources UP-TO-DATE
+:dart-parent:dart-processor:classes UP-TO-DATE
+:dart-parent:dart-processor:jar UP-TO-DATE
+:dart-parent:henson-processor:compileJava UP-TO-DATE
+:dart-parent:henson-processor:processResources UP-TO-DATE
+:dart-parent:henson-processor:classes UP-TO-DATE
+:dart-parent:henson-processor:jar UP-TO-DATE
+:app:preBuild UP-TO-DATE
+:app-navigation:preBuild UP-TO-DATE
+:app-navigation:preDebugBuild UP-TO-DATE
+:app-navigation:checkDebugManifest UP-TO-DATE
+:app-navigation:processDebugManifest UP-TO-DATE
+:module1-navigation:preBuild UP-TO-DATE
+:module1-navigation:preDebugBuild UP-TO-DATE
+:module1-navigation:checkDebugManifest UP-TO-DATE
+:module1-navigation:processDebugManifest UP-TO-DATE
+:app:preDebugBuild
+:module1-navigation:compileDebugAidl UP-TO-DATE
+:app-navigation:compileDebugAidl UP-TO-DATE
+:app:compileDebugAidl
+:app-navigation:packageDebugRenderscript NO-SOURCE
+:module1-navigation:packageDebugRenderscript NO-SOURCE
+:app:compileDebugRenderscript
+:app:checkDebugManifest
+:app:generateDebugBuildConfig
+:app:prepareLintJar
+:app:mainApkListPersistenceDebug
+:app:generateDebugResValues
+:app:generateDebugResources
+:app-navigation:compileDebugRenderscript UP-TO-DATE
+:app-navigation:generateDebugResValues UP-TO-DATE
+:app-navigation:generateDebugResources UP-TO-DATE
+:app-navigation:packageDebugResources UP-TO-DATE
+:module1-navigation:compileDebugRenderscript UP-TO-DATE
+:module1-navigation:generateDebugResValues UP-TO-DATE
+:module1-navigation:generateDebugResources UP-TO-DATE
+:module1-navigation:packageDebugResources UP-TO-DATE
+:app:mergeDebugResources
+:app:createDebugCompatibleScreenManifests
+:app:processDebugManifest
+:app:splitsDiscoveryTaskDebug
+:app-navigation:platformAttrExtractor UP-TO-DATE
+:module1-navigation:platformAttrExtractor UP-TO-DATE
+:module1-navigation:generateDebugRFile UP-TO-DATE
+:app-navigation:generateDebugRFile UP-TO-DATE
+:app:processDebugResources
+:app:generateDebugSources
+:app-navigation:generateDebugBuildConfig UP-TO-DATE
+:app-navigation:prepareLintJar UP-TO-DATE
+:app-navigation:generateDebugSources UP-TO-DATE
+:module1-navigation:generateDebugBuildConfig UP-TO-DATE
+:module1-navigation:prepareLintJar UP-TO-DATE
+:module1-navigation:generateDebugSources UP-TO-DATE
+:module1-navigation:javaPreCompileDebug UP-TO-DATE
+:module1-navigation:compileDebugJavaWithJavac UP-TO-DATE
+:module1-navigation:processDebugJavaRes NO-SOURCE
+:module1-navigation:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug UP-TO-DATE
+:app-navigation:javaPreCompileDebug UP-TO-DATE
+:app-navigation:compileDebugJavaWithJavac UP-TO-DATE
+:app-navigation:processDebugJavaRes NO-SOURCE
+:app-navigation:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug
+:app:javaPreCompileDebug
+:app:generateDebugHensonNavigator
+:app:compileDebugJavaWithJavac
+:app:compileDebugNdk NO-SOURCE
+:app:compileDebugSources
+:app:mergeDebugShaders
+:app:compileDebugShaders
+:app:generateDebugAssets
+:app-navigation:mergeDebugShaders UP-TO-DATE
+:app-navigation:compileDebugShaders UP-TO-DATE
+:app-navigation:generateDebugAssets UP-TO-DATE
+:app-navigation:packageDebugAssets UP-TO-DATE
+:module1-navigation:mergeDebugShaders
+:module1-navigation:compileDebugShaders
+:module1-navigation:generateDebugAssets
+:module1-navigation:packageDebugAssets
+:app:mergeDebugAssets
+:app:extractTryWithResourcesSupportJarDebug
+:app:transformClassesWithStackFramesFixerForDebug
+:app:transformClassesWithDesugarForDebug
+:app:transformClassesWithDexBuilderForDebug
+D8 is used to build dex.
+:app:transformDexArchiveWithExternalLibsDexMergerForDebug
+:app:transformDexArchiveWithDexMergerForDebug
+D8 is used to merge dex.
+:app:mergeDebugJniLibFolders
+:app-navigation:compileDebugNdk NO-SOURCE
+:app-navigation:mergeDebugJniLibFolders UP-TO-DATE
+:app-navigation:transformNativeLibsWithMergeJniLibsForDebug UP-TO-DATE
+:app-navigation:transformNativeLibsWithStripDebugSymbolForDebug UP-TO-DATE
+:app-navigation:transformNativeLibsWithIntermediateJniLibsForDebug
+:module1-navigation:compileDebugNdk NO-SOURCE
+:module1-navigation:mergeDebugJniLibFolders
+:module1-navigation:transformNativeLibsWithMergeJniLibsForDebug
+:module1-navigation:transformNativeLibsWithStripDebugSymbolForDebug
+:module1-navigation:transformNativeLibsWithIntermediateJniLibsForDebug
+:app:transformNativeLibsWithMergeJniLibsForDebug
+:app:transformNativeLibsWithStripDebugSymbolForDebug
+:app:processDebugJavaRes NO-SOURCE
+:app:transformResourcesWithMergeJavaResForDebug
+:app:validateSigningDebug
+:app:packageDebug
+:app:assembleDebug
+:app-navigation:preReleaseBuild UP-TO-DATE
+:app-navigation:checkReleaseManifest UP-TO-DATE
+:app-navigation:processReleaseManifest UP-TO-DATE
+:module1-navigation:preReleaseBuild UP-TO-DATE
+:module1-navigation:checkReleaseManifest UP-TO-DATE
+:module1-navigation:processReleaseManifest UP-TO-DATE
+:app:preReleaseBuild
+:module1-navigation:compileReleaseAidl UP-TO-DATE
+:app-navigation:compileReleaseAidl UP-TO-DATE
+:app:compileReleaseAidl
+:app-navigation:packageReleaseRenderscript NO-SOURCE
+:module1-navigation:packageReleaseRenderscript NO-SOURCE
+:app:compileReleaseRenderscript
+:app:checkReleaseManifest
+:app:generateReleaseBuildConfig
+:app:mainApkListPersistenceRelease
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app-navigation:compileReleaseRenderscript UP-TO-DATE
+:app-navigation:generateReleaseResValues UP-TO-DATE
+:app-navigation:generateReleaseResources UP-TO-DATE
+:app-navigation:packageReleaseResources UP-TO-DATE
+:module1-navigation:compileReleaseRenderscript UP-TO-DATE
+:module1-navigation:generateReleaseResValues UP-TO-DATE
+:module1-navigation:generateReleaseResources UP-TO-DATE
+:module1-navigation:packageReleaseResources UP-TO-DATE
+:app:mergeReleaseResources
+:app:createReleaseCompatibleScreenManifests
+:app:processReleaseManifest
+:app:splitsDiscoveryTaskRelease
+:module1-navigation:generateReleaseRFile UP-TO-DATE
+:app-navigation:generateReleaseRFile UP-TO-DATE
+:app:processReleaseResources
+:app:generateReleaseSources
+:app-navigation:generateReleaseBuildConfig UP-TO-DATE
+:app-navigation:generateReleaseSources UP-TO-DATE
+:module1-navigation:generateReleaseBuildConfig UP-TO-DATE
+:module1-navigation:generateReleaseSources UP-TO-DATE
+:module1-navigation:javaPreCompileRelease UP-TO-DATE
+:module1-navigation:compileReleaseJavaWithJavac UP-TO-DATE
+:module1-navigation:processReleaseJavaRes NO-SOURCE
+:module1-navigation:transformClassesAndResourcesWithPrepareIntermediateJarsForRelease UP-TO-DATE
+:app-navigation:javaPreCompileRelease UP-TO-DATE
+:app-navigation:compileReleaseJavaWithJavac UP-TO-DATE
+:app-navigation:processReleaseJavaRes NO-SOURCE
+:app-navigation:transformClassesAndResourcesWithPrepareIntermediateJarsForRelease
+:app:javaPreCompileRelease
+:app:generateReleaseHensonNavigator
+:app:compileReleaseJavaWithJavac
+:app:compileReleaseNdk NO-SOURCE
+:app:compileReleaseSources
+:app:lintVitalRelease
+:app:mergeReleaseShaders
+:app:compileReleaseShaders
+:app:generateReleaseAssets
+:app-navigation:mergeReleaseShaders UP-TO-DATE
+:app-navigation:compileReleaseShaders UP-TO-DATE
+:app-navigation:generateReleaseAssets UP-TO-DATE
+:app-navigation:packageReleaseAssets UP-TO-DATE
+:module1-navigation:mergeReleaseShaders
+:module1-navigation:compileReleaseShaders
+:module1-navigation:generateReleaseAssets
+:module1-navigation:packageReleaseAssets
+:app:mergeReleaseAssets
+:app:extractTryWithResourcesSupportJarRelease
+:app:transformClassesWithStackFramesFixerForRelease
+:app:transformClassesWithDesugarForRelease
+:app:transformClassesWithDexBuilderForRelease
+D8 is used to build dex.
+:app:transformDexArchiveWithExternalLibsDexMergerForRelease
+:app:transformDexArchiveWithDexMergerForRelease
+D8 is used to merge dex.
+:app:mergeReleaseJniLibFolders
+:app-navigation:compileReleaseNdk NO-SOURCE
+:app-navigation:mergeReleaseJniLibFolders UP-TO-DATE
+:app-navigation:transformNativeLibsWithMergeJniLibsForRelease UP-TO-DATE
+:app-navigation:transformNativeLibsWithStripDebugSymbolForRelease UP-TO-DATE
+:app-navigation:transformNativeLibsWithIntermediateJniLibsForRelease
+:module1-navigation:compileReleaseNdk NO-SOURCE
+:module1-navigation:mergeReleaseJniLibFolders
+:module1-navigation:transformNativeLibsWithMergeJniLibsForRelease
+:module1-navigation:transformNativeLibsWithStripDebugSymbolForRelease
+:module1-navigation:transformNativeLibsWithIntermediateJniLibsForRelease
+:app:transformNativeLibsWithMergeJniLibsForRelease
+:app:transformNativeLibsWithStripDebugSymbolForRelease
+:app:processReleaseJavaRes NO-SOURCE
+:app:transformResourcesWithMergeJavaResForRelease
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL in 36s
+137 actionable tasks: 79 executed, 58 up-to-date
+
+2018-04-10 17:19:09,367 INFO  FullProcessService - Found APK file: /tmp/rdisk/1444/src/dart-master/dart-sample/app/build/outputs/apk/debug/app-debug.apk

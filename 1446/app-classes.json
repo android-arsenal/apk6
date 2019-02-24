@@ -1,0 +1,4 @@
+{
+  "com.cardinalsolutions.android.arch.autowire" : [ "AndroidAutowire", "AndroidAutowireException", "AndroidLayout", "AndroidView", "BaseAutowireActivity", "SaveInstance" ],
+  "com.cardinalsolutions.progressindicator" : [ "BaseActivity", "BuildConfig", "CurvedTextView", "MainActivity", "R", "R$attr", "R$color", "R$dimen", "R$drawable", "R$id", "R$layout", "R$string", "R$style" ]
+}

@@ -1,0 +1,189 @@
+2018-05-21 02:42:50,195 INFO  DownloadService - Downloading "https://github.com/yongjhih/drupalfit/archive/master.zip", attempt 3
+2018-05-21 02:42:50,638 INFO  DownloadService - Downloaded https://github.com/yongjhih/drupalfit/archive/master.zip, attempt 3
+2018-05-21 02:42:50,638 INFO  DownloadService - Size of file "/tmp/rdisk/1250/master.zip": 272 KB
+2018-05-21 02:42:50,638 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-05-21 02:42:50,639 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/1250/master.zip: true
+2018-05-21 02:42:50,639 DEBUG ZipUtil - Extracting '/tmp/rdisk/1250/master.zip' into '/tmp/rdisk/1250/src'.
+2018-05-21 02:42:50,655 INFO  FullProcessService - Size of directory with sources: 391 KB
+2018-05-21 02:42:50,655 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1250/src]
+2018-05-21 02:42:50,661 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1250/src/.git/
+
+2018-05-21 02:42:50,663 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1250/src/drupalfit-master/gradlew
+2018-05-21 02:42:50,665 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1250/src/drupalfit-master/build.gradle /tmp/rdisk/1250/src/drupalfit-master/app/build.gradle
+2018-05-21 02:42:50,667 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1250/src/drupalfit-master/settings.gradle /tmp/rdisk/1250/src/drupalfit-master/gradle-mvn-push.gradle /tmp/rdisk/1250/src/drupalfit-master/build.gradle /tmp/rdisk/1250/src/drupalfit-master/app/build.gradle
+2018-05-21 02:42:50,667 INFO  ProjectBuildService - Remote scripts: none
+2018-05-21 02:42:50,667 INFO  ProjectFixService - Fixing project...
+2018-05-21 02:42:50,674 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1250/src/drupalfit-master/local.properties
+2018-05-21 02:42:50,674 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2-bin.zip
+2018-05-21 02:42:50,675 INFO  ProjectFixService - Build info for "/tmp/rdisk/1250/src/drupalfit-master/build.gradle": [buildToolsVersion=21.1.0,compileSdkVersion=21,minSdkVersion=9,targetSdkVersion=21]
+2018-05-21 02:42:50,675 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1250/src/drupalfit-master/build.gradle": [buildToolsVersion=21.1.1,compileSdkVersion=21,minSdkVersion=9,targetSdkVersion=21]
+2018-05-21 02:42:50,675 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1250/src/drupalfit-master/app/local.properties
+2018-05-21 02:42:50,676 INFO  ProjectFixService - Build info for "/tmp/rdisk/1250/src/drupalfit-master/app/build.gradle": [buildToolsVersion=21.1.0,compileSdkVersion=21,minSdkVersion=14,targetSdkVersion=21]
+2018-05-21 02:42:50,676 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1250/src/drupalfit-master/app/build.gradle": [buildToolsVersion=21.1.1,compileSdkVersion=21,minSdkVersion=14,targetSdkVersion=21]
+2018-05-21 02:42:50,676 INFO  ProjectFixService - Project was maybe fixed
+2018-05-21 02:42:50,677 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-21 02:42:50,677 INFO  SysUtils - Execute command: [/tmp/rdisk/1250/src/drupalfit-master/gradlew, -b, /tmp/rdisk/1250/src/drupalfit-master/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-21 02:43:06,349 INFO  ProjectTaskService - Detected possible tasks: 63
+2018-05-21 02:43:06,349 INFO  ProjectTaskService - Excluded tasks (13): lintDebug androidJavadocs deviceCheck lint uninstallRelease installRelease connectedCheck uninstallAll check connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-05-21 02:43:06,349 INFO  SysUtils - Execute command: [/tmp/rdisk/1250/src/drupalfit-master/gradlew, -b, /tmp/rdisk/1250/src/drupalfit-master/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, androidJavadocs, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, installRelease, -x, connectedCheck, -x, uninstallAll, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-05-21 02:45:13,799 INFO  SysUtils - Configuration on demand is an incubating feature.
+:androidSourcesJar
+:compileLint
+:copyDebugLint UP-TO-DATE
+:mergeDebugProguardFiles
+:preBuild
+:preDebugBuild
+:checkDebugManifest
+:preDebugTestBuild
+:preReleaseBuild
+:prepareComInfstoryProguardAnnotations101Library
+:prepareDebugDependencies
+:compileDebugAidl
+:compileDebugRenderscript
+:generateDebugBuildConfig
+:generateDebugAssets UP-TO-DATE
+:mergeDebugAssets
+:generateDebugResValues
+:generateDebugResources
+:mergeDebugResources
+:processDebugManifest
+:processDebugResources
+:generateDebugSources
+:compileDebugJava
+:patchAndroidJar
+:_compileDebugJavaNote: /tmp/rdisk/1250/src/drupalfit-master/src/main/java/drupalfit/WebDialog.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:compileRetrolambdaDebug
+:processDebugJavaRes UP-TO-DATE
+:packageDebugJar
+:compileDebugNdk
+:packageDebugJniLibs UP-TO-DATE
+:packageDebugLocalJar UP-TO-DATE
+:packageDebugRenderscript UP-TO-DATE
+:packageDebugResources
+:bundleDebug
+:assembleDebug
+:copyReleaseLint UP-TO-DATE
+:mergeReleaseProguardFiles
+:checkReleaseManifest
+:prepareReleaseDependencies
+:compileReleaseAidl
+:compileReleaseRenderscript
+:generateReleaseBuildConfig
+:generateReleaseAssets UP-TO-DATE
+:mergeReleaseAssets
+:generateReleaseResValues
+:generateReleaseResources
+:mergeReleaseResources
+:processReleaseManifest
+:processReleaseResources
+:generateReleaseSources
+:compileReleaseJava
+:_compileReleaseJavaNote: /tmp/rdisk/1250/src/drupalfit-master/src/main/java/drupalfit/WebDialog.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:compileRetrolambdaRelease
+:processReleaseJavaRes UP-TO-DATE
+:packageReleaseJar
+:compileReleaseNdk
+:packageReleaseJniLibs UP-TO-DATE
+:packageReleaseLocalJar UP-TO-DATE
+:packageReleaseRenderscript UP-TO-DATE
+:packageReleaseResources
+:bundleRelease
+:assembleRelease
+:signArchives SKIPPED
+:assemble
+:build
+:app:preBuild
+:app:compileDebugNdk
+:app:preDebugBuild
+:app:checkDebugManifest
+:app:preReleaseBuild
+:app:prepareComAndroidSupportAppcompatV72103Library
+:app:prepareComAndroidSupportSupportV42103Library
+:app:prepareComGithubJohnpersanoSupertoasts134Library
+:app:prepareComInfstoryDrupalfitMaster106Library
+:app:prepareComInfstoryProguardAnnotations101Library
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources/tmp/rdisk/1250/src/drupalfit-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-xhdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/1250/src/drupalfit-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_spinner_mtrl_am_alpha.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/1250/src/drupalfit-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-mdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/1250/src/drupalfit-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_ab_share_pack_holo_light.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/1250/src/drupalfit-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/1250/src/drupalfit-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-xhdpi/abc_ab_share_pack_holo_light.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:compileDebugJava
+:app:patchAndroidJar
+:app:_compileDebugJava
+:app:compileRetrolambdaDebug
+:app:preDexDebug
+:app:dexDebug
+:app:processDebugJavaRes UP-TO-DATE
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:generateReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources/tmp/rdisk/1250/src/drupalfit-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-xhdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/1250/src/drupalfit-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_spinner_mtrl_am_alpha.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/1250/src/drupalfit-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-mdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/1250/src/drupalfit-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_ab_share_pack_holo_light.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/1250/src/drupalfit-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/1250/src/drupalfit-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-xhdpi/abc_ab_share_pack_holo_light.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:compileReleaseJava
+:app:_compileReleaseJava
+:app:compileRetrolambdaRelease
+:app:lintVitalRelease
+:app:compileReleaseNdk
+:app:proguardRelease
+Warning: can't write resource [META-INF/LICENSE] (Duplicate zip entry [jackson-annotations-2.5.0.jar:META-INF/LICENSE])
+Warning: can't write resource [META-INF/LICENSE] (Duplicate zip entry [jackson-core-2.5.1.jar:META-INF/LICENSE])
+Warning: can't write resource [META-INF/NOTICE] (Duplicate zip entry [jackson-core-2.5.1.jar:META-INF/NOTICE])
+:app:dexRelease
+:app:processReleaseJavaRes UP-TO-DATE
+:app:shrinkReleaseResources
+Removed unused resources: Binary resource data reduced from 442KB to 399KB: Removed 9%
+Note: If necessary, you can disable resource shrinking by adding
+android {
+    buildTypes {
+        release {
+            shrinkResources false
+        }
+    }
+}
+:app:validateReleaseSigning
+:app:packageRelease
+:app:zipalignRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 2 mins 6.982 secs
+
+2018-05-21 02:45:13,846 INFO  FullProcessService - Found APK file: /tmp/rdisk/1250/src/drupalfit-master/app/build/outputs/apk/app-debug.apk

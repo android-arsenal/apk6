@@ -1,0 +1,21 @@
+2018-04-06 02:46:17,785 INFO  DownloadService - Downloading "https://github.com/CardinalNow/AndroidAutowire/archive/master.zip", attempt 3
+2018-04-06 02:47:18,231 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-06 02:47:18,892 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-06 02:47:18,892 INFO  DownloadService - Downloading "https://github.com/CardinalNow/AndroidAutowire/archive/master.zip", attempt 3
+2018-04-06 02:48:25,203 DEBUG FullProcessService - Repository https://github.com/CardinalNow/AndroidAutowire available: true
+2018-04-06 02:48:25,203 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-06 02:48:25,203 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/CardinalNow/AndroidAutowire, /tmp/rdisk/1445/src]
+2018-04-06 02:48:26,754 INFO  SysUtils - 
+2018-04-06 02:48:26,760 INFO  GitService - Deleted "/tmp/rdisk/1445/src/.git": true
+2018-04-06 02:48:26,761 INFO  FullProcessService - Size of directory with sources: 117 KB
+2018-04-06 02:48:26,761 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1445/src]
+2018-04-06 02:48:26,771 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1445/src/.git/
+
+2018-04-06 02:48:26,772 INFO  ProjectBuildService - Gradle wrapper(s): none
+2018-04-06 02:48:26,772 ERROR ProjectBuildService - Could not detect Gradle wrapper. Default Gradle installation will be used
+2018-04-06 02:48:26,773 INFO  ProjectBuildService - Build script(s): none
+2018-04-06 02:48:26,774 INFO  ProjectBuildService - All script(s): none
+2018-04-06 02:48:26,774 INFO  ProjectBuildService - Remote scripts: none
+2018-04-06 02:48:26,774 ERROR FullProcessService - Project is not correct Gradle project
+2018-04-06 02:48:26,774 ERROR FullProcessService - Project build has not produced APK file
+2018-04-06 02:48:26,775 ERROR FullProcessService - Could not find generated or existed APK file

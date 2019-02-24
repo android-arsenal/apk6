@@ -1,0 +1,9 @@
+2018-04-06 19:47:40,221 INFO  DownloadService - Downloading "https://github.com/romannurik/Android-MonthCalendarWidget/archive/master.zip", attempt 3
+2018-04-06 19:47:40,221 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-06 19:47:40,594 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-06 19:47:40,595 INFO  DownloadService - Downloading "https://github.com/romannurik/Android-MonthCalendarWidget/archive/master.zip", attempt 3
+2018-04-06 19:47:40,595 DEBUG FullProcessService - Repository https://github.com/romannurik/Android-MonthCalendarWidget available: false
+2018-04-06 19:47:40,595 ERROR FullProcessService - Could not find directory with sources
+2018-04-06 19:47:40,595 ERROR FullProcessService - Project will not be processed
+2018-04-06 19:47:40,595 ERROR FullProcessService - Project build has not produced APK file
+2018-04-06 19:47:40,596 ERROR FullProcessService - Could not find generated or existed APK file

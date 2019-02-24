@@ -1,0 +1,114 @@
+2018-04-06 01:30:56,703 INFO  DownloadService - Downloading "https://github.com/chiuki/gce2retrofit/archive/master.zip", attempt 3
+2018-04-06 01:31:57,367 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-06 01:31:58,048 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-06 01:31:58,048 INFO  DownloadService - Downloading "https://github.com/chiuki/gce2retrofit/archive/master.zip", attempt 3
+2018-04-06 01:32:59,417 DEBUG FullProcessService - Repository https://github.com/chiuki/gce2retrofit available: true
+2018-04-06 01:32:59,417 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-06 01:32:59,417 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/chiuki/gce2retrofit, /tmp/rdisk/1477/src]
+2018-04-06 01:33:01,140 INFO  SysUtils - 
+2018-04-06 01:33:01,145 INFO  GitService - Deleted "/tmp/rdisk/1477/src/.git": true
+2018-04-06 01:33:01,148 INFO  FullProcessService - Size of directory with sources: 188 KB
+2018-04-06 01:33:01,148 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1477/src]
+2018-04-06 01:33:01,152 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1477/src/.git/
+
+2018-04-06 01:33:01,156 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1477/src/gradlew
+2018-04-06 01:33:01,159 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1477/src/sample-android/build.gradle /tmp/rdisk/1477/src/build.gradle /tmp/rdisk/1477/src/gce2retrofit/build.gradle /tmp/rdisk/1477/src/sample-java/build.gradle
+2018-04-06 01:33:01,162 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1477/src/settings.gradle /tmp/rdisk/1477/src/sample-java/build.gradle /tmp/rdisk/1477/src/sample-android/build.gradle /tmp/rdisk/1477/src/gce2retrofit/build.gradle /tmp/rdisk/1477/src/build.gradle
+2018-04-06 01:33:01,163 INFO  ProjectBuildService - Remote scripts: none
+2018-04-06 01:33:01,163 INFO  ProjectFixService - Fixing project...
+2018-04-06 01:33:01,170 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1477/src/sample-android/local.properties
+2018-04-06 01:33:01,171 INFO  ProjectFixService - Build info for "/tmp/rdisk/1477/src/sample-android/build.gradle": [buildToolsVersion=27.0.1,compileSdkVersion=27,minSdkVersion=10,targetSdkVersion=27]
+2018-04-06 01:33:01,171 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1477/src/local.properties
+2018-04-06 01:33:01,171 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.11-all.zip
+2018-04-06 01:33:01,171 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.11-bin.zip)
+2018-04-06 01:33:01,172 INFO  ProjectFixService - Build info for "/tmp/rdisk/1477/src/build.gradle": [buildToolsVersion=27.0.1,compileSdkVersion=27,minSdkVersion=10,targetSdkVersion=27]
+2018-04-06 01:33:01,173 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1477/src/gce2retrofit/local.properties
+2018-04-06 01:33:01,174 INFO  ProjectFixService - Build info for "/tmp/rdisk/1477/src/gce2retrofit/build.gradle": [buildToolsVersion=27.0.1,compileSdkVersion=27,minSdkVersion=10,targetSdkVersion=27]
+2018-04-06 01:33:01,174 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1477/src/sample-java/local.properties
+2018-04-06 01:33:01,175 INFO  ProjectFixService - Build info for "/tmp/rdisk/1477/src/sample-java/build.gradle": [buildToolsVersion=27.0.1,compileSdkVersion=27,minSdkVersion=10,targetSdkVersion=27]
+2018-04-06 01:33:01,175 INFO  ProjectFixService - Project was maybe fixed
+2018-04-06 01:33:01,175 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-06 01:33:01,175 INFO  SysUtils - Execute command: [/tmp/rdisk/1477/src/gradlew, -b, /tmp/rdisk/1477/src/sample-android/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-06 01:33:12,964 INFO  ProjectTaskService - Detected possible tasks: 70
+2018-04-06 01:33:12,965 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-06 01:33:12,965 INFO  SysUtils - Execute command: [/tmp/rdisk/1477/src/gradlew, -b, /tmp/rdisk/1477/src/sample-android/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-06 01:33:31,345 INFO  SysUtils - Configuration on demand is an incubating feature.
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Incremental java compilation is an incubating feature.
+:sample-android:gce2retrofit-debug
+:sample-android:preBuild UP-TO-DATE
+:sample-android:preDebugBuild UP-TO-DATE
+:sample-android:checkDebugManifest
+:sample-android:prepareDebugDependencies
+:sample-android:compileDebugAidl
+:sample-android:compileDebugRenderscript
+:sample-android:generateDebugBuildConfig
+:sample-android:mergeDebugShaders
+:sample-android:compileDebugShaders
+:sample-android:generateDebugAssets
+:sample-android:mergeDebugAssets
+:sample-android:generateDebugResValues
+:sample-android:generateDebugResources
+:sample-android:mergeDebugResources
+:sample-android:processDebugManifest
+:sample-android:processDebugResources
+:sample-android:generateDebugSources
+:sample-android:incrementalDebugJavaCompilationSafeguard
+:sample-android:compileDebugJavaWithJavac
+:sample-android:compileDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:sample-android:compileDebugNdk UP-TO-DATE
+:sample-android:compileDebugSources
+:sample-android:prePackageMarkerForDebug
+:sample-android:transformClassesWithDexForDebug
+To run dex in process, the Gradle daemon needs a larger heap.
+It currently has approximately 1623 MB.
+For faster builds, increase the maximum heap size for the Gradle daemon to more than 2048 MB.
+To do this set org.gradle.jvmargs=-Xmx2048M in the project gradle.properties.
+For more information see https://docs.gradle.org/current/userguide/build_environment.html
+:sample-android:mergeDebugJniLibFolders
+:sample-android:transformNative_libsWithMergeJniLibsForDebug
+:sample-android:processDebugJavaRes UP-TO-DATE
+:sample-android:transformResourcesWithMergeJavaResForDebug
+:sample-android:validateDebugSigning
+:sample-android:packageDebug
+:sample-android:zipalignDebug
+:sample-android:assembleDebug
+:sample-android:gce2retrofit-release
+:sample-android:preReleaseBuild UP-TO-DATE
+:sample-android:checkReleaseManifest
+:sample-android:prepareReleaseDependencies
+:sample-android:compileReleaseAidl
+:sample-android:compileReleaseRenderscript
+:sample-android:generateReleaseBuildConfig
+:sample-android:mergeReleaseShaders
+:sample-android:compileReleaseShaders
+:sample-android:generateReleaseAssets
+:sample-android:mergeReleaseAssets
+:sample-android:generateReleaseResValues
+:sample-android:generateReleaseResources
+:sample-android:mergeReleaseResources
+:sample-android:processReleaseManifest
+:sample-android:processReleaseResources
+:sample-android:generateReleaseSources
+:sample-android:incrementalReleaseJavaCompilationSafeguard
+:sample-android:compileReleaseJavaWithJavac
+:sample-android:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:sample-android:compileReleaseNdk UP-TO-DATE
+:sample-android:compileReleaseSources
+:sample-android:lintVitalRelease
+:sample-android:prePackageMarkerForRelease
+:sample-android:transformClassesWithDexForRelease
+:sample-android:mergeReleaseJniLibFolders
+:sample-android:transformNative_libsWithMergeJniLibsForRelease
+:sample-android:processReleaseJavaRes UP-TO-DATE
+:sample-android:transformResourcesWithMergeJavaResForRelease
+:sample-android:packageRelease
+:sample-android:assembleRelease
+:sample-android:assemble
+:sample-android:build
+
+BUILD SUCCESSFUL
+
+Total time: 17.926 secs
+
+2018-04-06 01:33:31,356 INFO  FullProcessService - Found APK file: /tmp/rdisk/1477/src/sample-android/build/outputs/apk/sample-android-release-unsigned.apk

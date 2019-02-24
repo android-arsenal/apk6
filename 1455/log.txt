@@ -1,0 +1,679 @@
+2018-04-06 02:19:59,048 INFO  DownloadService - Downloading "https://github.com/txusballesteros/android-transformer/archive/master.zip", attempt 3
+2018-04-06 02:20:59,576 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-06 02:21:00,238 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-06 02:21:00,238 INFO  DownloadService - Downloading "https://github.com/txusballesteros/android-transformer/archive/master.zip", attempt 3
+2018-04-06 02:22:01,564 DEBUG FullProcessService - Repository https://github.com/txusballesteros/android-transformer available: true
+2018-04-06 02:22:01,564 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-06 02:22:01,564 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/txusballesteros/android-transformer, /tmp/rdisk/1455/src]
+2018-04-06 02:22:05,336 INFO  SysUtils - 
+2018-04-06 02:22:05,341 INFO  GitService - Deleted "/tmp/rdisk/1455/src/.git": true
+2018-04-06 02:22:05,345 INFO  FullProcessService - Size of directory with sources: 204 KB
+2018-04-06 02:22:05,345 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1455/src]
+2018-04-06 02:22:05,349 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1455/src/.git/
+
+2018-04-06 02:22:05,358 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1455/src/gradlew
+2018-04-06 02:22:05,362 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1455/src/android-transformer-sample-data/build.gradle /tmp/rdisk/1455/src/android-transformer-sample/build.gradle /tmp/rdisk/1455/src/build.gradle /tmp/rdisk/1455/src/android-transformer-compiler/build.gradle /tmp/rdisk/1455/src/android-transformer-sample-domain/build.gradle /tmp/rdisk/1455/src/android-transformer/build.gradle
+2018-04-06 02:22:05,365 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1455/src/settings.gradle /tmp/rdisk/1455/src/build.gradle /tmp/rdisk/1455/src/android-transformer/build.gradle /tmp/rdisk/1455/src/android-transformer-sample/build.gradle /tmp/rdisk/1455/src/android-transformer-sample-domain/build.gradle /tmp/rdisk/1455/src/android-transformer-sample-data/build.gradle /tmp/rdisk/1455/src/android-transformer-compiler/build.gradle
+2018-04-06 02:22:05,365 INFO  ProjectBuildService - Remote scripts: none
+2018-04-06 02:22:05,365 INFO  ProjectFixService - Fixing project...
+2018-04-06 02:22:05,373 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1455/src/android-transformer-sample-data/local.properties
+2018-04-06 02:22:05,373 INFO  ProjectFixService - Build info for "/tmp/rdisk/1455/src/android-transformer-sample-data/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=21,targetSdkVersion=22]
+2018-04-06 02:22:05,373 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1455/src/android-transformer-sample/local.properties
+2018-04-06 02:22:05,374 INFO  ProjectFixService - Build info for "/tmp/rdisk/1455/src/android-transformer-sample/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=21,targetSdkVersion=22]
+2018-04-06 02:22:05,374 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1455/src/local.properties
+2018-04-06 02:22:05,374 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-06 02:22:05,374 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-06 02:22:05,382 INFO  ProjectFixService - Build info for "/tmp/rdisk/1455/src/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=21,targetSdkVersion=22]
+2018-04-06 02:22:05,382 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1455/src/android-transformer-compiler/local.properties
+2018-04-06 02:22:05,384 INFO  ProjectFixService - Build info for "/tmp/rdisk/1455/src/android-transformer-compiler/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=21,targetSdkVersion=22]
+2018-04-06 02:22:05,384 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1455/src/android-transformer-sample-domain/local.properties
+2018-04-06 02:22:05,386 INFO  ProjectFixService - Build info for "/tmp/rdisk/1455/src/android-transformer-sample-domain/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=21,targetSdkVersion=22]
+2018-04-06 02:22:05,386 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1455/src/android-transformer/local.properties
+2018-04-06 02:22:05,387 INFO  ProjectFixService - Build info for "/tmp/rdisk/1455/src/android-transformer/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=21,targetSdkVersion=22]
+2018-04-06 02:22:05,388 INFO  ProjectFixService - Project was maybe fixed
+2018-04-06 02:22:05,388 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-06 02:22:05,388 INFO  SysUtils - Execute command: [/tmp/rdisk/1455/src/gradlew, -b, /tmp/rdisk/1455/src/android-transformer-sample-data/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-06 02:22:18,219 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-06 02:22:18,219 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-06 02:22:18,219 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-06 02:22:18,219 INFO  SysUtils - Execute command: [/tmp/rdisk/1455/src/gradlew, -b, /tmp/rdisk/1455/src/android-transformer-sample-data/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-06 02:22:33,964 INFO  SysUtils - Configuration on demand is an incubating feature.
+:android-transformer-sample-data:compileLint
+:android-transformer-sample-data:copyDebugLint UP-TO-DATE
+:android-transformer-sample-data:mergeDebugProguardFiles
+:android-transformer:compileJavaNote: /tmp/rdisk/1455/src/android-transformer/src/main/java/com/mobandme/android/transformer/Transformer.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:android-transformer:processResources UP-TO-DATE
+:android-transformer:classes
+:android-transformer:jar
+:android-transformer-compiler:addAptCompilerArgs
+:android-transformer-compiler:compileJava
+:android-transformer-compiler:processResources
+:android-transformer-compiler:classes
+:android-transformer-compiler:jar
+:android-transformer-sample-data:preBuild UP-TO-DATE
+:android-transformer-sample-data:preDebugBuild UP-TO-DATE
+:android-transformer-sample-data:checkDebugManifest
+:android-transformer-sample-data:prepareDebugDependencies
+:android-transformer-sample-data:compileDebugAidl
+:android-transformer-sample-data:compileDebugRenderscript
+:android-transformer-sample-data:generateDebugBuildConfig
+:android-transformer-sample-data:generateDebugAssets UP-TO-DATE
+:android-transformer-sample-data:mergeDebugAssets
+:android-transformer-sample-data:generateDebugResValues
+:android-transformer-sample-data:generateDebugResources
+:android-transformer-sample-data:packageDebugResources
+:android-transformer-sample-data:processDebugManifest
+:android-transformer-sample-data:processDebugResources
+:android-transformer-sample-data:generateDebugSources
+:android-transformer-sample-data:processDebugJavaRes UP-TO-DATE
+:android-transformer-sample-domain:compileJava
+:android-transformer-sample-domain:processResources UP-TO-DATE
+:android-transformer-sample-domain:classes
+:android-transformer-sample-domain:jar
+:android-transformer-sample-data:compileDebugJavaNote: Generating source file for Mapper with name com.mobandme.sample.app.data.entity.mapper.HomeEntityMapper
+Note: Generating source file for Transformer class with name com.mobandme.sample.app.data.entity.transformer.Transformer
+
+:android-transformer-sample-data:packageDebugJar
+:android-transformer-sample-data:compileDebugNdk UP-TO-DATE
+:android-transformer-sample-data:packageDebugJniLibs UP-TO-DATE
+:android-transformer-sample-data:packageDebugLocalJar UP-TO-DATE
+:android-transformer-sample-data:packageDebugRenderscript UP-TO-DATE
+:android-transformer-sample-data:bundleDebug
+:android-transformer-sample-data:compileDebugSources
+:android-transformer-sample-data:assembleDebug
+:android-transformer-sample-data:copyReleaseLint UP-TO-DATE
+:android-transformer-sample-data:mergeReleaseProguardFiles
+:android-transformer-sample-data:preReleaseBuild UP-TO-DATE
+:android-transformer-sample-data:checkReleaseManifest
+:android-transformer-sample-data:prepareReleaseDependencies
+:android-transformer-sample-data:compileReleaseAidl
+:android-transformer-sample-data:compileReleaseRenderscript
+:android-transformer-sample-data:generateReleaseBuildConfig
+:android-transformer-sample-data:generateReleaseAssets UP-TO-DATE
+:android-transformer-sample-data:mergeReleaseAssets
+:android-transformer-sample-data:generateReleaseResValues
+:android-transformer-sample-data:generateReleaseResources
+:android-transformer-sample-data:packageReleaseResources
+:android-transformer-sample-data:processReleaseManifest
+:android-transformer-sample-data:processReleaseResources
+:android-transformer-sample-data:generateReleaseSources
+:android-transformer-sample-data:processReleaseJavaRes UP-TO-DATE
+:android-transformer-sample-data:compileReleaseJavaNote: Generating source file for Mapper with name com.mobandme.sample.app.data.entity.mapper.HomeEntityMapper
+Note: Generating source file for Transformer class with name com.mobandme.sample.app.data.entity.transformer.Transformer
+
+:android-transformer-sample-data:packageReleaseJar
+:android-transformer-sample-data:compileReleaseNdk UP-TO-DATE
+:android-transformer-sample-data:packageReleaseJniLibs UP-TO-DATE
+:android-transformer-sample-data:packageReleaseLocalJar UP-TO-DATE
+:android-transformer-sample-data:packageReleaseRenderscript UP-TO-DATE
+:android-transformer-sample-data:bundleRelease
+:android-transformer-sample-data:compileReleaseSources
+:android-transformer-sample-data:assembleRelease
+:android-transformer-sample-data:assemble
+:android-transformer-sample-data:lint
+Ran lint on variant release: 1 issues found
+Ran lint on variant debug: 1 issues found
+Wrote HTML report to file:/tmp/rdisk/1455/src/android-transformer-sample-data/build/outputs/lint-results.html
+Wrote XML report to /tmp/rdisk/1455/src/android-transformer-sample-data/build/outputs/lint-results.xml
+:android-transformer-sample-data:preCompileDebugUnitTestJava
+:android-transformer-sample-data:preDebugUnitTestBuild UP-TO-DATE
+:android-transformer-sample-data:prepareDebugUnitTestDependencies
+:android-transformer-sample-data:processDebugUnitTestJavaRes UP-TO-DATE
+:android-transformer-sample-data:compileDebugUnitTestJava UP-TO-DATE
+:android-transformer-sample-data:compileDebugUnitTestSources UP-TO-DATE
+:android-transformer-sample-data:mockableAndroidJar
+:android-transformer-sample-data:assembleDebugUnitTest
+:android-transformer-sample-data:testDebug
+:android-transformer-sample-data:preCompileReleaseUnitTestJava
+:android-transformer-sample-data:preReleaseUnitTestBuild UP-TO-DATE
+:android-transformer-sample-data:prepareReleaseUnitTestDependencies
+:android-transformer-sample-data:processReleaseUnitTestJavaRes UP-TO-DATE
+:android-transformer-sample-data:compileReleaseUnitTestJava UP-TO-DATE
+:android-transformer-sample-data:compileReleaseUnitTestSources UP-TO-DATE
+:android-transformer-sample-data:assembleReleaseUnitTest
+:android-transformer-sample-data:testRelease
+:android-transformer-sample-data:test
+:android-transformer-sample-data:check
+:android-transformer-sample-data:build
+
+BUILD SUCCESSFUL
+
+Total time: 15.325 secs
+
+2018-04-06 02:22:33,973 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-06 02:22:33,974 INFO  SysUtils - Execute command: [/tmp/rdisk/1455/src/gradlew, -b, /tmp/rdisk/1455/src/android-transformer-sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-06 02:22:40,480 INFO  ProjectTaskService - Detected possible tasks: 64
+2018-04-06 02:22:40,480 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest installDebug lintRelease testDebug connectedAndroidTestDebug uninstallDebug
+2018-04-06 02:22:40,480 INFO  SysUtils - Execute command: [/tmp/rdisk/1455/src/gradlew, -b, /tmp/rdisk/1455/src/android-transformer-sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, testDebug, -x, connectedAndroidTestDebug, -x, uninstallDebug, build]
+2018-04-06 02:22:48,935 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-06 02:22:48,935 INFO  SysUtils - Configuration on demand is an incubating feature.
+:android-transformer:compileJava UP-TO-DATE
+:android-transformer:processResources UP-TO-DATE
+:android-transformer:classes UP-TO-DATE
+:android-transformer:jar UP-TO-DATE
+:android-transformer-compiler:addAptCompilerArgs
+:android-transformer-compiler:compileJava UP-TO-DATE
+:android-transformer-compiler:processResources UP-TO-DATE
+:android-transformer-compiler:classes UP-TO-DATE
+:android-transformer-compiler:jar UP-TO-DATE
+:android-transformer-sample:preBuild UP-TO-DATE
+:android-transformer-sample:preDebugBuild UP-TO-DATE
+:android-transformer-sample:checkDebugManifest
+:android-transformer-sample:preReleaseBuild UP-TO-DATE
+:android-transformer-sample-data:compileLint
+:android-transformer-sample-data:copyReleaseLint UP-TO-DATE
+:android-transformer-sample-data:mergeReleaseProguardFiles UP-TO-DATE
+:android-transformer-sample-data:preBuild UP-TO-DATE
+:android-transformer-sample-data:preReleaseBuild UP-TO-DATE
+:android-transformer-sample-data:checkReleaseManifest
+:android-transformer-sample-data:prepareReleaseDependencies
+:android-transformer-sample-data:compileReleaseAidl UP-TO-DATE
+:android-transformer-sample-data:compileReleaseRenderscript UP-TO-DATE
+:android-transformer-sample-data:generateReleaseBuildConfig UP-TO-DATE
+:android-transformer-sample-data:generateReleaseAssets UP-TO-DATE
+:android-transformer-sample-data:mergeReleaseAssets UP-TO-DATE
+:android-transformer-sample-data:generateReleaseResValues UP-TO-DATE
+:android-transformer-sample-data:generateReleaseResources UP-TO-DATE
+:android-transformer-sample-data:packageReleaseResources UP-TO-DATE
+:android-transformer-sample-data:processReleaseManifest UP-TO-DATE
+:android-transformer-sample-data:processReleaseResources UP-TO-DATE
+:android-transformer-sample-data:generateReleaseSources UP-TO-DATE
+:android-transformer-sample-data:processReleaseJavaRes UP-TO-DATE
+:android-transformer-sample-domain:compileJava UP-TO-DATE
+:android-transformer-sample-domain:processResources UP-TO-DATE
+:android-transformer-sample-domain:classes UP-TO-DATE
+:android-transformer-sample-domain:jar UP-TO-DATE
+:android-transformer-sample-data:compileReleaseJava UP-TO-DATE
+:android-transformer-sample-data:packageReleaseJar UP-TO-DATE
+:android-transformer-sample-data:compileReleaseNdk UP-TO-DATE
+:android-transformer-sample-data:packageReleaseJniLibs UP-TO-DATE
+:android-transformer-sample-data:packageReleaseLocalJar UP-TO-DATE
+:android-transformer-sample-data:packageReleaseRenderscript UP-TO-DATE
+:android-transformer-sample-data:bundleRelease UP-TO-DATE
+:android-transformer-sample:prepareSrcAndroidTransformerSampleDataUnspecifiedLibrary
+:android-transformer-sample:prepareDebugDependencies
+:android-transformer-sample:compileDebugAidl
+:android-transformer-sample:compileDebugRenderscript
+:android-transformer-sample:generateDebugBuildConfig
+:android-transformer-sample:generateDebugAssets UP-TO-DATE
+:android-transformer-sample:mergeDebugAssets
+:android-transformer-sample:generateDebugResValues
+:android-transformer-sample:generateDebugResources
+:android-transformer-sample:mergeDebugResources
+:android-transformer-sample:processDebugManifest
+:android-transformer-sample:processDebugResources
+:android-transformer-sample:generateDebugSources
+:android-transformer-sample:processDebugJavaRes UP-TO-DATE
+:android-transformer-sample:compileDebugJavaNote: Generating source file for Mapper with name com.mobandme.sample.app.model.mapper.HomeColorModelMapper
+Note: Generating source file for Mapper with name com.mobandme.sample.app.model.mapper.HomeModelMapper
+Note: Generating source file for Transformer class with name com.mobandme.sample.app.model.transformer.Transformer
+
+:android-transformer-sample:compileDebugNdk UP-TO-DATE
+:android-transformer-sample:compileDebugSources
+:android-transformer-sample:preDexDebugUNEXPECTED TOP-LEVEL EXCEPTION:
+com.android.dx.cf.iface.ParseException: bad class file magic (cafebabe) or version (0034.0000)
+	at com.android.dx.cf.direct.DirectClassFile.parse0(DirectClassFile.java:472)
+	at com.android.dx.cf.direct.DirectClassFile.parse(DirectClassFile.java:406)
+	at com.android.dx.cf.direct.DirectClassFile.parseToInterfacesIfNecessary(DirectClassFile.java:388)
+	at com.android.dx.cf.direct.DirectClassFile.getMagic(DirectClassFile.java:251)
+	at com.android.dx.command.dexer.Main.processClass(Main.java:704)
+	at com.android.dx.command.dexer.Main.processFileBytes(Main.java:673)
+	at com.android.dx.command.dexer.Main.access$300(Main.java:83)
+	at com.android.dx.command.dexer.Main$1.processFileBytes(Main.java:602)
+	at com.android.dx.cf.direct.ClassPathOpener.processArchive(ClassPathOpener.java:284)
+	at com.android.dx.cf.direct.ClassPathOpener.processOne(ClassPathOpener.java:166)
+	at com.android.dx.cf.direct.ClassPathOpener.process(ClassPathOpener.java:144)
+	at com.android.dx.command.dexer.Main.processOne(Main.java:632)
+	at com.android.dx.command.dexer.Main.processAllFiles(Main.java:510)
+	at com.android.dx.command.dexer.Main.runMonoDex(Main.java:280)
+	at com.android.dx.command.dexer.Main.run(Main.java:246)
+	at com.android.dx.command.dexer.Main.main(Main.java:215)
+	at com.android.dx.command.Main.main(Main.java:106)
+...while parsing com/mobandme/sample/app/domain/Home.class
+1 error; aborting
+
+ FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':android-transformer-sample:preDexDebug'.
+> com.android.ide.common.process.ProcessException: org.gradle.process.internal.ExecException: Process 'command '/usr/lib/jvm/java-8-oracle/bin/java'' finished with non-zero exit value 1
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':android-transformer-sample:preDexDebug'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:69)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:35)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:64)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:42)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.AbstractTask.executeWithoutThrowingTaskFailure(AbstractTask.java:305)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.executeTask(AbstractTaskPlanExecutor.java:79)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:63)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:51)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:23)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:88)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:29)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.access$200(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$2.proceed(DefaultBuildExecuter.java:68)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:55)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:149)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:106)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:86)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:80)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:33)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:24)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:36)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:51)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:171)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:33)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:130)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:48)
+Caused by: java.lang.RuntimeException: com.android.ide.common.process.ProcessException: org.gradle.process.internal.ExecException: Process 'command '/usr/lib/jvm/java-8-oracle/bin/java'' finished with non-zero exit value 1
+	at com.android.ide.common.internal.WaitableExecutor.waitForTasksWithQuickFail(WaitableExecutor.java:116)
+	at com.android.ide.common.internal.WaitableExecutor$waitForTasksWithQuickFail$0.call(Unknown Source)
+	at com.android.build.gradle.tasks.PreDex.taskAction(PreDex.groovy:106)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:63)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$IncrementalTaskAction.doExecute(AnnotationProcessingTaskFactory.java:235)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:211)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$IncrementalTaskAction.execute(AnnotationProcessingTaskFactory.java:222)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:200)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:80)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:61)
+	... 47 more
+Caused by: com.android.ide.common.process.ProcessException: org.gradle.process.internal.ExecException: Process 'command '/usr/lib/jvm/java-8-oracle/bin/java'' finished with non-zero exit value 1
+	at com.android.build.gradle.internal.process.GradleProcessResult.assertNormalExitValue(GradleProcessResult.java:42)
+	at com.android.builder.core.AndroidBuilder.preDexLibrary(AndroidBuilder.java:1296)
+	at com.android.builder.internal.compiler.PreDexCache.preDexLibrary(PreDexCache.java:122)
+	at com.android.builder.core.AndroidBuilder.preDexLibrary(AndroidBuilder.java:1248)
+	at com.android.builder.core.AndroidBuilder$preDexLibrary$6.call(Unknown Source)
+	at com.android.build.gradle.tasks.PreDex$PreDexTask.call(PreDex.groovy:150)
+	at com.android.build.gradle.tasks.PreDex$PreDexTask.call(PreDex.groovy)
+Caused by: org.gradle.process.internal.ExecException: Process 'command '/usr/lib/jvm/java-8-oracle/bin/java'' finished with non-zero exit value 1
+	at org.gradle.process.internal.DefaultExecHandle$ExecResultImpl.assertNormalExitValue(DefaultExecHandle.java:365)
+	at com.android.build.gradle.internal.process.GradleProcessResult.assertNormalExitValue(GradleProcessResult.java:40)
+	... 6 more
+
+
+BUILD FAILED
+
+Total time: 8.019 secs
+UNEXPECTED TOP-LEVEL EXCEPTION:
+com.android.dx.cf.iface.ParseException: bad class file magic (cafebabe) or version (0034.0000)
+	at com.android.dx.cf.direct.DirectClassFile.parse0(DirectClassFile.java:472)
+	at com.android.dx.cf.direct.DirectClassFile.parse(DirectClassFile.java:406)
+	at com.android.dx.cf.direct.DirectClassFile.parseToInterfacesIfNecessary(DirectClassFile.java:388)
+	at com.android.dx.cf.direct.DirectClassFile.getMagic(DirectClassFile.java:251)
+	at com.android.dx.command.dexer.Main.processClass(Main.java:704)
+	at com.android.dx.command.dexer.Main.processFileBytes(Main.java:673)
+	at com.android.dx.command.dexer.Main.access$300(Main.java:83)
+	at com.android.dx.command.dexer.Main$1.processFileBytes(Main.java:602)
+	at com.android.dx.cf.direct.ClassPathOpener.processArchive(ClassPathOpener.java:284)
+	at com.android.dx.cf.direct.ClassPathOpener.processOne(ClassPathOpener.java:166)
+	at com.android.dx.cf.direct.ClassPathOpener.process(ClassPathOpener.java:144)
+	at com.android.dx.command.dexer.Main.processOne(Main.java:632)
+	at com.android.dx.command.dexer.Main.processAllFiles(Main.java:510)
+	at com.android.dx.command.dexer.Main.runMonoDex(Main.java:280)
+	at com.android.dx.command.dexer.Main.run(Main.java:246)
+	at com.android.dx.command.dexer.Main.main(Main.java:215)
+	at com.android.dx.command.Main.main(Main.java:106)
+...while parsing com/mobandme/android/transformer/Tools.class
+1 error; aborting
+
+
+2018-04-06 02:22:48,949 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-06 02:22:48,949 INFO  SysUtils - Execute command: [/tmp/rdisk/1455/src/gradlew, -b, /tmp/rdisk/1455/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-06 02:22:55,738 INFO  ProjectTaskService - Detected possible tasks: 71
+2018-04-06 02:22:55,738 INFO  ProjectTaskService - Excluded tasks (20): lintDebug mockableAndroidJar deviceCheck lint javadoc uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest installDebug lintRelease testDebug connectedAndroidTestDebug uninstallDebug
+2018-04-06 02:22:55,739 INFO  SysUtils - Execute command: [/tmp/rdisk/1455/src/gradlew, -b, /tmp/rdisk/1455/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, javadoc, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, testDebug, -x, connectedAndroidTestDebug, -x, uninstallDebug, build]
+2018-04-06 02:23:02,953 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-06 02:23:02,953 INFO  SysUtils - Configuration on demand is an incubating feature.
+:android-transformer:compileJava UP-TO-DATE
+:android-transformer:processResources UP-TO-DATE
+:android-transformer:classes UP-TO-DATE
+:android-transformer:jar UP-TO-DATE
+:android-transformer:assemble UP-TO-DATE
+:android-transformer:build
+:android-transformer-compiler:addAptCompilerArgs
+:android-transformer-compiler:compileJava UP-TO-DATE
+:android-transformer-compiler:processResources UP-TO-DATE
+:android-transformer-compiler:classes UP-TO-DATE
+:android-transformer-compiler:jar UP-TO-DATE
+:android-transformer-compiler:assemble UP-TO-DATE
+:android-transformer-compiler:build
+:android-transformer-sample:preBuild UP-TO-DATE
+:android-transformer-sample:preDebugBuild UP-TO-DATE
+:android-transformer-sample:checkDebugManifest
+:android-transformer-sample:preReleaseBuild UP-TO-DATE
+:android-transformer-sample-data:compileLint
+:android-transformer-sample-data:copyReleaseLint UP-TO-DATE
+:android-transformer-sample-data:mergeReleaseProguardFiles UP-TO-DATE
+:android-transformer-sample-data:preBuild UP-TO-DATE
+:android-transformer-sample-data:preReleaseBuild UP-TO-DATE
+:android-transformer-sample-data:checkReleaseManifest
+:android-transformer-sample-data:prepareReleaseDependencies
+:android-transformer-sample-data:compileReleaseAidl UP-TO-DATE
+:android-transformer-sample-data:compileReleaseRenderscript UP-TO-DATE
+:android-transformer-sample-data:generateReleaseBuildConfig UP-TO-DATE
+:android-transformer-sample-data:generateReleaseAssets UP-TO-DATE
+:android-transformer-sample-data:mergeReleaseAssets UP-TO-DATE
+:android-transformer-sample-data:generateReleaseResValues UP-TO-DATE
+:android-transformer-sample-data:generateReleaseResources UP-TO-DATE
+:android-transformer-sample-data:packageReleaseResources UP-TO-DATE
+:android-transformer-sample-data:processReleaseManifest UP-TO-DATE
+:android-transformer-sample-data:processReleaseResources UP-TO-DATE
+:android-transformer-sample-data:generateReleaseSources UP-TO-DATE
+:android-transformer-sample-data:processReleaseJavaRes UP-TO-DATE
+:android-transformer-sample-domain:compileJava UP-TO-DATE
+:android-transformer-sample-domain:processResources UP-TO-DATE
+:android-transformer-sample-domain:classes UP-TO-DATE
+:android-transformer-sample-domain:jar UP-TO-DATE
+:android-transformer-sample-data:compileReleaseJava UP-TO-DATE
+:android-transformer-sample-data:packageReleaseJar UP-TO-DATE
+:android-transformer-sample-data:compileReleaseNdk UP-TO-DATE
+:android-transformer-sample-data:packageReleaseJniLibs UP-TO-DATE
+:android-transformer-sample-data:packageReleaseLocalJar UP-TO-DATE
+:android-transformer-sample-data:packageReleaseRenderscript UP-TO-DATE
+:android-transformer-sample-data:bundleRelease UP-TO-DATE
+:android-transformer-sample:prepareSrcAndroidTransformerSampleDataUnspecifiedLibrary UP-TO-DATE
+:android-transformer-sample:prepareDebugDependencies
+:android-transformer-sample:compileDebugAidl UP-TO-DATE
+:android-transformer-sample:compileDebugRenderscript UP-TO-DATE
+:android-transformer-sample:generateDebugBuildConfig UP-TO-DATE
+:android-transformer-sample:generateDebugAssets UP-TO-DATE
+:android-transformer-sample:mergeDebugAssets UP-TO-DATE
+:android-transformer-sample:generateDebugResValues UP-TO-DATE
+:android-transformer-sample:generateDebugResources UP-TO-DATE
+:android-transformer-sample:mergeDebugResources UP-TO-DATE
+:android-transformer-sample:processDebugManifest UP-TO-DATE
+:android-transformer-sample:processDebugResources UP-TO-DATE
+:android-transformer-sample:generateDebugSources UP-TO-DATE
+:android-transformer-sample:processDebugJavaRes UP-TO-DATE
+:android-transformer-sample:compileDebugJava UP-TO-DATE
+:android-transformer-sample:compileDebugNdk UP-TO-DATE
+:android-transformer-sample:compileDebugSources UP-TO-DATE
+:android-transformer-sample:preDexDebug FAILEDUNEXPECTED TOP-LEVEL EXCEPTION:
+com.android.dx.cf.iface.ParseException: bad class file magic (cafebabe) or version (0034.0000)
+	at com.android.dx.cf.direct.DirectClassFile.parse0(DirectClassFile.java:472)
+	at com.android.dx.cf.direct.DirectClassFile.parse(DirectClassFile.java:406)
+	at com.android.dx.cf.direct.DirectClassFile.parseToInterfacesIfNecessary(DirectClassFile.java:388)
+	at com.android.dx.cf.direct.DirectClassFile.getMagic(DirectClassFile.java:251)
+	at com.android.dx.command.dexer.Main.processClass(Main.java:704)
+	at com.android.dx.command.dexer.Main.processFileBytes(Main.java:673)
+	at com.android.dx.command.dexer.Main.access$300(Main.java:83)
+	at com.android.dx.command.dexer.Main$1.processFileBytes(Main.java:602)
+	at com.android.dx.cf.direct.ClassPathOpener.processArchive(ClassPathOpener.java:284)
+	at com.android.dx.cf.direct.ClassPathOpener.processOne(ClassPathOpener.java:166)
+	at com.android.dx.cf.direct.ClassPathOpener.process(ClassPathOpener.java:144)
+	at com.android.dx.command.dexer.Main.processOne(Main.java:632)
+	at com.android.dx.command.dexer.Main.processAllFiles(Main.java:510)
+	at com.android.dx.command.dexer.Main.runMonoDex(Main.java:280)
+	at com.android.dx.command.dexer.Main.run(Main.java:246)
+	at com.android.dx.command.dexer.Main.main(Main.java:215)
+	at com.android.dx.command.Main.main(Main.java:106)
+...while parsing com/mobandme/sample/app/domain/Home.class
+1 error; aborting
+
+
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':android-transformer-sample:preDexDebug'.
+> com.android.ide.common.process.ProcessException: org.gradle.process.internal.ExecException: Process 'command '/usr/lib/jvm/java-8-oracle/bin/java'' finished with non-zero exit value 1
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':android-transformer-sample:preDexDebug'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:69)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:35)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:64)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:42)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.AbstractTask.executeWithoutThrowingTaskFailure(AbstractTask.java:305)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.executeTask(AbstractTaskPlanExecutor.java:79)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:63)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:51)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:23)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:88)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:29)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.access$200(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$2.proceed(DefaultBuildExecuter.java:68)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:55)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:149)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:106)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:86)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:80)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:33)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:24)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:36)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:51)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:171)
+UNEXPECTED TOP-LEVEL EXCEPTION:
+com.android.dx.cf.iface.ParseException: bad class file magic (cafebabe) or version (0034.0000)
+	at com.android.dx.cf.direct.DirectClassFile.parse0(DirectClassFile.java:472)
+	at com.android.dx.cf.direct.DirectClassFile.parse(DirectClassFile.java:406)
+	at com.android.dx.cf.direct.DirectClassFile.parseToInterfacesIfNecessary(DirectClassFile.java:388)
+	at com.android.dx.cf.direct.DirectClassFile.getMagic(DirectClassFile.java:251)
+	at com.android.dx.command.dexer.Main.processClass(Main.java:704)
+	at com.android.dx.command.dexer.Main.processFileBytes(Main.java:673)
+	at com.android.dx.command.dexer.Main.access$300(Main.java:83)
+	at com.android.dx.command.dexer.Main$1.processFileBytes(Main.java:602)
+	at com.android.dx.cf.direct.ClassPathOpener.processArchive(ClassPathOpener.java:284)
+	at com.android.dx.cf.direct.ClassPathOpener.processOne(ClassPathOpener.java:166)
+	at com.android.dx.cf.direct.ClassPathOpener.process(ClassPathOpener.java:144)
+	at com.android.dx.command.dexer.Main.processOne(Main.java:632)
+	at com.android.dx.command.dexer.Main.processAllFiles(Main.java:510)
+	at com.android.dx.command.dexer.Main.runMonoDex(Main.java:280)
+	at com.android.dx.command.dexer.Main.run(Main.java:246)
+	at com.android.dx.command.dexer.Main.main(Main.java:215)
+	at com.android.dx.command.Main.main(Main.java:106)
+...while parsing com/mobandme/android/transformer/Tools.class
+1 error; aborting
+
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:33)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:130)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:48)
+Caused by: java.lang.RuntimeException: com.android.ide.common.process.ProcessException: org.gradle.process.internal.ExecException: Process 'command '/usr/lib/jvm/java-8-oracle/bin/java'' finished with non-zero exit value 1
+	at com.android.ide.common.internal.WaitableExecutor.waitForTasksWithQuickFail(WaitableExecutor.java:116)
+	at com.android.ide.common.internal.WaitableExecutor$waitForTasksWithQuickFail$0.call(Unknown Source)
+	at com.android.build.gradle.tasks.PreDex.taskAction(PreDex.groovy:106)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:63)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$IncrementalTaskAction.doExecute(AnnotationProcessingTaskFactory.java:235)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:211)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$IncrementalTaskAction.execute(AnnotationProcessingTaskFactory.java:222)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:200)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:80)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:61)
+	... 47 more
+Caused by: com.android.ide.common.process.ProcessException: org.gradle.process.internal.ExecException: Process 'command '/usr/lib/jvm/java-8-oracle/bin/java'' finished with non-zero exit value 1
+	at com.android.build.gradle.internal.process.GradleProcessResult.assertNormalExitValue(GradleProcessResult.java:42)
+	at com.android.builder.core.AndroidBuilder.preDexLibrary(AndroidBuilder.java:1296)
+	at com.android.builder.internal.compiler.PreDexCache.preDexLibrary(PreDexCache.java:122)
+	at com.android.builder.core.AndroidBuilder.preDexLibrary(AndroidBuilder.java:1248)
+	at com.android.builder.core.AndroidBuilder$preDexLibrary$2.call(Unknown Source)
+	at com.android.build.gradle.tasks.PreDex$PreDexTask.call(PreDex.groovy:150)
+	at com.android.build.gradle.tasks.PreDex$PreDexTask.call(PreDex.groovy)
+Caused by: org.gradle.process.internal.ExecException: Process 'command '/usr/lib/jvm/java-8-oracle/bin/java'' finished with non-zero exit value 1
+	at org.gradle.process.internal.DefaultExecHandle$ExecResultImpl.assertNormalExitValue(DefaultExecHandle.java:365)
+	at com.android.build.gradle.internal.process.GradleProcessResult.assertNormalExitValue(GradleProcessResult.java:40)
+	... 6 more
+
+
+BUILD FAILED
+
+Total time: 6.761 secs
+
+2018-04-06 02:23:02,966 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-06 02:23:02,966 INFO  SysUtils - Execute command: [/tmp/rdisk/1455/src/gradlew, -b, /tmp/rdisk/1455/src/android-transformer-compiler/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-06 02:23:09,496 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-06 02:23:09,496 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-06 02:23:09,496 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-06 02:23:09,497 INFO  SysUtils - Execute command: [/tmp/rdisk/1455/src/gradlew, -b, /tmp/rdisk/1455/src/android-transformer-compiler/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-06 02:23:13,376 INFO  SysUtils - Configuration on demand is an incubating feature.
+:android-transformer-compiler:addAptCompilerArgs
+:android-transformer-compiler:compileJava UP-TO-DATE
+:android-transformer-compiler:processResources UP-TO-DATE
+:android-transformer-compiler:classes UP-TO-DATE
+:android-transformer-compiler:jar UP-TO-DATE
+:android-transformer-compiler:assemble UP-TO-DATE
+:android-transformer-compiler:compileTestJava UP-TO-DATE
+:android-transformer-compiler:processTestResources UP-TO-DATE
+:android-transformer-compiler:testClasses UP-TO-DATE
+:android-transformer-compiler:test UP-TO-DATE
+:android-transformer-compiler:check UP-TO-DATE
+:android-transformer-compiler:build UP-TO-DATE
+
+BUILD SUCCESSFUL
+
+Total time: 3.42 secs
+
+2018-04-06 02:23:13,389 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-06 02:23:13,389 INFO  SysUtils - Execute command: [/tmp/rdisk/1455/src/gradlew, -b, /tmp/rdisk/1455/src/android-transformer-sample-domain/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-06 02:23:19,806 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-06 02:23:19,806 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-06 02:23:19,807 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-06 02:23:19,807 INFO  SysUtils - Execute command: [/tmp/rdisk/1455/src/gradlew, -b, /tmp/rdisk/1455/src/android-transformer-sample-domain/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-06 02:23:23,532 INFO  SysUtils - Configuration on demand is an incubating feature.
+:android-transformer-sample-domain:compileJava UP-TO-DATE
+:android-transformer-sample-domain:processResources UP-TO-DATE
+:android-transformer-sample-domain:classes UP-TO-DATE
+:android-transformer-sample-domain:jar UP-TO-DATE
+:android-transformer-sample-domain:assemble UP-TO-DATE
+:android-transformer-sample-domain:compileTestJava UP-TO-DATE
+:android-transformer-sample-domain:processTestResources UP-TO-DATE
+:android-transformer-sample-domain:testClasses UP-TO-DATE
+:android-transformer-sample-domain:test UP-TO-DATE
+:android-transformer-sample-domain:check UP-TO-DATE
+:android-transformer-sample-domain:build UP-TO-DATE
+
+BUILD SUCCESSFUL
+
+Total time: 3.222 secs
+
+2018-04-06 02:23:23,546 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-06 02:23:23,546 INFO  SysUtils - Execute command: [/tmp/rdisk/1455/src/gradlew, -b, /tmp/rdisk/1455/src/android-transformer/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-06 02:23:30,180 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-06 02:23:30,180 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-06 02:23:30,180 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-06 02:23:30,180 INFO  SysUtils - Execute command: [/tmp/rdisk/1455/src/gradlew, -b, /tmp/rdisk/1455/src/android-transformer/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-06 02:23:34,409 INFO  SysUtils - Configuration on demand is an incubating feature.
+:android-transformer:compileJava UP-TO-DATE
+:android-transformer:processResources UP-TO-DATE
+:android-transformer:classes UP-TO-DATE
+:android-transformer:jar UP-TO-DATE
+:android-transformer:assemble UP-TO-DATE
+:android-transformer:compileTestJava UP-TO-DATE
+:android-transformer:processTestResources UP-TO-DATE
+:android-transformer:testClasses UP-TO-DATE
+:android-transformer:test UP-TO-DATE
+:android-transformer:check UP-TO-DATE
+:android-transformer:build UP-TO-DATE
+
+BUILD SUCCESSFUL
+
+Total time: 3.755 secs
+
+2018-04-06 02:23:34,423 ERROR FullProcessService - Project build has not produced APK file
+2018-04-06 02:23:34,436 ERROR FullProcessService - Could not find generated or existed APK file

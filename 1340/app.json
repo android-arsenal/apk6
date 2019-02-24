@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "ch.halcyon.squareprogressbar.example",
+    "label" : "android-square-progressbar-example",
+    "icon" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "versionName" : "1.6.3",
+    "versionCode" : 12,
+    "installLocation" : null,
+    "minSdkVersion" : "14",
+    "targetSdkVersion" : "17",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAEzUlEQVRo3u2Z22tcRRzHPzPn7Nnsms3mYkyU2FjoxUAtBVtBFNqXQkXxRbAPopaKqSg+6d/giyL61vShLxX1sfoilj5EQkukitKAVYOk2luaJptts0k3lzM/H3aT7OXsuSWQKjuwyzLnzMznN/P9/eY3s9AszdIs/+mivCoHh4YSHQVzTCs9COwHAVa/q39IZUOpqynXVTWqfuxZLZW/LgmcLGQTZ06dOLFc+6bt1byjYI5prU+V+tk6+HI5oOBA691lgNO1D7VXF1rpwa2Bb2CKgDK848naoO3+rYEXT/iy2A94tbD9OtoU+Bra0PBKNbI/jAGbAC+ClD+RDVAKJaCUimfARuFFBGMM6aRDd2f7miFiym9IubWs97JqqBEBBbn8HCtGAo2ww3hQ1Jk3xtCWTvH+G6/SmW2LFd8/Pf0l16dmSnFeqYb+ZG8qfPm7I9PKu6+9EhseQIwp6a0ML5FXoNxowcpwIXvEU17iZbcY+lvhw+H7uO7cmlykwqcNgpQWa63eNS67W4t89PKTdfFLokto3WIXi3yiqwIQ/wFEyBcFuW88PVY8w6ogZgWRqQYkKqYT19Tt6h9m785vuDU9wOjlN1lxk3USA4UoVRq0ZlxLw54emJmHa/cqV01KUUdbIXa10BJa17wALc4ch/Z/jmUt0d35J9P57VyZOFw3wNo4FdEj7cCzfXBkJ+x5pFT33Th8Nlq5USnP2Vf47wd2KIvLelfrQQ+UNIZf7VzDUz3w+j4YeLj62ZEd8NUY3C6EyCdUVAOkPgYVFzP88PN77N19lsnpAcb/PugLD/DBc3DoicaDG2HDxfaPQdXR5srEYX7zk03YEAl8+wfcmW8scQkx+z5OLI2UFBpegE8uwPm/wLGq04hbBZiYre9XNnMFanuMCg+wYuCnm9SFYELG+DDvaf8IFB/eUw6R4CXUezoIni2BD2+GHdxIIsE7ep6UzpHWOVLWNCk9S8qaIWXN4orDomllyWRYNK3Mu93cWRqg6LYFWCVxfEB80wetVuhKjNPrXKY3OUbWvkrKymGroo//eIPcXe5jsribrHkaeNxj71FRDagfXeHSmxzj0eSv9DhjdDu/Y63C+mgsWMlC1r5GJvUPCVUEXtjEVALQ1hLPd3zMtpaLJPU9n/7iwdcI1XsblrhhFNCJ++xMfx+AszH4jaQS2rethMGRan8X73ZR4SVkqLKD4QkFLwJiBMdKs+guoHSUqxMJBI50IosDb1xDf9s+HmvbxcjVr30O494GGCMkLBMxiIbwAXsRrk++WNNJ5TZdOsS3O2mOHjzO7XwOxzzjkd4H7LsCDznpyBteoAGJZaH9RrLxlYsIruvy9tGXyLSkyfSm2dHbt/FbZ6XCJKPBBvhe91UMdm5klF3btzFXmKcwvxAjwa4+nS2vuPEvtqLAoxRKayZuTHL23DCWbXH+4qX1wQP9qRpeqdKEKG2hta44akpUA0LAr927grYtRn4Zo7erk0QigfIIQxKYp1fe5RIIHyqVCAzpCKJAobC0ZiqXRytdd0hf13OFsmtE7q15iZ9KhIKvWQsv2UaZ+Uj5e6OduPy3TjR4iZDPx4AX+DGKAScfMHgEhkIbUMgmzgi8hXDpQZh5gePFrpYvaJZmaZb/X/kXjGnI3KypjnkAAAAASUVORK5CYII="
+  },
+  "dexClasses" : 508,
+  "locales" : [ "" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"12\" android:versionName=\"1.6.3\" package=\"ch.halcyon.squareprogressbar.example\" platformBuildVersionCode=\"17\" platformBuildVersionName=\"4.2.2-1425461\">\n\t<uses-sdk android:minSdkVersion=\"14\" android:targetSdkVersion=\"17\" />\n\t<application android:theme=\"@android:style/Theme.Holo.Light\" android:label=\"android-square-progressbar-example\" android:icon=\"res/drawable-mdpi-v4/ic_launcher.png\" android:debuggable=\"true\" android:allowBackup=\"true\">\n\t\t<activity android:label=\"android-square-progressbar-example\" android:name=\"ch.halcyon.squareprogressbar.example.MainActivity\" android:screenOrientation=\"portrait\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t</application>\n</manifest>\n",
+  "fileSize" : 554901,
+  "crc32" : 1918750349,
+  "sha256" : "1763fb2be003f8ac2128ba3f724eeb76c3bc6faf3c17a18ef7363da286126a83",
+  "buildTime" : 1504521054000
+}

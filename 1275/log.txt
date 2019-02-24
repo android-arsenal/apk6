@@ -1,0 +1,259 @@
+2018-05-21 02:31:16,418 INFO  DownloadService - Downloading "https://github.com/nicolasjafelle/SherlockNavigationDrawer/archive/master.zip", attempt 3
+2018-05-21 02:31:18,181 INFO  DownloadService - Downloaded https://github.com/nicolasjafelle/SherlockNavigationDrawer/archive/master.zip, attempt 3
+2018-05-21 02:31:18,181 INFO  DownloadService - Size of file "/tmp/rdisk/1275/master.zip": 282 KB
+2018-05-21 02:31:18,181 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-05-21 02:31:18,182 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/1275/master.zip: true
+2018-05-21 02:31:18,182 DEBUG ZipUtil - Extracting '/tmp/rdisk/1275/master.zip' into '/tmp/rdisk/1275/src'.
+2018-05-21 02:31:18,197 INFO  FullProcessService - Size of directory with sources: 336 KB
+2018-05-21 02:31:18,197 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1275/src]
+2018-05-21 02:31:18,203 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1275/src/.git/
+
+2018-05-21 02:31:18,206 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1275/src/SherlockNavigationDrawer-master/SherlockNavigationDrawer/gradlew /tmp/rdisk/1275/src/SherlockNavigationDrawer-master/AndroidStudio/SherlockNavigationDrawerProject/gradlew
+2018-05-21 02:31:18,210 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1275/src/SherlockNavigationDrawer-master/SherlockNavigationDrawer/build.gradle /tmp/rdisk/1275/src/SherlockNavigationDrawer-master/AndroidStudio/SherlockNavigationDrawerProject/Shakespeare/build.gradle /tmp/rdisk/1275/src/SherlockNavigationDrawer-master/AndroidStudio/SherlockNavigationDrawerProject/SherlockNavigationDrawer/build.gradle /tmp/rdisk/1275/src/SherlockNavigationDrawer-master/AndroidStudio/SherlockNavigationDrawerProject/build.gradle
+2018-05-21 02:31:18,214 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1275/src/SherlockNavigationDrawer-master/SherlockNavigationDrawer/build.gradle /tmp/rdisk/1275/src/SherlockNavigationDrawer-master/AndroidStudio/SherlockNavigationDrawerProject/settings.gradle /tmp/rdisk/1275/src/SherlockNavigationDrawer-master/AndroidStudio/SherlockNavigationDrawerProject/build.gradle /tmp/rdisk/1275/src/SherlockNavigationDrawer-master/AndroidStudio/SherlockNavigationDrawerProject/SherlockNavigationDrawer/build.gradle /tmp/rdisk/1275/src/SherlockNavigationDrawer-master/AndroidStudio/SherlockNavigationDrawerProject/Shakespeare/build.gradle
+2018-05-21 02:31:18,214 INFO  ProjectBuildService - Remote scripts: none
+2018-05-21 02:31:18,214 INFO  ProjectFixService - Fixing project...
+2018-05-21 02:31:18,222 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1275/src/SherlockNavigationDrawer-master/SherlockNavigationDrawer/local.properties
+2018-05-21 02:31:18,223 INFO  WrapperPropertiesFixService - Gradle wrapper: http://services.gradle.org/distributions/gradle-1.9-rc-3-all.zip
+2018-05-21 02:31:18,223 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (http://services.gradle.org/distributions/gradle-1.9-bin.zip)
+2018-05-21 02:31:18,223 INFO  ProjectFixService - Build info for "/tmp/rdisk/1275/src/SherlockNavigationDrawer-master/SherlockNavigationDrawer/build.gradle": [buildToolsVersion=19.0.1,compileSdkVersion=19,minSdkVersion=8,targetSdkVersion=19]
+2018-05-21 02:31:18,224 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1275/src/SherlockNavigationDrawer-master/SherlockNavigationDrawer/build.gradle": [buildToolsVersion=19.1.0,compileSdkVersion=19,minSdkVersion=8,targetSdkVersion=19]
+2018-05-21 02:31:18,224 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1275/src/SherlockNavigationDrawer-master/AndroidStudio/SherlockNavigationDrawerProject/Shakespeare/local.properties
+2018-05-21 02:31:18,224 INFO  ProjectFixService - Build info for "/tmp/rdisk/1275/src/SherlockNavigationDrawer-master/AndroidStudio/SherlockNavigationDrawerProject/Shakespeare/build.gradle": [buildToolsVersion=19.0.1,compileSdkVersion=19,minSdkVersion=8,targetSdkVersion=19]
+2018-05-21 02:31:18,224 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1275/src/SherlockNavigationDrawer-master/AndroidStudio/SherlockNavigationDrawerProject/Shakespeare/build.gradle": [buildToolsVersion=19.1.0,compileSdkVersion=19,minSdkVersion=8,targetSdkVersion=19]
+2018-05-21 02:31:18,225 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1275/src/SherlockNavigationDrawer-master/AndroidStudio/SherlockNavigationDrawerProject/SherlockNavigationDrawer/local.properties
+2018-05-21 02:31:18,225 INFO  ProjectFixService - Build info for "/tmp/rdisk/1275/src/SherlockNavigationDrawer-master/AndroidStudio/SherlockNavigationDrawerProject/SherlockNavigationDrawer/build.gradle": [buildToolsVersion=19.0.1,compileSdkVersion=19,minSdkVersion=8,targetSdkVersion=19]
+2018-05-21 02:31:18,225 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1275/src/SherlockNavigationDrawer-master/AndroidStudio/SherlockNavigationDrawerProject/SherlockNavigationDrawer/build.gradle": [buildToolsVersion=19.1.0,compileSdkVersion=19,minSdkVersion=8,targetSdkVersion=19]
+2018-05-21 02:31:18,226 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1275/src/SherlockNavigationDrawer-master/AndroidStudio/SherlockNavigationDrawerProject/local.properties
+2018-05-21 02:31:18,226 INFO  WrapperPropertiesFixService - Gradle wrapper: http://services.gradle.org/distributions/gradle-1.9-all.zip
+2018-05-21 02:31:18,226 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (http://services.gradle.org/distributions/gradle-1.9-bin.zip)
+2018-05-21 02:31:18,227 INFO  ProjectFixService - Build info for "/tmp/rdisk/1275/src/SherlockNavigationDrawer-master/AndroidStudio/SherlockNavigationDrawerProject/build.gradle": [buildToolsVersion=19.1.0,compileSdkVersion=19,minSdkVersion=8,targetSdkVersion=19]
+2018-05-21 02:31:18,227 INFO  ProjectFixService - Project was maybe fixed
+2018-05-21 02:31:18,227 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-21 02:31:18,227 INFO  SysUtils - Execute command: [/tmp/rdisk/1275/src/SherlockNavigationDrawer-master/SherlockNavigationDrawer/gradlew, -b, /tmp/rdisk/1275/src/SherlockNavigationDrawer-master/SherlockNavigationDrawer/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-21 02:31:54,790 INFO  ProjectTaskService - Detected possible tasks: 51
+2018-05-21 02:31:54,790 INFO  ProjectTaskService - Excluded tasks (7): lintDebug deviceCheck lint connectedCheck uninstallAll check lintRelease
+2018-05-21 02:31:54,790 INFO  SysUtils - Execute command: [/tmp/rdisk/1275/src/SherlockNavigationDrawer-master/SherlockNavigationDrawer/gradlew, -b, /tmp/rdisk/1275/src/SherlockNavigationDrawer-master/SherlockNavigationDrawer/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, deviceCheck, -x, lint, -x, connectedCheck, -x, uninstallAll, -x, check, -x, lintRelease, build]
+2018-05-21 02:32:09,351 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-05-21 02:32:09,351 INFO  SysUtils - Configuration on demand is an incubating feature.
+:compileDebugNdk
+:compileLint
+:copyDebugLint UP-TO-DATE
+:mergeDebugProguardFiles
+:packageDebugAidl UP-TO-DATE
+:preBuild UP-TO-DATE
+:preDebugBuild UP-TO-DATE
+:preDebugTestBuild UP-TO-DATE
+:preReleaseBuild UP-TO-DATE
+:prepareComActionbarsherlockActionbarsherlock440Library
+:prepareDebugDependencies
+:compileDebugAidl
+:compileDebugRenderscript
+:generateDebugBuildConfig
+:mergeDebugAssets
+:mergeDebugResources
+:processDebugManifest
+:processDebugResources
+:generateDebugSources
+:compileDebugJava/tmp/rdisk/1275/src/SherlockNavigationDrawer-master/SherlockNavigationDrawer/src/com/sherlock/navigationdrawer/compat/SherlockActionBarDrawerToggleCompat.java:32: error: cannot find symbol
+import com.sherlock.navigationdrawer.R;
+                                    ^
+  symbol:   class R
+  location: package com.sherlock.navigationdrawer
+1 error
+ FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileDebugJava'.
+> Compilation failed; see the compiler error output for details.
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':compileDebugJava'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:69)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:35)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:64)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:42)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.AbstractTask.executeWithoutThrowingTaskFailure(AbstractTask.java:286)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.executeTask(AbstractTaskPlanExecutor.java:79)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:63)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:51)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor$1.run(DefaultTaskPlanExecutor.java:33)
+	at org.gradle.internal.Factories$1.create(Factories.java:22)
+	at org.gradle.cache.internal.DefaultCacheAccess.longRunningOperation(DefaultCacheAccess.java:198)
+	at org.gradle.cache.internal.DefaultCacheAccess.longRunningOperation(DefaultCacheAccess.java:266)
+	at org.gradle.cache.internal.DefaultPersistentDirectoryStore.longRunningOperation(DefaultPersistentDirectoryStore.java:135)
+	at org.gradle.api.internal.changedetection.state.DefaultTaskArtifactStateCacheAccess.longRunningOperation(DefaultTaskArtifactStateCacheAccess.java:93)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:31)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:86)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:29)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:61)
+	at org.gradle.execution.DefaultBuildExecuter.access$200(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$2.proceed(DefaultBuildExecuter.java:67)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:61)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:54)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:166)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:113)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:81)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:64)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:33)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:24)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:35)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:50)
+	at org.gradle.api.internal.Actions$RunnableActionAdapter.execute(Actions.java:171)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:201)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:174)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:170)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:139)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:46)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.Main.main(Main.java:37)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:50)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:32)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:30)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:127)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:58)
+Caused by: org.gradle.api.internal.tasks.compile.CompilationFailedException: Compilation failed; see the compiler error output for details.
+	at org.gradle.api.internal.tasks.compile.jdk6.Jdk6JavaCompiler.execute(Jdk6JavaCompiler.java:47)
+	at org.gradle.api.internal.tasks.compile.jdk6.Jdk6JavaCompiler.execute(Jdk6JavaCompiler.java:38)
+	at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.delegateAndHandleErrors(NormalizingJavaCompiler.java:96)
+	at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.execute(NormalizingJavaCompiler.java:49)
+	at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.execute(NormalizingJavaCompiler.java:35)
+	at org.gradle.api.internal.tasks.compile.DelegatingJavaCompiler.execute(DelegatingJavaCompiler.java:29)
+	at org.gradle.api.internal.tasks.compile.DelegatingJavaCompiler.execute(DelegatingJavaCompiler.java:20)
+	at org.gradle.api.internal.tasks.compile.IncrementalJavaCompilerSupport.execute(IncrementalJavaCompilerSupport.java:33)
+	at org.gradle.api.internal.tasks.compile.IncrementalJavaCompilerSupport.execute(IncrementalJavaCompilerSupport.java:24)
+	at org.gradle.api.tasks.compile.Compile.compile(Compile.java:67)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:63)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.doExecute(AnnotationProcessingTaskFactory.java:219)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:212)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:201)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:530)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:513)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:80)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:61)
+	... 52 more
+
+
+BUILD FAILED
+
+Total time: 14.127 secs
+
+2018-05-21 02:32:09,367 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-21 02:32:09,367 INFO  SysUtils - Execute command: [/tmp/rdisk/1275/src/SherlockNavigationDrawer-master/AndroidStudio/SherlockNavigationDrawerProject/gradlew, -b, /tmp/rdisk/1275/src/SherlockNavigationDrawer-master/AndroidStudio/SherlockNavigationDrawerProject/Shakespeare/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-21 02:32:24,709 INFO  ProjectTaskService - Detected possible tasks: 48
+2018-05-21 02:32:24,710 INFO  ProjectTaskService - Excluded tasks (10): lintDebug deviceCheck lint uninstallRelease connectedCheck uninstallAll check installDebug lintRelease uninstallDebug
+2018-05-21 02:32:24,710 INFO  SysUtils - Execute command: [/tmp/rdisk/1275/src/SherlockNavigationDrawer-master/AndroidStudio/SherlockNavigationDrawerProject/gradlew, -b, /tmp/rdisk/1275/src/SherlockNavigationDrawer-master/AndroidStudio/SherlockNavigationDrawerProject/Shakespeare/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, connectedCheck, -x, uninstallAll, -x, check, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-05-21 02:32:59,016 INFO  SysUtils - Configuration on demand is an incubating feature.
+:Shakespeare:compileDebugNdk
+:Shakespeare:preBuild UP-TO-DATE
+:Shakespeare:preDebugBuild UP-TO-DATE
+:Shakespeare:preReleaseBuild UP-TO-DATE
+:SherlockNavigationDrawer:compileReleaseNdk
+:SherlockNavigationDrawer:compileLint
+:SherlockNavigationDrawer:copyReleaseLint UP-TO-DATE
+:SherlockNavigationDrawer:mergeReleaseProguardFiles
+:SherlockNavigationDrawer:packageReleaseAidl UP-TO-DATE
+:SherlockNavigationDrawer:preBuild UP-TO-DATE
+:SherlockNavigationDrawer:preReleaseBuild UP-TO-DATE
+:SherlockNavigationDrawer:preDebugBuild UP-TO-DATE
+:SherlockNavigationDrawer:preDebugTestBuild UP-TO-DATE
+:SherlockNavigationDrawer:prepareComActionbarsherlockActionbarsherlock440Library
+:SherlockNavigationDrawer:prepareReleaseDependencies
+:SherlockNavigationDrawer:compileReleaseAidl
+:SherlockNavigationDrawer:compileReleaseRenderscript
+:SherlockNavigationDrawer:generateReleaseBuildConfig
+:SherlockNavigationDrawer:mergeReleaseAssets
+:SherlockNavigationDrawer:mergeReleaseResources
+:SherlockNavigationDrawer:processReleaseManifest
+:SherlockNavigationDrawer:processReleaseResources
+:SherlockNavigationDrawer:generateReleaseSources
+:SherlockNavigationDrawer:compileReleaseJava
+:SherlockNavigationDrawer:processReleaseJavaRes UP-TO-DATE
+:SherlockNavigationDrawer:packageReleaseJar
+:SherlockNavigationDrawer:packageReleaseLocalJar UP-TO-DATE
+:SherlockNavigationDrawer:packageReleaseRenderscript UP-TO-DATE
+:SherlockNavigationDrawer:packageReleaseResources
+:SherlockNavigationDrawer:bundleRelease
+:Shakespeare:prepareComActionbarsherlockActionbarsherlock440Library
+:Shakespeare:prepareComSherlockSherlockNavigationDrawer10Library
+:Shakespeare:prepareDebugDependencies
+:Shakespeare:compileDebugAidl
+:Shakespeare:compileDebugRenderscript
+:Shakespeare:generateDebugBuildConfig
+:Shakespeare:mergeDebugAssets
+:Shakespeare:mergeDebugResources
+:Shakespeare:processDebugManifest
+:Shakespeare:processDebugResources
+:Shakespeare:generateDebugSources
+:Shakespeare:compileDebugJava
+:Shakespeare:preDexDebug
+:Shakespeare:dexDebug
+:Shakespeare:processDebugJavaRes UP-TO-DATE
+:Shakespeare:validateDebugSigning
+:Shakespeare:packageDebug
+:Shakespeare:assembleDebug
+:Shakespeare:compileReleaseNdk
+:Shakespeare:prepareReleaseDependencies
+:Shakespeare:compileReleaseAidl
+:Shakespeare:compileReleaseRenderscript
+:Shakespeare:generateReleaseBuildConfig
+:Shakespeare:mergeReleaseAssets
+:Shakespeare:mergeReleaseResources
+:Shakespeare:processReleaseManifest
+:Shakespeare:processReleaseResources
+:Shakespeare:generateReleaseSources
+:Shakespeare:compileReleaseJava
+:Shakespeare:preDexRelease
+:Shakespeare:dexRelease
+:Shakespeare:processReleaseJavaRes UP-TO-DATE
+:Shakespeare:packageRelease
+:Shakespeare:assembleRelease
+:Shakespeare:assemble
+:Shakespeare:build
+
+BUILD SUCCESSFUL
+
+Total time: 33.892 secs
+
+2018-05-21 02:32:59,069 INFO  FullProcessService - Found APK file: /tmp/rdisk/1275/src/SherlockNavigationDrawer-master/AndroidStudio/SherlockNavigationDrawerProject/Shakespeare/build/apk/Shakespeare-release-unsigned.apk

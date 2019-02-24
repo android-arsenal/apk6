@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "github.chenupt.dragtoplayout.demo",
+    "label" : "DragTopLayout",
+    "icon" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "versionName" : "1.1",
+    "versionCode" : 4,
+    "installLocation" : null,
+    "minSdkVersion" : "14",
+    "targetSdkVersion" : "21",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ "android.permission.INTERNET" ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "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"
+  },
+  "dexClasses" : 3135,
+  "locales" : [ "", "sl", "mr_IN", "kk_KZ", "bg", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "my_MM", "ur_PK", "mn_MN", "fi", "lv", "et_EE", "sw", "pt_PT", "tl", "th", "uz_UZ", "pt", "ar", "ru", "eu_ES", "bn_BD", "fa", "sk", "kn_IN", "hi", "cs", "sv", "km_KH", "el", "nl", "hu", "af", "in", "vi", "fr_CA", "sr", "pt_BR", "da", "si_LK", "ml_IN", "gl_ES", "es", "is_IS", "hy_AM", "tr", "ne_NP", "ro", "hr", "ms_MY", "am", "ka_GE", "lt", "pl", "zh_CN", "ta_IN", "fr", "ja", "lo_LA", "ky_KG", "iw", "de", "en_IN", "es_US", "zh", "mk_MK", "nb", "te_IN", "ca", "en_GB" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"4\" android:versionName=\"1.1\" package=\"github.chenupt.dragtoplayout.demo\" platformBuildVersionCode=\"21\" platformBuildVersionName=\"5.0.1-1624448\">\n\t<uses-sdk android:minSdkVersion=\"14\" android:targetSdkVersion=\"21\" />\n\t<uses-permission android:name=\"android.permission.INTERNET\" />\n\t<application android:theme=\"resourceId:0x7f0c0000\" android:label=\"DragTopLayout\" android:icon=\"res/drawable-mdpi-v4/ic_launcher.png\" android:debuggable=\"true\" android:allowBackup=\"true\">\n\t\t<activity android:label=\"DragTopLayout\" android:name=\"github.chenupt.dragtoplayout.demo.MainActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t\t<activity android:name=\"github.chenupt.dragtoplayout.demo.AboutActivity\" />\n\t\t<activity android:name=\"github.chenupt.dragtoplayout.demo.pulltorefresh.PullToRefreshActivity\" />\n\t\t<activity android:label=\"RecyclerViewTestActivity\" android:name=\"android.support.v7.widget.TestActivity\" />\n\t</application>\n</manifest>\n",
+  "fileSize" : 2046234,
+  "crc32" : 90481838,
+  "sha256" : "397bc8fc1c5b174d865f5a87e00cda46f4ffd76df437ca09f2ea474b158b8967",
+  "buildTime" : 1522982098000
+}

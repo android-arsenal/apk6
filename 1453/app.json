@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "com.avocarrot.json2view",
+    "label" : "json2view",
+    "icon" : "res/drawable-mdpi-v4/icon.png",
+    "versionName" : "1.0",
+    "versionCode" : 1,
+    "installLocation" : null,
+    "minSdkVersion" : "9",
+    "targetSdkVersion" : "24",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/drawable-mdpi-v4/icon.png",
+    "density" : 0,
+    "data" : "iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAADAklEQVR42u1YXYhNURT+EFKIpDyoIVFIygNF5G+Un0ga/y8kD8aMuffsO2aiXCU/88CrJMpPQoYUEoqkKA9qiAeaPOn6p/E/HN/ettu6d86997hz77h32qu+zrl7rXX2+s5ee+11LuDEiRMnTpw4KWHxGzDCVzhOHPM9VJQfAYXLhG9xptsS8OswiPrVfgz7eT1p4GEfrwv9OPr8TwIjibPEaZ1OHfRADwa9nvrXgmg6HvlRTCzNFfKwhgH+FME+IJrMSnhoFeMvODastIKvQV8G9lwEedjfiN4paeXhYVIfw86uDVCnRxRjOHkdcYr3i9PSa4oI/oMOOCAFNwsC15PjMSwilnXAVowXL2hggM2CcMHHMImTthDtIgCVFtxcHZSBwoEMz1khSN4RvreJt0L3g3hK+2rhO4pjj4k2a/OOuBmOQD2Gm6qisDsTgZBFoEn4nwgoEF+t/kaWZ+w1L7IeY/PZpJX5EuCEA+iXEP5VAcFdsfq2oE2u9xTHn1F/Nd8qkz8BhUMiRe7LDS5sVorn1wTMP9/ql3QpAfptoc8v6/vej2BCoN0m9Kf+lbHzcE8XjjSCF0ylCyBfNAL02SDOhk+sXnNyrNRBa9tO33HiORUc+0bs6MxBFZqAKbseIiL4BH2m5ZwjiqlitXYJYnGzyVlQik7Ar0KvlIqjcDds92p9W2watZqNy/7JHpKdayDDEDAHjkKztftOnz36lP7HDR+z/nolZupD097PLioBjo22/Y+2eRImZbKcO1/sKhzl9ZJpArk6RSNg39KbZPAK64jlGUGyOVbhon3WZ7OSCrWF6DYrs7QS17K00EGozUFgaUpv1YghhSWQFkDBCUTQz7Tdf2yPFKrflwTWpuXtLOpXhQY72xDzzbD2hfn+ZtrMEyk0vfy+iXUP/rfZasDg0g42jp5Mi8myH2Hgjfbtny+HfyC22cOjWbe2hpA+URU+yi+lUiZwTmzYhPmMVHipN3J55Ds7QfuBoQ+lW/y9nbV4qPt/0okTJ06cOHHSTeU3bQ0WS+WXnswAAAAASUVORK5CYII="
+  },
+  "dexClasses" : 1624,
+  "locales" : [ "", "az_AZ", "sl", "mr_IN", "kk_KZ", "bg", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "my_MM", "ur_PK", "mn_MN", "fi", "lv", "et_EE", "sw", "pt_PT", "tl", "th", "sq_AL", "uz_UZ", "pt", "ar", "ru", "eu_ES", "bs_BA", "bn_BD", "fa", "gu_IN", "sk", "kn_IN", "hi", "cs", "sv", "km_KH", "el", "nl", "hu", "pa_IN", "af", "en_AU", "in", "vi", "fr_CA", "sr", "pt_BR", "da", "si_LK", "ml_IN", "gl_ES", "es", "is_IS", "hy_AM", "tr", "ne_NP", "ro", "hr", "ms_MY", "am", "ka_GE", "lt", "pl", "zh_CN", "ta_IN", "fr", "ja", "lo_LA", "ky_KG", "iw", "de", "en_IN", "es_US", "mk_MK", "be_BY", "nb", "te_IN", "ca", "en_GB" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"1\" android:versionName=\"1.0\" package=\"com.avocarrot.json2view\" platformBuildVersionCode=\"24\" platformBuildVersionName=\"7.0\">\n\t<uses-sdk android:minSdkVersion=\"9\" android:targetSdkVersion=\"24\" />\n\t<application android:theme=\"resourceId:0x7f07008e\" android:label=\"json2view\" android:icon=\"res/drawable-mdpi-v4/icon.png\" android:debuggable=\"true\" android:allowBackup=\"true\">\n\t\t<activity android:theme=\"resourceId:0x7f0700fc\" android:label=\"json2view\" android:name=\"com.avocarrot.json2view.sample.MainActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t</application>\n</manifest>\n",
+  "fileSize" : 1433393,
+  "crc32" : 788200960,
+  "sha256" : "cfe099a878d7d7f8f91d547a15e437acd4cd8edc8f2bf8532f5de4a8d44365dc",
+  "buildTime" : 1496784464000
+}

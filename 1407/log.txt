@@ -1,0 +1,252 @@
+2018-04-06 17:18:52,627 INFO  DownloadService - Downloading "https://github.com/AndroidDeveloperLB/MaterialPreferenceLibrary/archive/master.zip", attempt 3
+2018-04-06 17:19:53,287 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-06 17:19:54,107 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-06 17:19:54,107 INFO  DownloadService - Downloading "https://github.com/AndroidDeveloperLB/MaterialPreferenceLibrary/archive/master.zip", attempt 3
+2018-04-06 17:20:55,473 DEBUG FullProcessService - Repository https://github.com/AndroidDeveloperLB/MaterialPreferenceLibrary available: true
+2018-04-06 17:20:55,473 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-06 17:20:55,473 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/AndroidDeveloperLB/MaterialPreferenceLibrary, /tmp/rdisk/1407/src]
+2018-04-06 17:20:59,038 INFO  SysUtils - 
+2018-04-06 17:20:59,044 INFO  GitService - Deleted "/tmp/rdisk/1407/src/.git": true
+2018-04-06 17:20:59,048 INFO  FullProcessService - Size of directory with sources: 13 MB
+2018-04-06 17:20:59,048 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1407/src]
+2018-04-06 17:20:59,053 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1407/src/.git/
+
+2018-04-06 17:20:59,056 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1407/src/gradlew
+2018-04-06 17:20:59,058 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1407/src/app/build.gradle /tmp/rdisk/1407/src/material_preferences_library/build.gradle /tmp/rdisk/1407/src/build.gradle
+2018-04-06 17:20:59,061 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1407/src/settings.gradle /tmp/rdisk/1407/src/material_preferences_library/build.gradle /tmp/rdisk/1407/src/build.gradle /tmp/rdisk/1407/src/app/build.gradle
+2018-04-06 17:20:59,061 INFO  ProjectBuildService - Remote scripts: none
+2018-04-06 17:20:59,061 INFO  ProjectFixService - Fixing project...
+2018-04-06 17:20:59,068 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1407/src/app/local.properties
+2018-04-06 17:20:59,069 INFO  ProjectFixService - Build info for "/tmp/rdisk/1407/src/app/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=27,minSdkVersion=14,targetSdkVersion=27]
+2018-04-06 17:20:59,069 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1407/src/app/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=14,targetSdkVersion=27]
+2018-04-06 17:20:59,069 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1407/src/material_preferences_library/local.properties
+2018-04-06 17:20:59,070 INFO  ProjectFixService - Build info for "/tmp/rdisk/1407/src/material_preferences_library/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=27,minSdkVersion=14,targetSdkVersion=27]
+2018-04-06 17:20:59,070 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1407/src/material_preferences_library/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=14,targetSdkVersion=27]
+2018-04-06 17:20:59,071 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1407/src/local.properties
+2018-04-06 17:20:59,071 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-4.5-all.zip
+2018-04-06 17:20:59,071 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-4.5-bin.zip)
+2018-04-06 17:20:59,073 INFO  ProjectFixService - Build info for "/tmp/rdisk/1407/src/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=27,minSdkVersion=14,targetSdkVersion=27]
+2018-04-06 17:20:59,073 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1407/src/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=14,targetSdkVersion=27]
+2018-04-06 17:20:59,073 INFO  ProjectFixService - Project was maybe fixed
+2018-04-06 17:20:59,073 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-06 17:20:59,073 INFO  SysUtils - Execute command: [/tmp/rdisk/1407/src/gradlew, -b, /tmp/rdisk/1407/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-06 17:25:59,409 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 143 (Exit value: 143)
+2018-04-06 17:25:59,410 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-06 17:25:59,410 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-06 17:25:59,410 INFO  SysUtils - Execute command: [/tmp/rdisk/1407/src/gradlew, -b, /tmp/rdisk/1407/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-06 17:26:44,724 INFO  SysUtils - Configuration on demand is an incubating feature.
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+:app:preBuild UP-TO-DATE
+:material_preferences_library:preBuild UP-TO-DATE
+:material_preferences_library:preDebugBuild UP-TO-DATE
+:material_preferences_library:checkDebugManifest
+:material_preferences_library:processDebugManifest
+:app:preDebugBuild
+:material_preferences_library:compileDebugAidl NO-SOURCE
+:app:compileDebugAidl NO-SOURCE
+:material_preferences_library:packageDebugRenderscript NO-SOURCE
+:app:compileDebugRenderscript
+:app:checkDebugManifest
+:app:generateDebugBuildConfig
+:app:prepareLintJar
+:app:mainApkListPersistenceDebug
+:app:generateDebugResValues
+:app:generateDebugResources
+:material_preferences_library:compileDebugRenderscript
+:material_preferences_library:generateDebugResValues
+:material_preferences_library:generateDebugResources
+:material_preferences_library:packageDebugResources
+:app:mergeDebugResources
+:app:createDebugCompatibleScreenManifests
+:app:processDebugManifest
+:app:splitsDiscoveryTaskDebug
+:material_preferences_library:platformAttrExtractor
+:material_preferences_library:generateDebugBuildConfig
+:material_preferences_library:prepareLintJar
+:material_preferences_library:javaPreCompileDebug
+:material_preferences_library:processDebugJavaRes NO-SOURCE
+:app:compileDebugNdk NO-SOURCE
+:app:mergeDebugShaders
+:app:compileDebugShaders
+:app:generateDebugAssets
+:material_preferences_library:mergeDebugShaders
+:material_preferences_library:compileDebugShaders
+:material_preferences_library:generateDebugAssets
+:material_preferences_library:packageDebugAssets
+:app:mergeDebugAssets
+:app:mergeDebugJniLibFolders
+:material_preferences_library:compileDebugNdk NO-SOURCE
+:material_preferences_library:mergeDebugJniLibFolders
+:material_preferences_library:transformNativeLibsWithMergeJniLibsForDebug
+:material_preferences_library:transformNativeLibsWithStripDebugSymbolForDebug
+:material_preferences_library:transformNativeLibsWithIntermediateJniLibsForDebug
+:app:processDebugJavaRes NO-SOURCE
+:app:validateSigningDebug
+:app:extractProguardFiles
+:material_preferences_library:preReleaseBuild UP-TO-DATE
+:material_preferences_library:checkReleaseManifest
+:material_preferences_library:processReleaseManifest
+:app:preReleaseBuild
+:material_preferences_library:compileReleaseAidl NO-SOURCE
+:app:compileReleaseAidl NO-SOURCE
+:material_preferences_library:packageReleaseRenderscript NO-SOURCE
+:app:compileReleaseRenderscript
+:app:checkReleaseManifest
+:app:generateReleaseBuildConfig
+:app:mainApkListPersistenceRelease
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:material_preferences_library:compileReleaseRenderscript
+:material_preferences_library:generateReleaseResValues
+:material_preferences_library:generateReleaseResources
+:material_preferences_library:packageReleaseResources
+:app:mergeReleaseResources
+:app:createReleaseCompatibleScreenManifests
+:app:processReleaseManifest
+:app:splitsDiscoveryTaskRelease
+:material_preferences_library:generateReleaseBuildConfig
+:material_preferences_library:javaPreCompileRelease
+:material_preferences_library:processReleaseJavaRes NO-SOURCE
+:app:compileReleaseNdk NO-SOURCE
+:app:mergeReleaseShaders
+:app:compileReleaseShaders
+:app:generateReleaseAssets
+:material_preferences_library:mergeReleaseShaders
+:material_preferences_library:compileReleaseShaders
+:material_preferences_library:generateReleaseAssets
+:material_preferences_library:packageReleaseAssets
+:app:mergeReleaseAssets
+:app:processReleaseJavaRes NO-SOURCE
+:material_preferences_library:mergeReleaseConsumerProguardFiles
+:app:mergeReleaseJniLibFolders
+:material_preferences_library:compileReleaseNdk NO-SOURCE
+:material_preferences_library:mergeReleaseJniLibFolders
+:material_preferences_library:transformNativeLibsWithMergeJniLibsForRelease
+:material_preferences_library:transformNativeLibsWithStripDebugSymbolForRelease
+:material_preferences_library:transformNativeLibsWithIntermediateJniLibsForRelease
+:app:preDebugUnitTestBuild UP-TO-DATE
+:app:mockableAndroidJar
+:app:processDebugUnitTestJavaRes NO-SOURCE
+:app:preReleaseUnitTestBuild
+:app:processReleaseUnitTestJavaRes NO-SOURCE
+:material_preferences_library:generateDebugRFile
+:app:processDebugResources
+/tmp/rdisk/1407/src/material_preferences_library/build/intermediates/packaged_res/debug/layout/mpl__preference_widget_checkbox.xml:18: warn: generated id 'android:id/checkbox' for external package 'android'.
+
+:app:generateDebugSources
+:material_preferences_library:generateDebugSources
+:material_preferences_library:compileDebugJavaWithJavac
+:material_preferences_library:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug
+:app:javaPreCompileDebug
+:app:compileDebugJavaWithJavacNote: /tmp/rdisk/1407/src/app/src/main/java/com/lb/material_preferences/SettingsActivity.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:app:compileDebugSources
+:app:transformClassesWithDexBuilderForDebug
+:app:transformDexArchiveWithExternalLibsDexMergerForDebug
+:app:transformDexArchiveWithDexMergerForDebug
+:app:transformNativeLibsWithMergeJniLibsForDebug
+:app:transformNativeLibsWithStripDebugSymbolForDebug
+:app:transformResourcesWithMergeJavaResForDebug
+:app:packageDebug
+:app:assembleDebug
+:material_preferences_library:generateReleaseRFile
+:app:processReleaseResources
+/tmp/rdisk/1407/src/material_preferences_library/build/intermediates/packaged_res/release/layout/mpl__preference_widget_checkbox.xml:18: warn: generated id 'android:id/checkbox' for external package 'android'.
+
+:app:generateReleaseSources
+:material_preferences_library:generateReleaseSources
+:material_preferences_library:compileReleaseJavaWithJavac
+:material_preferences_library:transformClassesAndResourcesWithPrepareIntermediateJarsForRelease
+:app:javaPreCompileRelease
+:app:compileReleaseJavaWithJavacNote: /tmp/rdisk/1407/src/app/src/main/java/com/lb/material_preferences/SettingsActivity.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:app:compileReleaseSources
+:app:lintVitalRelease SKIPPED
+:app:transformResourcesWithMergeJavaResForRelease
+:app:transformClassesAndResourcesWithProguardForRelease
+Request to incrementing alive workforce from 0. Current workforce (dead or alive) 0
+thread-pool size=4
+ProGuard, version 6.0
+Reading input...
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/6fd8b655826cd381b34c36a825023211/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.0.aar/304c42c9a0eadf4c4f671b9626b34ea4/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.0.aar/84eda63a766157d9d4d3296f5df672cc/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.0.aar/42505c9e638187db1897d30f439dc1b9/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.0.aar/b5230210f59a96520a1c7cdcfcf520b5/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.0.aar/422394403f7941526f4f964ccfbd9f32/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.0.aar/9118d872f9e255733666dd25155e9027/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/27.1.0/39ded76b5e1ce1c5b2688e1d25cdc20ecee32007/support-annotations-27.1.0.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/169c2a787bb5e87ef72c462362ba277b/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/f6120e92c9601831cbe6911df534c6a8/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/bf6657a0d5dfaa5abe8fdadec42c2ac2/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/modules-2/files-2.1/android.arch.lifecycle/common/1.1.0/edf3f7bfb84a7521d0599efa3b0113a0ee90f85/common-1.1.0.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/be32a13c7c00ae3b06de12245a7e7cb2/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/modules-2/files-2.1/android.arch.core/common/1.1.0/8007981f7d7540d89cd18471b8e5dcd2b4f99167/common-1.1.0.jar] (filtered)
+Reading program jar [/tmp/rdisk/1407/src/material_preferences_library/build/intermediates/intermediate-jars/release/classes.jar] (filtered)
+Reading program directory [/tmp/rdisk/1407/src/app/build/intermediates/artifact_transform/compileReleaseJavaWithJavac/classes] (filtered)
+Reading program jar [/tmp/rdisk/1407/src/app/build/intermediates/transforms/mergeJavaRes/release/0.jar] (filtered)
+Reading library jar [/root/Applications/android-sdk/platforms/android-27/android.jar]
+Reading library jar [/root/Applications/android-sdk/build-tools/27.0.3/core-lambda-stubs.jar]
+Reading library jar [/root/Applications/android-sdk/platforms/android-27/optional/org.apache.http.legacy.jar]
+Initializing...
+Ignoring unused library classes...
+  Original number of library classes: 4612
+  Final number of library classes:    1056
+Printing kept classes, fields, and methods...
+Inlining subroutines...
+Shrinking...
+Printing usage to [/tmp/rdisk/1407/src/app/build/outputs/mapping/release/usage.txt]...
+Removing unused program classes and class elements...
+  Original number of program classes: 1314
+  Final number of program classes:    531
+Obfuscating...
+Printing mapping to [/tmp/rdisk/1407/src/app/build/outputs/mapping/release/mapping.txt]...
+Preverifying...
+Writing output...
+Preparing output jar [/tmp/rdisk/1407/src/app/build/intermediates/transforms/proguard/release/0.jar]
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/6fd8b655826cd381b34c36a825023211/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.0.aar/304c42c9a0eadf4c4f671b9626b34ea4/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.0.aar/84eda63a766157d9d4d3296f5df672cc/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.0.aar/42505c9e638187db1897d30f439dc1b9/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.0.aar/b5230210f59a96520a1c7cdcfcf520b5/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.0.aar/422394403f7941526f4f964ccfbd9f32/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.0.aar/9118d872f9e255733666dd25155e9027/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/27.1.0/39ded76b5e1ce1c5b2688e1d25cdc20ecee32007/support-annotations-27.1.0.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/169c2a787bb5e87ef72c462362ba277b/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/f6120e92c9601831cbe6911df534c6a8/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/bf6657a0d5dfaa5abe8fdadec42c2ac2/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/modules-2/files-2.1/android.arch.lifecycle/common/1.1.0/edf3f7bfb84a7521d0599efa3b0113a0ee90f85/common-1.1.0.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/be32a13c7c00ae3b06de12245a7e7cb2/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/modules-2/files-2.1/android.arch.core/common/1.1.0/8007981f7d7540d89cd18471b8e5dcd2b4f99167/common-1.1.0.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/1407/src/material_preferences_library/build/intermediates/intermediate-jars/release/classes.jar] (filtered)
+  Copying resources from program directory [/tmp/rdisk/1407/src/app/build/intermediates/artifact_transform/compileReleaseJavaWithJavac/classes] (filtered)
+  Copying resources from program jar [/tmp/rdisk/1407/src/app/build/intermediates/transforms/mergeJavaRes/release/0.jar] (filtered)
+Printing classes to [/tmp/rdisk/1407/src/app/build/outputs/mapping/release/dump.txt]...
+:app:transformClassesWithDexBuilderForRelease
+:app:transformDexArchiveWithDexMergerForRelease
+:app:transformNativeLibsWithMergeJniLibsForRelease
+:app:transformNativeLibsWithStripDebugSymbolForRelease
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:lint
+Ran lint on variant debug: 6 issues found
+Ran lint on variant release: 6 issues found
+Wrote HTML report to file:///tmp/rdisk/1407/src/app/build/reports/lint-results.html
+Wrote XML report to file:///tmp/rdisk/1407/src/app/build/reports/lint-results.xml
+:app:javaPreCompileDebugUnitTest
+:app:compileDebugUnitTestJavaWithJavac NO-SOURCE
+:app:testDebugUnitTest NO-SOURCE
+:app:javaPreCompileReleaseUnitTest
+:app:compileReleaseUnitTestJavaWithJavac NO-SOURCE
+:app:testReleaseUnitTest NO-SOURCE
+:app:test UP-TO-DATE
+:app:check
+:app:build
+
+BUILD SUCCESSFUL in 44s
+92 actionable tasks: 92 executed
+
+2018-04-06 17:26:44,777 INFO  FullProcessService - Found APK file: /tmp/rdisk/1407/src/app/build/outputs/apk/debug/app-debug.apk

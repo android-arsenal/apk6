@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "com.flavienlaurent.discrollview",
+    "label" : "Discrollview sample",
+    "icon" : "res/drawable-mdpi/ic_launcher.png",
+    "versionName" : "1.0",
+    "versionCode" : 1,
+    "installLocation" : null,
+    "minSdkVersion" : "14",
+    "targetSdkVersion" : "19",
+    "maxSdkVersion" : "19",
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/drawable-mdpi/ic_launcher.png",
+    "density" : 0,
+    "data" : "iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAB6VBMVEUAAADg4OD6+vr///+vr6/6+vr////r6+sAAAAAAAD09PT+/v7Z2dno6Oj////8/Py6urrY2Nj9/f34+PiZmZn5+fnw8PCAgID29vb+/v7d3d3o6Oj8/PzDw8Pa2tr9/f35+fmfn5+2trbw8PD19fX8/Pz5+fnr6+uGhoZtbW1sbGxtbW3b29v+/v6np6dtbW2ampoAAAAAAAAAAAAAAAAAAAAAAADPz8+Pj48AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADS0tKhoaEAAAAAAAAAAAAAAADU1NSlpaUAAAC/v7/8/Pz6+vrg4OC0tLTa2toAAACnp6cAAACmpqbR0dGSkpKZmZmYmJiQkJB2dnZxcXFwcHBzc3NycnIAAAAAAAAAAAAAAAAAAADZ2dnv7++cnJy2trb+/v7////+/v7+/v7+/v7k5OSQkJCBgYHU1NT09PSKiopSUlIAAAAdHR2BgYHp6emgoKBjY2MAAAAAAABMTEyNjY36+vrCwsJ4eHgAAAAAAABra2uvr6/e3t5+fn4ICAh7e3vLy8vz8/OIiIguLi4NDQ1/f3/l5eWbm5tiYmIAAAA/Pz+MjIz4+Pi7u7t0dHRqamqkpKTc3Nx9fX0AAAB4eHi9vb2FhYUrKysHBwd7e3tcXFy7BioeAAAAo3RSTlMAMaQBENP/fQECpvZJbf3fGjvyvAXXjAKt+kt45SY+88gIHN7///+Xy/n6+vz/+/hlBhwzOjs+2KE8OSwQCA0OGNeaEwsEDNWWBzRjZFOP1QWUCpXW4f//nnmXmZROFB0eGwOF0WTz8vLz+Pzzx7T//+kyCSzf//dnEg9N8P//nxkVd/v/zSK0///nNyfX//dlEUHt//2VdPr/xiCm/+Y1I8leHl+ycQAAAaNJREFUSMdjYBgKgJGJmST1LKxs7BwkqOfkYmPj5iFePQcvHxsbG78A0RoEhdhAQFiEWA+IskGAGHHeEJeAqmeTlCLKA9JscCAjS4QGOXmEBjYFRYLqlZRVVFRUwarVgCx1TkIxoKGppaWtA1Kvq6elpaVvQECDoZGxiamZOViDhaWplbUNASs4bO3s7R0cwRqcnO3tXVyJCSg3d7AGD09iY9oFqsGQwcvbBwh8idbA6acLYvm7EqshIBCswT2IWA2GwRANLkRr8BjVQEUNIbogQIKG0DAgCI8gWkNQZFR0dHRMbACxGlzj4hMSEhLtOInVwJAUAASunAxEa4ABz2RwaZDiRozi1LT0jMwssIbszIyMnFwCxSCnTV4+UgFVUFhkSMCG4pLSMrh63fKKSoIlVFV1TS1MfV19QwBBTyQ1NjXrQjS0tLbZEuFtQ6P2DrD6zq5uN6JK/uKe3j6getX+CRM5iYoGDvtJk6ew6U6d1uBKZMQlOU+foTtz1myii0CGgMQ5c+fNdyGhBi5esHARkR6AesMtwdmVgRTAYZhEhZYIAA3VbJtUfiQaAAAAAElFTkSuQmCC"
+  },
+  "dexClasses" : 17,
+  "locales" : [ "" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"1\" android:versionName=\"1.0\" package=\"com.flavienlaurent.discrollview\">\n\t<uses-sdk android:minSdkVersion=\"14\" android:targetSdkVersion=\"19\" android:maxSdkVersion=\"19\" />\n\t<application android:theme=\"resourceId:0x7f060000\" android:label=\"Discrollview sample\" android:icon=\"res/drawable-mdpi/ic_launcher.png\" android:debuggable=\"true\" android:allowBackup=\"true\">\n\t\t<activity android:label=\"Discrollview sample\" android:name=\"com.flavienlaurent.discrollview.sample.MainActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t</application>\n</manifest>\n",
+  "fileSize" : 441216,
+  "crc32" : 2638717060,
+  "sha256" : "2af22b30cffaac92a07c111a716b21bc80c98d759c277ebca43e3f5c503e535f",
+  "buildTime" : 1526049129000
+}

@@ -1,0 +1,170 @@
+2018-04-06 17:59:41,653 INFO  DownloadService - Downloading "https://github.com/pwittchen/NetworkEvents/archive/master.zip", attempt 3
+2018-04-06 18:00:42,278 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-06 18:00:43,079 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-06 18:00:43,079 INFO  DownloadService - Downloading "https://github.com/pwittchen/NetworkEvents/archive/master.zip", attempt 3
+2018-04-06 18:01:44,366 DEBUG FullProcessService - Repository https://github.com/pwittchen/NetworkEvents available: true
+2018-04-06 18:01:44,366 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-06 18:01:44,366 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/pwittchen/NetworkEvents, /tmp/rdisk/1392/src]
+2018-04-06 18:01:46,034 INFO  SysUtils - 
+2018-04-06 18:01:46,039 INFO  GitService - Deleted "/tmp/rdisk/1392/src/.git": true
+2018-04-06 18:01:46,043 INFO  FullProcessService - Size of directory with sources: 219 KB
+2018-04-06 18:01:46,043 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1392/src]
+2018-04-06 18:01:46,047 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1392/src/.git/
+
+2018-04-06 18:01:46,051 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1392/src/gradlew
+2018-04-06 18:01:46,055 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1392/src/example-greenrobot-bus/build.gradle /tmp/rdisk/1392/src/example/build.gradle /tmp/rdisk/1392/src/network-events-library/build.gradle /tmp/rdisk/1392/src/build.gradle
+2018-04-06 18:01:46,058 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1392/src/settings.gradle /tmp/rdisk/1392/src/network-events-library/build.gradle /tmp/rdisk/1392/src/maven_push.gradle /tmp/rdisk/1392/src/example/build.gradle /tmp/rdisk/1392/src/example-greenrobot-bus/build.gradle /tmp/rdisk/1392/src/build.gradle
+2018-04-06 18:01:46,058 INFO  ProjectBuildService - Remote scripts: none
+2018-04-06 18:01:46,058 INFO  ProjectFixService - Fixing project...
+2018-04-06 18:01:46,068 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1392/src/example-greenrobot-bus/local.properties
+2018-04-06 18:01:46,068 INFO  ProjectFixService - Build info for "/tmp/rdisk/1392/src/example-greenrobot-bus/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=15,targetSdkVersion=23]
+2018-04-06 18:01:46,068 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1392/src/example/local.properties
+2018-04-06 18:01:46,068 INFO  ProjectFixService - Build info for "/tmp/rdisk/1392/src/example/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=15,targetSdkVersion=23]
+2018-04-06 18:01:46,069 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1392/src/network-events-library/local.properties
+2018-04-06 18:01:46,069 INFO  ProjectFixService - Build info for "/tmp/rdisk/1392/src/network-events-library/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=9,targetSdkVersion=23]
+2018-04-06 18:01:46,069 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1392/src/local.properties
+2018-04-06 18:01:46,069 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.10-all.zip
+2018-04-06 18:01:46,070 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.10-bin.zip)
+2018-04-06 18:01:46,070 INFO  ProjectFixService - Build info for "/tmp/rdisk/1392/src/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=9,targetSdkVersion=23]
+2018-04-06 18:01:46,071 INFO  ProjectFixService - Project was maybe fixed
+2018-04-06 18:01:46,071 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-06 18:01:46,071 INFO  SysUtils - Execute command: [/tmp/rdisk/1392/src/gradlew, -b, /tmp/rdisk/1392/src/example-greenrobot-bus/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-06 18:01:57,272 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-06 18:01:57,272 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-06 18:01:57,272 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-06 18:01:57,272 INFO  SysUtils - Execute command: [/tmp/rdisk/1392/src/gradlew, -b, /tmp/rdisk/1392/src/example-greenrobot-bus/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-06 18:02:31,304 INFO  SysUtils - Configuration on demand is an incubating feature.
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Incremental java compilation is an incubating feature.
+:example-greenrobot-bus:preBuild UP-TO-DATE
+:example-greenrobot-bus:preDebugBuild UP-TO-DATE
+:example-greenrobot-bus:checkDebugManifest
+:example-greenrobot-bus:preReleaseBuild UP-TO-DATE
+:network-events-library:preBuild UP-TO-DATE
+:network-events-library:preReleaseBuild UP-TO-DATE
+:network-events-library:compileReleaseNdk UP-TO-DATE
+:network-events-library:compileLint
+:network-events-library:copyReleaseLint UP-TO-DATE
+:network-events-library:mergeReleaseProguardFiles
+:network-events-library:packageReleaseRenderscript UP-TO-DATE
+:network-events-library:checkReleaseManifest
+:network-events-library:prepareReleaseDependencies
+:network-events-library:compileReleaseRenderscript
+:network-events-library:generateReleaseResValues
+:network-events-library:generateReleaseResources
+:network-events-library:packageReleaseResources
+:network-events-library:compileReleaseAidl
+:network-events-library:generateReleaseBuildConfig
+:network-events-library:mergeReleaseShaders
+:network-events-library:compileReleaseShaders
+:network-events-library:generateReleaseAssets
+:network-events-library:mergeReleaseAssets
+:network-events-library:processReleaseManifest
+:network-events-library:processReleaseResources
+:network-events-library:generateReleaseSources
+:network-events-library:incrementalReleaseJavaCompilationSafeguard
+:network-events-library:compileReleaseJavaWithJavac
+:network-events-library:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:network-events-library:processReleaseJavaRes UP-TO-DATE
+:network-events-library:transformResourcesWithMergeJavaResForRelease
+:network-events-library:transformClassesAndResourcesWithSyncLibJarsForRelease
+:network-events-library:mergeReleaseJniLibFolders
+:network-events-library:transformNative_libsWithMergeJniLibsForRelease
+:network-events-library:transformNative_libsWithSyncJniLibsForRelease
+:network-events-library:bundleRelease
+:example-greenrobot-bus:prepareComAndroidSupportAppcompatV72300Library
+:example-greenrobot-bus:prepareComAndroidSupportSupportV42300Library
+:example-greenrobot-bus:prepareSrcNetworkEventsLibraryUnspecifiedLibrary
+:example-greenrobot-bus:prepareDebugDependencies
+:example-greenrobot-bus:compileDebugAidl
+:example-greenrobot-bus:compileDebugRenderscript
+:example-greenrobot-bus:generateDebugBuildConfig
+:example-greenrobot-bus:mergeDebugShaders
+:example-greenrobot-bus:compileDebugShaders
+:example-greenrobot-bus:generateDebugAssets
+:example-greenrobot-bus:mergeDebugAssets
+:example-greenrobot-bus:generateDebugResValues
+:example-greenrobot-bus:generateDebugResources
+:example-greenrobot-bus:mergeDebugResources
+:example-greenrobot-bus:processDebugManifest
+:example-greenrobot-bus:processDebugResources
+:example-greenrobot-bus:generateDebugSources
+:example-greenrobot-bus:incrementalDebugJavaCompilationSafeguard
+:example-greenrobot-bus:compileDebugJavaWithJavac
+:example-greenrobot-bus:compileDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:example-greenrobot-bus:compileDebugNdk UP-TO-DATE
+:example-greenrobot-bus:compileDebugSources
+:example-greenrobot-bus:prePackageMarkerForDebug
+:example-greenrobot-bus:transformClassesWithDexForDebug
+Running dex in-process requires build tools 23.0.2.
+For faster builds update this project to use the latest build tools.
+:example-greenrobot-bus:mergeDebugJniLibFolders
+:example-greenrobot-bus:transformNative_libsWithMergeJniLibsForDebug
+:example-greenrobot-bus:processDebugJavaRes UP-TO-DATE
+:example-greenrobot-bus:transformResourcesWithMergeJavaResForDebug
+:example-greenrobot-bus:validateDebugSigning
+:example-greenrobot-bus:packageDebug
+:example-greenrobot-bus:zipalignDebug
+:example-greenrobot-bus:assembleDebug
+:example-greenrobot-bus:checkReleaseManifest
+:example-greenrobot-bus:prepareReleaseDependencies
+:example-greenrobot-bus:compileReleaseAidl
+:example-greenrobot-bus:compileReleaseRenderscript
+:example-greenrobot-bus:generateReleaseBuildConfig
+:example-greenrobot-bus:mergeReleaseShaders
+:example-greenrobot-bus:compileReleaseShaders
+:example-greenrobot-bus:generateReleaseAssets
+:example-greenrobot-bus:mergeReleaseAssets
+:example-greenrobot-bus:generateReleaseResValues
+:example-greenrobot-bus:generateReleaseResources
+:example-greenrobot-bus:mergeReleaseResources
+:example-greenrobot-bus:processReleaseManifest
+:example-greenrobot-bus:processReleaseResources
+:example-greenrobot-bus:generateReleaseSources
+:example-greenrobot-bus:incrementalReleaseJavaCompilationSafeguard
+:example-greenrobot-bus:compileReleaseJavaWithJavac
+:example-greenrobot-bus:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:example-greenrobot-bus:compileReleaseNdk UP-TO-DATE
+:example-greenrobot-bus:compileReleaseSources
+:example-greenrobot-bus:lintVitalRelease
+:example-greenrobot-bus:prePackageMarkerForRelease
+:example-greenrobot-bus:transformClassesWithDexForRelease
+:example-greenrobot-bus:mergeReleaseJniLibFolders
+:example-greenrobot-bus:transformNative_libsWithMergeJniLibsForRelease
+:example-greenrobot-bus:processReleaseJavaRes UP-TO-DATE
+:example-greenrobot-bus:transformResourcesWithMergeJavaResForRelease
+:example-greenrobot-bus:packageRelease
+:example-greenrobot-bus:assembleRelease
+:example-greenrobot-bus:assemble
+:example-greenrobot-bus:compileLint
+:example-greenrobot-bus:lint
+Ran lint on variant release: 7 issues found
+Ran lint on variant debug: 7 issues found
+Wrote HTML report to file:///tmp/rdisk/1392/src/example-greenrobot-bus/build/outputs/lint-results-debug.html
+Wrote XML report to file:///tmp/rdisk/1392/src/example-greenrobot-bus/build/outputs/lint-results-debug.xml
+:example-greenrobot-bus:incrementalDebugUnitTestJavaCompilationSafeguard UP-TO-DATE
+:example-greenrobot-bus:preDebugUnitTestBuild UP-TO-DATE
+:example-greenrobot-bus:prepareDebugUnitTestDependencies
+:example-greenrobot-bus:compileDebugUnitTestJavaWithJavac UP-TO-DATE
+:example-greenrobot-bus:processDebugUnitTestJavaRes UP-TO-DATE
+:example-greenrobot-bus:compileDebugUnitTestSources UP-TO-DATE
+:example-greenrobot-bus:mockableAndroidJar
+:example-greenrobot-bus:assembleDebugUnitTest
+:example-greenrobot-bus:testDebugUnitTest
+:example-greenrobot-bus:incrementalReleaseUnitTestJavaCompilationSafeguard UP-TO-DATE
+:example-greenrobot-bus:preReleaseUnitTestBuild UP-TO-DATE
+:example-greenrobot-bus:prepareReleaseUnitTestDependencies
+:example-greenrobot-bus:compileReleaseUnitTestJavaWithJavac UP-TO-DATE
+:example-greenrobot-bus:processReleaseUnitTestJavaRes UP-TO-DATE
+:example-greenrobot-bus:compileReleaseUnitTestSources UP-TO-DATE
+:example-greenrobot-bus:assembleReleaseUnitTest
+:example-greenrobot-bus:testReleaseUnitTest
+:example-greenrobot-bus:test
+:example-greenrobot-bus:check
+:example-greenrobot-bus:build
+
+BUILD SUCCESSFUL
+
+Total time: 33.6 secs
+
+2018-04-06 18:02:31,358 INFO  FullProcessService - Found APK file: /tmp/rdisk/1392/src/example-greenrobot-bus/build/outputs/apk/example-greenrobot-bus-release-unsigned.apk

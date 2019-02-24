@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "rebus.youtube.helper.sample",
+    "label" : "YouTubeHelper Sample",
+    "icon" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "versionName" : "1.0.0",
+    "versionCode" : 1,
+    "installLocation" : null,
+    "minSdkVersion" : "8",
+    "targetSdkVersion" : "21",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ "android.permission.INTERNET" ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAACOlBMVEUAAAD/AAD/QED/AADyKCjuIivtIyzmGjPsJCrsIinsISnrIinpIyrsIinrIingISgAAADqIijpIinrIinrIiniISe8FhbIHCLpISnhICekEhi6HCLpISmeEhj1naD74+TyfH/5z9H74OHzf4L4u77vV1z99/f9/f3yv8HXHyXyd3vvo6blZWr0t7reICftoaT9/PzfSU7XHyb75ebeO0HfICffICfvT1T89PXwq63wXmPunqHaICbdMDbjVVrkVVroaW7wnJ/lVVrmVVrlRUrhICftmp39+PjcOT7YHyb62Nn89PTeNjzbICbcICbgOkDrf4LgICfWHiXuS1DslpncMzjtmZzgICfYHyWYEhjsmJv77u/bLDLsjZH88/PeNTrhOkDiICfuR0378vLsjJD66ertlZjdICfhICfskpX9+/v78PDeMjjsf4LtP0XtkJPiOkDjISf77O3eLzXiISfuSU/voKLtf4LiISfZHybtO0HumJvjOkDkISjjISjjISjaHybkO0DlISjkISjsMjnysbTpcHTiMjj0srTqX2TbHyblISjcHybmISjdHya+GiHnISiaEhikGxvoISjlISjkISjoIinaHyaADw+qAAAAAADKHiTtIyrkIijlIinmIinnIiniISi6HCIAAAAxAAa7HCHaICbeICfdICfVHyXWHybXHybYHybZHybaHybXHyW2GyEuAAYAAAAAAABCCAhZCg1YCg5XCg1UCg1VCg5mAAAAAAAAAAC/AAD4pYN7AAAAvnRSTlMAAwQCEx4dCpbo7JaY//+aAer5/fzqFyXv7yol7ir////////////////////////////////8///////////////////////////////////87///////7yr///////////////////z///////////////z/////7//////8/+////z////////v/O//7yf/Kxzs/fn/7CIDCKn///////+tAyqw7fDv8PDw8PDw7bEsCSBCTUtMTEsFCw4EvOiNgwAAAoVJREFUSMfl1vt/SnEcx/HTamboYAtzzXUf1xBnbhESMo3cwtyN5W6EhmpKRDZzi2YlhlkXl12ijf/N93xPnW7f0/HTfvH+qcej17POqcejbxQ1XJOUiEySk0ul4i+Z3aCHstIRRVcqw1m6LxtZPkpk5aPLeCGlxshp8Y0dlwISSjaerqhUFF1lhXzCRIq78xJqUhWtEHt9hXzyFJRyYOq0fwLTM6DqfwUzlErlTO7JWUrl7DnK7M0lgHnVAPMXsP1CAFi0GLK3REW4pKUAy5arEVgBUL0yDzA1hWDVaoA1ajW9FgXrNOs3aLXajejhps06nW4LU6MvvOmtANu2Gww7AGp3ajRGo7FuFwK7VSoVwzAm/Z4CsLcWYJ9hP3qjA1yfBqg3m/QHDxV8rIcB6o8cBTh2nOvrTmDA9mbTSQI4dRqg4QzA2VTfiAHuzRYSoM8BnAe4cDHVY3AJ93oyuFzPfoZX0n3jVQzYXm9pIgG6ARXXrqd7FQa411vJ4AYqbvI9Brdwb7M2NZPAbVTc4XvVXQzY3ma1CwO+ZzDAvc1RFKT6NEC902FvEQbpnrmHAds7HS5hwPdmDHDvdJPBfY/H84DvzQ+9Xu8j3NvdrsckQGeun/u+uOtx2gUBLdDbfUKAJvcIPBEANLG3+1oFAU3q80DejzGhd/la2zLgaf4PWWHv8rW3PUsBCfX8hTzvQLFYLFar1eFwuN1uH7uXr/yv31CB1JHV8dbfKe/MmTMYDIZCoXd44XC43f/+Qwd/xnV9/PS5+0t3znp6IpFINBqNxWLxeLz567fvP7oyx2hvX/9AIpH4mb1fmSWTyYH+vt7sg3pw6LfIhgZzD//AH5EFhu1fzF+FkpwIbhILSQAAAABJRU5ErkJggg=="
+  },
+  "dexClasses" : 1440,
+  "locales" : [ "", "sl", "mr_IN", "kk_KZ", "bg", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "my_MM", "ur_PK", "mn_MN", "fi", "lv", "et_EE", "sw", "pt_PT", "tl", "th", "uz_UZ", "pt", "ar", "ru", "eu_ES", "bn_BD", "fa", "sk", "kn_IN", "hi", "cs", "sv", "km_KH", "el", "nl", "hu", "af", "in", "vi", "fr_CA", "sr", "da", "si_LK", "ml_IN", "gl_ES", "es", "is_IS", "hy_AM", "tr", "ne_NP", "ro", "hr", "ms_MY", "am", "ka_GE", "lt", "pl", "zh_CN", "ta_IN", "fr", "ja", "lo_LA", "ky_KG", "iw", "de", "en_IN", "es_US", "mk_MK", "nb", "te_IN", "ca", "en_GB" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"1\" android:versionName=\"1.0.0\" package=\"rebus.youtube.helper.sample\" platformBuildVersionCode=\"21\" platformBuildVersionName=\"5.0.1-1624448\">\n\t<uses-sdk android:minSdkVersion=\"8\" android:targetSdkVersion=\"21\" />\n\t<uses-permission android:name=\"android.permission.INTERNET\" />\n\t<application android:theme=\"resourceId:0x7f0b0000\" android:label=\"YouTubeHelper Sample\" android:icon=\"res/drawable-mdpi-v4/ic_launcher.png\" android:debuggable=\"true\" android:allowBackup=\"true\">\n\t\t<activity android:name=\"rebus.youtube.helper.sample.MainActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t\t<activity android:name=\"rebus.youtube.helper.sample.UserActivity\" />\n\t</application>\n</manifest>\n",
+  "fileSize" : 1057876,
+  "crc32" : 4143312557,
+  "sha256" : "c6379419d3fb455a55a0919f9cae5c7905cc017746793531389ced73c6a4991e",
+  "buildTime" : 1522978066000
+}

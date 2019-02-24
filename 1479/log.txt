@@ -1,0 +1,106 @@
+2018-04-06 01:25:10,529 INFO  DownloadService - Downloading "https://github.com/rebus007/YouTubeHelper/archive/master.zip", attempt 3
+2018-04-06 01:26:11,005 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-06 01:26:11,655 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-06 01:26:11,655 INFO  DownloadService - Downloading "https://github.com/rebus007/YouTubeHelper/archive/master.zip", attempt 3
+2018-04-06 01:27:13,002 DEBUG FullProcessService - Repository https://github.com/rebus007/YouTubeHelper available: true
+2018-04-06 01:27:13,002 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-06 01:27:13,002 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/rebus007/YouTubeHelper, /tmp/rdisk/1479/src]
+2018-04-06 01:27:14,534 INFO  SysUtils - 
+2018-04-06 01:27:14,538 INFO  GitService - Deleted "/tmp/rdisk/1479/src/.git": true
+2018-04-06 01:27:14,541 INFO  FullProcessService - Size of directory with sources: 238 KB
+2018-04-06 01:27:14,541 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1479/src]
+2018-04-06 01:27:14,550 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1479/src/.git/
+
+2018-04-06 01:27:14,553 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1479/src/gradlew
+2018-04-06 01:27:14,556 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1479/src/app/build.gradle /tmp/rdisk/1479/src/youtubehelper/build.gradle /tmp/rdisk/1479/src/build.gradle
+2018-04-06 01:27:14,558 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1479/src/youtubehelper/build.gradle /tmp/rdisk/1479/src/settings.gradle /tmp/rdisk/1479/src/build.gradle /tmp/rdisk/1479/src/app/build.gradle
+2018-04-06 01:27:14,558 INFO  ProjectBuildService - Remote scripts: none
+2018-04-06 01:27:14,558 INFO  ProjectFixService - Fixing project...
+2018-04-06 01:27:14,566 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1479/src/app/local.properties
+2018-04-06 01:27:14,567 INFO  ProjectFixService - Build info for "/tmp/rdisk/1479/src/app/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=8,targetSdkVersion=21]
+2018-04-06 01:27:14,567 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1479/src/youtubehelper/local.properties
+2018-04-06 01:27:14,567 INFO  ProjectFixService - Build info for "/tmp/rdisk/1479/src/youtubehelper/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=8,targetSdkVersion=21]
+2018-04-06 01:27:14,567 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1479/src/local.properties
+2018-04-06 01:27:14,568 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-06 01:27:14,568 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-06 01:27:14,568 INFO  ProjectFixService - Build info for "/tmp/rdisk/1479/src/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=8,targetSdkVersion=21]
+2018-04-06 01:27:14,569 INFO  ProjectFixService - Project was maybe fixed
+2018-04-06 01:27:14,569 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-06 01:27:14,569 INFO  SysUtils - Execute command: [/tmp/rdisk/1479/src/gradlew, -b, /tmp/rdisk/1479/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-06 01:27:26,532 INFO  ProjectTaskService - Detected possible tasks: 54
+2018-04-06 01:27:26,532 INFO  ProjectTaskService - Excluded tasks (11): lintDebug deviceCheck lint uninstallRelease connectedCheck uninstallAll check connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-06 01:27:26,532 INFO  SysUtils - Execute command: [/tmp/rdisk/1479/src/gradlew, -b, /tmp/rdisk/1479/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, connectedCheck, -x, uninstallAll, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-06 01:27:52,210 INFO  SysUtils - Configuration on demand is an incubating feature.
+:app:preBuild
+:app:compileDebugNdk
+:app:preDebugBuild
+:app:checkDebugManifest
+:app:preReleaseBuild
+:app:prepareComAndroidSupportAppcompatV72103Library
+:app:prepareComAndroidSupportSupportV42103Library
+:app:prepareRebusYouTubeHelper110Library
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources/tmp/rdisk/1479/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-xhdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/1479/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_spinner_mtrl_am_alpha.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/1479/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-mdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/1479/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_ab_share_pack_holo_light.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/1479/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/1479/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-xhdpi/abc_ab_share_pack_holo_light.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:compileDebugJavaNote: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:app:preDexDebug
+:app:dexDebug
+:app:processDebugJavaRes UP-TO-DATE
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:generateReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources/tmp/rdisk/1479/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-xhdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/1479/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_spinner_mtrl_am_alpha.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/1479/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-mdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/1479/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_ab_share_pack_holo_light.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/1479/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/1479/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-xhdpi/abc_ab_share_pack_holo_light.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:compileReleaseJavaNote: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:app:lintVitalRelease
+:app:compileReleaseNdk
+:app:preDexRelease
+:app:dexRelease
+:app:processReleaseJavaRes UP-TO-DATE
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 25.216 secs
+
+2018-04-06 01:27:52,243 INFO  FullProcessService - Found APK file: /tmp/rdisk/1479/src/app/build/outputs/apk/app-debug.apk

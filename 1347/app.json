@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "com.github.pedrovgs.effectiveandroidui",
+    "label" : "EffectiveAndroidUI",
+    "icon" : "res/drawable-mdpi-v4/app_icon.png",
+    "versionName" : "1.0",
+    "versionCode" : 1,
+    "installLocation" : null,
+    "minSdkVersion" : "8",
+    "targetSdkVersion" : "23",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ "android.permission.INTERNET", "android.permission.ACCESS_NETWORK_STATE" ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/drawable-mdpi-v4/app_icon.png",
+    "density" : 0,
+    "data" : "iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAACkVBMVEUAAAD////j4+PZ2dn+/v3p8NLp6elXV1d0dHTR4KDr7uFOTk4LCwsAAAA6Ojp7e3t1dXW5vK/R0s0oMBEFBgIXGwgKDAQXHAklLA7Ky8b6+/SluGeKpjOYtjicvDp1jSxvhSmVszeevTqMqDSjtWn7/Pf4+/Kyy2GfvzvJ25KzzWW1zmn7/Pa+03qhwUDT4aTD14bd4dCTsDekw0agwD2QrDfm6d2stoxkeCR2jyt4kSxjdyS2vprp6+Db4M7r7ePDwb9va2aUkY37+/qsqad3c294dHCJhoKdf3zLlGrMj2magX6IhYGzsa719fQ6NS8zLSewrauCfno3MStPSUOdGhSaGxZOSEI2MCqNiYavrav19fXp6OhEPzmjoZ41MCphLyxdMS01Lynq6uk0LiidmpeMiYVZVVFWUk2Wk5Dp6ehCPTeioJ2NioZFQDpgXVldWleXlJHq6emem5iDf3w3MiyOioc/OTOhnps2MCvy5uaRHRrJkZCMiYZGQTyWlJD9+vmmpDekozPZ1qhHQjyxy2Gfvzzn786Df3s3MSyNiof0+OrQ4J/i68OCfntGQjy7ubc5My40Lyg4Mi08NjDGxML5+fn29vZMWFojMTEcKzNcZmZbZWRNWFr6+vn09PZyd4ctPkgYKzheamtdaWr+/v/U1dp0doRZZmBOWVpNUWHr6+zq6+z+///v7/PZ2d99fopKTFojJjokJjseIDMlJzzBwsfBwcckJzxKTFvu7/LX2OA5OkwhIzcrLkUgIjUmKT/Ly9DLy88gIjbY2d2xsruvsLmam6WanKecnaejpK6srba3uMH5+fr+/v76+vr39/fz8/Pt7e3W1tbQ0NDPz8/8/Pzx8fHu7u7r6+vq6upKRC9bAAAA23RSTlMA/////////////////////////////////////////////////////////////////////////v7+/v7+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////7+/v7+/v///////////////////////////////////////////////////////////////////////v7+///////Tbmg/AAACMUlEQVRIx2NgGJSAkWgwkBqYmEnQwMLKyMbOAWKxshBnAycXNw8vH7+AICeRThISFhHl5RUTl5AkToOUtIysnLyCopKyiioxGtTUNTS1NIBAS1NDW4cIDboaemr6IA36anoaBoQ1GBppaBibgDSYGGtomJoR1GBuYWkFB5bWNgQ12NqhAHu8GhwcnZxdXF1d3dw9PL28fYAsV19nJ0cHXBr8/AMCAoMCgCA4JDQsPALEiowKCPCPxqEhJjY2Ng6sISA+ITEJzIiMAwrG4NCQnJKSkpoWCwbpGRA6MxUomIxDQ1Z2dnZObh4Y5BdA6MIcoGAWDg1FwcHBxSVJYFBaCqHLioGCRbhsKC8vr4D4IaCyEkJHVgAFcdlQVV1dXVMLcXtdHYSurwEKVuHQ0NDY1NQM9UNLC9QPzU1NjQ24Iq5Vo629IwUMOjshdFe7hkYrzpju7ull7EPzA2NvTzfetBSJ5geCiQ/qh/5+qB8IapgwMQno9EmTJ08CUklTphLOcdOmz5g5a/b06XNmzZw7fR4xhcD8BQsXLWZkXLJo4YL5xBQCS5ctX7Fy1eo1q1auWL5sKSENa9et37Bx0+YtW7dt37Fl86adG9avW4tXw67du/fs3bd/y4GDhw5sObxv757du3fh1XDk6LHjJ06eOn3m7Nkzp0+dPHH82NEjBD197vyF6ItAEH3h/DkiPH3p8pWrcHDl8iXCoXRt+vUbN28Bwc0b16dfGzxV1pDTMMgAALdD++fXrZvCAAAAAElFTkSuQmCC"
+  },
+  "dexClasses" : 1757,
+  "locales" : [ "", "az_AZ", "sl", "mr_IN", "kk_KZ", "bg", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "my_MM", "ur_PK", "mn_MN", "fi", "lv", "et_EE", "sw", "pt_PT", "tl", "th", "sq_AL", "uz_UZ", "pt", "ar", "ru", "eu_ES", "bn_BD", "fa", "gu_IN", "sk", "kn_IN", "hi", "cs", "sv", "km_KH", "el", "nl", "hu", "pa_IN", "af", "en_AU", "in", "vi", "fr_CA", "sr", "da", "si_LK", "ml_IN", "gl_ES", "es", "is_IS", "hy_AM", "tr", "ne_NP", "ro", "hr", "ms_MY", "am", "ka_GE", "lt", "pl", "zh_CN", "ta_IN", "fr", "ja", "lo_LA", "ky_KG", "iw", "de", "en_IN", "es_US", "mk_MK", "nb", "te_IN", "ca", "en_GB" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"1\" android:versionName=\"1.0\" package=\"com.github.pedrovgs.effectiveandroidui\" platformBuildVersionCode=\"23\" platformBuildVersionName=\"6.0-2704002\">\n\t<uses-sdk android:minSdkVersion=\"8\" android:targetSdkVersion=\"23\" />\n\t<uses-permission android:name=\"android.permission.INTERNET\" />\n\t<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />\n\t<application android:theme=\"resourceId:0x7f0b0004\" android:label=\"EffectiveAndroidUI\" android:icon=\"res/drawable-mdpi-v4/app_icon.png\" android:name=\"com.github.pedrovgs.effectiveandroidui.TvShowsApplication\" android:debuggable=\"true\" android:allowBackup=\"false\">\n\t\t<activity android:label=\"EffectiveAndroidUI\" android:name=\"com.github.pedrovgs.effectiveandroidui.ui.activity.MainActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t\t<activity android:label=\"EffectiveAndroidUI\" android:name=\"com.github.pedrovgs.effectiveandroidui.ui.activity.TvShowActivity\" android:configChanges=\"0x480\" />\n\t</application>\n</manifest>\n",
+  "fileSize" : 1338084,
+  "crc32" : 3236586977,
+  "sha256" : "63623d0ac15a026c770ae954ab50fafd32507543507fa5c21f588f29adb6c376",
+  "buildTime" : 1523043922000
+}

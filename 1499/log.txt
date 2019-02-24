@@ -1,0 +1,1789 @@
+2018-05-11 14:03:39,277 INFO  DownloadService - Downloading "https://github.com/Stuart-campbell/RushOrm/archive/master.zip", attempt 3
+2018-05-11 14:03:39,712 INFO  DownloadService - Downloaded https://github.com/Stuart-campbell/RushOrm/archive/master.zip, attempt 3
+2018-05-11 14:03:39,713 INFO  DownloadService - Size of file "/tmp/rdisk/1499/master.zip": 193 KB
+2018-05-11 14:03:39,713 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-05-11 14:03:39,713 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/1499/master.zip: true
+2018-05-11 14:03:39,713 DEBUG ZipUtil - Extracting '/tmp/rdisk/1499/master.zip' into '/tmp/rdisk/1499/src'.
+2018-05-11 14:03:39,731 INFO  FullProcessService - Size of directory with sources: 311 KB
+2018-05-11 14:03:39,731 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1499/src]
+2018-05-11 14:03:39,737 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1499/src/.git/
+
+2018-05-11 14:03:39,741 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1499/src/RushOrm-master/RushORM/gradlew
+2018-05-11 14:03:39,745 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1499/src/RushOrm-master/RushORM/app/build.gradle /tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/build.gradle /tmp/rdisk/1499/src/RushOrm-master/RushORM/build.gradle
+2018-05-11 14:03:39,749 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1499/src/RushOrm-master/RushORM/settings.gradle /tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/build.gradle /tmp/rdisk/1499/src/RushOrm-master/RushORM/build.gradle /tmp/rdisk/1499/src/RushOrm-master/RushORM/app/build.gradle
+2018-05-11 14:03:39,749 INFO  ProjectBuildService - Remote scripts: none
+2018-05-11 14:03:39,749 INFO  ProjectFixService - Fixing project...
+2018-05-11 14:03:39,757 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1499/src/RushOrm-master/RushORM/app/local.properties
+2018-05-11 14:03:39,758 INFO  ProjectFixService - Build info for "/tmp/rdisk/1499/src/RushOrm-master/RushORM/app/build.gradle": [buildToolsVersion=25.0.0,compileSdkVersion=25,minSdkVersion=14,targetSdkVersion=25]
+2018-05-11 14:03:39,758 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/local.properties
+2018-05-11 14:03:39,758 INFO  ProjectFixService - Build info for "/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/build.gradle": [buildToolsVersion=25.0.0,compileSdkVersion=25,minSdkVersion=4,targetSdkVersion=25]
+2018-05-11 14:03:39,758 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/build.gradle": [buildToolsVersion=25.0.0,compileSdkVersion=25,minSdkVersion=7,targetSdkVersion=25]
+2018-05-11 14:03:39,759 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1499/src/RushOrm-master/RushORM/local.properties
+2018-05-11 14:03:39,759 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-3.3-all.zip
+2018-05-11 14:03:39,759 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-3.3-bin.zip)
+2018-05-11 14:03:39,760 INFO  ProjectFixService - Build info for "/tmp/rdisk/1499/src/RushOrm-master/RushORM/build.gradle": [buildToolsVersion=25.0.0,compileSdkVersion=25,minSdkVersion=7,targetSdkVersion=25]
+2018-05-11 14:03:39,760 INFO  ProjectFixService - Project was maybe fixed
+2018-05-11 14:03:39,760 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-11 14:03:39,760 INFO  SysUtils - Execute command: [/tmp/rdisk/1499/src/RushOrm-master/RushORM/gradlew, -b, /tmp/rdisk/1499/src/RushOrm-master/RushORM/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-11 14:03:47,643 INFO  ProjectTaskService - Detected possible tasks: 66
+2018-05-11 14:03:47,643 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-05-11 14:03:47,644 INFO  SysUtils - Execute command: [/tmp/rdisk/1499/src/RushOrm-master/RushORM/gradlew, -b, /tmp/rdisk/1499/src/RushOrm-master/RushORM/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-05-11 14:03:56,317 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-05-11 14:03:56,317 INFO  SysUtils - Configuration on demand is an incubating feature.
+Incremental java compilation is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:checkDebugManifest
+:app:extractProguardFiles
+:app:preReleaseBuild
+:app:prepareComAndroidSupportSupportCompat2531Library
+:app:prepareComAndroidSupportSupportCoreUi2531Library
+:app:prepareComAndroidSupportSupportCoreUtils2531Library
+:app:prepareComAndroidSupportSupportFragment2531Library
+:app:prepareComAndroidSupportSupportMediaCompat2531Library
+:app:prepareComAndroidSupportSupportV42531Library
+:rushandroid:preBuild UP-TO-DATE
+:rushandroid:preReleaseBuild UP-TO-DATE
+:rushandroid:checkReleaseManifest
+:rushandroid:prepareReleaseDependencies
+:rushandroid:compileReleaseAidl
+:rushandroid:compileReleaseNdk UP-TO-DATE
+:rushandroid:compileLint
+:rushandroid:copyReleaseLint UP-TO-DATE
+:rushandroid:mergeReleaseShaders
+:rushandroid:compileReleaseShaders
+:rushandroid:generateReleaseAssets
+:rushandroid:mergeReleaseAssets
+:rushandroid:mergeReleaseProguardFiles
+:rushandroid:packageReleaseRenderscript UP-TO-DATE
+:rushandroid:compileReleaseRenderscript
+:rushandroid:generateReleaseResValues
+:rushandroid:generateReleaseResources
+:rushandroid:packageReleaseResources
+:rushandroid:processReleaseManifest
+:rushandroid:generateReleaseBuildConfig
+:rushandroid:processReleaseResources
+:rushandroid:generateReleaseSources
+:rushandroid:incrementalReleaseJavaCompilationSafeguard
+:rushandroid:javaPreCompileRelease
+:rushandroid:compileReleaseJavaWithJavac
+:rushandroid:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/RushJSONFile.java:8: error: package co.uk.rushorm.core does not exist
+import co.uk.rushorm.core.RushTextFile;
+                         ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/RushJSONFile.java:13: error: cannot find symbol
+public class RushJSONFile extends RushTextFile {
+                                  ^
+  symbol: class RushTextFile
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/RushBitmapFile.java:9: error: package co.uk.rushorm.core does not exist
+import co.uk.rushorm.core.RushFile;
+                         ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/RushBitmapFile.java:14: error: cannot find symbol
+public class RushBitmapFile extends RushFile {
+                                    ^
+  symbol: class RushFile
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/RushAndroid.java:7: error: package co.uk.rushorm.core does not exist
+import co.uk.rushorm.core.Rush;
+                         ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/RushAndroid.java:8: error: package co.uk.rushorm.core does not exist
+import co.uk.rushorm.core.RushColumn;
+                         ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/RushAndroid.java:9: error: package co.uk.rushorm.core does not exist
+import co.uk.rushorm.core.RushCore;
+                         ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/RushAndroid.java:10: error: package co.uk.rushorm.core does not exist
+import co.uk.rushorm.core.RushInitializeConfig;
+                         ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/RushAndroid.java:17: error: cannot find symbol
+    public static void initialize(Context context, List<Class<? extends Rush>> clazzes) {
+                                                                        ^
+  symbol:   class Rush
+  location: class RushAndroid
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/RushAndroid.java:21: error: cannot find symbol
+    public static void initialize(Context context, List<Class<? extends Rush>> clazzes, List<RushColumn> columns) {
+                                                                        ^
+  symbol:   class Rush
+  location: class RushAndroid
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/RushAndroid.java:21: error: cannot find symbol
+    public static void initialize(Context context, List<Class<? extends Rush>> clazzes, List<RushColumn> columns) {
+                                                                                             ^
+  symbol:   class RushColumn
+  location: class RushAndroid
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/RushAndroid.java:29: error: cannot find symbol
+    public static void initialize(RushInitializeConfig rushInitializeConfig){
+                                  ^
+  symbol:   class RushInitializeConfig
+  location: class RushAndroid
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushStringSanitizer.java:5: error: package co.uk.rushorm.core does not exist
+import co.uk.rushorm.core.RushStringSanitizer;
+                         ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushStringSanitizer.java:10: error: cannot find symbol
+public class AndroidRushStringSanitizer implements RushStringSanitizer {
+                                                   ^
+  symbol: class RushStringSanitizer
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushStatementRunner.java:12: error: package co.uk.rushorm.core does not exist
+import co.uk.rushorm.core.RushConfig;
+                         ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushStatementRunner.java:13: error: package co.uk.rushorm.core does not exist
+import co.uk.rushorm.core.RushQue;
+                         ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushStatementRunner.java:14: error: package co.uk.rushorm.core does not exist
+import co.uk.rushorm.core.RushStatementRunner;
+                         ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushStatementRunner.java:15: error: package co.uk.rushorm.core.exceptions does not exist
+import co.uk.rushorm.core.exceptions.RushSqlException;
+                                    ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushStatementRunner.java:16: error: package co.uk.rushorm.core.implementation does not exist
+import co.uk.rushorm.core.implementation.ReflectionUtils;
+                                        ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushStatementRunner.java:21: error: cannot find symbol
+public class AndroidRushStatementRunner extends SQLiteOpenHelper implements RushStatementRunner {
+                                                                            ^
+  symbol: class RushStatementRunner
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushStatementRunner.java:24: error: cannot find symbol
+    private RushConfig rushConfig;
+            ^
+  symbol:   class RushConfig
+  location: class AndroidRushStatementRunner
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushStatementRunner.java:27: error: cannot find symbol
+    public AndroidRushStatementRunner(Context context, String name, RushConfig rushConfig) {
+                                                                    ^
+  symbol:   class RushConfig
+  location: class AndroidRushStatementRunner
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushStatementRunner.java:35: error: cannot find symbol
+    public void runRaw(String statement, RushQue que) {
+                                         ^
+  symbol:   class RushQue
+  location: class AndroidRushStatementRunner
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushStatementRunner.java:48: error: cannot find symbol
+    public ValuesCallback runGet(String sql, RushQue que) {
+                                             ^
+  symbol:   class RushQue
+  location: class AndroidRushStatementRunner
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushStatementRunner.java:48: error: cannot find symbol
+    public ValuesCallback runGet(String sql, RushQue que) {
+           ^
+  symbol:   class ValuesCallback
+  location: class AndroidRushStatementRunner
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushStatementRunner.java:83: error: cannot find symbol
+    public void startTransition(RushQue que) {
+                                ^
+  symbol:   class RushQue
+  location: class AndroidRushStatementRunner
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushStatementRunner.java:88: error: cannot find symbol
+    public void endTransition(RushQue que) {
+                              ^
+  symbol:   class RushQue
+  location: class AndroidRushStatementRunner
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushStatementRunner.java:110: error: cannot find symbol
+    public boolean requiresUpgrade(long version, RushQue que) {
+                                                 ^
+  symbol:   class RushQue
+  location: class AndroidRushStatementRunner
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushQueProvider.java:6: error: package co.uk.rushorm.core does not exist
+import co.uk.rushorm.core.RushQue;
+                         ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushQueProvider.java:7: error: package co.uk.rushorm.core does not exist
+import co.uk.rushorm.core.RushQueProvider;
+                         ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushQueProvider.java:12: error: cannot find symbol
+public class AndroidRushQueProvider implements RushQueProvider {
+                                               ^
+  symbol: class RushQueProvider
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushQueProvider.java:14: error: cannot find symbol
+    private List<RushQue> ques = new ArrayList<>();
+                 ^
+  symbol:   class RushQue
+  location: class AndroidRushQueProvider
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushQueProvider.java:22: error: cannot find symbol
+    public RushQue blockForNextQue() {
+           ^
+  symbol:   class RushQue
+  location: class AndroidRushQueProvider
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushQueProvider.java:36: error: cannot find symbol
+    public void waitForNextQue(final RushQueCallback rushQueCallback) {
+                                     ^
+  symbol:   class RushQueCallback
+  location: class AndroidRushQueProvider
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushQueProvider.java:46: error: cannot find symbol
+    public void queComplete(RushQue que) {
+                            ^
+  symbol:   class RushQue
+  location: class AndroidRushQueProvider
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushQue.java:3: error: package co.uk.rushorm.core does not exist
+import co.uk.rushorm.core.RushQue;
+                         ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushQue.java:8: error: cannot find symbol
+public class AndroidRushQue implements RushQue {
+                                       ^
+  symbol: class RushQue
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushConfig.java:12: error: package co.uk.rushorm.core does not exist
+import co.uk.rushorm.core.RushConfig;
+                         ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushConfig.java:13: error: package co.uk.rushorm.core.exceptions does not exist
+import co.uk.rushorm.core.exceptions.RushClassNotFoundException;
+                                    ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushConfig.java:18: error: cannot find symbol
+public class AndroidRushConfig implements RushConfig {
+                                          ^
+  symbol: class RushConfig
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushClassFinder.java:3: error: package co.uk.rushorm.core does not exist
+import co.uk.rushorm.core.Rush;
+                         ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushClassFinder.java:4: error: package co.uk.rushorm.core does not exist
+import co.uk.rushorm.core.RushClassFinder;
+                         ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushClassFinder.java:5: error: package co.uk.rushorm.core does not exist
+import co.uk.rushorm.core.RushConfig;
+                         ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushClassFinder.java:12: error: cannot find symbol
+public class AndroidRushClassFinder implements RushClassFinder {
+                                               ^
+  symbol: class RushClassFinder
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushClassFinder.java:14: error: cannot find symbol
+    private final List<Class<? extends Rush>> classes;
+                                       ^
+  symbol:   class Rush
+  location: class AndroidRushClassFinder
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushClassFinder.java:16: error: cannot find symbol
+    public AndroidRushClassFinder(List<Class<? extends Rush>> classes) {
+                                                       ^
+  symbol:   class Rush
+  location: class AndroidRushClassFinder
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushClassFinder.java:21: error: cannot find symbol
+    public List<Class<? extends Rush>> findClasses(RushConfig rushConfig) {
+                                                   ^
+  symbol:   class RushConfig
+  location: class AndroidRushClassFinder
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushClassFinder.java:21: error: cannot find symbol
+    public List<Class<? extends Rush>> findClasses(RushConfig rushConfig) {
+                                ^
+  symbol:   class Rush
+  location: class AndroidRushClassFinder
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidLogger.java:5: error: package co.uk.rushorm.core does not exist
+import co.uk.rushorm.core.Logger;
+                         ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidLogger.java:6: error: package co.uk.rushorm.core does not exist
+import co.uk.rushorm.core.RushConfig;
+                         ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidLogger.java:11: error: cannot find symbol
+public class AndroidLogger implements Logger {
+                                      ^
+  symbol: class Logger
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidLogger.java:15: error: cannot find symbol
+    private final RushConfig rushConfig;
+                  ^
+  symbol:   class RushConfig
+  location: class AndroidLogger
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidLogger.java:17: error: cannot find symbol
+    public AndroidLogger(RushConfig rushConfig) {
+                         ^
+  symbol:   class RushConfig
+  location: class AndroidLogger
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONSerializer.java:13: error: package co.uk.rushorm.core does not exist
+import co.uk.rushorm.core.AnnotationCache;
+                         ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONSerializer.java:14: error: package co.uk.rushorm.core does not exist
+import co.uk.rushorm.core.Rush;
+                         ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONSerializer.java:15: error: package co.uk.rushorm.core does not exist
+import co.uk.rushorm.core.RushColumns;
+                         ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONSerializer.java:16: error: package co.uk.rushorm.core does not exist
+import co.uk.rushorm.core.RushConfig;
+                         ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONSerializer.java:17: error: package co.uk.rushorm.core does not exist
+import co.uk.rushorm.core.RushMetaData;
+                         ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONSerializer.java:18: error: package co.uk.rushorm.core does not exist
+import co.uk.rushorm.core.RushObjectSerializer;
+                         ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONSerializer.java:19: error: package co.uk.rushorm.core does not exist
+import co.uk.rushorm.core.RushStringSanitizer;
+                         ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONSerializer.java:20: error: package co.uk.rushorm.core.implementation does not exist
+import co.uk.rushorm.core.implementation.ReflectionUtils;
+                                        ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONSerializer.java:25: error: cannot find symbol
+public class AndroidJSONSerializer implements RushObjectSerializer {
+                                              ^
+  symbol: class RushObjectSerializer
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONSerializer.java:27: error: cannot find symbol
+    private final RushConfig rushConfig;
+                  ^
+  symbol:   class RushConfig
+  location: class AndroidJSONSerializer
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONSerializer.java:29: error: cannot find symbol
+    private static final RushStringSanitizer rushStringSanitizer = new RushStringSanitizer() {
+                         ^
+  symbol:   class RushStringSanitizer
+  location: class AndroidJSONSerializer
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONSerializer.java:36: error: cannot find symbol
+    public AndroidJSONSerializer(RushConfig rushConfig) {
+                                 ^
+  symbol:   class RushConfig
+  location: class AndroidJSONSerializer
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONSerializer.java:41: error: cannot find symbol
+    public String serialize(List<? extends Rush> objects, String idName, String versionName, RushColumns rushColumns, Map<Class<? extends Rush>, AnnotationCache> annotationCache, Callback callback) {
+                                           ^
+  symbol:   class Rush
+  location: class AndroidJSONSerializer
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONSerializer.java:41: error: cannot find symbol
+    public String serialize(List<? extends Rush> objects, String idName, String versionName, RushColumns rushColumns, Map<Class<? extends Rush>, AnnotationCache> annotationCache, Callback callback) {
+                                                                                             ^
+  symbol:   class RushColumns
+  location: class AndroidJSONSerializer
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONSerializer.java:41: error: cannot find symbol
+    public String serialize(List<? extends Rush> objects, String idName, String versionName, RushColumns rushColumns, Map<Class<? extends Rush>, AnnotationCache> annotationCache, Callback callback) {
+                                                                                                                                          ^
+  symbol:   class Rush
+  location: class AndroidJSONSerializer
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONSerializer.java:41: error: cannot find symbol
+    public String serialize(List<? extends Rush> objects, String idName, String versionName, RushColumns rushColumns, Map<Class<? extends Rush>, AnnotationCache> annotationCache, Callback callback) {
+                                                                                                                                                 ^
+  symbol:   class AnnotationCache
+  location: class AndroidJSONSerializer
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONSerializer.java:41: error: cannot find symbol
+    public String serialize(List<? extends Rush> objects, String idName, String versionName, RushColumns rushColumns, Map<Class<? extends Rush>, AnnotationCache> annotationCache, Callback callback) {
+                                                                                                                                                                                   ^
+  symbol:   class Callback
+  location: class AndroidJSONSerializer
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONSerializer.java:70: error: cannot find symbol
+    private JSONArray serializeToJSONArray(List<? extends Rush> objects, String idName, String versionName, RushColumns rushColumns, Map<Class<? extends Rush>, AnnotationCache> annotationCache, RushStringSanitizer rushStringSanitizer, Callback callback) throws JSONException, IllegalAccessException {
+                                                          ^
+  symbol:   class Rush
+  location: class AndroidJSONSerializer
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONSerializer.java:70: error: cannot find symbol
+    private JSONArray serializeToJSONArray(List<? extends Rush> objects, String idName, String versionName, RushColumns rushColumns, Map<Class<? extends Rush>, AnnotationCache> annotationCache, RushStringSanitizer rushStringSanitizer, Callback callback) throws JSONException, IllegalAccessException {
+                                                                                                            ^
+  symbol:   class RushColumns
+  location: class AndroidJSONSerializer
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONSerializer.java:70: error: cannot find symbol
+    private JSONArray serializeToJSONArray(List<? extends Rush> objects, String idName, String versionName, RushColumns rushColumns, Map<Class<? extends Rush>, AnnotationCache> annotationCache, RushStringSanitizer rushStringSanitizer, Callback callback) throws JSONException, IllegalAccessException {
+                                                                                                                                                         ^
+  symbol:   class Rush
+  location: class AndroidJSONSerializer
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONSerializer.java:70: error: cannot find symbol
+    private JSONArray serializeToJSONArray(List<? extends Rush> objects, String idName, String versionName, RushColumns rushColumns, Map<Class<? extends Rush>, AnnotationCache> annotationCache, RushStringSanitizer rushStringSanitizer, Callback callback) throws JSONException, IllegalAccessException {
+                                                                                                                                                                ^
+  symbol:   class AnnotationCache
+  location: class AndroidJSONSerializer
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONSerializer.java:70: error: cannot find symbol
+    private JSONArray serializeToJSONArray(List<? extends Rush> objects, String idName, String versionName, RushColumns rushColumns, Map<Class<? extends Rush>, AnnotationCache> annotationCache, RushStringSanitizer rushStringSanitizer, Callback callback) throws JSONException, IllegalAccessException {
+                                                                                                                                                                                                  ^
+  symbol:   class RushStringSanitizer
+  location: class AndroidJSONSerializer
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONSerializer.java:70: error: cannot find symbol
+    private JSONArray serializeToJSONArray(List<? extends Rush> objects, String idName, String versionName, RushColumns rushColumns, Map<Class<? extends Rush>, AnnotationCache> annotationCache, RushStringSanitizer rushStringSanitizer, Callback callback) throws JSONException, IllegalAccessException {
+                                                                                                                                                                                                                                           ^
+  symbol:   class Callback
+  location: class AndroidJSONSerializer
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONSerializer.java:81: error: cannot find symbol
+    private JSONObject serializeToJSONObject(Rush rush, String idName, String versionName, RushColumns rushColumns, Map<Class<? extends Rush>, AnnotationCache> annotationCache, RushStringSanitizer rushStringSanitizer, Callback callback) throws IllegalAccessException, JSONException {
+                                             ^
+  symbol:   class Rush
+  location: class AndroidJSONSerializer
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONSerializer.java:81: error: cannot find symbol
+    private JSONObject serializeToJSONObject(Rush rush, String idName, String versionName, RushColumns rushColumns, Map<Class<? extends Rush>, AnnotationCache> annotationCache, RushStringSanitizer rushStringSanitizer, Callback callback) throws IllegalAccessException, JSONException {
+                                                                                           ^
+  symbol:   class RushColumns
+  location: class AndroidJSONSerializer
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONSerializer.java:81: error: cannot find symbol
+    private JSONObject serializeToJSONObject(Rush rush, String idName, String versionName, RushColumns rushColumns, Map<Class<? extends Rush>, AnnotationCache> annotationCache, RushStringSanitizer rushStringSanitizer, Callback callback) throws IllegalAccessException, JSONException {
+                                                                                                                                        ^
+  symbol:   class Rush
+  location: class AndroidJSONSerializer
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONSerializer.java:81: error: cannot find symbol
+    private JSONObject serializeToJSONObject(Rush rush, String idName, String versionName, RushColumns rushColumns, Map<Class<? extends Rush>, AnnotationCache> annotationCache, RushStringSanitizer rushStringSanitizer, Callback callback) throws IllegalAccessException, JSONException {
+                                                                                                                                               ^
+  symbol:   class AnnotationCache
+  location: class AndroidJSONSerializer
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONSerializer.java:81: error: cannot find symbol
+    private JSONObject serializeToJSONObject(Rush rush, String idName, String versionName, RushColumns rushColumns, Map<Class<? extends Rush>, AnnotationCache> annotationCache, RushStringSanitizer rushStringSanitizer, Callback callback) throws IllegalAccessException, JSONException {
+                                                                                                                                                                                 ^
+  symbol:   class RushStringSanitizer
+  location: class AndroidJSONSerializer
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONSerializer.java:81: error: cannot find symbol
+    private JSONObject serializeToJSONObject(Rush rush, String idName, String versionName, RushColumns rushColumns, Map<Class<? extends Rush>, AnnotationCache> annotationCache, RushStringSanitizer rushStringSanitizer, Callback callback) throws IllegalAccessException, JSONException {
+                                                                                                                                                                                                                          ^
+  symbol:   class Callback
+  location: class AndroidJSONSerializer
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONDeserializer.java:15: error: package co.uk.rushorm.core does not exist
+import co.uk.rushorm.core.AnnotationCache;
+                         ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONDeserializer.java:16: error: package co.uk.rushorm.core does not exist
+import co.uk.rushorm.core.Rush;
+                         ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONDeserializer.java:17: error: package co.uk.rushorm.core does not exist
+import co.uk.rushorm.core.RushColumns;
+                         ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONDeserializer.java:18: error: package co.uk.rushorm.core does not exist
+import co.uk.rushorm.core.RushConfig;
+                         ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONDeserializer.java:19: error: package co.uk.rushorm.core does not exist
+import co.uk.rushorm.core.RushMetaData;
+                         ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONDeserializer.java:20: error: package co.uk.rushorm.core does not exist
+import co.uk.rushorm.core.RushObjectDeserializer;
+                         ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONDeserializer.java:21: error: package co.uk.rushorm.core.implementation does not exist
+import co.uk.rushorm.core.implementation.ReflectionUtils;
+                                        ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONDeserializer.java:26: error: cannot find symbol
+public class AndroidJSONDeserializer implements RushObjectDeserializer {
+                                                ^
+  symbol: class RushObjectDeserializer
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONDeserializer.java:28: error: cannot find symbol
+    private final RushConfig rushConfig;
+                  ^
+  symbol:   class RushConfig
+  location: class AndroidJSONDeserializer
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONDeserializer.java:30: error: cannot find symbol
+    public AndroidJSONDeserializer(RushConfig rushConfig) {
+                                   ^
+  symbol:   class RushConfig
+  location: class AndroidJSONDeserializer
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONDeserializer.java:35: error: cannot find symbol
+    public <T extends Rush> List<T> deserialize(String string, String idName, String versionName, RushColumns rushColumns, Map<Class<? extends Rush>, AnnotationCache> annotationCache, Class<T> clazz, Callback callback) {
+                      ^
+  symbol:   class Rush
+  location: class AndroidJSONDeserializer
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONDeserializer.java:35: error: cannot find symbol
+    public <T extends Rush> List<T> deserialize(String string, String idName, String versionName, RushColumns rushColumns, Map<Class<? extends Rush>, AnnotationCache> annotationCache, Class<T> clazz, Callback callback) {
+                                                                                                  ^
+  symbol:   class RushColumns
+  location: class AndroidJSONDeserializer
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONDeserializer.java:35: error: cannot find symbol
+    public <T extends Rush> List<T> deserialize(String string, String idName, String versionName, RushColumns rushColumns, Map<Class<? extends Rush>, AnnotationCache> annotationCache, Class<T> clazz, Callback callback) {
+                                                                                                                                               ^
+  symbol:   class Rush
+  location: class AndroidJSONDeserializer
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONDeserializer.java:35: error: cannot find symbol
+    public <T extends Rush> List<T> deserialize(String string, String idName, String versionName, RushColumns rushColumns, Map<Class<? extends Rush>, AnnotationCache> annotationCache, Class<T> clazz, Callback callback) {
+                                                                                                                                                      ^
+  symbol:   class AnnotationCache
+  location: class AndroidJSONDeserializer
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONDeserializer.java:35: error: cannot find symbol
+    public <T extends Rush> List<T> deserialize(String string, String idName, String versionName, RushColumns rushColumns, Map<Class<? extends Rush>, AnnotationCache> annotationCache, Class<T> clazz, Callback callback) {
+                                                                                                                                                                                                        ^
+  symbol:   class Callback
+  location: class AndroidJSONDeserializer
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONDeserializer.java:59: error: cannot find symbol
+    private Class<? extends Rush> classFromString(String name, Map<Class<? extends Rush>, AnnotationCache> annotationCache) {
+                                                                                   ^
+  symbol:   class Rush
+  location: class AndroidJSONDeserializer
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONDeserializer.java:59: error: cannot find symbol
+    private Class<? extends Rush> classFromString(String name, Map<Class<? extends Rush>, AnnotationCache> annotationCache) {
+                                                                                          ^
+  symbol:   class AnnotationCache
+  location: class AndroidJSONDeserializer
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONDeserializer.java:59: error: cannot find symbol
+    private Class<? extends Rush> classFromString(String name, Map<Class<? extends Rush>, AnnotationCache> annotationCache) {
+                            ^
+  symbol:   class Rush
+  location: class AndroidJSONDeserializer
+Note: /tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONDeserializer.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+100 errors
+:rushandroid:compileReleaseJavaWithJavac FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':rushandroid:compileReleaseJavaWithJavac'.
+> Compilation failed; see the compiler error output for details.
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':rushandroid:compileReleaseJavaWithJavac'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:84)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:55)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:62)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:88)
+	at org.gradle.api.internal.tasks.execution.ResolveTaskArtifactStateTaskExecuter.execute(ResolveTaskArtifactStateTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:51)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:54)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.tasks.execution.CatchExceptionTaskExecuter.execute(CatchExceptionTaskExecuter.java:34)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker$1.execute(DefaultTaskGraphExecuter.java:236)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker$1.execute(DefaultTaskGraphExecuter.java:228)
+	at org.gradle.internal.Transformers$4.transform(Transformers.java:169)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:106)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:61)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker.execute(DefaultTaskGraphExecuter.java:228)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker.execute(DefaultTaskGraphExecuter.java:215)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:77)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:58)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:32)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:113)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.access$000(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$1.proceed(DefaultBuildExecuter.java:43)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:30)
+	at org.gradle.initialization.DefaultGradleLauncher$3.execute(DefaultGradleLauncher.java:196)
+	at org.gradle.initialization.DefaultGradleLauncher$3.execute(DefaultGradleLauncher.java:193)
+	at org.gradle.internal.Transformers$4.transform(Transformers.java:169)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:106)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:56)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:193)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:119)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:102)
+	at org.gradle.launcher.exec.GradleBuildController.run(GradleBuildController.java:71)
+	at org.gradle.tooling.internal.provider.ExecuteBuildActionRunner.run(ExecuteBuildActionRunner.java:28)
+	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:41)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.tooling.internal.provider.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:75)
+	at org.gradle.tooling.internal.provider.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:49)
+	at org.gradle.tooling.internal.provider.ServicesSetupBuildActionExecuter.execute(ServicesSetupBuildActionExecuter.java:44)
+	at org.gradle.tooling.internal.provider.ServicesSetupBuildActionExecuter.execute(ServicesSetupBuildActionExecuter.java:29)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:51)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:173)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:244)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:217)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:33)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:174)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:60)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:37)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:33)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:130)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:48)
+Caused by: org.gradle.api.internal.tasks.compile.CompilationFailedException: Compilation failed; see the compiler error output for details.
+	at org.gradle.api.internal.tasks.compile.JdkJavaCompiler.execute(JdkJavaCompiler.java:48)
+	at org.gradle.api.internal.tasks.compile.JdkJavaCompiler.execute(JdkJavaCompiler.java:33)
+	at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.delegateAndHandleErrors(NormalizingJavaCompiler.java:104)
+	at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.execute(NormalizingJavaCompiler.java:53)
+	at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.execute(NormalizingJavaCompiler.java:38)
+	at org.gradle.api.internal.tasks.compile.CleaningJavaCompilerSupport.execute(CleaningJavaCompilerSupport.java:35)
+	at org.gradle.api.internal.tasks.compile.CleaningJavaCompilerSupport.execute(CleaningJavaCompilerSupport.java:25)
+	at org.gradle.api.internal.tasks.compile.incremental.IncrementalCompilationFinalizer.execute(IncrementalCompilationFinalizer.java:39)
+	at org.gradle.api.internal.tasks.compile.incremental.IncrementalCompilationFinalizer.execute(IncrementalCompilationFinalizer.java:24)
+	at org.gradle.api.tasks.compile.JavaCompile.performCompilation(JavaCompile.java:206)
+	at org.gradle.api.tasks.compile.JavaCompile.compile(JavaCompile.java:164)
+	at com.android.build.gradle.tasks.factory.AndroidJavaCompile.compile(AndroidJavaCompile.java:49)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:73)
+	at org.gradle.api.internal.project.taskfactory.DefaultTaskClassInfoStore$IncrementalTaskAction.doExecute(DefaultTaskClassInfoStore.java:163)
+	at org.gradle.api.internal.project.taskfactory.DefaultTaskClassInfoStore$StandardTaskAction.execute(DefaultTaskClassInfoStore.java:134)
+	at org.gradle.api.internal.project.taskfactory.DefaultTaskClassInfoStore$StandardTaskAction.execute(DefaultTaskClassInfoStore.java:123)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:95)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:76)
+	... 62 more
+
+
+BUILD FAILED
+
+Total time: 8.466 secs
+
+2018-05-11 14:03:56,325 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-11 14:03:56,325 INFO  SysUtils - Execute command: [/tmp/rdisk/1499/src/RushOrm-master/RushORM/gradlew, -b, /tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-11 14:04:03,014 INFO  ProjectTaskService - Detected possible tasks: 64
+2018-05-11 14:04:03,014 INFO  ProjectTaskService - Excluded tasks (17): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll createDebugCoverageReport test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-05-11 14:04:03,015 INFO  SysUtils - Execute command: [/tmp/rdisk/1499/src/RushOrm-master/RushORM/gradlew, -b, /tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, createDebugCoverageReport, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-05-11 14:04:11,768 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-05-11 14:04:11,768 INFO  SysUtils - Configuration on demand is an incubating feature.
+Incremental java compilation is an incubating feature.
+:rushandroid:preBuild UP-TO-DATE
+:rushandroid:preDebugBuild UP-TO-DATE
+:rushandroid:checkDebugManifest
+:rushandroid:prepareDebugDependencies
+:rushandroid:compileDebugAidl
+:rushandroid:compileDebugNdk UP-TO-DATE
+:rushandroid:compileLint UP-TO-DATE
+:rushandroid:copyDebugLint UP-TO-DATE
+:rushandroid:mergeDebugShaders
+:rushandroid:compileDebugShaders
+:rushandroid:generateDebugAssets
+:rushandroid:mergeDebugAssets
+:rushandroid:mergeDebugProguardFiles
+:rushandroid:packageDebugRenderscript UP-TO-DATE
+:rushandroid:compileDebugRenderscript
+:rushandroid:generateDebugResValues
+:rushandroid:generateDebugResources
+:rushandroid:packageDebugResources
+:rushandroid:processDebugManifest
+:rushandroid:generateDebugBuildConfig
+:rushandroid:processDebugResources
+:rushandroid:generateDebugSources
+:rushandroid:incrementalDebugJavaCompilationSafeguard
+:rushandroid:javaPreCompileDebug
+:rushandroid:compileDebugJavaWithJavac
+:rushandroid:compileDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/RushJSONFile.java:8: error: package co.uk.rushorm.core does not exist
+import co.uk.rushorm.core.RushTextFile;
+                         ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/RushJSONFile.java:13: error: cannot find symbol
+public class RushJSONFile extends RushTextFile {
+                                  ^
+  symbol: class RushTextFile
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/RushBitmapFile.java:9: error: package co.uk.rushorm.core does not exist
+import co.uk.rushorm.core.RushFile;
+                         ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/RushBitmapFile.java:14: error: cannot find symbol
+public class RushBitmapFile extends RushFile {
+                                    ^
+  symbol: class RushFile
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/RushAndroid.java:7: error: package co.uk.rushorm.core does not exist
+import co.uk.rushorm.core.Rush;
+                         ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/RushAndroid.java:8: error: package co.uk.rushorm.core does not exist
+import co.uk.rushorm.core.RushColumn;
+                         ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/RushAndroid.java:9: error: package co.uk.rushorm.core does not exist
+import co.uk.rushorm.core.RushCore;
+                         ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/RushAndroid.java:10: error: package co.uk.rushorm.core does not exist
+import co.uk.rushorm.core.RushInitializeConfig;
+                         ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/RushAndroid.java:17: error: cannot find symbol
+    public static void initialize(Context context, List<Class<? extends Rush>> clazzes) {
+                                                                        ^
+  symbol:   class Rush
+  location: class RushAndroid
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/RushAndroid.java:21: error: cannot find symbol
+    public static void initialize(Context context, List<Class<? extends Rush>> clazzes, List<RushColumn> columns) {
+                                                                        ^
+  symbol:   class Rush
+  location: class RushAndroid
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/RushAndroid.java:21: error: cannot find symbol
+    public static void initialize(Context context, List<Class<? extends Rush>> clazzes, List<RushColumn> columns) {
+                                                                                             ^
+  symbol:   class RushColumn
+  location: class RushAndroid
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/RushAndroid.java:29: error: cannot find symbol
+    public static void initialize(RushInitializeConfig rushInitializeConfig){
+                                  ^
+  symbol:   class RushInitializeConfig
+  location: class RushAndroid
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushStringSanitizer.java:5: error: package co.uk.rushorm.core does not exist
+import co.uk.rushorm.core.RushStringSanitizer;
+                         ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushStringSanitizer.java:10: error: cannot find symbol
+public class AndroidRushStringSanitizer implements RushStringSanitizer {
+                                                   ^
+  symbol: class RushStringSanitizer
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushStatementRunner.java:12: error: package co.uk.rushorm.core does not exist
+import co.uk.rushorm.core.RushConfig;
+                         ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushStatementRunner.java:13: error: package co.uk.rushorm.core does not exist
+import co.uk.rushorm.core.RushQue;
+                         ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushStatementRunner.java:14: error: package co.uk.rushorm.core does not exist
+import co.uk.rushorm.core.RushStatementRunner;
+                         ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushStatementRunner.java:15: error: package co.uk.rushorm.core.exceptions does not exist
+import co.uk.rushorm.core.exceptions.RushSqlException;
+                                    ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushStatementRunner.java:16: error: package co.uk.rushorm.core.implementation does not exist
+import co.uk.rushorm.core.implementation.ReflectionUtils;
+                                        ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushStatementRunner.java:21: error: cannot find symbol
+public class AndroidRushStatementRunner extends SQLiteOpenHelper implements RushStatementRunner {
+                                                                            ^
+  symbol: class RushStatementRunner
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushStatementRunner.java:24: error: cannot find symbol
+    private RushConfig rushConfig;
+            ^
+  symbol:   class RushConfig
+  location: class AndroidRushStatementRunner
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushStatementRunner.java:27: error: cannot find symbol
+    public AndroidRushStatementRunner(Context context, String name, RushConfig rushConfig) {
+                                                                    ^
+  symbol:   class RushConfig
+  location: class AndroidRushStatementRunner
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushStatementRunner.java:35: error: cannot find symbol
+    public void runRaw(String statement, RushQue que) {
+                                         ^
+  symbol:   class RushQue
+  location: class AndroidRushStatementRunner
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushStatementRunner.java:48: error: cannot find symbol
+    public ValuesCallback runGet(String sql, RushQue que) {
+                                             ^
+  symbol:   class RushQue
+  location: class AndroidRushStatementRunner
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushStatementRunner.java:48: error: cannot find symbol
+    public ValuesCallback runGet(String sql, RushQue que) {
+           ^
+  symbol:   class ValuesCallback
+  location: class AndroidRushStatementRunner
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushStatementRunner.java:83: error: cannot find symbol
+    public void startTransition(RushQue que) {
+                                ^
+  symbol:   class RushQue
+  location: class AndroidRushStatementRunner
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushStatementRunner.java:88: error: cannot find symbol
+    public void endTransition(RushQue que) {
+                              ^
+  symbol:   class RushQue
+  location: class AndroidRushStatementRunner
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushStatementRunner.java:110: error: cannot find symbol
+    public boolean requiresUpgrade(long version, RushQue que) {
+                                                 ^
+  symbol:   class RushQue
+  location: class AndroidRushStatementRunner
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushQueProvider.java:6: error: package co.uk.rushorm.core does not exist
+import co.uk.rushorm.core.RushQue;
+                         ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushQueProvider.java:7: error: package co.uk.rushorm.core does not exist
+import co.uk.rushorm.core.RushQueProvider;
+                         ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushQueProvider.java:12: error: cannot find symbol
+public class AndroidRushQueProvider implements RushQueProvider {
+                                               ^
+  symbol: class RushQueProvider
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushQueProvider.java:14: error: cannot find symbol
+    private List<RushQue> ques = new ArrayList<>();
+                 ^
+  symbol:   class RushQue
+  location: class AndroidRushQueProvider
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushQueProvider.java:22: error: cannot find symbol
+    public RushQue blockForNextQue() {
+           ^
+  symbol:   class RushQue
+  location: class AndroidRushQueProvider
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushQueProvider.java:36: error: cannot find symbol
+    public void waitForNextQue(final RushQueCallback rushQueCallback) {
+                                     ^
+  symbol:   class RushQueCallback
+  location: class AndroidRushQueProvider
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushQueProvider.java:46: error: cannot find symbol
+    public void queComplete(RushQue que) {
+                            ^
+  symbol:   class RushQue
+  location: class AndroidRushQueProvider
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushQue.java:3: error: package co.uk.rushorm.core does not exist
+import co.uk.rushorm.core.RushQue;
+                         ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushQue.java:8: error: cannot find symbol
+public class AndroidRushQue implements RushQue {
+                                       ^
+  symbol: class RushQue
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushConfig.java:12: error: package co.uk.rushorm.core does not exist
+import co.uk.rushorm.core.RushConfig;
+                         ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushConfig.java:13: error: package co.uk.rushorm.core.exceptions does not exist
+import co.uk.rushorm.core.exceptions.RushClassNotFoundException;
+                                    ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushConfig.java:18: error: cannot find symbol
+public class AndroidRushConfig implements RushConfig {
+                                          ^
+  symbol: class RushConfig
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushClassFinder.java:3: error: package co.uk.rushorm.core does not exist
+import co.uk.rushorm.core.Rush;
+                         ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushClassFinder.java:4: error: package co.uk.rushorm.core does not exist
+import co.uk.rushorm.core.RushClassFinder;
+                         ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushClassFinder.java:5: error: package co.uk.rushorm.core does not exist
+import co.uk.rushorm.core.RushConfig;
+                         ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushClassFinder.java:12: error: cannot find symbol
+public class AndroidRushClassFinder implements RushClassFinder {
+                                               ^
+  symbol: class RushClassFinder
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushClassFinder.java:14: error: cannot find symbol
+    private final List<Class<? extends Rush>> classes;
+                                       ^
+  symbol:   class Rush
+  location: class AndroidRushClassFinder
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushClassFinder.java:16: error: cannot find symbol
+    public AndroidRushClassFinder(List<Class<? extends Rush>> classes) {
+                                                       ^
+  symbol:   class Rush
+  location: class AndroidRushClassFinder
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushClassFinder.java:21: error: cannot find symbol
+    public List<Class<? extends Rush>> findClasses(RushConfig rushConfig) {
+                                                   ^
+  symbol:   class RushConfig
+  location: class AndroidRushClassFinder
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushClassFinder.java:21: error: cannot find symbol
+    public List<Class<? extends Rush>> findClasses(RushConfig rushConfig) {
+                                ^
+  symbol:   class Rush
+  location: class AndroidRushClassFinder
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidLogger.java:5: error: package co.uk.rushorm.core does not exist
+import co.uk.rushorm.core.Logger;
+                         ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidLogger.java:6: error: package co.uk.rushorm.core does not exist
+import co.uk.rushorm.core.RushConfig;
+                         ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidLogger.java:11: error: cannot find symbol
+public class AndroidLogger implements Logger {
+                                      ^
+  symbol: class Logger
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidLogger.java:15: error: cannot find symbol
+    private final RushConfig rushConfig;
+                  ^
+  symbol:   class RushConfig
+  location: class AndroidLogger
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidLogger.java:17: error: cannot find symbol
+    public AndroidLogger(RushConfig rushConfig) {
+                         ^
+  symbol:   class RushConfig
+  location: class AndroidLogger
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONSerializer.java:13: error: package co.uk.rushorm.core does not exist
+import co.uk.rushorm.core.AnnotationCache;
+                         ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONSerializer.java:14: error: package co.uk.rushorm.core does not exist
+import co.uk.rushorm.core.Rush;
+                         ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONSerializer.java:15: error: package co.uk.rushorm.core does not exist
+import co.uk.rushorm.core.RushColumns;
+                         ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONSerializer.java:16: error: package co.uk.rushorm.core does not exist
+import co.uk.rushorm.core.RushConfig;
+                         ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONSerializer.java:17: error: package co.uk.rushorm.core does not exist
+import co.uk.rushorm.core.RushMetaData;
+                         ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONSerializer.java:18: error: package co.uk.rushorm.core does not exist
+import co.uk.rushorm.core.RushObjectSerializer;
+                         ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONSerializer.java:19: error: package co.uk.rushorm.core does not exist
+import co.uk.rushorm.core.RushStringSanitizer;
+                         ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONSerializer.java:20: error: package co.uk.rushorm.core.implementation does not exist
+import co.uk.rushorm.core.implementation.ReflectionUtils;
+                                        ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONSerializer.java:25: error: cannot find symbol
+public class AndroidJSONSerializer implements RushObjectSerializer {
+                                              ^
+  symbol: class RushObjectSerializer
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONSerializer.java:27: error: cannot find symbol
+    private final RushConfig rushConfig;
+                  ^
+  symbol:   class RushConfig
+  location: class AndroidJSONSerializer
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONSerializer.java:29: error: cannot find symbol
+    private static final RushStringSanitizer rushStringSanitizer = new RushStringSanitizer() {
+                         ^
+  symbol:   class RushStringSanitizer
+  location: class AndroidJSONSerializer
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONSerializer.java:36: error: cannot find symbol
+    public AndroidJSONSerializer(RushConfig rushConfig) {
+                                 ^
+  symbol:   class RushConfig
+  location: class AndroidJSONSerializer
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONSerializer.java:41: error: cannot find symbol
+    public String serialize(List<? extends Rush> objects, String idName, String versionName, RushColumns rushColumns, Map<Class<? extends Rush>, AnnotationCache> annotationCache, Callback callback) {
+                                           ^
+  symbol:   class Rush
+  location: class AndroidJSONSerializer
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONSerializer.java:41: error: cannot find symbol
+    public String serialize(List<? extends Rush> objects, String idName, String versionName, RushColumns rushColumns, Map<Class<? extends Rush>, AnnotationCache> annotationCache, Callback callback) {
+                                                                                             ^
+  symbol:   class RushColumns
+  location: class AndroidJSONSerializer
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONSerializer.java:41: error: cannot find symbol
+    public String serialize(List<? extends Rush> objects, String idName, String versionName, RushColumns rushColumns, Map<Class<? extends Rush>, AnnotationCache> annotationCache, Callback callback) {
+                                                                                                                                          ^
+  symbol:   class Rush
+  location: class AndroidJSONSerializer
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONSerializer.java:41: error: cannot find symbol
+    public String serialize(List<? extends Rush> objects, String idName, String versionName, RushColumns rushColumns, Map<Class<? extends Rush>, AnnotationCache> annotationCache, Callback callback) {
+                                                                                                                                                 ^
+  symbol:   class AnnotationCache
+  location: class AndroidJSONSerializer
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONSerializer.java:41: error: cannot find symbol
+    public String serialize(List<? extends Rush> objects, String idName, String versionName, RushColumns rushColumns, Map<Class<? extends Rush>, AnnotationCache> annotationCache, Callback callback) {
+                                                                                                                                                                                   ^
+  symbol:   class Callback
+  location: class AndroidJSONSerializer
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONSerializer.java:70: error: cannot find symbol
+    private JSONArray serializeToJSONArray(List<? extends Rush> objects, String idName, String versionName, RushColumns rushColumns, Map<Class<? extends Rush>, AnnotationCache> annotationCache, RushStringSanitizer rushStringSanitizer, Callback callback) throws JSONException, IllegalAccessException {
+                                                          ^
+  symbol:   class Rush
+  location: class AndroidJSONSerializer
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONSerializer.java:70: error: cannot find symbol
+    private JSONArray serializeToJSONArray(List<? extends Rush> objects, String idName, String versionName, RushColumns rushColumns, Map<Class<? extends Rush>, AnnotationCache> annotationCache, RushStringSanitizer rushStringSanitizer, Callback callback) throws JSONException, IllegalAccessException {
+                                                                                                            ^
+  symbol:   class RushColumns
+  location: class AndroidJSONSerializer
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONSerializer.java:70: error: cannot find symbol
+    private JSONArray serializeToJSONArray(List<? extends Rush> objects, String idName, String versionName, RushColumns rushColumns, Map<Class<? extends Rush>, AnnotationCache> annotationCache, RushStringSanitizer rushStringSanitizer, Callback callback) throws JSONException, IllegalAccessException {
+                                                                                                                                                         ^
+  symbol:   class Rush
+  location: class AndroidJSONSerializer
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONSerializer.java:70: error: cannot find symbol
+    private JSONArray serializeToJSONArray(List<? extends Rush> objects, String idName, String versionName, RushColumns rushColumns, Map<Class<? extends Rush>, AnnotationCache> annotationCache, RushStringSanitizer rushStringSanitizer, Callback callback) throws JSONException, IllegalAccessException {
+                                                                                                                                                                ^
+  symbol:   class AnnotationCache
+  location: class AndroidJSONSerializer
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONSerializer.java:70: error: cannot find symbol
+    private JSONArray serializeToJSONArray(List<? extends Rush> objects, String idName, String versionName, RushColumns rushColumns, Map<Class<? extends Rush>, AnnotationCache> annotationCache, RushStringSanitizer rushStringSanitizer, Callback callback) throws JSONException, IllegalAccessException {
+                                                                                                                                                                                                  ^
+  symbol:   class RushStringSanitizer
+  location: class AndroidJSONSerializer
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONSerializer.java:70: error: cannot find symbol
+    private JSONArray serializeToJSONArray(List<? extends Rush> objects, String idName, String versionName, RushColumns rushColumns, Map<Class<? extends Rush>, AnnotationCache> annotationCache, RushStringSanitizer rushStringSanitizer, Callback callback) throws JSONException, IllegalAccessException {
+                                                                                                                                                                                                                                           ^
+  symbol:   class Callback
+  location: class AndroidJSONSerializer
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONSerializer.java:81: error: cannot find symbol
+    private JSONObject serializeToJSONObject(Rush rush, String idName, String versionName, RushColumns rushColumns, Map<Class<? extends Rush>, AnnotationCache> annotationCache, RushStringSanitizer rushStringSanitizer, Callback callback) throws IllegalAccessException, JSONException {
+                                             ^
+  symbol:   class Rush
+  location: class AndroidJSONSerializer
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONSerializer.java:81: error: cannot find symbol
+    private JSONObject serializeToJSONObject(Rush rush, String idName, String versionName, RushColumns rushColumns, Map<Class<? extends Rush>, AnnotationCache> annotationCache, RushStringSanitizer rushStringSanitizer, Callback callback) throws IllegalAccessException, JSONException {
+                                                                                           ^
+  symbol:   class RushColumns
+  location: class AndroidJSONSerializer
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONSerializer.java:81: error: cannot find symbol
+    private JSONObject serializeToJSONObject(Rush rush, String idName, String versionName, RushColumns rushColumns, Map<Class<? extends Rush>, AnnotationCache> annotationCache, RushStringSanitizer rushStringSanitizer, Callback callback) throws IllegalAccessException, JSONException {
+                                                                                                                                        ^
+  symbol:   class Rush
+  location: class AndroidJSONSerializer
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONSerializer.java:81: error: cannot find symbol
+    private JSONObject serializeToJSONObject(Rush rush, String idName, String versionName, RushColumns rushColumns, Map<Class<? extends Rush>, AnnotationCache> annotationCache, RushStringSanitizer rushStringSanitizer, Callback callback) throws IllegalAccessException, JSONException {
+                                                                                                                                               ^
+  symbol:   class AnnotationCache
+  location: class AndroidJSONSerializer
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONSerializer.java:81: error: cannot find symbol
+    private JSONObject serializeToJSONObject(Rush rush, String idName, String versionName, RushColumns rushColumns, Map<Class<? extends Rush>, AnnotationCache> annotationCache, RushStringSanitizer rushStringSanitizer, Callback callback) throws IllegalAccessException, JSONException {
+                                                                                                                                                                                 ^
+  symbol:   class RushStringSanitizer
+  location: class AndroidJSONSerializer
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONSerializer.java:81: error: cannot find symbol
+    private JSONObject serializeToJSONObject(Rush rush, String idName, String versionName, RushColumns rushColumns, Map<Class<? extends Rush>, AnnotationCache> annotationCache, RushStringSanitizer rushStringSanitizer, Callback callback) throws IllegalAccessException, JSONException {
+                                                                                                                                                                                                                          ^
+  symbol:   class Callback
+  location: class AndroidJSONSerializer
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONDeserializer.java:15: error: package co.uk.rushorm.core does not exist
+import co.uk.rushorm.core.AnnotationCache;
+                         ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONDeserializer.java:16: error: package co.uk.rushorm.core does not exist
+import co.uk.rushorm.core.Rush;
+                         ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONDeserializer.java:17: error: package co.uk.rushorm.core does not exist
+import co.uk.rushorm.core.RushColumns;
+                         ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONDeserializer.java:18: error: package co.uk.rushorm.core does not exist
+import co.uk.rushorm.core.RushConfig;
+                         ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONDeserializer.java:19: error: package co.uk.rushorm.core does not exist
+import co.uk.rushorm.core.RushMetaData;
+                         ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONDeserializer.java:20: error: package co.uk.rushorm.core does not exist
+import co.uk.rushorm.core.RushObjectDeserializer;
+                         ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONDeserializer.java:21: error: package co.uk.rushorm.core.implementation does not exist
+import co.uk.rushorm.core.implementation.ReflectionUtils;
+                                        ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONDeserializer.java:26: error: cannot find symbol
+public class AndroidJSONDeserializer implements RushObjectDeserializer {
+                                                ^
+  symbol: class RushObjectDeserializer
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONDeserializer.java:28: error: cannot find symbol
+    private final RushConfig rushConfig;
+                  ^
+  symbol:   class RushConfig
+  location: class AndroidJSONDeserializer
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONDeserializer.java:30: error: cannot find symbol
+    public AndroidJSONDeserializer(RushConfig rushConfig) {
+                                   ^
+  symbol:   class RushConfig
+  location: class AndroidJSONDeserializer
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONDeserializer.java:35: error: cannot find symbol
+    public <T extends Rush> List<T> deserialize(String string, String idName, String versionName, RushColumns rushColumns, Map<Class<? extends Rush>, AnnotationCache> annotationCache, Class<T> clazz, Callback callback) {
+                      ^
+  symbol:   class Rush
+  location: class AndroidJSONDeserializer
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONDeserializer.java:35: error: cannot find symbol
+    public <T extends Rush> List<T> deserialize(String string, String idName, String versionName, RushColumns rushColumns, Map<Class<? extends Rush>, AnnotationCache> annotationCache, Class<T> clazz, Callback callback) {
+                                                                                                  ^
+  symbol:   class RushColumns
+  location: class AndroidJSONDeserializer
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONDeserializer.java:35: error: cannot find symbol
+    public <T extends Rush> List<T> deserialize(String string, String idName, String versionName, RushColumns rushColumns, Map<Class<? extends Rush>, AnnotationCache> annotationCache, Class<T> clazz, Callback callback) {
+                                                                                                                                               ^
+  symbol:   class Rush
+  location: class AndroidJSONDeserializer
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONDeserializer.java:35: error: cannot find symbol
+    public <T extends Rush> List<T> deserialize(String string, String idName, String versionName, RushColumns rushColumns, Map<Class<? extends Rush>, AnnotationCache> annotationCache, Class<T> clazz, Callback callback) {
+                                                                                                                                                      ^
+  symbol:   class AnnotationCache
+  location: class AndroidJSONDeserializer
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONDeserializer.java:35: error: cannot find symbol
+    public <T extends Rush> List<T> deserialize(String string, String idName, String versionName, RushColumns rushColumns, Map<Class<? extends Rush>, AnnotationCache> annotationCache, Class<T> clazz, Callback callback) {
+                                                                                                                                                                                                        ^
+  symbol:   class Callback
+  location: class AndroidJSONDeserializer
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONDeserializer.java:59: error: cannot find symbol
+    private Class<? extends Rush> classFromString(String name, Map<Class<? extends Rush>, AnnotationCache> annotationCache) {
+                                                                                   ^
+  symbol:   class Rush
+  location: class AndroidJSONDeserializer
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONDeserializer.java:59: error: cannot find symbol
+    private Class<? extends Rush> classFromString(String name, Map<Class<? extends Rush>, AnnotationCache> annotationCache) {
+                                                                                          ^
+  symbol:   class AnnotationCache
+  location: class AndroidJSONDeserializer
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONDeserializer.java:59: error: cannot find symbol
+    private Class<? extends Rush> classFromString(String name, Map<Class<? extends Rush>, AnnotationCache> annotationCache) {
+                            ^
+  symbol:   class Rush
+  location: class AndroidJSONDeserializer
+Note: /tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONDeserializer.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+100 errors
+:rushandroid:compileDebugJavaWithJavac FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':rushandroid:compileDebugJavaWithJavac'.
+> Compilation failed; see the compiler error output for details.
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':rushandroid:compileDebugJavaWithJavac'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:84)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:55)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:62)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:88)
+	at org.gradle.api.internal.tasks.execution.ResolveTaskArtifactStateTaskExecuter.execute(ResolveTaskArtifactStateTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:51)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:54)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.tasks.execution.CatchExceptionTaskExecuter.execute(CatchExceptionTaskExecuter.java:34)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker$1.execute(DefaultTaskGraphExecuter.java:236)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker$1.execute(DefaultTaskGraphExecuter.java:228)
+	at org.gradle.internal.Transformers$4.transform(Transformers.java:169)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:106)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:61)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker.execute(DefaultTaskGraphExecuter.java:228)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker.execute(DefaultTaskGraphExecuter.java:215)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:77)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:58)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:32)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:113)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.access$000(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$1.proceed(DefaultBuildExecuter.java:43)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:30)
+	at org.gradle.initialization.DefaultGradleLauncher$3.execute(DefaultGradleLauncher.java:196)
+	at org.gradle.initialization.DefaultGradleLauncher$3.execute(DefaultGradleLauncher.java:193)
+	at org.gradle.internal.Transformers$4.transform(Transformers.java:169)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:106)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:56)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:193)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:119)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:102)
+	at org.gradle.launcher.exec.GradleBuildController.run(GradleBuildController.java:71)
+	at org.gradle.tooling.internal.provider.ExecuteBuildActionRunner.run(ExecuteBuildActionRunner.java:28)
+	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:41)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.tooling.internal.provider.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:75)
+	at org.gradle.tooling.internal.provider.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:49)
+	at org.gradle.tooling.internal.provider.ServicesSetupBuildActionExecuter.execute(ServicesSetupBuildActionExecuter.java:44)
+	at org.gradle.tooling.internal.provider.ServicesSetupBuildActionExecuter.execute(ServicesSetupBuildActionExecuter.java:29)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:51)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:173)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:244)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:217)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:33)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:174)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:60)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:37)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:33)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:130)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:48)
+Caused by: org.gradle.api.internal.tasks.compile.CompilationFailedException: Compilation failed; see the compiler error output for details.
+	at org.gradle.api.internal.tasks.compile.JdkJavaCompiler.execute(JdkJavaCompiler.java:48)
+	at org.gradle.api.internal.tasks.compile.JdkJavaCompiler.execute(JdkJavaCompiler.java:33)
+	at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.delegateAndHandleErrors(NormalizingJavaCompiler.java:104)
+	at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.execute(NormalizingJavaCompiler.java:53)
+	at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.execute(NormalizingJavaCompiler.java:38)
+	at org.gradle.api.internal.tasks.compile.CleaningJavaCompilerSupport.execute(CleaningJavaCompilerSupport.java:35)
+	at org.gradle.api.internal.tasks.compile.CleaningJavaCompilerSupport.execute(CleaningJavaCompilerSupport.java:25)
+	at org.gradle.api.internal.tasks.compile.incremental.IncrementalCompilationFinalizer.execute(IncrementalCompilationFinalizer.java:39)
+	at org.gradle.api.internal.tasks.compile.incremental.IncrementalCompilationFinalizer.execute(IncrementalCompilationFinalizer.java:24)
+	at org.gradle.api.tasks.compile.JavaCompile.performCompilation(JavaCompile.java:206)
+	at org.gradle.api.tasks.compile.JavaCompile.compile(JavaCompile.java:164)
+	at com.android.build.gradle.tasks.factory.AndroidJavaCompile.compile(AndroidJavaCompile.java:49)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:73)
+	at org.gradle.api.internal.project.taskfactory.DefaultTaskClassInfoStore$IncrementalTaskAction.doExecute(DefaultTaskClassInfoStore.java:163)
+	at org.gradle.api.internal.project.taskfactory.DefaultTaskClassInfoStore$StandardTaskAction.execute(DefaultTaskClassInfoStore.java:134)
+	at org.gradle.api.internal.project.taskfactory.DefaultTaskClassInfoStore$StandardTaskAction.execute(DefaultTaskClassInfoStore.java:123)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:95)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:76)
+	... 62 more
+
+
+BUILD FAILED
+
+Total time: 8.269 secs
+
+2018-05-11 14:04:11,783 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-11 14:04:11,783 INFO  SysUtils - Execute command: [/tmp/rdisk/1499/src/RushOrm-master/RushORM/gradlew, -b, /tmp/rdisk/1499/src/RushOrm-master/RushORM/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-11 14:04:19,256 INFO  ProjectTaskService - Detected possible tasks: 67
+2018-05-11 14:04:19,256 INFO  ProjectTaskService - Excluded tasks (20): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll createDebugCoverageReport test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-05-11 14:04:19,256 INFO  SysUtils - Execute command: [/tmp/rdisk/1499/src/RushOrm-master/RushORM/gradlew, -b, /tmp/rdisk/1499/src/RushOrm-master/RushORM/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, createDebugCoverageReport, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-05-11 14:04:27,332 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-05-11 14:04:27,333 INFO  SysUtils - Configuration on demand is an incubating feature.
+Incremental java compilation is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:checkDebugManifest
+:app:extractProguardFiles
+:app:preReleaseBuild
+:app:prepareComAndroidSupportSupportCompat2531Library
+:app:prepareComAndroidSupportSupportCoreUi2531Library
+:app:prepareComAndroidSupportSupportCoreUtils2531Library
+:app:prepareComAndroidSupportSupportFragment2531Library
+:app:prepareComAndroidSupportSupportMediaCompat2531Library
+:app:prepareComAndroidSupportSupportV42531Library
+:rushandroid:preBuild UP-TO-DATE
+:rushandroid:preReleaseBuild UP-TO-DATE
+:rushandroid:checkReleaseManifest
+:rushandroid:prepareReleaseDependencies
+:rushandroid:compileReleaseAidl UP-TO-DATE
+:rushandroid:compileReleaseNdk UP-TO-DATE
+:rushandroid:compileLint UP-TO-DATE
+:rushandroid:copyReleaseLint UP-TO-DATE
+:rushandroid:mergeReleaseShaders UP-TO-DATE
+:rushandroid:compileReleaseShaders UP-TO-DATE
+:rushandroid:generateReleaseAssets UP-TO-DATE
+:rushandroid:mergeReleaseAssets UP-TO-DATE
+:rushandroid:mergeReleaseProguardFiles UP-TO-DATE
+:rushandroid:packageReleaseRenderscript UP-TO-DATE
+:rushandroid:compileReleaseRenderscript UP-TO-DATE
+:rushandroid:generateReleaseResValues UP-TO-DATE
+:rushandroid:generateReleaseResources UP-TO-DATE
+:rushandroid:packageReleaseResources UP-TO-DATE
+:rushandroid:processReleaseManifest UP-TO-DATE
+:rushandroid:generateReleaseBuildConfig UP-TO-DATE
+:rushandroid:processReleaseResources UP-TO-DATE
+:rushandroid:generateReleaseSources UP-TO-DATE
+:rushandroid:incrementalReleaseJavaCompilationSafeguard UP-TO-DATE
+:rushandroid:javaPreCompileRelease
+:rushandroid:compileReleaseJavaWithJavac
+:rushandroid:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/RushJSONFile.java:8: error: package co.uk.rushorm.core does not exist
+import co.uk.rushorm.core.RushTextFile;
+                         ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/RushJSONFile.java:13: error: cannot find symbol
+public class RushJSONFile extends RushTextFile {
+                                  ^
+  symbol: class RushTextFile
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/RushBitmapFile.java:9: error: package co.uk.rushorm.core does not exist
+import co.uk.rushorm.core.RushFile;
+                         ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/RushBitmapFile.java:14: error: cannot find symbol
+public class RushBitmapFile extends RushFile {
+                                    ^
+  symbol: class RushFile
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/RushAndroid.java:7: error: package co.uk.rushorm.core does not exist
+import co.uk.rushorm.core.Rush;
+                         ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/RushAndroid.java:8: error: package co.uk.rushorm.core does not exist
+import co.uk.rushorm.core.RushColumn;
+                         ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/RushAndroid.java:9: error: package co.uk.rushorm.core does not exist
+import co.uk.rushorm.core.RushCore;
+                         ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/RushAndroid.java:10: error: package co.uk.rushorm.core does not exist
+import co.uk.rushorm.core.RushInitializeConfig;
+                         ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/RushAndroid.java:17: error: cannot find symbol
+    public static void initialize(Context context, List<Class<? extends Rush>> clazzes) {
+                                                                        ^
+  symbol:   class Rush
+  location: class RushAndroid
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/RushAndroid.java:21: error: cannot find symbol
+    public static void initialize(Context context, List<Class<? extends Rush>> clazzes, List<RushColumn> columns) {
+                                                                        ^
+  symbol:   class Rush
+  location: class RushAndroid
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/RushAndroid.java:21: error: cannot find symbol
+    public static void initialize(Context context, List<Class<? extends Rush>> clazzes, List<RushColumn> columns) {
+                                                                                             ^
+  symbol:   class RushColumn
+  location: class RushAndroid
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/RushAndroid.java:29: error: cannot find symbol
+    public static void initialize(RushInitializeConfig rushInitializeConfig){
+                                  ^
+  symbol:   class RushInitializeConfig
+  location: class RushAndroid
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushStringSanitizer.java:5: error: package co.uk.rushorm.core does not exist
+import co.uk.rushorm.core.RushStringSanitizer;
+                         ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushStringSanitizer.java:10: error: cannot find symbol
+public class AndroidRushStringSanitizer implements RushStringSanitizer {
+                                                   ^
+  symbol: class RushStringSanitizer
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushStatementRunner.java:12: error: package co.uk.rushorm.core does not exist
+import co.uk.rushorm.core.RushConfig;
+                         ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushStatementRunner.java:13: error: package co.uk.rushorm.core does not exist
+import co.uk.rushorm.core.RushQue;
+                         ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushStatementRunner.java:14: error: package co.uk.rushorm.core does not exist
+import co.uk.rushorm.core.RushStatementRunner;
+                         ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushStatementRunner.java:15: error: package co.uk.rushorm.core.exceptions does not exist
+import co.uk.rushorm.core.exceptions.RushSqlException;
+                                    ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushStatementRunner.java:16: error: package co.uk.rushorm.core.implementation does not exist
+import co.uk.rushorm.core.implementation.ReflectionUtils;
+                                        ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushStatementRunner.java:21: error: cannot find symbol
+public class AndroidRushStatementRunner extends SQLiteOpenHelper implements RushStatementRunner {
+                                                                            ^
+  symbol: class RushStatementRunner
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushStatementRunner.java:24: error: cannot find symbol
+    private RushConfig rushConfig;
+            ^
+  symbol:   class RushConfig
+  location: class AndroidRushStatementRunner
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushStatementRunner.java:27: error: cannot find symbol
+    public AndroidRushStatementRunner(Context context, String name, RushConfig rushConfig) {
+                                                                    ^
+  symbol:   class RushConfig
+  location: class AndroidRushStatementRunner
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushStatementRunner.java:35: error: cannot find symbol
+    public void runRaw(String statement, RushQue que) {
+                                         ^
+  symbol:   class RushQue
+  location: class AndroidRushStatementRunner
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushStatementRunner.java:48: error: cannot find symbol
+    public ValuesCallback runGet(String sql, RushQue que) {
+                                             ^
+  symbol:   class RushQue
+  location: class AndroidRushStatementRunner
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushStatementRunner.java:48: error: cannot find symbol
+    public ValuesCallback runGet(String sql, RushQue que) {
+           ^
+  symbol:   class ValuesCallback
+  location: class AndroidRushStatementRunner
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushStatementRunner.java:83: error: cannot find symbol
+    public void startTransition(RushQue que) {
+                                ^
+  symbol:   class RushQue
+  location: class AndroidRushStatementRunner
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushStatementRunner.java:88: error: cannot find symbol
+    public void endTransition(RushQue que) {
+                              ^
+  symbol:   class RushQue
+  location: class AndroidRushStatementRunner
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushStatementRunner.java:110: error: cannot find symbol
+    public boolean requiresUpgrade(long version, RushQue que) {
+                                                 ^
+  symbol:   class RushQue
+  location: class AndroidRushStatementRunner
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushQueProvider.java:6: error: package co.uk.rushorm.core does not exist
+import co.uk.rushorm.core.RushQue;
+                         ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushQueProvider.java:7: error: package co.uk.rushorm.core does not exist
+import co.uk.rushorm.core.RushQueProvider;
+                         ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushQueProvider.java:12: error: cannot find symbol
+public class AndroidRushQueProvider implements RushQueProvider {
+                                               ^
+  symbol: class RushQueProvider
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushQueProvider.java:14: error: cannot find symbol
+    private List<RushQue> ques = new ArrayList<>();
+                 ^
+  symbol:   class RushQue
+  location: class AndroidRushQueProvider
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushQueProvider.java:22: error: cannot find symbol
+    public RushQue blockForNextQue() {
+           ^
+  symbol:   class RushQue
+  location: class AndroidRushQueProvider
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushQueProvider.java:36: error: cannot find symbol
+    public void waitForNextQue(final RushQueCallback rushQueCallback) {
+                                     ^
+  symbol:   class RushQueCallback
+  location: class AndroidRushQueProvider
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushQueProvider.java:46: error: cannot find symbol
+    public void queComplete(RushQue que) {
+                            ^
+  symbol:   class RushQue
+  location: class AndroidRushQueProvider
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushQue.java:3: error: package co.uk.rushorm.core does not exist
+import co.uk.rushorm.core.RushQue;
+                         ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushQue.java:8: error: cannot find symbol
+public class AndroidRushQue implements RushQue {
+                                       ^
+  symbol: class RushQue
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushConfig.java:12: error: package co.uk.rushorm.core does not exist
+import co.uk.rushorm.core.RushConfig;
+                         ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushConfig.java:13: error: package co.uk.rushorm.core.exceptions does not exist
+import co.uk.rushorm.core.exceptions.RushClassNotFoundException;
+                                    ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushConfig.java:18: error: cannot find symbol
+public class AndroidRushConfig implements RushConfig {
+                                          ^
+  symbol: class RushConfig
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushClassFinder.java:3: error: package co.uk.rushorm.core does not exist
+import co.uk.rushorm.core.Rush;
+                         ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushClassFinder.java:4: error: package co.uk.rushorm.core does not exist
+import co.uk.rushorm.core.RushClassFinder;
+                         ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushClassFinder.java:5: error: package co.uk.rushorm.core does not exist
+import co.uk.rushorm.core.RushConfig;
+                         ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushClassFinder.java:12: error: cannot find symbol
+public class AndroidRushClassFinder implements RushClassFinder {
+                                               ^
+  symbol: class RushClassFinder
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushClassFinder.java:14: error: cannot find symbol
+    private final List<Class<? extends Rush>> classes;
+                                       ^
+  symbol:   class Rush
+  location: class AndroidRushClassFinder
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushClassFinder.java:16: error: cannot find symbol
+    public AndroidRushClassFinder(List<Class<? extends Rush>> classes) {
+                                                       ^
+  symbol:   class Rush
+  location: class AndroidRushClassFinder
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushClassFinder.java:21: error: cannot find symbol
+    public List<Class<? extends Rush>> findClasses(RushConfig rushConfig) {
+                                                   ^
+  symbol:   class RushConfig
+  location: class AndroidRushClassFinder
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidRushClassFinder.java:21: error: cannot find symbol
+    public List<Class<? extends Rush>> findClasses(RushConfig rushConfig) {
+                                ^
+  symbol:   class Rush
+  location: class AndroidRushClassFinder
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidLogger.java:5: error: package co.uk.rushorm.core does not exist
+import co.uk.rushorm.core.Logger;
+                         ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidLogger.java:6: error: package co.uk.rushorm.core does not exist
+import co.uk.rushorm.core.RushConfig;
+                         ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidLogger.java:11: error: cannot find symbol
+public class AndroidLogger implements Logger {
+                                      ^
+  symbol: class Logger
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidLogger.java:15: error: cannot find symbol
+    private final RushConfig rushConfig;
+                  ^
+  symbol:   class RushConfig
+  location: class AndroidLogger
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidLogger.java:17: error: cannot find symbol
+    public AndroidLogger(RushConfig rushConfig) {
+                         ^
+  symbol:   class RushConfig
+  location: class AndroidLogger
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONSerializer.java:13: error: package co.uk.rushorm.core does not exist
+import co.uk.rushorm.core.AnnotationCache;
+                         ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONSerializer.java:14: error: package co.uk.rushorm.core does not exist
+import co.uk.rushorm.core.Rush;
+                         ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONSerializer.java:15: error: package co.uk.rushorm.core does not exist
+import co.uk.rushorm.core.RushColumns;
+                         ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONSerializer.java:16: error: package co.uk.rushorm.core does not exist
+import co.uk.rushorm.core.RushConfig;
+                         ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONSerializer.java:17: error: package co.uk.rushorm.core does not exist
+import co.uk.rushorm.core.RushMetaData;
+                         ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONSerializer.java:18: error: package co.uk.rushorm.core does not exist
+import co.uk.rushorm.core.RushObjectSerializer;
+                         ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONSerializer.java:19: error: package co.uk.rushorm.core does not exist
+import co.uk.rushorm.core.RushStringSanitizer;
+                         ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONSerializer.java:20: error: package co.uk.rushorm.core.implementation does not exist
+import co.uk.rushorm.core.implementation.ReflectionUtils;
+                                        ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONSerializer.java:25: error: cannot find symbol
+public class AndroidJSONSerializer implements RushObjectSerializer {
+                                              ^
+  symbol: class RushObjectSerializer
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONSerializer.java:27: error: cannot find symbol
+    private final RushConfig rushConfig;
+                  ^
+  symbol:   class RushConfig
+  location: class AndroidJSONSerializer
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONSerializer.java:29: error: cannot find symbol
+    private static final RushStringSanitizer rushStringSanitizer = new RushStringSanitizer() {
+                         ^
+  symbol:   class RushStringSanitizer
+  location: class AndroidJSONSerializer
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONSerializer.java:36: error: cannot find symbol
+    public AndroidJSONSerializer(RushConfig rushConfig) {
+                                 ^
+  symbol:   class RushConfig
+  location: class AndroidJSONSerializer
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONSerializer.java:41: error: cannot find symbol
+    public String serialize(List<? extends Rush> objects, String idName, String versionName, RushColumns rushColumns, Map<Class<? extends Rush>, AnnotationCache> annotationCache, Callback callback) {
+                                           ^
+  symbol:   class Rush
+  location: class AndroidJSONSerializer
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONSerializer.java:41: error: cannot find symbol
+    public String serialize(List<? extends Rush> objects, String idName, String versionName, RushColumns rushColumns, Map<Class<? extends Rush>, AnnotationCache> annotationCache, Callback callback) {
+                                                                                             ^
+  symbol:   class RushColumns
+  location: class AndroidJSONSerializer
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONSerializer.java:41: error: cannot find symbol
+    public String serialize(List<? extends Rush> objects, String idName, String versionName, RushColumns rushColumns, Map<Class<? extends Rush>, AnnotationCache> annotationCache, Callback callback) {
+                                                                                                                                          ^
+  symbol:   class Rush
+  location: class AndroidJSONSerializer
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONSerializer.java:41: error: cannot find symbol
+    public String serialize(List<? extends Rush> objects, String idName, String versionName, RushColumns rushColumns, Map<Class<? extends Rush>, AnnotationCache> annotationCache, Callback callback) {
+                                                                                                                                                 ^
+  symbol:   class AnnotationCache
+  location: class AndroidJSONSerializer
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONSerializer.java:41: error: cannot find symbol
+    public String serialize(List<? extends Rush> objects, String idName, String versionName, RushColumns rushColumns, Map<Class<? extends Rush>, AnnotationCache> annotationCache, Callback callback) {
+                                                                                                                                                                                   ^
+  symbol:   class Callback
+  location: class AndroidJSONSerializer
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONSerializer.java:70: error: cannot find symbol
+    private JSONArray serializeToJSONArray(List<? extends Rush> objects, String idName, String versionName, RushColumns rushColumns, Map<Class<? extends Rush>, AnnotationCache> annotationCache, RushStringSanitizer rushStringSanitizer, Callback callback) throws JSONException, IllegalAccessException {
+                                                          ^
+  symbol:   class Rush
+  location: class AndroidJSONSerializer
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONSerializer.java:70: error: cannot find symbol
+    private JSONArray serializeToJSONArray(List<? extends Rush> objects, String idName, String versionName, RushColumns rushColumns, Map<Class<? extends Rush>, AnnotationCache> annotationCache, RushStringSanitizer rushStringSanitizer, Callback callback) throws JSONException, IllegalAccessException {
+                                                                                                            ^
+  symbol:   class RushColumns
+  location: class AndroidJSONSerializer
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONSerializer.java:70: error: cannot find symbol
+    private JSONArray serializeToJSONArray(List<? extends Rush> objects, String idName, String versionName, RushColumns rushColumns, Map<Class<? extends Rush>, AnnotationCache> annotationCache, RushStringSanitizer rushStringSanitizer, Callback callback) throws JSONException, IllegalAccessException {
+                                                                                                                                                         ^
+  symbol:   class Rush
+  location: class AndroidJSONSerializer
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONSerializer.java:70: error: cannot find symbol
+    private JSONArray serializeToJSONArray(List<? extends Rush> objects, String idName, String versionName, RushColumns rushColumns, Map<Class<? extends Rush>, AnnotationCache> annotationCache, RushStringSanitizer rushStringSanitizer, Callback callback) throws JSONException, IllegalAccessException {
+                                                                                                                                                                ^
+  symbol:   class AnnotationCache
+  location: class AndroidJSONSerializer
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONSerializer.java:70: error: cannot find symbol
+    private JSONArray serializeToJSONArray(List<? extends Rush> objects, String idName, String versionName, RushColumns rushColumns, Map<Class<? extends Rush>, AnnotationCache> annotationCache, RushStringSanitizer rushStringSanitizer, Callback callback) throws JSONException, IllegalAccessException {
+                                                                                                                                                                                                  ^
+  symbol:   class RushStringSanitizer
+  location: class AndroidJSONSerializer
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONSerializer.java:70: error: cannot find symbol
+    private JSONArray serializeToJSONArray(List<? extends Rush> objects, String idName, String versionName, RushColumns rushColumns, Map<Class<? extends Rush>, AnnotationCache> annotationCache, RushStringSanitizer rushStringSanitizer, Callback callback) throws JSONException, IllegalAccessException {
+                                                                                                                                                                                                                                           ^
+  symbol:   class Callback
+  location: class AndroidJSONSerializer
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONSerializer.java:81: error: cannot find symbol
+    private JSONObject serializeToJSONObject(Rush rush, String idName, String versionName, RushColumns rushColumns, Map<Class<? extends Rush>, AnnotationCache> annotationCache, RushStringSanitizer rushStringSanitizer, Callback callback) throws IllegalAccessException, JSONException {
+                                             ^
+  symbol:   class Rush
+  location: class AndroidJSONSerializer
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONSerializer.java:81: error: cannot find symbol
+    private JSONObject serializeToJSONObject(Rush rush, String idName, String versionName, RushColumns rushColumns, Map<Class<? extends Rush>, AnnotationCache> annotationCache, RushStringSanitizer rushStringSanitizer, Callback callback) throws IllegalAccessException, JSONException {
+                                                                                           ^
+  symbol:   class RushColumns
+  location: class AndroidJSONSerializer
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONSerializer.java:81: error: cannot find symbol
+    private JSONObject serializeToJSONObject(Rush rush, String idName, String versionName, RushColumns rushColumns, Map<Class<? extends Rush>, AnnotationCache> annotationCache, RushStringSanitizer rushStringSanitizer, Callback callback) throws IllegalAccessException, JSONException {
+                                                                                                                                        ^
+  symbol:   class Rush
+  location: class AndroidJSONSerializer
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONSerializer.java:81: error: cannot find symbol
+    private JSONObject serializeToJSONObject(Rush rush, String idName, String versionName, RushColumns rushColumns, Map<Class<? extends Rush>, AnnotationCache> annotationCache, RushStringSanitizer rushStringSanitizer, Callback callback) throws IllegalAccessException, JSONException {
+                                                                                                                                               ^
+  symbol:   class AnnotationCache
+  location: class AndroidJSONSerializer
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONSerializer.java:81: error: cannot find symbol
+    private JSONObject serializeToJSONObject(Rush rush, String idName, String versionName, RushColumns rushColumns, Map<Class<? extends Rush>, AnnotationCache> annotationCache, RushStringSanitizer rushStringSanitizer, Callback callback) throws IllegalAccessException, JSONException {
+                                                                                                                                                                                 ^
+  symbol:   class RushStringSanitizer
+  location: class AndroidJSONSerializer
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONSerializer.java:81: error: cannot find symbol
+    private JSONObject serializeToJSONObject(Rush rush, String idName, String versionName, RushColumns rushColumns, Map<Class<? extends Rush>, AnnotationCache> annotationCache, RushStringSanitizer rushStringSanitizer, Callback callback) throws IllegalAccessException, JSONException {
+                                                                                                                                                                                                                          ^
+  symbol:   class Callback
+  location: class AndroidJSONSerializer
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONDeserializer.java:15: error: package co.uk.rushorm.core does not exist
+import co.uk.rushorm.core.AnnotationCache;
+                         ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONDeserializer.java:16: error: package co.uk.rushorm.core does not exist
+import co.uk.rushorm.core.Rush;
+                         ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONDeserializer.java:17: error: package co.uk.rushorm.core does not exist
+import co.uk.rushorm.core.RushColumns;
+                         ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONDeserializer.java:18: error: package co.uk.rushorm.core does not exist
+import co.uk.rushorm.core.RushConfig;
+                         ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONDeserializer.java:19: error: package co.uk.rushorm.core does not exist
+import co.uk.rushorm.core.RushMetaData;
+                         ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONDeserializer.java:20: error: package co.uk.rushorm.core does not exist
+import co.uk.rushorm.core.RushObjectDeserializer;
+                         ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONDeserializer.java:21: error: package co.uk.rushorm.core.implementation does not exist
+import co.uk.rushorm.core.implementation.ReflectionUtils;
+                                        ^
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONDeserializer.java:26: error: cannot find symbol
+public class AndroidJSONDeserializer implements RushObjectDeserializer {
+                                                ^
+  symbol: class RushObjectDeserializer
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONDeserializer.java:28: error: cannot find symbol
+    private final RushConfig rushConfig;
+                  ^
+  symbol:   class RushConfig
+  location: class AndroidJSONDeserializer
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONDeserializer.java:30: error: cannot find symbol
+    public AndroidJSONDeserializer(RushConfig rushConfig) {
+                                   ^
+  symbol:   class RushConfig
+  location: class AndroidJSONDeserializer
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONDeserializer.java:35: error: cannot find symbol
+    public <T extends Rush> List<T> deserialize(String string, String idName, String versionName, RushColumns rushColumns, Map<Class<? extends Rush>, AnnotationCache> annotationCache, Class<T> clazz, Callback callback) {
+                      ^
+  symbol:   class Rush
+  location: class AndroidJSONDeserializer
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONDeserializer.java:35: error: cannot find symbol
+    public <T extends Rush> List<T> deserialize(String string, String idName, String versionName, RushColumns rushColumns, Map<Class<? extends Rush>, AnnotationCache> annotationCache, Class<T> clazz, Callback callback) {
+                                                                                                  ^
+  symbol:   class RushColumns
+  location: class AndroidJSONDeserializer
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONDeserializer.java:35: error: cannot find symbol
+    public <T extends Rush> List<T> deserialize(String string, String idName, String versionName, RushColumns rushColumns, Map<Class<? extends Rush>, AnnotationCache> annotationCache, Class<T> clazz, Callback callback) {
+                                                                                                                                               ^
+  symbol:   class Rush
+  location: class AndroidJSONDeserializer
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONDeserializer.java:35: error: cannot find symbol
+    public <T extends Rush> List<T> deserialize(String string, String idName, String versionName, RushColumns rushColumns, Map<Class<? extends Rush>, AnnotationCache> annotationCache, Class<T> clazz, Callback callback) {
+                                                                                                                                                      ^
+  symbol:   class AnnotationCache
+  location: class AndroidJSONDeserializer
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONDeserializer.java:35: error: cannot find symbol
+    public <T extends Rush> List<T> deserialize(String string, String idName, String versionName, RushColumns rushColumns, Map<Class<? extends Rush>, AnnotationCache> annotationCache, Class<T> clazz, Callback callback) {
+                                                                                                                                                                                                        ^
+  symbol:   class Callback
+  location: class AndroidJSONDeserializer
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONDeserializer.java:59: error: cannot find symbol
+    private Class<? extends Rush> classFromString(String name, Map<Class<? extends Rush>, AnnotationCache> annotationCache) {
+                                                                                   ^
+  symbol:   class Rush
+  location: class AndroidJSONDeserializer
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONDeserializer.java:59: error: cannot find symbol
+    private Class<? extends Rush> classFromString(String name, Map<Class<? extends Rush>, AnnotationCache> annotationCache) {
+                                                                                          ^
+  symbol:   class AnnotationCache
+  location: class AndroidJSONDeserializer
+/tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONDeserializer.java:59: error: cannot find symbol
+    private Class<? extends Rush> classFromString(String name, Map<Class<? extends Rush>, AnnotationCache> annotationCache) {
+                            ^
+  symbol:   class Rush
+  location: class AndroidJSONDeserializer
+Note: /tmp/rdisk/1499/src/RushOrm-master/RushORM/rushandroid/src/main/java/co/uk/rushorm/android/AndroidJSONDeserializer.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+100 errors
+:rushandroid:compileReleaseJavaWithJavac FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':rushandroid:compileReleaseJavaWithJavac'.
+> Compilation failed; see the compiler error output for details.
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':rushandroid:compileReleaseJavaWithJavac'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:84)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:55)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:62)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:88)
+	at org.gradle.api.internal.tasks.execution.ResolveTaskArtifactStateTaskExecuter.execute(ResolveTaskArtifactStateTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:51)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:54)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.tasks.execution.CatchExceptionTaskExecuter.execute(CatchExceptionTaskExecuter.java:34)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker$1.execute(DefaultTaskGraphExecuter.java:236)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker$1.execute(DefaultTaskGraphExecuter.java:228)
+	at org.gradle.internal.Transformers$4.transform(Transformers.java:169)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:106)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:61)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker.execute(DefaultTaskGraphExecuter.java:228)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker.execute(DefaultTaskGraphExecuter.java:215)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:77)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:58)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:32)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:113)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.access$000(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$1.proceed(DefaultBuildExecuter.java:43)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:30)
+	at org.gradle.initialization.DefaultGradleLauncher$3.execute(DefaultGradleLauncher.java:196)
+	at org.gradle.initialization.DefaultGradleLauncher$3.execute(DefaultGradleLauncher.java:193)
+	at org.gradle.internal.Transformers$4.transform(Transformers.java:169)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:106)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:56)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:193)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:119)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:102)
+	at org.gradle.launcher.exec.GradleBuildController.run(GradleBuildController.java:71)
+	at org.gradle.tooling.internal.provider.ExecuteBuildActionRunner.run(ExecuteBuildActionRunner.java:28)
+	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:41)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.tooling.internal.provider.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:75)
+	at org.gradle.tooling.internal.provider.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:49)
+	at org.gradle.tooling.internal.provider.ServicesSetupBuildActionExecuter.execute(ServicesSetupBuildActionExecuter.java:44)
+	at org.gradle.tooling.internal.provider.ServicesSetupBuildActionExecuter.execute(ServicesSetupBuildActionExecuter.java:29)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:51)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:173)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:244)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:217)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:33)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:174)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:60)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:37)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:33)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:130)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:48)
+Caused by: org.gradle.api.internal.tasks.compile.CompilationFailedException: Compilation failed; see the compiler error output for details.
+	at org.gradle.api.internal.tasks.compile.JdkJavaCompiler.execute(JdkJavaCompiler.java:48)
+	at org.gradle.api.internal.tasks.compile.JdkJavaCompiler.execute(JdkJavaCompiler.java:33)
+	at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.delegateAndHandleErrors(NormalizingJavaCompiler.java:104)
+	at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.execute(NormalizingJavaCompiler.java:53)
+	at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.execute(NormalizingJavaCompiler.java:38)
+	at org.gradle.api.internal.tasks.compile.CleaningJavaCompilerSupport.execute(CleaningJavaCompilerSupport.java:35)
+	at org.gradle.api.internal.tasks.compile.CleaningJavaCompilerSupport.execute(CleaningJavaCompilerSupport.java:25)
+	at org.gradle.api.internal.tasks.compile.incremental.IncrementalCompilationFinalizer.execute(IncrementalCompilationFinalizer.java:39)
+	at org.gradle.api.internal.tasks.compile.incremental.IncrementalCompilationFinalizer.execute(IncrementalCompilationFinalizer.java:24)
+	at org.gradle.api.tasks.compile.JavaCompile.performCompilation(JavaCompile.java:206)
+	at org.gradle.api.tasks.compile.JavaCompile.compile(JavaCompile.java:164)
+	at com.android.build.gradle.tasks.factory.AndroidJavaCompile.compile(AndroidJavaCompile.java:49)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:73)
+	at org.gradle.api.internal.project.taskfactory.DefaultTaskClassInfoStore$IncrementalTaskAction.doExecute(DefaultTaskClassInfoStore.java:163)
+	at org.gradle.api.internal.project.taskfactory.DefaultTaskClassInfoStore$StandardTaskAction.execute(DefaultTaskClassInfoStore.java:134)
+	at org.gradle.api.internal.project.taskfactory.DefaultTaskClassInfoStore$StandardTaskAction.execute(DefaultTaskClassInfoStore.java:123)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:95)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:76)
+	... 62 more
+
+
+BUILD FAILED
+
+Total time: 7.865 secs
+
+2018-05-11 14:04:27,342 ERROR FullProcessService - Project build has not produced APK file
+2018-05-11 14:04:27,351 ERROR FullProcessService - Could not find generated or existed APK file

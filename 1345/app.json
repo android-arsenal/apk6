@@ -1,0 +1,29 @@
+{
+  "meta" : {
+    "packageName" : "com.andrewreitz.spock.test",
+    "label" : "Spock Tests",
+    "icon" : null,
+    "versionName" : null,
+    "versionCode" : null,
+    "installLocation" : null,
+    "minSdkVersion" : "8",
+    "targetSdkVersion" : "25",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : null,
+  "dexClasses" : 7259,
+  "locales" : [ "" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" package=\"com.andrewreitz.spock.test\" platformBuildVersionCode=\"25\" platformBuildVersionName=\"7.1.1\">\n\t<uses-sdk android:minSdkVersion=\"8\" android:targetSdkVersion=\"25\" />\n\t<instrumentation android:label=\"Tests for com.andrewreitz.spock.test\" android:name=\"android.support.test.runner.AndroidJUnitRunner\" android:targetPackage=\"com.andrewreitz.spock.test\" android:handleProfiling=\"false\" android:functionalTest=\"false\" />\n\t<application android:label=\"Spock Tests\" android:debuggable=\"true\" android:allowBackup=\"true\">\n\t\t<activity android:label=\"TestActivity\" android:name=\"com.andrewreitz.spock.android.SimpleTestActivity\" />\n\t\t<activity android:label=\"TestActivity\" android:name=\"com.andrewreitz.spock.android.ArgumentsTestActivity\" />\n\t\t<uses-library android:name=\"android.test.runner\" />\n\t</application>\n</manifest>\n",
+  "fileSize" : 3579616,
+  "crc32" : 1430165758,
+  "sha256" : "a1d74045ef5638db35b15c0401048160c4f523a41b4cbaf9ec820c34ea486c89",
+  "buildTime" : 1497642848000
+}

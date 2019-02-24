@@ -1,0 +1,97 @@
+2018-05-21 02:41:15,219 INFO  DownloadService - Downloading "https://github.com/ravidsrk/AndroidGradleStarter/archive/master.zip", attempt 3
+2018-05-21 02:41:15,614 INFO  DownloadService - Downloaded https://github.com/ravidsrk/AndroidGradleStarter/archive/master.zip, attempt 3
+2018-05-21 02:41:15,614 INFO  DownloadService - Size of file "/tmp/rdisk/1258/master.zip": 164 KB
+2018-05-21 02:41:15,614 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-05-21 02:41:15,614 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/1258/master.zip: true
+2018-05-21 02:41:15,615 DEBUG ZipUtil - Extracting '/tmp/rdisk/1258/master.zip' into '/tmp/rdisk/1258/src'.
+2018-05-21 02:41:15,622 INFO  FullProcessService - Size of directory with sources: 186 KB
+2018-05-21 02:41:15,623 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1258/src]
+2018-05-21 02:41:15,629 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1258/src/.git/
+
+2018-05-21 02:41:15,631 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1258/src/AndroidGradleStarter-master/gradlew
+2018-05-21 02:41:15,633 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1258/src/AndroidGradleStarter-master/SampleApp/build.gradle /tmp/rdisk/1258/src/AndroidGradleStarter-master/build.gradle
+2018-05-21 02:41:15,635 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1258/src/AndroidGradleStarter-master/settings.gradle /tmp/rdisk/1258/src/AndroidGradleStarter-master/build.gradle /tmp/rdisk/1258/src/AndroidGradleStarter-master/SampleApp/build.gradle
+2018-05-21 02:41:15,635 INFO  ProjectBuildService - Remote scripts: none
+2018-05-21 02:41:15,635 INFO  ProjectFixService - Fixing project...
+2018-05-21 02:41:15,640 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1258/src/AndroidGradleStarter-master/SampleApp/local.properties
+2018-05-21 02:41:15,641 INFO  ProjectFixService - Build info for "/tmp/rdisk/1258/src/AndroidGradleStarter-master/SampleApp/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=8,targetSdkVersion=21]
+2018-05-21 02:41:15,641 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1258/src/AndroidGradleStarter-master/local.properties
+2018-05-21 02:41:15,642 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-05-21 02:41:15,642 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-05-21 02:41:15,642 INFO  ProjectFixService - Build info for "/tmp/rdisk/1258/src/AndroidGradleStarter-master/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=8,targetSdkVersion=21]
+2018-05-21 02:41:15,643 INFO  ProjectFixService - Project was maybe fixed
+2018-05-21 02:41:15,643 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-21 02:41:15,643 INFO  SysUtils - Execute command: [/tmp/rdisk/1258/src/AndroidGradleStarter-master/gradlew, -b, /tmp/rdisk/1258/src/AndroidGradleStarter-master/SampleApp/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-21 02:41:28,497 INFO  ProjectTaskService - Detected possible tasks: 56
+2018-05-21 02:41:28,498 INFO  ProjectTaskService - Excluded tasks (11): lintDebug deviceCheck lint uninstallRelease connectedCheck uninstallAll check connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-05-21 02:41:28,498 INFO  SysUtils - Execute command: [/tmp/rdisk/1258/src/AndroidGradleStarter-master/gradlew, -b, /tmp/rdisk/1258/src/AndroidGradleStarter-master/SampleApp/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, connectedCheck, -x, uninstallAll, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-05-21 02:41:52,292 INFO  SysUtils - Configuration on demand is an incubating feature.
+Support library repository outdated. Downloading update...
+:SampleApp:preBuild
+:SampleApp:compileDebugNdk
+:SampleApp:preDebugBuild
+:SampleApp:checkDebugManifest
+:SampleApp:preReleaseBuild
+:SampleApp:prepareComAndroidSupportAppcompatV72103Library
+:SampleApp:prepareComAndroidSupportSupportV42103Library
+:SampleApp:prepareDebugDependencies
+:SampleApp:compileDebugAidl
+:SampleApp:compileDebugRenderscript
+:SampleApp:generateDebugBuildConfig
+:SampleApp:generateDebugAssets UP-TO-DATE
+:SampleApp:mergeDebugAssets
+:SampleApp:generateDebugResValues
+:SampleApp:generateDebugResources
+:SampleApp:mergeDebugResources/tmp/rdisk/1258/src/AndroidGradleStarter-master/SampleApp/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-xhdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/1258/src/AndroidGradleStarter-master/SampleApp/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_spinner_mtrl_am_alpha.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/1258/src/AndroidGradleStarter-master/SampleApp/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-mdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/1258/src/AndroidGradleStarter-master/SampleApp/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_ab_share_pack_holo_light.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/1258/src/AndroidGradleStarter-master/SampleApp/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/1258/src/AndroidGradleStarter-master/SampleApp/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-xhdpi/abc_ab_share_pack_holo_light.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+:SampleApp:processDebugManifest
+:SampleApp:processDebugResources
+:SampleApp:generateDebugSources
+:SampleApp:compileDebugJava
+:SampleApp:preDexDebug
+:SampleApp:dexDebug
+:SampleApp:processDebugJavaRes UP-TO-DATE
+:SampleApp:validateDebugSigning
+:SampleApp:packageDebug
+:SampleApp:zipalignDebug
+:SampleApp:assembleDebug
+:SampleApp:checkReleaseManifest
+:SampleApp:prepareReleaseDependencies
+:SampleApp:compileReleaseAidl
+:SampleApp:compileReleaseRenderscript
+:SampleApp:generateReleaseBuildConfig
+:SampleApp:generateReleaseAssets UP-TO-DATE
+:SampleApp:mergeReleaseAssets
+:SampleApp:generateReleaseResValues
+:SampleApp:generateReleaseResources
+:SampleApp:mergeReleaseResources/tmp/rdisk/1258/src/AndroidGradleStarter-master/SampleApp/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-xhdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/1258/src/AndroidGradleStarter-master/SampleApp/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_spinner_mtrl_am_alpha.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/1258/src/AndroidGradleStarter-master/SampleApp/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-mdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/1258/src/AndroidGradleStarter-master/SampleApp/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_ab_share_pack_holo_light.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/1258/src/AndroidGradleStarter-master/SampleApp/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/1258/src/AndroidGradleStarter-master/SampleApp/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-xhdpi/abc_ab_share_pack_holo_light.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+:SampleApp:processReleaseManifest
+:SampleApp:processReleaseResources
+:SampleApp:generateReleaseSources
+:SampleApp:compileReleaseJava
+:SampleApp:lintVitalRelease
+:SampleApp:compileReleaseNdk
+:SampleApp:preDexRelease
+:SampleApp:dexRelease
+:SampleApp:processReleaseJavaRes UP-TO-DATE
+:SampleApp:packageRelease
+:SampleApp:assembleRelease
+:SampleApp:assemble
+:SampleApp:build
+
+BUILD SUCCESSFUL
+
+Total time: 23.323 secs
+
+2018-05-21 02:41:52,325 INFO  FullProcessService - Found APK file: /tmp/rdisk/1258/src/AndroidGradleStarter-master/SampleApp/build/outputs/apk/SampleApp-release-unsigned.apk

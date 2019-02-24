@@ -1,0 +1,21 @@
+2018-04-06 19:28:33,297 INFO  DownloadService - Downloading "https://github.com/sschendel/SyncManagerAndroid/archive/master.zip", attempt 3
+2018-04-06 19:29:33,909 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-06 19:29:34,689 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-06 19:29:34,689 INFO  DownloadService - Downloading "https://github.com/sschendel/SyncManagerAndroid/archive/master.zip", attempt 3
+2018-04-06 19:30:35,881 DEBUG FullProcessService - Repository https://github.com/sschendel/SyncManagerAndroid available: true
+2018-04-06 19:30:35,881 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-06 19:30:35,881 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/sschendel/SyncManagerAndroid, /tmp/rdisk/1353/src]
+2018-04-06 19:30:37,404 INFO  SysUtils - 
+2018-04-06 19:30:37,416 INFO  GitService - Deleted "/tmp/rdisk/1353/src/.git": true
+2018-04-06 19:30:37,417 INFO  FullProcessService - Size of directory with sources: 242 KB
+2018-04-06 19:30:37,418 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1353/src]
+2018-04-06 19:30:37,422 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1353/src/.git/
+
+2018-04-06 19:30:37,424 INFO  ProjectBuildService - Gradle wrapper(s): none
+2018-04-06 19:30:37,424 ERROR ProjectBuildService - Could not detect Gradle wrapper. Default Gradle installation will be used
+2018-04-06 19:30:37,426 INFO  ProjectBuildService - Build script(s): none
+2018-04-06 19:30:37,427 INFO  ProjectBuildService - All script(s): none
+2018-04-06 19:30:37,427 INFO  ProjectBuildService - Remote scripts: none
+2018-04-06 19:30:37,427 ERROR FullProcessService - Project is not correct Gradle project
+2018-04-06 19:30:37,427 ERROR FullProcessService - Project build has not produced APK file
+2018-04-06 19:30:37,429 ERROR FullProcessService - Could not find generated or existed APK file

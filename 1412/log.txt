@@ -1,0 +1,607 @@
+2018-04-12 06:37:10,424 INFO  DownloadService - Downloading "https://github.com/orhanobut/wasp/archive/master.zip", attempt 3
+2018-04-12 06:37:10,831 INFO  DownloadService - Downloaded https://github.com/orhanobut/wasp/archive/master.zip, attempt 3
+2018-04-12 06:37:10,831 INFO  DownloadService - Size of file "/tmp/rdisk/1412/master.zip": 188 KB
+2018-04-12 06:37:10,831 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-04-12 06:37:10,831 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/1412/master.zip: true
+2018-04-12 06:37:10,832 DEBUG ZipUtil - Extracting '/tmp/rdisk/1412/master.zip' into '/tmp/rdisk/1412/src'.
+2018-04-12 06:37:10,846 INFO  FullProcessService - Size of directory with sources: 310 KB
+2018-04-12 06:37:10,846 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1412/src]
+2018-04-12 06:37:10,851 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1412/src/.git/
+
+2018-04-12 06:37:10,854 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1412/src/wasp-master/gradlew
+2018-04-12 06:37:10,857 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1412/src/wasp-master/wasp/build.gradle /tmp/rdisk/1412/src/wasp-master/build.gradle /tmp/rdisk/1412/src/wasp-master/mockserver/build.gradle /tmp/rdisk/1412/src/wasp-master/sample/build.gradle
+2018-04-12 06:37:10,860 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1412/src/wasp-master/wasp/build.gradle /tmp/rdisk/1412/src/wasp-master/settings.gradle /tmp/rdisk/1412/src/wasp-master/sample/build.gradle /tmp/rdisk/1412/src/wasp-master/mockserver/build.gradle /tmp/rdisk/1412/src/wasp-master/build.gradle
+2018-04-12 06:37:10,860 INFO  ProjectBuildService - Remote scripts: none
+2018-04-12 06:37:10,860 INFO  ProjectFixService - Fixing project...
+2018-04-12 06:37:10,867 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1412/src/wasp-master/wasp/local.properties
+2018-04-12 06:37:10,867 INFO  ProjectFixService - Build info for "/tmp/rdisk/1412/src/wasp-master/wasp/build.gradle": [buildToolsVersion=21.1.1,compileSdkVersion=21,minSdkVersion=10,targetSdkVersion=21]
+2018-04-12 06:37:10,867 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1412/src/wasp-master/local.properties
+2018-04-12 06:37:10,868 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-12 06:37:10,868 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-12 06:37:10,868 INFO  ProjectFixService - Build info for "/tmp/rdisk/1412/src/wasp-master/build.gradle": [buildToolsVersion=21.1.1,compileSdkVersion=21,minSdkVersion=10,targetSdkVersion=21]
+2018-04-12 06:37:10,869 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1412/src/wasp-master/mockserver/local.properties
+2018-04-12 06:37:10,869 INFO  ProjectFixService - Build info for "/tmp/rdisk/1412/src/wasp-master/mockserver/build.gradle": [buildToolsVersion=21.1.1,compileSdkVersion=21,minSdkVersion=10,targetSdkVersion=21]
+2018-04-12 06:37:10,870 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1412/src/wasp-master/sample/local.properties
+2018-04-12 06:37:10,870 INFO  ProjectFixService - Build info for "/tmp/rdisk/1412/src/wasp-master/sample/build.gradle": [buildToolsVersion=21.1.1,compileSdkVersion=21,minSdkVersion=10,targetSdkVersion=21]
+2018-04-12 06:37:10,870 INFO  ProjectFixService - Project was maybe fixed
+2018-04-12 06:37:10,870 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-12 06:37:10,871 INFO  SysUtils - Execute command: [/tmp/rdisk/1412/src/wasp-master/gradlew, -b, /tmp/rdisk/1412/src/wasp-master/wasp/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-12 06:37:21,453 INFO  ProjectTaskService - Detected possible tasks: 61
+2018-04-12 06:37:21,453 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest lintRelease testDebug connectedAndroidTestDebug
+2018-04-12 06:37:21,453 INFO  SysUtils - Execute command: [/tmp/rdisk/1412/src/wasp-master/gradlew, -b, /tmp/rdisk/1412/src/wasp-master/wasp/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, lintRelease, -x, testDebug, -x, connectedAndroidTestDebug, build]
+2018-04-12 06:37:32,670 INFO  SysUtils - Configuration on demand is an incubating feature.
+:wasp:compileLint
+:wasp:copyDebugLint UP-TO-DATE
+:wasp:mergeDebugProguardFiles
+:wasp:preBuild UP-TO-DATE
+:wasp:preDebugBuild UP-TO-DATE
+:wasp:checkDebugManifest
+:wasp:prepareDebugDependencies
+:wasp:compileDebugAidl
+:wasp:compileDebugRenderscript
+:wasp:generateDebugBuildConfig
+:wasp:generateDebugAssets UP-TO-DATE
+:wasp:mergeDebugAssets
+:wasp:generateDebugResValues
+:wasp:generateDebugResources
+:wasp:packageDebugResources
+:wasp:processDebugManifest
+:wasp:processDebugResources
+:wasp:generateDebugSources
+:wasp:processDebugJavaRes UP-TO-DATE
+:wasp:compileDebugJavaNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:wasp:packageDebugJar
+:wasp:compileDebugNdk UP-TO-DATE
+:wasp:packageDebugJniLibs UP-TO-DATE
+:wasp:packageDebugLocalJar UP-TO-DATE
+:wasp:packageDebugRenderscript UP-TO-DATE
+:wasp:bundleDebug
+:wasp:compileDebugSources
+:wasp:assembleDebug
+:wasp:copyReleaseLint UP-TO-DATE
+:wasp:mergeReleaseProguardFiles
+:wasp:preReleaseBuild UP-TO-DATE
+:wasp:checkReleaseManifest
+:wasp:prepareReleaseDependencies
+:wasp:compileReleaseAidl
+:wasp:compileReleaseRenderscript
+:wasp:generateReleaseBuildConfig
+:wasp:generateReleaseAssets UP-TO-DATE
+:wasp:mergeReleaseAssets
+:wasp:generateReleaseResValues
+:wasp:generateReleaseResources
+:wasp:packageReleaseResources
+:wasp:processReleaseManifest
+:wasp:processReleaseResources
+:wasp:generateReleaseSources
+:wasp:processReleaseJavaRes UP-TO-DATE
+:wasp:compileReleaseJavaNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:wasp:packageReleaseJar
+:wasp:compileReleaseNdk UP-TO-DATE
+:wasp:packageReleaseJniLibs UP-TO-DATE
+:wasp:packageReleaseLocalJar UP-TO-DATE
+:wasp:packageReleaseRenderscript UP-TO-DATE
+:wasp:bundleRelease
+:wasp:compileReleaseSources
+:wasp:assembleRelease
+:wasp:javadoc/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/WaspOkHttpStack.java:4: error: package com.squareup.okhttp does not exist
+import com.squareup.okhttp.OkHttpClient;
+                          ^
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/utils/WaspHttpStack.java:3: error: package com.android.volley.toolbox does not exist
+import com.android.volley.toolbox.HttpStack;
+                                 ^
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/utils/WaspHttpStack.java:10: error: cannot find symbol
+public interface WaspHttpStack<T extends HttpStack> {
+                                         ^
+  symbol: class HttpStack
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/OkHttpStack.java:3: error: package com.android.volley does not exist
+import com.android.volley.AuthFailureError;
+                         ^
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/OkHttpStack.java:4: error: package com.android.volley does not exist
+import com.android.volley.Request;
+                         ^
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/OkHttpStack.java:5: error: package com.android.volley.toolbox does not exist
+import com.android.volley.toolbox.HttpStack;
+                                 ^
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/OkHttpStack.java:6: error: package com.squareup.okhttp does not exist
+import com.squareup.okhttp.Call;
+                          ^
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/OkHttpStack.java:7: error: package com.squareup.okhttp does not exist
+import com.squareup.okhttp.Headers;
+                          ^
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/OkHttpStack.java:8: error: package com.squareup.okhttp does not exist
+import com.squareup.okhttp.MediaType;
+                          ^
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/OkHttpStack.java:9: error: package com.squareup.okhttp does not exist
+import com.squareup.okhttp.OkHttpClient;
+                          ^
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/OkHttpStack.java:10: error: package com.squareup.okhttp does not exist
+import com.squareup.okhttp.Protocol;
+                          ^
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/OkHttpStack.java:11: error: package com.squareup.okhttp does not exist
+import com.squareup.okhttp.RequestBody;
+                          ^
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/OkHttpStack.java:12: error: package com.squareup.okhttp does not exist
+import com.squareup.okhttp.Response;
+                          ^
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/OkHttpStack.java:13: error: package com.squareup.okhttp does not exist
+import com.squareup.okhttp.ResponseBody;
+                          ^
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/OkHttpStack.java:31: error: cannot find symbol
+class OkHttpStack implements HttpStack {
+                             ^
+  symbol: class HttpStack
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/WaspOkHttpStack.java:23: error: cannot find symbol
+  public WaspOkHttpStack(OkHttpClient okHttpClient) {
+                         ^
+  symbol:   class OkHttpClient
+  location: class WaspOkHttpStack
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/OkHttpStack.java:33: error: cannot find symbol
+  private final OkHttpClient client;
+                ^
+  symbol:   class OkHttpClient
+  location: class OkHttpStack
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/OkHttpStack.java:35: error: cannot find symbol
+  OkHttpStack(OkHttpClient client) {
+              ^
+  symbol:   class OkHttpClient
+  location: class OkHttpStack
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/OkHttpStack.java:39: error: cannot find symbol
+  OkHttpClient getClient() {
+  ^
+  symbol:   class OkHttpClient
+  location: class OkHttpStack
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/OkHttpStack.java:44: error: cannot find symbol
+  public HttpResponse performRequest(Request<?> request, Map<String, String> additionalHeaders)
+                                     ^
+  symbol:   class Request
+  location: class OkHttpStack
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/OkHttpStack.java:45: error: cannot find symbol
+      throws IOException, AuthFailureError {
+                          ^
+  symbol:   class AuthFailureError
+  location: class OkHttpStack
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/OkHttpStack.java:102: error: package com.squareup.okhttp.Request does not exist
+      com.squareup.okhttp.Request.Builder builder, Request<?> request)
+                                 ^
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/OkHttpStack.java:102: error: cannot find symbol
+      com.squareup.okhttp.Request.Builder builder, Request<?> request)
+                                                   ^
+  symbol:   class Request
+  location: class OkHttpStack
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/OkHttpStack.java:103: error: cannot find symbol
+      throws IOException, AuthFailureError {
+                          ^
+  symbol:   class AuthFailureError
+  location: class OkHttpStack
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/OkHttpStack.java:143: error: cannot find symbol
+  private static ProtocolVersion parseProtocol(final Protocol protocol) {
+                                                     ^
+  symbol:   class Protocol
+  location: class OkHttpStack
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/OkHttpStack.java:158: error: cannot find symbol
+  private static RequestBody createRequestBody(Request request) throws AuthFailureError {
+                                               ^
+  symbol:   class Request
+  location: class OkHttpStack
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/OkHttpStack.java:158: error: cannot find symbol
+  private static RequestBody createRequestBody(Request request) throws AuthFailureError {
+                 ^
+  symbol:   class RequestBody
+  location: class OkHttpStack
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/OkHttpStack.java:158: error: cannot find symbol
+  private static RequestBody createRequestBody(Request request) throws AuthFailureError {
+                                                                       ^
+  symbol:   class AuthFailureError
+  location: class OkHttpStack
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/utils/WaspRetryPolicy.java:3: error: package com.android.volley does not exist
+import com.android.volley.RetryPolicy;
+                         ^
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/utils/WaspRetryPolicy.java:4: error: package com.android.volley does not exist
+import com.android.volley.VolleyError;
+                         ^
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/utils/WaspRetryPolicy.java:6: error: cannot find symbol
+public class WaspRetryPolicy implements RetryPolicy {
+                                        ^
+  symbol: class RetryPolicy
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/utils/WaspRetryPolicy.java:92: error: cannot find symbol
+  public void retry(VolleyError error) throws VolleyError {
+                    ^
+  symbol:   class VolleyError
+  location: class WaspRetryPolicy
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/utils/WaspRetryPolicy.java:92: error: cannot find symbol
+  public void retry(VolleyError error) throws VolleyError {
+                                              ^
+  symbol:   class VolleyError
+  location: class WaspRetryPolicy
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/MethodInfo.java:34: error: package rx does not exist
+import rx.Observable;
+         ^
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/VolleyNetworkStack.java:5: error: package com.android.volley does not exist
+import com.android.volley.AuthFailureError;
+                         ^
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/VolleyNetworkStack.java:6: error: package com.android.volley does not exist
+import com.android.volley.NetworkResponse;
+                         ^
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/VolleyNetworkStack.java:7: error: package com.android.volley does not exist
+import com.android.volley.ParseError;
+                         ^
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/VolleyNetworkStack.java:8: error: package com.android.volley does not exist
+import com.android.volley.Request;
+                         ^
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/VolleyNetworkStack.java:9: error: package com.android.volley does not exist
+import com.android.volley.RequestQueue;
+                         ^
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/VolleyNetworkStack.java:10: error: package com.android.volley does not exist
+import com.android.volley.VolleyError;
+                         ^
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/VolleyNetworkStack.java:11: error: package com.android.volley.toolbox does not exist
+import com.android.volley.toolbox.HttpHeaderParser;
+                                 ^
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/VolleyNetworkStack.java:12: error: package com.android.volley.toolbox does not exist
+import com.android.volley.toolbox.RequestFuture;
+                                 ^
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/VolleyNetworkStack.java:13: error: package com.android.volley.toolbox does not exist
+import com.android.volley.toolbox.Volley;
+                                 ^
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/VolleyNetworkStack.java:32: error: cannot find symbol
+  private final RequestQueue requestQueue;
+                ^
+  symbol:   class RequestQueue
+  location: class VolleyNetworkStack
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/VolleyNetworkStack.java:34: error: cannot find symbol
+  private VolleyNetworkStack(RequestQueue requestQueue) {
+                             ^
+  symbol:   class RequestQueue
+  location: class VolleyNetworkStack
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/VolleyNetworkStack.java:46: error: cannot find symbol
+  static VolleyNetworkStack newInstance(RequestQueue requestQueue) {
+                                        ^
+  symbol:   class RequestQueue
+  location: class VolleyNetworkStack
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/VolleyNetworkStack.java:50: error: cannot find symbol
+  synchronized RequestQueue getRequestQueue() {
+               ^
+  symbol:   class RequestQueue
+  location: class VolleyNetworkStack
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/VolleyNetworkStack.java:113: error: cannot find symbol
+  private <T> void addToQueue(Request<T> request) {
+                              ^
+  symbol:   class Request
+  location: class VolleyNetworkStack
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/VolleyNetworkStack.java:128: error: package com.android.volley.Response does not exist
+      com.android.volley.Response.Listener<Response>,
+                                 ^
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/VolleyNetworkStack.java:129: error: package com.android.volley.Response does not exist
+      com.android.volley.Response.ErrorListener {
+                                 ^
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/VolleyNetworkStack.java:146: error: cannot find symbol
+    public void onErrorResponse(VolleyError error) {
+                                ^
+  symbol:   class VolleyError
+  location: class VolleyListener
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/VolleyNetworkStack.java:175: error: cannot find symbol
+  private static class VolleyRequest extends Request<Response> {
+                                             ^
+  symbol:   class Request
+  location: class VolleyNetworkStack
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/VolleyNetworkStack.java:188: error: package com.android.volley.Response does not exist
+                         final com.android.volley.Response.ErrorListener listener) {
+                                                          ^
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/VolleyNetworkStack.java:197: error: cannot find symbol
+    public Map<String, String> getHeaders() throws AuthFailureError {
+                                                   ^
+  symbol:   class AuthFailureError
+  location: class VolleyRequest
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/VolleyNetworkStack.java:208: error: cannot find symbol
+    protected com.android.volley.Response parseNetworkResponse(NetworkResponse response) {
+                                                               ^
+  symbol:   class NetworkResponse
+  location: class VolleyRequest
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/VolleyNetworkStack.java:208: error: package com.android.volley does not exist
+    protected com.android.volley.Response parseNetworkResponse(NetworkResponse response) {
+                                ^
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/VolleyNetworkStack.java:243: error: cannot find symbol
+    protected Map<String, String> getParams() throws AuthFailureError {
+                                                     ^
+  symbol:   class AuthFailureError
+  location: class VolleyRequest
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/VolleyNetworkStack.java:248: error: cannot find symbol
+    public byte[] getBody() throws AuthFailureError {
+                                   ^
+  symbol:   class AuthFailureError
+  location: class VolleyRequest
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/VolleyImageNetworkHandler.java:6: error: package com.android.volley does not exist
+import com.android.volley.NetworkResponse;
+                         ^
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/VolleyImageNetworkHandler.java:7: error: package com.android.volley does not exist
+import com.android.volley.Request;
+                         ^
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/VolleyImageNetworkHandler.java:8: error: package com.android.volley does not exist
+import com.android.volley.RequestQueue;
+                         ^
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/VolleyImageNetworkHandler.java:9: error: package com.android.volley does not exist
+import com.android.volley.VolleyError;
+                         ^
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/VolleyImageNetworkHandler.java:10: error: package com.android.volley.toolbox does not exist
+import com.android.volley.toolbox.HttpHeaderParser;
+                                 ^
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/VolleyImageNetworkHandler.java:11: error: package com.android.volley.toolbox does not exist
+import com.android.volley.toolbox.ImageRequest;
+                                 ^
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/VolleyImageNetworkHandler.java:12: error: package com.android.volley.toolbox does not exist
+import com.android.volley.toolbox.Volley;
+                                 ^
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/VolleyImageNetworkHandler.java:20: error: cannot find symbol
+  private final RequestQueue requestQueue;
+                ^
+  symbol:   class RequestQueue
+  location: class VolleyImageNetworkHandler
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/NetworkHandler.java:17: error: package rx does not exist
+import rx.Observable;
+         ^
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/NetworkHandler.java:18: error: package rx does not exist
+import rx.Subscriber;
+         ^
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/utils/OkHttpLogInterceptor.java:6: error: package com.squareup.okhttp does not exist
+import com.squareup.okhttp.Headers;
+                          ^
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/utils/OkHttpLogInterceptor.java:7: error: package com.squareup.okhttp does not exist
+import com.squareup.okhttp.Interceptor;
+                          ^
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/utils/OkHttpLogInterceptor.java:8: error: package com.squareup.okhttp does not exist
+import com.squareup.okhttp.Request;
+                          ^
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/utils/OkHttpLogInterceptor.java:9: error: package com.squareup.okhttp does not exist
+import com.squareup.okhttp.RequestBody;
+                          ^
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/utils/OkHttpLogInterceptor.java:10: error: package com.squareup.okhttp does not exist
+import com.squareup.okhttp.Response;
+                          ^
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/utils/OkHttpLogInterceptor.java:14: error: package okio does not exist
+import okio.Buffer;
+           ^
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/utils/OkHttpLogInterceptor.java:21: error: cannot find symbol
+public class OkHttpLogInterceptor implements Interceptor {
+                                             ^
+  symbol: class Interceptor
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/utils/OkHttpLogInterceptor.java:26: error: cannot find symbol
+  public Response intercept(Chain chain) throws IOException {
+                            ^
+  symbol:   class Chain
+  location: class OkHttpLogInterceptor
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/utils/OkHttpLogInterceptor.java:26: error: cannot find symbol
+  public Response intercept(Chain chain) throws IOException {
+         ^
+  symbol:   class Response
+  location: class OkHttpLogInterceptor
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/utils/OkHttpLogInterceptor.java:56: error: cannot find symbol
+  private static void logHeaders(Headers headers) {
+                                 ^
+  symbol:   class Headers
+  location: class OkHttpLogInterceptor
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/utils/MockFactory.java:6: error: package com.google.gson.internal does not exist
+import com.google.gson.internal.UnsafeAllocator;
+                               ^
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/parsers/GsonParser.java:5: error: package com.google.gson does not exist
+import com.google.gson.Gson;
+                      ^
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/parsers/GsonParser.java:13: error: cannot find symbol
+  private final Gson gson;
+                ^
+  symbol:   class Gson
+  location: class GsonParser
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/parsers/GsonParser.java:19: error: cannot find symbol
+  public GsonParser(Gson gson) {
+                    ^
+  symbol:   class Gson
+  location: class GsonParser
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/Response.java:36: warning: no @return
+  public String getUrl() {
+                ^
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/Response.java:43: warning: no @return
+  public int getStatusCode() {
+             ^
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/Response.java:51: warning: no @return
+  public Map<String, String> getHeaders() {
+                             ^
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/Response.java:59: warning: no @return
+  public String getBody() {
+                ^
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/Response.java:67: warning: no @return
+  public int getLength() {
+             ^
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/Response.java:82: warning: no @return
+  public long getNetworkTime() {
+              ^
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/Wasp.java:43: warning: no @return
+  public static Parser getParser() {
+                       ^
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/WaspError.java:25: warning: no @return
+  public String getErrorMessage() {
+                ^
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/WaspError.java:35: warning: no @return
+  public Response getResponse() {
+                  ^
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/WaspError.java:45: warning: no @param for type
+  public Object getBodyAs(Type type) {
+                ^
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/WaspError.java:45: warning: no @return
+  public Object getBodyAs(Type type) {
+                ^
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/utils/WaspHttpStack.java:23: warning: no description for @param
+   * @param hostnameVerifier
+     ^
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/utils/WaspHttpStack.java:32: warning: no description for @param
+   * @param sslSocketFactory
+     ^
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/utils/WaspHttpStack.java:40: warning: no description for @param
+   * @param cookieHandler
+     ^
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/WaspOkHttpStack.java:13: error: reference not found
+ * {@link com.squareup.okhttp.OkHttpClient} as http client
+          ^
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/utils/OkHttpLogInterceptor.java:17: error: reference not found
+ * An {@link com.squareup.okhttp.Interceptor} implementation which logs all info about
+             ^
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/utils/SSLUtils.java:68: warning: no @param for context
+  public static SSLSocketFactory getPinnedCertSslSocketFactory(Context context,
+                                 ^
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/utils/SSLUtils.java:68: warning: no @param for keyStoreRawResId
+  public static SSLSocketFactory getPinnedCertSslSocketFactory(Context context,
+                                 ^
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/utils/SSLUtils.java:68: warning: no @param for keyStorePassword
+  public static SSLSocketFactory getPinnedCertSslSocketFactory(Context context,
+                                 ^
+/tmp/rdisk/1412/src/wasp-master/wasp/src/main/java/com/orhanobut/wasp/utils/StringUtils.java:20: warning: no @return
+  public static String getCacheKey(String url, int maxWidth, int maxHeight) {
+                       ^
+
+2 errors
+100 warnings
+:wasp:javadocJar
+:wasp:sourcesJar
+:wasp:assemble
+:wasp:build
+
+BUILD SUCCESSFUL
+
+Total time: 10.804 secs
+
+2018-04-12 06:37:32,681 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-12 06:37:32,681 INFO  SysUtils - Execute command: [/tmp/rdisk/1412/src/wasp-master/gradlew, -b, /tmp/rdisk/1412/src/wasp-master/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-12 06:37:38,954 INFO  ProjectTaskService - Detected possible tasks: 67
+2018-04-12 06:37:38,955 INFO  ProjectTaskService - Excluded tasks (17): lintDebug mockableAndroidJar deviceCheck lint javadoc deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest lintRelease testDebug connectedAndroidTestDebug
+2018-04-12 06:37:38,955 INFO  SysUtils - Execute command: [/tmp/rdisk/1412/src/wasp-master/gradlew, -b, /tmp/rdisk/1412/src/wasp-master/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, javadoc, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, lintRelease, -x, testDebug, -x, connectedAndroidTestDebug, build]
+2018-04-12 06:37:46,994 INFO  SysUtils - Configuration on demand is an incubating feature.
+:mockserver:compileJava
+:mockserver:processResources UP-TO-DATE
+:mockserver:classes
+:mockserver:jar
+:mockserver:assemble
+:mockserver:build
+:sample:compileJava
+:sample:processResources UP-TO-DATE
+:sample:classes
+:sample:jar
+:sample:assemble
+:sample:build
+:wasp:compileLint
+:wasp:copyDebugLint UP-TO-DATE
+:wasp:mergeDebugProguardFiles UP-TO-DATE
+:wasp:preBuild UP-TO-DATE
+:wasp:preDebugBuild UP-TO-DATE
+:wasp:checkDebugManifest
+:wasp:prepareDebugDependencies
+:wasp:compileDebugAidl UP-TO-DATE
+:wasp:compileDebugRenderscript UP-TO-DATE
+:wasp:generateDebugBuildConfig UP-TO-DATE
+:wasp:generateDebugAssets UP-TO-DATE
+:wasp:mergeDebugAssets UP-TO-DATE
+:wasp:generateDebugResValues UP-TO-DATE
+:wasp:generateDebugResources UP-TO-DATE
+:wasp:packageDebugResources UP-TO-DATE
+:wasp:processDebugManifest UP-TO-DATE
+:wasp:processDebugResources UP-TO-DATE
+:wasp:generateDebugSources UP-TO-DATE
+:wasp:processDebugJavaRes UP-TO-DATE
+:wasp:compileDebugJava UP-TO-DATE
+:wasp:packageDebugJar UP-TO-DATE
+:wasp:compileDebugNdk UP-TO-DATE
+:wasp:packageDebugJniLibs UP-TO-DATE
+:wasp:packageDebugLocalJar UP-TO-DATE
+:wasp:packageDebugRenderscript UP-TO-DATE
+:wasp:bundleDebug UP-TO-DATE
+:wasp:compileDebugSources UP-TO-DATE
+:wasp:assembleDebug UP-TO-DATE
+:wasp:copyReleaseLint UP-TO-DATE
+:wasp:mergeReleaseProguardFiles UP-TO-DATE
+:wasp:preReleaseBuild UP-TO-DATE
+:wasp:checkReleaseManifest
+:wasp:prepareReleaseDependencies
+:wasp:compileReleaseAidl UP-TO-DATE
+:wasp:compileReleaseRenderscript UP-TO-DATE
+:wasp:generateReleaseBuildConfig UP-TO-DATE
+:wasp:generateReleaseAssets UP-TO-DATE
+:wasp:mergeReleaseAssets UP-TO-DATE
+:wasp:generateReleaseResValues UP-TO-DATE
+:wasp:generateReleaseResources UP-TO-DATE
+:wasp:packageReleaseResources UP-TO-DATE
+:wasp:processReleaseManifest UP-TO-DATE
+:wasp:processReleaseResources UP-TO-DATE
+:wasp:generateReleaseSources UP-TO-DATE
+:wasp:processReleaseJavaRes UP-TO-DATE
+:wasp:compileReleaseJava UP-TO-DATE
+:wasp:packageReleaseJar UP-TO-DATE
+:wasp:compileReleaseNdk UP-TO-DATE
+:wasp:packageReleaseJniLibs UP-TO-DATE
+:wasp:packageReleaseLocalJar UP-TO-DATE
+:wasp:packageReleaseRenderscript UP-TO-DATE
+:wasp:bundleRelease UP-TO-DATE
+:wasp:compileReleaseSources UP-TO-DATE
+:wasp:assembleRelease UP-TO-DATE
+:wasp:javadocJar UP-TO-DATE
+:wasp:sourcesJar UP-TO-DATE
+:wasp:assemble UP-TO-DATE
+:wasp:build
+
+BUILD SUCCESSFUL
+
+Total time: 7.576 secs
+
+2018-04-12 06:37:47,004 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-12 06:37:47,005 INFO  SysUtils - Execute command: [/tmp/rdisk/1412/src/wasp-master/gradlew, -b, /tmp/rdisk/1412/src/wasp-master/mockserver/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-12 06:37:53,270 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-12 06:37:53,270 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-12 06:37:53,270 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-12 06:37:53,270 INFO  SysUtils - Execute command: [/tmp/rdisk/1412/src/wasp-master/gradlew, -b, /tmp/rdisk/1412/src/wasp-master/mockserver/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-12 06:37:56,805 INFO  SysUtils - Configuration on demand is an incubating feature.
+:mockserver:compileJava UP-TO-DATE
+:mockserver:processResources UP-TO-DATE
+:mockserver:classes UP-TO-DATE
+:mockserver:jar UP-TO-DATE
+:mockserver:assemble UP-TO-DATE
+:mockserver:compileTestJava UP-TO-DATE
+:mockserver:processTestResources UP-TO-DATE
+:mockserver:testClasses UP-TO-DATE
+:mockserver:test UP-TO-DATE
+:mockserver:check UP-TO-DATE
+:mockserver:build UP-TO-DATE
+
+BUILD SUCCESSFUL
+
+Total time: 3.117 secs
+
+2018-04-12 06:37:56,815 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-12 06:37:56,815 INFO  SysUtils - Execute command: [/tmp/rdisk/1412/src/wasp-master/gradlew, -b, /tmp/rdisk/1412/src/wasp-master/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-12 06:38:03,485 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-12 06:38:03,485 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-12 06:38:03,485 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-12 06:38:03,486 INFO  SysUtils - Execute command: [/tmp/rdisk/1412/src/wasp-master/gradlew, -b, /tmp/rdisk/1412/src/wasp-master/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-12 06:38:06,986 INFO  SysUtils - Configuration on demand is an incubating feature.
+:sample:compileJava UP-TO-DATE
+:sample:processResources UP-TO-DATE
+:sample:classes UP-TO-DATE
+:sample:jar UP-TO-DATE
+:sample:assemble UP-TO-DATE
+:sample:compileTestJava UP-TO-DATE
+:sample:processTestResources UP-TO-DATE
+:sample:testClasses UP-TO-DATE
+:sample:test UP-TO-DATE
+:sample:check UP-TO-DATE
+:sample:build UP-TO-DATE
+
+BUILD SUCCESSFUL
+
+Total time: 3.083 secs
+
+2018-04-12 06:38:06,997 ERROR FullProcessService - Project build has not produced APK file
+2018-04-12 06:38:07,006 ERROR FullProcessService - Could not find generated or existed APK file

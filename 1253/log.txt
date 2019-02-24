@@ -1,0 +1,170 @@
+2018-05-21 02:42:18,900 INFO  DownloadService - Downloading "https://github.com/nispok/slidingtabs/archive/master.zip", attempt 3
+2018-05-21 02:42:19,409 INFO  DownloadService - Downloaded https://github.com/nispok/slidingtabs/archive/master.zip, attempt 3
+2018-05-21 02:42:19,409 INFO  DownloadService - Size of file "/tmp/rdisk/1253/master.zip": 513 KB
+2018-05-21 02:42:19,409 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-05-21 02:42:19,410 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/1253/master.zip: true
+2018-05-21 02:42:19,410 DEBUG ZipUtil - Extracting '/tmp/rdisk/1253/master.zip' into '/tmp/rdisk/1253/src'.
+2018-05-21 02:42:19,419 INFO  FullProcessService - Size of directory with sources: 593 KB
+2018-05-21 02:42:19,419 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1253/src]
+2018-05-21 02:42:19,424 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1253/src/.git/
+
+2018-05-21 02:42:19,425 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1253/src/slidingtabs-master/gradlew
+2018-05-21 02:42:19,427 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1253/src/slidingtabs-master/lib/build.gradle /tmp/rdisk/1253/src/slidingtabs-master/build.gradle
+2018-05-21 02:42:19,428 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1253/src/slidingtabs-master/settings.gradle /tmp/rdisk/1253/src/slidingtabs-master/lib/maven-push.gradle /tmp/rdisk/1253/src/slidingtabs-master/lib/build.gradle /tmp/rdisk/1253/src/slidingtabs-master/build.gradle
+2018-05-21 02:42:19,429 INFO  ProjectBuildService - Remote scripts: none
+2018-05-21 02:42:19,429 INFO  ProjectFixService - Fixing project...
+2018-05-21 02:42:19,434 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1253/src/slidingtabs-master/lib/local.properties
+2018-05-21 02:42:19,434 INFO  ProjectFixService - Build info for "/tmp/rdisk/1253/src/slidingtabs-master/lib/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=8,targetSdkVersion=21]
+2018-05-21 02:42:19,434 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1253/src/slidingtabs-master/local.properties
+2018-05-21 02:42:19,435 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-05-21 02:42:19,435 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-05-21 02:42:19,437 INFO  ProjectFixService - Build info for "/tmp/rdisk/1253/src/slidingtabs-master/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=8,targetSdkVersion=21]
+2018-05-21 02:42:19,437 INFO  ProjectFixService - Project was maybe fixed
+2018-05-21 02:42:19,437 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-21 02:42:19,437 INFO  SysUtils - Execute command: [/tmp/rdisk/1253/src/slidingtabs-master/gradlew, -b, /tmp/rdisk/1253/src/slidingtabs-master/lib/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-21 02:42:29,906 INFO  ProjectTaskService - Detected possible tasks: 56
+2018-05-21 02:42:29,906 INFO  ProjectTaskService - Excluded tasks (8): lintDebug deviceCheck lint connectedCheck uninstallAll check connectedAndroidTest lintRelease
+2018-05-21 02:42:29,906 INFO  SysUtils - Execute command: [/tmp/rdisk/1253/src/slidingtabs-master/gradlew, -b, /tmp/rdisk/1253/src/slidingtabs-master/lib/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, deviceCheck, -x, lint, -x, connectedCheck, -x, uninstallAll, -x, check, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-05-21 02:42:37,641 INFO  SysUtils - Configuration on demand is an incubating feature.
+:lib:androidSourcesJar
+:lib:compileLint
+:lib:copyDebugLint UP-TO-DATE
+:lib:preBuild
+:lib:preDebugBuild
+:lib:checkDebugManifest
+:lib:preDebugTestBuild
+:lib:preReleaseBuild
+:lib:prepareComAndroidSupportSupportV42103Library
+:lib:prepareDebugDependencies
+:lib:compileDebugAidl
+:lib:compileDebugRenderscript
+:lib:generateDebugBuildConfig
+:lib:generateDebugAssets UP-TO-DATE
+:lib:mergeDebugAssets
+:lib:generateDebugResValues
+:lib:generateDebugResources
+:lib:mergeDebugResources
+:lib:processDebugManifest
+:lib:processDebugResources
+:lib:generateDebugSources
+:lib:compileDebugJava
+:lib:extractDebugAnnotations
+:lib:mergeDebugProguardFiles
+:lib:processDebugJavaRes UP-TO-DATE
+:lib:packageDebugJar
+:lib:compileDebugNdk
+:lib:packageDebugJniLibs UP-TO-DATE
+:lib:packageDebugLocalJar UP-TO-DATE
+:lib:packageDebugRenderscript UP-TO-DATE
+:lib:packageDebugResources
+:lib:bundleDebug
+:lib:assembleDebug
+:lib:copyReleaseLint UP-TO-DATE
+:lib:checkReleaseManifest
+:lib:prepareReleaseDependencies
+:lib:compileReleaseAidl
+:lib:compileReleaseRenderscript
+:lib:generateReleaseBuildConfig
+:lib:generateReleaseAssets UP-TO-DATE
+:lib:mergeReleaseAssets
+:lib:generateReleaseResValues
+:lib:generateReleaseResources
+:lib:mergeReleaseResources
+:lib:processReleaseManifest
+:lib:processReleaseResources
+:lib:generateReleaseSources
+:lib:compileReleaseJava
+:lib:extractReleaseAnnotations
+:lib:mergeReleaseProguardFiles
+:lib:processReleaseJavaRes UP-TO-DATE
+:lib:packageReleaseJar
+:lib:compileReleaseNdk
+:lib:packageReleaseJniLibs UP-TO-DATE
+:lib:packageReleaseLocalJar UP-TO-DATE
+:lib:packageReleaseRenderscript UP-TO-DATE
+:lib:packageReleaseResources
+:lib:bundleRelease
+:lib:assembleRelease
+:lib:signArchives SKIPPED
+:lib:assemble
+:lib:build
+
+BUILD SUCCESSFUL
+
+Total time: 7.29 secs
+
+2018-05-21 02:42:37,647 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-21 02:42:37,648 INFO  SysUtils - Execute command: [/tmp/rdisk/1253/src/slidingtabs-master/gradlew, -b, /tmp/rdisk/1253/src/slidingtabs-master/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-21 02:42:43,767 INFO  ProjectTaskService - Detected possible tasks: 56
+2018-05-21 02:42:43,767 INFO  ProjectTaskService - Excluded tasks (8): lintDebug deviceCheck lint connectedCheck uninstallAll check connectedAndroidTest lintRelease
+2018-05-21 02:42:43,767 INFO  SysUtils - Execute command: [/tmp/rdisk/1253/src/slidingtabs-master/gradlew, -b, /tmp/rdisk/1253/src/slidingtabs-master/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, deviceCheck, -x, lint, -x, connectedCheck, -x, uninstallAll, -x, check, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-05-21 02:42:49,735 INFO  SysUtils - Configuration on demand is an incubating feature.
+:lib:androidSourcesJar UP-TO-DATE
+:lib:compileLint
+:lib:copyDebugLint UP-TO-DATE
+:lib:preBuild
+:lib:preDebugBuild
+:lib:checkDebugManifest
+:lib:preDebugTestBuild
+:lib:preReleaseBuild
+:lib:prepareComAndroidSupportSupportV42103Library UP-TO-DATE
+:lib:prepareDebugDependencies
+:lib:compileDebugAidl UP-TO-DATE
+:lib:compileDebugRenderscript UP-TO-DATE
+:lib:generateDebugBuildConfig UP-TO-DATE
+:lib:generateDebugAssets UP-TO-DATE
+:lib:mergeDebugAssets UP-TO-DATE
+:lib:generateDebugResValues UP-TO-DATE
+:lib:generateDebugResources UP-TO-DATE
+:lib:mergeDebugResources UP-TO-DATE
+:lib:processDebugManifest UP-TO-DATE
+:lib:processDebugResources UP-TO-DATE
+:lib:generateDebugSources UP-TO-DATE
+:lib:compileDebugJava UP-TO-DATE
+:lib:extractDebugAnnotations UP-TO-DATE
+:lib:mergeDebugProguardFiles UP-TO-DATE
+:lib:processDebugJavaRes UP-TO-DATE
+:lib:packageDebugJar UP-TO-DATE
+:lib:compileDebugNdk UP-TO-DATE
+:lib:packageDebugJniLibs UP-TO-DATE
+:lib:packageDebugLocalJar UP-TO-DATE
+:lib:packageDebugRenderscript UP-TO-DATE
+:lib:packageDebugResources UP-TO-DATE
+:lib:bundleDebug UP-TO-DATE
+:lib:assembleDebug UP-TO-DATE
+:lib:copyReleaseLint UP-TO-DATE
+:lib:checkReleaseManifest
+:lib:prepareReleaseDependencies
+:lib:compileReleaseAidl UP-TO-DATE
+:lib:compileReleaseRenderscript UP-TO-DATE
+:lib:generateReleaseBuildConfig UP-TO-DATE
+:lib:generateReleaseAssets UP-TO-DATE
+:lib:mergeReleaseAssets UP-TO-DATE
+:lib:generateReleaseResValues UP-TO-DATE
+:lib:generateReleaseResources UP-TO-DATE
+:lib:mergeReleaseResources UP-TO-DATE
+:lib:processReleaseManifest UP-TO-DATE
+:lib:processReleaseResources UP-TO-DATE
+:lib:generateReleaseSources UP-TO-DATE
+:lib:compileReleaseJava UP-TO-DATE
+:lib:extractReleaseAnnotations UP-TO-DATE
+:lib:mergeReleaseProguardFiles UP-TO-DATE
+:lib:processReleaseJavaRes UP-TO-DATE
+:lib:packageReleaseJar UP-TO-DATE
+:lib:compileReleaseNdk UP-TO-DATE
+:lib:packageReleaseJniLibs UP-TO-DATE
+:lib:packageReleaseLocalJar UP-TO-DATE
+:lib:packageReleaseRenderscript UP-TO-DATE
+:lib:packageReleaseResources UP-TO-DATE
+:lib:bundleRelease UP-TO-DATE
+:lib:assembleRelease UP-TO-DATE
+:lib:signArchives SKIPPED
+:lib:assemble UP-TO-DATE
+:lib:build
+
+BUILD SUCCESSFUL
+
+Total time: 5.524 secs
+
+2018-05-21 02:42:49,742 ERROR FullProcessService - Project build has not produced APK file
+2018-05-21 02:42:49,748 ERROR FullProcessService - Could not find generated or existed APK file

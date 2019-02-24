@@ -1,0 +1,21 @@
+2018-04-06 17:14:00,225 INFO  DownloadService - Downloading "https://github.com/Turksat/pns/archive/master.zip", attempt 3
+2018-04-06 17:15:00,714 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-06 17:15:01,464 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-06 17:15:01,464 INFO  DownloadService - Downloading "https://github.com/Turksat/pns/archive/master.zip", attempt 3
+2018-04-06 17:16:02,808 DEBUG FullProcessService - Repository https://github.com/Turksat/pns available: true
+2018-04-06 17:16:02,808 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-06 17:16:02,808 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/Turksat/pns, /tmp/rdisk/1409/src]
+2018-04-06 17:16:07,349 INFO  SysUtils - 
+2018-04-06 17:16:07,359 INFO  GitService - Deleted "/tmp/rdisk/1409/src/.git": true
+2018-04-06 17:16:07,360 INFO  FullProcessService - Size of directory with sources: 106 KB
+2018-04-06 17:16:07,360 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1409/src]
+2018-04-06 17:16:07,365 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1409/src/.git/
+
+2018-04-06 17:16:07,367 INFO  ProjectBuildService - Gradle wrapper(s): none
+2018-04-06 17:16:07,367 ERROR ProjectBuildService - Could not detect Gradle wrapper. Default Gradle installation will be used
+2018-04-06 17:16:07,368 INFO  ProjectBuildService - Build script(s): none
+2018-04-06 17:16:07,369 INFO  ProjectBuildService - All script(s): none
+2018-04-06 17:16:07,369 INFO  ProjectBuildService - Remote scripts: none
+2018-04-06 17:16:07,369 ERROR FullProcessService - Project is not correct Gradle project
+2018-04-06 17:16:07,369 ERROR FullProcessService - Project build has not produced APK file
+2018-04-06 17:16:07,370 ERROR FullProcessService - Could not find generated or existed APK file

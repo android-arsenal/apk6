@@ -1,0 +1,5 @@
+{
+  "com.example" : [ "BuildConfig", "MainActivity", "MainActivity$1", "R", "R$attr", "R$color", "R$dimen", "R$drawable", "R$id", "R$layout", "R$menu", "R$string", "R$style" ],
+  "com.sectionedactionbarlist" : [ "BuildConfig", "ItemSelectedListener", "ListConfiguration", "R", "R$color", "R$drawable", "R$id", "R$layout", "R$string", "R$style", "SectionedActionBarList", "SectionedActionBarList$1", "SectionedActionBarList$SpinnerAdapter", "SectionedActionBarList$SpinnerItem" ],
+  "com.sectionedactionbarlist.model" : [ "Section" ]
+}

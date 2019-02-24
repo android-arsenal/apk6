@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "pro.alexzaitsev.freepager.sample",
+    "label" : "Freepager",
+    "icon" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "versionName" : "1.0.1",
+    "versionCode" : 2,
+    "installLocation" : null,
+    "minSdkVersion" : "7",
+    "targetSdkVersion" : "21",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAA6lBMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABiYmIpKSl0dHT6+vre3t4qKir///8BAQFwcHD7+/sCAgLg4OAmJiYAAADf398nJycAAAA2Njavr6+zs7PJycn39/eUlJQKCgoAAABNTU3m5uYAAAAAAAAAAAAXFxcaGhoICAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADZvWrfAAAATnRSTlMADEeDtNjw/AI6nez9/5wBuPm3ORGR9ZAszs0rPeo8/////////////////7b//5v/////////C///RoKy////1+9F6/i1OI/MEOkqO7P2319FAAAB0ElEQVRIx9WWaV+CQBDGzQMkWU3BI80rJS2PCrW8Urwt7ft/nbZfC7vLDmi963kDDs9/2WOYMRD4B7oIhsIRSZalSDgUvDjljiqXMRU5UmNxJepjTyhXSeRSMqUlvPx6OoMAZbI67M9dIw/lC5D/pog8VSwBfgn5SBKIHDN+uQK8wzUrnZl/9bZWB9bBrTyRZv2GARFZdncVZz/vGk0DqybOKqMx53tlR+9//Ibx0BKINj1zJcmP/61OVzhz+opLO0b9mBDe8ejkZ4xEnp5N0+xhcx9fzcGLC4i9EiCosuEhBkbg6aljAoTQeQCaECB8LjAlQAQG3maz2Zx7ZBFAgoERvhlyjxYEkM8F5L8Cv54Sv+g5XusbDFjgtjoSgSl4cD7ABEwNb0BdupPP1svgO/n6GOjh6/MTCa/s5AvE3YO3OjTNmw0hvekH5Kjbof47ElvTDyiaEhbQerD993Zow5RlTSyqlRo/Psps2TKTFTepjonbKv2944q4nocI1r9/50tfASjFlTK9/zi4i2vJtxgvjmL5LvmU+48j1CAKeS///uDRsrJwy9q9ezZFrS2c+XqzTfi1XS3Otd3VoxY92djHk09rIcsLazpZvv6HvyJf5qxwwky7THYAAAAASUVORK5CYII="
+  },
+  "dexClasses" : 1140,
+  "locales" : [ "", "sl", "mr_IN", "kk_KZ", "bg", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "my_MM", "ur_PK", "mn_MN", "fi", "lv", "et_EE", "sw", "pt_PT", "tl", "th", "uz_UZ", "pt", "ar", "ru", "eu_ES", "bn_BD", "fa", "sk", "kn_IN", "hi", "cs", "sv", "km_KH", "el", "nl", "hu", "af", "in", "vi", "fr_CA", "sr", "da", "si_LK", "ml_IN", "gl_ES", "es", "is_IS", "hy_AM", "tr", "ne_NP", "ro", "hr", "ms_MY", "am", "ka_GE", "lt", "pl", "zh_CN", "ta_IN", "fr", "ja", "lo_LA", "ky_KG", "iw", "de", "en_IN", "es_US", "mk_MK", "nb", "te_IN", "ca", "en_GB" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"2\" android:versionName=\"1.0.1\" package=\"pro.alexzaitsev.freepager.sample\" platformBuildVersionCode=\"21\" platformBuildVersionName=\"5.0.1-1624448\">\n\t<uses-sdk android:minSdkVersion=\"7\" android:targetSdkVersion=\"21\" />\n\t<application android:theme=\"resourceId:0x7f0c00a2\" android:label=\"Freepager\" android:icon=\"res/drawable-mdpi-v4/ic_launcher.png\" android:allowBackup=\"true\">\n\t\t<activity android:label=\"Freepager\" android:name=\"pro.alexzaitsev.freepager.sample.MainActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t\t<activity android:label=\"About\" android:name=\"pro.alexzaitsev.freepager.sample.AboutActivity\" />\n\t</application>\n</manifest>\n",
+  "fileSize" : 950093,
+  "crc32" : 4055021822,
+  "sha256" : "c387d99603fc7419417017fc94b90e61dc572553e083cf2b04d54d5aa35bb21c",
+  "buildTime" : 1522978252000
+}

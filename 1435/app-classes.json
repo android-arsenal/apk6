@@ -1,0 +1,7 @@
+{
+  "com.example.multiselectlistpreferencecompatexample" : [ "BuildConfig", "MainActivity", "MainActivity$1", "MainActivity$2", "MainPreferenceActivity", "R", "R$array", "R$attr", "R$drawable", "R$id", "R$layout", "R$menu", "R$string", "R$styleable", "R$xml", "Utils" ],
+  "com.h6ah4i.android.compat.content" : [ "EditorCompatImpl", "EditorCompatImplGB", "EditorCompatImplHoneycomb", "SharedPreferenceCompat", "SharedPreferenceCompat$EditorCompat", "SharedPreferenceCompat$EditorCompatWrapper", "SharedPreferencesCompatImpl", "SharedPreferencesCompatImplGB", "SharedPreferencesCompatImplHoneycomb" ],
+  "com.h6ah4i.android.compat.preference" : [ "MultiSelectListPreferenceCompat", "MultiSelectListPreferenceCompat$1", "MultiSelectListPreferenceCompat$SavedState", "MultiSelectListPreferenceCompat$SavedState$1", "PreferenceCompat", "PreferenceCompatImpl", "PreferenceCompatImplGB", "PreferenceCompatImplHoneycomb" ],
+  "com.h6ah4i.android.compat.utils" : [ "SharedPreferencesJsonStringSetWrapperUtils" ],
+  "com.h6ah4i.android.multiselectlistpreferencecompat" : [ "BuildConfig", "R", "R$styleable" ]
+}

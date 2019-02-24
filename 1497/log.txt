@@ -1,0 +1,21 @@
+2018-04-06 00:44:37,730 INFO  DownloadService - Downloading "https://github.com/sbakhtiarov/gif-movie-view/archive/master.zip", attempt 3
+2018-04-06 00:45:38,201 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-06 00:45:38,902 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-06 00:45:38,902 INFO  DownloadService - Downloading "https://github.com/sbakhtiarov/gif-movie-view/archive/master.zip", attempt 3
+2018-04-06 00:46:40,157 DEBUG FullProcessService - Repository https://github.com/sbakhtiarov/gif-movie-view available: true
+2018-04-06 00:46:40,157 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-06 00:46:40,157 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/sbakhtiarov/gif-movie-view, /tmp/rdisk/1497/src]
+2018-04-06 00:46:41,962 INFO  SysUtils - 
+2018-04-06 00:46:41,971 INFO  GitService - Deleted "/tmp/rdisk/1497/src/.git": true
+2018-04-06 00:46:41,972 INFO  FullProcessService - Size of directory with sources: 717 KB
+2018-04-06 00:46:41,972 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1497/src]
+2018-04-06 00:46:41,977 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1497/src/.git/
+
+2018-04-06 00:46:41,978 INFO  ProjectBuildService - Gradle wrapper(s): none
+2018-04-06 00:46:41,978 ERROR ProjectBuildService - Could not detect Gradle wrapper. Default Gradle installation will be used
+2018-04-06 00:46:41,980 INFO  ProjectBuildService - Build script(s): none
+2018-04-06 00:46:41,981 INFO  ProjectBuildService - All script(s): none
+2018-04-06 00:46:41,981 INFO  ProjectBuildService - Remote scripts: none
+2018-04-06 00:46:41,981 ERROR FullProcessService - Project is not correct Gradle project
+2018-04-06 00:46:41,981 ERROR FullProcessService - Project build has not produced APK file
+2018-04-06 00:46:41,982 ERROR FullProcessService - Could not find generated or existed APK file

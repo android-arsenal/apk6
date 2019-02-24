@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "com.appyvet.rangebarsample",
+    "label" : "RangeBar Sample",
+    "icon" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "versionName" : "1.3",
+    "versionCode" : 11,
+    "installLocation" : null,
+    "minSdkVersion" : "14",
+    "targetSdkVersion" : "27",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "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"
+  },
+  "dexClasses" : 573,
+  "locales" : [ "", "sl", "bg", "mr", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "mn", "fi", "lv", "mk", "uz", "eu", "bs", "sw", "pt_PT", "tl", "th", "bn", "pt", "ar", "ru", "gl", "kn", "az", "fa", "sk", "ms", "ml", "gu", "kk", "et", "hi", "cs", "sv", "pa", "el", "lo", "nl", "hu", "af", "hy", "en_AU", "in", "vi", "fr_CA", "ky", "sr", "km", "pt_BR", "da", "be", "es", "tr", "ne", "ro", "hr", "am", "lt", "pl", "zh_CN", "my", "ka", "sq", "fr", "ur", "ja", "is", "si", "iw", "de", "en_IN", "es_US", "nb", "ca", "ta", "en_GB", "te" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"11\" android:versionName=\"1.3\" package=\"com.appyvet.rangebarsample\">\n\t<uses-sdk android:minSdkVersion=\"14\" android:targetSdkVersion=\"27\" />\n\t<application android:theme=\"@android:style/Theme.Holo.Light\" android:label=\"RangeBar Sample\" android:icon=\"res/drawable-mdpi-v4/ic_launcher.png\" android:allowBackup=\"true\">\n\t\t<activity android:label=\"RangeBar Sample\" android:name=\"com.appyvet.rangebarsample.MainActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t</application>\n</manifest>\n",
+  "fileSize" : 422900,
+  "crc32" : 1142838941,
+  "sha256" : "b3f367f94097a960b88a509e86644b65305ee50b3f5209d2d6efdf62c6e8c825",
+  "buildTime" : 1526870018000
+}

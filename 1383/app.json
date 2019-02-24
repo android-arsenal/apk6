@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "cbedoy.circularloader",
+    "label" : "CircularLoader",
+    "icon" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "versionName" : "1.0",
+    "versionCode" : 1,
+    "installLocation" : null,
+    "minSdkVersion" : "16",
+    "targetSdkVersion" : "21",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAACYVBMVEUAAAB/f38CnZMAmIoAl4kAlokAlogAmYoCnYkBmo4Bmol//38Cn5ABl4oAmYoAlYgAlocAmYoBm4oOm38Dm5QAmIkAlogAmIcEm4gq1NQAl4kAl4gBnIsAmIkAlokAlYcAl4gCnYcBmYkAlogAl4gBmIkCnIwDq5YBmY0AmIwAl4gAlogDo4MFmpoAlokAl4cAmIgBmIgFqJMLrZYHp5cCnpIAmIoAl4Yfn58Dm5MAlokAl4YKn4oMpaUAmIwAlogAl4cCoJsAl4cEn40So6MAl4kCnYEAl4oAl4Yqf38BmIoBmIQBmYwAmYUAmo4Bm4ADnpgAl4cEoYQBm48AmIQPr48AlooDnH8BmIwAl4UBmIwBm4UAmIwAl4YAl4sBmYMAmY0BmIMBmI0Al4cGmn8AmIkCmIEAlogBmoEBmYsAlYcAlYcDoIYAmIwCmn0AmYwCo4QBmo4Amogq1H8AmIkBmoMAmYwDnIIGn58AmIsAmYYAmIwBmIYAl4oDnncHp6cAl4oBmYQBnZAAl4YSo38AlYgGtX8BmY4AmIUZsrIAlokAmIUBmI0AmogAlYgAlocS7H8CmIwAloYBmo8AlogBmoQ/v78Vv5QBmYwAlYkAlocFnokAlYc//z8JmogAmIUBm5AAl4cBmooDoZQHopQCnZIBmo0AlocBmIMAloUAl4gAmYkBmooGn5IIkJADnpIAmI0BmoQBmIwAl4gAmIcCmoQAl4kAloQBmo8AlooAmIYBmo0Al4kAmYsAmosAl4kAmIoBnIkCoJECoo0Bm48AmYsAmIkAmYsAl4kAmIkCm4rCW334AAAAy3RSTlMAATOAsb62hDNuaQE0fKq+u5hbCSW8/7cbA+3lXNL2/d4uQO7hez0mQIDj4CAY/PejURkLED651wQg7KQMCo3+vTKfHAfaOLCxA2xOTaemVin0GmqCCOIjeZ9+aoWmrlyYVlvfE8U4p0Zc+/QnzjSxMUOaA8NDwygUw5OZfsshENlKTd4H0hNcrwXYg0KU1PkHPcJI/HQCBnf48xn4Ag6lcMhfJRIucfFH9euOQxQPKYpGVujKL83xWuCCXaTFzsKUQjI+UZvAw7WDLbpwf88AAAGaSURBVEjHY2AYBaNgZABGJmYWVjZ2DkYwj5OLm5GHl49fQFBIGLt6EVExCBCXAPIkpaRlZIEcOXkxMQVFbOqVlMVUVNXUNTS1xLR1GBh09cTE9A0MjYxNTM3EzC0w1VtaiVnbgFm2dvYODAyOYvJOzhApF1cxN0wN7mIenjC2lzcDg4+YL1zOT8wfQ32AfGAQikCwWAiMGRomH46hIUIsElUgSiwaxowRi8V0UZxYPKpAglgilJUkn5yCqSFVLA1VIF0sA8LIzMrOwRKouWJ5qAL5YgUQRqGKWFExpoYSsVJUgTKxciirolKsihFDQ7VYDapArX0djFnfYN+IoaFJrLkFRaA1qw3ObhfrwNDQ2SXWDef09DIy9PVPgPMnik3C9MRk+SlTp4FZ02fMnDWboW/O3GKueRA5O7H5WMJpgbzYwkWLlyxd1iC2fAUDQ99KBlP7VavXrF23fkOW/UZsyXXTZmjy3rIVyNu2nYFxx04gz15MbMouRqwZwnj3nr379h84CHbZocMg1x05euz4iZOnRguXUTAiAACSelxbmQKJIQAAAABJRU5ErkJggg=="
+  },
+  "dexClasses" : 1406,
+  "locales" : [ "", "sl", "mr_IN", "kk_KZ", "bg", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "my_MM", "ur_PK", "mn_MN", "fi", "lv", "et_EE", "sw", "pt_PT", "tl", "th", "uz_UZ", "pt", "ar", "ru", "eu_ES", "bn_BD", "fa", "sk", "kn_IN", "hi", "cs", "sv", "km_KH", "el", "nl", "hu", "af", "in", "vi", "fr_CA", "sr", "da", "si_LK", "ml_IN", "gl_ES", "es", "is_IS", "hy_AM", "tr", "ne_NP", "ro", "hr", "ms_MY", "am", "ka_GE", "lt", "pl", "zh_CN", "ta_IN", "fr", "ja", "lo_LA", "ky_KG", "iw", "de", "en_IN", "es_US", "mk_MK", "nb", "te_IN", "ca", "en_GB" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"1\" android:versionName=\"1.0\" package=\"cbedoy.circularloader\" platformBuildVersionCode=\"21\" platformBuildVersionName=\"5.0.1-1624448\">\n\t<uses-sdk android:minSdkVersion=\"16\" android:targetSdkVersion=\"21\" />\n\t<application android:theme=\"resourceId:0x7f0b0000\" android:label=\"CircularLoader\" android:icon=\"res/drawable-mdpi-v4/ic_launcher.png\" android:name=\"cbedoy.circularloader.ApplicationLoader\" android:debuggable=\"true\" android:allowBackup=\"true\">\n\t\t<activity android:label=\"CircularLoader\" android:name=\"cbedoy.circularloader.MainActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t\t<activity android:label=\"RecyclerViewTestActivity\" android:name=\"android.support.v7.widget.TestActivity\" />\n\t</application>\n</manifest>\n",
+  "fileSize" : 1643194,
+  "crc32" : 4172808802,
+  "sha256" : "3bd05d3fb4c2f8345d5b6860e03b4e2f2ad0f2253b67f4439e760bdfd06ed74d",
+  "buildTime" : 1523038967000
+}

@@ -1,0 +1,1494 @@
+2018-05-21 00:52:44,434 INFO  DownloadService - Downloading "https://github.com/nohana/Amalgam/archive/master.zip", attempt 3
+2018-05-21 00:53:45,032 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-05-21 00:53:45,788 INFO  GithubDownloadService - Default branch of this repository: develop
+2018-05-21 00:53:45,788 INFO  DownloadService - Downloading "https://github.com/nohana/Amalgam/archive/develop.zip", attempt 3
+2018-05-21 00:54:47,139 DEBUG FullProcessService - Repository https://github.com/nohana/Amalgam available: true
+2018-05-21 00:54:47,139 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-05-21 00:54:47,139 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/nohana/Amalgam, /tmp/rdisk/1297/src]
+2018-05-21 00:54:48,854 INFO  SysUtils - 
+2018-05-21 00:54:48,858 INFO  GitService - Deleted "/tmp/rdisk/1297/src/.git": true
+2018-05-21 00:54:48,862 INFO  FullProcessService - Size of directory with sources: 415 KB
+2018-05-21 00:54:48,862 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1297/src]
+2018-05-21 00:54:48,866 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1297/src/.git/
+
+2018-05-21 00:54:48,869 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1297/src/gradlew
+2018-05-21 00:54:48,872 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1297/src/amalgam/build.gradle /tmp/rdisk/1297/src/build.gradle
+2018-05-21 00:54:48,875 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1297/src/settings.gradle /tmp/rdisk/1297/src/build.gradle /tmp/rdisk/1297/src/amalgam/build.gradle
+2018-05-21 00:54:48,876 INFO  DownloadService - Downloading "https://raw.github.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle", attempt 3
+2018-05-21 00:55:49,196 ERROR RemoteScriptService - Could not download content from "https://raw.github.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle"
+org.apache.http.conn.ConnectionPoolTimeoutException: Timeout waiting for connection from pool
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.leaseConnection(PoolingHttpClientConnectionManager.java:313)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager$1.get(PoolingHttpClientConnectionManager.java:279)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:191)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at com.github.vbauer.apkmaster.service.network.DownloadService.download(DownloadService.java:112)
+	at com.github.vbauer.apkmaster.service.network.DownloadService.downloadContent(DownloadService.java:91)
+	at com.github.vbauer.apkmaster.service.assembly.RemoteScriptService.fetchRemoteScript(RemoteScriptService.java:42)
+	at com.github.vbauer.apkmaster.service.assembly.RemoteScriptService.detect(RemoteScriptService.java:31)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectInfoService.getProjectInfo(ProjectInfoService.java:48)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:77)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-05-21 00:55:49,196 INFO  ProjectBuildService - Remote scripts: none
+2018-05-21 00:55:49,196 INFO  ProjectFixService - Fixing project...
+2018-05-21 00:55:49,204 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1297/src/amalgam/local.properties
+2018-05-21 00:55:49,204 INFO  ProjectFixService - Build info for "/tmp/rdisk/1297/src/amalgam/build.gradle": [buildToolsVersion=25.0.2,compileSdkVersion=25,minSdkVersion=9,targetSdkVersion=25]
+2018-05-21 00:55:49,205 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1297/src/local.properties
+2018-05-21 00:55:49,205 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.14.1-all.zip
+2018-05-21 00:55:49,205 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.14.1-bin.zip)
+2018-05-21 00:55:49,206 INFO  ProjectFixService - Build info for "/tmp/rdisk/1297/src/build.gradle": [buildToolsVersion=25.0.2,compileSdkVersion=25,minSdkVersion=9,targetSdkVersion=25]
+2018-05-21 00:55:49,206 INFO  ProjectFixService - Project was maybe fixed
+2018-05-21 00:55:49,206 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-21 00:55:49,206 INFO  SysUtils - Execute command: [/tmp/rdisk/1297/src/gradlew, -b, /tmp/rdisk/1297/src/amalgam/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-21 00:55:58,963 INFO  ProjectTaskService - Detected possible tasks: 79
+2018-05-21 00:55:58,963 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-05-21 00:55:58,963 INFO  SysUtils - Execute command: [/tmp/rdisk/1297/src/gradlew, -b, /tmp/rdisk/1297/src/amalgam/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-05-21 00:56:19,390 INFO  SysUtils - Configuration on demand is an incubating feature.
+Incremental java compilation is an incubating feature.
+:amalgam:androidJavadocs/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/test/mock/MockSupportLoaderManager.java:19: error: package android.support.v4.app does not exist
+import android.support.v4.app.LoaderManager;
+                             ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/test/mock/MockSupportLoaderManager.java:20: error: package android.support.v4.content does not exist
+import android.support.v4.content.Loader;
+                                 ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/test/mock/MockSupportLoaderManager.java:31: error: cannot find symbol
+public class MockSupportLoaderManager extends LoaderManager {
+                                              ^
+  symbol: class LoaderManager
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/test/mock/MockSupportLoaderManager.java:43: error: cannot find symbol
+    public <D> Loader<D> getLoader(int id) {
+               ^
+  symbol:   class Loader
+  location: class MockSupportLoaderManager
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/test/mock/MockSupportLoaderManager.java:48: error: cannot find symbol
+    public <D> Loader<D> initLoader(int id, Bundle args, LoaderCallbacks<D> callbacks) {
+                                                         ^
+  symbol:   class LoaderCallbacks
+  location: class MockSupportLoaderManager
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/test/mock/MockSupportLoaderManager.java:48: error: cannot find symbol
+    public <D> Loader<D> initLoader(int id, Bundle args, LoaderCallbacks<D> callbacks) {
+               ^
+  symbol:   class Loader
+  location: class MockSupportLoaderManager
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/test/mock/MockSupportLoaderManager.java:53: error: cannot find symbol
+    public <D> Loader<D> restartLoader(int id, Bundle args, LoaderCallbacks<D> callbacks) {
+                                                            ^
+  symbol:   class LoaderCallbacks
+  location: class MockSupportLoaderManager
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/test/mock/MockSupportLoaderManager.java:53: error: cannot find symbol
+    public <D> Loader<D> restartLoader(int id, Bundle args, LoaderCallbacks<D> callbacks) {
+               ^
+  symbol:   class Loader
+  location: class MockSupportLoaderManager
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/test/mock/MockSupportFragmentTransaction.java:18: error: package android.support.v4.app does not exist
+import android.support.v4.app.Fragment;
+                             ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/test/mock/MockSupportFragmentTransaction.java:19: error: package android.support.v4.app does not exist
+import android.support.v4.app.FragmentTransaction;
+                             ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/test/mock/MockSupportFragmentTransaction.java:29: error: cannot find symbol
+public class MockSupportFragmentTransaction extends FragmentTransaction {
+                                                    ^
+  symbol: class FragmentTransaction
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/test/mock/MockSupportFragmentTransaction.java:31: error: cannot find symbol
+    public FragmentTransaction add(Fragment fragment, String tag) {
+                                   ^
+  symbol:   class Fragment
+  location: class MockSupportFragmentTransaction
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/test/mock/MockSupportFragmentTransaction.java:31: error: cannot find symbol
+    public FragmentTransaction add(Fragment fragment, String tag) {
+           ^
+  symbol:   class FragmentTransaction
+  location: class MockSupportFragmentTransaction
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/test/mock/MockSupportFragmentTransaction.java:36: error: cannot find symbol
+    public FragmentTransaction add(int containerViewId, Fragment fragment) {
+                                                        ^
+  symbol:   class Fragment
+  location: class MockSupportFragmentTransaction
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/test/mock/MockSupportFragmentTransaction.java:36: error: cannot find symbol
+    public FragmentTransaction add(int containerViewId, Fragment fragment) {
+           ^
+  symbol:   class FragmentTransaction
+  location: class MockSupportFragmentTransaction
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/test/mock/MockSupportFragmentTransaction.java:41: error: cannot find symbol
+    public FragmentTransaction add(int containerViewId, Fragment fragment, String tag) {
+                                                        ^
+  symbol:   class Fragment
+  location: class MockSupportFragmentTransaction
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/test/mock/MockSupportFragmentTransaction.java:41: error: cannot find symbol
+    public FragmentTransaction add(int containerViewId, Fragment fragment, String tag) {
+           ^
+  symbol:   class FragmentTransaction
+  location: class MockSupportFragmentTransaction
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/test/mock/MockSupportFragmentTransaction.java:46: error: cannot find symbol
+    public FragmentTransaction addToBackStack(String name) {
+           ^
+  symbol:   class FragmentTransaction
+  location: class MockSupportFragmentTransaction
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/test/mock/MockSupportFragmentTransaction.java:51: error: cannot find symbol
+    public FragmentTransaction attach(Fragment fragment) {
+                                      ^
+  symbol:   class Fragment
+  location: class MockSupportFragmentTransaction
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/test/mock/MockSupportFragmentTransaction.java:51: error: cannot find symbol
+    public FragmentTransaction attach(Fragment fragment) {
+           ^
+  symbol:   class FragmentTransaction
+  location: class MockSupportFragmentTransaction
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/test/mock/MockSupportFragmentTransaction.java:76: error: cannot find symbol
+    public FragmentTransaction detach(Fragment fragment) {
+                                      ^
+  symbol:   class Fragment
+  location: class MockSupportFragmentTransaction
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/test/mock/MockSupportFragmentTransaction.java:76: error: cannot find symbol
+    public FragmentTransaction detach(Fragment fragment) {
+           ^
+  symbol:   class FragmentTransaction
+  location: class MockSupportFragmentTransaction
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/test/mock/MockSupportFragmentTransaction.java:81: error: cannot find symbol
+    public FragmentTransaction disallowAddToBackStack() {
+           ^
+  symbol:   class FragmentTransaction
+  location: class MockSupportFragmentTransaction
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/test/mock/MockSupportFragmentTransaction.java:86: error: cannot find symbol
+    public FragmentTransaction hide(Fragment fragment) {
+                                    ^
+  symbol:   class Fragment
+  location: class MockSupportFragmentTransaction
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/test/mock/MockSupportFragmentTransaction.java:86: error: cannot find symbol
+    public FragmentTransaction hide(Fragment fragment) {
+           ^
+  symbol:   class FragmentTransaction
+  location: class MockSupportFragmentTransaction
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/test/mock/MockSupportFragmentTransaction.java:101: error: cannot find symbol
+    public FragmentTransaction remove(Fragment fragment) {
+                                      ^
+  symbol:   class Fragment
+  location: class MockSupportFragmentTransaction
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/test/mock/MockSupportFragmentTransaction.java:101: error: cannot find symbol
+    public FragmentTransaction remove(Fragment fragment) {
+           ^
+  symbol:   class FragmentTransaction
+  location: class MockSupportFragmentTransaction
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/test/mock/MockSupportFragmentTransaction.java:106: error: cannot find symbol
+    public FragmentTransaction replace(int containerViewId, Fragment fragment) {
+                                                            ^
+  symbol:   class Fragment
+  location: class MockSupportFragmentTransaction
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/test/mock/MockSupportFragmentTransaction.java:106: error: cannot find symbol
+    public FragmentTransaction replace(int containerViewId, Fragment fragment) {
+           ^
+  symbol:   class FragmentTransaction
+  location: class MockSupportFragmentTransaction
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/test/mock/MockSupportFragmentTransaction.java:111: error: cannot find symbol
+    public FragmentTransaction replace(int containerViewId, Fragment fragment, String tag) {
+                                                            ^
+  symbol:   class Fragment
+  location: class MockSupportFragmentTransaction
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/test/mock/MockSupportFragmentTransaction.java:111: error: cannot find symbol
+    public FragmentTransaction replace(int containerViewId, Fragment fragment, String tag) {
+           ^
+  symbol:   class FragmentTransaction
+  location: class MockSupportFragmentTransaction
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/test/mock/MockSupportFragmentTransaction.java:116: error: cannot find symbol
+    public FragmentTransaction setBreadCrumbShortTitle(int res) {
+           ^
+  symbol:   class FragmentTransaction
+  location: class MockSupportFragmentTransaction
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/test/mock/MockSupportFragmentTransaction.java:121: error: cannot find symbol
+    public FragmentTransaction setBreadCrumbShortTitle(CharSequence text) {
+           ^
+  symbol:   class FragmentTransaction
+  location: class MockSupportFragmentTransaction
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/test/mock/MockSupportFragmentTransaction.java:126: error: cannot find symbol
+    public FragmentTransaction setBreadCrumbTitle(int res) {
+           ^
+  symbol:   class FragmentTransaction
+  location: class MockSupportFragmentTransaction
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/test/mock/MockSupportFragmentTransaction.java:131: error: cannot find symbol
+    public FragmentTransaction setBreadCrumbTitle(CharSequence text) {
+           ^
+  symbol:   class FragmentTransaction
+  location: class MockSupportFragmentTransaction
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/test/mock/MockSupportFragmentTransaction.java:136: error: cannot find symbol
+    public FragmentTransaction setCustomAnimations(int enter, int exit) {
+           ^
+  symbol:   class FragmentTransaction
+  location: class MockSupportFragmentTransaction
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/test/mock/MockSupportFragmentTransaction.java:141: error: cannot find symbol
+    public FragmentTransaction setCustomAnimations(int enter, int exit, int popEnter, int popExit) {
+           ^
+  symbol:   class FragmentTransaction
+  location: class MockSupportFragmentTransaction
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/test/mock/MockSupportFragmentTransaction.java:146: error: cannot find symbol
+    public FragmentTransaction addSharedElement(View sharedElement, String name) {
+           ^
+  symbol:   class FragmentTransaction
+  location: class MockSupportFragmentTransaction
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/test/mock/MockSupportFragmentTransaction.java:151: error: cannot find symbol
+    public FragmentTransaction setTransition(int transit) {
+           ^
+  symbol:   class FragmentTransaction
+  location: class MockSupportFragmentTransaction
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/test/mock/MockSupportFragmentTransaction.java:156: error: cannot find symbol
+    public FragmentTransaction setTransitionStyle(int styleRes) {
+           ^
+  symbol:   class FragmentTransaction
+  location: class MockSupportFragmentTransaction
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/test/mock/MockSupportFragmentTransaction.java:161: error: cannot find symbol
+    public FragmentTransaction show(Fragment fragment) {
+                                    ^
+  symbol:   class Fragment
+  location: class MockSupportFragmentTransaction
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/test/mock/MockSupportFragmentTransaction.java:161: error: cannot find symbol
+    public FragmentTransaction show(Fragment fragment) {
+           ^
+  symbol:   class FragmentTransaction
+  location: class MockSupportFragmentTransaction
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/test/mock/MockSupportFragmentManager.java:19: error: package android.support.v4.app does not exist
+import android.support.v4.app.Fragment;
+                             ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/test/mock/MockSupportFragmentManager.java:20: error: package android.support.v4.app.Fragment does not exist
+import android.support.v4.app.Fragment.SavedState;
+                                      ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/test/mock/MockSupportFragmentManager.java:21: error: package android.support.v4.app does not exist
+import android.support.v4.app.FragmentManager;
+                             ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/test/mock/MockSupportFragmentManager.java:22: error: package android.support.v4.app does not exist
+import android.support.v4.app.FragmentTransaction;
+                             ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/test/mock/MockSupportFragmentManager.java:34: error: cannot find symbol
+public class MockSupportFragmentManager extends FragmentManager {
+                                                ^
+  symbol: class FragmentManager
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/test/mock/MockSupportFragmentManager.java:36: error: cannot find symbol
+    public void addOnBackStackChangedListener(OnBackStackChangedListener listener) {
+                                              ^
+  symbol:   class OnBackStackChangedListener
+  location: class MockSupportFragmentManager
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/test/mock/MockSupportFragmentManager.java:41: error: cannot find symbol
+    public FragmentTransaction beginTransaction() {
+           ^
+  symbol:   class FragmentTransaction
+  location: class MockSupportFragmentManager
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/test/mock/MockSupportFragmentManager.java:56: error: cannot find symbol
+    public Fragment findFragmentById(int id) {
+           ^
+  symbol:   class Fragment
+  location: class MockSupportFragmentManager
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/test/mock/MockSupportFragmentManager.java:61: error: cannot find symbol
+    public Fragment findFragmentByTag(String tag) {
+           ^
+  symbol:   class Fragment
+  location: class MockSupportFragmentManager
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/test/mock/MockSupportFragmentManager.java:66: error: cannot find symbol
+    public BackStackEntry getBackStackEntryAt(int index) {
+           ^
+  symbol:   class BackStackEntry
+  location: class MockSupportFragmentManager
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/test/mock/MockSupportFragmentManager.java:76: error: cannot find symbol
+    public Fragment getFragment(Bundle bundle, String key) {
+           ^
+  symbol:   class Fragment
+  location: class MockSupportFragmentManager
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/test/mock/MockSupportFragmentManager.java:111: error: cannot find symbol
+    public void putFragment(Bundle bundle, String key, Fragment fragment) {
+                                                       ^
+  symbol:   class Fragment
+  location: class MockSupportFragmentManager
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/test/mock/MockSupportFragmentManager.java:116: error: cannot find symbol
+    public void removeOnBackStackChangedListener(OnBackStackChangedListener listener) {
+                                                 ^
+  symbol:   class OnBackStackChangedListener
+  location: class MockSupportFragmentManager
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/test/mock/MockSupportFragmentManager.java:121: error: cannot find symbol
+    public SavedState saveFragmentInstanceState(Fragment f) {
+                                                ^
+  symbol:   class Fragment
+  location: class MockSupportFragmentManager
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/test/mock/MockSupportFragmentManager.java:121: error: cannot find symbol
+    public SavedState saveFragmentInstanceState(Fragment f) {
+           ^
+  symbol:   class SavedState
+  location: class MockSupportFragmentManager
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/test/mock/MockSupportFragmentManager.java:131: error: cannot find symbol
+    public List<Fragment> getFragments() {
+                ^
+  symbol:   class Fragment
+  location: class MockSupportFragmentManager
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/test/mock/MockSupportActionBar.java:19: error: package android.support.v7.app does not exist
+import android.support.v7.app.ActionBar;
+                             ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/test/mock/MockSupportActionBar.java:29: error: cannot find symbol
+public class MockSupportActionBar extends ActionBar {
+                                          ^
+  symbol: class ActionBar
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/test/mock/MockSupportActionBar.java:36: error: cannot find symbol
+    public void setCustomView(View view, LayoutParams layoutParams) {
+                                         ^
+  symbol:   class LayoutParams
+  location: class MockSupportActionBar
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/test/mock/MockSupportActionBar.java:66: error: cannot find symbol
+    public void setListNavigationCallbacks(SpinnerAdapter adapter, OnNavigationListener callback) {
+                                                                   ^
+  symbol:   class OnNavigationListener
+  location: class MockSupportActionBar
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/test/mock/MockSupportActionBar.java:177: error: cannot find symbol
+    public Tab newTab() {
+           ^
+  symbol:   class Tab
+  location: class MockSupportActionBar
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/test/mock/MockSupportActionBar.java:182: error: cannot find symbol
+    public void addTab(Tab tab) {
+                       ^
+  symbol:   class Tab
+  location: class MockSupportActionBar
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/test/mock/MockSupportActionBar.java:187: error: cannot find symbol
+    public void addTab(Tab tab, boolean setSelected) {
+                       ^
+  symbol:   class Tab
+  location: class MockSupportActionBar
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/test/mock/MockSupportActionBar.java:192: error: cannot find symbol
+    public void addTab(Tab tab, int position) {
+                       ^
+  symbol:   class Tab
+  location: class MockSupportActionBar
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/test/mock/MockSupportActionBar.java:197: error: cannot find symbol
+    public void addTab(Tab tab, int position, boolean setSelected) {
+                       ^
+  symbol:   class Tab
+  location: class MockSupportActionBar
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/test/mock/MockSupportActionBar.java:202: error: cannot find symbol
+    public void removeTab(Tab tab) {
+                          ^
+  symbol:   class Tab
+  location: class MockSupportActionBar
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/test/mock/MockSupportActionBar.java:217: error: cannot find symbol
+    public void selectTab(Tab tab) {
+                          ^
+  symbol:   class Tab
+  location: class MockSupportActionBar
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/test/mock/MockSupportActionBar.java:222: error: cannot find symbol
+    public Tab getSelectedTab() {
+           ^
+  symbol:   class Tab
+  location: class MockSupportActionBar
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/test/mock/MockSupportActionBar.java:227: error: cannot find symbol
+    public Tab getTabAt(int index) {
+           ^
+  symbol:   class Tab
+  location: class MockSupportActionBar
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/test/mock/MockSupportActionBar.java:257: error: cannot find symbol
+    public void addOnMenuVisibilityListener(OnMenuVisibilityListener listener) {
+                                            ^
+  symbol:   class OnMenuVisibilityListener
+  location: class MockSupportActionBar
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/test/mock/MockSupportActionBar.java:262: error: cannot find symbol
+    public void removeOnMenuVisibilityListener(OnMenuVisibilityListener listener) {
+                                               ^
+  symbol:   class OnMenuVisibilityListener
+  location: class MockSupportActionBar
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/test/mock/MockSupportActionBar.java:266: error: package ActionBar does not exist
+    public static class MockTab extends ActionBar.Tab {
+                                                 ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/test/mock/MockSupportActionBar.java:283: error: cannot find symbol
+        public Tab setIcon(Drawable icon) {
+               ^
+  symbol:   class Tab
+  location: class MockTab
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/test/mock/MockSupportActionBar.java:288: error: cannot find symbol
+        public Tab setIcon(int resId) {
+               ^
+  symbol:   class Tab
+  location: class MockTab
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/test/mock/MockSupportActionBar.java:293: error: cannot find symbol
+        public Tab setText(CharSequence text) {
+               ^
+  symbol:   class Tab
+  location: class MockTab
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/test/mock/MockSupportActionBar.java:298: error: cannot find symbol
+        public Tab setText(int resId) {
+               ^
+  symbol:   class Tab
+  location: class MockTab
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/test/mock/MockSupportActionBar.java:303: error: cannot find symbol
+        public Tab setCustomView(View view) {
+               ^
+  symbol:   class Tab
+  location: class MockTab
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/test/mock/MockSupportActionBar.java:308: error: cannot find symbol
+        public Tab setCustomView(int layoutResId) {
+               ^
+  symbol:   class Tab
+  location: class MockTab
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/test/mock/MockSupportActionBar.java:318: error: cannot find symbol
+        public Tab setTag(Object obj) {
+               ^
+  symbol:   class Tab
+  location: class MockTab
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/test/mock/MockSupportActionBar.java:328: error: cannot find symbol
+        public Tab setTabListener(TabListener listener) {
+                                  ^
+  symbol:   class TabListener
+  location: class MockTab
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/test/mock/MockSupportActionBar.java:328: error: cannot find symbol
+        public Tab setTabListener(TabListener listener) {
+               ^
+  symbol:   class Tab
+  location: class MockTab
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/test/mock/MockSupportActionBar.java:338: error: cannot find symbol
+        public Tab setContentDescription(int resId) {
+               ^
+  symbol:   class Tab
+  location: class MockTab
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/test/mock/MockSupportActionBar.java:343: error: cannot find symbol
+        public Tab setContentDescription(CharSequence contentDesc) {
+               ^
+  symbol:   class Tab
+  location: class MockTab
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/app/SupportSimpleAlertDialogFragment.java:21: error: package android.support.v4.app does not exist
+import android.support.v4.app.DialogFragment;
+                             ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/app/SupportSimpleAlertDialogFragment.java:22: error: package android.support.v7.app does not exist
+import android.support.v7.app.AlertDialog;
+                             ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/app/SupportSimpleAlertDialogFragment.java:24: error: cannot find symbol
+import com.amalgam.R;
+                  ^
+  symbol:   class R
+  location: package com.amalgam
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/app/SupportSimpleAlertDialogFragment.java:34: error: cannot find symbol
+public class SupportSimpleAlertDialogFragment extends DialogFragment {
+                                                      ^
+  symbol: class DialogFragment
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/app/SupportProgressDialogFragment.java:22: error: package android.support.v4.app does not exist
+import android.support.v4.app.DialogFragment;
+                             ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/app/SupportProgressDialogFragment.java:30: error: cannot find symbol
+public final class SupportProgressDialogFragment extends DialogFragment {
+                                                         ^
+  symbol: class DialogFragment
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/app/SimpleAlertDialogFragment.java:24: error: package android.support.v7.app does not exist
+import android.support.v7.app.AlertDialog;
+                             ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/app/SimpleAlertDialogFragment.java:26: error: cannot find symbol
+import com.amalgam.R;
+                  ^
+  symbol:   class R
+  location: package com.amalgam
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/app/FragmentUtils.java:21: error: package android.support.v4.app does not exist
+    public static void supportInvalidateOptionsMenu(android.support.v4.app.Fragment fragment) {
+                                                                          ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/app/FragmentUtils.java:30: error: package android.support.v4.app does not exist
+    public static ContentResolver getContentResolver(android.support.v4.app.Fragment fragment) {
+                                                                           ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/app/FragmentManagerUtils.java:37: error: package android.support.v4.app does not exist
+    public static <F extends android.support.v4.app.Fragment> F supportFindFragmentById(android.support.v4.app.FragmentManager manager, int id) {
+                                                   ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/app/FragmentManagerUtils.java:37: error: package android.support.v4.app does not exist
+    public static <F extends android.support.v4.app.Fragment> F supportFindFragmentById(android.support.v4.app.FragmentManager manager, int id) {
+                                                                                                              ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/app/FragmentManagerUtils.java:63: error: package android.support.v4.app does not exist
+    public static <F extends android.support.v4.app.Fragment> F supportFindFragmentByTag(android.support.v4.app.FragmentManager manager, String tag) {
+                                                   ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/app/FragmentManagerUtils.java:63: error: package android.support.v4.app does not exist
+    public static <F extends android.support.v4.app.Fragment> F supportFindFragmentByTag(android.support.v4.app.FragmentManager manager, String tag) {
+                                                                                                               ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/app/DialogFragmentUtils.java:55: error: package android.support.v4.app does not exist
+    public static <F extends android.support.v4.app.DialogFragment> F supportFindDialogFragmentByTag(android.support.v4.app.FragmentManager manager, String tag) {
+                                                   ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/io/FileUtils.java:45: error: ')' missing in reference
+     * @see java.nio.channels.FileChannel#transferTo(long, long, java.nio.channels.WritableByteChannel).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/content/ContextUtils.java:235: error: ')' missing in reference
+     * @see android.view.LayoutInflater#from(android.content.Context).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/content/ContextUtils.java:254: error: ')' missing in reference
+     * @see android.accounts.AccountManager#get(android.content.Context).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/graphics/BitmapUtils.java:183: error: malformed HTML
+     * @param scale the shrink scale, must be < 1.0.
+                                              ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/graphics/BitmapUtils.java:200: error: bad use of '>'
+     * @param scale the expand scale, must be > 1.0.
+                                              ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/appwidget/AppWidgetManagerUtils.java:33: error: ')' missing in reference
+     * @see android.appwidget.AppWidgetManager#getAppWidgetIds(android.content.ComponentName).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/test/mock/MockSupportActionBar.java:24: error: reference not found
+ * Mock implementation for {@link ActionBar}.
+                                  ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/test/mock/MockSupportFragmentManager.java:29: error: reference not found
+ * Mock implementation for {@link FragmentManager}.
+                                  ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/test/mock/MockSupportFragmentTransaction.java:24: error: reference not found
+ * Mock implementation for {@link FragmentTransaction}.
+                                  ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/test/mock/MockSupportLoaderManager.java:26: error: reference not found
+ * Mock implementation for {@link LoaderManager}.
+                                  ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/net/HttpURLConnectionUtils.java:36: error: unexpected content
+     * @see {@link java.net.HttpURLConnection#disconnect()}
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/database/CursorUtils.java:47: error: ')' missing in reference
+     * @see android.database.Cursor#getColumnIndex(String).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/database/CursorUtils.java:58: error: ')' missing in reference
+     * @see android.database.Cursor#getInt(int).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/database/CursorUtils.java:59: error: ')' missing in reference
+     * @see android.database.Cursor#getColumnIndex(String).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/database/CursorUtils.java:74: error: ')' missing in reference
+     * @see android.database.Cursor#getString(int).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/database/CursorUtils.java:75: error: ')' missing in reference
+     * @see android.database.Cursor#getColumnIndex(String).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/database/CursorUtils.java:90: error: ')' missing in reference
+     * @see android.database.Cursor#getShort(int).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/database/CursorUtils.java:91: error: ')' missing in reference
+     * @see android.database.Cursor#getColumnIndex(String).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/database/CursorUtils.java:106: error: ')' missing in reference
+     * @see android.database.Cursor#getLong(int).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/database/CursorUtils.java:107: error: ')' missing in reference
+     * @see android.database.Cursor#getColumnIndex(String).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/database/CursorUtils.java:122: error: ')' missing in reference
+     * @see android.database.Cursor#getDouble(int).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/database/CursorUtils.java:123: error: ')' missing in reference
+     * @see android.database.Cursor#getColumnIndex(String).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/database/CursorUtils.java:138: error: ')' missing in reference
+     * @see android.database.Cursor#getFloat(int).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/database/CursorUtils.java:139: error: ')' missing in reference
+     * @see android.database.Cursor#getColumnIndex(String).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/database/CursorUtils.java:154: error: ')' missing in reference
+     * @see android.database.Cursor#getBlob(int).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/database/CursorUtils.java:155: error: ')' missing in reference
+     * @see android.database.Cursor#getColumnIndex(String).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/database/CursorUtils.java:170: error: ')' missing in reference
+     * @see android.database.Cursor#getType(int).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/database/CursorUtils.java:171: error: ')' missing in reference
+     * @see android.database.Cursor#getColumnIndex(String).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/database/CursorUtils.java:187: error: ')' missing in reference
+     * @see android.database.Cursor#isNull(int).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/database/CursorUtils.java:188: error: ')' missing in reference
+     * @see android.database.Cursor#getColumnIndex(String).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/collection/AbstractImmutableMap.java:42: error: unknown tag: hide
+     * @hide
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/collection/AbstractImmutableMap.java:50: error: unknown tag: hide
+     * @hide
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/collection/AbstractImmutableMap.java:68: error: unknown tag: hide
+     * @hide
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/collection/AbstractImmutableMap.java:86: error: unknown tag: hide
+     * @hide
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/collection/AbstractImmutableMap.java:94: error: unknown tag: hide
+     * @hide
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/collection/AbstractImmutableMap.java:107: error: unknown tag: hide
+     * @hide
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/collection/AbstractImmutableSet.java:36: error: unknown tag: hide
+     * @hide
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/collection/AbstractImmutableSet.java:44: error: unknown tag: hide
+     * @hide
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/collection/AbstractImmutableSet.java:67: error: unknown tag: hide
+     * @hide
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/collection/AbstractImmutableSet.java:80: error: unknown tag: hide
+     * @hide
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/collection/AbstractImmutableSet.java:93: error: unknown tag: hide
+     * @hide
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/collection/AbstractImmutableSet.java:101: error: unknown tag: hide
+     * @hide
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/app/DialogFragmentUtils.java:50: error: reference not found
+     * @param tag the tag string that is related to the {@link android.support.v4.app.DialogFragment}.
+                                                               ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/app/DialogFragmentUtils.java:52: error: reference not found
+     * @return the {@link android.support.v4.app.DialogFragment}. {@code null} if the fragment not found.
+                          ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/app/DialogFragmentUtils.java:89: error: reference not found
+     * Dismiss {@link android.support.v4.app.DialogFragment} for the tag on the loader callbacks.
+                      ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/app/DialogFragmentUtils.java:91: error: reference not found
+     * @param tag the tag string that is related to the {@link android.support.v4.app.DialogFragment}.
+                                                               ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/app/DialogFragmentUtils.java:99: error: reference not found
+     * Dismiss {@link android.support.v4.app.DialogFragment} for the tag on the loader callbacks with the specified {@link android.os.Handler}.
+                      ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/app/DialogFragmentUtils.java:102: error: reference not found
+     * @param tag the tag string that is related to the {@link android.support.v4.app.DialogFragment}.
+                                                               ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/app/DialogFragmentUtils.java:145: error: reference not found
+     * Show {@link android.support.v4.app.DialogFragment} with the specified tag on the loader callbacks.
+                   ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/app/DialogFragmentUtils.java:148: error: reference not found
+     * @param tag the tag string that is related to the {@link android.support.v4.app.DialogFragment}.
+                                                               ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/app/DialogFragmentUtils.java:155: error: reference not found
+     * Show {@link android.support.v4.app.DialogFragment} with the specified tag on the loader callbacks.
+                   ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/app/DialogFragmentUtils.java:159: error: reference not found
+     * @param tag the tag string that is related to the {@link android.support.v4.app.DialogFragment}.
+                                                               ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/app/DialogFragmentUtils.java:25: error: reference not found
+ * Utility for {@link android.app.DialogFragment} and {@link android.support.v4.app.DialogFragment}.
+                                                             ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/app/FragmentManagerUtils.java:30: error: reference not found
+     * Find a fragment that is under {@link android.support.v4.app.FragmentManager}'s control by the id.
+                                            ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/app/FragmentManagerUtils.java:55: error: reference not found
+     * Find a fragment that is under {@link android.support.v4.app.FragmentManager}'s control by the tag string.
+                                            ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/app/FragmentManagerUtils.java:8: error: reference not found
+ * Utility for the {@link android.app.FragmentManager} and {@link android.support.v4.app.FragmentManager}.
+                                                                  ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:50: error: ')' missing in reference
+     * @see android.accounts.AccountManager#addAccount(String, String, String[], android.os.Bundle, android.app.Activity, android.accounts.AccountManagerCallback, android.os.Handler).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:58: error: ')' missing in reference
+     * @see android.accounts.AccountManager#addAccountExplicitly(android.accounts.Account, String, android.os.Bundle).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:66: error: ')' missing in reference
+     * @see android.accounts.AccountManager#addOnAccountsUpdatedListener(android.accounts.OnAccountsUpdateListener, android.os.Handler, boolean).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:74: error: ')' missing in reference
+     * @see android.accounts.AccountManager#blockingGetAuthToken(android.accounts.Account, String, boolean).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:82: error: ')' missing in reference
+     * @see android.accounts.AccountManager#clearPassword(android.accounts.Account).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:90: error: ')' missing in reference
+     * @see android.accounts.AccountManager#confirmCredentials(android.accounts.Account, android.os.Bundle, android.app.Activity, android.accounts.AccountManagerCallback, android.os.Handler).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:98: error: ')' missing in reference
+     * @see android.accounts.AccountManager#editProperties(String, android.app.Activity, android.accounts.AccountManagerCallback, android.os.Handler).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:106: error: ')' missing in reference
+     * @see android.accounts.AccountManager#equals(Object).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:113: error: ')' missing in reference
+     * @see android.accounts.AccountManager#getAccounts().
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:121: error: ')' missing in reference
+     * @see android.accounts.AccountManager#getAccountsByType(String).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:129: error: ')' missing in reference
+     * @see android.accounts.AccountManager#getAccountsByTypeAndFeatures(String, String[], android.accounts.AccountManagerCallback, android.os.Handler).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:137: error: ')' missing in reference
+     * @see android.accounts.AccountManager#getAccountsByTypeForPackage(String, String).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:145: error: ')' missing in reference
+     * @see android.accounts.AccountManager#getAuthToken(android.accounts.Account, String, boolean, android.accounts.AccountManagerCallback, android.os.Handler).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:154: error: ')' missing in reference
+     * @see android.accounts.AccountManager#getAuthToken(android.accounts.Account, String, android.os.Bundle, android.app.Activity, android.accounts.AccountManagerCallback, android.os.Handler).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:163: error: ')' missing in reference
+     * @see android.accounts.AccountManager#getAuthToken(android.accounts.Account, String, android.os.Bundle, boolean, android.accounts.AccountManagerCallback, android.os.Handler).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:172: error: ')' missing in reference
+     * @see android.accounts.AccountManager#getAuthTokenByFeatures(String, String, String[], android.app.Activity, android.os.Bundle, android.os.Bundle, android.accounts.AccountManagerCallback, android.os.Handler).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:180: error: ')' missing in reference
+     * @see android.accounts.AccountManager#getAuthenticatorTypes().
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:187: error: ')' missing in reference
+     * @see android.accounts.AccountManager#getPassword(android.accounts.Account).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:195: error: ')' missing in reference
+     * @see android.accounts.AccountManager#getUserData(android.accounts.Account, String).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:203: error: ')' missing in reference
+     * @see android.accounts.AccountManager#hasFeatures(android.accounts.Account, String[], android.accounts.AccountManagerCallback, android.os.Handler).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:212: error: ')' missing in reference
+     * @see android.accounts.AccountManager#hashCode().
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:219: error: ')' missing in reference
+     * @see android.accounts.AccountManager#invalidateAuthToken(String, String).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:227: error: ')' missing in reference
+     * @see android.accounts.AccountManager#peekAuthToken(android.accounts.Account, String).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:235: error: ')' missing in reference
+     * @see android.accounts.AccountManager#removeAccount(android.accounts.Account, android.accounts.AccountManagerCallback, android.os.Handler).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:243: error: ')' missing in reference
+     * @see android.accounts.AccountManager#removeOnAccountsUpdatedListener(android.accounts.OnAccountsUpdateListener).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:250: error: ')' missing in reference
+     * @see android.accounts.AccountManager#setAuthToken(android.accounts.Account, String, String).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:258: error: ')' missing in reference
+     * @see android.accounts.AccountManager#setPassword(android.accounts.Account, String).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:266: error: ')' missing in reference
+     * @see android.accounts.AccountManager#setUserData(android.accounts.Account, String, String).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:274: error: ')' missing in reference
+     * @see android.accounts.AccountManager#toString().
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:281: error: ')' missing in reference
+     * @see android.accounts.AccountManager#updateCredentials(android.accounts.Account, String, android.os.Bundle, android.app.Activity, android.accounts.AccountManagerCallback, android.os.Handler).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:43: error: ')' missing in reference
+     * @see android.accounts.AccountManager#get(android.content.Context).
+       ^
+
+87 errors
+100 warnings
+:amalgam:androidJavadocsJar
+:amalgam:androidSourcesJar
+:amalgam:preBuild UP-TO-DATE
+:amalgam:preDebugBuild UP-TO-DATE
+:amalgam:checkDebugManifest
+:amalgam:preDebugAndroidTestBuild UP-TO-DATE
+:amalgam:preDebugUnitTestBuild UP-TO-DATE
+:amalgam:preReleaseBuild UP-TO-DATE
+:amalgam:preReleaseUnitTestBuild UP-TO-DATE
+:amalgam:prepareComAndroidSupportAnimatedVectorDrawable2501Library
+:amalgam:prepareComAndroidSupportAppcompatV72501Library
+:amalgam:prepareComAndroidSupportGridlayoutV72501Library
+:amalgam:prepareComAndroidSupportSupportCompat2501Library
+:amalgam:prepareComAndroidSupportSupportCoreUi2501Library
+:amalgam:prepareComAndroidSupportSupportCoreUtils2501Library
+:amalgam:prepareComAndroidSupportSupportFragment2501Library
+:amalgam:prepareComAndroidSupportSupportMediaCompat2501Library
+:amalgam:prepareComAndroidSupportSupportV42501Library
+:amalgam:prepareComAndroidSupportSupportVectorDrawable2501Library
+:amalgam:prepareDebugDependencies
+:amalgam:compileDebugAidl
+:amalgam:compileDebugNdk UP-TO-DATE
+:amalgam:compileLint
+:amalgam:copyDebugLint UP-TO-DATE
+:amalgam:compileDebugRenderscript
+:amalgam:generateDebugBuildConfig
+:amalgam:generateDebugResValues
+:amalgam:generateDebugResources
+:amalgam:mergeDebugResources
+:amalgam:processDebugManifest
+:amalgam:processDebugResources
+:amalgam:generateDebugSources
+:amalgam:incrementalDebugJavaCompilationSafeguard
+:amalgam:compileDebugJavaWithJavac
+:amalgam:compileDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+:amalgam:extractDebugAnnotations
+:amalgam:mergeDebugShaders
+:amalgam:compileDebugShaders
+:amalgam:generateDebugAssets
+:amalgam:mergeDebugAssets
+:amalgam:mergeDebugProguardFiles
+:amalgam:packageDebugRenderscript UP-TO-DATE
+:amalgam:packageDebugResources
+:amalgam:processDebugJavaRes UP-TO-DATE
+:amalgam:transformResourcesWithMergeJavaResForDebug
+:amalgam:transformClassesAndResourcesWithSyncLibJarsForDebug
+:amalgam:mergeDebugJniLibFolders
+:amalgam:transformNative_libsWithMergeJniLibsForDebug
+:amalgam:transformNative_libsWithSyncJniLibsForDebug
+:amalgam:bundleDebug
+:amalgam:compileDebugSources
+:amalgam:assembleDebug
+:amalgam:checkReleaseManifest
+:amalgam:prepareReleaseDependencies
+:amalgam:compileReleaseAidl
+:amalgam:compileReleaseNdk UP-TO-DATE
+:amalgam:copyReleaseLint UP-TO-DATE
+:amalgam:compileReleaseRenderscript
+:amalgam:generateReleaseBuildConfig
+:amalgam:generateReleaseResValues
+:amalgam:generateReleaseResources
+:amalgam:mergeReleaseResources
+:amalgam:processReleaseManifest
+:amalgam:processReleaseResources
+:amalgam:generateReleaseSources
+:amalgam:incrementalReleaseJavaCompilationSafeguard
+:amalgam:compileReleaseJavaWithJavac
+:amalgam:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+:amalgam:extractReleaseAnnotations
+:amalgam:mergeReleaseShaders
+:amalgam:compileReleaseShaders
+:amalgam:generateReleaseAssets
+:amalgam:mergeReleaseAssets
+:amalgam:mergeReleaseProguardFiles
+:amalgam:packageReleaseRenderscript UP-TO-DATE
+:amalgam:packageReleaseResources
+:amalgam:processReleaseJavaRes UP-TO-DATE
+:amalgam:transformResourcesWithMergeJavaResForRelease
+:amalgam:transformClassesAndResourcesWithSyncLibJarsForRelease
+:amalgam:mergeReleaseJniLibFolders
+:amalgam:transformNative_libsWithMergeJniLibsForRelease
+:amalgam:transformNative_libsWithSyncJniLibsForRelease
+:amalgam:bundleRelease
+:amalgam:compileReleaseSources
+:amalgam:assembleRelease
+:amalgam:signArchives SKIPPED
+:amalgam:assemble
+:amalgam:build
+
+BUILD SUCCESSFUL
+
+Total time: 19.908 secs
+
+2018-05-21 00:56:19,449 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-21 00:56:19,449 INFO  SysUtils - Execute command: [/tmp/rdisk/1297/src/gradlew, -b, /tmp/rdisk/1297/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-21 00:56:27,893 INFO  ProjectTaskService - Detected possible tasks: 75
+2018-05-21 00:56:27,893 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-05-21 00:56:27,893 INFO  SysUtils - Execute command: [/tmp/rdisk/1297/src/gradlew, -b, /tmp/rdisk/1297/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-05-21 00:56:40,008 INFO  SysUtils - Configuration on demand is an incubating feature.
+Incremental java compilation is an incubating feature.
+:amalgam:androidJavadocs/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/app/SupportSimpleAlertDialogFragment.java:24: error: cannot find symbol
+import com.amalgam.R;
+                  ^
+  symbol:   class R
+  location: package com.amalgam
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/app/SimpleAlertDialogFragment.java:26: error: cannot find symbol
+import com.amalgam.R;
+                  ^
+  symbol:   class R
+  location: package com.amalgam
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/io/FileUtils.java:45: error: ')' missing in reference
+     * @see java.nio.channels.FileChannel#transferTo(long, long, java.nio.channels.WritableByteChannel).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/io/FileUtils.java:47: warning: no description for @throws
+     * @throws FileNotFoundException
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/io/FileUtils.java:48: warning: no description for @throws
+     * @throws IOException
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/io/FileUtils.java:69: warning: no description for @throws
+     * @throws IOException
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/os/BundleUtils.java:690: warning: no @param for <T>
+    public static <T extends Parcelable> T optParcelable(@Nullable Bundle bundle, @Nullable String key) {
+                                           ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/os/BundleUtils.java:704: warning: no @param for <T>
+    public static <T extends Parcelable> T optParcelable(@Nullable Bundle bundle, @Nullable String key, @Nullable T fallback) {
+                                           ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/os/BundleUtils.java:751: warning: no @param for <T>
+    public static <T extends Parcelable> ArrayList<T> optParcelableArrayList(@Nullable Bundle bundle, @Nullable String key) {
+                                                      ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/os/BundleUtils.java:766: warning: no @param for <T>
+    public static <T extends Parcelable> ArrayList<T> optParcelableArrayList(@Nullable Bundle bundle, @Nullable String key, @Nullable ArrayList<T> fallback) {
+                                                      ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/os/BundleUtils.java:783: warning: no @param for <T>
+    public static <T extends Serializable> T optSerializable(@Nullable Bundle bundle, @Nullable String key) {
+                                             ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/os/BundleUtils.java:798: warning: no @param for <T>
+    public static <T extends Serializable> T optSerializable(@Nullable Bundle bundle, @Nullable String key, @Nullable T fallback) {
+                                             ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/os/BundleUtils.java:856: warning: no @param for fallback
+    public static short[] optShortArray(@Nullable Bundle bundle, @Nullable String key, @Nullable short[] fallback) {
+                          ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/os/BundleUtils.java:936: warning: no @param for <T>
+    public static <T extends Parcelable> SparseArray<T> optSparseParcelableArray(@Nullable Bundle bundle, @Nullable String key) {
+                                                        ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/os/BundleUtils.java:950: warning: no @param for <T>
+    public static <T extends Parcelable> SparseArray<T> optSparseParcelableArray(@Nullable Bundle bundle, @Nullable String key, @Nullable SparseArray<T> fallback) {
+                                                        ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/os/BundleUtils.java:1104: warning: no @param for key
+    public static void putSerializableArrayList(@NonNull Bundle bundle, @NonNull String key, @NonNull ArrayList<? extends Serializable> list) {
+                       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/os/ParcelUtils.java:61: warning: no @param for parcel
+    public static Date readDate (final Parcel parcel) {
+                       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/content/ContextUtils.java:235: error: ')' missing in reference
+     * @see android.view.LayoutInflater#from(android.content.Context).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/content/ContextUtils.java:254: error: ')' missing in reference
+     * @see android.accounts.AccountManager#get(android.content.Context).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/nio/ChannelUtils.java:38: warning: no description for @throws
+     * @throws IOException
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/graphics/BitmapUtils.java:183: error: malformed HTML
+     * @param scale the shrink scale, must be < 1.0.
+                                              ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/graphics/BitmapUtils.java:200: error: bad use of '>'
+     * @param scale the expand scale, must be > 1.0.
+                                              ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/graphics/BitmapUtils.java:289: warning: no @param for file
+    public static boolean storeAsFile(Bitmap bitmap, File file, Bitmap.CompressFormat format, int quality) {
+                          ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/appwidget/AppWidgetManagerUtils.java:33: error: ')' missing in reference
+     * @see android.appwidget.AppWidgetManager#getAppWidgetIds(android.content.ComponentName).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/appwidget/AppWidgetManagerUtils.java:35: warning: no @param for appWidgetManager
+    public static int[] getAppWidgetIds(AppWidgetManager appWidgetManager, Context context, Class<?> clazz) {
+                        ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/appwidget/AppWidgetManagerUtils.java:35: warning: no @param for context
+    public static int[] getAppWidgetIds(AppWidgetManager appWidgetManager, Context context, Class<?> clazz) {
+                        ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/appwidget/AppWidgetManagerUtils.java:35: warning: no @param for clazz
+    public static int[] getAppWidgetIds(AppWidgetManager appWidgetManager, Context context, Class<?> clazz) {
+                        ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/appwidget/AppWidgetManagerUtils.java:35: warning: no @return
+    public static int[] getAppWidgetIds(AppWidgetManager appWidgetManager, Context context, Class<?> clazz) {
+                        ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/net/HttpURLConnectionUtils.java:36: error: unexpected content
+     * @see {@link java.net.HttpURLConnection#disconnect()}
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/net/HttpURLConnectionUtils.java:39: warning - Tag @see:illegal character: "123" in "{@link java.net.HttpURLConnection#disconnect()}"
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/net/HttpURLConnectionUtils.java:39: warning - Tag @see:illegal character: "64" in "{@link java.net.HttpURLConnection#disconnect()}"
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/database/CursorUtils.java:47: error: ')' missing in reference
+     * @see android.database.Cursor#getColumnIndex(String).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/database/CursorUtils.java:58: error: ')' missing in reference
+     * @see android.database.Cursor#getInt(int).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/database/CursorUtils.java:59: error: ')' missing in reference
+     * @see android.database.Cursor#getColumnIndex(String).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/database/CursorUtils.java:74: error: ')' missing in reference
+     * @see android.database.Cursor#getString(int).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/database/CursorUtils.java:75: error: ')' missing in reference
+     * @see android.database.Cursor#getColumnIndex(String).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/database/CursorUtils.java:90: error: ')' missing in reference
+     * @see android.database.Cursor#getShort(int).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/database/CursorUtils.java:91: error: ')' missing in reference
+     * @see android.database.Cursor#getColumnIndex(String).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/database/CursorUtils.java:106: error: ')' missing in reference
+     * @see android.database.Cursor#getLong(int).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/database/CursorUtils.java:107: error: ')' missing in reference
+     * @see android.database.Cursor#getColumnIndex(String).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/database/CursorUtils.java:122: error: ')' missing in reference
+     * @see android.database.Cursor#getDouble(int).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/database/CursorUtils.java:123: error: ')' missing in reference
+     * @see android.database.Cursor#getColumnIndex(String).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/database/CursorUtils.java:138: error: ')' missing in reference
+     * @see android.database.Cursor#getFloat(int).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/database/CursorUtils.java:139: error: ')' missing in reference
+     * @see android.database.Cursor#getColumnIndex(String).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/database/CursorUtils.java:154: error: ')' missing in reference
+     * @see android.database.Cursor#getBlob(int).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/database/CursorUtils.java:155: error: ')' missing in reference
+     * @see android.database.Cursor#getColumnIndex(String).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/database/CursorUtils.java:170: error: ')' missing in reference
+     * @see android.database.Cursor#getType(int).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/database/CursorUtils.java:171: error: ')' missing in reference
+     * @see android.database.Cursor#getColumnIndex(String).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/database/CursorUtils.java:187: error: ')' missing in reference
+     * @see android.database.Cursor#isNull(int).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/database/CursorUtils.java:188: error: ')' missing in reference
+     * @see android.database.Cursor#getColumnIndex(String).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/collection/AbstractImmutableMap.java:42: error: unknown tag: hide
+     * @hide
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/collection/AbstractImmutableMap.java:50: error: unknown tag: hide
+     * @hide
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/collection/AbstractImmutableMap.java:68: error: unknown tag: hide
+     * @hide
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/collection/AbstractImmutableMap.java:86: error: unknown tag: hide
+     * @hide
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/collection/AbstractImmutableMap.java:94: error: unknown tag: hide
+     * @hide
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/collection/AbstractImmutableMap.java:107: error: unknown tag: hide
+     * @hide
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/collection/AbstractImmutableMap.java:26: warning: no description for @param
+ * @param <K>
+   ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/collection/AbstractImmutableMap.java:27: warning: no description for @param
+ * @param <V>
+   ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/collection/AbstractImmutableSet.java:36: error: unknown tag: hide
+     * @hide
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/collection/AbstractImmutableSet.java:44: error: unknown tag: hide
+     * @hide
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/collection/AbstractImmutableSet.java:67: error: unknown tag: hide
+     * @hide
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/collection/AbstractImmutableSet.java:80: error: unknown tag: hide
+     * @hide
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/collection/AbstractImmutableSet.java:93: error: unknown tag: hide
+     * @hide
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/collection/AbstractImmutableSet.java:101: error: unknown tag: hide
+     * @hide
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/collection/AbstractImmutableSet.java:26: warning: no description for @param
+ * @param <E>
+   ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/collection/CollectionUtils.java:53: warning: no @param for collection
+    public static int getLastIndex(final Collection<?> collection) {
+                      ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/collection/ImmutableHashMap.java:24: warning: no description for @param
+ * @param <K>
+   ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/collection/ImmutableHashMap.java:25: warning: no description for @param
+ * @param <V>
+   ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/collection/ImmutableWeakHashMap.java:25: warning: no description for @param
+ * @param <K>
+   ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/collection/ImmutableWeakHashMap.java:26: warning: no description for @param
+ * @param <V>
+   ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/app/PendingIntentUtils.java:23: warning: no @param for context
+    public static PendingIntent getActivities(Context context, int requestCode, Intent[] intents, int flags) {
+                                ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/app/PendingIntentUtils.java:23: warning: no @param for requestCode
+    public static PendingIntent getActivities(Context context, int requestCode, Intent[] intents, int flags) {
+                                ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/app/PendingIntentUtils.java:23: warning: no @param for intents
+    public static PendingIntent getActivities(Context context, int requestCode, Intent[] intents, int flags) {
+                                ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/app/PendingIntentUtils.java:23: warning: no @param for flags
+    public static PendingIntent getActivities(Context context, int requestCode, Intent[] intents, int flags) {
+                                ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/app/PendingIntentUtils.java:23: warning: no @return
+    public static PendingIntent getActivities(Context context, int requestCode, Intent[] intents, int flags) {
+                                ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/app/PendingIntentUtils.java:32: warning: no @param for context
+    public static PendingIntent getActivity(Context context, int requestCode, Intent intent, int flags) {
+                                ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/app/PendingIntentUtils.java:32: warning: no @param for requestCode
+    public static PendingIntent getActivity(Context context, int requestCode, Intent intent, int flags) {
+                                ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/app/PendingIntentUtils.java:32: warning: no @param for intent
+    public static PendingIntent getActivity(Context context, int requestCode, Intent intent, int flags) {
+                                ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/app/PendingIntentUtils.java:32: warning: no @param for flags
+    public static PendingIntent getActivity(Context context, int requestCode, Intent intent, int flags) {
+                                ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/app/PendingIntentUtils.java:32: warning: no @return
+    public static PendingIntent getActivity(Context context, int requestCode, Intent intent, int flags) {
+                                ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/app/PendingIntentUtils.java:41: warning: no @param for context
+    public static PendingIntent getBroadcast(Context context, int requestCode, Intent intent, int flags) {
+                                ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/app/PendingIntentUtils.java:41: warning: no @param for requestCode
+    public static PendingIntent getBroadcast(Context context, int requestCode, Intent intent, int flags) {
+                                ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/app/PendingIntentUtils.java:41: warning: no @param for intent
+    public static PendingIntent getBroadcast(Context context, int requestCode, Intent intent, int flags) {
+                                ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/app/PendingIntentUtils.java:41: warning: no @param for flags
+    public static PendingIntent getBroadcast(Context context, int requestCode, Intent intent, int flags) {
+                                ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/app/PendingIntentUtils.java:41: warning: no @return
+    public static PendingIntent getBroadcast(Context context, int requestCode, Intent intent, int flags) {
+                                ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/app/PendingIntentUtils.java:50: warning: no @param for context
+    public static PendingIntent getService(Context context, int requestCode, Intent intent, int flags) {
+                                ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/app/PendingIntentUtils.java:50: warning: no @param for requestCode
+    public static PendingIntent getService(Context context, int requestCode, Intent intent, int flags) {
+                                ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/app/PendingIntentUtils.java:50: warning: no @param for intent
+    public static PendingIntent getService(Context context, int requestCode, Intent intent, int flags) {
+                                ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/app/PendingIntentUtils.java:50: warning: no @param for flags
+    public static PendingIntent getService(Context context, int requestCode, Intent intent, int flags) {
+                                ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/app/PendingIntentUtils.java:50: warning: no @return
+    public static PendingIntent getService(Context context, int requestCode, Intent intent, int flags) {
+                                ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/content/pm/PackageManagerUtils.java:132: warning: no @param for targetPackage
+    public static PackageInfo getActivityPackageInfo(Context context, String targetPackage) throws NameNotFoundException {
+                              ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:50: error: ')' missing in reference
+     * @see android.accounts.AccountManager#addAccount(String, String, String[], android.os.Bundle, android.app.Activity, android.accounts.AccountManagerCallback, android.os.Handler).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:53: warning: no @param for accountType
+    public AccountManagerFuture<Bundle> addAccount(String accountType, String authTokenType, String[] requiredFeatures, Bundle addAccountOptions, Activity activity, AccountManagerCallback<Bundle> callback, Handler handler) {
+                                        ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:53: warning: no @param for authTokenType
+    public AccountManagerFuture<Bundle> addAccount(String accountType, String authTokenType, String[] requiredFeatures, Bundle addAccountOptions, Activity activity, AccountManagerCallback<Bundle> callback, Handler handler) {
+                                        ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:53: warning: no @param for requiredFeatures
+    public AccountManagerFuture<Bundle> addAccount(String accountType, String authTokenType, String[] requiredFeatures, Bundle addAccountOptions, Activity activity, AccountManagerCallback<Bundle> callback, Handler handler) {
+                                        ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:53: warning: no @param for addAccountOptions
+    public AccountManagerFuture<Bundle> addAccount(String accountType, String authTokenType, String[] requiredFeatures, Bundle addAccountOptions, Activity activity, AccountManagerCallback<Bundle> callback, Handler handler) {
+                                        ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:53: warning: no @param for activity
+    public AccountManagerFuture<Bundle> addAccount(String accountType, String authTokenType, String[] requiredFeatures, Bundle addAccountOptions, Activity activity, AccountManagerCallback<Bundle> callback, Handler handler) {
+                                        ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:53: warning: no @param for callback
+    public AccountManagerFuture<Bundle> addAccount(String accountType, String authTokenType, String[] requiredFeatures, Bundle addAccountOptions, Activity activity, AccountManagerCallback<Bundle> callback, Handler handler) {
+                                        ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:53: warning: no @param for handler
+    public AccountManagerFuture<Bundle> addAccount(String accountType, String authTokenType, String[] requiredFeatures, Bundle addAccountOptions, Activity activity, AccountManagerCallback<Bundle> callback, Handler handler) {
+                                        ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:53: warning: no @return
+    public AccountManagerFuture<Bundle> addAccount(String accountType, String authTokenType, String[] requiredFeatures, Bundle addAccountOptions, Activity activity, AccountManagerCallback<Bundle> callback, Handler handler) {
+                                        ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:58: error: ')' missing in reference
+     * @see android.accounts.AccountManager#addAccountExplicitly(android.accounts.Account, String, android.os.Bundle).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:61: warning: no @param for account
+    public boolean addAccountExplicitly(Account account, String password, Bundle userdata) {
+                   ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:61: warning: no @param for password
+    public boolean addAccountExplicitly(Account account, String password, Bundle userdata) {
+                   ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:61: warning: no @param for userdata
+    public boolean addAccountExplicitly(Account account, String password, Bundle userdata) {
+                   ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:61: warning: no @return
+    public boolean addAccountExplicitly(Account account, String password, Bundle userdata) {
+                   ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:66: error: ')' missing in reference
+     * @see android.accounts.AccountManager#addOnAccountsUpdatedListener(android.accounts.OnAccountsUpdateListener, android.os.Handler, boolean).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:69: warning: no @param for listener
+    public void addOnAccountsUpdatedListener(OnAccountsUpdateListener listener, Handler handler, boolean updateImmediately) {
+                ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:69: warning: no @param for handler
+    public void addOnAccountsUpdatedListener(OnAccountsUpdateListener listener, Handler handler, boolean updateImmediately) {
+                ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:69: warning: no @param for updateImmediately
+    public void addOnAccountsUpdatedListener(OnAccountsUpdateListener listener, Handler handler, boolean updateImmediately) {
+                ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:74: error: ')' missing in reference
+     * @see android.accounts.AccountManager#blockingGetAuthToken(android.accounts.Account, String, boolean).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:77: warning: no @param for account
+    public String blockingGetAuthToken(Account account, String authTokenType, boolean notifyAuthFailure) throws OperationCanceledException, IOException, AuthenticatorException {
+                  ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:77: warning: no @param for authTokenType
+    public String blockingGetAuthToken(Account account, String authTokenType, boolean notifyAuthFailure) throws OperationCanceledException, IOException, AuthenticatorException {
+                  ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:77: warning: no @param for notifyAuthFailure
+    public String blockingGetAuthToken(Account account, String authTokenType, boolean notifyAuthFailure) throws OperationCanceledException, IOException, AuthenticatorException {
+                  ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:77: warning: no @return
+    public String blockingGetAuthToken(Account account, String authTokenType, boolean notifyAuthFailure) throws OperationCanceledException, IOException, AuthenticatorException {
+                  ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:77: warning: no @throws for android.accounts.OperationCanceledException
+    public String blockingGetAuthToken(Account account, String authTokenType, boolean notifyAuthFailure) throws OperationCanceledException, IOException, AuthenticatorException {
+                  ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:77: warning: no @throws for java.io.IOException
+    public String blockingGetAuthToken(Account account, String authTokenType, boolean notifyAuthFailure) throws OperationCanceledException, IOException, AuthenticatorException {
+                  ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:77: warning: no @throws for android.accounts.AuthenticatorException
+    public String blockingGetAuthToken(Account account, String authTokenType, boolean notifyAuthFailure) throws OperationCanceledException, IOException, AuthenticatorException {
+                  ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:82: error: ')' missing in reference
+     * @see android.accounts.AccountManager#clearPassword(android.accounts.Account).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:85: warning: no @param for account
+    public void clearPassword(Account account) {
+                ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:90: error: ')' missing in reference
+     * @see android.accounts.AccountManager#confirmCredentials(android.accounts.Account, android.os.Bundle, android.app.Activity, android.accounts.AccountManagerCallback, android.os.Handler).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:93: warning: no @param for account
+    public AccountManagerFuture<Bundle> confirmCredentials(Account account, Bundle options, Activity activity, AccountManagerCallback<Bundle> callback, Handler handler) {
+                                        ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:93: warning: no @param for options
+    public AccountManagerFuture<Bundle> confirmCredentials(Account account, Bundle options, Activity activity, AccountManagerCallback<Bundle> callback, Handler handler) {
+                                        ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:93: warning: no @param for activity
+    public AccountManagerFuture<Bundle> confirmCredentials(Account account, Bundle options, Activity activity, AccountManagerCallback<Bundle> callback, Handler handler) {
+                                        ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:93: warning: no @param for callback
+    public AccountManagerFuture<Bundle> confirmCredentials(Account account, Bundle options, Activity activity, AccountManagerCallback<Bundle> callback, Handler handler) {
+                                        ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:93: warning: no @param for handler
+    public AccountManagerFuture<Bundle> confirmCredentials(Account account, Bundle options, Activity activity, AccountManagerCallback<Bundle> callback, Handler handler) {
+                                        ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:93: warning: no @return
+    public AccountManagerFuture<Bundle> confirmCredentials(Account account, Bundle options, Activity activity, AccountManagerCallback<Bundle> callback, Handler handler) {
+                                        ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:98: error: ')' missing in reference
+     * @see android.accounts.AccountManager#editProperties(String, android.app.Activity, android.accounts.AccountManagerCallback, android.os.Handler).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:101: warning: no @param for accountType
+    public AccountManagerFuture<Bundle> editProperties(String accountType, Activity activity, AccountManagerCallback<Bundle> callback, Handler handler) {
+                                        ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:101: warning: no @param for activity
+    public AccountManagerFuture<Bundle> editProperties(String accountType, Activity activity, AccountManagerCallback<Bundle> callback, Handler handler) {
+                                        ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:101: warning: no @param for callback
+    public AccountManagerFuture<Bundle> editProperties(String accountType, Activity activity, AccountManagerCallback<Bundle> callback, Handler handler) {
+                                        ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:101: warning: no @param for handler
+    public AccountManagerFuture<Bundle> editProperties(String accountType, Activity activity, AccountManagerCallback<Bundle> callback, Handler handler) {
+                                        ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:101: warning: no @return
+    public AccountManagerFuture<Bundle> editProperties(String accountType, Activity activity, AccountManagerCallback<Bundle> callback, Handler handler) {
+                                        ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:106: error: ')' missing in reference
+     * @see android.accounts.AccountManager#equals(Object).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:113: error: ')' missing in reference
+     * @see android.accounts.AccountManager#getAccounts().
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:116: warning: no @return
+    public Account[] getAccounts() {
+                     ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:121: error: ')' missing in reference
+     * @see android.accounts.AccountManager#getAccountsByType(String).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:124: warning: no @param for type
+    public Account[] getAccountsByType(String type) {
+                     ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:124: warning: no @return
+    public Account[] getAccountsByType(String type) {
+                     ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:129: error: ')' missing in reference
+     * @see android.accounts.AccountManager#getAccountsByTypeAndFeatures(String, String[], android.accounts.AccountManagerCallback, android.os.Handler).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:132: warning: no @param for type
+    public AccountManagerFuture<Account[]> getAccountsByTypeAndFeatures(String type, String[] features, AccountManagerCallback<Account[]> callback, Handler handler) {
+                                           ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:132: warning: no @param for features
+    public AccountManagerFuture<Account[]> getAccountsByTypeAndFeatures(String type, String[] features, AccountManagerCallback<Account[]> callback, Handler handler) {
+                                           ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:132: warning: no @param for callback
+    public AccountManagerFuture<Account[]> getAccountsByTypeAndFeatures(String type, String[] features, AccountManagerCallback<Account[]> callback, Handler handler) {
+                                           ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:132: warning: no @param for handler
+    public AccountManagerFuture<Account[]> getAccountsByTypeAndFeatures(String type, String[] features, AccountManagerCallback<Account[]> callback, Handler handler) {
+                                           ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:132: warning: no @return
+    public AccountManagerFuture<Account[]> getAccountsByTypeAndFeatures(String type, String[] features, AccountManagerCallback<Account[]> callback, Handler handler) {
+                                           ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:137: error: ')' missing in reference
+     * @see android.accounts.AccountManager#getAccountsByTypeForPackage(String, String).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:140: warning: no @param for type
+    public Account[] getAccountsByTypeForPackage(String type, String packageName) {
+                     ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:140: warning: no @param for packageName
+    public Account[] getAccountsByTypeForPackage(String type, String packageName) {
+                     ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:140: warning: no @return
+    public Account[] getAccountsByTypeForPackage(String type, String packageName) {
+                     ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:145: error: ')' missing in reference
+     * @see android.accounts.AccountManager#getAuthToken(android.accounts.Account, String, boolean, android.accounts.AccountManagerCallback, android.os.Handler).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:149: warning: no @param for account
+    public AccountManagerFuture<Bundle> getAuthToken(Account account, String authTokenType, boolean notifyAuthFailure, AccountManagerCallback<Bundle> callback, Handler handler) {
+                                        ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:149: warning: no @param for authTokenType
+    public AccountManagerFuture<Bundle> getAuthToken(Account account, String authTokenType, boolean notifyAuthFailure, AccountManagerCallback<Bundle> callback, Handler handler) {
+                                        ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:154: error: ')' missing in reference
+     * @see android.accounts.AccountManager#getAuthToken(android.accounts.Account, String, android.os.Bundle, android.app.Activity, android.accounts.AccountManagerCallback, android.os.Handler).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:163: error: ')' missing in reference
+     * @see android.accounts.AccountManager#getAuthToken(android.accounts.Account, String, android.os.Bundle, boolean, android.accounts.AccountManagerCallback, android.os.Handler).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:172: error: ')' missing in reference
+     * @see android.accounts.AccountManager#getAuthTokenByFeatures(String, String, String[], android.app.Activity, android.os.Bundle, android.os.Bundle, android.accounts.AccountManagerCallback, android.os.Handler).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:180: error: ')' missing in reference
+     * @see android.accounts.AccountManager#getAuthenticatorTypes().
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:187: error: ')' missing in reference
+     * @see android.accounts.AccountManager#getPassword(android.accounts.Account).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:195: error: ')' missing in reference
+     * @see android.accounts.AccountManager#getUserData(android.accounts.Account, String).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:203: error: ')' missing in reference
+     * @see android.accounts.AccountManager#hasFeatures(android.accounts.Account, String[], android.accounts.AccountManagerCallback, android.os.Handler).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:212: error: ')' missing in reference
+     * @see android.accounts.AccountManager#hashCode().
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:219: error: ')' missing in reference
+     * @see android.accounts.AccountManager#invalidateAuthToken(String, String).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:227: error: ')' missing in reference
+     * @see android.accounts.AccountManager#peekAuthToken(android.accounts.Account, String).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:235: error: ')' missing in reference
+     * @see android.accounts.AccountManager#removeAccount(android.accounts.Account, android.accounts.AccountManagerCallback, android.os.Handler).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:243: error: ')' missing in reference
+     * @see android.accounts.AccountManager#removeOnAccountsUpdatedListener(android.accounts.OnAccountsUpdateListener).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:250: error: ')' missing in reference
+     * @see android.accounts.AccountManager#setAuthToken(android.accounts.Account, String, String).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:258: error: ')' missing in reference
+     * @see android.accounts.AccountManager#setPassword(android.accounts.Account, String).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:266: error: ')' missing in reference
+     * @see android.accounts.AccountManager#setUserData(android.accounts.Account, String, String).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:274: error: ')' missing in reference
+     * @see android.accounts.AccountManager#toString().
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:281: error: ')' missing in reference
+     * @see android.accounts.AccountManager#updateCredentials(android.accounts.Account, String, android.os.Bundle, android.app.Activity, android.accounts.AccountManagerCallback, android.os.Handler).
+       ^
+/tmp/rdisk/1297/src/amalgam/src/main/java/com/amalgam/account/AccountManagerDelegate.java:43: error: ')' missing in reference
+     * @see android.accounts.AccountManager#get(android.content.Context).
+       ^
+
+69 errors
+100 warnings
+:amalgam:androidJavadocsJar
+:amalgam:androidSourcesJar UP-TO-DATE
+:amalgam:preBuild UP-TO-DATE
+:amalgam:preDebugBuild UP-TO-DATE
+:amalgam:checkDebugManifest
+:amalgam:preDebugAndroidTestBuild UP-TO-DATE
+:amalgam:preDebugUnitTestBuild UP-TO-DATE
+:amalgam:preReleaseBuild UP-TO-DATE
+:amalgam:preReleaseUnitTestBuild UP-TO-DATE
+:amalgam:prepareComAndroidSupportAnimatedVectorDrawable2501Library UP-TO-DATE
+:amalgam:prepareComAndroidSupportAppcompatV72501Library UP-TO-DATE
+:amalgam:prepareComAndroidSupportGridlayoutV72501Library UP-TO-DATE
+:amalgam:prepareComAndroidSupportSupportCompat2501Library UP-TO-DATE
+:amalgam:prepareComAndroidSupportSupportCoreUi2501Library UP-TO-DATE
+:amalgam:prepareComAndroidSupportSupportCoreUtils2501Library UP-TO-DATE
+:amalgam:prepareComAndroidSupportSupportFragment2501Library UP-TO-DATE
+:amalgam:prepareComAndroidSupportSupportMediaCompat2501Library UP-TO-DATE
+:amalgam:prepareComAndroidSupportSupportV42501Library UP-TO-DATE
+:amalgam:prepareComAndroidSupportSupportVectorDrawable2501Library UP-TO-DATE
+:amalgam:prepareDebugDependencies
+:amalgam:compileDebugAidl UP-TO-DATE
+:amalgam:compileDebugNdk UP-TO-DATE
+:amalgam:compileLint UP-TO-DATE
+:amalgam:copyDebugLint UP-TO-DATE
+:amalgam:compileDebugRenderscript UP-TO-DATE
+:amalgam:generateDebugBuildConfig UP-TO-DATE
+:amalgam:generateDebugResValues UP-TO-DATE
+:amalgam:generateDebugResources UP-TO-DATE
+:amalgam:mergeDebugResources UP-TO-DATE
+:amalgam:processDebugManifest UP-TO-DATE
+:amalgam:processDebugResources UP-TO-DATE
+:amalgam:generateDebugSources UP-TO-DATE
+:amalgam:incrementalDebugJavaCompilationSafeguard UP-TO-DATE
+:amalgam:compileDebugJavaWithJavac UP-TO-DATE
+:amalgam:extractDebugAnnotations UP-TO-DATE
+:amalgam:mergeDebugShaders UP-TO-DATE
+:amalgam:compileDebugShaders UP-TO-DATE
+:amalgam:generateDebugAssets UP-TO-DATE
+:amalgam:mergeDebugAssets UP-TO-DATE
+:amalgam:mergeDebugProguardFiles UP-TO-DATE
+:amalgam:packageDebugRenderscript UP-TO-DATE
+:amalgam:packageDebugResources UP-TO-DATE
+:amalgam:processDebugJavaRes UP-TO-DATE
+:amalgam:transformResourcesWithMergeJavaResForDebug UP-TO-DATE
+:amalgam:transformClassesAndResourcesWithSyncLibJarsForDebug UP-TO-DATE
+:amalgam:mergeDebugJniLibFolders UP-TO-DATE
+:amalgam:transformNative_libsWithMergeJniLibsForDebug UP-TO-DATE
+:amalgam:transformNative_libsWithSyncJniLibsForDebug UP-TO-DATE
+:amalgam:bundleDebug UP-TO-DATE
+:amalgam:compileDebugSources UP-TO-DATE
+:amalgam:assembleDebug UP-TO-DATE
+:amalgam:checkReleaseManifest
+:amalgam:prepareReleaseDependencies
+:amalgam:compileReleaseAidl UP-TO-DATE
+:amalgam:compileReleaseNdk UP-TO-DATE
+:amalgam:copyReleaseLint UP-TO-DATE
+:amalgam:compileReleaseRenderscript UP-TO-DATE
+:amalgam:generateReleaseBuildConfig UP-TO-DATE
+:amalgam:generateReleaseResValues UP-TO-DATE
+:amalgam:generateReleaseResources UP-TO-DATE
+:amalgam:mergeReleaseResources UP-TO-DATE
+:amalgam:processReleaseManifest UP-TO-DATE
+:amalgam:processReleaseResources UP-TO-DATE
+:amalgam:generateReleaseSources UP-TO-DATE
+:amalgam:incrementalReleaseJavaCompilationSafeguard UP-TO-DATE
+:amalgam:compileReleaseJavaWithJavac UP-TO-DATE
+:amalgam:extractReleaseAnnotations UP-TO-DATE
+:amalgam:mergeReleaseShaders UP-TO-DATE
+:amalgam:compileReleaseShaders UP-TO-DATE
+:amalgam:generateReleaseAssets UP-TO-DATE
+:amalgam:mergeReleaseAssets UP-TO-DATE
+:amalgam:mergeReleaseProguardFiles UP-TO-DATE
+:amalgam:packageReleaseRenderscript UP-TO-DATE
+:amalgam:packageReleaseResources UP-TO-DATE
+:amalgam:processReleaseJavaRes UP-TO-DATE
+:amalgam:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:amalgam:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:amalgam:mergeReleaseJniLibFolders UP-TO-DATE
+:amalgam:transformNative_libsWithMergeJniLibsForRelease UP-TO-DATE
+:amalgam:transformNative_libsWithSyncJniLibsForRelease UP-TO-DATE
+:amalgam:bundleRelease UP-TO-DATE
+:amalgam:compileReleaseSources UP-TO-DATE
+:amalgam:assembleRelease UP-TO-DATE
+:amalgam:signArchives SKIPPED
+:amalgam:assemble
+:amalgam:build
+
+BUILD SUCCESSFUL
+
+Total time: 11.601 secs
+
+2018-05-21 00:56:40,069 ERROR FullProcessService - Project build has not produced APK file
+2018-05-21 00:56:40,127 ERROR FullProcessService - Could not find generated or existed APK file

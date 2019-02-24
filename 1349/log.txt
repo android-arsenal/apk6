@@ -1,0 +1,21 @@
+2018-04-06 19:37:34,248 INFO  DownloadService - Downloading "https://github.com/mg6maciej/hrisey/archive/master.zip", attempt 3
+2018-04-06 19:38:34,709 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-06 19:38:35,397 INFO  GithubDownloadService - Default branch of this repository: develop
+2018-04-06 19:38:35,397 INFO  DownloadService - Downloading "https://github.com/mg6maciej/hrisey/archive/develop.zip", attempt 3
+2018-04-06 19:39:36,697 DEBUG FullProcessService - Repository https://github.com/mg6maciej/hrisey available: true
+2018-04-06 19:39:36,697 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-06 19:39:36,698 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/mg6maciej/hrisey, /tmp/rdisk/1349/src]
+2018-04-06 19:39:40,395 INFO  SysUtils - 
+2018-04-06 19:39:40,412 INFO  GitService - Deleted "/tmp/rdisk/1349/src/.git": true
+2018-04-06 19:39:40,441 INFO  FullProcessService - Size of directory with sources: 26 MB
+2018-04-06 19:39:40,441 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1349/src]
+2018-04-06 19:39:40,454 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1349/src/.git/
+
+2018-04-06 19:39:40,471 INFO  ProjectBuildService - Gradle wrapper(s): none
+2018-04-06 19:39:40,471 ERROR ProjectBuildService - Could not detect Gradle wrapper. Default Gradle installation will be used
+2018-04-06 19:39:40,487 INFO  ProjectBuildService - Build script(s): none
+2018-04-06 19:39:40,504 INFO  ProjectBuildService - All script(s): none
+2018-04-06 19:39:40,504 INFO  ProjectBuildService - Remote scripts: none
+2018-04-06 19:39:40,504 ERROR FullProcessService - Project is not correct Gradle project
+2018-04-06 19:39:40,504 ERROR FullProcessService - Project build has not produced APK file
+2018-04-06 19:39:40,521 ERROR FullProcessService - Could not find generated or existed APK file

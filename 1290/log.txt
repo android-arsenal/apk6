@@ -1,0 +1,161 @@
+2018-05-21 01:10:39,608 INFO  DownloadService - Downloading "https://github.com/neokree/GoogleNavigationDrawer/archive/master.zip", attempt 3
+2018-05-21 01:11:40,061 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-05-21 01:11:40,796 INFO  GithubDownloadService - Default branch of this repository: master
+2018-05-21 01:11:40,796 INFO  DownloadService - Downloading "https://github.com/neokree/GoogleNavigationDrawer/archive/master.zip", attempt 3
+2018-05-21 01:12:42,294 DEBUG FullProcessService - Repository https://github.com/neokree/GoogleNavigationDrawer available: true
+2018-05-21 01:12:42,294 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-05-21 01:12:42,294 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/neokree/GoogleNavigationDrawer, /tmp/rdisk/1290/src]
+2018-05-21 01:12:44,467 INFO  SysUtils - 
+2018-05-21 01:12:44,472 INFO  GitService - Deleted "/tmp/rdisk/1290/src/.git": true
+2018-05-21 01:12:44,476 INFO  FullProcessService - Size of directory with sources: 2 MB
+2018-05-21 01:12:44,476 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1290/src]
+2018-05-21 01:12:44,487 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1290/src/.git/
+
+2018-05-21 01:12:44,490 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1290/src/GoogleNavigationDrawer/gradlew
+2018-05-21 01:12:44,494 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1290/src/GoogleNavigationDrawer/app/build.gradle /tmp/rdisk/1290/src/GoogleNavigationDrawerModule/build.gradle /tmp/rdisk/1290/src/GoogleNavigationDrawer/build.gradle
+2018-05-21 01:12:44,496 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1290/src/GoogleNavigationDrawerModule/build.gradle /tmp/rdisk/1290/src/GoogleNavigationDrawer/settings.gradle /tmp/rdisk/1290/src/GoogleNavigationDrawer/build.gradle /tmp/rdisk/1290/src/GoogleNavigationDrawer/app/build.gradle
+2018-05-21 01:12:44,497 INFO  ProjectBuildService - Remote scripts: none
+2018-05-21 01:12:44,497 INFO  ProjectFixService - Fixing project...
+2018-05-21 01:12:44,503 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1290/src/GoogleNavigationDrawer/app/local.properties
+2018-05-21 01:12:44,503 INFO  ProjectFixService - Build info for "/tmp/rdisk/1290/src/GoogleNavigationDrawer/app/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=14,targetSdkVersion=21]
+2018-05-21 01:12:44,504 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1290/src/GoogleNavigationDrawerModule/local.properties
+2018-05-21 01:12:44,504 INFO  ProjectFixService - Build info for "/tmp/rdisk/1290/src/GoogleNavigationDrawerModule/build.gradle": [buildToolsVersion=21.1.1,compileSdkVersion=21,minSdkVersion=14,targetSdkVersion=21]
+2018-05-21 01:12:44,504 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1290/src/GoogleNavigationDrawer/local.properties
+2018-05-21 01:12:44,504 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-05-21 01:12:44,504 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-05-21 01:12:44,505 INFO  ProjectFixService - Build info for "/tmp/rdisk/1290/src/GoogleNavigationDrawer/build.gradle": [buildToolsVersion=21.1.1,compileSdkVersion=21,minSdkVersion=14,targetSdkVersion=21]
+2018-05-21 01:12:44,505 INFO  ProjectFixService - Project was maybe fixed
+2018-05-21 01:12:44,505 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-21 01:12:44,505 INFO  SysUtils - Execute command: [/tmp/rdisk/1290/src/GoogleNavigationDrawer/gradlew, -b, /tmp/rdisk/1290/src/GoogleNavigationDrawer/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-21 01:12:48,667 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-05-21 01:12:48,667 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-05-21 01:12:48,667 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-05-21 01:12:48,668 INFO  SysUtils - Execute command: [/tmp/rdisk/1290/src/GoogleNavigationDrawer/gradlew, -b, /tmp/rdisk/1290/src/GoogleNavigationDrawer/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-05-21 01:12:52,582 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-05-21 01:12:52,583 INFO  SysUtils - Configuration on demand is an incubating feature.
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+A problem occurred configuring project ':app'.
+> Cannot evaluate module GoogleNavigationDrawerModule : Configuration with name 'default' not found.
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.ProjectConfigurationException: A problem occurred configuring project ':app'.
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.addConfigurationFailure(LifecycleProjectEvaluator.java:91)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.notifyAfterEvaluate(LifecycleProjectEvaluator.java:86)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.evaluate(LifecycleProjectEvaluator.java:65)
+	at org.gradle.api.internal.project.AbstractProject.evaluate(AbstractProject.java:504)
+	at org.gradle.api.internal.project.AbstractProject.evaluate(AbstractProject.java:83)
+	at org.gradle.execution.TaskPathProjectEvaluator.configureHierarchy(TaskPathProjectEvaluator.java:42)
+	at org.gradle.execution.TaskSelector.getSelection(TaskSelector.java:85)
+	at org.gradle.execution.TaskSelector.getSelection(TaskSelector.java:76)
+	at org.gradle.execution.commandline.CommandLineTaskParser.parseTasks(CommandLineTaskParser.java:42)
+	at org.gradle.execution.TaskNameResolvingBuildConfigurationAction.configure(TaskNameResolvingBuildConfigurationAction.java:44)
+	at org.gradle.execution.DefaultBuildExecuter.configure(DefaultBuildExecuter.java:42)
+	at org.gradle.execution.DefaultBuildExecuter.access$100(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$1.proceed(DefaultBuildExecuter.java:48)
+	at org.gradle.execution.ExcludedTaskFilteringBuildConfigurationAction.configure(ExcludedTaskFilteringBuildConfigurationAction.java:47)
+	at org.gradle.execution.DefaultBuildExecuter.configure(DefaultBuildExecuter.java:42)
+	at org.gradle.execution.DefaultBuildExecuter.access$100(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$1.proceed(DefaultBuildExecuter.java:48)
+	at org.gradle.execution.DefaultTasksBuildExecutionAction.configure(DefaultTasksBuildExecutionAction.java:44)
+	at org.gradle.execution.DefaultBuildExecuter.configure(DefaultBuildExecuter.java:42)
+	at org.gradle.execution.DefaultBuildExecuter.select(DefaultBuildExecuter.java:35)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:142)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:106)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:86)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:80)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:33)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:24)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:36)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:51)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:171)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:33)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:130)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:48)
+Caused by: org.gradle.api.UnknownProjectException: Cannot evaluate module GoogleNavigationDrawerModule : Configuration with name 'default' not found.
+	at com.android.build.gradle.BasePlugin$_ensureConfigured_closure189.doCall(BasePlugin.groovy:3345)
+	at com.android.build.gradle.BasePlugin.ensureConfigured(BasePlugin.groovy:3339)
+	at com.android.build.gradle.BasePlugin.resolveDependencyForConfig(BasePlugin.groovy:3255)
+	at com.android.build.gradle.BasePlugin.this$2$resolveDependencyForConfig(BasePlugin.groovy)
+	at com.android.build.gradle.BasePlugin$this$2$resolveDependencyForConfig$1.callCurrent(Unknown Source)
+	at com.android.build.gradle.BasePlugin.resolveDependencies(BasePlugin.groovy:3174)
+	at com.android.build.gradle.internal.VariantManager.createVariantData(VariantManager.java:464)
+	at com.android.build.gradle.internal.VariantManager.createVariantDataForProductFlavors(VariantManager.java:550)
+	at com.android.build.gradle.internal.VariantManager.populateVariantDataList(VariantManager.java:326)
+	at com.android.build.gradle.internal.VariantManager.createAndroidTasks(VariantManager.java:212)
+	at com.android.build.gradle.internal.VariantManager$createAndroidTasks.call(Unknown Source)
+	at com.android.build.gradle.BasePlugin.createAndroidTasks(BasePlugin.groovy:463)
+	at com.android.build.gradle.BasePlugin$_createTasks_closure9.doCall(BasePlugin.groovy:408)
+	at org.gradle.listener.ClosureBackedMethodInvocationDispatch.dispatch(ClosureBackedMethodInvocationDispatch.java:40)
+	at org.gradle.listener.ClosureBackedMethodInvocationDispatch.dispatch(ClosureBackedMethodInvocationDispatch.java:25)
+	at org.gradle.listener.BroadcastDispatch.dispatch(BroadcastDispatch.java:83)
+	at org.gradle.listener.BroadcastDispatch.dispatch(BroadcastDispatch.java:31)
+	at org.gradle.messaging.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy13.afterEvaluate(Unknown Source)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.notifyAfterEvaluate(LifecycleProjectEvaluator.java:79)
+	... 44 more
+Caused by: org.gradle.api.artifacts.UnknownConfigurationException: Configuration with name 'default' not found.
+	at org.gradle.api.internal.artifacts.configurations.DefaultConfigurationContainer.createNotFoundException(DefaultConfigurationContainer.java:79)
+	at org.gradle.api.internal.DefaultNamedDomainObjectCollection.getByName(DefaultNamedDomainObjectCollection.java:192)
+	at org.gradle.api.internal.artifacts.configurations.DefaultConfigurationContainer.getByName(DefaultConfigurationContainer.java:69)
+	at org.gradle.api.internal.artifacts.configurations.DefaultConfigurationContainer.getByName(DefaultConfigurationContainer.java:33)
+	at org.gradle.api.internal.artifacts.dependencies.DefaultProjectDependency.getProjectConfiguration(DefaultProjectDependency.java:69)
+	at org.gradle.api.internal.artifacts.dependencies.DefaultProjectDependency_Decorated.getProjectConfiguration(Unknown Source)
+	at org.gradle.api.internal.BeanDynamicObject$MetaClassAdapter.getProperty(BeanDynamicObject.java:153)
+	at org.gradle.api.internal.BeanDynamicObject.getProperty(BeanDynamicObject.java:107)
+	at org.gradle.api.internal.CompositeDynamicObject.getProperty(CompositeDynamicObject.java:78)
+	at org.gradle.api.internal.artifacts.dependencies.DefaultProjectDependency_Decorated.getProperty(Unknown Source)
+	at com.android.build.gradle.BasePlugin$_ensureConfigured_closure189.doCall(BasePlugin.groovy:3342)
+	... 63 more
+
+
+BUILD FAILED
+
+Total time: 3.401 secs
+
+2018-05-21 01:12:52,586 INFO  FullProcessService - Found APK file: /tmp/rdisk/1290/src/example.apk

@@ -1,0 +1,21 @@
+2018-04-06 18:25:17,528 INFO  DownloadService - Downloading "https://github.com/konmik/MicroBus/archive/master.zip", attempt 3
+2018-04-06 18:26:18,013 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-06 18:26:18,666 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-06 18:26:18,666 INFO  DownloadService - Downloading "https://github.com/konmik/MicroBus/archive/master.zip", attempt 3
+2018-04-06 18:27:19,901 DEBUG FullProcessService - Repository https://github.com/konmik/MicroBus available: true
+2018-04-06 18:27:19,901 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-06 18:27:19,901 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/konmik/MicroBus, /tmp/rdisk/1380/src]
+2018-04-06 18:27:21,093 INFO  SysUtils - 
+2018-04-06 18:27:21,097 INFO  GitService - Deleted "/tmp/rdisk/1380/src/.git": true
+2018-04-06 18:27:21,098 INFO  FullProcessService - Size of directory with sources: 4 KB
+2018-04-06 18:27:21,098 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1380/src]
+2018-04-06 18:27:21,108 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1380/src/.git/
+
+2018-04-06 18:27:21,109 INFO  ProjectBuildService - Gradle wrapper(s): none
+2018-04-06 18:27:21,109 ERROR ProjectBuildService - Could not detect Gradle wrapper. Default Gradle installation will be used
+2018-04-06 18:27:21,109 INFO  ProjectBuildService - Build script(s): none
+2018-04-06 18:27:21,110 INFO  ProjectBuildService - All script(s): none
+2018-04-06 18:27:21,110 INFO  ProjectBuildService - Remote scripts: none
+2018-04-06 18:27:21,110 ERROR FullProcessService - Project is not correct Gradle project
+2018-04-06 18:27:21,110 ERROR FullProcessService - Project build has not produced APK file
+2018-04-06 18:27:21,111 ERROR FullProcessService - Could not find generated or existed APK file

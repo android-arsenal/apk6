@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "com.pixplicity.multiviewpager.sample",
+    "label" : "MultiViewPager sample",
+    "icon" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "versionName" : "1.0",
+    "versionCode" : 1,
+    "installLocation" : null,
+    "minSdkVersion" : "8",
+    "targetSdkVersion" : "22",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAFgUlEQVRo3u1au24lRRA9NXO94A3sRUIki5wQEjnlA/wbXoH4CgI+gYCQDZbPgICIFOl+AkLIkIFsoRW703U2mK7p6ro9D68xL+1IrXldz5zT51R1dY+BN9ub7U6bxAunp6dPj46OPun7HiICv++6bmr+GoDpmsj4SNsDAMlpTxKqCgBQVaSUpmvW7Jrfqypevnz59Obm5tNZAufn589OTk4uPVBrRsST8mSMRAQfSRh4D9qD9YBjI4nr6+uv9/v9E3vuzr2ju7i4uPRgY6/bub9nRIycVyES8M0ARRUi+KiCql7u9/uPAWhU4MHZ2dmffd9jt9tht9vBH8drfd9XLdorWqhlE9+GYZj2vvlrdnx1dfUWgBcHCpj81qKNfG+3LLZGwF+PanRdN+19U9VWbHUtCx3YILY58K0WCZj3W3by4D3guea3XY1fNpOYUymqYCBb8eDB3hK8NBX4/svxlnR5L6NYIsC3PwiefTP+3QePBZ8/EYjkm/Zw6QDpxutFZQAKEgABkCAFoADsQCp+/EXw2VfFAd99ARwf2e8Pm3zUVgCP35UJUGwnD4vNHuwE7z2SsR/874y19QAkv7UDyBE0DLxkQILrP6I1ZKWFwL2fsdETaY6Zf8l2DwRY9tT6/P4JcKHVAVgDI5zJHXAN5+F37u/rQOcmLAdZaK1nfU1TAGZ/Sz6nWZ8uBoyEBhL+HM2MtVbDBQLzrOsSoHMv1hLAHnPVH0bOSORjp4aVFuSm3m+n0TXpbLChZgDisgrEgWe+N/muJhGIkFrVR+DrWSi8jOUlUDD3fFFAHXApwA08gwIMKlRE6uKuum+E2E4GNQFqTn3O3/mY1GmkTJpGgJV1WGKB0rAQa/DeSlpXoFXQQ+u/56ICvtc79yKpCFAFYJqxns5kZ22okAAmEHXdXyvkMa1ayEk9BafmXh5LYABQs4c966D3ta1AVIEJQJqebTX/YbBryFxzadQH5uTxEYxqQkpjKZGGAeDOpcve9XxryG+MEUwliHWo5ggFtFZx6Cw0l4VcYE4KpCnTqEqeIQHgkIGz1DuVfaQxOs/ZqJ6Jjc9JQQFPZjWINZBJUALZQRgGAuxr+0zgdWZMbIzS2UZkQkpegdQAHUuTpSBm7i0p4xu1EFClS7m5dBYLelkm0MhGTQKmQki34/GSAtOAZFkmWQwXAok1+KnJTPXJ5XSqWhGgs5aPlUJkVgF1ed3l+NzZKY31StK+MeDdlgCdAophcDFAr0IjKy1mIfh6phyrEin1I4GBAGPP341ASmW1Io4TPthjoRWKOS33PQkQcAqo+rwfg3cLgVBqayFQFJixD3UhjbIO3ImEEJqIYRgn7GnoggLayP9rBFgVc8MQSom5smM1BhiyhpR3qloMxNQpdyDAyUJVMVfZJmSiTWk0WIgkhiGv3SQDYgNe56y5gcCU8UpMmIXGcnpOhS1p1AYyP7MSgkqodi4GfO+38n+LQFsFKmsFfCF3AH6ThcSB71wWGpcHU4pF25J91mw0HtcEfLkRR++lOTEJiCul3USFlInAqICfzDTAH8zI5kkwEGA1AWIAz5U5MZFJZGBiQ8RIoOu6okALvMj8KsrMaobZ8mBK2VzNWJwT+zmBnyoKmKvR8WVhLux7nSsWIhu10WjPaVLPlgLtbbe4QBXUUBU3I2v1+tYYqNUwBQ5WJVbArxCo1aAjkBLcnBiNOfASgZhOx3fYGEMSP/1KPHx720qef9MjAL8t/jh8aIgf9Fqflua+lbGxmHWLha13APy+QYH2d65IYCuJCP6WoF/HQtvJ+OM1AvH4Ltst1kbxtwLbav0O//HNK/ACwIcA3gdw7GYp/4bNRrTnAH62T6zRNrsM/LgxvfqnNz93fZ7b8L/4Z49XfvKAiEU+U/gAAAAASUVORK5CYII="
+  },
+  "dexClasses" : 1284,
+  "locales" : [ "", "sl", "mr_IN", "kk_KZ", "bg", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "my_MM", "ur_PK", "mn_MN", "fi", "lv", "et_EE", "sw", "pt_PT", "tl", "th", "uz_UZ", "pt", "ar", "ru", "eu_ES", "bn_BD", "fa", "sk", "kn_IN", "hi", "cs", "sv", "km_KH", "el", "nl", "hu", "af", "in", "vi", "fr_CA", "sr", "da", "si_LK", "ml_IN", "gl_ES", "es", "is_IS", "hy_AM", "tr", "ne_NP", "ro", "hr", "ms_MY", "am", "ka_GE", "lt", "pl", "zh_CN", "ta_IN", "fr", "ja", "lo_LA", "ky_KG", "iw", "de", "en_IN", "es_US", "mk_MK", "nb", "te_IN", "ca", "en_GB" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"1\" android:versionName=\"1.0\" package=\"com.pixplicity.multiviewpager.sample\" platformBuildVersionCode=\"22\" platformBuildVersionName=\"5.1.1-1819727\">\n\t<uses-sdk android:minSdkVersion=\"8\" android:targetSdkVersion=\"22\" />\n\t<application android:theme=\"resourceId:0x7f0c0005\" android:label=\"MultiViewPager sample\" android:icon=\"res/mipmap-mdpi-v4/ic_launcher.png\" android:allowBackup=\"true\">\n\t\t<activity android:name=\"com.pixplicity.multiviewpager.sample.PagerActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t</application>\n</manifest>\n",
+  "fileSize" : 1035662,
+  "crc32" : 304508944,
+  "sha256" : "5ee8668c20f6bc3647da4a3d2cf0be143a9c4b18bf8fe8d6a5ebc086befb9b52",
+  "buildTime" : 1522977031000
+}

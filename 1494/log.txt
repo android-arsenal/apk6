@@ -1,0 +1,105 @@
+2018-04-06 00:53:23,552 INFO  DownloadService - Downloading "https://github.com/juniversal/juniversal/archive/master.zip", attempt 3
+2018-04-06 00:54:24,164 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-06 00:54:24,966 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-06 00:54:24,966 INFO  DownloadService - Downloading "https://github.com/juniversal/juniversal/archive/master.zip", attempt 3
+2018-04-06 00:55:26,249 DEBUG FullProcessService - Repository https://github.com/juniversal/juniversal available: true
+2018-04-06 00:55:26,250 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-06 00:55:26,250 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/juniversal/juniversal, /tmp/rdisk/1494/src]
+2018-04-06 00:55:29,023 INFO  SysUtils - 
+2018-04-06 00:55:29,033 INFO  GitService - Deleted "/tmp/rdisk/1494/src/.git": true
+2018-04-06 00:55:29,044 INFO  FullProcessService - Size of directory with sources: 16 MB
+2018-04-06 00:55:29,044 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1494/src]
+2018-04-06 00:55:29,048 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1494/src/.git/
+
+2018-04-06 00:55:29,056 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1494/src/gradlew /tmp/rdisk/1494/src/build-tool-plugins/juniversal-gradle-plugins/gradlew
+2018-04-06 00:55:29,064 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1494/src/build-tool-plugins/juniversal-gradle-plugins/build.gradle /tmp/rdisk/1494/src/build.gradle /tmp/rdisk/1494/src/juniversal-translator/build.gradle
+2018-04-06 00:55:29,071 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1494/src/shared.gradle /tmp/rdisk/1494/src/settings.gradle /tmp/rdisk/1494/src/juniversal-translator/build.gradle /tmp/rdisk/1494/src/build.gradle /tmp/rdisk/1494/src/build-tool-plugins/juniversal-gradle-plugins/build.gradle
+2018-04-06 00:55:29,072 INFO  ProjectBuildService - Remote scripts: none
+2018-04-06 00:55:29,072 INFO  ProjectFixService - Fixing project...
+2018-04-06 00:55:29,091 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1494/src/build-tool-plugins/juniversal-gradle-plugins/local.properties
+2018-04-06 00:55:29,092 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.1-all.zip
+2018-04-06 00:55:29,092 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.1-bin.zip)
+2018-04-06 00:55:29,096 INFO  ProjectFixService - Build info for "/tmp/rdisk/1494/src/build-tool-plugins/juniversal-gradle-plugins/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-06 00:55:29,096 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1494/src/build-tool-plugins/juniversal-gradle-plugins/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-06 00:55:29,098 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1494/src/local.properties
+2018-04-06 00:55:29,098 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-06 00:55:29,098 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-06 00:55:29,102 INFO  ProjectFixService - Build info for "/tmp/rdisk/1494/src/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-06 00:55:29,102 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1494/src/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-06 00:55:29,103 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1494/src/juniversal-translator/local.properties
+2018-04-06 00:55:29,107 INFO  ProjectFixService - Build info for "/tmp/rdisk/1494/src/juniversal-translator/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-06 00:55:29,107 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1494/src/juniversal-translator/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-06 00:55:29,109 INFO  ProjectFixService - Project was maybe fixed
+2018-04-06 00:55:29,109 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-06 00:55:29,109 INFO  SysUtils - Execute command: [/tmp/rdisk/1494/src/build-tool-plugins/juniversal-gradle-plugins/gradlew, -b, /tmp/rdisk/1494/src/build-tool-plugins/juniversal-gradle-plugins/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-06 00:55:33,778 INFO  ProjectTaskService - Detected possible tasks: 45
+2018-04-06 00:55:33,778 INFO  ProjectTaskService - Excluded tasks (3): javadoc test check
+2018-04-06 00:55:33,778 INFO  SysUtils - Execute command: [/tmp/rdisk/1494/src/build-tool-plugins/juniversal-gradle-plugins/gradlew, -b, /tmp/rdisk/1494/src/build-tool-plugins/juniversal-gradle-plugins/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, javadoc, -x, test, -x, check, build]
+2018-04-06 00:55:40,564 INFO  SysUtils - Configuration on demand is an incubating feature.
+:compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.6
+1 warning
+
+:compileGroovy UP-TO-DATE
+:processResources
+:classes
+:jar
+:javadocJar
+:sourcesJar
+:signArchives SKIPPED
+:assemble
+:build
+
+BUILD SUCCESSFUL
+
+Total time: 6.351 secs
+
+2018-04-06 00:55:40,573 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-06 00:55:40,573 INFO  SysUtils - Execute command: [/tmp/rdisk/1494/src/gradlew, -b, /tmp/rdisk/1494/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-06 00:55:45,048 INFO  ProjectTaskService - Detected possible tasks: 44
+2018-04-06 00:55:45,048 INFO  ProjectTaskService - Excluded tasks (3): javadoc test check
+2018-04-06 00:55:45,048 INFO  SysUtils - Execute command: [/tmp/rdisk/1494/src/gradlew, -b, /tmp/rdisk/1494/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, javadoc, -x, test, -x, check, build]
+2018-04-06 00:55:56,222 INFO  SysUtils - Configuration on demand is an incubating feature.
+:compileJava UP-TO-DATE
+:processResources UP-TO-DATE
+:classes UP-TO-DATE
+:jar
+:assemble
+:build
+:juniversal-translator:compileJavaNote: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:juniversal-translator:processResources UP-TO-DATE
+:juniversal-translator:classes
+:juniversal-translator:jar
+:juniversal-translator:javadocJar
+:juniversal-translator:sourcesJar
+:juniversal-translator:signArchives SKIPPED
+:juniversal-translator:assemble
+:juniversal-translator:build
+
+BUILD SUCCESSFUL
+
+Total time: 10.739 secs
+
+2018-04-06 00:55:56,282 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-06 00:55:56,282 INFO  SysUtils - Execute command: [/tmp/rdisk/1494/src/gradlew, -b, /tmp/rdisk/1494/src/juniversal-translator/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-06 00:56:00,422 INFO  ProjectTaskService - Detected possible tasks: 41
+2018-04-06 00:56:00,422 INFO  ProjectTaskService - Excluded tasks (3): javadoc test check
+2018-04-06 00:56:00,422 INFO  SysUtils - Execute command: [/tmp/rdisk/1494/src/gradlew, -b, /tmp/rdisk/1494/src/juniversal-translator/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, javadoc, -x, test, -x, check, build]
+2018-04-06 00:56:08,745 INFO  SysUtils - Configuration on demand is an incubating feature.
+:juniversal-translator:compileJava UP-TO-DATE
+:juniversal-translator:processResources UP-TO-DATE
+:juniversal-translator:classes UP-TO-DATE
+:juniversal-translator:jar
+:juniversal-translator:javadocJar UP-TO-DATE
+:juniversal-translator:sourcesJar UP-TO-DATE
+:juniversal-translator:signArchives SKIPPED
+:juniversal-translator:assemble
+:juniversal-translator:build
+
+BUILD SUCCESSFUL
+
+Total time: 7.903 secs
+
+2018-04-06 00:56:08,804 ERROR FullProcessService - Project build has not produced APK file
+2018-04-06 00:56:08,862 ERROR FullProcessService - Could not find generated or existed APK file

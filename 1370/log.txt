@@ -1,0 +1,193 @@
+2018-04-06 18:47:17,669 INFO  DownloadService - Downloading "https://github.com/mixi-inc/Android-Device-Compatibility/archive/master.zip", attempt 3
+2018-04-06 18:48:18,277 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-06 18:48:18,942 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-06 18:48:18,942 INFO  DownloadService - Downloading "https://github.com/mixi-inc/Android-Device-Compatibility/archive/master.zip", attempt 3
+2018-04-06 18:49:20,216 DEBUG FullProcessService - Repository https://github.com/mixi-inc/Android-Device-Compatibility available: true
+2018-04-06 18:49:20,216 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-06 18:49:20,216 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/mixi-inc/Android-Device-Compatibility, /tmp/rdisk/1370/src]
+2018-04-06 18:49:21,899 INFO  SysUtils - 
+2018-04-06 18:49:21,904 INFO  GitService - Deleted "/tmp/rdisk/1370/src/.git": true
+2018-04-06 18:49:21,907 INFO  FullProcessService - Size of directory with sources: 282 KB
+2018-04-06 18:49:21,907 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1370/src]
+2018-04-06 18:49:21,911 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1370/src/.git/
+
+2018-04-06 18:49:21,914 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1370/src/gradlew
+2018-04-06 18:49:21,917 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1370/src/AndroidDeviceCompatibility/build.gradle /tmp/rdisk/1370/src/build.gradle
+2018-04-06 18:49:21,920 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1370/src/settings.gradle /tmp/rdisk/1370/src/build.gradle /tmp/rdisk/1370/src/AndroidDeviceCompatibility/coverage.gradle /tmp/rdisk/1370/src/AndroidDeviceCompatibility/build.gradle
+2018-04-06 18:49:21,920 INFO  DownloadService - Downloading "https://raw.github.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle", attempt 3
+2018-04-06 18:49:22,797 INFO  DownloadService - Downloaded https://raw.github.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle, attempt 3
+2018-04-06 18:49:22,797 INFO  ProjectBuildService - Remote scripts: https://raw.github.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle
+2018-04-06 18:49:22,797 INFO  ProjectFixService - Fixing project...
+2018-04-06 18:49:22,805 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1370/src/AndroidDeviceCompatibility/local.properties
+2018-04-06 18:49:22,805 INFO  ProjectFixService - Build info for "/tmp/rdisk/1370/src/AndroidDeviceCompatibility/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=7,targetSdkVersion=19]
+2018-04-06 18:49:22,805 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1370/src/local.properties
+2018-04-06 18:49:22,806 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-06 18:49:22,811 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-06 18:49:22,814 INFO  ProjectFixService - Build info for "/tmp/rdisk/1370/src/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=7,targetSdkVersion=19]
+2018-04-06 18:49:22,814 INFO  ProjectFixService - Project was maybe fixed
+2018-04-06 18:49:22,815 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-06 18:49:22,815 INFO  SysUtils - Execute command: [/tmp/rdisk/1370/src/gradlew, -b, /tmp/rdisk/1370/src/AndroidDeviceCompatibility/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-06 18:49:34,051 INFO  ProjectTaskService - Detected possible tasks: 67
+2018-04-06 18:49:34,051 INFO  ProjectTaskService - Excluded tasks (17): lintDebug mockableAndroidJar androidJavadocs deviceCheck lint androidSourcesJar uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll androidJavadocsJar testRelease test check connectedAndroidTest lintRelease testDebug
+2018-04-06 18:49:34,052 INFO  SysUtils - Execute command: [/tmp/rdisk/1370/src/gradlew, -b, /tmp/rdisk/1370/src/AndroidDeviceCompatibility/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, androidJavadocs, -x, deviceCheck, -x, lint, -x, androidSourcesJar, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, androidJavadocsJar, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, lintRelease, -x, testDebug, build]
+2018-04-06 18:49:47,700 INFO  SysUtils - Configuration on demand is an incubating feature.
+:AndroidDeviceCompatibility:compileLint
+:AndroidDeviceCompatibility:copyDebugLint UP-TO-DATE
+:AndroidDeviceCompatibility:preBuild UP-TO-DATE
+:AndroidDeviceCompatibility:preDebugBuild UP-TO-DATE
+:AndroidDeviceCompatibility:checkDebugManifest
+:AndroidDeviceCompatibility:preDebugAndroidTestBuild UP-TO-DATE
+:AndroidDeviceCompatibility:preReleaseBuild UP-TO-DATE
+:AndroidDeviceCompatibility:prepareComAndroidSupportAppcompatV72221Library
+:AndroidDeviceCompatibility:prepareComAndroidSupportGridlayoutV72221Library
+:AndroidDeviceCompatibility:prepareComAndroidSupportSupportV42221Library
+:AndroidDeviceCompatibility:prepareDebugDependencies
+:AndroidDeviceCompatibility:compileDebugAidl
+:AndroidDeviceCompatibility:compileDebugRenderscript
+:AndroidDeviceCompatibility:generateDebugBuildConfig
+:AndroidDeviceCompatibility:generateDebugAssets UP-TO-DATE
+:AndroidDeviceCompatibility:mergeDebugAssets
+:AndroidDeviceCompatibility:generateDebugResValues
+:AndroidDeviceCompatibility:generateDebugResources
+:AndroidDeviceCompatibility:mergeDebugResources
+:AndroidDeviceCompatibility:processDebugManifest
+:AndroidDeviceCompatibility:processDebugResources
+:AndroidDeviceCompatibility:generateDebugSources
+:AndroidDeviceCompatibility:compileDebugJavaNote: /tmp/rdisk/1370/src/AndroidDeviceCompatibility/src/main/java/jp/mixi/compatibility/android/hardware/CameraCompat.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: /tmp/rdisk/1370/src/AndroidDeviceCompatibility/src/main/java/jp/mixi/compatibility/android/widget/ArrayAdapterCompat.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:AndroidDeviceCompatibility:extractDebugAnnotations
+:AndroidDeviceCompatibility:mergeDebugProguardFiles
+:AndroidDeviceCompatibility:unzipJacocoAgent
+:AndroidDeviceCompatibility:instrumentDebug
+Download https://repo1.maven.org/maven2/org/jacoco/org.jacoco.ant/0.7.2.201409121644/org.jacoco.ant-0.7.2.201409121644.pom
+Download https://repo1.maven.org/maven2/org/jacoco/org.jacoco.report/0.7.2.201409121644/org.jacoco.report-0.7.2.201409121644.pom
+Download https://repo1.maven.org/maven2/org/jacoco/org.jacoco.ant/0.7.2.201409121644/org.jacoco.ant-0.7.2.201409121644.jar
+Download https://repo1.maven.org/maven2/org/jacoco/org.jacoco.report/0.7.2.201409121644/org.jacoco.report-0.7.2.201409121644.jar
+:AndroidDeviceCompatibility:processDebugJavaRes UP-TO-DATE
+:AndroidDeviceCompatibility:packageDebugJar
+:AndroidDeviceCompatibility:compileDebugNdk UP-TO-DATE
+:AndroidDeviceCompatibility:packageDebugJniLibs UP-TO-DATE
+:AndroidDeviceCompatibility:packageDebugLocalJar
+:AndroidDeviceCompatibility:packageDebugRenderscript UP-TO-DATE
+:AndroidDeviceCompatibility:packageDebugResources
+:AndroidDeviceCompatibility:bundleDebug
+:AndroidDeviceCompatibility:assembleDebug
+:AndroidDeviceCompatibility:copyReleaseLint UP-TO-DATE
+:AndroidDeviceCompatibility:checkReleaseManifest
+:AndroidDeviceCompatibility:prepareReleaseDependencies
+:AndroidDeviceCompatibility:compileReleaseAidl
+:AndroidDeviceCompatibility:compileReleaseRenderscript
+:AndroidDeviceCompatibility:generateReleaseBuildConfig
+:AndroidDeviceCompatibility:generateReleaseAssets UP-TO-DATE
+:AndroidDeviceCompatibility:mergeReleaseAssets
+:AndroidDeviceCompatibility:generateReleaseResValues
+:AndroidDeviceCompatibility:generateReleaseResources
+:AndroidDeviceCompatibility:mergeReleaseResources
+:AndroidDeviceCompatibility:processReleaseManifest
+:AndroidDeviceCompatibility:processReleaseResources
+:AndroidDeviceCompatibility:generateReleaseSources
+:AndroidDeviceCompatibility:compileReleaseJavaNote: /tmp/rdisk/1370/src/AndroidDeviceCompatibility/src/main/java/jp/mixi/compatibility/android/hardware/CameraCompat.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: /tmp/rdisk/1370/src/AndroidDeviceCompatibility/src/main/java/jp/mixi/compatibility/android/widget/ArrayAdapterCompat.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:AndroidDeviceCompatibility:extractReleaseAnnotations
+:AndroidDeviceCompatibility:mergeReleaseProguardFiles
+:AndroidDeviceCompatibility:processReleaseJavaRes UP-TO-DATE
+:AndroidDeviceCompatibility:packageReleaseJar
+:AndroidDeviceCompatibility:compileReleaseNdk UP-TO-DATE
+:AndroidDeviceCompatibility:packageReleaseJniLibs UP-TO-DATE
+:AndroidDeviceCompatibility:packageReleaseLocalJar UP-TO-DATE
+:AndroidDeviceCompatibility:packageReleaseRenderscript UP-TO-DATE
+:AndroidDeviceCompatibility:packageReleaseResources
+:AndroidDeviceCompatibility:bundleRelease
+:AndroidDeviceCompatibility:assembleRelease
+:AndroidDeviceCompatibility:signArchives SKIPPED
+:AndroidDeviceCompatibility:assemble
+:AndroidDeviceCompatibility:build
+
+BUILD SUCCESSFUL
+
+Total time: 13.212 secs
+
+2018-04-06 18:49:47,733 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-06 18:49:47,733 INFO  SysUtils - Execute command: [/tmp/rdisk/1370/src/gradlew, -b, /tmp/rdisk/1370/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-06 18:49:54,831 INFO  ProjectTaskService - Detected possible tasks: 67
+2018-04-06 18:49:54,831 INFO  ProjectTaskService - Excluded tasks (17): lintDebug mockableAndroidJar androidJavadocs deviceCheck lint androidSourcesJar uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll androidJavadocsJar testRelease test check connectedAndroidTest lintRelease testDebug
+2018-04-06 18:49:54,832 INFO  SysUtils - Execute command: [/tmp/rdisk/1370/src/gradlew, -b, /tmp/rdisk/1370/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, androidJavadocs, -x, deviceCheck, -x, lint, -x, androidSourcesJar, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, androidJavadocsJar, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, lintRelease, -x, testDebug, build]
+2018-04-06 18:50:02,646 INFO  SysUtils - Configuration on demand is an incubating feature.
+:AndroidDeviceCompatibility:compileLint
+:AndroidDeviceCompatibility:copyDebugLint UP-TO-DATE
+:AndroidDeviceCompatibility:preBuild UP-TO-DATE
+:AndroidDeviceCompatibility:preDebugBuild UP-TO-DATE
+:AndroidDeviceCompatibility:checkDebugManifest
+:AndroidDeviceCompatibility:preDebugAndroidTestBuild UP-TO-DATE
+:AndroidDeviceCompatibility:preReleaseBuild UP-TO-DATE
+:AndroidDeviceCompatibility:prepareComAndroidSupportAppcompatV72221Library UP-TO-DATE
+:AndroidDeviceCompatibility:prepareComAndroidSupportGridlayoutV72221Library UP-TO-DATE
+:AndroidDeviceCompatibility:prepareComAndroidSupportSupportV42221Library UP-TO-DATE
+:AndroidDeviceCompatibility:prepareDebugDependencies
+:AndroidDeviceCompatibility:compileDebugAidl UP-TO-DATE
+:AndroidDeviceCompatibility:compileDebugRenderscript UP-TO-DATE
+:AndroidDeviceCompatibility:generateDebugBuildConfig UP-TO-DATE
+:AndroidDeviceCompatibility:generateDebugAssets UP-TO-DATE
+:AndroidDeviceCompatibility:mergeDebugAssets UP-TO-DATE
+:AndroidDeviceCompatibility:generateDebugResValues UP-TO-DATE
+:AndroidDeviceCompatibility:generateDebugResources UP-TO-DATE
+:AndroidDeviceCompatibility:mergeDebugResources UP-TO-DATE
+:AndroidDeviceCompatibility:processDebugManifest UP-TO-DATE
+:AndroidDeviceCompatibility:processDebugResources UP-TO-DATE
+:AndroidDeviceCompatibility:generateDebugSources UP-TO-DATE
+:AndroidDeviceCompatibility:compileDebugJava UP-TO-DATE
+:AndroidDeviceCompatibility:extractDebugAnnotations UP-TO-DATE
+:AndroidDeviceCompatibility:mergeDebugProguardFiles UP-TO-DATE
+:AndroidDeviceCompatibility:unzipJacocoAgent UP-TO-DATE
+:AndroidDeviceCompatibility:instrumentDebug UP-TO-DATE
+:AndroidDeviceCompatibility:processDebugJavaRes UP-TO-DATE
+:AndroidDeviceCompatibility:packageDebugJar UP-TO-DATE
+:AndroidDeviceCompatibility:compileDebugNdk UP-TO-DATE
+:AndroidDeviceCompatibility:packageDebugJniLibs UP-TO-DATE
+:AndroidDeviceCompatibility:packageDebugLocalJar UP-TO-DATE
+:AndroidDeviceCompatibility:packageDebugRenderscript UP-TO-DATE
+:AndroidDeviceCompatibility:packageDebugResources UP-TO-DATE
+:AndroidDeviceCompatibility:bundleDebug UP-TO-DATE
+:AndroidDeviceCompatibility:assembleDebug UP-TO-DATE
+:AndroidDeviceCompatibility:copyReleaseLint UP-TO-DATE
+:AndroidDeviceCompatibility:checkReleaseManifest
+:AndroidDeviceCompatibility:prepareReleaseDependencies
+:AndroidDeviceCompatibility:compileReleaseAidl UP-TO-DATE
+:AndroidDeviceCompatibility:compileReleaseRenderscript UP-TO-DATE
+:AndroidDeviceCompatibility:generateReleaseBuildConfig UP-TO-DATE
+:AndroidDeviceCompatibility:generateReleaseAssets UP-TO-DATE
+:AndroidDeviceCompatibility:mergeReleaseAssets UP-TO-DATE
+:AndroidDeviceCompatibility:generateReleaseResValues UP-TO-DATE
+:AndroidDeviceCompatibility:generateReleaseResources UP-TO-DATE
+:AndroidDeviceCompatibility:mergeReleaseResources UP-TO-DATE
+:AndroidDeviceCompatibility:processReleaseManifest UP-TO-DATE
+:AndroidDeviceCompatibility:processReleaseResources UP-TO-DATE
+:AndroidDeviceCompatibility:generateReleaseSources UP-TO-DATE
+:AndroidDeviceCompatibility:compileReleaseJava UP-TO-DATE
+:AndroidDeviceCompatibility:extractReleaseAnnotations UP-TO-DATE
+:AndroidDeviceCompatibility:mergeReleaseProguardFiles UP-TO-DATE
+:AndroidDeviceCompatibility:processReleaseJavaRes UP-TO-DATE
+:AndroidDeviceCompatibility:packageReleaseJar UP-TO-DATE
+:AndroidDeviceCompatibility:compileReleaseNdk UP-TO-DATE
+:AndroidDeviceCompatibility:packageReleaseJniLibs UP-TO-DATE
+:AndroidDeviceCompatibility:packageReleaseLocalJar UP-TO-DATE
+:AndroidDeviceCompatibility:packageReleaseRenderscript UP-TO-DATE
+:AndroidDeviceCompatibility:packageReleaseResources UP-TO-DATE
+:AndroidDeviceCompatibility:bundleRelease UP-TO-DATE
+:AndroidDeviceCompatibility:assembleRelease UP-TO-DATE
+:AndroidDeviceCompatibility:signArchives SKIPPED
+:AndroidDeviceCompatibility:assemble
+:AndroidDeviceCompatibility:build
+
+BUILD SUCCESSFUL
+
+Total time: 7.387 secs
+
+2018-04-06 18:50:02,679 ERROR FullProcessService - Project build has not produced APK file
+2018-04-06 18:50:02,711 ERROR FullProcessService - Could not find generated or existed APK file

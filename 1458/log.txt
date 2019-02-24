@@ -1,0 +1,10 @@
+2017-12-30 11:06:28,670 INFO  DownloadService - Downloading "https://github.com/google/j2objc/archive/master.zip", attempt 3
+2017-12-30 11:06:31,609 INFO  DownloadService - Downloaded https://github.com/google/j2objc/archive/master.zip, attempt 3
+2017-12-30 11:06:31,610 INFO  DownloadService - Size of file "/tmp/1514631988667-0/master.zip": 11 MB
+2017-12-30 11:06:31,610 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2017-12-30 11:06:31,617 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/1514631988667-0/master.zip: false
+2017-12-30 11:06:31,617 INFO  FullProcessService - Archive with sources does not contain any build script
+2017-12-30 11:06:31,617 ERROR FullProcessService - Could not find directory with sources
+2017-12-30 11:06:31,617 ERROR FullProcessService - Project will not be processed
+2017-12-30 11:06:31,617 ERROR FullProcessService - Project build has not produced APK file
+2017-12-30 11:06:31,617 ERROR FullProcessService - Could not find generated or existed APK file

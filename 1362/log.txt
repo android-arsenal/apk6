@@ -1,0 +1,70 @@
+2018-04-06 19:11:20,048 INFO  DownloadService - Downloading "https://github.com/pushtorefresh/javac-warning-annotation/archive/master.zip", attempt 3
+2018-04-06 19:12:20,679 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-06 19:12:21,482 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-06 19:12:21,482 INFO  DownloadService - Downloading "https://github.com/pushtorefresh/javac-warning-annotation/archive/master.zip", attempt 3
+2018-04-06 19:13:22,770 DEBUG FullProcessService - Repository https://github.com/pushtorefresh/javac-warning-annotation available: true
+2018-04-06 19:13:22,770 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-06 19:13:22,770 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/pushtorefresh/javac-warning-annotation, /tmp/rdisk/1362/src]
+2018-04-06 19:13:24,249 INFO  SysUtils - 
+2018-04-06 19:13:24,256 INFO  GitService - Deleted "/tmp/rdisk/1362/src/.git": true
+2018-04-06 19:13:24,257 INFO  FullProcessService - Size of directory with sources: 77 KB
+2018-04-06 19:13:24,257 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1362/src]
+2018-04-06 19:13:24,262 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1362/src/.git/
+
+2018-04-06 19:13:24,263 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1362/src/gradlew
+2018-04-06 19:13:24,265 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1362/src/build.gradle /tmp/rdisk/1362/src/warning-annotation/build.gradle
+2018-04-06 19:13:24,266 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1362/src/warning-annotation/build.gradle /tmp/rdisk/1362/src/settings.gradle /tmp/rdisk/1362/src/build.gradle
+2018-04-06 19:13:24,267 INFO  ProjectBuildService - Remote scripts: none
+2018-04-06 19:13:24,267 INFO  ProjectFixService - Fixing project...
+2018-04-06 19:13:24,270 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1362/src/local.properties
+2018-04-06 19:13:24,270 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.1-bin.zip
+2018-04-06 19:13:24,272 INFO  ProjectFixService - Build info for "/tmp/rdisk/1362/src/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-06 19:13:24,272 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1362/src/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-06 19:13:24,272 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1362/src/warning-annotation/local.properties
+2018-04-06 19:13:24,274 INFO  ProjectFixService - Build info for "/tmp/rdisk/1362/src/warning-annotation/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-06 19:13:24,274 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1362/src/warning-annotation/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-06 19:13:24,275 INFO  ProjectFixService - Project was maybe fixed
+2018-04-06 19:13:24,275 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-06 19:13:24,275 INFO  SysUtils - Execute command: [/tmp/rdisk/1362/src/gradlew, -b, /tmp/rdisk/1362/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-06 19:13:30,129 INFO  ProjectTaskService - Detected possible tasks: 41
+2018-04-06 19:13:30,129 INFO  ProjectTaskService - Excluded tasks (3): javadoc test check
+2018-04-06 19:13:30,129 INFO  SysUtils - Execute command: [/tmp/rdisk/1362/src/gradlew, -b, /tmp/rdisk/1362/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, javadoc, -x, test, -x, check, build]
+2018-04-06 19:13:34,807 INFO  SysUtils - Configuration on demand is an incubating feature.
+:warning-annotation:compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.6
+1 warning
+
+:warning-annotation:processResources
+:warning-annotation:classes
+:warning-annotation:jar
+:warning-annotation:javadocJar
+:warning-annotation:sourcesJar
+:warning-annotation:signArchives SKIPPED
+:warning-annotation:assemble
+:warning-annotation:build
+
+BUILD SUCCESSFUL
+
+Total time: 4.274 secs
+
+2018-04-06 19:13:34,810 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-06 19:13:34,810 INFO  SysUtils - Execute command: [/tmp/rdisk/1362/src/gradlew, -b, /tmp/rdisk/1362/src/warning-annotation/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-06 19:13:39,009 INFO  ProjectTaskService - Detected possible tasks: 41
+2018-04-06 19:13:39,010 INFO  ProjectTaskService - Excluded tasks (3): javadoc test check
+2018-04-06 19:13:39,010 INFO  SysUtils - Execute command: [/tmp/rdisk/1362/src/gradlew, -b, /tmp/rdisk/1362/src/warning-annotation/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, javadoc, -x, test, -x, check, build]
+2018-04-06 19:13:43,162 INFO  SysUtils - Configuration on demand is an incubating feature.
+:warning-annotation:compileJava UP-TO-DATE
+:warning-annotation:processResources UP-TO-DATE
+:warning-annotation:classes UP-TO-DATE
+:warning-annotation:jar UP-TO-DATE
+:warning-annotation:javadocJar UP-TO-DATE
+:warning-annotation:sourcesJar UP-TO-DATE
+:warning-annotation:signArchives SKIPPED
+:warning-annotation:assemble UP-TO-DATE
+:warning-annotation:build
+
+BUILD SUCCESSFUL
+
+Total time: 3.735 secs
+
+2018-04-06 19:13:43,164 ERROR FullProcessService - Project build has not produced APK file
+2018-04-06 19:13:43,166 ERROR FullProcessService - Could not find generated or existed APK file

@@ -1,0 +1,136 @@
+2018-05-21 02:36:40,898 INFO  DownloadService - Downloading "https://github.com/kageiit/gradle-robojava-plugin/archive/master.zip", attempt 3
+2018-05-21 02:36:41,589 INFO  DownloadService - Downloaded https://github.com/kageiit/gradle-robojava-plugin/archive/master.zip, attempt 3
+2018-05-21 02:36:41,589 INFO  DownloadService - Size of file "/tmp/rdisk/1267/master.zip": 134 KB
+2018-05-21 02:36:41,589 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-05-21 02:36:41,589 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/1267/master.zip: true
+2018-05-21 02:36:41,589 DEBUG ZipUtil - Extracting '/tmp/rdisk/1267/master.zip' into '/tmp/rdisk/1267/src'.
+2018-05-21 02:36:41,598 INFO  FullProcessService - Size of directory with sources: 157 KB
+2018-05-21 02:36:41,598 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1267/src]
+2018-05-21 02:36:41,603 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1267/src/.git/
+
+2018-05-21 02:36:41,606 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1267/src/gradle-robojava-plugin-master/gradlew /tmp/rdisk/1267/src/gradle-robojava-plugin-master/example/gradlew
+2018-05-21 02:36:41,609 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1267/src/gradle-robojava-plugin-master/example/app/build.gradle /tmp/rdisk/1267/src/gradle-robojava-plugin-master/build.gradle /tmp/rdisk/1267/src/gradle-robojava-plugin-master/example/build.gradle /tmp/rdisk/1267/src/gradle-robojava-plugin-master/example/tdd/build.gradle /tmp/rdisk/1267/src/gradle-robojava-plugin-master/robojava-plugin/build.gradle
+2018-05-21 02:36:41,611 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1267/src/gradle-robojava-plugin-master/settings.gradle /tmp/rdisk/1267/src/gradle-robojava-plugin-master/robojava-plugin/build.gradle /tmp/rdisk/1267/src/gradle-robojava-plugin-master/example/tdd/build.gradle /tmp/rdisk/1267/src/gradle-robojava-plugin-master/example/settings.gradle /tmp/rdisk/1267/src/gradle-robojava-plugin-master/example/build.gradle /tmp/rdisk/1267/src/gradle-robojava-plugin-master/example/app/build.gradle /tmp/rdisk/1267/src/gradle-robojava-plugin-master/build.gradle
+2018-05-21 02:36:41,612 INFO  ProjectBuildService - Remote scripts: none
+2018-05-21 02:36:41,612 INFO  ProjectFixService - Fixing project...
+2018-05-21 02:36:41,618 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1267/src/gradle-robojava-plugin-master/example/app/local.properties
+2018-05-21 02:36:41,618 INFO  ProjectFixService - Build info for "/tmp/rdisk/1267/src/gradle-robojava-plugin-master/example/app/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=16,targetSdkVersion=21]
+2018-05-21 02:36:41,619 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1267/src/gradle-robojava-plugin-master/local.properties
+2018-05-21 02:36:41,619 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-05-21 02:36:41,619 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-05-21 02:36:41,621 INFO  ProjectFixService - Build info for "/tmp/rdisk/1267/src/gradle-robojava-plugin-master/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=16,targetSdkVersion=21]
+2018-05-21 02:36:41,621 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1267/src/gradle-robojava-plugin-master/example/local.properties
+2018-05-21 02:36:41,622 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-05-21 02:36:41,622 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-05-21 02:36:41,624 INFO  ProjectFixService - Build info for "/tmp/rdisk/1267/src/gradle-robojava-plugin-master/example/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=16,targetSdkVersion=21]
+2018-05-21 02:36:41,624 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1267/src/gradle-robojava-plugin-master/example/tdd/local.properties
+2018-05-21 02:36:41,626 INFO  ProjectFixService - Build info for "/tmp/rdisk/1267/src/gradle-robojava-plugin-master/example/tdd/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=16,targetSdkVersion=21]
+2018-05-21 02:36:41,626 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1267/src/gradle-robojava-plugin-master/robojava-plugin/local.properties
+2018-05-21 02:36:41,628 INFO  ProjectFixService - Build info for "/tmp/rdisk/1267/src/gradle-robojava-plugin-master/robojava-plugin/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=16,targetSdkVersion=21]
+2018-05-21 02:36:41,628 INFO  ProjectFixService - Project was maybe fixed
+2018-05-21 02:36:41,628 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-21 02:36:41,628 INFO  SysUtils - Execute command: [/tmp/rdisk/1267/src/gradle-robojava-plugin-master/example/gradlew, -b, /tmp/rdisk/1267/src/gradle-robojava-plugin-master/example/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-21 02:36:52,252 INFO  ProjectTaskService - Detected possible tasks: 74
+2018-05-21 02:36:52,252 INFO  ProjectTaskService - Excluded tasks (7): deviceCheck lint deviceAndroidTest connectedCheck uninstallAll check connectedAndroidTest
+2018-05-21 02:36:52,252 INFO  SysUtils - Execute command: [/tmp/rdisk/1267/src/gradle-robojava-plugin-master/example/gradlew, -b, /tmp/rdisk/1267/src/gradle-robojava-plugin-master/example/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, deviceCheck, -x, lint, -x, deviceAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, check, -x, connectedAndroidTest, build]
+2018-05-21 02:37:02,127 INFO  SysUtils - Configuration on demand is an incubating feature.
+:app:preBuild
+:app:compileFreeDebugNdk
+:app:preFreeDebugBuild
+:app:checkFreeDebugManifest
+:app:prepareFreeDebugDependencies
+:app:compileFreeDebugAidl
+:app:compileFreeDebugRenderscript
+:app:generateFreeDebugBuildConfig
+:app:generateFreeDebugAssets UP-TO-DATE
+:app:mergeFreeDebugAssets
+:app:generateFreeDebugResValues
+:app:generateFreeDebugResources
+:app:mergeFreeDebugResources
+:app:processFreeDebugManifest
+:app:processFreeDebugResources
+:app:generateFreeDebugSources
+:app:compileFreeDebugJava
+:app:preDexFreeDebug
+:app:dexFreeDebug
+:app:processFreeDebugJavaRes UP-TO-DATE
+:app:validateDebugSigning
+:app:packageFreeDebug
+:app:zipalignFreeDebug
+:app:assembleFreeDebug
+:app:compileProDebugNdk
+:app:preProDebugBuild
+:app:checkProDebugManifest
+:app:prepareProDebugDependencies
+:app:compileProDebugAidl
+:app:compileProDebugRenderscript
+:app:generateProDebugBuildConfig
+:app:generateProDebugAssets UP-TO-DATE
+:app:mergeProDebugAssets
+:app:generateProDebugResValues
+:app:generateProDebugResources
+:app:mergeProDebugResources
+:app:processProDebugManifest
+:app:processProDebugResources
+:app:generateProDebugSources
+:app:compileProDebugJava
+:app:preDexProDebug
+:app:dexProDebug
+:app:processProDebugJavaRes UP-TO-DATE
+:app:packageProDebug
+:app:zipalignProDebug
+:app:assembleProDebug
+:app:assembleDebug
+:app:preFreeReleaseBuild
+:app:checkFreeReleaseManifest
+:app:prepareFreeReleaseDependencies
+:app:compileFreeReleaseAidl
+:app:compileFreeReleaseRenderscript
+:app:generateFreeReleaseBuildConfig
+:app:generateFreeReleaseAssets UP-TO-DATE
+:app:mergeFreeReleaseAssets
+:app:generateFreeReleaseResValues
+:app:generateFreeReleaseResources
+:app:mergeFreeReleaseResources
+:app:processFreeReleaseManifest
+:app:processFreeReleaseResources
+:app:generateFreeReleaseSources
+:app:compileFreeReleaseJava
+:app:lintVitalFreeRelease
+:app:compileFreeReleaseNdk
+:app:preDexFreeRelease
+:app:dexFreeRelease
+:app:processFreeReleaseJavaRes UP-TO-DATE
+:app:packageFreeRelease
+:app:assembleFreeRelease
+:app:preProReleaseBuild
+:app:checkProReleaseManifest
+:app:prepareProReleaseDependencies
+:app:compileProReleaseAidl
+:app:compileProReleaseRenderscript
+:app:generateProReleaseBuildConfig
+:app:generateProReleaseAssets UP-TO-DATE
+:app:mergeProReleaseAssets
+:app:generateProReleaseResValues
+:app:generateProReleaseResources
+:app:mergeProReleaseResources
+:app:processProReleaseManifest
+:app:processProReleaseResources
+:app:generateProReleaseSources
+:app:compileProReleaseJava
+:app:lintVitalProRelease
+:app:compileProReleaseNdk
+:app:preDexProRelease
+:app:dexProRelease
+:app:processProReleaseJavaRes UP-TO-DATE
+:app:packageProRelease
+:app:assembleProRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 9.449 secs
+
+2018-05-21 02:37:02,140 INFO  FullProcessService - Found APK file: /tmp/rdisk/1267/src/gradle-robojava-plugin-master/example/app/build/outputs/apk/app-pro-release-unsigned.apk

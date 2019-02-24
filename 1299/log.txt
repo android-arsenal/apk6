@@ -1,0 +1,21 @@
+2018-05-21 00:47:39,835 INFO  DownloadService - Downloading "https://github.com/yaa110/Effects-Pro/archive/master.zip", attempt 3
+2018-05-21 00:48:40,305 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-05-21 00:48:40,999 INFO  GithubDownloadService - Default branch of this repository: master
+2018-05-21 00:48:41,000 INFO  DownloadService - Downloading "https://github.com/yaa110/Effects-Pro/archive/master.zip", attempt 3
+2018-05-21 00:49:42,437 DEBUG FullProcessService - Repository https://github.com/yaa110/Effects-Pro available: true
+2018-05-21 00:49:42,437 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-05-21 00:49:42,438 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/yaa110/Effects-Pro, /tmp/rdisk/1299/src]
+2018-05-21 00:49:45,203 INFO  SysUtils - 
+2018-05-21 00:49:45,211 INFO  GitService - Deleted "/tmp/rdisk/1299/src/.git": true
+2018-05-21 00:49:45,220 INFO  FullProcessService - Size of directory with sources: 5 MB
+2018-05-21 00:49:45,220 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1299/src]
+2018-05-21 00:49:45,225 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1299/src/.git/
+
+2018-05-21 00:49:45,231 INFO  ProjectBuildService - Gradle wrapper(s): none
+2018-05-21 00:49:45,231 ERROR ProjectBuildService - Could not detect Gradle wrapper. Default Gradle installation will be used
+2018-05-21 00:49:45,237 INFO  ProjectBuildService - Build script(s): none
+2018-05-21 00:49:45,242 INFO  ProjectBuildService - All script(s): none
+2018-05-21 00:49:45,242 INFO  ProjectBuildService - Remote scripts: none
+2018-05-21 00:49:45,242 ERROR FullProcessService - Project is not correct Gradle project
+2018-05-21 00:49:45,242 ERROR FullProcessService - Project build has not produced APK file
+2018-05-21 00:49:45,248 ERROR FullProcessService - Could not find generated or existed APK file

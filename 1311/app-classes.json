@@ -1,0 +1,5 @@
+{
+  "com.flavienlaurent.discrollview" : [ "BuildConfig", "R", "R$attr", "R$dimen", "R$drawable", "R$id", "R$layout", "R$string", "R$style" ],
+  "com.flavienlaurent.discrollview.lib" : [ "DiscrollView", "Discrollvable" ],
+  "com.flavienlaurent.discrollview.sample" : [ "DiscrollvableGreenLayout", "DiscrollvableLastLayout", "DiscrollvablePathLayout", "DiscrollvablePurpleLayout", "DiscrollvableRedLayout", "MainActivity" ]
+}

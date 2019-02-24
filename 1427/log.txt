@@ -1,0 +1,9 @@
+2018-04-06 03:02:10,097 INFO  DownloadService - Downloading "https://github.com/magnetsystems/rest2mobile/archive/master.zip", attempt 3
+2018-04-06 03:02:10,097 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-06 03:02:10,498 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-06 03:02:10,498 INFO  DownloadService - Downloading "https://github.com/magnetsystems/rest2mobile/archive/master.zip", attempt 3
+2018-04-06 03:02:10,498 DEBUG FullProcessService - Repository https://github.com/magnetsystems/rest2mobile available: false
+2018-04-06 03:02:10,498 ERROR FullProcessService - Could not find directory with sources
+2018-04-06 03:02:10,498 ERROR FullProcessService - Project will not be processed
+2018-04-06 03:02:10,498 ERROR FullProcessService - Project build has not produced APK file
+2018-04-06 03:02:10,499 ERROR FullProcessService - Could not find generated or existed APK file

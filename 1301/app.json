@@ -1,0 +1,29 @@
+{
+  "meta" : {
+    "packageName" : "com.commonsware.cwac.wakeful.demo",
+    "label" : "CWAC Wakeful Demo",
+    "icon" : null,
+    "versionName" : "1.0",
+    "versionCode" : 4,
+    "installLocation" : "auto",
+    "minSdkVersion" : "7",
+    "targetSdkVersion" : "7",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : true,
+    "largeScreens" : false,
+    "usesPermissions" : [ "android.permission.RECEIVE_BOOT_COMPLETED", "android.permission.WAKE_LOCK" ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : null,
+  "dexClasses" : 12,
+  "locales" : [ "" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"4\" android:versionName=\"1.0\" android:installLocation=\"auto\" package=\"com.commonsware.cwac.wakeful.demo\">\n\t<uses-sdk android:minSdkVersion=\"7\" android:targetSdkVersion=\"7\" />\n\t<supports-screens android:smallScreens=\"false\" android:normalScreens=\"true\" android:largeScreens=\"false\" />\n\t<uses-permission android:name=\"android.permission.RECEIVE_BOOT_COMPLETED\" />\n\t<uses-permission android:name=\"android.permission.WAKE_LOCK\" />\n\t<application android:label=\"CWAC Wakeful Demo\" android:debuggable=\"true\">\n\t\t<receiver android:name=\"com.commonsware.cwac.wakeful.AlarmReceiver\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.BOOT_COMPLETED\" />\n\t\t\t</intent-filter>\n\t\t\t<meta-data android:name=\"com.commonsware.cwac.wakeful\" android:resource=\"res/xml/wakeful.xml\" />\n\t\t</receiver>\n\t\t<service android:name=\"com.commonsware.cwac.wakeful.demo.AppService\" />\n\t\t<activity android:theme=\"@android:style/Theme.NoDisplay\" android:label=\"CWAC Wakeful Demo\" android:name=\"com.commonsware.cwac.wakeful.demo.DemoActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t</application>\n</manifest>\n",
+  "fileSize" : 9130,
+  "crc32" : 3858369275,
+  "sha256" : "0b33197e9cb6d2a526a1552a168f1f3da1b26eebf99c9249fa37e804adbc6377",
+  "buildTime" : 1496784464000
+}

@@ -1,0 +1,29 @@
+{
+  "meta" : {
+    "packageName" : "de.greenrobot.essentials.testapp",
+    "label" : "Essentials Test",
+    "icon" : null,
+    "versionName" : "1.0",
+    "versionCode" : 1,
+    "installLocation" : null,
+    "minSdkVersion" : "8",
+    "targetSdkVersion" : null,
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ "android.permission.WRITE_EXTERNAL_STORAGE" ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : null,
+  "dexClasses" : 41,
+  "locales" : [ ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"1\" android:versionName=\"1.0\" package=\"de.greenrobot.essentials.testapp\" platformBuildVersionCode=\"27\" platformBuildVersionName=\"8.1.0\">\n\t<uses-sdk android:minSdkVersion=\"8\" />\n\t<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />\n\t<application android:label=\"Essentials Test\" android:allowBackup=\"false\" />\n</manifest>\n",
+  "fileSize" : 37496,
+  "crc32" : 2192749140,
+  "sha256" : "59939af266ce7ddc2aa58a2c1caf8b552042baa621b6264cbcc89c1b2fbb2072",
+  "buildTime" : 1523043203000
+}

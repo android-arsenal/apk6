@@ -1,0 +1,131 @@
+2018-04-06 02:17:16,074 INFO  DownloadService - Downloading "https://github.com/txusballesteros/android-bind/archive/master.zip", attempt 3
+2018-04-06 02:18:16,536 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-06 02:18:17,178 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-06 02:18:17,178 INFO  DownloadService - Downloading "https://github.com/txusballesteros/android-bind/archive/master.zip", attempt 3
+2018-04-06 02:19:18,588 DEBUG FullProcessService - Repository https://github.com/txusballesteros/android-bind available: true
+2018-04-06 02:19:18,588 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-06 02:19:18,588 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/txusballesteros/android-bind, /tmp/rdisk/1456/src]
+2018-04-06 02:19:20,330 INFO  SysUtils - 
+2018-04-06 02:19:20,343 INFO  GitService - Deleted "/tmp/rdisk/1456/src/.git": true
+2018-04-06 02:19:20,345 INFO  FullProcessService - Size of directory with sources: 175 KB
+2018-04-06 02:19:20,345 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1456/src]
+2018-04-06 02:19:20,350 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1456/src/.git/
+
+2018-04-06 02:19:20,352 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1456/src/gradlew
+2018-04-06 02:19:20,354 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1456/src/android-bind-sample/build.gradle /tmp/rdisk/1456/src/android-bind/build.gradle /tmp/rdisk/1456/src/build.gradle
+2018-04-06 02:19:20,356 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1456/src/settings.gradle /tmp/rdisk/1456/src/build.gradle /tmp/rdisk/1456/src/android-bind/build.gradle /tmp/rdisk/1456/src/android-bind-sample/build.gradle
+2018-04-06 02:19:20,357 INFO  ProjectBuildService - Remote scripts: none
+2018-04-06 02:19:20,357 INFO  ProjectFixService - Fixing project...
+2018-04-06 02:19:20,362 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1456/src/android-bind-sample/local.properties
+2018-04-06 02:19:20,362 INFO  ProjectFixService - Build info for "/tmp/rdisk/1456/src/android-bind-sample/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=8,targetSdkVersion=21]
+2018-04-06 02:19:20,362 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1456/src/android-bind/local.properties
+2018-04-06 02:19:20,362 INFO  ProjectFixService - Build info for "/tmp/rdisk/1456/src/android-bind/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=8,targetSdkVersion=21]
+2018-04-06 02:19:20,363 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1456/src/local.properties
+2018-04-06 02:19:20,363 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-bin.zip
+2018-04-06 02:19:20,364 INFO  ProjectFixService - Build info for "/tmp/rdisk/1456/src/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=8,targetSdkVersion=21]
+2018-04-06 02:19:20,364 INFO  ProjectFixService - Project was maybe fixed
+2018-04-06 02:19:20,364 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-06 02:19:20,364 INFO  SysUtils - Execute command: [/tmp/rdisk/1456/src/gradlew, -b, /tmp/rdisk/1456/src/android-bind-sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-06 02:19:29,418 INFO  ProjectTaskService - Detected possible tasks: 54
+2018-04-06 02:19:29,418 INFO  ProjectTaskService - Excluded tasks (12): lintDebug deviceCheck lint uninstallRelease installRelease connectedCheck uninstallAll check connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-06 02:19:29,418 INFO  SysUtils - Execute command: [/tmp/rdisk/1456/src/gradlew, -b, /tmp/rdisk/1456/src/android-bind-sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, installRelease, -x, connectedCheck, -x, uninstallAll, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-06 02:19:56,208 INFO  SysUtils - Configuration on demand is an incubating feature.
+:android-bind-sample:preBuild
+:android-bind-sample:compileDebugNdk
+:android-bind:compileLint
+:android-bind:copyReleaseLint UP-TO-DATE
+:android-bind:mergeReleaseProguardFiles
+:android-bind:preBuild
+:android-bind:preReleaseBuild
+:android-bind:checkReleaseManifest
+:android-bind:prepareReleaseDependencies
+:android-bind:compileReleaseAidl
+:android-bind:compileReleaseRenderscript
+:android-bind:generateReleaseBuildConfig
+:android-bind:generateReleaseAssets UP-TO-DATE
+:android-bind:mergeReleaseAssets
+:android-bind:generateReleaseResValues
+:android-bind:generateReleaseResources
+:android-bind:packageReleaseResources
+:android-bind:processReleaseManifest
+:android-bind:processReleaseResources
+:android-bind:generateReleaseSources
+:android-bind:compileReleaseJavaNote: /tmp/rdisk/1456/src/android-bind/src/main/java/com/mobandme/android/bind/compiler/Compiler.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:android-bind:processReleaseJavaRes UP-TO-DATE
+:android-bind:packageReleaseJar
+:android-bind:compileReleaseNdk
+:android-bind:packageReleaseJniLibs UP-TO-DATE
+:android-bind:packageReleaseLocalJar UP-TO-DATE
+:android-bind:packageReleaseRenderscript UP-TO-DATE
+:android-bind:bundleRelease
+:android-bind-sample:preDebugBuild
+:android-bind-sample:checkDebugManifest
+:android-bind-sample:preReleaseBuild
+:android-bind-sample:prepareComAndroidSupportAppcompatV72103Library
+:android-bind-sample:prepareComAndroidSupportSupportV42103Library
+:android-bind-sample:prepareComMobandmeAndroidBind103Library
+:android-bind-sample:prepareDebugDependencies
+:android-bind-sample:compileDebugAidl
+:android-bind-sample:compileDebugRenderscript
+:android-bind-sample:generateDebugBuildConfig
+:android-bind-sample:generateDebugAssets UP-TO-DATE
+:android-bind-sample:mergeDebugAssets
+:android-bind-sample:generateDebugResValues
+:android-bind-sample:generateDebugResources
+:android-bind-sample:mergeDebugResources/tmp/rdisk/1456/src/android-bind-sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-xhdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/1456/src/android-bind-sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_spinner_mtrl_am_alpha.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/1456/src/android-bind-sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-mdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/1456/src/android-bind-sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_ab_share_pack_holo_light.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/1456/src/android-bind-sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/1456/src/android-bind-sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-xhdpi/abc_ab_share_pack_holo_light.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+:android-bind-sample:processDebugManifest
+:android-bind-sample:processDebugResources
+:android-bind-sample:generateDebugSources
+:android-bind-sample:compileDebugJava
+:android-bind-sample:preDexDebug
+:android-bind-sample:dexDebug
+:android-bind-sample:processDebugJavaRes UP-TO-DATE
+:android-bind-sample:validateDebugSigning
+:android-bind-sample:packageDebug
+:android-bind-sample:zipalignDebug
+:android-bind-sample:assembleDebug
+:android-bind-sample:checkReleaseManifest
+:android-bind-sample:prepareReleaseDependencies
+:android-bind-sample:compileReleaseAidl
+:android-bind-sample:compileReleaseRenderscript
+:android-bind-sample:generateReleaseBuildConfig
+:android-bind-sample:generateReleaseAssets UP-TO-DATE
+:android-bind-sample:mergeReleaseAssets
+:android-bind-sample:generateReleaseResValues
+:android-bind-sample:generateReleaseResources
+:android-bind-sample:mergeReleaseResources/tmp/rdisk/1456/src/android-bind-sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-xhdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/1456/src/android-bind-sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_spinner_mtrl_am_alpha.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/1456/src/android-bind-sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-mdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/1456/src/android-bind-sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_ab_share_pack_holo_light.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/1456/src/android-bind-sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/1456/src/android-bind-sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-xhdpi/abc_ab_share_pack_holo_light.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+:android-bind-sample:processReleaseManifest
+:android-bind-sample:processReleaseResources
+:android-bind-sample:generateReleaseSources
+:android-bind-sample:compileReleaseJava
+:android-bind-sample:lintVitalRelease
+:android-bind-sample:compileReleaseNdk
+:android-bind-sample:proguardRelease
+:android-bind-sample:dexRelease
+:android-bind-sample:processReleaseJavaRes UP-TO-DATE
+:android-bind-sample:validateReleaseSignSigning
+:android-bind-sample:packageRelease
+:android-bind-sample:zipalignRelease
+:android-bind-sample:assembleRelease
+:android-bind-sample:assemble
+:android-bind-sample:build
+
+BUILD SUCCESSFUL
+
+Total time: 26.344 secs
+
+2018-04-06 02:19:56,242 INFO  FullProcessService - Found APK file: /tmp/rdisk/1456/src/android-bind-sample/build/outputs/apk/android-bind-sample-release.apk

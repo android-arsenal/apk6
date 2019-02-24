@@ -1,0 +1,21 @@
+2018-04-06 01:16:24,517 INFO  DownloadService - Downloading "https://github.com/Pareshoct7/RoundImage/archive/master.zip", attempt 3
+2018-04-06 01:17:24,998 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-06 01:17:25,658 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-06 01:17:25,658 INFO  DownloadService - Downloading "https://github.com/Pareshoct7/RoundImage/archive/master.zip", attempt 3
+2018-04-06 01:18:26,936 DEBUG FullProcessService - Repository https://github.com/Pareshoct7/RoundImage available: true
+2018-04-06 01:18:26,936 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-06 01:18:26,936 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/Pareshoct7/RoundImage, /tmp/rdisk/1484/src]
+2018-04-06 01:18:29,215 INFO  SysUtils - 
+2018-04-06 01:18:29,228 INFO  GitService - Deleted "/tmp/rdisk/1484/src/.git": true
+2018-04-06 01:18:29,230 INFO  FullProcessService - Size of directory with sources: 2 MB
+2018-04-06 01:18:29,230 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1484/src]
+2018-04-06 01:18:29,238 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1484/src/.git/
+
+2018-04-06 01:18:29,241 INFO  ProjectBuildService - Gradle wrapper(s): none
+2018-04-06 01:18:29,241 ERROR ProjectBuildService - Could not detect Gradle wrapper. Default Gradle installation will be used
+2018-04-06 01:18:29,243 INFO  ProjectBuildService - Build script(s): none
+2018-04-06 01:18:29,245 INFO  ProjectBuildService - All script(s): none
+2018-04-06 01:18:29,245 INFO  ProjectBuildService - Remote scripts: none
+2018-04-06 01:18:29,245 ERROR FullProcessService - Project is not correct Gradle project
+2018-04-06 01:18:29,245 ERROR FullProcessService - Project build has not produced APK file
+2018-04-06 01:18:29,247 ERROR FullProcessService - Could not find generated or existed APK file

@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "com.grumoon.pulllistview.sample",
+    "label" : "PullListView",
+    "icon" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "versionName" : "1.0",
+    "versionCode" : 1,
+    "installLocation" : null,
+    "minSdkVersion" : "8",
+    "targetSdkVersion" : "21",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAAqFBMVEUAAAAztuoztuoztuoztuoztukztusytekyuOo0tuo2ueg0teozu+4xtu0zs+Yytekyt+kzt+oxt+g0tegytusytuoztuo2vOQAgP8ztus0t+tAv98ztukytuoytuo0t+oztuoxtesztuo1teo0t+ozt+oztuozt+s0tuoztuoztuoztuoztegztuoyteoztuo0tuoztusztuk0tuoytesxtucyt+kxuOnXfQZAAAAAOHRSTlMA//348OHImD3LIa0PKgqOXDxDT3DK9xMCllkI7YTAlM805DC3qaqwweXD9S3ySPqol4JsTBVRL/5qS8UAAACsSURBVEjHY2AYBaMAJ2CEASZmFlY2dg6YOCcIcOHTAAXcPEjivERoYGTjI1EDIz8RGgQEBTmEhEVEwRwxccIaoBISkmCeFNEaGKRlQDxZ4jUwyIF48iRoUID7mjgNikwgngjRGoSUwDxlwhpUVFXV1DU0IfGgRWLEaeuQpkFXj6S0pG/AxUCMBgNDQ0N5fiNjE1McwY0zHhiGnwYzcyRAjAYUMHg1jIJRQA0AAKiIDQ0dXyByAAAAAElFTkSuQmCC"
+  },
+  "dexClasses" : 1149,
+  "locales" : [ "", "sl", "mr_IN", "kk_KZ", "bg", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "my_MM", "ur_PK", "mn_MN", "fi", "lv", "et_EE", "sw", "pt_PT", "tl", "th", "uz_UZ", "pt", "ar", "ru", "eu_ES", "bn_BD", "fa", "sk", "kn_IN", "hi", "cs", "sv", "km_KH", "el", "nl", "hu", "af", "in", "vi", "fr_CA", "sr", "da", "si_LK", "ml_IN", "gl_ES", "es", "is_IS", "hy_AM", "tr", "ne_NP", "ro", "hr", "ms_MY", "am", "ka_GE", "lt", "pl", "zh_CN", "ta_IN", "fr", "ja", "lo_LA", "ky_KG", "iw", "de", "en_IN", "es_US", "mk_MK", "nb", "te_IN", "ca", "en_GB" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"1\" android:versionName=\"1.0\" package=\"com.grumoon.pulllistview.sample\" platformBuildVersionCode=\"21\" platformBuildVersionName=\"5.0.1-1624448\">\n\t<uses-sdk android:minSdkVersion=\"8\" android:targetSdkVersion=\"21\" />\n\t<application android:theme=\"resourceId:0x7f0b0001\" android:label=\"PullListView\" android:icon=\"res/drawable-mdpi-v4/ic_launcher.png\" android:debuggable=\"true\" android:allowBackup=\"true\">\n\t\t<activity android:label=\"PullListView\" android:name=\"com.grumoon.pulllistview.sample.AppMain\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t</application>\n</manifest>\n",
+  "fileSize" : 910398,
+  "crc32" : 4037830028,
+  "sha256" : "dc610efa0eda3fb19948b131922d4acb624704d0df08df9becbc9b635727678d",
+  "buildTime" : 1522978564000
+}

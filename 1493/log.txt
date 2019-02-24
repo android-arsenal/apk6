@@ -1,0 +1,210 @@
+2018-04-06 00:56:09,017 INFO  DownloadService - Downloading "https://github.com/f2prateek/device-frame-generator/archive/master.zip", attempt 3
+2018-04-06 00:57:09,463 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-06 00:57:10,155 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-06 00:57:10,155 INFO  DownloadService - Downloading "https://github.com/f2prateek/device-frame-generator/archive/master.zip", attempt 3
+2018-04-06 00:58:11,484 DEBUG FullProcessService - Repository https://github.com/f2prateek/device-frame-generator available: true
+2018-04-06 00:58:11,485 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-06 00:58:11,485 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/f2prateek/device-frame-generator, /tmp/rdisk/1493/src]
+2018-04-06 00:58:18,612 INFO  SysUtils - 
+2018-04-06 00:58:18,624 INFO  GitService - Deleted "/tmp/rdisk/1493/src/.git": true
+2018-04-06 00:58:18,635 INFO  FullProcessService - Size of directory with sources: 49 MB
+2018-04-06 00:58:18,635 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1493/src]
+2018-04-06 00:58:18,642 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1493/src/.git/
+
+2018-04-06 00:58:18,648 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1493/src/gradlew
+2018-04-06 00:58:18,655 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1493/src/build.gradle
+2018-04-06 00:58:18,662 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1493/src/build.gradle
+2018-04-06 00:58:18,662 INFO  ProjectBuildService - Remote scripts: none
+2018-04-06 00:58:18,662 INFO  ProjectFixService - Fixing project...
+2018-04-06 00:58:18,676 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1493/src/local.properties
+2018-04-06 00:58:18,676 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.14.1-all.zip
+2018-04-06 00:58:18,676 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.14.1-bin.zip)
+2018-04-06 00:58:18,676 INFO  ProjectFixService - Build info for "/tmp/rdisk/1493/src/build.gradle": [buildToolsVersion=23.0.3,compileSdkVersion=22,minSdkVersion=14,targetSdkVersion=22]
+2018-04-06 00:58:18,677 INFO  ProjectFixService - Project was maybe fixed
+2018-04-06 00:58:18,677 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-06 00:58:18,677 INFO  SysUtils - Execute command: [/tmp/rdisk/1493/src/gradlew, -b, /tmp/rdisk/1493/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-06 00:58:27,621 INFO  ProjectTaskService - Detected possible tasks: 74
+2018-04-06 00:58:27,621 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-06 00:58:27,621 INFO  SysUtils - Execute command: [/tmp/rdisk/1493/src/gradlew, -b, /tmp/rdisk/1493/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-06 01:00:44,411 INFO  SysUtils - Configuration on demand is an incubating feature.
+signing.properties not found
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+:preBuild UP-TO-DATE
+:preDebugBuild UP-TO-DATE
+:checkDebugManifest
+:preReleaseBuild UP-TO-DATE
+:prepareComAndroidSupportAppcompatV72221Library
+:prepareComAndroidSupportDesign2221Library
+:prepareComAndroidSupportPaletteV72221Library
+:prepareComAndroidSupportSupportV132221Library
+:prepareComAndroidSupportSupportV42221Library
+:prepareComF2prateekRxPreferencesRxPreferences101Library
+:prepareComJakewhartonHugoHugoRuntime121Library
+:prepareDebugDependencies
+:compileDebugAidl
+:compileDebugRenderscript
+:generateDebugBuildConfig
+:generateDebugResValues
+:generateDebugResources
+:mergeDebugResources
+:processDebugManifest
+:processDebugResourceswarning: string 'background_color_preference' has no default translation.
+
+
+:generateDebugSources
+:incrementalDebugJavaCompilationSafeguard
+:compileDebugJavaWithJavacNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:compileDebugNdk UP-TO-DATE
+:compileDebugSources
+:mergeDebugShaders
+:compileDebugShaders
+:generateDebugAssets
+:mergeDebugAssets
+:transformClassesWithDexForDebug
+:mergeDebugJniLibFolders
+:transformNative_libsWithMergeJniLibsForDebug
+:processDebugJavaRes UP-TO-DATE
+:transformResourcesWithMergeJavaResForDebug
+:validateSigningDebug
+:packageDebug
+:assembleDebug
+:checkReleaseManifest
+:prepareReleaseDependencies
+:compileReleaseAidl
+:compileReleaseRenderscript
+:generateReleaseBuildConfig
+:generateReleaseResValues
+:generateReleaseResources
+:mergeReleaseResources
+:processReleaseManifest
+:processReleaseResourceswarning: string 'background_color_preference' has no default translation.
+
+
+:generateReleaseSources
+:incrementalReleaseJavaCompilationSafeguard
+:compileReleaseJavaWithJavacNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:compileReleaseNdk UP-TO-DATE
+:compileReleaseSources
+:lintVitalRelease/tmp/rdisk/1493/src/src/main/res/values/strings.xml:22: Error: "match_device" is not translated in "cs" (Czech) [MissingTranslation]
+  <string name="match_device">Match a device</string>
+          ~~~~~~~~~~~~~~~~~~~
+/tmp/rdisk/1493/src/src/main/res/values/strings.xml:23: Error: "no_matching_device" is not translated in "cs" (Czech) [MissingTranslation]
+  <string name="no_matching_device">No Matching Devices Available</string>
+          ~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/rdisk/1493/src/src/main/res/values/strings.xml:25: Error: "open" is not translated in "cs" (Czech), "sk" (Slovak) [MissingTranslation]
+  <string name="open">Open</string>
+          ~~~~~~~~~~~
+/tmp/rdisk/1493/src/src/main/res/values/strings.xml:31: Error: "screenshot_saving_ticker" is not translated in "cs" (Czech), "sk" (Slovak) [MissingTranslation]
+  <string name="screenshot_saving_ticker">@string/screenshot_saving_title</string>
+          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/rdisk/1493/src/src/main/res/values/strings.xml:38: Error: "rate" is not translated in "cs" (Czech) [MissingTranslation]
+  <string name="rate">Rate App</string>
+          ~~~~~~~~~~~
+/tmp/rdisk/1493/src/src/main/res/values/strings.xml:65: Error: "custom_color" is not translated in "cs" (Czech), "sk" (Slovak) [MissingTranslation]
+  <string name="custom_color">Custom</string>
+          ~~~~~~~~~~~~~~~~~~~
+/tmp/rdisk/1493/src/src/main/res/values/strings.xml:66: Error: "vibrant_color" is not translated in "cs" (Czech), "sk" (Slovak) [MissingTranslation]
+  <string name="vibrant_color">Vibrant</string>
+          ~~~~~~~~~~~~~~~~~~~~
+/tmp/rdisk/1493/src/src/main/res/values/strings.xml:67: Error: "vibrant_dark_color" is not translated in "cs" (Czech), "sk" (Slovak) [MissingTranslation]
+  <string name="vibrant_dark_color">Vibrant Dark</string>
+          ~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/rdisk/1493/src/src/main/res/values/strings.xml:68: Error: "vibrant_light_color" is not translated in "cs" (Czech), "sk" (Slovak) [MissingTranslation]
+  <string name="vibrant_light_color">Vibrant Light</string>
+          ~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/rdisk/1493/src/src/main/res/values/strings.xml:69: Error: "muted_color" is not translated in "cs" (Czech), "sk" (Slovak) [MissingTranslation]
+  <string name="muted_color">Muted</string>
+          ~~~~~~~~~~~~~~~~~~
+/tmp/rdisk/1493/src/src/main/res/values/strings.xml:70: Error: "muted_dark_color" is not translated in "cs" (Czech), "sk" (Slovak) [MissingTranslation]
+  <string name="muted_dark_color">Muted Dark</string>
+          ~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/rdisk/1493/src/src/main/res/values/strings.xml:71: Error: "muted_light_color" is not translated in "cs" (Czech), "sk" (Slovak) [MissingTranslation]
+  <string name="muted_light_color">Muted Light</string>
+          ~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/rdisk/1493/src/src/main/res/values/strings.xml:81: Error: "blur_background_preference" is not translated in "cs" (Czech), "sk" (Slovak) [MissingTranslation]
+  <string name="blur_background_preference">Blur Background</string>
+          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/rdisk/1493/src/src/main/res/values/strings.xml:82: Error: "blur_background_enabled" is not translated in "cs" (Czech), "sk" (Slovak) [MissingTranslation]
+  <string name="blur_background_enabled">Blurred screenshot will be used as the background.</string>
+          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/rdisk/1493/src/src/main/res/values/strings.xml:83: Error: "blur_background_disabled" is not translated in "cs" (Czech), "sk" (Slovak) [MissingTranslation]
+  <string name="blur_background_disabled">Blurred screenshot will not used as the background.
+          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/rdisk/1493/src/src/main/res/values/strings.xml:86: Error: "color_background_preference" is not translated in "cs" (Czech), "sk" (Slovak) [MissingTranslation]
+  <string name="color_background_preference">Color Background</string>
+          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/rdisk/1493/src/src/main/res/values/strings.xml:87: Error: "color_background_enabled" is not translated in "cs" (Czech), "sk" (Slovak) [MissingTranslation]
+  <string name="color_background_enabled">Background will be colored.</string>
+          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/rdisk/1493/src/src/main/res/values/strings.xml:88: Error: "color_background_disabled" is not translated in "cs" (Czech), "sk" (Slovak) [MissingTranslation]
+  <string name="color_background_disabled">Background will not be colored.</string>
+          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/rdisk/1493/src/src/release/res/values/titles.xml:19: Error: "application_name" is not translated in "cs" (Czech), "sk" (Slovak) [MissingTranslation]
+  <string name="application_name">Device Frame Generator</string>
+          ~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "MissingTranslation":
+   If an application has more than one locale, then all the strings declared
+   in one language should also be translated in all other languages.
+
+   If the string should not be translated, you can add the attribute
+   translatable="false" on the <string> element, or you can define all your
+   non-translatable strings in a resource file called donottranslate.xml. Or,
+   you can ignore the issue with a tools:ignore="MissingTranslation"
+   attribute.
+
+   By default this detector allows regions of a language to just provide a
+   subset of the strings and fall back to the standard language strings. You
+   can require all regions to provide a full translation by setting the
+   environment variable ANDROID_LINT_COMPLETE_REGIONS.
+
+   You can tell lint (and other tools) which language is the default language
+   in your res/values/ folder by specifying tools:locale="languageCode" for
+   the root <resources> element in your resource file. (The tools prefix
+   refers to the namespace declaration http://schemas.android.com/tools.)
+
+/tmp/rdisk/1493/src/src/main/res/values-sk/strings.xml:25: Error: "background_color_preference" is translated here but not found in default locale [ExtraTranslation]
+  <string name="background_color_preference">Farba pozadia</string>
+          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "ExtraTranslation":
+   If a string appears in a specific language translation file, but there is
+   no corresponding string in the default locale, then this string is probably
+   unused. (It's technically possible that your application is only intended
+   to run in a specific locale, but it's still a good idea to provide a
+   fallback.).
+
+   Note that these strings can lead to crashes if the string is looked up on
+   any locale not providing a translation, so it's important to clean them
+   up.
+
+20 errors, 0 warnings
+
+:mergeReleaseShaders
+:compileReleaseShaders
+:generateReleaseAssets
+:mergeReleaseAssets
+:transformClassesWithDexForRelease
+:mergeReleaseJniLibFolders
+:transformNative_libsWithMergeJniLibsForRelease
+:processReleaseJavaRes UP-TO-DATE
+:transformResourcesWithMergeJavaResForRelease
+:packageRelease
+:assembleRelease
+:assemble
+:build
+
+BUILD SUCCESSFUL
+
+Total time: 2 mins 16.182 secs
+
+2018-04-06 01:00:44,475 INFO  FullProcessService - Found APK file: /tmp/rdisk/1493/src/build/outputs/apk/src-release-unsigned.apk

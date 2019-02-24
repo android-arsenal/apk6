@@ -1,0 +1,179 @@
+2018-04-06 00:46:41,992 INFO  DownloadService - Downloading "https://github.com/takahirom/WearSharedPreferences/archive/master.zip", attempt 3
+2018-04-06 00:47:42,447 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-06 00:47:43,129 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-06 00:47:43,129 INFO  DownloadService - Downloading "https://github.com/takahirom/WearSharedPreferences/archive/master.zip", attempt 3
+2018-04-06 00:48:44,458 DEBUG FullProcessService - Repository https://github.com/takahirom/WearSharedPreferences available: true
+2018-04-06 00:48:44,458 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-06 00:48:44,458 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/takahirom/WearSharedPreferences, /tmp/rdisk/1496/src]
+2018-04-06 00:48:46,028 INFO  SysUtils - 
+2018-04-06 00:48:46,034 INFO  GitService - Deleted "/tmp/rdisk/1496/src/.git": true
+2018-04-06 00:48:46,038 INFO  FullProcessService - Size of directory with sources: 250 KB
+2018-04-06 00:48:46,038 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1496/src]
+2018-04-06 00:48:46,042 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1496/src/.git/
+
+2018-04-06 00:48:46,046 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1496/src/gradlew
+2018-04-06 00:48:46,050 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1496/src/app/build.gradle /tmp/rdisk/1496/src/wear-shared-preferences/build.gradle /tmp/rdisk/1496/src/wear/build.gradle /tmp/rdisk/1496/src/build.gradle
+2018-04-06 00:48:46,054 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1496/src/wear/build.gradle /tmp/rdisk/1496/src/wear-shared-preferences/build.gradle /tmp/rdisk/1496/src/settings.gradle /tmp/rdisk/1496/src/build.gradle /tmp/rdisk/1496/src/app/build.gradle
+2018-04-06 00:48:46,054 INFO  ProjectBuildService - Remote scripts: none
+2018-04-06 00:48:46,054 INFO  ProjectFixService - Fixing project...
+2018-04-06 00:48:46,063 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1496/src/app/local.properties
+2018-04-06 00:48:46,063 INFO  ProjectFixService - Build info for "/tmp/rdisk/1496/src/app/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=15,targetSdkVersion=21]
+2018-04-06 00:48:46,063 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1496/src/wear-shared-preferences/local.properties
+2018-04-06 00:48:46,064 INFO  ProjectFixService - Build info for "/tmp/rdisk/1496/src/wear-shared-preferences/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=15,targetSdkVersion=21]
+2018-04-06 00:48:46,064 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1496/src/wear/local.properties
+2018-04-06 00:48:46,064 INFO  ProjectFixService - Build info for "/tmp/rdisk/1496/src/wear/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=20,targetSdkVersion=21]
+2018-04-06 00:48:46,064 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1496/src/local.properties
+2018-04-06 00:48:46,064 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-06 00:48:46,064 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-06 00:48:46,065 INFO  ProjectFixService - Build info for "/tmp/rdisk/1496/src/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=20,targetSdkVersion=21]
+2018-04-06 00:48:46,065 INFO  ProjectFixService - Project was maybe fixed
+2018-04-06 00:48:46,065 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-06 00:48:46,065 INFO  SysUtils - Execute command: [/tmp/rdisk/1496/src/gradlew, -b, /tmp/rdisk/1496/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-06 00:49:04,354 INFO  ProjectTaskService - Detected possible tasks: 53
+2018-04-06 00:49:04,354 INFO  ProjectTaskService - Excluded tasks (11): lintDebug deviceCheck lint uninstallRelease connectedCheck uninstallAll check connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-06 00:49:04,354 INFO  SysUtils - Execute command: [/tmp/rdisk/1496/src/gradlew, -b, /tmp/rdisk/1496/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, connectedCheck, -x, uninstallAll, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-06 00:50:05,030 INFO  SysUtils - Configuration on demand is an incubating feature.
+:app:preBuild
+:app:compileDebugNdk
+:app:preDebugBuild
+:app:checkDebugManifest
+:app:preReleaseBuild
+:wear-shared-preferences:compileLint
+:wear-shared-preferences:copyReleaseLint UP-TO-DATE
+:wear-shared-preferences:preBuild
+:wear-shared-preferences:preReleaseBuild
+:wear-shared-preferences:checkReleaseManifest
+:wear-shared-preferences:preDebugBuild
+:wear-shared-preferences:preDebugTestBuild
+:wear-shared-preferences:prepareComAndroidSupportSupportCompat2520Library
+:wear-shared-preferences:prepareComAndroidSupportSupportCoreUi2520Library
+:wear-shared-preferences:prepareComAndroidSupportSupportCoreUtils2520Library
+:wear-shared-preferences:prepareComAndroidSupportSupportFragment2520Library
+:wear-shared-preferences:prepareComAndroidSupportSupportMediaCompat2520Library
+:wear-shared-preferences:prepareComAndroidSupportSupportV42520Library
+:wear-shared-preferences:prepareComGoogleAndroidGmsPlayServicesBase1104Library
+:wear-shared-preferences:prepareComGoogleAndroidGmsPlayServicesBasement1104Library
+:wear-shared-preferences:prepareComGoogleAndroidGmsPlayServicesTasks1104Library
+:wear-shared-preferences:prepareComGoogleAndroidGmsPlayServicesWearable1104Library
+:wear-shared-preferences:prepareComKogituneWearListenerServiceBroadcaster003Library
+:wear-shared-preferences:prepareReleaseDependencies
+:wear-shared-preferences:compileReleaseAidl
+:wear-shared-preferences:compileReleaseRenderscript
+:wear-shared-preferences:generateReleaseBuildConfig
+:wear-shared-preferences:generateReleaseAssets UP-TO-DATE
+:wear-shared-preferences:mergeReleaseAssets
+:wear-shared-preferences:generateReleaseResValues
+:wear-shared-preferences:generateReleaseResources
+:wear-shared-preferences:mergeReleaseResources
+:wear-shared-preferences:processReleaseManifest
+:wear-shared-preferences:processReleaseResources
+:wear-shared-preferences:generateReleaseSources
+:wear-shared-preferences:compileReleaseJava
+:wear-shared-preferences:extractReleaseAnnotations
+:wear-shared-preferences:mergeReleaseProguardFiles
+:wear-shared-preferences:processReleaseJavaRes UP-TO-DATE
+:wear-shared-preferences:packageReleaseJar
+:wear-shared-preferences:compileReleaseNdk
+:wear-shared-preferences:packageReleaseJniLibs UP-TO-DATE
+:wear-shared-preferences:packageReleaseLocalJar UP-TO-DATE
+:wear-shared-preferences:packageReleaseRenderscript UP-TO-DATE
+:wear-shared-preferences:packageReleaseResources
+:wear-shared-preferences:bundleRelease
+:app:prepareComAndroidSupportSupportCompat2520Library
+:app:prepareComAndroidSupportSupportCoreUi2520Library
+:app:prepareComAndroidSupportSupportCoreUtils2520Library
+:app:prepareComAndroidSupportSupportFragment2520Library
+:app:prepareComAndroidSupportSupportMediaCompat2520Library
+:app:prepareComAndroidSupportSupportV42520Library
+:app:prepareComGoogleAndroidGmsPlayServicesBase1104Library
+:app:prepareComGoogleAndroidGmsPlayServicesBasement1104Library
+:app:prepareComGoogleAndroidGmsPlayServicesTasks1104Library
+:app:prepareComGoogleAndroidGmsPlayServicesWearable1104Library
+:app:prepareComKogituneWearListenerServiceBroadcaster003Library
+:app:prepareComKogituneWearSharedPreferences004Library
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:compileDebugJava
+:app:preDexDebug
+:app:dexDebug
+:app:processDebugJavaRes UP-TO-DATE
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:generateReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets
+:app:generateReleaseResValues
+:wear:preBuild
+:wear:compileReleaseNdk
+:wear:preReleaseBuild
+:wear:checkReleaseManifest
+:wear:preDebugBuild
+:wear:prepareComAndroidSupportSupportCompat2520Library
+:wear:prepareComAndroidSupportSupportCoreUi2520Library
+:wear:prepareComAndroidSupportSupportCoreUtils2520Library
+:wear:prepareComAndroidSupportSupportFragment2520Library
+:wear:prepareComAndroidSupportSupportMediaCompat2520Library
+:wear:prepareComAndroidSupportSupportV132000Library
+:wear:prepareComAndroidSupportSupportV42520Library
+:wear:prepareComGoogleAndroidGmsPlayServicesBase1104Library
+:wear:prepareComGoogleAndroidGmsPlayServicesBasement1104Library
+:wear:prepareComGoogleAndroidGmsPlayServicesTasks1104Library
+:wear:prepareComGoogleAndroidGmsPlayServicesWearable1104Library
+:wear:prepareComGoogleAndroidSupportWearable100Library
+:wear:prepareComKogituneWearListenerServiceBroadcaster003Library
+:wear:prepareComKogituneWearSharedPreferences004Library
+:wear:prepareReleaseDependencies
+:wear:compileReleaseAidl
+:wear:compileReleaseRenderscript
+:wear:generateReleaseBuildConfig
+:wear:generateReleaseAssets UP-TO-DATE
+:wear:mergeReleaseAssets
+:wear:generateReleaseResValues
+:wear:generateReleaseResources
+:wear:mergeReleaseResources
+:wear:processReleaseManifest
+:wear:processReleaseResources
+:wear:generateReleaseSources
+:wear:compileReleaseJava
+:wear:preDexRelease
+:wear:dexRelease
+:wear:processReleaseJavaRes UP-TO-DATE
+:wear:packageRelease
+:app:handleReleaseMicroApk
+:app:generateReleaseResources
+:app:mergeReleaseResources
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:compileReleaseJava
+:app:lintVitalRelease
+:app:compileReleaseNdk
+:app:preDexRelease
+:app:dexRelease
+:app:processReleaseJavaRes UP-TO-DATE
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 1 mins 0.209 secs
+
+2018-04-06 00:50:05,102 INFO  FullProcessService - Found APK file: /tmp/rdisk/1496/src/app/build/outputs/apk/app-debug.apk

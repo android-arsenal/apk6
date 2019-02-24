@@ -1,0 +1,188 @@
+2018-05-21 02:40:35,316 INFO  DownloadService - Downloading "https://github.com/ogaclejapan/RxBinding/archive/master.zip", attempt 3
+2018-05-21 02:40:35,732 INFO  DownloadService - Downloaded https://github.com/ogaclejapan/RxBinding/archive/master.zip, attempt 3
+2018-05-21 02:40:35,732 INFO  DownloadService - Size of file "/tmp/rdisk/1259/master.zip": 139 KB
+2018-05-21 02:40:35,732 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-05-21 02:40:35,733 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/1259/master.zip: true
+2018-05-21 02:40:35,733 DEBUG ZipUtil - Extracting '/tmp/rdisk/1259/master.zip' into '/tmp/rdisk/1259/src'.
+2018-05-21 02:40:35,746 INFO  FullProcessService - Size of directory with sources: 191 KB
+2018-05-21 02:40:35,747 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/1259/src]
+2018-05-21 02:40:35,752 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/1259/src/.git/
+
+2018-05-21 02:40:35,754 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/1259/src/RxBinding-master/gradlew
+2018-05-21 02:40:35,756 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/1259/src/RxBinding-master/rxbinding/build.gradle /tmp/rdisk/1259/src/RxBinding-master/build.gradle
+2018-05-21 02:40:35,758 INFO  ProjectBuildService - All script(s): /tmp/rdisk/1259/src/RxBinding-master/settings.gradle /tmp/rdisk/1259/src/RxBinding-master/rxbinding/build.gradle /tmp/rdisk/1259/src/RxBinding-master/build.gradle
+2018-05-21 02:40:35,758 INFO  ProjectBuildService - Remote scripts: none
+2018-05-21 02:40:35,758 INFO  ProjectFixService - Fixing project...
+2018-05-21 02:40:35,764 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1259/src/RxBinding-master/rxbinding/local.properties
+2018-05-21 02:40:35,766 INFO  ProjectFixService - Build info for "/tmp/rdisk/1259/src/RxBinding-master/rxbinding/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=10,targetSdkVersion=<null>]
+2018-05-21 02:40:35,766 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1259/src/RxBinding-master/rxbinding/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=10,targetSdkVersion=27]
+2018-05-21 02:40:35,767 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/1259/src/RxBinding-master/local.properties
+2018-05-21 02:40:35,768 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.4-all.zip
+2018-05-21 02:40:35,768 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.4-bin.zip)
+2018-05-21 02:40:35,769 INFO  ProjectFixService - Build info for "/tmp/rdisk/1259/src/RxBinding-master/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=10,targetSdkVersion=<null>]
+2018-05-21 02:40:35,770 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/1259/src/RxBinding-master/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=10,targetSdkVersion=27]
+2018-05-21 02:40:35,770 INFO  ProjectFixService - Project was maybe fixed
+2018-05-21 02:40:35,770 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-21 02:40:35,770 INFO  SysUtils - Execute command: [/tmp/rdisk/1259/src/RxBinding-master/gradlew, -b, /tmp/rdisk/1259/src/RxBinding-master/rxbinding/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-21 02:40:48,534 INFO  ProjectTaskService - Detected possible tasks: 69
+2018-05-21 02:40:48,534 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest lintRelease testDebug connectedAndroidTestDebug
+2018-05-21 02:40:48,534 INFO  SysUtils - Execute command: [/tmp/rdisk/1259/src/RxBinding-master/gradlew, -b, /tmp/rdisk/1259/src/RxBinding-master/rxbinding/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, lintRelease, -x, testDebug, -x, connectedAndroidTestDebug, build]
+2018-05-21 02:41:00,123 INFO  SysUtils - Configuration on demand is an incubating feature.
+:rxbinding:compileLint
+:rxbinding:copyDebugLint UP-TO-DATE
+:rxbinding:preBuild UP-TO-DATE
+:rxbinding:preDebugBuild UP-TO-DATE
+:rxbinding:checkDebugManifest
+:rxbinding:preDebugAndroidTestBuild UP-TO-DATE
+:rxbinding:preDebugUnitTestBuild UP-TO-DATE
+:rxbinding:preReleaseBuild UP-TO-DATE
+:rxbinding:preReleaseUnitTestBuild UP-TO-DATE
+:rxbinding:prepareComAndroidSupportSupportV42200Library
+:rxbinding:prepareIoReactivexRxandroid100Library
+:rxbinding:prepareDebugDependencies
+:rxbinding:compileDebugAidl
+:rxbinding:compileDebugRenderscript
+:rxbinding:generateDebugBuildConfig
+:rxbinding:generateDebugAssets UP-TO-DATE
+:rxbinding:mergeDebugAssets
+:rxbinding:generateDebugResValues
+:rxbinding:generateDebugResources
+:rxbinding:mergeDebugResources
+:rxbinding:processDebugManifest
+:rxbinding:processDebugResources
+:rxbinding:generateDebugSources
+:rxbinding:processDebugJavaRes UP-TO-DATE
+:rxbinding:compileDebugJava
+:rxbinding:extractDebugAnnotations
+:rxbinding:mergeDebugProguardFiles
+:rxbinding:packageDebugJar
+:rxbinding:compileDebugNdk UP-TO-DATE
+:rxbinding:packageDebugJniLibs UP-TO-DATE
+:rxbinding:packageDebugLocalJar UP-TO-DATE
+:rxbinding:packageDebugRenderscript UP-TO-DATE
+:rxbinding:packageDebugResources
+:rxbinding:bundleDebug
+:rxbinding:compileDebugSources
+:rxbinding:assembleDebug
+:rxbinding:copyReleaseLint UP-TO-DATE
+:rxbinding:checkReleaseManifest
+:rxbinding:prepareReleaseDependencies
+:rxbinding:compileReleaseAidl
+:rxbinding:compileReleaseRenderscript
+:rxbinding:generateReleaseBuildConfig
+:rxbinding:generateReleaseAssets UP-TO-DATE
+:rxbinding:mergeReleaseAssets
+:rxbinding:generateReleaseResValues
+:rxbinding:generateReleaseResources
+:rxbinding:mergeReleaseResources
+:rxbinding:processReleaseManifest
+:rxbinding:processReleaseResources
+:rxbinding:generateReleaseSources
+:rxbinding:processReleaseJavaRes UP-TO-DATE
+:rxbinding:compileReleaseJava
+:rxbinding:extractReleaseAnnotations
+:rxbinding:mergeReleaseProguardFiles
+:rxbinding:packageReleaseJar
+:rxbinding:compileReleaseNdk UP-TO-DATE
+:rxbinding:packageReleaseJniLibs UP-TO-DATE
+:rxbinding:packageReleaseLocalJar UP-TO-DATE
+:rxbinding:packageReleaseRenderscript UP-TO-DATE
+:rxbinding:packageReleaseResources
+:rxbinding:bundleRelease
+:rxbinding:compileReleaseSources
+:rxbinding:assembleRelease
+:rxbinding:javadocjavadoc: warning - Error reading file: /root/Applications/android-sdk/docs/reference/package-list
+
+1 warning
+:rxbinding:javadocJar
+:rxbinding:sourcesJar
+:rxbinding:assemble
+:rxbinding:build
+
+BUILD SUCCESSFUL
+
+Total time: 11.165 secs
+
+2018-05-21 02:41:00,133 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-21 02:41:00,133 INFO  SysUtils - Execute command: [/tmp/rdisk/1259/src/RxBinding-master/gradlew, -b, /tmp/rdisk/1259/src/RxBinding-master/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-21 02:41:06,447 INFO  ProjectTaskService - Detected possible tasks: 69
+2018-05-21 02:41:06,448 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest lintRelease testDebug connectedAndroidTestDebug
+2018-05-21 02:41:06,448 INFO  SysUtils - Execute command: [/tmp/rdisk/1259/src/RxBinding-master/gradlew, -b, /tmp/rdisk/1259/src/RxBinding-master/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, lintRelease, -x, testDebug, -x, connectedAndroidTestDebug, build]
+2018-05-21 02:41:15,173 INFO  SysUtils - Configuration on demand is an incubating feature.
+:rxbinding:compileLint
+:rxbinding:copyDebugLint UP-TO-DATE
+:rxbinding:preBuild UP-TO-DATE
+:rxbinding:preDebugBuild UP-TO-DATE
+:rxbinding:checkDebugManifest
+:rxbinding:preDebugAndroidTestBuild UP-TO-DATE
+:rxbinding:preDebugUnitTestBuild UP-TO-DATE
+:rxbinding:preReleaseBuild UP-TO-DATE
+:rxbinding:preReleaseUnitTestBuild UP-TO-DATE
+:rxbinding:prepareComAndroidSupportSupportV42200Library UP-TO-DATE
+:rxbinding:prepareIoReactivexRxandroid100Library UP-TO-DATE
+:rxbinding:prepareDebugDependencies
+:rxbinding:compileDebugAidl UP-TO-DATE
+:rxbinding:compileDebugRenderscript UP-TO-DATE
+:rxbinding:generateDebugBuildConfig UP-TO-DATE
+:rxbinding:generateDebugAssets UP-TO-DATE
+:rxbinding:mergeDebugAssets UP-TO-DATE
+:rxbinding:generateDebugResValues UP-TO-DATE
+:rxbinding:generateDebugResources UP-TO-DATE
+:rxbinding:mergeDebugResources UP-TO-DATE
+:rxbinding:processDebugManifest UP-TO-DATE
+:rxbinding:processDebugResources UP-TO-DATE
+:rxbinding:generateDebugSources UP-TO-DATE
+:rxbinding:processDebugJavaRes UP-TO-DATE
+:rxbinding:compileDebugJava UP-TO-DATE
+:rxbinding:extractDebugAnnotations UP-TO-DATE
+:rxbinding:mergeDebugProguardFiles UP-TO-DATE
+:rxbinding:packageDebugJar UP-TO-DATE
+:rxbinding:compileDebugNdk UP-TO-DATE
+:rxbinding:packageDebugJniLibs UP-TO-DATE
+:rxbinding:packageDebugLocalJar UP-TO-DATE
+:rxbinding:packageDebugRenderscript UP-TO-DATE
+:rxbinding:packageDebugResources UP-TO-DATE
+:rxbinding:bundleDebug UP-TO-DATE
+:rxbinding:compileDebugSources UP-TO-DATE
+:rxbinding:assembleDebug UP-TO-DATE
+:rxbinding:copyReleaseLint UP-TO-DATE
+:rxbinding:checkReleaseManifest
+:rxbinding:prepareReleaseDependencies
+:rxbinding:compileReleaseAidl UP-TO-DATE
+:rxbinding:compileReleaseRenderscript UP-TO-DATE
+:rxbinding:generateReleaseBuildConfig UP-TO-DATE
+:rxbinding:generateReleaseAssets UP-TO-DATE
+:rxbinding:mergeReleaseAssets UP-TO-DATE
+:rxbinding:generateReleaseResValues UP-TO-DATE
+:rxbinding:generateReleaseResources UP-TO-DATE
+:rxbinding:mergeReleaseResources UP-TO-DATE
+:rxbinding:processReleaseManifest UP-TO-DATE
+:rxbinding:processReleaseResources UP-TO-DATE
+:rxbinding:generateReleaseSources UP-TO-DATE
+:rxbinding:processReleaseJavaRes UP-TO-DATE
+:rxbinding:compileReleaseJava UP-TO-DATE
+:rxbinding:extractReleaseAnnotations UP-TO-DATE
+:rxbinding:mergeReleaseProguardFiles UP-TO-DATE
+:rxbinding:packageReleaseJar UP-TO-DATE
+:rxbinding:compileReleaseNdk UP-TO-DATE
+:rxbinding:packageReleaseJniLibs UP-TO-DATE
+:rxbinding:packageReleaseLocalJar UP-TO-DATE
+:rxbinding:packageReleaseRenderscript UP-TO-DATE
+:rxbinding:packageReleaseResources UP-TO-DATE
+:rxbinding:bundleRelease UP-TO-DATE
+:rxbinding:compileReleaseSources UP-TO-DATE
+:rxbinding:assembleRelease UP-TO-DATE
+:rxbinding:javadocjavadoc: warning - Error reading file: /root/Applications/android-sdk/docs/reference/package-list
+
+1 warning
+:rxbinding:javadocJar
+:rxbinding:sourcesJar UP-TO-DATE
+:rxbinding:assemble
+:rxbinding:build
+
+BUILD SUCCESSFUL
+
+Total time: 8.313 secs
+
+2018-05-21 02:41:15,182 ERROR FullProcessService - Project build has not produced APK file
+2018-05-21 02:41:15,191 ERROR FullProcessService - Could not find generated or existed APK file
