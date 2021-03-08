@@ -1,4 +1,0 @@
-{
-  "com.commonsware.cwac.wakeful" : [ "AlarmReceiver", "BuildConfig", "WakefulIntentService", "WakefulIntentService$AlarmListener" ],
-  "com.commonsware.cwac.wakeful.demo" : [ "AppListener", "AppService", "BuildConfig", "DemoActivity", "R", "R$attr", "R$string", "R$xml" ]
-}
